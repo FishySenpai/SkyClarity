@@ -1,9 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [],
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  variants: {
+    display: ["responsive", "group-hover", "group-focus"],
+  },
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        "3xl": "1665px",
+      },
+    },
   },
   plugins: [],
-}
-
+};
