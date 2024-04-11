@@ -9929,20 +9929,69 @@ const Home = () => {
       <div>
         {console.log(flights)}
         {flights?.itineraries.slice(0, 5).map((flight, index) => (
-          <div className="flight ">
-            <div className="price">{flight.price.formatted}</div>
+          <div className="flight  ">
+            {/* <div className="price">{flight.price.formatted}</div> */}
             <div className="legs">
               {flight.legs?.map((leg, index) => (
-                <div key={index} className="bg-gray-200 text-black w-[600px]">
-                  <div>
-                    Flight:{" "}
-                    {leg.carriers?.marketing
-                      .map((carrier) => carrier.name)
-                      .join(", ")}
+                <div
+                  key={index}
+                  className="bg-gray-100 rounded text-gray-700 w-[600px] mb-2 flex flex-row py-4"
+                >
+                  <div className="flex flex-row px-4">
+                    <img
+                      className="h-[30px] w-[32px]"
+                      src={leg.carriers?.marketing[0].logoUrl}
+                      alt=""
+                    />
+
+                    <div className="pl-4">
+                      {leg.carriers?.marketing
+                        .map((carrier) => carrier.name)
+                        .join(", ")}
+                    </div>
                   </div>
-                  <div>Stops: {leg.stopCount}</div>
-                  <div>Departure: {leg.departure}</div>
-                  <div>Arrival: {leg.arrival}</div>
+                  <div className="">
+                    <div>
+                      {new Date(leg.departure).toLocaleTimeString([], {
+                        hour: "numeric",
+                        minute: "2-digit",
+                        hour12: true,
+                      })}
+                    </div>
+                    <div> {leg.origin.displayCode}</div>
+                  </div>
+
+                  <div className="flex flex-row">
+                    <div className="flex flex-col">
+                      <div className="">______{leg.stopCount}______</div>
+                      <div className="flex flex-row">
+                        {leg.segments?.map((stop, idnex) => (
+                          <div>{stop.destination.displayCode},</div>
+                        ))}
+                      </div>
+                    </div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xml:space="preserve"
+                      viewBox="0 0 12 12"
+                      class="h-6 w-6 mt-2"
+                    >
+                      <path
+                        fill="#898294"
+                        d="M3.922 12h.499a.52.52 0 0 0 .444-.247L7.949 6.8l3.233-.019A.8.8 0 0 0 12 6a.8.8 0 0 0-.818-.781L7.949 5.2 4.866.246A.525.525 0 0 0 4.421 0h-.499a.523.523 0 0 0-.489.71L5.149 5.2H2.296l-.664-1.33a.523.523 0 0 0-.436-.288L0 3.509 1.097 6 0 8.491l1.196-.073a.523.523 0 0 0 .436-.288l.664-1.33h2.853l-1.716 4.49a.523.523 0 0 0 .489.71"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div className="flex flex-col">
+                    <div>
+                      {new Date(leg.arrival).toLocaleTimeString([], {
+                        hour: "numeric",
+                        minute: "2-digit",
+                        hour12: true,
+                      })}
+                    </div>
+                    <div>{leg.destination.displayCode}</div>
+                  </div>
                 </div>
               ))}
             </div>
