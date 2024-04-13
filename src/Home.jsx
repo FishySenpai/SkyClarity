@@ -11,6 +11,8 @@ const Home = () => {
   const [cheapestMinPrice, setCheapestMinPrice] = useState(Infinity);
   const [shortestMinDuration, setShortestMinDuration] = useState(Infinity);
   const [cheapestMinDuration, setCheapestMinDuration] = useState(0);
+  const [bestDuration, setBestDuration] = useState();
+  const [bestPrice, setBestPrice] = useState();
   const fetchLocation = async (locationType, location) => {
     const url = `https://skyscanner80.p.rapidapi.com/api/v1/flights/auto-complete?query=${location}&market=US&locale=en-US`;
     const options = {
@@ -68,6 +70,8 @@ useEffect(() => {
     let shortestPrice = 0;
     let cheapestPrice = Infinity;
     let cheapestDuration = 0;
+    let bestDuration = Infinity;
+    let bestPrice = Infinity;
 
     flights.itineraries.forEach((flight) => {
       const duration = flight.legs[0].durationInMinutes;
@@ -84,6 +88,12 @@ useEffect(() => {
         cheapestPrice = price;
         cheapestDuration = duration;
       }
+      const cost = duration + price; // Total cost of time and money
+      const bestCost = bestDuration + bestPrice; // Total cost of time and money for the best flight so far
+      if (cost < bestCost) {
+        bestDuration = duration;
+        bestPrice = price;
+      }
     });
 
     // Update state after iterating through all flights
@@ -91,6 +101,8 @@ useEffect(() => {
     setShortestMinPrice(shortestPrice);
     setCheapestMinDuration(cheapestDuration);
     setCheapestMinPrice(cheapestPrice);
+    setBestDuration(bestDuration);
+    setBestPrice(bestPrice)
   }
 }, [flights]);
 
@@ -101,7 +113,7 @@ useEffect(() => {
     return `${hours}h${minutes}m`;
   }
   return (
-    <div className=" text-white default-font">
+    <div className=" text-white default-font bg-gray-500">
       <div>
         <div className="flex flex-col space-y-12 w-[200px]">
           <div className="flex flex-row">
@@ -135,28 +147,31 @@ useEffect(() => {
         <div>
           <FlightsFilter flights={flights} />
         </div>
-        <div className="flex flex-col">
-          <div className="flex flex-row bg-gray-100 rounded mb-1 text-gray-700">
-            <div>
-              <div className="w-[200px] text-lg font-semibold pl-3">Best</div>
-              <div>
-                <div></div>
-              </div>
-            </div>
-            <div className=" pl-3">
-              <div className="w-[200px] text-lg font-semibold">
-                Cheapest
-              </div>
+        <div className="flex flex-col cursor-pointer">
+          <div className="flex flex-row bg-gray-100 rounded mb-1 text-gray-700 ">
+            <div className="pl-3 border-b-4 border-white hover:border-gray-800">
+              <div className="w-[215px] text-lg font-semibold">Best</div>
               <div className="flex flex-row">
-                <div>${cheapestMinPrice.toFixed(0)}</div>
-                <div>{formatDuration(cheapestMinDuration)}</div>
+                <div>${bestPrice.toFixed(0)} . </div>
+                <div className="pl-1">{formatDuration(bestDuration)}</div>
               </div>
             </div>
-            <div className=" pl-3">
-              <div className="w-[200px] text-lg font-semibold">Fastest</div>
-              <div>
-                <div>{shortestMinPrice}</div>
-                <div>{formatDuration(shortestMinDuration)}</div>
+            <div className=" pl-3 border-b-4 border-white hover:border-gray-800">
+              <div className="w-[215px] text-lg font-semibold">Cheapest</div>
+              <div className="flex flex-row">
+                <div>${cheapestMinPrice.toFixed(0)} . </div>
+                <div className="pl-1">
+                  {formatDuration(cheapestMinDuration)}
+                </div>
+              </div>
+            </div>
+            <div className=" pl-3 border-b-4 border-white hover:border-gray-800">
+              <div className="w-[215px] text-lg font-semibold">Fastest</div>
+              <div className="flex flex-row">
+                <div>{shortestMinPrice} . </div>
+                <div className="pl-1">
+                  {formatDuration(shortestMinDuration)}
+                </div>
               </div>
             </div>
           </div>
