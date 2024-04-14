@@ -1,148 +1,61 @@
 import React, { useState, useEffect } from "react";
-import flightsJson from "./flights.json";
-import FlightsFilter from "./components/FlightsFilter";
-const Home = () => {
-  const [from, setFrom] = useState();
-  const [to, setTo] = useState();
-  const [fromId, setFromId] = useState();
-  const [toId, setToId] = useState();
-  const [flights, setFlights] = useState(flightsJson);
+import FlightsFilter from "./FlightsFilter";
+const Flights = ({ flights }) => {
   const [shortestMinPrice, setShortestMinPrice] = useState(0);
   const [cheapestMinPrice, setCheapestMinPrice] = useState(Infinity);
   const [shortestMinDuration, setShortestMinDuration] = useState(Infinity);
   const [cheapestMinDuration, setCheapestMinDuration] = useState(0);
   const [bestDuration, setBestDuration] = useState();
   const [bestPrice, setBestPrice] = useState();
-  const fetchLocation = async (locationType, location) => {
-    const url = `https://skyscanner80.p.rapidapi.com/api/v1/flights/auto-complete?query=${location}&market=US&locale=en-US`;
-    const options = {
-      method: "GET",
-      headers: {
-        "X-RapidAPI-Key": "325a7f72damshf16ffcb2c3ed7bep1f566djsn006db2e1a65a",
-        "X-RapidAPI-Host": "skyscanner80.p.rapidapi.com",
-      },
-    };
+  useEffect(() => {
+    if (flights && flights.itineraries) {
+      let shortestDuration = Infinity;
+      let shortestPrice = 0;
+      let cheapestPrice = Infinity;
+      let cheapestDuration = 0;
+      let bestDuration = Infinity;
+      let bestPrice = Infinity;
 
-    try {
-      const response = await fetch(url, options);
-      const result = await response.json();
+      flights.itineraries.forEach((flight) => {
+        const duration = flight.legs[0].durationInMinutes;
+        const price = flight.price.raw;
 
-      console.log(result);
+        // Update shortest duration and corresponding price
+        if (duration < shortestDuration) {
+          shortestDuration = duration;
+          shortestPrice = flight.price.formatted;
+        }
 
-      if (locationType === "from") {
-        setFromId(result.data[0].id);
-        console.log(fromId);
-      } else if (locationType === "to") {
-        setToId(result.data[0].id);
-        console.log(toId);
-      }
-    } catch (error) {
-      console.error(error);
+        // Update cheapest price and corresponding duration
+        if (price < cheapestPrice) {
+          cheapestPrice = price;
+          cheapestDuration = duration;
+        }
+        const cost = duration + price; // Total cost of time and money
+        const bestCost = bestDuration + bestPrice; // Total cost of time and money for the best flight so far
+        if (cost < bestCost) {
+          bestDuration = duration;
+          bestPrice = price;
+        }
+      });
+
+      // Update state after iterating through all flights
+      setShortestMinDuration(shortestDuration);
+      setShortestMinPrice(shortestPrice);
+      setCheapestMinDuration(cheapestDuration);
+      setCheapestMinPrice(cheapestPrice);
+      setBestDuration(bestDuration);
+      setBestPrice(bestPrice);
     }
-  };
-  const fetchFlights = async () => {
-    fetchLocation("from", from);
-    fetchLocation("to", to);
-    if (fromId && toId) {
-      const url = `https://skyscanner80.p.rapidapi.com/api/v1/flights/search-one-way?fromId=${fromId}&toId=${toId}&departDate=2024-04-20&adults=1&currency=USD&market=US&locale=en-US`;
-      const options = {
-        method: "GET",
-        headers: {
-          "X-RapidAPI-Key":
-            "325a7f72damshf16ffcb2c3ed7bep1f566djsn006db2e1a65a",
-          "X-RapidAPI-Host": "skyscanner80.p.rapidapi.com",
-        },
-      };
-
-      try {
-        const response = await fetch(url, options);
-        const result = await response.json();
-        setFlights(result.data);
-        console.log(result);
-      } catch (error) {
-        console.error(error);
-      }
-    }
-  };
-useEffect(() => {
-  if (flights && flights.itineraries) {
-    let shortestDuration = Infinity;
-    let shortestPrice = 0;
-    let cheapestPrice = Infinity;
-    let cheapestDuration = 0;
-    let bestDuration = Infinity;
-    let bestPrice = Infinity;
-
-    flights.itineraries.forEach((flight) => {
-      const duration = flight.legs[0].durationInMinutes;
-      const price = flight.price.raw;
-
-      // Update shortest duration and corresponding price
-      if (duration < shortestDuration) {
-        shortestDuration = duration;
-        shortestPrice = flight.price.formatted;
-      }
-
-      // Update cheapest price and corresponding duration
-      if (price < cheapestPrice) {
-        cheapestPrice = price;
-        cheapestDuration = duration;
-      }
-      const cost = duration + price; // Total cost of time and money
-      const bestCost = bestDuration + bestPrice; // Total cost of time and money for the best flight so far
-      if (cost < bestCost) {
-        bestDuration = duration;
-        bestPrice = price;
-      }
-    });
-
-    // Update state after iterating through all flights
-    setShortestMinDuration(shortestDuration);
-    setShortestMinPrice(shortestPrice);
-    setCheapestMinDuration(cheapestDuration);
-    setCheapestMinPrice(cheapestPrice);
-    setBestDuration(bestDuration);
-    setBestPrice(bestPrice)
-  }
-}, [flights]);
-
+  }, [flights]);
 
   function formatDuration(durationInMinutes) {
     const hours = Math.floor(durationInMinutes / 60);
     const minutes = durationInMinutes % 60;
     return `${hours}h${minutes}m`;
   }
-  return (
-    <div className=" text-white default-font bg-gray-500">
-      <div>
-        <div className="flex flex-col space-y-12 w-[200px]">
-          <div className="flex flex-row">
-            <label htmlFor="text">From:</label>
-            <input
-              type="search"
-              placeholder="From..."
-              value={from}
-              onChange={(e) => setFrom(e.target.value)}
-            />
-          </div>
-          <div className="flex flex-row">
-            <label htmlFor="text">To:</label>
-            <input
-              type="search"
-              placeholder="To..."
-              value={to}
-              onChange={(e) => setTo(e.target.value)}
-            />
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-col space-y-12">
-        <button onClick={() => fetchLocation("from", from)}>Click</button>
-        <button onClick={() => fetchLocation("to", to)}>
-          Click for Flight
-        </button>
-        <button onClick={fetchFlights}>get flight</button>
-      </div>
+  if (flights) {
+    return (
       <div className="flex flex-row">
         <div>
           <FlightsFilter flights={flights} />
@@ -152,7 +65,7 @@ useEffect(() => {
             <div className="pl-3 border-b-4 border-white hover:border-gray-800">
               <div className="w-[215px] text-lg font-semibold">Best</div>
               <div className="flex flex-row">
-                <div>${bestPrice.toFixed(0)} . </div>
+                <div>${bestPrice?.toFixed(0)} . </div>
                 <div className="pl-1">{formatDuration(bestDuration)}</div>
               </div>
             </div>
@@ -302,8 +215,8 @@ useEffect(() => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 };
 
-export default Home;
+export default Flights;

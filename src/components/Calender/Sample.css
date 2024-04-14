@@ -1,0 +1,108 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Segoe UI, Tahoma, sans-serif;
+}
+
+.Sample input,
+.Sample button {
+  font: inherit;
+  font-family: Segoe UI, Tahoma, sans-serif;
+}
+
+.Sample header {
+  background-color: #323639;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  color: white;
+}
+
+.Sample header h1 {
+  font-size: inherit;
+  margin: 0;
+}
+
+.Sample__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.Sample__container > * > * {
+  margin: 10px;
+}
+
+.Sample__container__content {
+  display: flex;
+  max-width: 100%;
+  flex-basis: 420px;
+  flex-direction: column;
+  flex-grow: 100;
+  align-items: stretch;
+  padding-top: 1em;
+}
+
+.Sample__container__content .react-calendar {
+  margin: 0 auto;
+}
+.react-calendar__navigation__prev2-button {
+    visibility: hidden;
+}
+.react-calendar__navigation__next2-button {
+    display: none;
+}
+
+.react-calendar__navigation__label__labelText--from{
+    font-weight: 600;
+    color: #323639;
+}
+
+
+.react-calendar__navigation{
+    position: relative;
+}
+
+/* Hide the text content of all buttons within .react-calendar__navigation */
+.react-calendar__navigation__prev-button {
+    font-size: 0 !important;
+}
+
+/* Apply custom styles with SVG icon only to the next button */
+.react-calendar__navigation__prev-button {
+    position: absolute;
+    height: 12px;
+    width: 11px;
+    right: 25px;
+    top: 2px;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="11" height="16"%3E%3Cpath d="M7.919 0l2.748 2.667L5.333 8l5.334 5.333L7.919 16 0 8z" fill="currentColor"%3E%3C/path%3E%3C/svg%3E') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Hide the text content of all buttons within .react-calendar__navigation */
+.react-calendar__navigation__next-button {
+    font-size: 0 !important;
+}
+
+/* Apply custom styles with SVG icon only to the next button */
+.react-calendar__navigation__next-button {
+    position: absolute;
+    height: 12px;
+    width: 11px;
+    right: 0px;
+    top: 2px;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="11" height="16"%3E%3Cpath d="M2.748 16L0 13.333 5.333 8 0 2.667 2.748 0l7.919 8z" fill="currentColor"%3E%3C/path%3E%3C/svg%3E') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
