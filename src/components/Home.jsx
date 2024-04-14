@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import flightsJson from "../flights.json";
 import Flights from "./Flights/Flights";
 import Calendar from "react-calendar";
-import "./Calender/Sample.css"
+import "./Calender/Sample.css";
 
 const Home = () => {
   const [from, setFrom] = useState();
@@ -12,6 +12,10 @@ const Home = () => {
   const [flights, setFlights] = useState(flightsJson);
   const [isClicked, setIsClicked] = useState(false);
   const [value, onChange] = useState(new Date());
+  const [departToggle, setDepartToggle] = useState(false);
+  const [departDate, setDepartDate] = useState();
+  const [returnToggle, setReturnToggle] = useState(false);
+  const [returnDate, setReturnDate] = useState();
 
   const fetchLocation = async (locationType, location) => {
     const url = `https://skyscanner80.p.rapidapi.com/api/v1/flights/auto-complete?query=${location}&market=US&locale=en-US`;
@@ -65,9 +69,22 @@ const Home = () => {
     }
   };
 
+  const formatDate = (date) => {
+    return date.toLocaleDateString("en-GB", {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    });
+  };
+  useEffect(()=>{
+    setDepartToggle(false);
+  }, [departDate])
+  useEffect(() => {
+    setReturnToggle(false);
+  }, [returnDate]);
   return (
     <div className=" text-white default-font bg-gray-500 ">
-      <div className="bg-gray-100 rounded text-gray-500 w-[900px] ml-40">
+      <div className="bg-gray-100 rounded text-gray-500 ">
         <div className="flex flex-row space-x-12  p-12 ">
           <div className="relative">
             <svg
@@ -124,15 +141,104 @@ const Home = () => {
               To
             </label>
           </div>
+          <div
+            className="relative"
+            onClick={() => {
+              setDepartToggle((prev) => !prev);
+              setReturnToggle(false);
+            }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              className="h-5 w-5 absolute left-2 top-3"
+            >
+              <path
+                d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"
+                fill="gray"
+              />
+            </svg>
+            <input
+              className={`h-12 pl-10 w-[180px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none ${
+                departDate ? "font-semibold text-gray-800" : "font-normal"
+              }`}
+              type="search"
+              placeholder="Select Date"
+              value={departDate}
+              readOnly
+            />
+
+            <label
+              htmlFor="text"
+              className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
+            >
+              Departure
+            </label>
+            {departToggle ? (
+              <div className="z-50 absolute">
+                <Calendar
+                  onClickDay={(value, event) => {
+                    setDepartDate(formatDate(value));
+                  }}
+                  showWeekNumbers
+                  value={value}
+                  minDetail="month"
+                  minDate={new Date()}
+                />
+              </div>
+            ) : null}
+          </div>
+          <div
+            className="relative"
+            onClick={() => {
+              setReturnToggle((prev) => !prev);
+              setDepartToggle(false);
+            }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              className="h-5 w-5 absolute left-2 top-3"
+            >
+              <path
+                d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"
+                fill="gray"
+              />
+            </svg>
+            <input
+              className={`h-12 pl-10 w-[180px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none ${
+                returnDate ? "font-semibold text-gray-800" : "font-normal"
+              }`}
+              type="search"
+              placeholder="Select Date"
+              value={returnDate}
+              readOnly
+            />
+
+            <label
+              htmlFor="text"
+              className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
+            >
+              Return
+            </label>
+            {returnToggle ? (
+              <div className="z-50 absolute">
+                <Calendar
+                  onClickDay={(value, event) => {
+                    setReturnDate(formatDate(value));
+                  }}
+                  showWeekNumbers
+                  value={value}
+                  minDetail="month"
+                  minDate={new Date()}
+                />
+              </div>
+            ) : null}
+          </div>
           <div className="Sample">
             <header>
               <h1>react-calendar sample page</h1>
             </header>
-            <div className="Sample__container">
-              <main className="Sample__container__content">
-                <Calendar onChange={onChange} showWeekNumbers value={value} />
-              </main>
-            </div>
           </div>
         </div>
       </div>
