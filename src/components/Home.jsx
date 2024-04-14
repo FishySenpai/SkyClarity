@@ -142,7 +142,7 @@ const Home = () => {
             </label>
           </div>
           <div
-            className="relative"
+            className="relative cursor-pointer"
             onClick={() => {
               setDepartToggle((prev) => !prev);
               setReturnToggle(false);
@@ -159,7 +159,7 @@ const Home = () => {
               />
             </svg>
             <input
-              className={`h-12 pl-10 w-[180px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none ${
+              className={`h-12 pl-10 w-[180px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none cursor-pointer ${
                 departDate ? "font-semibold text-gray-800" : "font-normal"
               }`}
               type="search"
@@ -189,7 +189,7 @@ const Home = () => {
             ) : null}
           </div>
           <div
-            className="relative"
+            className="relative cursor-pointer "
             onClick={() => {
               setReturnToggle((prev) => !prev);
               setDepartToggle(false);
@@ -206,7 +206,7 @@ const Home = () => {
               />
             </svg>
             <input
-              className={`h-12 pl-10 w-[180px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none ${
+              className={`h-12 pl-10 w-[180px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none cursor-pointer  ${
                 returnDate ? "font-semibold text-gray-800" : "font-normal"
               }`}
               type="search"
@@ -235,10 +235,38 @@ const Home = () => {
               </div>
             ) : null}
           </div>
-          <div className="Sample">
-            <header>
-              <h1>react-calendar sample page</h1>
-            </header>
+          <div className="relative">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              className="h-5 w-5 absolute left-2 top-3"
+            >
+              <path
+                d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
+                fill="gray"
+              />
+            </svg>
+            <input
+              className="h-12 pl-10 border rounded px-2 text-gray-800 font-semibold  border-gray-400 focus:border-blue-500 bg-gray-100 outline-none"
+              type="search"
+              placeholder="1 Travelers"
+              value={from}
+              onChange={(e) => setFrom(e.target.value)}
+              onFocus={() => setIsClicked(true)}
+              onBlur={() => setIsClicked(false)}
+            />
+            <label
+              htmlFor="text"
+              className="absolute top-7 left-12 px-1  text-sm"
+            >
+              economy
+            </label>
+            <label
+              htmlFor="text"
+              className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
+            >
+              Travelers & Class
+            </label>
           </div>
         </div>
       </div>
