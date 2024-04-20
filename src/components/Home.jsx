@@ -16,6 +16,10 @@ const Home = () => {
   const [departDate, setDepartDate] = useState();
   const [returnToggle, setReturnToggle] = useState(false);
   const [returnDate, setReturnDate] = useState();
+  const [travelers, setTravelers] = useState();
+  const [cabinClass, setCabinClass] = useState("Economy");
+  const [cabinDrop, setCabinDrop] = useState(false);
+  const [cabinClassDrop, setCabinClassDrop] = useState(false)
 
   const fetchLocation = async (locationType, location) => {
     const url = `https://skyscanner80.p.rapidapi.com/api/v1/flights/auto-complete?query=${location}&market=US&locale=en-US`;
@@ -76,9 +80,9 @@ const Home = () => {
       day: "2-digit",
     });
   };
-  useEffect(()=>{
+  useEffect(() => {
     setDepartToggle(false);
-  }, [departDate])
+  }, [departDate]);
   useEffect(() => {
     setReturnToggle(false);
   }, [returnDate]);
@@ -144,7 +148,7 @@ const Home = () => {
           <div
             className="relative cursor-pointer"
             onClick={() => {
-              setDepartToggle((prev) => !prev);
+              setDepartToggle(true);
               setReturnToggle(false);
             }}
           >
@@ -191,7 +195,7 @@ const Home = () => {
           <div
             className="relative cursor-pointer "
             onClick={() => {
-              setReturnToggle((prev) => !prev);
+              setReturnToggle(true);
               setDepartToggle(false);
             }}
           >
@@ -236,112 +240,195 @@ const Home = () => {
             ) : null}
           </div>
           <div className="relative">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-              className="h-5 w-5 absolute left-2 top-3"
+            <div
+              onClick={() => {
+                setCabinDrop(!cabinDrop);
+              }}
+              className="cursor-pointer"
             >
-              <path
-                d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
-                fill="gray"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                className="h-5 w-5 absolute left-2 top-3"
+              >
+                <path
+                  d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
+                  fill="gray"
+                />
+              </svg>
+              <input
+                className="h-12 pl-10 border cursor-pointer text-[16px] pb-2 rounded px-2 text-gray-800 font-semibold  border-gray-400 focus:border-blue-500 bg-gray-100 outline-none"
+                type="search"
+                placeholder="1 Travelers"
+                value={travelers}
+                onFocus={() => setIsClicked(true)}
+                onBlur={() => setIsClicked(false)}
+                readOnly
               />
-            </svg>
-            <input
-              className="h-12 pl-10 border rounded px-2 text-gray-800 font-semibold  border-gray-400 focus:border-blue-500 bg-gray-100 outline-none"
-              type="search"
-              placeholder="1 Travelers"
-              value={from}
-              onChange={(e) => setFrom(e.target.value)}
-              onFocus={() => setIsClicked(true)}
-              onBlur={() => setIsClicked(false)}
-            />
-            <label
-              htmlFor="text"
-              className="absolute top-7 left-12 px-1  text-sm"
-            >
-              economy
-            </label>
-            <label
-              htmlFor="text"
-              className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
-            >
-              Travelers & Class
-            </label>
-            <div className="flex flex-col text-gray-900 pt-4 bg-gray-100 shadow-md p-2">
-              <div className="flex flex-row">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 320 512"
-                  className="h-6 w-6"
-                >
-                  <path
-                    d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152z"
-                    fill="gray"
-                  />
-                </svg>
-                <div className="pl-1 font-semibold">Adult</div>
-                <div className="p-1 rounded-full mb-1 bg-gray-900 ml-28">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    className="h-3 w-3"
-                  >
-                    <path
-                      d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"
-                      fill="white"
-                    />
-                  </svg>
-                </div>
-                <div className="font-semibold ml-4">1</div>
-                <div className="p-1 rounded-full mb-1 bg-gray-900 ml-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    className="h-3 w-3 "
-                  >
-                    <path
-                      d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
-                      fill="white"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div className="flex flex-row pt-4">              
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  className="h-6 w-6"
-                >
-                  <path d="M152 88a72 72 0 1 1 144 0A72 72 0 1 1 152 88zM39.7 144.5c13-17.9 38-21.8 55.9-8.8L131.8 162c26.8 19.5 59.1 30 92.2 30s65.4-10.5 92.2-30l36.2-26.4c17.9-13 42.9-9 55.9 8.8s9 42.9-8.8 55.9l-36.2 26.4c-13.6 9.9-28.1 18.2-43.3 25V288H128V251.7c-15.2-6.7-29.7-15.1-43.3-25L48.5 200.3c-17.9-13-21.8-38-8.8-55.9zm89.8 184.8l60.6 53-26 37.2 24.3 24.3c15.6 15.6 15.6 40.9 0 56.6s-40.9 15.6-56.6 0l-48-48C70 438.6 68.1 417 79.2 401.1l50.2-71.8zm128.5 53l60.6-53 50.2 71.8c11.1 15.9 9.2 37.5-4.5 51.2l-48 48c-15.6 15.6-40.9 15.6-56.6 0s-15.6-40.9 0-56.6L284 419.4l-26-37.2z" fill="dark gray"/>
-                </svg>
-                <div className="pl-1 font-semibold">Children</div>
-                <div className="p-1 rounded-full mb-1 bg-gray-900 ml-[89px]">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    className="h-3 w-3"
-                  >
-                    <path
-                      d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"
-                      fill="white"
-                    />
-                  </svg>
-                </div>
-                <div className="font-semibold ml-4">1</div>
-                <div className="p-1 rounded-full mb-1 bg-gray-900 ml-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    className="h-3 w-3 "
-                  >
-                    <path
-                      d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
-                      fill="white"
-                    />
-                  </svg>
-                </div>
-              </div>
+              <label
+                htmlFor="text"
+                className="absolute top-[27px] left-[42px] px-1   text-sm"
+              >
+                {cabinClass}
+              </label>
+              <label
+                htmlFor="text"
+                className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
+              >
+                Travelers & Class
+              </label>
             </div>
+            {cabinDrop ? (
+              <div className="flex flex-col text-gray-900 pt-4 bg-gray-100 shadow-md p-2">
+                <div className="relative py-2 px-1">
+                  <input
+                    className={`h-12  w-[260px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none cursor-pointer  ${
+                      returnDate ? "font-semibold text-gray-800" : "font-normal"
+                    }`}
+                    type="search"
+                    placeholder="Economy"
+                    value={cabinClass}
+                    onClick={() => {
+                      setCabinClassDrop(!cabinClassDrop);
+                    }}
+                    readOnly
+                  />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"
+                    className="w-5 h-5 absolute top-5 right-2 px-1 z-50"
+                  >
+                    <path
+                      d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"
+                      fill="gray"
+                    />
+                  </svg>
+                  <label
+                    htmlFor="text"
+                    className="absolute -top-1 left-2 px-1 bg-gray-100 text-sm text-gray-500"
+                  >
+                    Class
+                  </label>
+                  {cabinClassDrop ? (
+                    <div className="bg-gray-100 shadow-md space-y-1  flex flex-col">
+                      <button
+                        className="text-left hover:bg-gray-300 px-2"
+                        onClick={() => {
+                          setCabinClass("Economy");
+                          setCabinClassDrop(false);
+                        }}
+                      >
+                        Economy
+                      </button>
+                      <button
+                        className="text-left hover:bg-gray-300 px-2"
+                        onClick={() => {
+                          setCabinClass("Premium Economy");
+                          setCabinClassDrop(false);
+                        }}
+                      >
+                        Premium Economy
+                      </button>
+                      <button
+                        className="text-left hover:bg-gray-300 px-2"
+                        onClick={() => {
+                          setCabinClass("Business Class");
+                          setCabinClassDrop(false);
+                        }}
+                      >
+                        Business Class
+                      </button>
+                      <button
+                        className="text-left hover:bg-gray-300 px-2"
+                        onClick={() => {
+                          setCabinClass("First Class");
+                          setCabinClassDrop(false);
+                        }}
+                      >
+                        First Class
+                      </button>
+                    </div>
+                  ) : null}
+                </div>
+                <div className="flex flex-row">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"
+                    className="h-6 w-6"
+                  >
+                    <path
+                      d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152z"
+                      fill="dark gray"
+                    />
+                  </svg>
+
+                  <div className="pl-1 font-semibold">Adult</div>
+                  <div className="p-1 rounded-full mb-1 bg-gray-900 ml-28">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      className="h-3 w-3"
+                    >
+                      <path
+                        d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <div className="font-semibold ml-4">1</div>
+                  <div className="p-1 rounded-full mb-1 bg-gray-900 ml-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      className="h-3 w-3 "
+                    >
+                      <path
+                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div className="flex flex-row pt-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    className="h-5 w-6"
+                  >
+                    <path
+                      d="M152 88a72 72 0 1 1 144 0A72 72 0 1 1 152 88zM39.7 144.5c13-17.9 38-21.8 55.9-8.8L131.8 162c26.8 19.5 59.1 30 92.2 30s65.4-10.5 92.2-30l36.2-26.4c17.9-13 42.9-9 55.9 8.8s9 42.9-8.8 55.9l-36.2 26.4c-13.6 9.9-28.1 18.2-43.3 25V288H128V251.7c-15.2-6.7-29.7-15.1-43.3-25L48.5 200.3c-17.9-13-21.8-38-8.8-55.9zm89.8 184.8l60.6 53-26 37.2 24.3 24.3c15.6 15.6 15.6 40.9 0 56.6s-40.9 15.6-56.6 0l-48-48C70 438.6 68.1 417 79.2 401.1l50.2-71.8zm128.5 53l60.6-53 50.2 71.8c11.1 15.9 9.2 37.5-4.5 51.2l-48 48c-15.6 15.6-40.9 15.6-56.6 0s-15.6-40.9 0-56.6L284 419.4l-26-37.2z"
+                      fill="dark gray"
+                    />
+                  </svg>
+                  <div className="pl-1 font-semibold">Children</div>
+                  <div className="p-1 rounded-full mb-1 bg-gray-900 ml-[89px]">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      className="h-3 w-3"
+                    >
+                      <path
+                        d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <div className="font-semibold ml-4">1</div>
+                  <div className="p-1 rounded-full mb-1 bg-gray-900 ml-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      className="h-3 w-3 "
+                    >
+                      <path
+                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>
