@@ -16,10 +16,12 @@ const Home = () => {
   const [departDate, setDepartDate] = useState();
   const [returnToggle, setReturnToggle] = useState(false);
   const [returnDate, setReturnDate] = useState();
-  const [travelers, setTravelers] = useState();
+  const [travelers, setTravelers] = useState("1 Travelers");
   const [cabinClass, setCabinClass] = useState("Economy");
   const [cabinDrop, setCabinDrop] = useState(false);
-  const [cabinClassDrop, setCabinClassDrop] = useState(false)
+  const [cabinClassDrop, setCabinClassDrop] = useState(false);
+  const [adults, setAdults] = useState(1);
+  const [children, setChildren] = useState(0);
 
   const fetchLocation = async (locationType, location) => {
     const url = `https://skyscanner80.p.rapidapi.com/api/v1/flights/auto-complete?query=${location}&market=US&locale=en-US`;
@@ -52,7 +54,7 @@ const Home = () => {
     fetchLocation("from", from);
     fetchLocation("to", to);
     if (fromId && toId) {
-      const url = `https://skyscanner80.p.rapidapi.com/api/v1/flights/search-one-way?fromId=${fromId}&toId=${toId}&departDate=2024-04-20&adults=1&currency=USD&market=US&locale=en-US`;
+      const url = `https://skyscanner80.p.rapidapi.com/api/v1/flights/search-one-way?fromId=${fromId}&toId=${toId}&departDate=${departDate}&adults=${adults}&currency=USD&market=US&locale=en-US`;
       const options = {
         method: "GET",
         headers: {
@@ -90,7 +92,7 @@ const Home = () => {
     <div className=" text-white default-font bg-gray-500 ">
       <div className="bg-gray-100 rounded text-gray-500 ">
         <div className="flex flex-row space-x-12  p-12 ">
-          <div className="relative">
+          <div className="relative h-fit">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 640 512"
@@ -118,7 +120,7 @@ const Home = () => {
             </label>
           </div>
 
-          <div className="relative">
+          <div className="relative h-fit">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 640 512"
@@ -145,39 +147,42 @@ const Home = () => {
               To
             </label>
           </div>
-          <div
-            className="relative cursor-pointer"
-            onClick={() => {
-              setDepartToggle(true);
-              setReturnToggle(false);
-            }}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-              className="h-5 w-5 absolute left-2 top-3"
+          <div>
+            <div
+              className="relative cursor-pointer h-fit"
+              onClick={() => {
+                setDepartToggle(!departToggle);
+                setReturnToggle(false);
+                setCabinDrop(false);
+              }}
             >
-              <path
-                d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"
-                fill="gray"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                className="h-5 w-5 absolute left-2 top-3"
+              >
+                <path
+                  d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"
+                  fill="gray"
+                />
+              </svg>
+              <input
+                className={`h-12 pl-10 w-[180px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none cursor-pointer ${
+                  departDate ? "font-semibold text-gray-800" : "font-normal"
+                }`}
+                type="search"
+                placeholder="Select Date"
+                value={departDate}
+                readOnly
               />
-            </svg>
-            <input
-              className={`h-12 pl-10 w-[180px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none cursor-pointer ${
-                departDate ? "font-semibold text-gray-800" : "font-normal"
-              }`}
-              type="search"
-              placeholder="Select Date"
-              value={departDate}
-              readOnly
-            />
 
-            <label
-              htmlFor="text"
-              className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
-            >
-              Departure
-            </label>
+              <label
+                htmlFor="text"
+                className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
+              >
+                Departure
+              </label>
+            </div>
             {departToggle ? (
               <div className="z-50 absolute">
                 <Calendar
@@ -192,39 +197,42 @@ const Home = () => {
               </div>
             ) : null}
           </div>
-          <div
-            className="relative cursor-pointer "
-            onClick={() => {
-              setReturnToggle(true);
-              setDepartToggle(false);
-            }}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-              className="h-5 w-5 absolute left-2 top-3"
+          <div>
+            <div
+              className="relative cursor-pointer h-fit "
+              onClick={() => {
+                setReturnToggle(!returnToggle);
+                setDepartToggle(false);
+                setCabinDrop(false);
+              }}
             >
-              <path
-                d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"
-                fill="gray"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                className="h-5 w-5 absolute left-2 top-3"
+              >
+                <path
+                  d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"
+                  fill="gray"
+                />
+              </svg>
+              <input
+                className={`h-12 pl-10 w-[180px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none cursor-pointer  ${
+                  returnDate ? "font-semibold text-gray-800" : "font-normal"
+                }`}
+                type="search"
+                placeholder="Select Date"
+                value={returnDate}
+                readOnly
               />
-            </svg>
-            <input
-              className={`h-12 pl-10 w-[180px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none cursor-pointer  ${
-                returnDate ? "font-semibold text-gray-800" : "font-normal"
-              }`}
-              type="search"
-              placeholder="Select Date"
-              value={returnDate}
-              readOnly
-            />
 
-            <label
-              htmlFor="text"
-              className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
-            >
-              Return
-            </label>
+              <label
+                htmlFor="text"
+                className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
+              >
+                Return
+              </label>
+            </div>
             {returnToggle ? (
               <div className="z-50 absolute">
                 <Calendar
@@ -243,6 +251,8 @@ const Home = () => {
             <div
               onClick={() => {
                 setCabinDrop(!cabinDrop);
+                setDepartToggle(false);
+                setReturnToggle(false);
               }}
               className="cursor-pointer"
             >
@@ -257,9 +267,8 @@ const Home = () => {
                 />
               </svg>
               <input
-                className="h-12 pl-10 border cursor-pointer text-[16px] pb-2 rounded px-2 text-gray-800 font-semibold  border-gray-400 focus:border-blue-500 bg-gray-100 outline-none"
+                className="h-12  pl-10 w-[190px] border cursor-pointer text-[16px] pb-2 rounded px-2 text-gray-800 font-semibold  border-gray-400 focus:border-blue-500 bg-gray-100 outline-none"
                 type="search"
-                placeholder="1 Travelers"
                 value={travelers}
                 onFocus={() => setIsClicked(true)}
                 onBlur={() => setIsClicked(false)}
@@ -279,10 +288,10 @@ const Home = () => {
               </label>
             </div>
             {cabinDrop ? (
-              <div className="flex flex-col text-gray-900 pt-4 bg-gray-100 shadow-md p-2">
+              <div className="flex flex-col text-gray-900 pt-4 bg-white rounded shadow-md p-2 absolute right-0">
                 <div className="relative py-2 px-1">
                   <input
-                    className={`h-12  w-[260px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none cursor-pointer  ${
+                    className={`h-12  w-[260px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-white outline-none cursor-pointer  ${
                       returnDate ? "font-semibold text-gray-800" : "font-normal"
                     }`}
                     type="search"
@@ -305,12 +314,12 @@ const Home = () => {
                   </svg>
                   <label
                     htmlFor="text"
-                    className="absolute -top-1 left-2 px-1 bg-gray-100 text-sm text-gray-500"
+                    className="absolute -top-1 left-2 px-1 bg-white text-sm text-gray-500"
                   >
                     Class
                   </label>
                   {cabinClassDrop ? (
-                    <div className="bg-gray-100 shadow-md space-y-1  flex flex-col">
+                    <div className="bg-white shadow-md space-y-1 pb-2 pt-1 mb-2 flex flex-col">
                       <button
                         className="text-left hover:bg-gray-300 px-2"
                         onClick={() => {
@@ -368,6 +377,11 @@ const Home = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
                       className="h-3 w-3"
+                      onClick={() => {
+                        if (adults > 1) {
+                          setAdults(adults - 1);
+                        }
+                      }}
                     >
                       <path
                         d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"
@@ -375,12 +389,15 @@ const Home = () => {
                       />
                     </svg>
                   </div>
-                  <div className="font-semibold ml-4">1</div>
+                  <div className="font-semibold ml-4">{adults}</div>
                   <div className="p-1 rounded-full mb-1 bg-gray-900 ml-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
                       className="h-3 w-3 "
+                      onClick={() => {
+                        setAdults(adults + 1);
+                      }}
                     >
                       <path
                         d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
@@ -406,6 +423,11 @@ const Home = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
                       className="h-3 w-3"
+                      onClick={() => {
+                        if (children > 0) {
+                          setChildren(children - 1);
+                        }
+                      }}
                     >
                       <path
                         d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"
@@ -413,12 +435,15 @@ const Home = () => {
                       />
                     </svg>
                   </div>
-                  <div className="font-semibold ml-4">1</div>
+                  <div className="font-semibold ml-4">{children}</div>
                   <div className="p-1 rounded-full mb-1 bg-gray-900 ml-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
                       className="h-3 w-3 "
+                      onClick={() => {
+                        setChildren(children + 1);
+                      }}
                     >
                       <path
                         d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
