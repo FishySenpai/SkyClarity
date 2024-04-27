@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import flightsJson from "../flights.json";
 import Flights from "./Flights/Flights";
 import Calendar from "react-calendar";
 import "./Calender/Sample.css";
-
+import useOutsideClick from "./useOutsideClick";
 const Home = () => {
   const [from, setFrom] = useState();
   const [to, setTo] = useState();
@@ -22,6 +22,9 @@ const Home = () => {
   const [cabinClassDrop, setCabinClassDrop] = useState(false);
   const [adults, setAdults] = useState(1);
   const [children, setChildren] = useState(0);
+  const departPopupRef = useRef(null);
+  const returnPopupRef = useRef(null);
+  const cabinPopupRef = useRef(null);
 
   const fetchLocation = async (locationType, location) => {
     const url = `https://skyscanner80.p.rapidapi.com/api/v1/flights/auto-complete?query=${location}&market=US&locale=en-US`;
@@ -82,6 +85,15 @@ const Home = () => {
       day: "2-digit",
     });
   };
+   useOutsideClick(departPopupRef, () => {
+     setDepartToggle(false);
+   });
+   useOutsideClick(returnPopupRef, () => {
+     setReturnToggle(false);
+   });
+   useOutsideClick(cabinPopupRef, () => {
+     setCabinDrop(false);
+   });
   useEffect(() => {
     setDepartToggle(false);
   }, [departDate]);
@@ -147,7 +159,7 @@ const Home = () => {
               To
             </label>
           </div>
-          <div>
+          <div ref={departPopupRef}>
             <div
               className="relative cursor-pointer h-fit"
               onClick={() => {
@@ -197,7 +209,7 @@ const Home = () => {
               </div>
             ) : null}
           </div>
-          <div>
+          <div ref={returnPopupRef}>
             <div
               className="relative cursor-pointer h-fit "
               onClick={() => {
@@ -247,8 +259,9 @@ const Home = () => {
               </div>
             ) : null}
           </div>
-          <div className="relative">
+          <div ref={cabinPopupRef} className="relative">
             <div
+              
               onClick={() => {
                 setCabinDrop(!cabinDrop);
                 setDepartToggle(false);
