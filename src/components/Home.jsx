@@ -16,7 +16,7 @@ const Home = () => {
   const [departDate, setDepartDate] = useState();
   const [returnToggle, setReturnToggle] = useState(false);
   const [returnDate, setReturnDate] = useState();
-  const [travelers, setTravelers] = useState("1 Travelers");
+  const [travelers, setTravelers] = useState("Travelers");
   const [cabinClass, setCabinClass] = useState("Economy");
   const [cabinDrop, setCabinDrop] = useState(false);
   const [cabinClassDrop, setCabinClassDrop] = useState(false);
@@ -260,8 +260,7 @@ const Home = () => {
             ) : null}
           </div>
           <div ref={cabinPopupRef} className="relative">
-            <div
-              
+            <div             
               onClick={() => {
                 setCabinDrop(!cabinDrop);
                 setDepartToggle(false);
@@ -282,7 +281,7 @@ const Home = () => {
               <input
                 className="h-12  pl-10 w-[190px] border cursor-pointer text-[16px] pb-2 rounded px-2 text-gray-800 font-semibold  border-gray-400 focus:border-blue-500 bg-gray-100 outline-none"
                 type="search"
-                value={travelers}
+                value={adults+children+ travelers}
                 onFocus={() => setIsClicked(true)}
                 onBlur={() => setIsClicked(false)}
                 readOnly
@@ -477,9 +476,9 @@ const Home = () => {
         </button>
         <button onClick={fetchFlights}>get flight</button>
       </div>
-      {/* <div>
+      <div>
         <Flights flights={flights} />
-      </div> */}
+      </div>
     </div>
   );
 };

@@ -22,10 +22,10 @@ const Navbar = () => {
                   Home
                 </Link>
                 <Link
-                  to="/about"
+                  to="/hotels"
                   className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  About
+                  Hotels
                 </Link>
                 <Link
                   to="/contact"

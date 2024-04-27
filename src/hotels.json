@@ -1,0 +1,2938 @@
+{
+  "priceType": "PRICE_PER_NIGHT",
+  "pricePolicy": "Taxes and fees not included",
+  "searchSummary": {
+    "total": 992,
+    "filteredTotal": 992,
+    "inboundTotal": 992,
+    "resultsSummary": "Taxes and fees not included | 992 results sorted by Best",
+    "sortBy": "-relevance",
+    "entity": {
+      "entityId": "27539520",
+      "entityType": "City",
+      "name": "Mumbai",
+      "coordinates": {
+        "latitude": 19.0464951548,
+        "longitude": 72.8691606193
+      },
+      "levelOfEntityType": "PoliticalTypes"
+    },
+    "location": [
+      {
+        "entityId": "44292298",
+        "entityType": "FirstLevelNationAdministrativeDivision",
+        "name": "Maharashtra"
+      },
+      {
+        "entityId": "29475284",
+        "entityType": "Nation",
+        "name": "India"
+      }
+    ]
+  },
+  "mapBoundary": {
+    "north": 19.18472458,
+    "east": 72.884505536,
+    "south": 18.912165062,
+    "west": 72.816758864
+  },
+  "hotelsRegion": {
+    "latitude": 19.081237350000002,
+    "longitude": 72.8620032,
+    "longitudeDelta": 0.04798640000000364,
+    "latitudeDelta": 0.0616927000000027
+  },
+  "hotelCards": [
+    {
+      "id": "205372860",
+      "name": "Hotel Guestinn Residency",
+      "stars": "2",
+      "distance": "0.55 miles from downtown",
+      "relevantPoiDistance": "1.29 miles from Dharavi Slum",
+      "coordinates": {
+        "latitude": 19.054391,
+        "longitude": 72.868095
+      },
+      "pivot": false,
+      "images": [
+        "https://content.skyscnr.com/available/1353403278/1353403278_WxH.jpg",
+        "https://content.skyscnr.com/available/1353403226/1353403226_WxH.jpg",
+        "https://content.skyscnr.com/available/1353403237/1353403237_WxH.jpg"
+      ],
+      "reviewsSummary": {
+        "score": 4.8,
+        "imageUrl": "",
+        "scoreDesc": "Excellent",
+        "total": 12,
+        "mostPopularWith": null
+      },
+      "confidentMessages": [],
+      "minPriceDbookRoomId": "ewogICJhZHVsdHMiOiAyLAogICJhdXRob3JpemF0aW9uX2luZm8iOiBbCiAgICB7CiAgICAgICJDb2RlIjogIlB1YmxpY1BhcmFtZXRlciIsCiAgICAgICJWYWx1ZSI6ICJINHNJQUFBQUFBQUFBRjJSVVV2RE1CU0YvMHRlWGVVMjY5cTZ0MjV6V0JoWW1IdXlJakhOTkN6ckhVa3FETmwvOXlhZGlFSWZlcitUNXB5ZSs4V3FiakNlelZuS0pteUp2ZFBPcTE2ZUc2dlJhbjhtaFpOU0wzWVA2SlZaYStPVkpmalZza3AzTFp1blBJZGkwckxsaDVLSHVsOEpyNGkyakFQUEVzaVNLYlRzUjM0Yy9EOTlsdkRacU9QUWUzdGVZamZLdSsySUxUcTNjOHBHdUs0MjIvdVJEODdqVWRuRzRrbFpmeWI1bVNMOWpFdHllVWNiTUV4K2NSMERaOW5saGVBR3BUQ2ptZXBmcjM2TkVYNlA5aGl4UmhmaGR2elJhVnBtczNEZEZnY3IxWjhqdTNpa1pjSVlMWHFwaGpCZnh1SWFkUFdLS29zdWlUaWRDRzhvWUdXdC9oVG1TUjlWYVBuYUI2UlBrTThCNkxrRmdCc282WTIrYUpSMTJOTmFwQnJydDNSRnZZcXV3Tk9ZUW9SZEV1SEJXZWd1ckRXc2h5WjlXaGlVaDJ2TmRiZWhQWk9jNTZRWmZJOEJVL0xqVUJScEVzSkF4Z3ZxcWd5eHlxd0FrZWZsakVNbVFMenR1VlIzeFY2Q0VoMmtVM2I1QmlJYmp5SklBZ0FBIgogICAgfSwKICAgIHsKICAgICAgIkNvZGUiOiAiTWluUHJpY2VfUGFydG5lcl9kYXRhIiwKICAgICAgIlZhbHVlIjogIkg0c0lBQUFBQUFBQUFFMlFzVzdESUJDRzMrWG14RG93R0p5MXpaQ2xxbEoxODNJbDJFV3lzV1hqS2xYa2R5K2dXaTNiZmY5OXY0QUhETTYvenM3WWkyOUhPTUdqU1dSS1pCN0hvWUZUSlBUVlpSSW5KbFhCRHcyRVFQYzRDczRLakdQYWRiZWNNNkhMU3NvcVVRcDI2c25uSkZ0am9INnZLbXRlRjZWV2tuR1pHNmRsaWhnTHpPZlh6MjREeUZrREVkRnQ3VU5xMjVMaUJyc0VHcExHRkJNY1VhTFFxRk0yazlsbEZ1czRLc1dPSExsQXdlT3UwRndjVVF1RlZGVmFjaFNFOU5GeVkydlZHclIwUTFZMnNNRUJXbmUveHB1Y2ZYRGhPMzRJakxQcm5LZithWjFuNjAxa2NIbTV4czA5T04vTkovbk81dGZvcWhieUFHWmR3amo4VTk3Zm5tSEhmMEw4WGxFSnVXMC9rb0FWM0pzQkFBQT0iCiAgICB9LAogICAgewogICAgICAiQ29kZSI6ICJGaXhDaGFuZ2VSYXRlIiwKICAgICAgIlZhbHVlIjogIkg0c0lBQUFBQUFBQUFLdFc4aS9LVE0vTVM4eHhMaTBxU3MxTHJsU3lVdkwwQzFMU1VmTE56QXNveWt4T0RjclB6d1VLR3BvYW1sZ1ltNW1hbWdIbDBEVzVWaVJuSk9hbHB3TFZHZWdaV0poWm1wZ0NWVG1YRnBmazU2WVdJUmtkR3V5Q1JRSkp1N21la1lrWlVIY3RBQklnRVdtYUFBQUEiCiAgICB9CiAgXSwKICAibWluaV9wcmljZV9yb29tX2lkIjogIjE1MTQ4MzY1NTYiLAogICJyYXRlX2lkIjogIjE1MTQ4MzY1NTYiCn0=",
+      "minPriceDbookPartnerId": "d_ct",
+      "inbound": true,
+      "lowestPrice": {
+        "price": "$20",
+        "rawPrice": 20,
+        "partnerId": "d_ct",
+        "partnerType": "OTA",
+        "partnerName": "Trip.com",
+        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/d_ct.png",
+        "isOfficial": false,
+        "funnelType": "dbook",
+        "cug": null,
+        "discount": null,
+        "amenities": []
+      },
+      "otherPrices": [],
+      "isUpSorted": false
+    },
+    {
+      "id": "213121424",
+      "name": "Hotel Amaan Palace",
+      "stars": "3",
+      "distance": "6.52 miles from downtown",
+      "relevantPoiDistance": "1.37 miles from Marine Drive",
+      "coordinates": {
+        "latitude": 18.957421,
+        "longitude": 72.836249
+      },
+      "pivot": false,
+      "images": [
+        "https://content.skyscnr.com/available/1478926579/1478926579_WxH.jpg",
+        "https://content.skyscnr.com/available/1034424890/1034424890_WxH.jpg",
+        "https://content.skyscnr.com/available/1466400372/1466400372_WxH.jpg"
+      ],
+      "reviewsSummary": {
+        "score": 5,
+        "imageUrl": "",
+        "scoreDesc": "Outstanding",
+        "total": 1,
+        "mostPopularWith": null
+      },
+      "confidentMessages": [
+        {
+          "type": "location",
+          "score": 5,
+          "icon": "thumbs-up",
+          "message": "Hotel location is rated 5/5"
+        }
+      ],
+      "minPriceDbookRoomId": null,
+      "minPriceDbookPartnerId": null,
+      "inbound": true,
+      "lowestPrice": {
+        "price": "$3",
+        "rawPrice": 3,
+        "partnerId": "h_ei",
+        "partnerType": "OTA",
+        "partnerName": "Edreams",
+        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_ei.png",
+        "isOfficial": false,
+        "funnelType": "meta",
+        "cug": null,
+        "discount": null,
+        "amenities": [
+          {
+            "key": "free_cancellation",
+            "text": "Free cancellation"
+          }
+        ]
+      },
+      "otherPrices": [],
+      "isUpSorted": false
+    },
+    {
+      "id": "47031901",
+      "name": "Sofitel Mumbai BKC",
+      "stars": "5",
+      "distance": "1.45 miles from downtown",
+      "relevantPoiDistance": "1.82 miles from Mumbai",
+      "coordinates": {
+        "latitude": 19.0674785,
+        "longitude": 72.8690412
+      },
+      "pivot": false,
+      "images": [
+        "https://content.skyscnr.com/available/1214140963/1214140963_WxH.jpg",
+        "https://content.skyscnr.com/available/1214140971/1214140971_WxH.jpg",
+        "https://content.skyscnr.com/available/1278452517/1278452517_WxH.jpg"
+      ],
+      "reviewsSummary": {
+        "score": 5,
+        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/5.0-64600-4.svg",
+        "scoreDesc": "Outstanding",
+        "total": 8550,
+        "mostPopularWith": "Great for business travelers"
+      },
+      "confidentMessages": [
+        {
+          "type": "location",
+          "score": 4.5,
+          "icon": "thumbs-up",
+          "message": "Hotel location is rated 4.5/5"
+        }
+      ],
+      "minPriceDbookRoomId": null,
+      "minPriceDbookPartnerId": null,
+      "inbound": true,
+      "lowestPrice": {
+        "price": "$86",
+        "rawPrice": 86,
+        "partnerId": "h_11",
+        "partnerType": "OTA",
+        "partnerName": "SuperTravel",
+        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_11.png",
+        "isOfficial": false,
+        "funnelType": "meta",
+        "cug": null,
+        "discount": null,
+        "amenities": []
+      },
+      "otherPrices": [],
+      "isUpSorted": false
+    },
+    {
+      "id": "203712534",
+      "name": "Lemon Tree Premier, Mumbai International Airport",
+      "stars": "4",
+      "distance": "4.34 miles from downtown",
+      "relevantPoiDistance": "0.17 miles from Marol Naka station",
+      "coordinates": {
+        "latitude": 19.1080837,
+        "longitude": 72.8819964
+      },
+      "pivot": false,
+      "images": [
+        "https://content.skyscnr.com/available/1353160646/1353160646_WxH.jpg",
+        "https://content.skyscnr.com/available/1353160640/1353160640_WxH.jpg",
+        "https://content.skyscnr.com/available/1319294569/1319294569_WxH.jpg"
+      ],
+      "reviewsSummary": {
+        "score": 4.5,
+        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.svg",
+        "scoreDesc": "Excellent",
+        "total": 1587,
+        "mostPopularWith": null
+      },
+      "confidentMessages": [
+        {
+          "type": "location",
+          "score": 4.5,
+          "icon": "thumbs-up",
+          "message": "Hotel location is rated 4.5/5"
+        }
+      ],
+      "minPriceDbookRoomId": null,
+      "minPriceDbookPartnerId": null,
+      "inbound": true,
+      "lowestPrice": {
+        "price": "$85",
+        "rawPrice": 85,
+        "partnerId": "h_zh",
+        "partnerType": "OTA",
+        "partnerName": "ZenHotels",
+        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_zh.png",
+        "isOfficial": false,
+        "funnelType": "meta",
+        "cug": null,
+        "discount": null,
+        "amenities": []
+      },
+      "otherPrices": [],
+      "isUpSorted": false
+    },
+    {
+      "id": "47029991",
+      "name": "Ramada Plaza by Wyndham Palm Grove",
+      "stars": "5",
+      "distance": "4.52 miles from downtown",
+      "relevantPoiDistance": "1.74 miles from Mumbai",
+      "coordinates": {
+        "latitude": 19.09877,
+        "longitude": 72.82747
+      },
+      "pivot": false,
+      "images": [
+        "https://content.skyscnr.com/available/1359138112/1359138112_WxH.jpg",
+        "https://content.skyscnr.com/available/492917280/492917280_WxH.jpg",
+        "https://content.skyscnr.com/available/1302958414/1302958414_WxH.jpg"
+      ],
+      "reviewsSummary": {
+        "score": 4.5,
+        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.svg",
+        "scoreDesc": "Excellent",
+        "total": 2462,
+        "mostPopularWith": "Great for families"
+      },
+      "confidentMessages": [
+        {
+          "type": "location",
+          "score": 4.5,
+          "icon": "thumbs-up",
+          "message": "Hotel location is rated 4.5/5"
+        }
+      ],
+      "minPriceDbookRoomId": "ewogICJhZHVsdHMiOiAxLAogICJhdXRob3JpemF0aW9uX2luZm8iOiBbCiAgICB7CiAgICAgICJDb2RlIjogIlB1YmxpY1BhcmFtZXRlciIsCiAgICAgICJWYWx1ZSI6ICJINHNJQUFBQUFBQUFBRjJSVVV2RE1CU0YvMHRlWGVVbWE3dHViM05UTEF3c3pEMVprWmhtR3N4NlI1SUtRL2JmdlVrbm90Q0gzdStrT2FmbmZyRmxOOWpBRm95ekNWdGg3NDBQdWxlbnhobDBKcHhJRWFUVU43dDdETnJlR1J1MEkvalZzcVhwV3JiZ29vVFpwR1dyZDYwKzZuNHRneWJhTWdFaXp5RFBwdEN5SC9saENQLzBJaFBGcU9QUUIzZGFZVGZLdSsySUhYcS84OW9sZUxmY2JHOUhQdmlBQiswYWgwZnR3b25rSjRyME02N0k1UTFkeERENXhYVUtuT2ZuWjRJYlZOS09acnAvdWZnMVZvWTl1a1BDQm4yQzIvRkhwN3pLaTNqZEZnZW45SjhqdTNTa1pkSmFJM3VsaHppZngrSWE5UFdhS2tzdW1Ud2VDVzhvNE5JNTh5bnRvem5vMlBLbEQrQ1BVQzRBNkxrR2dDdW82STIrYUxUejJOTmFsQjdyZDNSRnZVNnV3SGxLSWVNdVk5VG9MRTBYMXhyWFE1TTUzbGhVSDVlYTYyNURleWE1TEVteitKWUNjdklUTUp2eExJYUJYTXlvcTRwaVRmbGVGSE5WQ3JrWGVhSGhkVjZJYXY2NkwxVE9lVlZVN1B3TjJoNUxqRWdDQUFBPSIKICAgIH0sCiAgICB7CiAgICAgICJDb2RlIjogIk1pblByaWNlX1BhcnRuZXJfZGF0YSIsCiAgICAgICJWYWx1ZSI6ICJINHNJQUFBQUFBQUFBR1dRd1c2RUlCQ0czMlhPdXdaR1FQSGE3cUczcGsxdlhsaFdMWW1pUVd4c05yNTdCN2VlbHR0ODgvOWZnRHNNenI4SFo1czMzNDVRd2IxT1pFb2tqT05RUTBYRS9IUTdvVWxqbnVWNHFpRkdzOUtjSzlSWm9RbWt1THNSNHNnTEpwVEtWYUltTmxOdi9HT1RlbU0wL1dIRG5KV1lhUzVRQzdsTHAza2l6aksybjMvQlhxNkJjVjRESVhOYitwaDBXNnE0b1ptakdWS05GMlJpVERKUjRxNEx4aDVsVGpwa1JjSFB5RkF3Z1pTbG1Eam52RVdwclVMVG9wQU51MnFKcGI2MjBnck9TMW5Xc01FSldyZCswRTB1UHJyNFM1OENZM0NkODZaL1dVSm92Q1VHWDUrdmxEd1dsOVYrRzk4MVVCVVpDa1h2QTd2TWNSeWVHZy84bE4rMlB4aHAvVWFlQVFBQSIKICAgIH0sCiAgICB7CiAgICAgICJDb2RlIjogIkZpeENoYW5nZVJhdGUiLAogICAgICAiVmFsdWUiOiAiSDRzSUFBQUFBQUFBQUt0VzhpL0tUTS9NUzh4eExpMHFTczFMcmxTeVVnb05kbEhTVWZMTnpBc295a3hPRGNyUHp3VUtHaG9abWh1WW1Ka1ptd0hsMERXNVZpUm5KT2FscHdMVm1lc1ptWmlabUFJVk9aY1dsK1RucGhaaG1Jd3VnVVYzTFFDUitvcXhtUUFBQUE9PSIKICAgIH0KICBdLAogICJtaW5pX3ByaWNlX3Jvb21faWQiOiAiMTIxNzA0NjYzNiIsCiAgInJhdGVfaWQiOiAiMTIxNzA0NjYzNiIKfQ==",
+      "minPriceDbookPartnerId": "d_ct",
+      "inbound": true,
+      "lowestPrice": {
+        "price": "$108",
+        "rawPrice": 108,
+        "partnerId": "d_ct",
+        "partnerType": "OTA",
+        "partnerName": "Trip.com",
+        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/d_ct.png",
+        "isOfficial": false,
+        "funnelType": "dbook",
+        "cug": null,
+        "discount": null,
+        "amenities": [
+          {
+            "key": "free_cancellation",
+            "text": "Free cancellation"
+          },
+          {
+            "key": "breakfast_included",
+            "text": "Breakfast included"
+          }
+        ]
+      },
+      "otherPrices": [],
+      "isUpSorted": false
+    },
+    {
+      "id": "214030092",
+      "name": "Hotel Apex International",
+      "stars": "3",
+      "distance": "3.83 miles from downtown",
+      "relevantPoiDistance": "0.48 miles from Saki Naka station",
+      "coordinates": {
+        "latitude": 19.10065,
+        "longitude": 72.881442
+      },
+      "pivot": false,
+      "images": [
+        "https://content.skyscnr.com/available/1283767291/1283767291_WxH.jpg",
+        "https://content.skyscnr.com/available/1180224042/1180224042_WxH.jpg",
+        "https://content.skyscnr.com/available/1361784330/1361784330_WxH.jpg"
+      ],
+      "reviewsSummary": {
+        "score": 4.5,
+        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.svg",
+        "scoreDesc": "Excellent",
+        "total": 18,
+        "mostPopularWith": "Great for business travelers"
+      },
+      "confidentMessages": [],
+      "minPriceDbookRoomId": null,
+      "minPriceDbookPartnerId": null,
+      "inbound": true,
+      "lowestPrice": {
+        "price": "$25",
+        "rawPrice": 25,
+        "partnerId": "h_hc",
+        "partnerType": "OTA",
+        "partnerName": "Hotels.com",
+        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_hc.png",
+        "isOfficial": false,
+        "funnelType": "meta",
+        "cug": {
+          "rawType": "general",
+          "type": "general",
+          "discountBadge": "11% off",
+          "label": null,
+          "originalPrice": "$28",
+          "discountPercentage": 11
+        },
+        "discount": null,
+        "amenities": [
+          {
+            "key": "free_cancellation",
+            "text": "Free cancellation"
+          }
+        ]
+      },
+      "otherPrices": [],
+      "isUpSorted": false
+    },
+    {
+      "id": "47027042",
+      "name": "Novotel Mumbai Juhu Beach",
+      "stars": "5",
+      "distance": "5.20 miles from downtown",
+      "relevantPoiDistance": "0.56 miles from HSBC JW Marriott Juhu",
+      "coordinates": {
+        "latitude": 19.108725,
+        "longitude": 72.824338
+      },
+      "pivot": false,
+      "images": [
+        "https://content.skyscnr.com/available/1394113579/1394113579_WxH.jpg",
+        "https://content.skyscnr.com/available/1379020534/1379020534_WxH.jpg",
+        "https://content.skyscnr.com/available/1303569128/1303569128_WxH.jpg"
+      ],
+      "reviewsSummary": {
+        "score": 4,
+        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-64600-4.svg",
+        "scoreDesc": "Very Good",
+        "total": 4027,
+        "mostPopularWith": null
+      },
+      "confidentMessages": [
+        {
+          "type": "location",
+          "score": 4.5,
+          "icon": "thumbs-up",
+          "message": "Hotel location is rated 4.5/5"
+        }
+      ],
+      "minPriceDbookRoomId": null,
+      "minPriceDbookPartnerId": null,
+      "inbound": true,
+      "lowestPrice": {
+        "price": "$103",
+        "rawPrice": 103,
+        "partnerId": "h_11",
+        "partnerType": "OTA",
+        "partnerName": "SuperTravel",
+        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_11.png",
+        "isOfficial": false,
+        "funnelType": "meta",
+        "cug": null,
+        "discount": null,
+        "amenities": []
+      },
+      "otherPrices": [],
+      "isUpSorted": false
+    },
+    {
+      "id": "46956572",
+      "name": "Taj Lands End",
+      "stars": "5",
+      "distance": "3.26 miles from downtown",
+      "relevantPoiDistance": "1.59 miles from Bandra railway station",
+      "coordinates": {
+        "latitude": 19.043912,
+        "longitude": 72.819268
+      },
+      "pivot": false,
+      "images": [
+        "https://content.skyscnr.com/available/1395219591/1395219591_WxH.jpg",
+        "https://content.skyscnr.com/available/1395219718/1395219718_WxH.jpg",
+        "https://content.skyscnr.com/available/1395219279/1395219279_WxH.jpg"
+      ],
+      "reviewsSummary": {
+        "score": 4.5,
+        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.svg",
+        "scoreDesc": "Excellent",
+        "total": 7295,
+        "mostPopularWith": null
+      },
+      "confidentMessages": [
+        {
+          "type": "location",
+          "score": 4.5,
+          "icon": "thumbs-up",
+          "message": "Hotel location is rated 4.5/5"
+        }
+      ],
+      "minPriceDbookRoomId": null,
+      "minPriceDbookPartnerId": null,
+      "inbound": true,
+      "lowestPrice": {
+        "price": "$130",
+        "rawPrice": 130,
+        "partnerId": "h_11",
+        "partnerType": "OTA",
+        "partnerName": "SuperTravel",
+        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_11.png",
+        "isOfficial": false,
+        "funnelType": "meta",
+        "cug": null,
+        "discount": null,
+        "amenities": []
+      },
+      "otherPrices": [],
+      "isUpSorted": false
+    },
+    {
+      "id": "140170484",
+      "name": "Hotel Palace Residency Near Lokmanya Tilak Terminus",
+      "stars": "2",
+      "distance": "0.65 miles from downtown",
+      "relevantPoiDistance": "1.41 miles from Dharavi Slum",
+      "coordinates": {
+        "latitude": 19.055926,
+        "longitude": 72.869259
+      },
+      "pivot": false,
+      "images": [
+        "https://content.skyscnr.com/available/1248208425/1248208425_WxH.jpg",
+        "https://content.skyscnr.com/available/1248208411/1248208411_WxH.jpg",
+        "https://content.skyscnr.com/available/1248208402/1248208402_WxH.jpg"
+      ],
+      "reviewsSummary": {
+        "score": 4,
+        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-64600-4.svg",
+        "scoreDesc": "Very Good",
+        "total": 14,
+        "mostPopularWith": null
+      },
+      "confidentMessages": [
+        {
+          "type": "location",
+          "score": 4.5,
+          "icon": "thumbs-up",
+          "message": "Hotel location is rated 4.5/5"
+        }
+      ],
+      "minPriceDbookRoomId": null,
+      "minPriceDbookPartnerId": null,
+      "inbound": true,
+      "lowestPrice": {
+        "price": "$21",
+        "rawPrice": 21,
+        "partnerId": "h_ei",
+        "partnerType": "OTA",
+        "partnerName": "Edreams",
+        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_ei.png",
+        "isOfficial": false,
+        "funnelType": "meta",
+        "cug": null,
+        "discount": null,
+        "amenities": []
+      },
+      "otherPrices": [],
+      "isUpSorted": false
+    },
+    {
+      "id": "212752575",
+      "name": "Hotel Olten",
+      "stars": "4",
+      "distance": "5.17 miles from downtown",
+      "relevantPoiDistance": "1.31 miles from Dinanath Mangeshkar Natyagruha",
+      "coordinates": {
+        "latitude": 19.118634,
+        "longitude": 72.847837
+      },
+      "pivot": false,
+      "images": [
+        "https://content.skyscnr.com/available/1459128371/1459128371_WxH.jpg",
+        "https://content.skyscnr.com/available/1220487090/1220487090_WxH.jpg",
+        "https://content.skyscnr.com/available/1353868100/1353868100_WxH.jpg"
+      ],
+      "reviewsSummary": {
+        "score": 5,
+        "imageUrl": "",
+        "scoreDesc": "Outstanding",
+        "total": 1,
+        "mostPopularWith": null
+      },
+      "confidentMessages": [],
+      "minPriceDbookRoomId": null,
+      "minPriceDbookPartnerId": null,
+      "inbound": true,
+      "lowestPrice": {
+        "price": "$51",
+        "rawPrice": 51,
+        "partnerId": "h_ei",
+        "partnerType": "OTA",
+        "partnerName": "Edreams",
+        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_ei.png",
+        "isOfficial": false,
+        "funnelType": "meta",
+        "cug": null,
+        "discount": null,
+        "amenities": [
+          {
+            "key": "free_cancellation",
+            "text": "Free cancellation"
+          }
+        ]
+      },
+      "otherPrices": [],
+      "isUpSorted": false
+    },
+    {
+      "id": "205739919",
+      "name": "Hotel Pearl View - Near US Embassy BKC",
+      "stars": "3",
+      "distance": "0.56 miles from downtown",
+      "relevantPoiDistance": "1.31 miles from Dharavi Slum",
+      "coordinates": {
+        "latitude": 19.05451,
+        "longitude": 72.86824
+      },
+      "pivot": false,
+      "images": [
+        "https://content.skyscnr.com/available/1460315752/1460315752_WxH.jpg",
+        "https://content.skyscnr.com/available/1098697312/1098697312_WxH.jpg",
+        "https://content.skyscnr.com/available/1479424243/1479424243_WxH.jpg"
+      ],
+      "reviewsSummary": null,
+      "confidentMessages": [],
+      "minPriceDbookRoomId": "ewogICJhZHVsdHMiOiAyLAogICJhdXRob3JpemF0aW9uX2luZm8iOiBbCiAgICB7CiAgICAgICJDb2RlIjogIlB1YmxpY1BhcmFtZXRlciIsCiAgICAgICJWYWx1ZSI6ICJINHNJQUFBQUFBQUFBRjJSVVV2RE1CU0YvMHRlWGVVMjY5cTZ0N2twRmdZVzVwNnNTR3p2WmpEckhVa3FETmwvOXlhZGlFSWZlcitUNXB5ZSt5VVczV0M4bUl0VVRNU1NlcWVkeDc0OTFWYVQxZjdFaW1TbHV0MCtrRWR6cjQxSHkvQ3JFUXZkTldLZXloeUtTU09XNzloK1ZQMUtlV1RhQ0FreVN5QkxwdENJSC9seDhQLzBXU0pubzA1RDcrMXBTZDBvYnpjanR1VGMxcUdOOEg2eDN0eU5mSENlRG1oclMwZTAvc1R5TTBmNkdaZnNzaWNiTUV4K2NSVURaOW41aGVHYVdtVkdNK3hmTDM2MVVYNUg5aEN4SmhmaFp2elJhVnBtczNEZGhnYmI0cDhqMjNpa0Vjb1lyZm9XaHpDZngrSnFjdFdLSzRzdWlUb2VHYTg1NE1KYS9hbk1rejVnYVBuU0I2UlBrTThCK0xrR2dDc28rWTIvcU5FNjZua3RMWTcxVzc2aVdrVlhrR2xNb2NJdW1jamdySFFYMWhyV3c1TSszaHBxUHk0MVY5MmE5OHh5bnJObWFCOERwdXdub1NqU0pJU0JUQmJjVlJsaVlZbHdvNHBwMnJVWmRtOWxxZkxkRzBJK20yS1psMHFjdndITmVPYjlTQUlBQUE9PSIKICAgIH0sCiAgICB7CiAgICAgICJDb2RlIjogIk1pblByaWNlX1BhcnRuZXJfZGF0YSIsCiAgICAgICJWYWx1ZSI6ICJINHNJQUFBQUFBQUFBR1dRc1c2RE1CQ0czK1htQkoyTmpRMXJtNkZiMWFvYnl3VU1zUVFHZ1ZPbGluajNubWt6eGR0OTkzKy9UcjdENk1QNzRodjNGcm9KS3JqWGljeUpMTk0wMWxBeG9lOStKenhKVVdab0R6WEVTRGVldFMweW0vT2MwcjVsSW1TSnVrQ2JxMFFwdW5tZ3NHOWswcVpJdzZOTUsyTzRUZVdZNjcxeVhtZkdtT0grL3YzZHJRR2xxSUVSdGRjaHByWXRLWDUwYTZReGFjSUlKUkUxS2l0TjJpM1VQR1RCZFJLTkVVZUpVcUdTbk9XWU9xS3pEa3N5dVdnYjVkcXp0VlIwWjRlRnpwMHRMTld3d1FFNmYvdmdTMDRoK3ZqRFh3TFQ0bnNmYUhpNUxvc0xEVFA0K256bDVHTnh1alVYQ3IyRHltUlNGVW9mb0xtdWNScWZqRC84bE4rMlgyazllMkNjQVFBQSIKICAgIH0sCiAgICB7CiAgICAgICJDb2RlIjogIkZpeENoYW5nZVJhdGUiLAogICAgICAiVmFsdWUiOiAiSDRzSUFBQUFBQUFBQUt0VzhpL0tUTS9NUzh4eExpMHFTczFMcmxTeVVnb05kbEhTVWZMTnpBc295a3hPRGNyUHp3VUtHaHBaR3BpYUdWZ1ltd0RsMERXNVZpUm5KT2FscHdMVm1lc1ptWmlabUFJVk9aY1dsK1RucGhaaG1Jd3VnVVYzTFFBQ0FTNGttUUFBQUE9PSIKICAgIH0KICBdLAogICJtaW5pX3ByaWNlX3Jvb21faWQiOiAiMTI5MDU2MDgzNCIsCiAgInJhdGVfaWQiOiAiMTI5MDU2MDgzNCIKfQ==",
+      "minPriceDbookPartnerId": "d_ct",
+      "inbound": true,
+      "lowestPrice": {
+        "price": "$27",
+        "rawPrice": 27,
+        "partnerId": "d_ct",
+        "partnerType": "OTA",
+        "partnerName": "Trip.com",
+        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/d_ct.png",
+        "isOfficial": false,
+        "funnelType": "dbook",
+        "cug": null,
+        "discount": null,
+        "amenities": [
+          {
+            "key": "free_cancellation",
+            "text": "Free cancellation"
+          }
+        ]
+      },
+      "otherPrices": [],
+      "isUpSorted": false
+    },
+    {
+      "id": "46975171",
+      "name": "Trident Bandra Kurla",
+      "stars": "5",
+      "distance": "1.40 miles from downtown",
+      "relevantPoiDistance": "1.81 miles from Mumbai",
+      "coordinates": {
+        "latitude": 19.06664,
+        "longitude": 72.86753
+      },
+      "pivot": false,
+      "images": [
+        "https://content.skyscnr.com/available/948656311/948656311_WxH.jpg",
+        "https://content.skyscnr.com/available/948656302/948656302_WxH.jpg",
+        "https://content.skyscnr.com/available/1270091830/1270091830_WxH.jpg"
+      ],
+      "reviewsSummary": {
+        "score": 4.5,
+        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.svg",
+        "scoreDesc": "Excellent",
+        "total": 6709,
+        "mostPopularWith": null
+      },
+      "confidentMessages": [
+        {
+          "type": "location",
+          "score": 4.5,
+          "icon": "thumbs-up",
+          "message": "Hotel location is rated 4.5/5"
+        }
+      ],
+      "minPriceDbookRoomId": null,
+      "minPriceDbookPartnerId": null,
+      "inbound": true,
+      "lowestPrice": {
+        "price": "$150",
+        "rawPrice": 150,
+        "partnerId": "h_ei",
+        "partnerType": "OTA",
+        "partnerName": "Edreams",
+        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_ei.png",
+        "isOfficial": false,
+        "funnelType": "meta",
+        "cug": null,
+        "discount": null,
+        "amenities": [
+          {
+            "key": "free_cancellation",
+            "text": "Free cancellation"
+          }
+        ]
+      },
+      "otherPrices": [],
+      "isUpSorted": false
+    },
+    {
+      "id": "95820742",
+      "name": "The Orchid Hotel Mumbai Vile Parle",
+      "stars": "5",
+      "distance": "3.63 miles from downtown",
+      "relevantPoiDistance": "0.67 miles from Mumbai",
+      "coordinates": {
+        "latitude": 19.097315,
+        "longitude": 72.854958
+      },
+      "pivot": false,
+      "images": [
+        "https://content.skyscnr.com/available/1316520484/1316520484_WxH.jpg",
+        "https://content.skyscnr.com/available/1217516836/1217516836_WxH.jpg",
+        "https://content.skyscnr.com/available/1316520192/1316520192_WxH.jpg"
+      ],
+      "reviewsSummary": {
+        "score": 4.5,
+        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.svg",
+        "scoreDesc": "Excellent",
+        "total": 5566,
+        "mostPopularWith": "Great for business travelers"
+      },
+      "confidentMessages": [
+        {
+          "type": "location",
+          "score": 4.5,
+          "icon": "thumbs-up",
+          "message": "Hotel location is rated 4.5/5"
+        }
+      ],
+      "minPriceDbookRoomId": null,
+      "minPriceDbookPartnerId": null,
+      "inbound": true,
+      "lowestPrice": {
+        "price": "$113",
+        "rawPrice": 113,
+        "partnerId": "h_11",
+        "partnerType": "OTA",
+        "partnerName": "SuperTravel",
+        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_11.png",
+        "isOfficial": false,
+        "funnelType": "meta",
+        "cug": null,
+        "discount": null,
+        "amenities": []
+      },
+      "otherPrices": [],
+      "isUpSorted": false
+    },
+    {
+      "id": "46982552",
+      "name": "Hotel Milan International",
+      "stars": "3",
+      "distance": "3.38 miles from downtown",
+      "relevantPoiDistance": "0.63 miles from Mumbai",
+      "coordinates": {
+        "latitude": 19.088208,
+        "longitude": 72.84201
+      },
+      "pivot": false,
+      "images": [
+        "https://content.skyscnr.com/available/1455793108/1455793108_WxH.jpg",
+        "https://content.skyscnr.com/available/975077680/975077680_WxH.jpg",
+        "https://content.skyscnr.com/available/951115399/951115399_WxH.jpg"
+      ],
+      "reviewsSummary": {
+        "score": 3.5,
+        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/3.5-64600-4.svg",
+        "scoreDesc": "Good",
+        "total": 27,
+        "mostPopularWith": null
+      },
+      "confidentMessages": [],
+      "minPriceDbookRoomId": null,
+      "minPriceDbookPartnerId": null,
+      "inbound": true,
+      "lowestPrice": {
+        "price": "$37",
+        "rawPrice": 37,
+        "partnerId": "h_11",
+        "partnerType": "OTA",
+        "partnerName": "SuperTravel",
+        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_11.png",
+        "isOfficial": false,
+        "funnelType": "meta",
+        "cug": null,
+        "discount": null,
+        "amenities": []
+      },
+      "otherPrices": [],
+      "isUpSorted": false
+    },
+    {
+      "id": "147905089",
+      "name": "The Fern - Goregaon",
+      "stars": "5",
+      "distance": "8.03 miles from downtown",
+      "relevantPoiDistance": "0.80 miles from Bombay Exhibition Centre",
+      "coordinates": {
+        "latitude": 19.162199,
+        "longitude": 72.857016
+      },
+      "pivot": false,
+      "images": [
+        "https://content.skyscnr.com/available/1180428307/1180428307_WxH.jpg",
+        "https://content.skyscnr.com/available/1180428311/1180428311_WxH.jpg",
+        "https://content.skyscnr.com/available/1192806538/1192806538_WxH.jpg"
+      ],
+      "reviewsSummary": {
+        "score": 5,
+        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/5.0-64600-4.svg",
+        "scoreDesc": "Outstanding",
+        "total": 2300,
+        "mostPopularWith": "Great for business travelers"
+      },
+      "confidentMessages": [
+        {
+          "type": "location",
+          "score": 4.5,
+          "icon": "thumbs-up",
+          "message": "Hotel location is rated 4.5/5"
+        }
+      ],
+      "minPriceDbookRoomId": null,
+      "minPriceDbookPartnerId": null,
+      "inbound": true,
+      "lowestPrice": {
+        "price": "$103",
+        "rawPrice": 103,
+        "partnerId": "h_11",
+        "partnerType": "OTA",
+        "partnerName": "SuperTravel",
+        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_11.png",
+        "isOfficial": false,
+        "funnelType": "meta",
+        "cug": null,
+        "discount": null,
+        "amenities": []
+      },
+      "otherPrices": [],
+      "isUpSorted": false
+    }
+  ],
+  "filters": [
+    {
+      "type": "price_buckets",
+      "title": "Price",
+      "values": [
+        {
+          "id": "PR_BK_0",
+          "label": "PR_BK_0",
+          "minPrice": 0,
+          "maxPrice": 500,
+          "count": 197,
+          "uniqueId": "price_buckets_PR_BK_0"
+        },
+        {
+          "id": "PR_BK_1",
+          "label": "PR_BK_1",
+          "minPrice": 500,
+          "maxPrice": 1000,
+          "count": 441,
+          "uniqueId": "price_buckets_PR_BK_1"
+        },
+        {
+          "id": "PR_BK_2",
+          "label": "PR_BK_2",
+          "minPrice": 1000,
+          "maxPrice": 1500,
+          "count": 159,
+          "uniqueId": "price_buckets_PR_BK_2"
+        },
+        {
+          "id": "PR_BK_3",
+          "label": "PR_BK_3",
+          "minPrice": 1500,
+          "maxPrice": 2000,
+          "count": 78,
+          "uniqueId": "price_buckets_PR_BK_3"
+        },
+        {
+          "id": "PR_BK_4",
+          "label": "PR_BK_4",
+          "minPrice": 2000,
+          "maxPrice": 2500,
+          "count": 48,
+          "uniqueId": "price_buckets_PR_BK_4"
+        },
+        {
+          "id": "PR_BK_5",
+          "label": "PR_BK_5",
+          "minPrice": 2500,
+          "maxPrice": null,
+          "count": 69,
+          "uniqueId": "price_buckets_PR_BK_5"
+        }
+      ]
+    },
+    {
+      "title": "Book with peace of mind",
+      "type": "confident_type",
+      "values": [
+        {
+          "id": "free_cancellation",
+          "uniqueId": "cancellation_free_cancellation",
+          "count": 847,
+          "label": "Free cancellation"
+        },
+        {
+          "id": "RoomRates_option_payOnArrival",
+          "uniqueId": "pay_type_RoomRates_option_payOnArrival",
+          "count": 139,
+          "label": "Pay on arrival"
+        }
+      ]
+    },
+    {
+      "type": "stars",
+      "title": "Star rating",
+      "values": [
+        {
+          "id": "5",
+          "label": "5 stars",
+          "icon": "star",
+          "count": 35,
+          "uniqueId": "stars_5"
+        },
+        {
+          "id": "4",
+          "label": "4 stars",
+          "icon": "star",
+          "count": 52,
+          "uniqueId": "stars_4"
+        },
+        {
+          "id": "3",
+          "label": "3 stars",
+          "icon": "star",
+          "count": 443,
+          "uniqueId": "stars_3"
+        },
+        {
+          "id": "2",
+          "label": "2 stars",
+          "icon": "star",
+          "count": 159,
+          "uniqueId": "stars_2"
+        },
+        {
+          "id": "1",
+          "label": "1 star",
+          "icon": "star",
+          "count": 33,
+          "uniqueId": "stars_1"
+        },
+        {
+          "id": "no_stars",
+          "label": "Unrated",
+          "icon": null,
+          "count": 270,
+          "uniqueId": "stars_no_stars"
+        }
+      ]
+    },
+    {
+      "type": "meal_plan",
+      "title": "Meal plan",
+      "values": [
+        {
+          "id": "breakfast_included",
+          "label": "Breakfast included",
+          "count": 504,
+          "uniqueId": "meal_plan_breakfast_included"
+        },
+        {
+          "id": "RoomRates_label_mealsNotIncluded",
+          "label": "Meals not included",
+          "count": 832,
+          "uniqueId": "meal_plan_RoomRates_label_mealsNotIncluded"
+        }
+      ]
+    },
+    {
+      "type": "rating",
+      "title": "Guest rating",
+      "values": [
+        {
+          "id": "3",
+          "label": "3+ Satisfactory",
+          "count": 70,
+          "uniqueId": "rating_3"
+        },
+        {
+          "id": "3.5",
+          "label": "3.5+ Good",
+          "count": 78,
+          "uniqueId": "rating_3.5"
+        },
+        {
+          "id": "4",
+          "label": "4+ Very Good",
+          "count": 73,
+          "uniqueId": "rating_4"
+        },
+        {
+          "id": "4.5",
+          "label": "4.5+ Excellent",
+          "count": 83,
+          "uniqueId": "rating_4.5"
+        },
+        {
+          "id": "5",
+          "label": "5+ Outstanding",
+          "count": 46,
+          "uniqueId": "rating_5"
+        }
+      ]
+    },
+    {
+      "type": "guest_type",
+      "title": "Popular with",
+      "values": [
+        {
+          "id": "business",
+          "label": "Business travelers",
+          "count": 38,
+          "uniqueId": "guest_type_business"
+        },
+        {
+          "id": "couple",
+          "label": "Couples",
+          "count": 4,
+          "uniqueId": "guest_type_couple"
+        },
+        {
+          "id": "family",
+          "label": "Families",
+          "count": 30,
+          "uniqueId": "guest_type_family"
+        },
+        {
+          "id": "solo",
+          "label": "Solo travelers",
+          "count": 0,
+          "uniqueId": "guest_type_solo"
+        }
+      ]
+    },
+    {
+      "type": "chain",
+      "title": "Hotel chain",
+      "values": [
+        {
+          "id": "203712798",
+          "label": "OYO",
+          "count": 13,
+          "uniqueId": "chain_203712798"
+        },
+        {
+          "id": "90718434,90718511,90718589",
+          "label": "Accor Hotels",
+          "count": 6,
+          "uniqueId": "chain_90718434,90718511,90718589"
+        },
+        {
+          "id": "90718613",
+          "label": "Taj",
+          "count": 4,
+          "uniqueId": "chain_90718613"
+        },
+        {
+          "id": "90718742,90718378,90718338",
+          "label": "Marriott International",
+          "count": 4,
+          "uniqueId": "chain_90718742,90718378,90718338"
+        },
+        {
+          "id": "90718515",
+          "label": "Oberoi",
+          "count": 2,
+          "uniqueId": "chain_90718515"
+        },
+        {
+          "id": "90718423,90718441",
+          "label": "InterContinental Hotels Group",
+          "count": 2,
+          "uniqueId": "chain_90718423,90718441"
+        },
+        {
+          "id": "90718807",
+          "label": "The Leela",
+          "count": 1,
+          "uniqueId": "chain_90718807"
+        },
+        {
+          "id": "90718542",
+          "label": "Wyndham Hotel Group",
+          "count": 1,
+          "uniqueId": "chain_90718542"
+        },
+        {
+          "id": "90718422",
+          "label": "Hilton",
+          "count": 1,
+          "uniqueId": "chain_90718422"
+        },
+        {
+          "id": "160012123",
+          "label": "Hyatt Hotels Corporation",
+          "count": 1,
+          "uniqueId": "chain_160012123"
+        },
+        {
+          "id": "90718398",
+          "label": "Four Seasons",
+          "count": 1,
+          "uniqueId": "chain_90718398"
+        },
+        {
+          "id": "90718681",
+          "label": "Choice Hotels International",
+          "count": 1,
+          "uniqueId": "chain_90718681"
+        }
+      ]
+    },
+    {
+      "type": "cancellation",
+      "title": "Cancellation policy",
+      "values": [
+        {
+          "id": "free_cancellation",
+          "label": "Free cancellation",
+          "count": 847,
+          "uniqueId": "cancellation_free_cancellation"
+        },
+        {
+          "id": "refundable",
+          "label": "Refundable",
+          "count": 5,
+          "uniqueId": "cancellation_refundable"
+        },
+        {
+          "id": "non_refundable",
+          "label": "Non-Refundable",
+          "count": 417,
+          "uniqueId": "cancellation_non_refundable"
+        }
+      ]
+    },
+    {
+      "type": "amenities",
+      "title": "Amenities",
+      "values": [
+        {
+          "id": "WifiService",
+          "label": "WiFi",
+          "icon": "wifi",
+          "count": 850,
+          "uniqueId": "amenities_WifiService"
+        },
+        {
+          "id": "Parking",
+          "label": "Parking",
+          "icon": "parking",
+          "count": 527,
+          "uniqueId": "amenities_Parking"
+        },
+        {
+          "id": "AirConditioning",
+          "label": "Air conditioning",
+          "icon": "aircon",
+          "count": 809,
+          "uniqueId": "amenities_AirConditioning"
+        },
+        {
+          "id": "AirportShuttleService",
+          "label": "Airport Shuttle",
+          "icon": "bus",
+          "count": 242,
+          "uniqueId": "amenities_AirportShuttleService"
+        },
+        {
+          "id": "Pool",
+          "label": "Pool",
+          "icon": "long-arrow-right",
+          "count": 58,
+          "uniqueId": "amenities_Pool"
+        },
+        {
+          "id": "FitnessCenter",
+          "label": "Fitness Center",
+          "icon": "health-fitness",
+          "count": 97,
+          "uniqueId": "amenities_FitnessCenter"
+        },
+        {
+          "id": "Spa",
+          "label": "Spa",
+          "icon": "hotels--jacuzzi",
+          "count": 66,
+          "uniqueId": "amenities_Spa"
+        },
+        {
+          "id": "FrontDesk24hService",
+          "label": "24-hour Front Desk Service",
+          "icon": "services",
+          "count": 810,
+          "uniqueId": "amenities_FrontDesk24hService"
+        },
+        {
+          "id": "Restaurant",
+          "label": "Restaurant",
+          "icon": "meal",
+          "count": 306,
+          "uniqueId": "amenities_Restaurant"
+        },
+        {
+          "id": "NonSmokingService",
+          "label": "Non-smoking",
+          "icon": "hotels--smoking",
+          "count": 696,
+          "uniqueId": "amenities_NonSmokingService"
+        },
+        {
+          "id": "Bathtub",
+          "label": "Bathtub",
+          "icon": "onsen",
+          "count": 4,
+          "uniqueId": "amenities_Bathtub"
+        },
+        {
+          "id": "Laundry",
+          "label": "Laundry",
+          "icon": "cloakroom",
+          "count": 596,
+          "uniqueId": "amenities_Laundry"
+        },
+        {
+          "id": "Kitchen",
+          "label": "Kitchen",
+          "icon": "food",
+          "count": 18,
+          "uniqueId": "amenities_Kitchen"
+        },
+        {
+          "id": "PetsAllowedService",
+          "label": "Pets allowed",
+          "icon": "hotels--pets-allowed",
+          "count": 76,
+          "uniqueId": "amenities_PetsAllowedService"
+        },
+        {
+          "id": "Television",
+          "label": "Television",
+          "icon": "media",
+          "count": 120,
+          "uniqueId": "amenities_Television"
+        },
+        {
+          "id": "BabySittingService",
+          "label": "Baby-sitting",
+          "icon": "baby-carriage",
+          "count": 38,
+          "uniqueId": "amenities_BabySittingService"
+        },
+        {
+          "id": "Lift",
+          "label": "Elevator",
+          "icon": "swap--vertical",
+          "count": 346,
+          "uniqueId": "amenities_Lift"
+        },
+        {
+          "id": "RoomWithASeaView",
+          "label": "Rooms with ocean views",
+          "icon": "view",
+          "count": 1,
+          "uniqueId": "amenities_RoomWithASeaView"
+        },
+        {
+          "id": "DisabledFacility",
+          "label": "Accessible",
+          "icon": "hotels--disabled-facilities",
+          "count": 125,
+          "uniqueId": "amenities_DisabledFacility"
+        },
+        {
+          "id": "RoomService",
+          "label": "Room service",
+          "icon": "services",
+          "count": 783,
+          "uniqueId": "amenities_RoomService"
+        },
+        {
+          "id": "InternetAccessService",
+          "label": "Internet access",
+          "icon": "globe",
+          "count": 714,
+          "uniqueId": "amenities_InternetAccessService"
+        },
+        {
+          "id": "FirstAidRoom",
+          "label": "First-aid room",
+          "icon": "long-arrow-right",
+          "count": 560,
+          "uniqueId": "amenities_FirstAidRoom"
+        },
+        {
+          "id": "MultilingualStaffService",
+          "label": "Multilingual staff",
+          "icon": "long-arrow-right",
+          "count": 420,
+          "uniqueId": "amenities_MultilingualStaffService"
+        },
+        {
+          "id": "LuggageStorage",
+          "label": "Luggage storage",
+          "icon": "luggageall",
+          "count": 461,
+          "uniqueId": "amenities_LuggageStorage"
+        },
+        {
+          "id": "WiFiInDesignatedAreas",
+          "label": "WiFi in common areas",
+          "icon": "long-arrow-right",
+          "count": 398,
+          "uniqueId": "amenities_WiFiInDesignatedAreas"
+        },
+        {
+          "id": "IroningService",
+          "label": "Iron",
+          "icon": "cloakroom",
+          "count": 434,
+          "uniqueId": "amenities_IroningService"
+        },
+        {
+          "id": "SmokingArea",
+          "label": "Smoking areas",
+          "icon": "long-arrow-right",
+          "count": 345,
+          "uniqueId": "amenities_SmokingArea"
+        },
+        {
+          "id": "SafeDepositBox",
+          "label": "Safe deposit box",
+          "icon": "lock",
+          "count": 310,
+          "uniqueId": "amenities_SafeDepositBox"
+        },
+        {
+          "id": "CarRental",
+          "label": "Car rental",
+          "icon": "cars",
+          "count": 296,
+          "uniqueId": "amenities_CarRental"
+        },
+        {
+          "id": "CurrencyExchangeService",
+          "label": "Currency exchange",
+          "icon": "long-arrow-right",
+          "count": 306,
+          "uniqueId": "amenities_CurrencyExchangeService"
+        },
+        {
+          "id": "Fax",
+          "label": "Fax",
+          "icon": "long-arrow-right",
+          "count": 250,
+          "uniqueId": "amenities_Fax"
+        },
+        {
+          "id": "ExpressCheckinService",
+          "label": "Express check-in",
+          "icon": "fast-track",
+          "count": 252,
+          "uniqueId": "amenities_ExpressCheckinService"
+        },
+        {
+          "id": "Photocopier",
+          "label": "Photocopier",
+          "icon": "long-arrow-right",
+          "count": 220,
+          "uniqueId": "amenities_Photocopier"
+        },
+        {
+          "id": "ConciergeService",
+          "label": "Concierge",
+          "icon": "luggageall",
+          "count": 222,
+          "uniqueId": "amenities_ConciergeService"
+        },
+        {
+          "id": "TrouserPress",
+          "label": "Pants press",
+          "icon": "long-arrow-right",
+          "count": 237,
+          "uniqueId": "amenities_TrouserPress"
+        },
+        {
+          "id": "SecurityService",
+          "label": "Security",
+          "icon": "long-arrow-right",
+          "count": 187,
+          "uniqueId": "amenities_SecurityService"
+        },
+        {
+          "id": "TicketOffice",
+          "label": "Ticket office",
+          "icon": "ticket",
+          "count": 205,
+          "uniqueId": "amenities_TicketOffice"
+        },
+        {
+          "id": "MeetingRoom",
+          "label": "Meeting facilities",
+          "icon": "business",
+          "count": 167,
+          "uniqueId": "amenities_MeetingRoom"
+        },
+        {
+          "id": "ExpressCheckoutService",
+          "label": "Express check-out",
+          "icon": "fast-track",
+          "count": 208,
+          "uniqueId": "amenities_ExpressCheckoutService"
+        },
+        {
+          "id": "TourService",
+          "label": "Tours",
+          "icon": "long-arrow-right",
+          "count": 212,
+          "uniqueId": "amenities_TourService"
+        },
+        {
+          "id": "BanquetingService",
+          "label": "Banquet service",
+          "icon": "long-arrow-right",
+          "count": 134,
+          "uniqueId": "amenities_BanquetingService"
+        },
+        {
+          "id": "BusinessCenter",
+          "label": "Business center",
+          "icon": "long-arrow-right",
+          "count": 142,
+          "uniqueId": "amenities_BusinessCenter"
+        },
+        {
+          "id": "Bar",
+          "label": "Bar",
+          "icon": "bar",
+          "count": 141,
+          "uniqueId": "amenities_Bar"
+        },
+        {
+          "id": "BottledWaterService",
+          "label": "Complimentary bottled water",
+          "icon": "flask",
+          "count": 167,
+          "uniqueId": "amenities_BottledWaterService"
+        },
+        {
+          "id": "ShuttleService",
+          "label": "Shuttle service",
+          "icon": "long-arrow-right",
+          "count": 157,
+          "uniqueId": "amenities_ShuttleService"
+        },
+        {
+          "id": "Shower",
+          "label": "Shower",
+          "icon": "onsen",
+          "count": 164,
+          "uniqueId": "amenities_Shower"
+        },
+        {
+          "id": "ValetParkingService",
+          "label": "Valet parking",
+          "icon": "long-arrow-right",
+          "count": 128,
+          "uniqueId": "amenities_ValetParkingService"
+        },
+        {
+          "id": "Desk",
+          "label": "Desk",
+          "icon": "paperclip",
+          "count": 156,
+          "uniqueId": "amenities_Desk"
+        },
+        {
+          "id": "WakeUpCallService",
+          "label": "Wake-up call",
+          "icon": "call-back",
+          "count": 137,
+          "uniqueId": "amenities_WakeUpCallService"
+        },
+        {
+          "id": "Cafe",
+          "label": "Café",
+          "icon": "cafe",
+          "count": 113,
+          "uniqueId": "amenities_Cafe"
+        },
+        {
+          "id": "WheelChairAccess",
+          "label": "Wheelchair accessible",
+          "icon": "hotels--disabled-facilities",
+          "count": 107,
+          "uniqueId": "amenities_WheelChairAccess"
+        },
+        {
+          "id": "Telephone",
+          "label": "Telephone",
+          "icon": "phone-call",
+          "count": 134,
+          "uniqueId": "amenities_Telephone"
+        },
+        {
+          "id": "CashMachine",
+          "label": "ATM",
+          "icon": "long-arrow-right",
+          "count": 171,
+          "uniqueId": "amenities_CashMachine"
+        },
+        {
+          "id": "BeautySalon",
+          "label": "Beauty salon",
+          "icon": "long-arrow-right",
+          "count": 129,
+          "uniqueId": "amenities_BeautySalon"
+        },
+        {
+          "id": "Garden",
+          "label": "Garden",
+          "icon": "long-arrow-right",
+          "count": 108,
+          "uniqueId": "amenities_Garden"
+        },
+        {
+          "id": "Lounge",
+          "label": "Lounge",
+          "icon": "long-arrow-right",
+          "count": 115,
+          "uniqueId": "amenities_Lounge"
+        },
+        {
+          "id": "HairDryer",
+          "label": "Hairdryer",
+          "icon": "long-arrow-right",
+          "count": 70,
+          "uniqueId": "amenities_HairDryer"
+        },
+        {
+          "id": "MassageService",
+          "label": "Massage",
+          "icon": "long-arrow-right",
+          "count": 57,
+          "uniqueId": "amenities_MassageService"
+        },
+        {
+          "id": "OutdoorSwimmingPool",
+          "label": "Outdoor pool",
+          "icon": "long-arrow-right",
+          "count": 51,
+          "uniqueId": "amenities_OutdoorSwimmingPool"
+        },
+        {
+          "id": "Teahouse",
+          "label": "Teahouse",
+          "icon": "long-arrow-right",
+          "count": 75,
+          "uniqueId": "amenities_Teahouse"
+        },
+        {
+          "id": "DoormanService",
+          "label": "Doorman",
+          "icon": "long-arrow-right",
+          "count": 56,
+          "uniqueId": "amenities_DoormanService"
+        },
+        {
+          "id": "WeddingFacility",
+          "label": "Wedding facilities",
+          "icon": "long-arrow-right",
+          "count": 45,
+          "uniqueId": "amenities_WeddingFacility"
+        },
+        {
+          "id": "ATM",
+          "label": "ATM",
+          "icon": "long-arrow-right",
+          "count": 76,
+          "uniqueId": "amenities_ATM"
+        },
+        {
+          "id": "MiniBar",
+          "label": "Minibar",
+          "icon": "bar",
+          "count": 51,
+          "uniqueId": "amenities_MiniBar"
+        },
+        {
+          "id": "LobbyBar",
+          "label": "Lobby bar",
+          "icon": "long-arrow-right",
+          "count": 41,
+          "uniqueId": "amenities_LobbyBar"
+        },
+        {
+          "id": "Fireplace",
+          "label": "Fireplace",
+          "icon": "long-arrow-right",
+          "count": 87,
+          "uniqueId": "amenities_Fireplace"
+        },
+        {
+          "id": "SatelliteTV",
+          "label": "Satellite TV",
+          "icon": "long-arrow-right",
+          "count": 60,
+          "uniqueId": "amenities_SatelliteTV"
+        },
+        {
+          "id": "Sauna",
+          "label": "Sauna",
+          "icon": "onsen",
+          "count": 35,
+          "uniqueId": "amenities_Sauna"
+        },
+        {
+          "id": "SteamRoom",
+          "label": "Steam Room",
+          "icon": "hotels--jacuzzi",
+          "count": 32,
+          "uniqueId": "amenities_SteamRoom"
+        },
+        {
+          "id": "Barbeque",
+          "label": "Grill",
+          "icon": "long-arrow-right",
+          "count": 46,
+          "uniqueId": "amenities_Barbeque"
+        },
+        {
+          "id": "Heating",
+          "label": "Heat",
+          "icon": "estimated",
+          "count": 66,
+          "uniqueId": "amenities_Heating"
+        },
+        {
+          "id": "GameRoom",
+          "label": "Gameroom",
+          "icon": "long-arrow-right",
+          "count": 52,
+          "uniqueId": "amenities_GameRoom"
+        },
+        {
+          "id": "Shop",
+          "label": "Shops",
+          "icon": "long-arrow-right",
+          "count": 48,
+          "uniqueId": "amenities_Shop"
+        },
+        {
+          "id": "UVSunbeds",
+          "label": "Tanning beds",
+          "icon": "long-arrow-right",
+          "count": 25,
+          "uniqueId": "amenities_UVSunbeds"
+        },
+        {
+          "id": "Nightclub",
+          "label": "Nightclub",
+          "icon": "long-arrow-right",
+          "count": 38,
+          "uniqueId": "amenities_Nightclub"
+        },
+        {
+          "id": "BicycleRentalService",
+          "label": "Bicycle rental",
+          "icon": "long-arrow-right",
+          "count": 43,
+          "uniqueId": "amenities_BicycleRentalService"
+        },
+        {
+          "id": "StationShuttleService",
+          "label": "Station shuttle",
+          "icon": "long-arrow-right",
+          "count": 18,
+          "uniqueId": "amenities_StationShuttleService"
+        },
+        {
+          "id": "ChildrenPool",
+          "label": "Children's Pool",
+          "icon": "long-arrow-right",
+          "count": 20,
+          "uniqueId": "amenities_ChildrenPool"
+        },
+        {
+          "id": "IndoorSwimmingPool",
+          "label": "Indoor pool",
+          "icon": "long-arrow-right",
+          "count": 21,
+          "uniqueId": "amenities_IndoorSwimmingPool"
+        },
+        {
+          "id": "SunUmbrella",
+          "label": "Beach umbrellas",
+          "icon": "long-arrow-right",
+          "count": 19,
+          "uniqueId": "amenities_SunUmbrella"
+        },
+        {
+          "id": "BathrobeService",
+          "label": "Bathrobe",
+          "icon": "adult",
+          "count": 24,
+          "uniqueId": "amenities_BathrobeService"
+        },
+        {
+          "id": "Hairdressers",
+          "label": "Hairdressers",
+          "icon": "long-arrow-right",
+          "count": 18,
+          "uniqueId": "amenities_Hairdressers"
+        },
+        {
+          "id": "ConnectingRoomsService",
+          "label": "Connecting rooms",
+          "icon": "long-arrow-right",
+          "count": 19,
+          "uniqueId": "amenities_ConnectingRoomsService"
+        },
+        {
+          "id": "Library",
+          "label": "Library",
+          "icon": "long-arrow-right",
+          "count": 16,
+          "uniqueId": "amenities_Library"
+        },
+        {
+          "id": "ChildrenFacility",
+          "label": "Children's play area",
+          "icon": "long-arrow-right",
+          "count": 18,
+          "uniqueId": "amenities_ChildrenFacility"
+        },
+        {
+          "id": "NonsmokingFloor",
+          "label": "Non-smoking floor",
+          "icon": "long-arrow-right",
+          "count": 11,
+          "uniqueId": "amenities_NonsmokingFloor"
+        },
+        {
+          "id": "Jacuzzi",
+          "label": "Hot tub",
+          "icon": "long-arrow-right",
+          "count": 6,
+          "uniqueId": "amenities_Jacuzzi"
+        },
+        {
+          "id": "ExecutiveFloor",
+          "label": "Executive floor",
+          "icon": "long-arrow-right",
+          "count": 5,
+          "uniqueId": "amenities_ExecutiveFloor"
+        },
+        {
+          "id": "EntertainmentRooms",
+          "label": "Entertainment rooms",
+          "icon": "long-arrow-right",
+          "count": 10,
+          "uniqueId": "amenities_EntertainmentRooms"
+        },
+        {
+          "id": "SmokingService",
+          "label": "Smoking rooms",
+          "icon": "hotels--smoking",
+          "count": 9,
+          "uniqueId": "amenities_SmokingService"
+        },
+        {
+          "id": "GolfAmenity",
+          "label": "Golf Course",
+          "icon": "long-arrow-right",
+          "count": 10,
+          "uniqueId": "amenities_GolfAmenity"
+        },
+        {
+          "id": "PoolBar",
+          "label": "Poolside bar",
+          "icon": "long-arrow-right",
+          "count": 6,
+          "uniqueId": "amenities_PoolBar"
+        },
+        {
+          "id": "ShoePolishingService",
+          "label": "Shoe polishing",
+          "icon": "long-arrow-right",
+          "count": 5,
+          "uniqueId": "amenities_ShoePolishingService"
+        },
+        {
+          "id": "Chapel",
+          "label": "Chapel",
+          "icon": "long-arrow-right",
+          "count": 12,
+          "uniqueId": "amenities_Chapel"
+        },
+        {
+          "id": "Billiards",
+          "label": "Pool Table",
+          "icon": "long-arrow-right",
+          "count": 6,
+          "uniqueId": "amenities_Billiards"
+        },
+        {
+          "id": "IndoorParking",
+          "label": "Indoor parking",
+          "icon": "long-arrow-right",
+          "count": 4,
+          "uniqueId": "amenities_IndoorParking"
+        },
+        {
+          "id": "Balcony",
+          "label": "Balcony",
+          "icon": "weather",
+          "count": 9,
+          "uniqueId": "amenities_Balcony"
+        },
+        {
+          "id": "Playground",
+          "label": "Playground",
+          "icon": "long-arrow-right",
+          "count": 9,
+          "uniqueId": "amenities_Playground"
+        },
+        {
+          "id": "BellStaffService",
+          "label": "Bell staff",
+          "icon": "long-arrow-right",
+          "count": 3,
+          "uniqueId": "amenities_BellStaffService"
+        },
+        {
+          "id": "TableTennis",
+          "label": "Table tennis",
+          "icon": "duration",
+          "count": 5,
+          "uniqueId": "amenities_TableTennis"
+        },
+        {
+          "id": "PrivateBeach",
+          "label": "Private beach",
+          "icon": "long-arrow-right",
+          "count": 5,
+          "uniqueId": "amenities_PrivateBeach"
+        },
+        {
+          "id": "Microwave",
+          "label": "Microwave",
+          "icon": "food",
+          "count": 8,
+          "uniqueId": "amenities_Microwave"
+        },
+        {
+          "id": "Karaoke",
+          "label": "Karaoke",
+          "icon": "long-arrow-right",
+          "count": 5,
+          "uniqueId": "amenities_Karaoke"
+        },
+        {
+          "id": "WaterSportsService",
+          "label": "Watersports",
+          "icon": "long-arrow-right",
+          "count": 7,
+          "uniqueId": "amenities_WaterSportsService"
+        },
+        {
+          "id": "BowlingAlley",
+          "label": "Bowling alley",
+          "icon": "long-arrow-right",
+          "count": 4,
+          "uniqueId": "amenities_BowlingAlley"
+        },
+        {
+          "id": "ExecutiveLounge",
+          "label": "Executive lounge",
+          "icon": "long-arrow-right",
+          "count": 4,
+          "uniqueId": "amenities_ExecutiveLounge"
+        },
+        {
+          "id": "SquashCourt",
+          "label": "Squash",
+          "icon": "long-arrow-right",
+          "count": 4,
+          "uniqueId": "amenities_SquashCourt"
+        },
+        {
+          "id": "DiningRoom",
+          "label": "Dining room",
+          "icon": "long-arrow-right",
+          "count": 5,
+          "uniqueId": "amenities_DiningRoom"
+        },
+        {
+          "id": "TennisCourt",
+          "label": "Tennis court",
+          "icon": "long-arrow-right",
+          "count": 3,
+          "uniqueId": "amenities_TennisCourt"
+        },
+        {
+          "id": "Minigolf",
+          "label": "Minigolf",
+          "icon": "long-arrow-right",
+          "count": 1,
+          "uniqueId": "amenities_Minigolf"
+        },
+        {
+          "id": "HorseRidingService",
+          "label": "Horseback riding",
+          "icon": "long-arrow-right",
+          "count": 2,
+          "uniqueId": "amenities_HorseRidingService"
+        },
+        {
+          "id": "MedicalService",
+          "label": "Medical services",
+          "icon": "long-arrow-right",
+          "count": 1,
+          "uniqueId": "amenities_MedicalService"
+        },
+        {
+          "id": "VideogameService",
+          "label": "Videogame console",
+          "icon": "media",
+          "count": 3,
+          "uniqueId": "amenities_VideogameService"
+        },
+        {
+          "id": "RoomWithALakeView",
+          "label": "Rooms with lake views",
+          "icon": "view",
+          "count": 2,
+          "uniqueId": "amenities_RoomWithALakeView"
+        },
+        {
+          "id": "CoffeeMaker",
+          "label": "Coffee-maker",
+          "icon": "long-arrow-right",
+          "count": 1,
+          "uniqueId": "amenities_CoffeeMaker"
+        },
+        {
+          "id": "DivingService",
+          "label": "Diving",
+          "icon": "long-arrow-right",
+          "count": 1,
+          "uniqueId": "amenities_DivingService"
+        }
+      ]
+    },
+    {
+      "type": "property_type",
+      "title": "Accommodation type",
+      "values": [
+        {
+          "id": "Hotel",
+          "label": "Hotel",
+          "count": 754,
+          "uniqueId": "property_type_Hotel"
+        },
+        {
+          "id": "ResidenceHotel",
+          "label": "Residence",
+          "count": 0,
+          "uniqueId": "property_type_ResidenceHotel"
+        },
+        {
+          "id": "Hostel",
+          "label": "Hostel",
+          "count": 88,
+          "uniqueId": "property_type_Hostel"
+        },
+        {
+          "id": "GuestHouse",
+          "label": "Guest House",
+          "count": 42,
+          "uniqueId": "property_type_GuestHouse"
+        },
+        {
+          "id": "PrivateHome",
+          "label": "Private home",
+          "count": 0,
+          "uniqueId": "property_type_PrivateHome"
+        },
+        {
+          "id": "CountryHouse",
+          "label": "Country House",
+          "count": 0,
+          "uniqueId": "property_type_CountryHouse"
+        },
+        {
+          "id": "TemporaryResidence",
+          "label": "TemporaryResidence",
+          "count": 0,
+          "uniqueId": "property_type_TemporaryResidence"
+        },
+        {
+          "id": "Resort",
+          "label": "Resort",
+          "count": 2,
+          "uniqueId": "property_type_Resort"
+        },
+        {
+          "id": "UniqueStays",
+          "label": "Unique stays",
+          "count": 8,
+          "uniqueId": "property_type_UniqueStays"
+        },
+        {
+          "id": "HolidayRentals",
+          "label": "Vacation rentals",
+          "count": 10,
+          "uniqueId": "property_type_HolidayRentals"
+        },
+        {
+          "id": "Apartment",
+          "label": "Apartment",
+          "count": 88,
+          "uniqueId": "property_type_Apartment"
+        }
+      ]
+    },
+    {
+      "type": "district",
+      "title": "Neighborhoods",
+      "values": [
+        {
+          "id": "27562544",
+          "label": "Mumbai Suburban District",
+          "count": 677,
+          "uniqueId": "district_27562544"
+        },
+        {
+          "id": "27562541",
+          "label": "Mumbai City",
+          "count": 102,
+          "uniqueId": "district_27562541"
+        },
+        {
+          "id": "216271184",
+          "label": "Juhu",
+          "count": 21,
+          "uniqueId": "district_216271184"
+        },
+        {
+          "id": "216271185",
+          "label": "Colaba",
+          "count": 28,
+          "uniqueId": "district_216271185"
+        },
+        {
+          "id": "216271183",
+          "label": "Jogeshwari",
+          "count": 31,
+          "uniqueId": "district_216271183"
+        },
+        {
+          "id": "216271186",
+          "label": "Fort",
+          "count": 20,
+          "uniqueId": "district_216271186"
+        },
+        {
+          "id": "90715538",
+          "label": "Thāna",
+          "count": 25,
+          "uniqueId": "district_90715538"
+        },
+        {
+          "id": "216271182",
+          "label": "Goregaon",
+          "count": 19,
+          "uniqueId": "district_216271182"
+        },
+        {
+          "id": "216271189",
+          "label": "Churchgate",
+          "count": 7,
+          "uniqueId": "district_216271189"
+        },
+        {
+          "id": "216271190",
+          "label": "Byculla",
+          "count": 6,
+          "uniqueId": "district_216271190"
+        },
+        {
+          "id": "216271188",
+          "label": "Kalbadevi",
+          "count": 2,
+          "uniqueId": "district_216271188"
+        },
+        {
+          "id": "216271193",
+          "label": "Dahisar",
+          "count": 2,
+          "uniqueId": "district_216271193"
+        }
+      ]
+    },
+    {
+      "type": "poi",
+      "title": "Distance",
+      "values": [
+        {
+          "poiType": "Airport",
+          "poiName": "Airport",
+          "poiOptions": [
+            {
+              "id": 95673320,
+              "name": "Mumbai",
+              "type": "Transportation",
+              "coordinate": [72.851667, 19.088056],
+              "image": null,
+              "subType": "Airport"
+            }
+          ]
+        },
+        {
+          "poiType": "Landmark",
+          "poiName": "Landmark",
+          "poiOptions": [
+            {
+              "id": 206533082,
+              "name": "Gateway Of India Mumbai",
+              "type": "Landmark",
+              "coordinate": [72.834654, 18.921984],
+              "image": "https://content.skyscnr.com/POI/206533082/1612246/1612246_WxH.jpg",
+              "subType": "TouristAttraction"
+            },
+            {
+              "id": 206529183,
+              "name": "Dharavi Slum",
+              "type": "Landmark",
+              "coordinate": [72.8508947048, 19.0451021532],
+              "image": "https://content.skyscnr.com/POI/206529183/1604915/1604915_WxH.jpg",
+              "subType": "TouristAttraction"
+            },
+            {
+              "id": 206686769,
+              "name": "Bombay Exhibition Centre",
+              "type": "Landmark",
+              "coordinate": [72.8553175, 19.1507162],
+              "image": null,
+              "subType": "TouristAttraction"
+            },
+            {
+              "id": 206531123,
+              "name": "Marine Drive",
+              "type": "Landmark",
+              "coordinate": [72.823679, 18.941482],
+              "image": null,
+              "subType": "TouristAttraction"
+            },
+            {
+              "id": 206525775,
+              "name": "Film City",
+              "type": "Landmark",
+              "coordinate": [72.886479184, 19.1612796192],
+              "image": null,
+              "subType": "TouristAttraction"
+            },
+            {
+              "id": 206531124,
+              "name": "Chowpatty Beach",
+              "type": "Landmark",
+              "coordinate": [72.8127777576, 18.9542845583],
+              "image": "https://content.skyscnr.com/POI/206531124/1608491/1608491_WxH.jpg",
+              "subType": "TouristAttraction"
+            },
+            {
+              "id": 206531136,
+              "name": "Dhobi Ghat",
+              "type": "Landmark",
+              "coordinate": [72.8255146, 18.9822455],
+              "image": null,
+              "subType": "TouristAttraction"
+            },
+            {
+              "id": 206686783,
+              "name": "Consulate General of Canada to India, in Mumbai",
+              "type": "Landmark",
+              "coordinate": [72.8356, 19.0104406],
+              "image": null,
+              "subType": "TouristAttraction"
+            },
+            {
+              "id": 206525778,
+              "name": "Bombay High Court",
+              "type": "Landmark",
+              "coordinate": [72.8328772, 18.9329233],
+              "image": null,
+              "subType": "TouristAttraction"
+            },
+            {
+              "id": 206531130,
+              "name": "Haji Ali Mosque",
+              "type": "Landmark",
+              "coordinate": [72.8089681528, 18.9827596817],
+              "image": null,
+              "subType": "TouristAttraction"
+            },
+            {
+              "id": 206520882,
+              "name": "Sanjay Gandhi National Park",
+              "type": "Landmark",
+              "coordinate": [72.91414, 19.213087],
+              "image": "https://content.skyscnr.com/POI/206520882/1584102/1584102_WxH.jpg",
+              "subType": "TouristAttraction"
+            },
+            {
+              "id": 206560652,
+              "name": "Powai Lake",
+              "type": "Landmark",
+              "coordinate": [72.90619, 19.126596],
+              "image": null,
+              "subType": "TouristAttraction"
+            },
+            {
+              "id": 206560659,
+              "name": "Juhu Beach",
+              "type": "Landmark",
+              "coordinate": [72.90942, 19.226416],
+              "image": "https://content.skyscnr.com/POI/206560659/1712276/1712276_WxH.jpg",
+              "subType": "TouristAttraction"
+            },
+            {
+              "id": 206560757,
+              "name": "Nariman Point",
+              "type": "Landmark",
+              "coordinate": [72.82303, 18.926123],
+              "image": "https://content.skyscnr.com/POI/206560757/1712602/1712602_WxH.jpg",
+              "subType": "TouristAttraction"
+            },
+            {
+              "id": 206687693,
+              "name": "Shree Siddhivinayak Ganapati Temple Trust",
+              "type": "Landmark",
+              "coordinate": [72.8302487281, 19.0168615419],
+              "image": "https://content.skyscnr.com/POI/206687693/1856237/1856237_WxH.jpg",
+              "subType": "TouristAttraction"
+            },
+            {
+              "id": 206690819,
+              "name": "Charni Road Railway Station",
+              "type": "Landmark",
+              "coordinate": [72.8181069, 18.9520406],
+              "image": null,
+              "subType": "TouristAttraction"
+            },
+            {
+              "id": 211165663,
+              "name": "HSBC JW Marriott Juhu",
+              "type": "Landmark",
+              "coordinate": [72.8273468018, 19.1011867523],
+              "image": null,
+              "subType": "ModernArchitecture"
+            },
+            {
+              "id": 217897400,
+              "name": "IIPS ICT and Library building",
+              "type": "Landmark",
+              "coordinate": [72.9155517, 19.0495039],
+              "image": null,
+              "subType": "TouristAttraction"
+            },
+            {
+              "id": 206675309,
+              "name": "Aarey Colony",
+              "type": "Landmark",
+              "coordinate": [72.847816, 19.163589],
+              "image": "https://content.skyscnr.com/POI/206675309/1843052/1843052_WxH.jpg",
+              "subType": "TouristAttraction"
+            },
+            {
+              "id": 206656027,
+              "name": "Sailors Home",
+              "type": "Landmark",
+              "coordinate": [72.8401870728, 18.9557495117],
+              "image": null,
+              "subType": "TouristAttraction"
+            }
+          ]
+        },
+        {
+          "poiType": "Entertainment",
+          "poiName": "Entertainment",
+          "poiOptions": [
+            {
+              "id": 95750464,
+              "name": "Dinanath Mangeshkar Natyagruha",
+              "type": "Entertainment",
+              "coordinate": [72.8445984713, 19.0999696157],
+              "image": null,
+              "subType": "TheatreHall"
+            },
+            {
+              "id": 208537007,
+              "name": "Maharashtra State Lawn Tennis Association",
+              "type": "Entertainment",
+              "coordinate": [72.8282187, 18.9231565],
+              "image": null,
+              "subType": "Stadium"
+            },
+            {
+              "id": 208535151,
+              "name": "Sports Complex",
+              "type": "Entertainment",
+              "coordinate": [72.8362698, 19.1267975],
+              "image": null,
+              "subType": "Stadium"
+            },
+            {
+              "id": 208537003,
+              "name": "Khar Gymkhana",
+              "type": "Entertainment",
+              "coordinate": [72.831791, 19.0708689],
+              "image": null,
+              "subType": "Stadium"
+            },
+            {
+              "id": 208537812,
+              "name": "Brabourne Stadium",
+              "type": "Entertainment",
+              "coordinate": [72.8247394, 18.9322612],
+              "image": null,
+              "subType": "Stadium"
+            }
+          ]
+        },
+        {
+          "poiType": "Transportation",
+          "poiName": "Transportation",
+          "poiOptions": [
+            {
+              "id": 95755093,
+              "name": "Mumbai Central Railway Station",
+              "type": "Transportation",
+              "coordinate": [72.819378376, 18.96936707],
+              "image": null,
+              "subType": "TrainStation"
+            },
+            {
+              "id": 207975226,
+              "name": "Bandra railway station",
+              "type": "Transportation",
+              "coordinate": [72.8406549, 19.0547926],
+              "image": null,
+              "subType": "TrainStation"
+            },
+            {
+              "id": 207976427,
+              "name": "Juhu Bus Station",
+              "type": "Transportation",
+              "coordinate": [72.8265991211, 19.10779953],
+              "image": null,
+              "subType": "BusStation"
+            },
+            {
+              "id": 207976443,
+              "name": "Andheri",
+              "type": "Transportation",
+              "coordinate": [72.8697357178, 19.1136455536],
+              "image": null,
+              "subType": "BusStation"
+            },
+            {
+              "id": 207976548,
+              "name": "Dadar Bus Station",
+              "type": "Transportation",
+              "coordinate": [72.8402862549, 19.0163383484],
+              "image": null,
+              "subType": "BusStation"
+            },
+            {
+              "id": 208536167,
+              "name": "Lower Parel",
+              "type": "Transportation",
+              "coordinate": [72.827433, 18.997935],
+              "image": null,
+              "subType": "TrainStation"
+            },
+            {
+              "id": 208536296,
+              "name": "Lokmanya Tilak Terminus",
+              "type": "Transportation",
+              "coordinate": [72.889391, 19.071178],
+              "image": null,
+              "subType": "TrainStation"
+            },
+            {
+              "id": 208537285,
+              "name": "Chhatrapati Shivaji Terminus",
+              "type": "Transportation",
+              "coordinate": [72.832497, 18.941786],
+              "image": null,
+              "subType": "TrainStation"
+            },
+            {
+              "id": 208541462,
+              "name": "Kurla Railway Station",
+              "type": "Transportation",
+              "coordinate": [72.876871, 19.067422],
+              "image": null,
+              "subType": "TrainStation"
+            },
+            {
+              "id": 210889811,
+              "name": "Goregaon Railway Station",
+              "type": "Transportation",
+              "coordinate": [72.846316, 19.166559],
+              "image": null,
+              "subType": "TrainStation"
+            },
+            {
+              "id": 210913190,
+              "name": "Ram Mandir",
+              "type": "Transportation",
+              "coordinate": [72.847183, 19.153611],
+              "image": null,
+              "subType": "TrainStation"
+            },
+            {
+              "id": 210916995,
+              "name": "Borivali Railway Station",
+              "type": "Transportation",
+              "coordinate": [72.854065, 19.23143],
+              "image": null,
+              "subType": "TrainStation"
+            },
+            {
+              "id": 205755181,
+              "name": "Andheri station",
+              "type": "Transportation",
+              "coordinate": [72.8480556, 19.1208333],
+              "image": null,
+              "subType": "MetroStation"
+            },
+            {
+              "id": 205755184,
+              "name": "Western Express Highway station",
+              "type": "Transportation",
+              "coordinate": [72.8563889, 19.1158333],
+              "image": null,
+              "subType": "MetroStation"
+            },
+            {
+              "id": 205755191,
+              "name": "Airport Road station",
+              "type": "Transportation",
+              "coordinate": [72.8741667, 19.11],
+              "image": null,
+              "subType": "MetroStation"
+            },
+            {
+              "id": 205755195,
+              "name": "Marol Naka station",
+              "type": "Transportation",
+              "coordinate": [72.8794444, 19.1083333],
+              "image": null,
+              "subType": "MetroStation"
+            },
+            {
+              "id": 205755197,
+              "name": "Versova station",
+              "type": "Transportation",
+              "coordinate": [72.8213889, 19.1302778],
+              "image": null,
+              "subType": "MetroStation"
+            },
+            {
+              "id": 205755198,
+              "name": "Saki Naka station",
+              "type": "Transportation",
+              "coordinate": [72.8880556, 19.1036111],
+              "image": null,
+              "subType": "MetroStation"
+            },
+            {
+              "id": 205755200,
+              "name": "D.N. Nagar station",
+              "type": "Transportation",
+              "coordinate": [72.8302778, 19.1283333],
+              "image": null,
+              "subType": "MetroStation"
+            }
+          ]
+        },
+        {
+          "poiType": "Shopping",
+          "poiName": "Shopping",
+          "poiOptions": [
+            {
+              "id": 208340041,
+              "name": "R City Mall",
+              "type": "Shopping",
+              "coordinate": [72.916425, 19.099711],
+              "image": null,
+              "subType": "ShoppingMall"
+            },
+            {
+              "id": 208536932,
+              "name": "Oberoi Mall",
+              "type": "Shopping",
+              "coordinate": [72.8605168, 19.173725],
+              "image": null,
+              "subType": "ShoppingMall"
+            },
+            {
+              "id": 208537835,
+              "name": "Atria The Millennium Mall",
+              "type": "Shopping",
+              "coordinate": [72.8146496, 18.9910708],
+              "image": null,
+              "subType": "ShoppingMall"
+            },
+            {
+              "id": 208535665,
+              "name": "Montblanc Palladium Mall",
+              "type": "Shopping",
+              "coordinate": [72.8241795, 18.9939703],
+              "image": null,
+              "subType": "ShoppingMall"
+            },
+            {
+              "id": 208340009,
+              "name": "High Street Phoenix",
+              "type": "Shopping",
+              "coordinate": [72.8250901, 18.9940439],
+              "image": null,
+              "subType": "ShoppingMall"
+            },
+            {
+              "id": 207977605,
+              "name": "Colaba Market",
+              "type": "Shopping",
+              "coordinate": [72.828467, 18.9164896],
+              "image": null,
+              "subType": "ShoppingMall"
+            },
+            {
+              "id": 207971322,
+              "name": "Inorbit Mall",
+              "type": "Shopping",
+              "coordinate": [72.835778, 19.173211],
+              "image": null,
+              "subType": "ShoppingMall"
+            },
+            {
+              "id": 208340022,
+              "name": "Central Cottage Industries Emporium",
+              "type": "Shopping",
+              "coordinate": [72.833236, 18.924338],
+              "image": null,
+              "subType": "ShoppingMall"
+            },
+            {
+              "id": 207977532,
+              "name": "Mangaldas Market",
+              "type": "Shopping",
+              "coordinate": [72.8323643, 18.9482767],
+              "image": null,
+              "subType": "ShoppingMall"
+            },
+            {
+              "id": 208340030,
+              "name": "Infinity Mall(Malad)",
+              "type": "Shopping",
+              "coordinate": [72.834308, 19.18483],
+              "image": null,
+              "subType": "ShoppingMall"
+            },
+            {
+              "id": 208339944,
+              "name": "Fabindia(Kala Ghoda)",
+              "type": "Shopping",
+              "coordinate": [72.831681, 18.928699],
+              "image": null,
+              "subType": "ShoppingMall"
+            },
+            {
+              "id": 208339982,
+              "name": "Chor Bazaar",
+              "type": "Shopping",
+              "coordinate": [72.829747, 18.96078],
+              "image": null,
+              "subType": "ShoppingMall"
+            },
+            {
+              "id": 208339995,
+              "name": "Fashion Street",
+              "type": "Shopping",
+              "coordinate": [72.830154, 18.93814],
+              "image": null,
+              "subType": "ShoppingMall"
+            },
+            {
+              "id": 208537602,
+              "name": "Phoenix Marketcity",
+              "type": "Shopping",
+              "coordinate": [72.889008, 19.086504],
+              "image": null,
+              "subType": "ShoppingMall"
+            },
+            {
+              "id": 208535586,
+              "name": "Indiabulls Housing Finance Limited",
+              "type": "Shopping",
+              "coordinate": [72.835186, 19.00786],
+              "image": null,
+              "subType": "ShoppingMall"
+            },
+            {
+              "id": 207977732,
+              "name": "Zaveri Bazar",
+              "type": "Shopping",
+              "coordinate": [72.8304763, 18.9494522],
+              "image": null,
+              "subType": "ShoppingMall"
+            },
+            {
+              "id": 214628245,
+              "name": "R Mall",
+              "type": "Shopping",
+              "coordinate": [72.9513545, 19.1840208],
+              "image": null,
+              "subType": "ShoppingMall"
+            },
+            {
+              "id": 208340015,
+              "name": "Good Earth(Raghuvanshi Mills)",
+              "type": "Shopping",
+              "coordinate": [72.823235, 18.99308],
+              "image": null,
+              "subType": "ShoppingMall"
+            },
+            {
+              "id": 208340042,
+              "name": "Shrujan",
+              "type": "Shopping",
+              "coordinate": [72.8098925, 18.9775192],
+              "image": null,
+              "subType": "ShoppingMall"
+            },
+            {
+              "id": 207971336,
+              "name": "The Bombay Store",
+              "type": "Shopping",
+              "coordinate": [72.8341660706, 18.9340701657],
+              "image": null,
+              "subType": "ShoppingMall"
+            }
+          ]
+        },
+        {
+          "poiType": "Education",
+          "poiName": "Education",
+          "poiOptions": [
+            {
+              "id": 208070597,
+              "name": "Elphinstone College",
+              "type": "Education",
+              "coordinate": [72.8311920166, 18.927230835],
+              "image": null,
+              "subType": "UniversityBuilding"
+            },
+            {
+              "id": 210894715,
+              "name": "University Of Mumbai",
+              "type": "Education",
+              "coordinate": [72.8310394287, 18.9293327332],
+              "image": null,
+              "subType": "UniversityBuilding"
+            },
+            {
+              "id": 211091691,
+              "name": "Kirit P. Mehta School of Law",
+              "type": "Education",
+              "coordinate": [72.8375015259, 19.103521347],
+              "image": null,
+              "subType": "UniversityBuilding"
+            },
+            {
+              "id": 211092697,
+              "name": "SVKM'S NMIMS",
+              "type": "Education",
+              "coordinate": [72.8365707397, 19.1032142639],
+              "image": null,
+              "subType": "UniversityBuilding"
+            },
+            {
+              "id": 211092981,
+              "name": "Sunandan Divatia School of Science",
+              "type": "Education",
+              "coordinate": [72.8371353149, 19.1040401459],
+              "image": null,
+              "subType": "UniversityBuilding"
+            },
+            {
+              "id": 211093705,
+              "name": "SNDT COLLEGE",
+              "type": "Education",
+              "coordinate": [72.9040756226, 19.0840167999],
+              "image": null,
+              "subType": "UniversityBuilding"
+            },
+            {
+              "id": 211094026,
+              "name": "Leelabai Thackersey College of Nursing",
+              "type": "Education",
+              "coordinate": [72.8285522461, 18.9377536774],
+              "image": null,
+              "subType": "UniversityBuilding"
+            },
+            {
+              "id": 211094358,
+              "name": "SNDT Law School",
+              "type": "Education",
+              "coordinate": [72.8309402466, 19.0886287689],
+              "image": null,
+              "subType": "UniversityBuilding"
+            },
+            {
+              "id": 211094468,
+              "name": "Mukesh Patel School of Technology Management & Engineering",
+              "type": "Education",
+              "coordinate": [72.8375396729, 19.1098823547],
+              "image": null,
+              "subType": "UniversityBuilding"
+            },
+            {
+              "id": 211094591,
+              "name": "Sarla Anil Modi School Of Economics, NMIMS Mumbai",
+              "type": "Education",
+              "coordinate": [72.8365707397, 19.1034374237],
+              "image": null,
+              "subType": "UniversityBuilding"
+            },
+            {
+              "id": 211094619,
+              "name": "Jyoti Dalal School Of Liberal Arts (JDSoLA) - NMIMS",
+              "type": "Education",
+              "coordinate": [72.8364562988, 19.1033477783],
+              "image": null,
+              "subType": "UniversityBuilding"
+            },
+            {
+              "id": 211094652,
+              "name": "SNDT College of Arts and SCB College of Commerce and Science for Women",
+              "type": "Education",
+              "coordinate": [72.8281707764, 18.9375209808],
+              "image": null,
+              "subType": "UniversityBuilding"
+            },
+            {
+              "id": 211094656,
+              "name": "Anil Surendra Modi School of Commerce",
+              "type": "Education",
+              "coordinate": [72.8373413086, 19.10297966],
+              "image": null,
+              "subType": "UniversityBuilding"
+            },
+            {
+              "id": 211095116,
+              "name": "Electrical Engineering Department",
+              "type": "Education",
+              "coordinate": [72.8563690186, 19.0217838287],
+              "image": null,
+              "subType": "UniversityBuilding"
+            },
+            {
+              "id": 211095646,
+              "name": "Seth GS Medical College Gymkhana",
+              "type": "Education",
+              "coordinate": [72.8423538208, 19.0024204254],
+              "image": null,
+              "subType": "UniversityBuilding"
+            },
+            {
+              "id": 211095667,
+              "name": "SNDT Women's University",
+              "type": "Education",
+              "coordinate": [72.8310470581, 19.0872917175],
+              "image": null,
+              "subType": "UniversityBuilding"
+            },
+            {
+              "id": 211135340,
+              "name": "Indian Institute of Packaging",
+              "type": "Education",
+              "coordinate": [72.8681411743, 19.1210784912],
+              "image": null,
+              "subType": "UniversityBuilding"
+            },
+            {
+              "id": 211138801,
+              "name": "Rachana Sansad",
+              "type": "Education",
+              "coordinate": [72.8312454224, 19.0149784088],
+              "image": null,
+              "subType": "UniversityBuilding"
+            },
+            {
+              "id": 211138856,
+              "name": "TPSDI",
+              "type": "Education",
+              "coordinate": [72.9056091309, 19.0047073364],
+              "image": null,
+              "subType": "UniversityBuilding"
+            },
+            {
+              "id": 211156230,
+              "name": "Divine Child High School & Junior College",
+              "type": "Education",
+              "coordinate": [72.864074707, 19.1126613617],
+              "image": null,
+              "subType": "UniversityBuilding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "discount_types",
+      "title": "Deals",
+      "values": [
+        {
+          "id": "cug",
+          "count": 64,
+          "label": "Show discounts",
+          "uniqueId": "discount_types_cug"
+        }
+      ]
+    }
+  ],
+  "hotelsCoordinates": [
+    {
+      "id": "205372860",
+      "latitude": 19.054391,
+      "longitude": 72.868095,
+      "price": "$20"
+    },
+    {
+      "id": "213121424",
+      "latitude": 18.957421,
+      "longitude": 72.836249,
+      "price": "$3"
+    },
+    {
+      "id": "47031901",
+      "latitude": 19.0674785,
+      "longitude": 72.8690412,
+      "price": "$86"
+    },
+    {
+      "id": "203712534",
+      "latitude": 19.1080837,
+      "longitude": 72.8819964,
+      "price": "$85"
+    },
+    {
+      "id": "47029991",
+      "latitude": 19.09877,
+      "longitude": 72.82747,
+      "price": "$108"
+    },
+    {
+      "id": "214030092",
+      "latitude": 19.10065,
+      "longitude": 72.881442,
+      "price": "$25"
+    },
+    {
+      "id": "47027042",
+      "latitude": 19.108725,
+      "longitude": 72.824338,
+      "price": "$103"
+    },
+    {
+      "id": "46956572",
+      "latitude": 19.043912,
+      "longitude": 72.819268,
+      "price": "$130"
+    },
+    {
+      "id": "140170484",
+      "latitude": 19.055926,
+      "longitude": 72.869259,
+      "price": "$21"
+    },
+    {
+      "id": "212752575",
+      "latitude": 19.118634,
+      "longitude": 72.847837,
+      "price": "$51"
+    },
+    {
+      "id": "205739919",
+      "latitude": 19.05451,
+      "longitude": 72.86824,
+      "price": "$27"
+    },
+    {
+      "id": "46975171",
+      "latitude": 19.06664,
+      "longitude": 72.86753,
+      "price": "$150"
+    },
+    {
+      "id": "95820742",
+      "latitude": 19.097315,
+      "longitude": 72.854958,
+      "price": "$113"
+    },
+    {
+      "id": "46982552",
+      "latitude": 19.088208,
+      "longitude": 72.84201,
+      "price": "$37"
+    },
+    {
+      "id": "147905089",
+      "latitude": 19.162199,
+      "longitude": 72.857016,
+      "price": "$103"
+    }
+  ],
+  "sortOptions": [
+    {
+      "optionName": "Best",
+      "type": "-relevance"
+    },
+    {
+      "optionName": "Price (high to low)",
+      "type": "-price"
+    },
+    {
+      "optionName": "Price (low to high)",
+      "type": "price"
+    },
+    {
+      "optionName": "Distance from downtown",
+      "type": "distance"
+    },
+    {
+      "optionName": "Guest rating",
+      "type": "-rating"
+    },
+    {
+      "optionName": "Stars (5 to 1)",
+      "type": "-stars"
+    },
+    {
+      "optionName": "Stars (1 to 5)",
+      "type": "stars"
+    }
+  ],
+  "travelInfos": [],
+  "partnerList": [
+    "Booking.com",
+    "Trip.com",
+    "Hotels.com",
+    "Hyatt",
+    "Expedia",
+    "IHG"
+  ]
+}
