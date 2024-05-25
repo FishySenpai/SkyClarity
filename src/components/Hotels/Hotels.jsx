@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import flightsJson from "../../flights.json";
 import hotels from "../../hotels.json";
 import FlightsFilter from "../Flights/FlightsFilter";
+import { Link } from "react-router-dom";
 const Hotels = () => {
   const [flights, setFlights] = useState(flightsJson);
   const [shortestMinPrice, setShortestMinPrice] = useState(0);
@@ -135,81 +136,83 @@ const Hotels = () => {
             </div>
             <div>
               {hotels?.hotelCards.slice(0, 5).map((hotel, index) => (
-                <div className="bg-gray-100 rounded text-gray-700 w-[680px] mb-2  flex flex-row divide-x-2 divide-gray-400">
-                  <div className="w-[530px] py-4">
-                    <div key={index} className="flex flex-row ">
-                      <div
-                        className="px-3 relative"
-                        onMouseOver={() => handleMouseOver(hotel.id)}
-                        onMouseOut={handleMouseOut}
-                      >
-                        <div className="">
-                          <img
-                            className="w-[300px] h-[300px] rounded"
-                            src={
-                              thumbnails[hotel.id]
-                                ? thumbnails[hotel.id]
-                                : hotel.images[0]
-                            }
-                            alt="image"
-                          />
-                        </div>
-                        {hoveredHotelId === hotel.id ? (
-                          <div className="flex flex-row pl-9 w-[300px] absolute top-[220px] bg-gray-100 bg-opacity-70">
-                            {hotel.images.map((image) => (
-                              <ul className="flex flex-row" key={image}>
-                                <li>
-                                  <button
-                                    onMouseOver={() =>
-                                      handleImageClick(hotel.id, image)
-                                    }
-                                  >
-                                    <img
-                                      className="h-[60px] w-[55px] mr-6 mt-2"
-                                      src={image}
-                                      alt="image"
-                                    />
-                                  </button>
-                                </li>
-                              </ul>
-                            ))}
+                <Link to={`/hotels/hotel/${hotel.id}`}>
+                  <div className="bg-gray-100 rounded text-gray-700 w-[680px] mb-2  flex flex-row divide-x-2 divide-gray-400">
+                    <div className="w-[530px] py-4">
+                      <div key={index} className="flex flex-row ">
+                        <div
+                          className="px-3 relative"
+                          onMouseOver={() => handleMouseOver(hotel.id)}
+                          onMouseOut={handleMouseOut}
+                        >
+                          <div className="w-[350px] h-[350px]">
+                            <img
+                              className="w-[350px] h-[350px] rounded"
+                              src={
+                                thumbnails[hotel.id]
+                                  ? thumbnails[hotel.id]
+                                  : hotel.images[0]
+                              }
+                              alt="image"
+                            />
                           </div>
-                        ) : null}
+                          {hoveredHotelId === hotel.id ? (
+                            <div className="flex flex-row pl-9 w-[300px] absolute top-[220px] bg-gray-100 bg-opacity-70">
+                              {hotel.images.map((image) => (
+                                <ul className="flex flex-row" key={image}>
+                                  <li>
+                                    <button
+                                      onMouseOver={() =>
+                                        handleImageClick(hotel.id, image)
+                                      }
+                                    >
+                                      <img
+                                        className="h-[60px] w-[55px] mr-6 mt-2"
+                                        src={image}
+                                        alt="image"
+                                      />
+                                    </button>
+                                  </li>
+                                </ul>
+                              ))}
+                            </div>
+                          ) : null}
+                        </div>
+                        <div>
+                          <div className="pr-3 font-semibold text-lg ">
+                            {hotel.name}
+                          </div>
+                          <div>{hotel.distance}</div>
+                          <div className="flex flex-row space-x-2">
+                            <div>{hotel.reviewsSummary.score}</div>
+                            <div>{hotel.reviewsSummary.scoreDesc}</div>
+                            <div>{hotel.reviewsSummary.total} reviews</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pl-8 ">
+                      <div className="text-lg font-semibold  mt-3 ">
+                        {/* US {flight.price.formatted} */}
                       </div>
                       <div>
-                        <div className="pr-3 font-semibold text-lg ">
-                          {hotel.name}
-                        </div>
-                        <div>{hotel.distance}</div>
-                        <div className="flex flex-row space-x-2">
-                          <div>{hotel.reviewsSummary.score}</div>
-                          <div>{hotel.reviewsSummary.scoreDesc}</div>
-                          <div>{hotel.reviewsSummary.total} reviews</div>
-                        </div>
+                        <button className="px-3 py-1 rounded bg-gray-800 text-white mt-1 font-semibold flex flex-row">
+                          Select
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                            className="w-3 h-4 ml-2 mt-1"
+                          >
+                            <path
+                              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
                       </div>
                     </div>
                   </div>
-                  <div className="pl-8 ">
-                    <div className="text-lg font-semibold  mt-3 ">
-                      {/* US {flight.price.formatted} */}
-                    </div>
-                    <div>
-                      <button className="px-3 py-1 rounded bg-gray-800 text-white mt-1 font-semibold flex flex-row">
-                        Select
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 448 512"
-                          className="w-3 h-4 ml-2 mt-1"
-                        >
-                          <path
-                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                            fill="white"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
