@@ -147,8 +147,8 @@ const Home = () => {
               className="h-12 pl-10 border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none"
               type="search"
               placeholder="City or airport"
-              value={from}
-              onChange={(e) => setFrom(e.target.value)}
+              value={to}
+              onChange={(e) => setTo(e.target.value)}
               onFocus={() => setIsClicked(true)}
               onBlur={() => setIsClicked(false)}
             />
