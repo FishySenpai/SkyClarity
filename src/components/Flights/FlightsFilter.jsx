@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import TimeRangeSlider from "./TimeRangeSlider";
 
-const FlightsFilter = ({ flights }) => {
+const FlightsFilter = ({ flights}) => {
     const [minPrice, setMinPrice] = useState(Infinity);
     const [maxPrice, setMaxPrice] = useState(-Infinity);
     const [minDuration, setMinDuration] = useState(Infinity);

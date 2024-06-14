@@ -4,6 +4,7 @@ import hotelsData from "../../hotels.json";
 import FlightsFilter from "../Flights/FlightsFilter";
 import { Link } from "react-router-dom";
 import HotelInfo from "./HotelInfo";
+import HotelsFilter from "./HotelsFilter";
 const Hotels = () => {
   const [flights, setFlights] = useState(flightsJson);
 
@@ -39,7 +40,7 @@ const Hotels = () => {
 
         <div className="flex flex-row">
           <div>
-            <FlightsFilter flights={flights} />
+            <HotelsFilter flights={flights} hotelsData={hotelsData}/>
           </div>
           <div className="flex flex-col cursor-pointer">
             <div>
