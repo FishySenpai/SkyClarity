@@ -476,9 +476,9 @@ const Home = () => {
         </button>
         <button onClick={fetchFlights}>get flight</button>
       </div>
-      <div>
+      {flights ? <div>
         <Flights flights={flights} />
-      </div>
+      </div> : ""}
     </div>
   );
 };

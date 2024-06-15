@@ -6,11 +6,10 @@ const HotelsFilter = ({ flights,  hotelsData }) => {
   const [maxPrice, setMaxPrice] = useState(-Infinity);
   const [minDuration, setMinDuration] = useState(Infinity);
   const [maxDuration, setMaxDuration] = useState(-Infinity);
-  const [showStops, setShowStops] = useState(true);
-  const [showDepartureTimes, setShowDepartureTimes] = useState(true);
   const [showPrice, setShowPrice] = useState(true);
-  const [showJourneyDuration, setShowJourneyDuration] = useState(true);
-  const [showAirlines, setShowAirlines] = useState(true);
+  const [seeMoreProperties, setSeeMoreProperties] = useState(false);
+  const [seeMoreChains, setSeeMoreChains] = useState(false);
+  const [seeMoreDistricts, setSeeMoreDistricts] = useState(false);
 
   useEffect(() => {
     if (flights && flights.itineraries) {
@@ -38,18 +37,53 @@ const HotelsFilter = ({ flights,  hotelsData }) => {
 
   return (
     <div className="mx-12 px-4 rounded bg-gray-100 default-font text-gray-700 text-sm divide-y-2 divide-slate-300">
-      <div>
+      <div className="">
         <div className="flex flex-row">
-          <div className="font-semibold text-lg py-2">Stops</div>
+          <div className="font-semibold text-lg py-2">Popular Filters</div>
+          <div className="pl-20 pt-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              className="h-4 w-4"
+              onClick={() => {
+                setShowPrice((prev) => !prev);
+              }}
+            >
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                fill="gray"
+              />
+            </svg>
+          </div>
         </div>
+        {showPrice && (
+          <div className="pb-12">
+            {hotelsData.filters[7].values.map((cancellation, index) => (
+              <div key={cancellation.id} className="flex items-center mb-2">
+                <input type="checkbox" id={cancellation.id} className="mr-2" />
+                <label
+                  htmlFor={cancellation.id}
+                  className="text-sm justify-between"
+                >
+                  {cancellation.label}
+                  <span className="text-gray-500 ml-2 ">
+                    {cancellation.count}
+                  </span>
+                </label>
+              </div>
+            ))}
+            {hotelsData.filters[2].values.map((meal, index) => (
+              <div key={meal.id} className="flex items-center mb-2">
+                <input type="checkbox" id={meal.id} className="mr-2" />
+                <label htmlFor={meal.id} className="text-sm justify-between">
+                  {meal.label}
+                  <span className="text-gray-500 ml-2 ">{meal.count}</span>
+                </label>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
-
-      <div>
-        <div className="flex flex-row">
-          <div className="font-semibold text-lg py-2">Departure Times</div>
-        </div>
-      </div>
-
       <div className="">
         <div className="flex flex-row">
           <div className="font-semibold text-lg py-2">Price</div>
@@ -136,8 +170,8 @@ const HotelsFilter = ({ flights,  hotelsData }) => {
       </div>
       <div className="">
         <div className="flex flex-row">
-          <div className="font-semibold text-lg py-2">Price</div>
-          <div className="pl-44 pt-2">
+          <div className="font-semibold text-lg py-2">Guest Rating</div>
+          <div className="pl-24 pt-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -155,28 +189,32 @@ const HotelsFilter = ({ flights,  hotelsData }) => {
         </div>
         {showPrice && (
           <div className="pb-12">
-            {hotelsData.filters[3].values.map((guest, index) => (
-              <div key={guest.id} className="flex items-center mb-2">
-                <input type="checkbox" id={guest.id} className="mr-2" />
-                <label htmlFor={guest.id} className="text-sm justify-between">
-                  {guest.label}
-                  <span className="text-gray-500 ml-2 ">{guest.count}</span>
-                </label>
-              </div>
-            ))}
+            {hotelsData.filters[4].values
+              .slice()
+              .reverse()
+              .map((guest, index) => (
+                <div key={guest.id} className="flex items-center mb-2">
+                  <input type="checkbox" id={guest.id} className="mr-2" />
+                  <label htmlFor={guest.id} className="text-sm justify-between">
+                    <span className="mx-2">{guest.id}</span>
+                    {guest.label}
+                    <span className="text-gray-500 ml-2 ">{guest.count}</span>
+                  </label>
+                </div>
+              ))}
           </div>
         )}
       </div>
       <div className="">
         <div className="flex flex-row">
-          <div className="font-semibold text-lg py-2">Journey Duration</div>
-          <div className="pl-16 pt-3">
+          <div className="font-semibold text-lg py-2">Property type</div>
+          <div className="pl-24 pt-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
               className="h-4 w-4"
               onClick={() => {
-                setShowJourneyDuration((prev) => !prev);
+                setShowPrice((prev) => !prev);
               }}
             >
               <path
@@ -186,31 +224,55 @@ const HotelsFilter = ({ flights,  hotelsData }) => {
             </svg>
           </div>
         </div>
-        {showJourneyDuration && (
+        {showPrice && (
           <div className="pb-12">
-            {minDuration !== Infinity && maxDuration !== -Infinity && (
-              <TimeRangeSlider
-                min={minDuration}
-                max={maxDuration}
-                onChange={({ min, max }) =>
-                  console.log(`min = ${min}, max = ${max}`)
-                }
-                inputType="time"
-              />
-            )}
+            <div
+              className={`${seeMoreProperties ? "" : "h-[160px] overflow-hidden"}`}
+            >
+              {hotelsData.filters[9].values
+                .slice()
+                .sort((a, b) => b.count - a.count) // Sort by count in descending order
+                .map((type, index) => (
+                  <div
+                    key={type.id}
+                    className={`flex items-center mb-2 ${
+                      type.count === 0 ? "text-gray-500" : ""
+                    }`}
+                  >
+                    <input type="checkbox" id={type.id} className="mr-2" />
+                    <label
+                      htmlFor={type.id}
+                      className={`text-sm justify-between ${
+                        type.count === 0 ? "text-gray-500" : ""
+                      }`}
+                    >
+                      {type.label}
+                      <span className="ml-2">{type.count}</span>
+                    </label>
+                  </div>
+                ))}
+            </div>
+            <button
+              className="text-blue-600 pt-2"
+              onClick={() => {
+                setSeeMoreProperties(!seeMoreProperties);
+              }}
+            >
+              {seeMoreProperties ? "See less" : "See more"}
+            </button>
           </div>
         )}
       </div>
-      <div className="mb-12 pb-3">
+      <div className="">
         <div className="flex flex-row">
-          <div className="font-semibold text-lg py-2">Airlines</div>
-          <div className="pl-36 pt-3">
+          <div className="font-semibold text-lg py-2">Hotel Chains</div>
+          <div className="pl-24 pt-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
               className="h-4 w-4"
               onClick={() => {
-                setShowAirlines((prev) => !prev);
+                setShowPrice((prev) => !prev);
               }}
             >
               <path
@@ -220,19 +282,93 @@ const HotelsFilter = ({ flights,  hotelsData }) => {
             </svg>
           </div>
         </div>
-        {showAirlines && (
-          <div>
-            {flights?.filterStats.carriers
-              .slice(0, 10)
-              .map((carrier, index) => (
-                <div>
-                  <div className="flex flex-row">
-                    <input type="checkbox" defaultChecked />
-                    <div className="pl-2">{carrier.name}</div>
-                  </div>
-                  <div className="pl-5">None</div>{" "}
+        {showPrice && (
+          <div className="pb-12">
+            <div
+              className={`${seeMoreChains ? "" : "h-[160px] overflow-hidden"}`}
+            >
+              {hotelsData.filters[6].values.slice(0, 10).map((chain, index) => (
+                <div
+                  key={chain.id}
+                  className={`flex items-center mb-2 ${
+                    chain.count === 0 ? "text-gray-500" : ""
+                  }`}
+                >
+                  <input type="checkbox" id={chain.id} className="mr-2" />
+                  <label htmlFor={chain.id} className="text-sm justify-between">
+                    {chain.label}
+                    <span className="text-gray-500 ml-2 ">{chain.count}</span>
+                  </label>
                 </div>
               ))}
+            </div>
+            <button
+              className="text-blue-600 pt-2"
+              onClick={() => {
+                setSeeMoreChains(!seeMoreChains);
+              }}
+            >
+              {seeMoreChains ? "See less" : "See more"}
+            </button>
+          </div>
+        )}
+      </div>
+      <div className="">
+        <div className="flex flex-row">
+          <div className="font-semibold text-lg py-2">Neighbourhoods</div>
+          <div className="pl-24 pt-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              className="h-4 w-4"
+              onClick={() => {
+                setShowPrice((prev) => !prev);
+              }}
+            >
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                fill="gray"
+              />
+            </svg>
+          </div>
+        </div>
+        {showPrice && (
+          <div className="pb-12">
+            <div
+              className={`${
+                seeMoreDistricts ? "" : "h-[160px] overflow-hidden"
+              }`}
+            >
+              {hotelsData.filters[10].values
+                .slice(0, 10)
+                .map((district, index) => (
+                  <div
+                    key={district.id}
+                    className={`flex items-center mb-2 ${
+                      district.count === 0 ? "text-gray-500" : ""
+                    }`}
+                  >
+                    <input type="checkbox" id={district.id} className="mr-2" />
+                    <label
+                      htmlFor={district.id}
+                      className="text-sm justify-between"
+                    >
+                      {district.label}
+                      <span className="text-gray-500 ml-2 ">
+                        {district.count}
+                      </span>
+                    </label>
+                  </div>
+                ))}
+            </div>
+            <button
+              className="text-blue-600 pt-2"
+              onClick={() => {
+                setSeeMoreDistricts(!seeMoreDistricts);
+              }}
+            >
+              {seeMoreDistricts ? "See less" : "See more"}
+            </button>
           </div>
         )}
       </div>
