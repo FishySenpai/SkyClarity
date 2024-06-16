@@ -57,7 +57,7 @@ const Home = () => {
     fetchLocation("from", from);
     fetchLocation("to", to);
     if (fromId && toId) {
-      const url = `https://skyscanner80.p.rapidapi.com/api/v1/flights/search-one-way?fromId=${fromId}&toId=${toId}&departDate=${departDate}&adults=${adults}&currency=USD&market=US&locale=en-US`;
+      const url = `https://skyscanner80.p.rapidapi.com/api/v1/flights/search-one-way?fromId=${fromId}&toId=${toId}&departDate=2024-06-18&adults=${adults}&currency=USD&market=US&locale=en-US`;
       const options = {
         method: "GET",
         headers: {
@@ -78,13 +78,12 @@ const Home = () => {
     }
   };
 
-  const formatDate = (date) => {
-    return date.toLocaleDateString("en-GB", {
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit",
-    });
-  };
+const formatDate = (date) => {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+};
    useOutsideClick(departPopupRef, () => {
      setDepartToggle(false);
    });

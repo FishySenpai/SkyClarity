@@ -7,8 +7,35 @@ import HotelInfo from "./HotelInfo";
 import HotelsFilter from "./HotelsFilter";
 const Hotels = () => {
   const [flights, setFlights] = useState(flightsJson);
+  const fetchLocation = async (locationType, location) => {
+    const url = `https://skyscanner80.p.rapidapi.com/api/v1/flights/auto-complete?query=${location}&market=US&locale=en-US`;
+    const options = {
+      method: "GET",
+      headers: {
+        "X-RapidAPI-Key": "325a7f72damshf16ffcb2c3ed7bep1f566djsn006db2e1a65a",
+        "X-RapidAPI-Host": "skyscanner80.p.rapidapi.com",
+      },
+    };
 
+    try {
+      const response = await fetch(url, options);
+      const result = await response.json();
+
+      console.log(result);
+
+      if (locationType === "from") {
+        setFromId(result.data[0].id);
+        console.log(fromId);
+      } else if (locationType === "to") {
+        setToId(result.data[0].id);
+        console.log(toId);
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
   const fetchHotels = async () => {
+    fetchLocation();
     const url =
       "https://skyscanner80.p.rapidapi.com/api/v1/hotels/search?entityId=27544008&checkin=2024-06-22&checkout=2024-07-20&rooms=1&adults=1&resultsPerPage=15&page=1&priceType=PRICE_PER_NIGHT&sorting=-relevance&currency=USD&market=US&locale=en-US";
     const options = {
@@ -30,6 +57,7 @@ const Hotels = () => {
   if (flights) {
     return (
       <div>
+
         {console.log(hotelsData)}
         <button
           onClick={fetchHotels}
