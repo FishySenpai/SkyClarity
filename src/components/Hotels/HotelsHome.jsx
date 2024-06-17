@@ -1,32 +1,28 @@
 import React, { useState, useEffect, useRef } from "react";
-import flightsJson from "../flights.json";
-import Flights from "./Flights/Flights";
+import Hotels from "./Hotels";
+import hotelsData from "../../hotels.json";
+import useOutsideClick from "../useOutsideClick";
 import Calendar from "react-calendar";
-import "./Calender/Sample.css";
-import useOutsideClick from "./useOutsideClick";
-const Home = () => {
-  const [from, setFrom] = useState();
-  const [to, setTo] = useState();
-  const [fromId, setFromId] = useState();
-  const [toId, setToId] = useState();
-  const [flights, setFlights] = useState();
+const HotelsHome = () => {
+  const [hotelsData, setHotelsData] = useState();
+  const [location, setLocation] = useState();
+  const [locationId, setLocationId] = useState();
   const [isClicked, setIsClicked] = useState(false);
   const [value, onChange] = useState(new Date());
-  const [departToggle, setDepartToggle] = useState(false);
-  const [departDate, setDepartDate] = useState();
-  const [returnToggle, setReturnToggle] = useState(false);
-  const [returnDate, setReturnDate] = useState();
+  const [checkInToggle, setcheckInToggle] = useState(false);
+  const [checkInDate, setcheckInDate] = useState();
+  const [checkOutToggle, setcheckOutToggle] = useState(false);
+  const [checkOutDate, setcheckOutDate] = useState();
   const [travelers, setTravelers] = useState("Travelers");
   const [cabinClass, setCabinClass] = useState("Economy");
   const [cabinDrop, setCabinDrop] = useState(false);
   const [cabinClassDrop, setCabinClassDrop] = useState(false);
   const [adults, setAdults] = useState(1);
   const [children, setChildren] = useState(0);
-  const departPopupRef = useRef(null);
-  const returnPopupRef = useRef(null);
+  const checkInPopupRef = useRef(null);
+  const checkOutPopupRef = useRef(null);
   const cabinPopupRef = useRef(null);
-
-  const fetchLocation = async (locationType, location) => {
+  const fetchLocation = async (location) => {
     const url = `https://skyscanner80.p.rapidapi.com/api/v1/flights/auto-complete?query=${location}&market=US&locale=en-US`;
     const options = {
       method: "GET",
@@ -39,68 +35,60 @@ const Home = () => {
     try {
       const response = await fetch(url, options);
       const result = await response.json();
-
       console.log(result);
-
-      if (locationType === "from") {
-        setFromId(result.data[0].id);
-        console.log(fromId);
-      } else if (locationType === "to") {
-        setToId(result.data[0].id);
-        console.log(toId);
-      }
+      setLocationId(result.data[0].entityId);
     } catch (error) {
       console.error(error);
     }
   };
-  const fetchFlights = async () => {
-    fetchLocation("from", from);
-    fetchLocation("to", to);
-    if (fromId && toId) {
-      const url = `https://skyscanner80.p.rapidapi.com/api/v1/flights/search-one-way?fromId=${fromId}&toId=${toId}&departDate=${departDate}&adults=${adults}&currency=USD&market=US&locale=en-US`;
+  const fetchHotels = async () => {
+      const url = `https://skyscanner80.p.rapidapi.com/api/v1/hotels/search?entityId=${locationId}&checkin=${checkInDate}&checkout=${checkOutDate}&rooms=1&adults=1&resultsPerPage=15&page=1&priceType=PRICE_PER_NIGHT&sorting=-relevance&currency=USD&market=US&locale=en-US`;
       const options = {
         method: "GET",
         headers: {
-          "X-RapidAPI-Key":
+          "x-rapidapi-key":
             "325a7f72damshf16ffcb2c3ed7bep1f566djsn006db2e1a65a",
-          "X-RapidAPI-Host": "skyscanner80.p.rapidapi.com",
+          "x-rapidapi-host": "skyscanner80.p.rapidapi.com",
         },
       };
 
       try {
         const response = await fetch(url, options);
         const result = await response.json();
-        setFlights(result.data);
         console.log(result);
+        setHotelsData(result);
       } catch (error) {
         console.error(error);
       }
-    }
   };
 
-const formatDate = (date) => {
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, "0");
-  const day = String(date.getDate()).padStart(2, "0");
-  return `${year}-${month}-${day}`;
-};
-   useOutsideClick(departPopupRef, () => {
-     setDepartToggle(false);
-   });
-   useOutsideClick(returnPopupRef, () => {
-     setReturnToggle(false);
-   });
-   useOutsideClick(cabinPopupRef, () => {
-     setCabinDrop(false);
-   });
+  const formatDate = (date) => {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const day = String(date.getDate()).padStart(2, "0");
+    return`${year}-${month}-${day}`;
+  };
+  useOutsideClick(checkInPopupRef, () => {
+    setcheckInToggle(false);
+  });
+  useOutsideClick(checkOutPopupRef, () => {
+    setcheckOutToggle(false);
+  });
+  useOutsideClick(cabinPopupRef, () => {
+    setCabinDrop(false);
+  });
+    useEffect(() => {
+      fetchHotels();
+    }, [locationId]);
   useEffect(() => {
-    setDepartToggle(false);
-  }, [departDate]);
+    setcheckInToggle(false);
+  }, [checkInDate]);
   useEffect(() => {
-    setReturnToggle(false);
-  }, [returnDate]);
+    setcheckOutToggle(false);
+  }, [checkOutDate]);
   return (
-    <div className=" text-white default-font bg-gray-500 ">
+    <div>
+      {" "}
       <div className="bg-gray-100 rounded text-gray-500 ">
         <div className="flex flex-row space-x-12  p-12 ">
           <div className="relative h-fit">
@@ -117,9 +105,9 @@ const formatDate = (date) => {
             <input
               className="h-12 pl-10 border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none"
               type="search"
-              placeholder="City or airport"
-              value={from}
-              onChange={(e) => setFrom(e.target.value)}
+              placeholder="City or region"
+              value={location}
+              onChange={(e) => setLocation(e.target.value)}
               onFocus={() => setIsClicked(true)}
               onBlur={() => setIsClicked(false)}
             />
@@ -127,43 +115,16 @@ const formatDate = (date) => {
               htmlFor="text"
               className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
             >
-              From
+              Destination
             </label>
           </div>
 
-          <div className="relative h-fit">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 640 512"
-              className="h-6 w-6 absolute left-2 top-3"
-            >
-              <path
-                d="M.3 166.9L0 68C0 57.7 9.5 50.1 19.5 52.3l35.6 7.9c10.6 2.3 19.2 9.9 23 20L96 128l127.3 37.6L181.8 20.4C178.9 10.2 186.6 0 197.2 0h40.1c11.6 0 22.2 6.2 27.9 16.3l109 193.8 107.2 31.7c15.9 4.7 30.8 12.5 43.7 22.8l34.4 27.6c24 19.2 18.1 57.3-10.7 68.2c-41.2 15.6-86.2 18.1-128.8 7L121.7 289.8c-11.1-2.9-21.2-8.7-29.3-16.9L9.5 189.4c-5.9-6-9.3-14.1-9.3-22.5zM32 448H608c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32zm96-80a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm128-16a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
-                fill="gray"
-              />
-            </svg>
-            <input
-              className="h-12 pl-10 border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none"
-              type="search"
-              placeholder="City or airport"
-              value={to}
-              onChange={(e) => setTo(e.target.value)}
-              onFocus={() => setIsClicked(true)}
-              onBlur={() => setIsClicked(false)}
-            />
-            <label
-              htmlFor="text"
-              className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
-            >
-              To
-            </label>
-          </div>
-          <div ref={departPopupRef}>
+          <div ref={checkInPopupRef}>
             <div
               className="relative cursor-pointer h-fit"
               onClick={() => {
-                setDepartToggle(!departToggle);
-                setReturnToggle(false);
+                setcheckInToggle(!checkInToggle);
+                setcheckOutToggle(false);
                 setCabinDrop(false);
               }}
             >
@@ -179,11 +140,11 @@ const formatDate = (date) => {
               </svg>
               <input
                 className={`h-12 pl-10 w-[180px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none cursor-pointer ${
-                  departDate ? "font-semibold text-gray-800" : "font-normal"
+                  checkInDate ? "font-semibold text-gray-800" : "font-normal"
                 }`}
                 type="search"
                 placeholder="Select Date"
-                value={departDate}
+                value={checkInDate}
                 readOnly
               />
 
@@ -191,14 +152,14 @@ const formatDate = (date) => {
                 htmlFor="text"
                 className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
               >
-                Departure
+                Check-in
               </label>
             </div>
-            {departToggle ? (
+            {checkInToggle ? (
               <div className="z-50 absolute">
                 <Calendar
                   onClickDay={(value, event) => {
-                    setDepartDate(formatDate(value));
+                    setcheckInDate(formatDate(value));
                   }}
                   showWeekNumbers
                   value={value}
@@ -208,12 +169,12 @@ const formatDate = (date) => {
               </div>
             ) : null}
           </div>
-          <div ref={returnPopupRef}>
+          <div ref={checkOutPopupRef}>
             <div
               className="relative cursor-pointer h-fit "
               onClick={() => {
-                setReturnToggle(!returnToggle);
-                setDepartToggle(false);
+                setcheckOutToggle(!checkOutToggle);
+                setcheckInToggle(false);
                 setCabinDrop(false);
               }}
             >
@@ -229,11 +190,11 @@ const formatDate = (date) => {
               </svg>
               <input
                 className={`h-12 pl-10 w-[180px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none cursor-pointer  ${
-                  returnDate ? "font-semibold text-gray-800" : "font-normal"
+                  checkOutDate ? "font-semibold text-gray-800" : "font-normal"
                 }`}
                 type="search"
                 placeholder="Select Date"
-                value={returnDate}
+                value={checkOutDate}
                 readOnly
               />
 
@@ -241,14 +202,14 @@ const formatDate = (date) => {
                 htmlFor="text"
                 className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
               >
-                Return
+                Check-out
               </label>
             </div>
-            {returnToggle ? (
+            {checkOutToggle ? (
               <div className="z-50 absolute">
                 <Calendar
                   onClickDay={(value, event) => {
-                    setReturnDate(formatDate(value));
+                    setcheckOutDate(formatDate(value));
                   }}
                   showWeekNumbers
                   value={value}
@@ -259,11 +220,11 @@ const formatDate = (date) => {
             ) : null}
           </div>
           <div ref={cabinPopupRef} className="relative">
-            <div             
+            <div
               onClick={() => {
                 setCabinDrop(!cabinDrop);
-                setDepartToggle(false);
-                setReturnToggle(false);
+                setcheckInToggle(false);
+                setcheckOutToggle(false);
               }}
               className="cursor-pointer"
             >
@@ -280,7 +241,7 @@ const formatDate = (date) => {
               <input
                 className="h-12  pl-10 w-[190px] border cursor-pointer text-[16px] pb-2 rounded px-2 text-gray-800 font-semibold  border-gray-400 focus:border-blue-500 bg-gray-100 outline-none"
                 type="search"
-                value={adults+children+ travelers}
+                value={adults + children + travelers}
                 onFocus={() => setIsClicked(true)}
                 onBlur={() => setIsClicked(false)}
                 readOnly
@@ -303,7 +264,9 @@ const formatDate = (date) => {
                 <div className="relative py-2 px-1">
                   <input
                     className={`h-12  w-[260px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-white outline-none cursor-pointer  ${
-                      returnDate ? "font-semibold text-gray-800" : "font-normal"
+                      checkOutDate
+                        ? "font-semibold text-gray-800"
+                        : "font-normal"
                     }`}
                     type="search"
                     placeholder="Economy"
@@ -466,20 +429,17 @@ const formatDate = (date) => {
               </div>
             ) : null}
           </div>
+          <button
+            onClick={()=>{fetchLocation(location);}}
+            className="bg-gray-900 text-white p-3 m-12 ml-96"
+          >
+            Click Me
+          </button>
         </div>
       </div>
-      <div className="flex flex-col space-y-12">
-        <button onClick={() => fetchLocation("from", from)}>Click</button>
-        <button onClick={() => fetchLocation("to", to)}>
-          Click for Flight
-        </button>
-        <button onClick={fetchFlights}>get flight</button>
-      </div>
-      {flights ? <div>
-        <Flights flights={flights} />
-      </div> : ""}
+      {/* <Hotels hotelsData={hotelsData} /> */}
     </div>
   );
 };
 
-export default Home;
+export default HotelsHome;
