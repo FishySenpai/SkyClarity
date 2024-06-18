@@ -1,20 +1,17 @@
-import React, {useState} from "react"
+import React, { useState } from "react";
 
-const HotelInfo = ({hotel, index}) => {
-       const [currentImageIndex, setCurrentImageIndex] = useState(0);
+const HotelInfo = ({ hotel, index }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-       const handlePrevClick = () => {
-         setCurrentImageIndex(
-           (prevIndex) =>
-             (prevIndex - 1 + hotel.images.length) % hotel.images.length
-         );
-       };
+  const handlePrevClick = () => {
+    setCurrentImageIndex(
+      (prevIndex) => (prevIndex - 1 + hotel.images.length) % hotel.images.length
+    );
+  };
 
-       const handleNextClick = () => {
-         setCurrentImageIndex(
-           (prevIndex) => (prevIndex + 1) % hotel.images.length
-         );
-       };
+  const handleNextClick = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % hotel.images.length);
+  };
   return (
     <div>
       <div className="bg-gray-100 rounded text-gray-700 w-[880px] mb-2 mr-12 flex flex-row divide-x-2 divide-gray-400">
@@ -96,14 +93,14 @@ const HotelInfo = ({hotel, index}) => {
                   : hotel.distance}
               </div>
               <div className="flex flex-row space-x-2 pt-1">
-                <div>{hotel.reviewSummary.value}</div>
+                <div>{hotel.reviewSummary?.value}</div>
                 <div>
-                  <img src={hotel.reviewSummary.taImage} alt="" />
+                  <img src={hotel.reviewSummary?.taImage} alt="" />
                 </div>
               </div>
               <div className="flex flex-row space-x-2 pt-1">
-                <div>"{hotel.reviewSummary.description}"</div>
-                <div>{hotel.reviewSummary.count} reviews</div>
+                <div>"{hotel.reviewSummary?.description}"</div>
+                <div>{hotel.reviewSummary?.count} reviews</div>
               </div>
             </div>
           </div>
@@ -144,6 +141,6 @@ const HotelInfo = ({hotel, index}) => {
       </div>
     </div>
   );
-}
+};
 
-export default HotelInfo
+export default HotelInfo;
