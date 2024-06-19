@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Calendar from "react-calendar";
 import useOutsideClick from "../useOutsideClick";
 const MultiCity = ({
@@ -16,39 +16,42 @@ const MultiCity = ({
   setTo3,
   departDate,
   setDepartDate,
-  departToggle,
-  setDepartToggle,
-  returnToggle,
-  setReturnToggle,
   departDate1,
   setDepartDate1,
-  departToggle1,
-  setDepartToggle1,
-  returnToggle1,
-  setReturnToggle1,
   departDate2,
   setDepartDate2,
-  departToggle2,
-  setDepartToggle2,
-  returnToggle2,
-  setReturnToggle2,
-  isClicked,
   setIsClicked,
-  cabinDrop,
   setCabinDrop,
   value,
   formatDate,
-  departPopupRef,
   flightCount,
   setFlightCount,
 }) => {
-      useOutsideClick(departPopupRef, () => {
-        setDepartToggle(false);
-      });
+  const departPopupRef = useRef(null);
+  const departPopupRef1 = useRef(null);
+  const departPopupRef2 = useRef(null);
+    const [departToggle0, setDepartToggle0] = useState(false);
+    const [departToggle1, setDepartToggle1] = useState(false);
+    const [departToggle2, setDepartToggle2] = useState(false);
+    useOutsideClick(departPopupRef, () => {
+      setDepartToggle0(false);
+    });
+  useOutsideClick(departPopupRef1, () => {
+    setDepartToggle1(false);
+  });
+  useOutsideClick(departPopupRef2, () => {
+    setDepartToggle2(false);
+  });
 
+  useEffect(() => {
+    setDepartToggle0(false);
+  }, [departDate]);
+    useEffect(() => {
+      setDepartToggle1(false);
+    }, [departDate1]);
       useEffect(() => {
-        setDepartToggle(false);
-      }, [departDate]);
+        setDepartToggle2(false);
+      }, [departDate2]);
   useEffect(() => {
     console.log(`Flight count updated: ${flightCount}`);
     // Add any additional logic that should run when flightCount changes
@@ -116,8 +119,7 @@ const MultiCity = ({
             <div
               className="relative cursor-pointer h-fit"
               onClick={() => {
-                setDepartToggle(!departToggle);
-                setReturnToggle(false);
+                setDepartToggle0(!departToggle0);
                 setCabinDrop(false);
               }}
             >
@@ -148,7 +150,7 @@ const MultiCity = ({
                 Departure
               </label>
             </div>
-            {departToggle ? (
+            {departToggle0 ? (
               <div className="z-50 absolute">
                 <Calendar
                   onClickDay={(value, event) => {
@@ -220,12 +222,11 @@ const MultiCity = ({
                 To
               </label>
             </div>
-            <div ref={departPopupRef}>
+            <div ref={departPopupRef1}>
               <div
                 className="relative cursor-pointer h-fit"
                 onClick={() => {
                   setDepartToggle1(!departToggle1);
-                  setReturnToggle1(false);
                   setCabinDrop(false);
                 }}
               >
@@ -331,12 +332,11 @@ const MultiCity = ({
                 To
               </label>
             </div>
-            <div ref={departPopupRef}>
+            <div ref={departPopupRef2}>
               <div
                 className="relative cursor-pointer h-fit"
                 onClick={() => {
                   setDepartToggle2(!departToggle2);
-                  setReturnToggle2(false);
                   setCabinDrop(false);
                 }}
               >
