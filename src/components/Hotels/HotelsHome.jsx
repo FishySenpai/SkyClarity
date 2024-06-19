@@ -49,7 +49,8 @@ const HotelsHome = () => {
   };
 
   const fetchHotels = async (id) => {
-    const url = `https://skyscanner80.p.rapidapi.com/api/v1/hotels/search?entityId=${id}&checkin=${checkInDate}&checkout=${checkOutDate}&rooms=1&adults=1&resultsPerPage=15&page=1&priceType=PRICE_PER_NIGHT&sorting=-relevance&currency=USD&market=US&locale=en-US`;
+    const url =
+      `https://skyscanner80.p.rapidapi.com/api/v1/hotels/search?entityId=${id}&checkin=${checkInDate}&checkout=${checkOutDate}&rooms=1&adults=1&resultsPerPage=15&page=1&priceType=PRICE_PER_NIGHT&sorting=-relevance&currency=USD&market=US&locale=en-US`;
     const options = {
       method: "GET",
       headers: {

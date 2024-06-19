@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
+import Home from "./components/Flights/Home";
 import Navbar from "./components/Navbar";
 import "./App.css"
 import Hotels from "./components/Hotels/Hotels";
