@@ -22,6 +22,14 @@ const Home = () => {
   const [departDate, setDepartDate] = useState();
   const [returnToggle, setReturnToggle] = useState(false);
   const [returnDate, setReturnDate] = useState();
+  const [departToggle1, setDepartToggle1] = useState(false);
+  const [departDate1, setDepartDate1] = useState();
+  const [returnToggle1, setReturnToggle1] = useState(false);
+  const [returnDate1, setReturnDate1] = useState();
+  const [departToggle2, setDepartToggle2] = useState(false);
+  const [departDate2, setDepartDate2] = useState();
+  const [returnToggle2, setReturnToggle2] = useState(false);
+  const [returnDate2, setReturnDate2] = useState();
   const [travelers, setTravelers] = useState("Travelers");
   const [cabinClass, setCabinClass] = useState("Economy");
   const [cabinDrop, setCabinDrop] = useState(false);
@@ -32,7 +40,7 @@ const Home = () => {
   const departPopupRef = useRef(null);
   const returnPopupRef = useRef(null);
   const cabinPopupRef = useRef(null);
-  const [flightCount, setFlightCount] = useState(0);
+  const [flightCount, setFlightCount] = useState(1);
   const handleFlightCount = () => {
     if (flightCount <2) {
       setFlightCount(flightCount+1);
@@ -170,18 +178,31 @@ const Home = () => {
                 setTo3={setTo3}
                 departDate={departDate}
                 setDepartDate={setDepartDate}
-                isClicked={isClicked}
-                setIsClicked={setIsClicked}
                 departToggle={departToggle}
                 setDepartToggle={setDepartToggle}
                 returnToggle={returnToggle}
                 setReturnToggle={setReturnToggle}
+                departDate1={departDate1}
+                setDepartDate1={setDepartDate1}
+                departToggle1={departToggle1}
+                setDepartToggle1={setDepartToggle1}
+                returnToggle1={returnToggle1}
+                setReturnToggle1={setReturnToggle1}
+                departDate2={departDate2}
+                setDepartDate2={setDepartDate2}
+                departToggle2={departToggle2}
+                setDepartToggle2={setDepartToggle2}
+                returnToggle2={returnToggle2}
+                setReturnToggle2={setReturnToggle2}
+                isClicked={isClicked}
+                setIsClicked={setIsClicked}
                 cabinDrop={cabinDrop}
                 setCabinDrop={setCabinDrop}
                 value={value}
                 formatDate={formatDate}
                 departPopupRef={departPopupRef}
                 flightCount={flightCount}
+                setFlightCount={setFlightCount}
               />
             ) : (
               <>
@@ -349,7 +370,10 @@ const Home = () => {
                 </div>
               </>
             )}
-            <div ref={cabinPopupRef} className="relative">
+            <div
+              ref={cabinPopupRef}
+              className={`relative ${cabinDrop ? "z-20" : ""}`}
+            >
               <div
                 onClick={() => {
                   setCabinDrop(!cabinDrop);
@@ -566,9 +590,11 @@ const Home = () => {
               Search
             </button>
           </div>
-          <div className="pl-[22px]">
+          <div className="pl-[22px] pb-4">
             <button
-              className="bg-gray-800 text-white p-2.5  pr-3.5 rounded-md font-semibold text-[15px] "
+              className={`bg-gray-800 text-white p-2.5  pr-3.5 rounded-md font-semibold text-[15px] ${
+                selectedOption === "multi-city" ? "" : "hidden"
+              }`}
               onClick={handleFlightCount}
             >
               Add Another Flight
