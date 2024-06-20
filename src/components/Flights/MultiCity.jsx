@@ -266,7 +266,7 @@ const MultiCity = ({
                     showWeekNumbers
                     value={value}
                     minDetail="month"
-                    minDate={new Date()}
+                    minDate={new Date(departDate)}
                   />
                 </div>
               ) : null}
@@ -376,12 +376,12 @@ const MultiCity = ({
                     showWeekNumbers
                     value={value}
                     minDetail="month"
-                    minDate={new Date()}
+                    minDate={new Date(departDate1)}
                   />
                 </div>
               ) : null}
             </div>
-            <div className="absolute right-[260px] p-6 z-10">
+            <div className="absolute right-[275px] p-6 z-10">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 384 512"

@@ -7,6 +7,7 @@ import Hotels from "./components/Hotels/Hotels";
 import HotelDetails from "./components/Hotels/HotelDetails";
 import FlightDetails from "./components/Flights/FlightDetails";
 import HotelsHome from "./components/Hotels/HotelsHome";
+import CarRentalHome from "./components/CarRental/CarRentalHome";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/hotels" element={<HotelsHome />} />
+        <Route path="/carhire" element={<CarRentalHome />} />
         <Route path="/hotels/hotel/:id" element={<HotelDetails />} />
         <Route path="/flights/flight" element={<FlightDetails />} />
       </Routes>

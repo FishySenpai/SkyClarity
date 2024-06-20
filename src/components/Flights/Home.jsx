@@ -35,6 +35,17 @@ const Home = () => {
   const returnPopupRef = useRef(null);
   const cabinPopupRef = useRef(null);
   const [flightCount, setFlightCount] = useState(1);
+  const handleMultiCityClick = ()=>{
+    console.log(from);
+    console.log(to);
+    console.log(departDate)
+    console.log(from2);
+    console.log(to2);
+    console.log(departDate1);
+    console.log(from3);
+    console.log(to3);
+    console.log(departDate2);
+  }
   const handleFlightCount = () => {
     if (flightCount <2) {
       setFlightCount(flightCount+1);
@@ -569,7 +580,7 @@ const Home = () => {
               ) : null}
             </div>
             <button
-              onClick={fetchFlights}
+              onClick={handleMultiCityClick}
               className="bg-gray-900 text-white p-2.5  pr-3.5 rounded-md font-semibold text-lg h-[48px]"
             >
               Search
@@ -579,7 +590,7 @@ const Home = () => {
             <button
               className={`bg-gray-800 text-white p-2.5  pr-3.5 rounded-md font-semibold text-[15px] ${
                 selectedOption === "multi-city" ? "" : "hidden"
-              }`}
+              } ${flightCount === 2 ? "cursor-not-allowed" : ""}`}
               onClick={handleFlightCount}
             >
               Add Another Flight
