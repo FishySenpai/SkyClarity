@@ -8,6 +8,7 @@ import HotelDetails from "./components/Hotels/HotelDetails";
 import FlightDetails from "./components/Flights/FlightDetails";
 import HotelsHome from "./components/Hotels/HotelsHome";
 import CarRentalHome from "./components/CarRental/CarRentalHome";
+import CarInfo from "./components/CarRental/CarInfo";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/hotels" element={<HotelsHome />} />
         <Route path="/carhire" element={<CarRentalHome />} />
+        <Route path="/carhire/info" element={<CarInfo />} />
         <Route path="/hotels/hotel/:id" element={<HotelDetails />} />
         <Route path="/flights/flight" element={<FlightDetails />} />
       </Routes>

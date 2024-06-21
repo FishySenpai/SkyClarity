@@ -1,9 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import Calendar from "react-calendar";
 import carImg from "./car-img.jpg";
+import useOutsideClick from "../useOutsideClick";
 const CarRentalHome = () => {
-  const [location, setLocation] = useState();
-  const [locationId, setLocationId] = useState();
+  const [pickUpLocation, setPickUpLocation] = useState();
+  const [pickUpLocationId, setPickUpLocationId] = useState();
+  const [dropOffLocation, setDropOffLocation] = useState();
+  const [dropOffLocationId, setDropOffLocationId] = useState();
   const [isClicked, setIsClicked] = useState(false);
   const [value, onChange] = useState(new Date());
   const [pickUpToggle, setpickUpToggle] = useState(false);
@@ -14,10 +17,12 @@ const CarRentalHome = () => {
   const [togglePickUpTime, setTogglePickUpTime] = useState(false);
   const [dropOffTime, setDropOffTime] = useState("10:00");
   const [toggleDropOffTime, setToggleDropOffTime] = useState(false);
+  const [driverCheck, setDriverCheck] = useState(true);
+  const [dropOffCheck, setDropOffCheck] = useState(false);
   const pickUpPopupRef = useRef(null);
   const dropOffPopupRef = useRef(null);
-    const pickUpTimePopupRef = useRef(null);
-    const dropOffTimePopupRef = useRef(null);
+  const pickUpTimePopupRef = useRef(null);
+  const dropOffTimePopupRef = useRef(null);
 
   const times = [];
   for (let hour = 0; hour < 24; hour++) {
@@ -34,6 +39,18 @@ const CarRentalHome = () => {
     const day = String(date.getDate()).padStart(2, "0");
     return `${year}-${month}-${day}`;
   };
+  useOutsideClick(pickUpPopupRef, () => {
+    setpickUpToggle(false);
+  });
+  useOutsideClick(dropOffPopupRef, () => {
+    setdropOffToggle(false);
+  });
+  useOutsideClick(pickUpTimePopupRef, () => {
+    togglePickUpTime(false);
+  });
+  useOutsideClick(dropOffTimePopupRef, () => {
+    toggleDropOffTime(false);
+  });
   useEffect(() => {
     setpickUpToggle(false);
   }, [pickUpDate]);
@@ -61,13 +78,13 @@ const CarRentalHome = () => {
                 />
               </svg>
               <input
-                className={`h-12 pl-10 w-[400px]  text-gray-800 border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none ${
-                  location ? "font-semibold text-gray-800" : "font-normal"
-                }`}
+                className={`h-12 pl-10 w-[295px]  text-gray-800 border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none ${
+                  pickUpLocation ? "font-semibold text-gray-800" : "font-normal"
+                } ${dropOffCheck ? "" : "w-[610px]"}`}
                 type="search"
                 placeholder="City, airport or station"
-                value={location}
-                onChange={(e) => setLocation(e.target.value)}
+                value={pickUpLocation}
+                onChange={(e) => setPickUpLocation(e.target.value)}
                 onFocus={() => setIsClicked(true)}
                 onBlur={() => setIsClicked(false)}
               />
@@ -78,7 +95,7 @@ const CarRentalHome = () => {
                 Pick-up Location
               </label>
             </div>
-            <div className="relative h-fit ">
+            <div className={`relative h-fit ${dropOffCheck ? "" : "hidden"} `}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
@@ -90,13 +107,15 @@ const CarRentalHome = () => {
                 />
               </svg>
               <input
-                className={`h-12 pl-10 w-[400px]  text-gray-800 border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none ${
-                  location ? "font-semibold text-gray-800" : "font-normal"
+                className={`h-12 pl-10 w-[295px]  text-gray-800 border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none ${
+                  dropOffLocation
+                    ? "font-semibold text-gray-800"
+                    : "font-normal"
                 }`}
                 type="search"
                 placeholder="City, airport or station"
-                value={location}
-                onChange={(e) => setLocation(e.target.value)}
+                value={dropOffLocation}
+                onChange={(e) => setDropOffLocation(e.target.value)}
                 onFocus={() => setIsClicked(true)}
                 onBlur={() => setIsClicked(false)}
               />
@@ -104,7 +123,7 @@ const CarRentalHome = () => {
                 htmlFor="text"
                 className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
               >
-                Pick-up Location
+                Drop-off Location
               </label>
             </div>
             <div ref={pickUpPopupRef}>
@@ -140,7 +159,7 @@ const CarRentalHome = () => {
                   htmlFor="text"
                   className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
                 >
-                  Pick-up
+                  Pick-up Date
                 </label>
               </div>
               {pickUpToggle ? (
@@ -235,7 +254,7 @@ const CarRentalHome = () => {
                   htmlFor="text"
                   className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
                 >
-                  Drop-off
+                  Drop-off Date
                 </label>
               </div>
               {dropOffToggle ? (
@@ -321,22 +340,22 @@ const CarRentalHome = () => {
               <input
                 type="checkbox"
                 className="form-checkbox h-5 w-5 text-blue-600"
+                onClick={() => {
+                  setDropOffCheck(!dropOffCheck);
+                }}
               />
-              <span className="ml-2">Free cancellation</span>
+              <span className="ml-2">Return car to a different location</span>
             </label>
             <label className="flex items-center">
               <input
                 type="checkbox"
                 className="form-checkbox h-5 w-5 text-blue-600"
+                defaultChecked
+                onClick={() => {
+                  setDriverCheck(!driverCheck);
+                }}
               />
-              <span className="ml-2">4 stars</span>
-            </label>
-            <label className="flex items-center">
-              <input
-                type="checkbox"
-                className="form-checkbox h-5 w-5 text-blue-600"
-              />
-              <span className="ml-2">3 stars</span>
+              <span className="ml-2">Driver aged between 25 - 75</span>
             </label>
           </div>
         </div>
