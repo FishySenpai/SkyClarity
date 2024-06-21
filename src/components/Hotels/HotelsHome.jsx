@@ -5,7 +5,7 @@ import hotelsImg from "./hotels-img.jpg"
 import useOutsideClick from "../useOutsideClick";
 import Calendar from "react-calendar";
 const HotelsHome = () => {
-  const [hotelsData, setHotelsData] = useState();
+  // const [hotelsData, setHotelsData] = useState();
   const [location, setLocation] = useState();
   const [locationId, setLocationId] = useState();
   const [isClicked, setIsClicked] = useState(false);
@@ -476,7 +476,7 @@ const HotelsHome = () => {
           </div>
         </div>
       </div>
-      {hotelsData ? <Hotels hotelsData={hotelsData} /> : ""}
+     <Hotels hotelsData={hotelsData} />
     </div>
   );
 };

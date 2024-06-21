@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import carInfoJson from "./carInfo.json";
-import seat from "./seat.png";
+import CarFilter from "./CarFilter";
 const carInfo = () => {
   const [groupsArray, setGroupsArray] = useState();
   useEffect(() => {
@@ -11,7 +11,10 @@ const carInfo = () => {
   }, [carInfoJson]);
   console.log(carInfoJson);
   return (
-    <div>
+    <div className="flex flex-row space-x-8">
+      <div>
+        <CarFilter/>
+      </div>
       <div className="flex flex-col cursor-pointer ">
         {/* <div className="flex flex-row bg-gray-100 rounded mb-1 text-gray-700 ">
           <div className="pl-3 border-b-4 border-white hover:border-gray-800">
@@ -39,8 +42,8 @@ const carInfo = () => {
         <div>
           <div>{carInfoJson?.data.groups.cdat5t000640jfk.car_name}</div>
           {groupsArray?.map((car, index) => (
-            <div className="bg-gray-100 rounded text-gray-700 w-[680px] mb-2  flex flex-row divide-x-2 divide-gray-400">
-              <div className="w-[530px] py-4">
+            <div className="bg-white rounded text-gray-700 w-[670px] mb-2  flex flex-row divide-x-2 divide-gray-400">
+              <div className="w-[480px] py-4">
                 <div className="flex flex-col ">
                   <div className="flex flex-col px-4">
                     <div className="pr-3 pl-4 text-lg font-semibold">
@@ -70,11 +73,16 @@ const carInfo = () => {
                         />
                       </svg>
                       <div>{car.cls}</div>
+                      <img
+                        src={`https://logos.skyscnr.com/images/carhire/vendors/${carInfoJson?.data.quotes[index].vndr_id}.png`}
+                        alt=""
+                        className="absolute right-0 -top-10 h-[35px] w-[70px]"
+                      />
                     </div>
                   </div>
                   <div className="flex flex-row">
                     <div className="flex flex-col">
-                      <div className="flex flex-row space-x-2 pl-8">
+                      <div className="flex flex-row space-x-2 pl-8 pt-4">
                         <div className="flex flex-row bg-gray-200 rounded-sm p-1">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +94,7 @@ const carInfo = () => {
                               fill="gray"
                             />
                           </svg>
-                          <div className="pl-1 font-semibold">
+                          <div className="pl-1 font-semibold text-[14px]">
                             {car.max_bags}
                           </div>
                         </div>
@@ -103,7 +111,7 @@ const carInfo = () => {
                               fill="gray"
                             ></path>
                           </svg>
-                          <div className="pl-1 font-semibold">
+                          <div className="pl-1 font-semibold text-[14px]">
                             {car.max_seats}
                           </div>
                         </div>
@@ -118,13 +126,13 @@ const carInfo = () => {
                               fill="gray"
                             />
                           </svg>
-                          <div className="pl-1 font-semibold">
+                          <div className="pl-1 font-semibold text-[14px]">
                             {" "}
                             {car.ac ? "AC" : null}
                           </div>
                         </div>
                       </div>
-                      <div className="flex flex-row bg-gray-200 rounded-sm ml-8 mt-2 w-[90px]">
+                      <div className="flex flex-row bg-gray-200 rounded-sm ml-8 mt-2 w-[90px] p-1">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 24 24"
@@ -135,8 +143,23 @@ const carInfo = () => {
                             fill="gray"
                           ></path>
                         </svg>
-                        <div className="capitalize font-semibold ">
+                        <div className="capitalize font-semibold text-[14px] ">
                           {car.trans}
+                        </div>
+                      </div>
+                      <div className="flex flex-row mt-4 ">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          className="h-4 w-4 mt-1 mr-1 ml-8"
+                        >
+                          <path
+                            d="M22.854 9.233l-8.087-8.087a3.913 3.913 0 00-5.534 0L1.146 9.233a3.913 3.913 0 000 5.534l8.087 8.087a3.913 3.913 0 005.534 0l8.087-8.087a3.913 3.913 0 000-5.534zM9 12.023a.45.45 0 01-.34.437l-3.113.778a.842.842 0 01-.71-1.491L8.28 9.165a.45.45 0 01.72.36zm10.334.902a.842.842 0 01-.881.313L14.06 12.14a.45.45 0 00-.559.436v3.174l1.063.532a.79.79 0 01-.545 1.473L12 17.25l-2.018.505a.79.79 0 01-.545-1.473l1.063-.532v-9c0-1.5.672-2.25 1.5-2.25s1.5.75 1.5 2.25v1.31a1.5 1.5 0 00.845 1.35l4.818 2.337a.842.842 0 01.17 1.178z"
+                            fill="gray"
+                          ></path>
+                        </svg>
+                        <div className="capitalize text-black ">
+                          {carInfoJson?.data.quotes[index].pickup_type}
                         </div>
                       </div>
                     </div>
@@ -149,22 +172,36 @@ const carInfo = () => {
                   </div>
                 </div>
               </div>
-              <div className="pl-8 ">
-                <div className="text-lg font-semibold  mt-3 ">
-                  US {car.min_price}
+              <div className="pl-4 text-gray-950">
+                <div className="font-semibold pt-3">1 deal</div>
+                <div className="flex flex-row text-2xl font-bold  mt-3 ">
+                  ${car.min_price.toFixed(0)}
+                  <div className="text-sm font-normal text-gray-600 mt-2.5">
+                    total
+                  </div>
+                </div>
+                <div className="flex flex-row pt-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    className="h-4 w-4 mt-1 mr-1"
+                  >
+                    <path
+                      d="M22 7.382a1.935 1.935 0 00-.514.068.647.647 0 01-.747-.279 2.722 2.722 0 00-.057-.103l-1.53-2.75a3.986 3.986 0 00-3.473-2.068H8.321a3.985 3.985 0 00-3.473 2.068l-1.53 2.75q-.03.05-.057.103a.647.647 0 01-.747.279A1.935 1.935 0 002 7.382a2.026 2.026 0 00-2 2.052c0 .958.14 1.566 1.005 1.792a.626.626 0 01.495.577v8.447a1.5 1.5 0 001.5 1.5h1.5a1.5 1.5 0 001.5-1.5v-1.5h12v1.5a1.5 1.5 0 001.5 1.5H21a1.5 1.5 0 001.5-1.5v-8.447a.626.626 0 01.495-.577C23.86 11 24 10.393 24 9.434a2.026 2.026 0 00-2-2.052zM6 10.5v-3a.75.75 0 011.5 0v1.045a5.251 5.251 0 019.047.079.75.75 0 01-1.298.752 3.752 3.752 0 00-6.687.374H9.75a.75.75 0 010 1.5h-3A.75.75 0 016 10.5zM18 15a.75.75 0 01-1.5 0v-1.045a5.251 5.251 0 01-9.047-.079.75.75 0 011.298-.752 3.751 3.751 0 006.687-.374H14.25a.75.75 0 010-1.5h3A.75.75 0 0118 12z"
+                      fill="gray"
+                    ></path>
+                  </svg>
+                  Free Cancellation
                 </div>
                 <div>
-                  <button className="px-3 py-1 rounded bg-gray-800 text-white mt-1 font-semibold flex flex-row">
-                    Select
+                  <button className="px-8 py-1 rounded bg-gray-800 text-white mt-4  font-semibold flex flex-row">
+                    View deal
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 448 512"
-                      className="w-3 h-4 ml-2 mt-1"
+                      viewBox="0 0 24 24"
+                      className="w-4 h-4  mt-[5px]"
                     >
-                      <path
-                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                        fill="white"
-                      />
+                      <path d="M19.113 8.095a1.496 1.496 0 010 2.008l-6.397 5.948a1 1 0 01-1.358.003l-6.532-6.01a1.427 1.427 0 01.138-1.949 1.572 1.572 0 011.997-.103l5.078 4.638 4.97-4.535a1.72 1.72 0 012.104 0z" fill="white"></path>
                     </svg>
                   </button>
                 </div>
