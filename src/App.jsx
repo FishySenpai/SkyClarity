@@ -13,7 +13,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="App">
+    <div className="App ">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

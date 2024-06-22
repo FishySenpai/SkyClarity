@@ -4,6 +4,7 @@ import hotelsData from "../../hotels.json";
 import hotelsImg from "./hotels-img.jpg"
 import useOutsideClick from "../useOutsideClick";
 import Calendar from "react-calendar";
+import HotelCards from "./HotelCards";
 const HotelsHome = () => {
   // const [hotelsData, setHotelsData] = useState();
   const [location, setLocation] = useState();
@@ -476,7 +477,10 @@ const HotelsHome = () => {
           </div>
         </div>
       </div>
-     <Hotels hotelsData={hotelsData} />
+      <div>
+        <HotelCards/>
+      </div>
+     {/* <Hotels hotelsData={hotelsData} /> */}
     </div>
   );
 };

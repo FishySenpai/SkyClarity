@@ -8,6 +8,7 @@ import flightsImg from "./flights-img.jpg";
 import useOutsideClick from "../useOutsideClick";
 import MultiCity from "./MultiCity";
 import FlightCards from "./FlightCards";
+import FAQ from "./FAQ";
 const Home = () => {
   const [from, setFrom] = useState();
   const [to, setTo] = useState();
@@ -130,9 +131,9 @@ const Home = () => {
     setReturnToggle(false);
   }, [returnDate]);
   return (
-    <div className=" text-white default-font bg-gray-500 relative">
+    <div className=" text-white default-font relative bg-white min-h-screen">
       <div>
-        <img src={flightsImg} className="" />
+        <img src={flightsImg} className="absolute inset-0 bg-cover bg-center" />
         <div className="absolute top-52 left-[300px]">
           <div className="bg-gray-100 rounded text-gray-500 ">
             <div className="flex items-center space-x-4 pt-4 pl-6 text-sm">
@@ -605,12 +606,17 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4  mx-auto w-[1200px]">
-        {Array(6)
-          .fill(0)
-          .map((_, index) => (
-            <FlightCards />
-          ))}
+      <div className="relative top-[600px] bg-gray-100 ">
+        <div className="w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto pt-12">
+          {Array(6)
+            .fill(0)
+            .map((_, index) => (
+              <FlightCards />
+            ))}
+        </div>
+        <div>
+          <FAQ/>
+        </div>
       </div>
       {flights ? (
         <div>
