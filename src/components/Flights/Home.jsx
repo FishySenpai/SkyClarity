@@ -131,7 +131,7 @@ const Home = () => {
     setReturnToggle(false);
   }, [returnDate]);
   return (
-    <div className=" text-white default-font relative bg-white min-h-screen">
+    <div className=" text-white default-font relative bg-gray-100 min-h-screen">
       <div>
         <img src={flightsImg} className="absolute inset-0 bg-cover bg-center" />
         <div className="absolute top-52 left-[300px]">

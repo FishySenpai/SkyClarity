@@ -1,63 +1,56 @@
 import React from "react";
 const HotelCards = () => {
   return (
-    <div className="mx-auto  bg-white shadow-lg rounded-lg overflow-hidden">
+    <div className="mx-auto  bg-white shadow-lg rounded-lg overflow-hidden ">
       <div className=" flex flex-col ">
         <img
           src="https://ak-d.tripcdn.com/images/02015120009f6uinhFF38_R_300_225_R5.jpg"
           alt="Airline Logo"
           className="w-[392px] h-[160px]"
         />
-        <div className="pl-2 pt-3 pb-2">
+        <div className="pl-2 pt-3  flex justify-between px-2">
+          <h2 className="text-xl font-bold text-gray-800">
+            Beach Luxury Hotel
+          </h2>
+          <p className="text-gray-600 flex flex-row mt-1">
+            {Array(5)
+              .fill(0)
+              .map((_, index) => (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"
+                  height="20"
+                  width="20"
+                >
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                    fill="orange"
+                  ></path>
+                </svg>
+              ))}
+          </p>
+        </div>
+        <span className="text-gray-800 text-sm px-2">
+          3.72km from city center
+        </span>
+        <div className="px-2 flex pt-2 space-x-1">
+          <span className="text-gray-800 font-bold text-[17px] ">4</span>
+          <img
+            src="https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-64600-4.png"
+            alt=""
+            className="h-4 mt-1.5"
+          />
+          <span className="text-gray-600 text-[12px] mt-1">3423 reviews</span>
+        </div>
+      </div>
+      <div className="pb-3 pt-3 bg-blue-50 border-t border-gray-200 flex justify-between">
+        <div className="pl-2  pb-2">
           <h2 className="text-xl font-bold text-gray-800">Gilgit</h2>
           <p className="text-gray-600">Pakistan</p>
         </div>
-      </div>
-      <div className="py-4 bg-blue-50 border-t border-gray-200">
-        <div className="flex justify-between items-center px-2">
-          <div className=" flex flex-row space-x-2">
-            <div className="">
-              <img
-                src="https://content.skyscnr.com/90094684365e61f5c05f1417bbcf6c67/ai-template-pia-thumb-1-xxxhdpi.png?resize=100%3A9999px&quality=100"
-                alt=""
-                className="w-[56px] h-[18px] mt-2"
-              />
-            </div>
-            <div className="flex flex-col pl-5">
-              <span className="text-gray-800 font-semibold">Islamabad</span>
-              <span className="text-gray-800  ">Sat, Aug 24</span>
-            </div>
-          </div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512"
-            className="h-7 w-7 mb-5"
-          >
-            <path
-              d="M438.6 150.6c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.7 96 32 96C14.3 96 0 110.3 0 128s14.3 32 32 32l306.7 0-41.4 41.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96zm-333.3 352c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 416 416 416c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0 41.4-41.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96z"
-              fill="rgb(55 65 81)"
-            />
-          </svg>
-          <div className=" flex flex-row space-x-2">
-            <div className="flex flex-col pr-5">
-              <span className="text-gray-800 font-semibold">Gilgit</span>
-              <span className="text-gray-800 ">Sat, Aug 24</span>
-            </div>
-          </div>
-        </div>
-        <span className="text-gray-600 pl-[92px]">Economy</span>
-        <div className="text-right flex flex-row justify-end items-end pt-2 pr-2">
-          <span className="text-gray-600 text-right ">From</span>
-          <span className="font-semibold text-gray-800 text-xl pl-0.5">
-            $84
-          </span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            className="w-4 h-4 mb-1.5"
-          >
-            <path d="M8.095 4.887a1.496 1.496 0 0 1 2.008 0l5.948 6.397a1 1 0 0 1 .003 1.358l-6.01 6.532a1.427 1.427 0 0 1-1.949-.138 1.57 1.57 0 0 1-.103-1.997l4.638-5.078-4.535-4.97a1.72 1.72 0 0 1 0-2.104"></path>
-          </svg>
+        <div className="text-right flex flex-col pt-2 pr-2">
+          <span className="font-bold text-gray-800 text-xl pl-0.5">$84</span>
+          <span className=" text-gray-900 text-sm mb-0.5">per night</span>
         </div>
       </div>
     </div>
