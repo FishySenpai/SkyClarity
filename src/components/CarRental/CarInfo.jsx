@@ -70,7 +70,7 @@ const carInfo = () => {
                         />
                       </div>
                     </div>
-                    <div className="flex flex-row">
+                    <div className="flex flex-row relative">
                       <div className="flex flex-col">
                         <div className="flex flex-row space-x-2 pl-4 pt-4">
                           <div className="flex flex-row bg-gray-200 rounded-sm p-1">
@@ -158,7 +158,9 @@ const carInfo = () => {
                           ""
                         )}
                       </div>
-                      <div className="pl-24">
+                      <div
+                        className="absolute right-4"
+                      >
                         <img
                           src={`https://logos.skyscnr.com/images/carhire/sippmaps/${car.img}`}
                           className="h-[118px] w-[181px]"
