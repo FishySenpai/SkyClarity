@@ -5,6 +5,7 @@ import useOutsideClick from "../useOutsideClick";
 import faqs from "../faq.json"
 import FAQ from "../Flights/FAQ";
 import CarCards from "./CarCards";
+import carCards from "./carCards.json";
 const CarRentalHome = () => {
   const [pickUpLocation, setPickUpLocation] = useState();
   const [pickUpLocationId, setPickUpLocationId] = useState();
@@ -368,7 +369,10 @@ const CarRentalHome = () => {
       </div>
       <div className="relative top-[600px] bg-gray-100 pb-12 rounded-t-3xl ">
         <div className="w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto pt-12 ">
-          <CarCards />
+          {Object.keys(carCards).map((key) => {
+            const card = carCards[key];
+            return <CarCards card={card} key={key}/>;
+          })}
         </div>
         <div>
           <FAQ faqs={faqs.car} />

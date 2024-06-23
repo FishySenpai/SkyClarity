@@ -1,0 +1,62 @@
+{
+  "0": {
+    "location": "Jeddah",
+    "mostPopularCarType": "Economy",
+    "price": {
+      "amount": 84,
+      "currency": "USD",
+      "per": "night"
+    },
+    "imageURL": "https://content.skyscnr.com/m/35f8376447533d48/original/7691.jpg"
+  },
+  "1": {
+    "location": "Paris",
+    "mostPopularCarType": "Economy",
+    "price": {
+      "amount": 84,
+      "currency": "USD",
+      "per": "night"
+    },
+    "imageURL": "https://content.skyscnr.com/m/634ccb65709c8a25/original/GettyImages-183109547.jpg?crop=1224px:647px&position=attention"
+  },
+  "2": {
+    "location": "Dubai",
+    "mostPopularCarType": "Economy",
+    "price": {
+      "amount": 84,
+      "currency": "USD",
+      "per": "night"
+    },
+    "imageURL": "https://content.skyscnr.com/available/1388707415/1388707415_WxH.jpg"
+  },
+  "3": {
+    "location": "New York",
+    "mostPopularCarType": "Economy",
+    "price": {
+      "amount": 84,
+      "currency": "USD",
+      "per": "night"
+    },
+    "imageURL": "https://content.skyscnr.com/b62fd4346123d1eb9f7525c8f72f2a8a/stock-photo-new-york-city-at-twilight-128894587.jpg?crop=392px:184px&quality=80"
+  },
+  "4": {
+    "location": "Tokyo",
+    "mostPopularCarType": "Economy",
+    "price": {
+      "amount": 84,
+      "currency": "USD",
+      "per": "night"
+    },
+    "imageURL": "https://content.skyscnr.com/m/7b8006055b935ebd/original/gettyimages-455203209.jpg?crop=1224px:647px&position=attention"
+  },
+  "5": {
+    "location": "Muscat",
+    "mostPopularCarType": "Economy",
+    "price": {
+      "amount": 84,
+      "currency": "USD",
+      "per": "night"
+    },
+    "imageURL": "https://content.skyscnr.com/4a65de9a38318f010a5b2e242ae2601f/GettyImages-479156297.jpg?imbypass=true"
+  }
+}
