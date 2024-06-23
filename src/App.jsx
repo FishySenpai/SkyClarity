@@ -9,11 +9,12 @@ import FlightDetails from "./components/Flights/FlightDetails";
 import HotelsHome from "./components/Hotels/HotelsHome";
 import CarRentalHome from "./components/CarRental/CarRentalHome";
 import CarInfo from "./components/CarRental/CarInfo";
+import Footer from "./components/Footer";
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="App ">
+    <div className="App relative bg-gray-100">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,6 +24,9 @@ function App() {
         <Route path="/hotels/hotel/:id" element={<HotelDetails />} />
         <Route path="/flights/flight" element={<FlightDetails />} />
       </Routes>
+      <div className="absolute right-0 left-0 -bottom-[800px]">
+        <Footer />
+      </div>
     </div>
   );
 }

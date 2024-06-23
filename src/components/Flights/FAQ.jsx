@@ -1,37 +1,7 @@
 import React, { useState } from "react";
 
-const faqs = [
-  {
-    question: "Fly during the working week",
-    answer:
-      "Opting to take your flight during the working week can save you money. Flights departing over this period – especially Tuesdays and Wednesdays – are cheaper, mainly because these days are less popular to travel on.",
-  },
-  {
-    question: "Have a look at airline websites",
-    answer:
-      'Many airline websites have made it simpler to identify the inexpensive days to fly by displaying a "calendar view" booking system. This system allows you to scan prices ranging across the week that you are searching.',
-  },
-  {
-    question: "Consider flights with less-popular departure times",
-    answer:
-      "You may also get a bargain flight if you’re willing to fly at an early hour. It may well be less expensive to fly at 6 am than at later times due to that time spot being less popular. The only problem you could face is getting to the airport at this time; make sure that public transport is running if you can’t take a taxi or get a lift to the airport.",
-  },
-  {
-    question: "Find a better price on the Trip.com app",
-    answer:
-      "This may sound like I’m stating the obvious, but you’d be surprised at the number of people who settle for a price without first shopping around and doing some research. We suggest you have a look for bargains on the Trip.com app. The Trip.com Save & Fly browser extension is a big help when learning how to get cheap flight tickets. While you’re looking for airline tickets online, the extension notifies you of whether the exact same flight is available on Trip.com at a better price. It’s completely free to install and use, and it takes some of the pressure off booking your tickets.",
-  },
-  {
-    question: "Book early instead of waiting until the last minute",
-    answer: "",
-  },
-  {
-    question: "Use a credit card in a wiser way",
-    answer: "",
-  },
-];
 
-const FAQ = () => {
+const FAQ = ({faqs}) => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -39,7 +9,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="w-[1200px] mx-auto p-4 bg-white rounded-lg shadow-lg mt-12">
+    <div className="w-[1200px] mx-auto p-4 bg-white rounded-lg shadow-lg mt-12 ">
       <h2 className="text-2xl font-bold mb-4 text-gray-800">
         How to Book Cheap Flights?
       </h2>

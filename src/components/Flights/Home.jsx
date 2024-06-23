@@ -4,7 +4,7 @@ import Flights from "./Flights";
 import Calendar from "react-calendar";
 import "../Calender/Sample.css";
 import flightsImg from "./flights-img.jpg";
-
+import faqs from "../faq.json"
 import useOutsideClick from "../useOutsideClick";
 import MultiCity from "./MultiCity";
 import FlightCards from "./FlightCards";
@@ -131,7 +131,7 @@ const Home = () => {
     setReturnToggle(false);
   }, [returnDate]);
   return (
-    <div className=" text-white default-font relative bg-gray-100 min-h-screen">
+    <div className=" text-white default-font relative bg-gray-100 min-h-screen ">
       <div>
         <img src={flightsImg} className="absolute inset-0 bg-cover bg-center" />
         <div className="absolute top-52 left-[300px]">
@@ -606,7 +606,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="relative top-[600px] bg-gray-100 ">
+      <div className="relative top-[600px] bg-gray-100 pb-24">
         <div className="w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto pt-12">
           {Array(6)
             .fill(0)
@@ -615,7 +615,7 @@ const Home = () => {
             ))}
         </div>
         <div>
-          <FAQ/>
+          <FAQ faqs={faqs.flight}/>
         </div>
       </div>
       {flights ? (

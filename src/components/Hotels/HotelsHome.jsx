@@ -104,7 +104,7 @@ const HotelsHome = () => {
     setcheckOutToggle(false);
   }, [checkOutDate]);
   return (
-    <div className="rounded text-gray-500 relative bg-gray-100 min-h-screen rounded-b-3xl">
+    <div className="rounded text-gray-500 relative bg-gray-100 ">
       <img src={hotelsImg} className="absolute inset-0 bg-cover bg-center" />
       <div className="absolute top-52 left-[300px] ">
         <div className="text-5xl pb-3 text-white font-bold">

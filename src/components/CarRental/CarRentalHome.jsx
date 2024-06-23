@@ -2,6 +2,9 @@ import React, { useState, useEffect, useRef } from "react";
 import Calendar from "react-calendar";
 import carImg from "./car-img.jpg";
 import useOutsideClick from "../useOutsideClick";
+import faqs from "../faq.json"
+import FAQ from "../Flights/FAQ";
+import CarCards from "./CarCards";
 const CarRentalHome = () => {
   const [pickUpLocation, setPickUpLocation] = useState();
   const [pickUpLocationId, setPickUpLocationId] = useState();
@@ -59,7 +62,10 @@ const CarRentalHome = () => {
   }, [dropOffDate]);
   return (
     <div className="bg-gray-100 rounded text-gray-500 relative">
-      <img src={carImg} className="" />
+      <img
+        src={carImg}
+        className="h-[622px] absolute inset-0 bg-cover bg-center"
+      />
       <div className="absolute top-52 left-[300px]">
         <div className="text-5xl pb-3 text-white font-bold">
           Find the best car rental deals
@@ -358,6 +364,14 @@ const CarRentalHome = () => {
               <span className="ml-2">Driver aged between 25 - 75</span>
             </label>
           </div>
+        </div>
+      </div>
+      <div className="relative top-[600px] bg-gray-100 pb-12 rounded-t-3xl ">
+        <div className="w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto pt-12 ">
+          <CarCards />
+        </div>
+        <div>
+          <FAQ faqs={faqs.car} />
         </div>
       </div>
     </div>
