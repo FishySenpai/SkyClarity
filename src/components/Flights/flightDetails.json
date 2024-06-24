@@ -1,0 +1,274 @@
+{
+  "status": true,
+  "message": "success",
+  "data": {
+    "itinerary": {
+      "id": "12569-2408010530--31734-1-10413-2408011655",
+      "legs": [
+        {
+          "id": "12569-2408010530--31734-1-10413-2408011655",
+          "origin": {
+            "id": "12569",
+            "name": "Islamabad",
+            "displayCode": "ISB",
+            "city": "Islamabad"
+          },
+          "destination": {
+            "id": "10413",
+            "name": "Paris Charles de Gaulle",
+            "displayCode": "CDG",
+            "city": "Paris"
+          },
+          "segments": [
+            {
+              "id": "12569-12585-2408010530-2408010945--31734",
+              "origin": {
+                "id": "12569",
+                "name": "Islamabad",
+                "displayCode": "ISB",
+                "city": "Islamabad"
+              },
+              "destination": {
+                "id": "12585",
+                "name": "Istanbul",
+                "displayCode": "IST",
+                "city": "Istanbul"
+              },
+              "duration": 375,
+              "dayChange": 0,
+              "flightNumber": "TK711",
+              "departure": "2024-08-01T05:30:00",
+              "arrival": "2024-08-01T09:45:00",
+              "marketingCarrier": {
+                "id": "-31734",
+                "name": "Turkish Airlines",
+                "displayCode": "TK",
+                "displayCodeType": "IATA",
+                "brandColor": "#e31d1a",
+                "logo": "https://content.skyscnr.com/481e6ea958a6c4433a45fb382c899711/ai-template-turkish-airlines-thumb-1-xxxhdpi.png",
+                "altId": "TK"
+              },
+              "operatingCarrier": {
+                "id": "-31734",
+                "name": "Turkish Airlines",
+                "displayCode": "TK",
+                "displayCodeType": "IATA",
+                "brandColor": "#e31d1a",
+                "logo": "https://content.skyscnr.com/481e6ea958a6c4433a45fb382c899711/ai-template-turkish-airlines-thumb-1-xxxhdpi.png",
+                "altId": "TK"
+              },
+              "goodToKnowItems": [
+                {
+                  "icon": "duration",
+                  "body": {
+                    "value": "You have a <style0>4h 20m</style0> wait here",
+                    "isHighlighted": false,
+                    "position": 1
+                  },
+                  "badge": {
+                    "value": "Long Wait",
+                    "isHighlighted": false,
+                    "position": 0
+                  }
+                }
+              ]
+            },
+            {
+              "id": "12585-10413-2408011405-2408011655--31734",
+              "origin": {
+                "id": "12585",
+                "name": "Istanbul",
+                "displayCode": "IST",
+                "city": "Istanbul"
+              },
+              "destination": {
+                "id": "10413",
+                "name": "Paris Charles de Gaulle",
+                "displayCode": "CDG",
+                "city": "Paris"
+              },
+              "duration": 230,
+              "dayChange": 0,
+              "flightNumber": "TK1833",
+              "departure": "2024-08-01T14:05:00",
+              "arrival": "2024-08-01T16:55:00",
+              "marketingCarrier": {
+                "id": "-31734",
+                "name": "Turkish Airlines",
+                "displayCode": "TK",
+                "displayCodeType": "IATA",
+                "brandColor": "#e31d1a",
+                "logo": "https://content.skyscnr.com/481e6ea958a6c4433a45fb382c899711/ai-template-turkish-airlines-thumb-1-xxxhdpi.png",
+                "altId": "TK"
+              },
+              "operatingCarrier": {
+                "id": "-31734",
+                "name": "Turkish Airlines",
+                "displayCode": "TK",
+                "displayCodeType": "IATA",
+                "brandColor": "#e31d1a",
+                "logo": "https://content.skyscnr.com/481e6ea958a6c4433a45fb382c899711/ai-template-turkish-airlines-thumb-1-xxxhdpi.png",
+                "altId": "TK"
+              }
+            }
+          ],
+          "layovers": [
+            {
+              "segmentId": "12569-12585-2408010530-2408010945--31734",
+              "origin": {
+                "id": "12585",
+                "name": "Istanbul",
+                "displayCode": "IST",
+                "city": "Istanbul"
+              },
+              "destination": {
+                "id": "12585",
+                "name": "Istanbul",
+                "displayCode": "IST",
+                "city": "Istanbul"
+              },
+              "duration": 260
+            }
+          ],
+          "duration": 865,
+          "stopCount": 1,
+          "departure": "2024-08-01T05:30:00",
+          "arrival": "2024-08-01T16:55:00",
+          "dayChange": 0,
+          "orderedGoodToKnow": ["Long Wait"]
+        }
+      ],
+      "pricingOptions": [
+        {
+          "agents": [
+            {
+              "id": "turk",
+              "name": "Turkish Airlines",
+              "isCarrier": true,
+              "bookingProposition": "PBOOK",
+              "url": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/turk/1/12569.10413.2024-08-01/air/airli/flights?itinerary=flight|-31734|711|12569|2024-08-01T05:30|12585|2024-08-01T09:45|375|SF2PXOW|S|RS;flight|-31734|1833|12585|2024-08-01T14:05|10413|2024-08-01T16:55|230|SF2PXOW|S|RS&carriers=-31734&operators=-31734;-31734&passengers=1&channel=iphone&cabin_class=economy&fps_session_id=c890d646-181e-48c6-8b49-325bafe84c57&ticket_price=1000.94&is_npt=false&is_multipart=false&client_id=skyscanner_app&q_ids=H4sIAAAAAAAA_-OS4mIpKS3KFmLmmJkkxcyxU1-hYcHqrWxGTAqMAIONAHIcAAAA|2531708700044040576|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2024-06-23T12:27:26&pqid=false",
+              "price": 1000.94,
+              "rating": { "value": 4.71, "count": 537 },
+              "updateStatus": "PENDING",
+              "segments": [
+                {
+                  "id": "12569-12585-2408010530-2408010945--31734",
+                  "origin": {
+                    "id": "12569",
+                    "name": "Islamabad",
+                    "displayCode": "ISB",
+                    "city": "Islamabad"
+                  },
+                  "destination": {
+                    "id": "12585",
+                    "name": "Istanbul",
+                    "displayCode": "IST",
+                    "city": "Istanbul"
+                  },
+                  "duration": 375,
+                  "dayChange": 0,
+                  "flightNumber": "TK711",
+                  "departure": "2024-08-01T05:30:00",
+                  "arrival": "2024-08-01T09:45:00",
+                  "marketingCarrier": {
+                    "id": "-31734",
+                    "name": "Turkish Airlines",
+                    "displayCode": "TK",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#e31d1a",
+                    "logo": "https://content.skyscnr.com/481e6ea958a6c4433a45fb382c899711/ai-template-turkish-airlines-thumb-1-xxxhdpi.png",
+                    "altId": "TK"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31734",
+                    "name": "Turkish Airlines",
+                    "displayCode": "TK",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#e31d1a",
+                    "logo": "https://content.skyscnr.com/481e6ea958a6c4433a45fb382c899711/ai-template-turkish-airlines-thumb-1-xxxhdpi.png",
+                    "altId": "TK"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "duration",
+                      "body": {
+                        "value": "You have a <style0>4h 20m</style0> wait here",
+                        "isHighlighted": false,
+                        "position": 1
+                      },
+                      "badge": {
+                        "value": "Long Wait",
+                        "isHighlighted": false,
+                        "position": 0
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "12585-10413-2408011405-2408011655--31734",
+                  "origin": {
+                    "id": "12585",
+                    "name": "Istanbul",
+                    "displayCode": "IST",
+                    "city": "Istanbul"
+                  },
+                  "destination": {
+                    "id": "10413",
+                    "name": "Paris Charles de Gaulle",
+                    "displayCode": "CDG",
+                    "city": "Paris"
+                  },
+                  "duration": 230,
+                  "dayChange": 0,
+                  "flightNumber": "TK1833",
+                  "departure": "2024-08-01T14:05:00",
+                  "arrival": "2024-08-01T16:55:00",
+                  "marketingCarrier": {
+                    "id": "-31734",
+                    "name": "Turkish Airlines",
+                    "displayCode": "TK",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#e31d1a",
+                    "logo": "https://content.skyscnr.com/481e6ea958a6c4433a45fb382c899711/ai-template-turkish-airlines-thumb-1-xxxhdpi.png",
+                    "altId": "TK"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31734",
+                    "name": "Turkish Airlines",
+                    "displayCode": "TK",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#e31d1a",
+                    "logo": "https://content.skyscnr.com/481e6ea958a6c4433a45fb382c899711/ai-template-turkish-airlines-thumb-1-xxxhdpi.png",
+                    "altId": "TK"
+                  }
+                }
+              ],
+              "isDirectDBookUrl": false,
+              "quoteAge": 1192
+            }
+          ],
+          "totalPrice": 1000.94,
+          "fare": { "leg_details": [] },
+          "id": "PNCjmqj5cJY9"
+        }
+      ],
+      "isTransferRequired": false,
+      "destinationImage": "https://content.skyscnr.com/m/37e282443afc0ff7/original/Paris-2016-10.jpg",
+      "operatingCarrierSafetyAttributes": [
+        {
+          "carrierID": "-31734",
+          "carrierName": "Turkish Airlines",
+          "faceMasksCompulsory": null,
+          "aircraftDeepCleanedDaily": null,
+          "attendantsWearPPE": null,
+          "cleaningPacksProvided": null,
+          "foodServiceChanges": null,
+          "safetyUrl": null
+        }
+      ],
+      "flexibleTicketPolicies": []
+    },
+    "pollingCompleted": true,
+    "bookingSessionId": "c890d646-181e-48c6-8b49-325bafe84c57"
+  }
+}

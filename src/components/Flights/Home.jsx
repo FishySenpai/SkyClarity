@@ -606,7 +606,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="relative top-[600px] bg-gray-100 pb-24">
+      {/* <div className="relative top-[600px] bg-gray-100 pb-24">
         <div className="w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto pt-12">
           {Array(6)
             .fill(0)
@@ -617,10 +617,10 @@ const Home = () => {
         <div>
           <FAQ faqs={faqs.flight}/>
         </div>
-      </div>
-      {flights ? (
-        <div>
-          <Flights flights={flights} />
+      </div> */}
+      {flightsJson ? (
+        <div className="absolute top-[600px]">
+          <Flights flights={flightsJson} />
         </div>
       ) : (
         ""

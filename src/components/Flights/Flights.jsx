@@ -90,7 +90,7 @@ const Flights = ({ flights }) => {
           </div>
           <div>
             {console.log(flights)}
-            {flights?.itineraries.slice(0, 5).map((flight, index) => (
+            {flights?.itineraries.slice(0, 20).map((flight, index) => (
               <div className="bg-gray-100 rounded text-gray-700 w-[680px] mb-2  flex flex-row divide-x-2 divide-gray-400">
                 <div className="w-[530px] py-4">
                   {flight.legs?.map((leg, index) => (
