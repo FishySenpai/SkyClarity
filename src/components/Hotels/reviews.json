@@ -1,0 +1,578 @@
+{
+  "status": true,
+  "message": "success",
+  "data": {
+    "hotelId": "46962878",
+    "reviewTotal": 121,
+    "reviewAvailableCount": 121,
+    "filters": {
+      "filterLocale": [
+        {
+          "type": "",
+          "count": 121,
+          "text": "All languages (121)"
+        },
+        {
+          "type": "en-GB",
+          "count": 38,
+          "text": "English (United Kingdom) (38)"
+        },
+        {
+          "type": "de-DE",
+          "count": 13,
+          "text": "Deutsch (Deutschland) (13)"
+        },
+        {
+          "type": "fr-FR",
+          "count": 11,
+          "text": "français (France) (11)"
+        },
+        {
+          "type": "ko-KR",
+          "count": 9,
+          "text": "한국어 (대한민국) (9)"
+        },
+        {
+          "type": "ja-JP",
+          "count": 9,
+          "text": "日本語 (日本) (9)"
+        },
+        {
+          "type": "it-IT",
+          "count": 6,
+          "text": "italiano (Italia) (6)"
+        },
+        {
+          "type": "nl-NL",
+          "count": 6,
+          "text": "Nederlands (Nederland) (6)"
+        },
+        {
+          "type": "zh-TW",
+          "count": 5,
+          "text": "繁體中文 (5)"
+        },
+        {
+          "type": "id-ID",
+          "count": 5,
+          "text": "Bahasa Indonesia (Indonesia) (5)"
+        },
+        {
+          "type": "th-TH",
+          "count": 4,
+          "text": "ไทย (ไทย) (4)"
+        },
+        {
+          "type": "es-ES",
+          "count": 2,
+          "text": "Español (España) (2)"
+        },
+        {
+          "type": "sv-SE",
+          "count": 2,
+          "text": "svenska (Sverige) (2)"
+        },
+        {
+          "type": "hu-HU",
+          "count": 1,
+          "text": "magyar (Magyarország) (1)"
+        },
+        {
+          "type": "zh-CN",
+          "count": 1,
+          "text": "简体中文 (1)"
+        },
+        {
+          "type": "el-GR",
+          "count": 1,
+          "text": "Ελληνικά (Ελλάδα) (1)"
+        },
+        {
+          "type": "ru-RU",
+          "count": 1,
+          "text": "русский (Россия) (1)"
+        },
+        {
+          "type": "pl-PL",
+          "count": 1,
+          "text": "polski (Polska) (1)"
+        },
+        {
+          "type": "pt-PT",
+          "count": 1,
+          "text": "português (Portugal) (1)"
+        },
+        {
+          "type": "da-DK",
+          "count": 1,
+          "text": "dansk (Danmark) (1)"
+        },
+        {
+          "type": "tr-TR",
+          "count": 1,
+          "text": "Türkçe (Türkiye) (1)"
+        },
+        {
+          "type": "vi-VN",
+          "count": 1,
+          "text": "Tiếng Việt (Việt Nam) (1)"
+        }
+      ],
+      "guestType": [
+        {
+          "type": "",
+          "count": 48,
+          "text": "All travellers (48)"
+        },
+        {
+          "type": "business",
+          "count": 13,
+          "text": "Business traveller (13)"
+        },
+        {
+          "type": "other",
+          "count": 10,
+          "text": "Other (10)"
+        },
+        {
+          "type": "couple",
+          "count": 9,
+          "text": "Couple (9)"
+        },
+        {
+          "type": "group",
+          "count": 6,
+          "text": "Group traveller (6)"
+        },
+        {
+          "type": "solo",
+          "count": 5,
+          "text": "Solo traveller (5)"
+        },
+        {
+          "type": "family",
+          "count": 5,
+          "text": "Family traveller (5)"
+        }
+      ],
+      "tags": [
+        {
+          "type": "service",
+          "count": 36,
+          "text": "Service (36)"
+        },
+        {
+          "type": "meal",
+          "count": 28,
+          "text": "Meal (28)"
+        },
+        {
+          "type": "room",
+          "count": 18,
+          "text": "Room (18)"
+        },
+        {
+          "type": "with_images",
+          "count": 9,
+          "text": "Reviews with photos (9)"
+        },
+        {
+          "type": "clean",
+          "count": 5,
+          "text": "Clean (5)"
+        },
+        {
+          "type": "location",
+          "count": 5,
+          "text": "Location (5)"
+        },
+        {
+          "type": "spa",
+          "count": 4,
+          "text": "Spa (4)"
+        },
+        {
+          "type": "restaurant",
+          "count": 4,
+          "text": "Restaurant (4)"
+        },
+        {
+          "type": "pool",
+          "count": 4,
+          "text": "Pool (4)"
+        },
+        {
+          "type": "scenery",
+          "count": 3,
+          "text": "Views (3)"
+        },
+        {
+          "type": "transportation",
+          "count": 3,
+          "text": "Transportation (3)"
+        },
+        {
+          "type": "wifi",
+          "count": 2,
+          "text": "WiFi (2)"
+        },
+        {
+          "type": "family",
+          "count": 2,
+          "text": "Family (2)"
+        },
+        {
+          "type": "shop",
+          "count": 1,
+          "text": "Shopping area (1)"
+        },
+        {
+          "type": "business",
+          "count": 1,
+          "text": "Business (1)"
+        },
+        {
+          "type": "laundry",
+          "count": 1,
+          "text": "Laundry (1)"
+        },
+        {
+          "type": "gym",
+          "count": 1,
+          "text": "Gym (1)"
+        },
+        {
+          "type": "quiet",
+          "count": 1,
+          "text": "Quiet (1)"
+        }
+      ],
+      "dataSource": [
+        {
+          "type": "",
+          "count": 121,
+          "text": "All providers"
+        },
+        {
+          "type": "h_hc",
+          "count": 44,
+          "text": "Reviews from Hotels.com"
+        },
+        {
+          "type": "h_vs",
+          "count": 40,
+          "text": "Reviews from Tripadvisor"
+        },
+        {
+          "type": "h_xp",
+          "count": 29,
+          "text": "Reviews from Expedia"
+        },
+        {
+          "type": "d_ct",
+          "count": 8,
+          "text": "Reviews from Trip.com"
+        }
+      ],
+      "travellerRating": [
+        {
+          "type": "",
+          "count": 121,
+          "text": "All reviews (121)"
+        },
+        {
+          "type": "rating_excellent",
+          "count": 90,
+          "text": "Excellent (90)"
+        },
+        {
+          "type": "rating_good",
+          "count": 21,
+          "text": "Good (21)"
+        },
+        {
+          "type": "rating_average",
+          "count": 7,
+          "text": "Average (7)"
+        },
+        {
+          "type": "rating_below_average",
+          "count": 3,
+          "text": "Below average (3)"
+        }
+      ],
+      "sort": [
+        {
+          "type": "recommended",
+          "count": 0,
+          "text": "Recommended"
+        },
+        {
+          "type": "rating_desc",
+          "count": 0,
+          "text": "Rating (high to low)"
+        },
+        {
+          "type": "rating_asc",
+          "count": 0,
+          "text": "Rating (low to high)"
+        },
+        {
+          "type": "most_recent",
+          "count": 0,
+          "text": "Most recent"
+        }
+      ]
+    },
+    "reviews": [
+      {
+        "logo": "https://www.skyscanner.com/images/websites/220x80/h_hc.png",
+        "partner": "h_hc",
+        "review": "Inevitably, perhaps, our stay at the Grand Central was fantastic. This was our only 5 star hotel stay in our 3-weeks in India so we don’t have anything to compare it with, but its splendour, comfort and quality shone through in every detail. We opted for the Executive Club Exclusive because it has the window seat which made for a fabulous spot to relax. We had the breakfast which, though primarily Indian fare, catered for all tastes. Uber is so good in Mumbai that to us it wasn’t that important which neighbourhood we stayed in, but Parel isn’t the loveliest of locales.",
+        "images": [],
+        "rating": 5,
+        "locale": "en-GB",
+        "travelGuestType": "",
+        "tripGuestType": "",
+        "translationType": "source",
+        "needTranslation": false,
+        "hotelId": "46962878",
+        "partnerReviewId": "68381166f75df471b5c98c45ed5d95e9",
+        "title": null,
+        "userLocation": null,
+        "link": null,
+        "countryName": null,
+        "replies": [],
+        "checkinDate": "Stayed in: Dec 2023",
+        "reviewDate": "Comment: 5 Jan 2024",
+        "formatCheckInDate": "29 Dec 2023"
+      },
+      {
+        "logo": "https://www.skyscanner.com/images/websites/220x80/h_xp.png",
+        "partner": "h_xp",
+        "review": "Felt at home. Staff was amazing.",
+        "images": [],
+        "rating": 5,
+        "locale": "en-GB",
+        "travelGuestType": "",
+        "tripGuestType": "",
+        "translationType": "source",
+        "needTranslation": false,
+        "hotelId": "46962878",
+        "partnerReviewId": "5146b1bf7c9ed53ce271edb712f442b5",
+        "title": null,
+        "userLocation": null,
+        "link": null,
+        "countryName": null,
+        "replies": [],
+        "checkinDate": "Stayed in: Nov 2023",
+        "reviewDate": "Comment: 3 Dec 2023",
+        "formatCheckInDate": "27 Nov 2023"
+      },
+      {
+        "logo": "https://www.skyscanner.com/images/websites/220x80/h_xp.png",
+        "partner": "h_xp",
+        "review": "Tastefully appointed rooms. Excellent food options. But what trumps everything is the service level of everything ... concierge , front desk, in room dining , or laundry... Top of the class!",
+        "images": [],
+        "rating": 5,
+        "locale": "en-GB",
+        "travelGuestType": "",
+        "tripGuestType": "",
+        "translationType": "source",
+        "needTranslation": false,
+        "hotelId": "46962878",
+        "partnerReviewId": "d05b4ac0930800acd020c300df2edbec",
+        "title": null,
+        "userLocation": null,
+        "link": null,
+        "countryName": null,
+        "replies": [],
+        "checkinDate": "Stayed in: Nov 2023",
+        "reviewDate": "Comment: 25 Nov 2023",
+        "formatCheckInDate": "21 Nov 2023"
+      },
+      {
+        "logo": "https://www.skyscanner.com/images/websites/220x80/d_ct.png",
+        "partner": "d_ct",
+        "review": "It’s was a very nice stay clean hotel enjoyed the stay service was great",
+        "images": [],
+        "rating": 5,
+        "locale": "en-GB",
+        "travelGuestType": "Family traveller",
+        "tripGuestType": "Family trip",
+        "translationType": "source",
+        "needTranslation": false,
+        "hotelId": "46962878",
+        "partnerReviewId": "980434267",
+        "title": null,
+        "userLocation": null,
+        "link": null,
+        "countryName": null,
+        "replies": [
+          {
+            "replyDate": "Comment: 24 November",
+            "replyReview": "Dear Mr. Singh,\n\nGreetings from ITC Grand Central!\n \nThank you for sharing your valuable feedback with us. We are truly delighted to know that you had a memorable experience during your visit.\n \nResponsibly yours,\nKunal Pahwa\nGeneral Manager\nITC Grand Central, Mumbai.",
+            "isTraveler": false
+          }
+        ],
+        "reviewDate": "Comment: 23 Nov 2023"
+      },
+      {
+        "logo": "https://www.skyscanner.com/images/websites/220x80/h_hc.png",
+        "partner": "h_hc",
+        "review": "Great stay!",
+        "images": [],
+        "rating": 5,
+        "locale": "en-GB",
+        "travelGuestType": "",
+        "tripGuestType": "",
+        "translationType": "source",
+        "needTranslation": false,
+        "hotelId": "46962878",
+        "partnerReviewId": "89cb743f5d70a12062d6cb3b7b3da648",
+        "title": null,
+        "userLocation": null,
+        "link": null,
+        "countryName": null,
+        "replies": [],
+        "checkinDate": "Stayed in: Sep 2023",
+        "reviewDate": "Comment: 3 Oct 2023",
+        "formatCheckInDate": "23 Sep 2023"
+      },
+      {
+        "logo": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/5.0-64600-5.png",
+        "partner": "h_vs",
+        "review": "The hotel's concierge Mr. Samadhan provided some exceptional service. The Hotel Management were attentive, knowledgeable, and went above and beyond to make our stay memorable. From restaurant reservations to local tips, they made everything effortless. Their warm and friendly demeanor made us feel like valued guests. We can't wait to return and experience their outstanding service again!",
+        "images": [],
+        "rating": 5,
+        "locale": "en-GB",
+        "travelGuestType": "Family traveller",
+        "tripGuestType": "Family trip",
+        "translationType": "source",
+        "needTranslation": false,
+        "hotelId": "46962878",
+        "partnerReviewId": "917994772",
+        "title": "Excellent Service! Highly recommended",
+        "userLocation": null,
+        "link": "https://en.tripadvisor.com.hk/Hotel_Review-d503409-a_ho.1-Reviews?m=64600",
+        "countryName": null,
+        "replies": [],
+        "checkinDate": "Stayed in: Aug 2023",
+        "reviewDate": "Comment: 23 Sep 2023",
+        "formatCheckInDate": "1 Aug 2023"
+      },
+      {
+        "logo": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/5.0-64600-5.png",
+        "partner": "h_vs",
+        "review": "The stay was amazing , All the staff was so humble & polite , Specially Manjeet who guided us on call from back office. He provided accurate information throughout our stay. Food in kebabs and kurries as well as in hornby's pavilion was eye appealing. Overall great experience.",
+        "images": [],
+        "rating": 5,
+        "locale": "en-GB",
+        "travelGuestType": "Family traveller",
+        "tripGuestType": "Family trip",
+        "translationType": "source",
+        "needTranslation": false,
+        "hotelId": "46962878",
+        "partnerReviewId": "917622321",
+        "title": "Special thanks to Manjeet",
+        "userLocation": null,
+        "link": "https://en.tripadvisor.com.hk/Hotel_Review-d503409-a_ho.1-Reviews?m=64600",
+        "countryName": null,
+        "replies": [
+          {
+            "replyDate": "Comment: 23 September",
+            "replyReview": "Dear Guest,\n\nThank you for choosing ITC Grand Central, Mumbai. We appreciate the time taken to write this review on Trip Advisor.\n\nWe are delighted to know that we were able to live up to your expectations and that you loved the hotel, the welcome experience, guest room comfort, food, service and personalized service from the heart. \n\nYour kind words of appreciation towards our associate Manjeet, encourages us to keep serving our guest with seamless hospitality.\n\nHappy guests are the greatest source of motivation for all of us and I have shared your sentiments with the team.\n\nWe so look forward to welcome you back soon. \n\nResponsibly yours,\nYours sincerely,\nBhagwan Balani, General Manager.",
+            "isTraveler": false
+          }
+        ],
+        "checkinDate": "Stayed in: Sep 2023",
+        "reviewDate": "Comment: 21 Sep 2023",
+        "formatCheckInDate": "1 Sep 2023"
+      },
+      {
+        "logo": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/5.0-64600-5.png",
+        "partner": "h_vs",
+        "review": "Great service with ultimate food , stayed for 52 days had food from all restaurants, everything in menu, room service made us home. Staff was humble and helpful in this tougher time. Really felt touched with great service.",
+        "images": [],
+        "rating": 5,
+        "locale": "en-GB",
+        "travelGuestType": "Group traveller",
+        "tripGuestType": "Group trip",
+        "translationType": "source",
+        "needTranslation": false,
+        "hotelId": "46962878",
+        "partnerReviewId": "916414881",
+        "title": "Stayed with ITC for 53 days, aunty was admitted to Global hospital opposite the hotel, stayed inn for long time,",
+        "userLocation": null,
+        "link": "https://en.tripadvisor.com.hk/Hotel_Review-d503409-a_ho.1-Reviews?m=64600",
+        "countryName": null,
+        "replies": [
+          {
+            "replyDate": "Comment: 15 September",
+            "replyReview": "Dear Guest,\n \nGreetings from ITC Grand Central!\n \nThank you for sharing your valuable feedback with us. I am truly delighted to know that you had a memorable experience during your stay. Appreciation from our guest is what encourages us to strive for more and definitely motivates us to do our best always.\n \nThank you for recognizing our hospitality and efforts. I am sure our entire team at ITC Grand Central will be happy to read your feedback. Thank you for your kind words of praise. Do feel free to contact me directly for your future visits. Looking forward to welcome you back at ITC Grand Central.\n \n \nResponsibly yours,\nBhagwan Balani\nGeneral Manager, ITC Grand Central.",
+            "isTraveler": false
+          }
+        ],
+        "checkinDate": "Stayed in: Oct 2022",
+        "reviewDate": "Comment: 13 Sep 2023",
+        "formatCheckInDate": "1 Oct 2022"
+      },
+      {
+        "logo": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/5.0-64600-5.png",
+        "partner": "h_vs",
+        "review": "Had an amazing stay at ITC Grand Central. Shubham & Shravani were very hospitable and provided a great service! Looking forward to staying here very soon and would recommend the same to everyone travelling to Mumbai. Thank you!",
+        "images": [],
+        "rating": 5,
+        "locale": "en-GB",
+        "travelGuestType": "Group traveller",
+        "tripGuestType": "Group trip",
+        "translationType": "source",
+        "needTranslation": false,
+        "hotelId": "46962878",
+        "partnerReviewId": "915970241",
+        "title": "Had an amazing stay at ITC Grand Central. Shubham & Shravani were very hospitable and provided a great service! Thanks !",
+        "userLocation": null,
+        "link": "https://en.tripadvisor.com.hk/Hotel_Review-d503409-a_ho.1-Reviews?m=64600",
+        "countryName": null,
+        "replies": [
+          {
+            "replyDate": "Comment: 11 September",
+            "replyReview": "Dear Mr. Aditya,\n\nThank you for choosing ITC Grand Central, Mumbai. We appreciate the time taken to write this review on Trip Advisor.\n\nWe are delighted to know that we were able to live up to your expectations and that you loved the hotel, the welcome experience, guest room comfort, food, service and personalized service from the heart. \n\nYour kind words of appreciation towards our associates Shubham and Shravani, encourages us to keep serving our guest with seamless hospitality.\n\nHappy guests are the greatest source of motivation for all of us and I have shared your sentiments with the team.\n\nWe so look forward to welcome you back soon. \n\nResponsibly yours,\nYours sincerely,\nBhagwan Balani, General Manager.",
+            "isTraveler": false
+          }
+        ],
+        "checkinDate": "Stayed in: Sep 2023",
+        "reviewDate": "Comment: 11 Sep 2023",
+        "formatCheckInDate": "1 Sep 2023"
+      },
+      {
+        "logo": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/5.0-64600-5.png",
+        "partner": "h_vs",
+        "review": "Excellent services by the front office team Special thanks to Angelina and Shabana as they made sure my stay was comfortable. Kshitij was very polite at check in. Chef Ruffy was very helpfull at dinner buffet. The overall experience was fantastic. Looking forward to visit again soon.",
+        "images": [],
+        "rating": 5,
+        "locale": "en-GB",
+        "travelGuestType": "Couple",
+        "tripGuestType": "Couple's trip",
+        "translationType": "source",
+        "needTranslation": false,
+        "hotelId": "46962878",
+        "partnerReviewId": "915313570",
+        "title": "Happy with the services!!",
+        "userLocation": null,
+        "link": "https://en.tripadvisor.com.hk/Hotel_Review-d503409-a_ho.1-Reviews?m=64600",
+        "countryName": null,
+        "replies": [
+          {
+            "replyDate": "Comment: 8 September",
+            "replyReview": "Dear Guest,\n\nThank you for choosing ITC Grand Central, Mumbai. We appreciate the time taken to write this review on Trip Advisor.\n\nWe are delighted to know that we were able to live up to your expectations and that you loved the hotel, the welcome experience, guest room comfort, food, service and personalized service from the heart. \n\nYour kind words of appreciation towards our associates Angelina, Shabana, Kshitij and Ruffy encourages us to keep serving our guest with seamless hospitality.\n\nHappy guests are the greatest source of motivation for all of us and I have shared your sentiments with the team.\n\nWe so look forward to welcome you back soon. \n\nResponsibly yours,\nYours sincerely,\nBhagwan Balani, General Manager.",
+            "isTraveler": false
+          }
+        ],
+        "checkinDate": "Stayed in: Sep 2023",
+        "reviewDate": "Comment: 7 Sep 2023",
+        "formatCheckInDate": "1 Sep 2023"
+      }
+    ]
+  }
+}

@@ -1,777 +1,878 @@
 {
-  "general": {
-    "name": "Hotel Guestinn Residency",
-    "stars": 2
-  },
-  "goodToKnow": {
-    "title": "Good to know",
-    "checkinTime": {
-      "title": "Check in from",
-      "time": "14:00"
+  "status": true,
+  "message": "success",
+  "data": {
+    "general": {
+      "name": "Safestay London Kensington Holland Park",
+      "stars": 4
     },
-    "checkoutTime": {
-      "title": "Check out before",
-      "time": "12:00"
+    "goodToKnow": {
+      "title": "Good to know",
+      "checkinTime": { "title": "Check in from", "time": "15:00" },
+      "checkoutTime": { "title": "Check out before", "time": "10:00" },
+      "description": {
+        "title": "Hotel description",
+        "content": "Safestay Holland Park is located in a Grade I listed building in West London. Guests will benefit from a large garden with pond and free WiFi access is available.",
+        "image": "https://content.skyscnr.com/available/1303672773/1303672773_WxH.jpg",
+        "translated": false,
+        "needTranslation": false,
+        "locale": "en-US"
+      },
+      "policies": {
+        "title": "Hotel policies",
+        "content": [
+          {
+            "icon": "family",
+            "translated": false,
+            "needTranslation": false,
+            "locale": "en-US",
+            "key": "Children",
+            "type": "Children",
+            "values": [{ "content": "Children are welcome at this hotel." }]
+          },
+          {
+            "icon": "hotels",
+            "translated": false,
+            "needTranslation": false,
+            "locale": "en-US",
+            "key": "AvailableBeds",
+            "type": "Available beds",
+            "values": [
+              {
+                "title": "5 years old and under",
+                "content": "For each room, 1 child can use existing beds for free.",
+                "is_free": true
+              }
+            ]
+          },
+          {
+            "icon": "hotels--pets-allowed",
+            "translated": false,
+            "needTranslation": false,
+            "locale": "en-US",
+            "key": "Pets",
+            "type": "Pets",
+            "values": [{ "content": "Pets are not allowed." }]
+          },
+          {
+            "icon": "food",
+            "translated": false,
+            "needTranslation": false,
+            "locale": "en-US",
+            "key": "Breakfast",
+            "type": "Breakfast",
+            "values": [{ "content": "Breakfast available." }],
+            "details": [
+              {
+                "translated": false,
+                "needTranslation": false,
+                "locale": "en-US",
+                "key": "BreakfastMenu",
+                "type": "Breakfast menu",
+                "values": [{ "content": "Buffet." }]
+              },
+              {
+                "translated": false,
+                "needTranslation": false,
+                "locale": "en-US",
+                "key": "BreakfastPrice",
+                "type": "Breakfast price",
+                "values": [{ "content": "$6 (≈GBP 4.5)/person" }]
+              }
+            ]
+          },
+          {
+            "icon": "information--language-alert",
+            "translated": false,
+            "needTranslation": false,
+            "locale": "en-US",
+            "key": "ImportantNoticeFromTheHotel",
+            "type": "Important information from the hotel",
+            "values": [
+              {
+                "content": "Guests are required to show a photo ID and credit card upon check-in. Please note that all Special Requests are subject to availability and additional charges may apply. Please inform Safestay London Kensington Holland Park of your expected arrival time in advance. You can use the Special Requests box when booking, or contact the property directly using the contact details in your confirmation. Guests under the age of 18 can only check in with a parent or official guardian. Please note there is no guest kitchen facility to cook and corkage is applied at only £1 per guest for outside food and soft drinks. No outside alcohol is allowed at all. This Hostel operates a 14-day maximum stay policy within a 90-day period. Passport or driver’s license is required for check-in. Student cards are not accepted. The guest making the booking must be over 18. Under 18s can stay in a private room with a parent or guardian but cannot be accommodated in shared dormitories. Bookings of 10 or more people are subject to different policies and additional supplements may apply. Beds in the same dormitory room cannot be guaranteed. Please note there is no guest kitchen facility to cook. No outside alcohol is allowed at all."
+              }
+            ]
+          },
+          {
+            "icon": "payment-card",
+            "translated": false,
+            "needTranslation": false,
+            "locale": "en-US",
+            "key": "PaymentMethod",
+            "type": "Accepted payment methods",
+            "values": [
+              {
+                "title": "The hotel accepts the following payment methods:",
+                "content": ["Master Card", "Visa Card"]
+              }
+            ]
+          }
+        ]
+      }
     },
-    "description": {
-      "title": "Hotel description",
-      "content": "With a stay at Guest Inn Residency, you'll be centrally located in Mumbai, a 3-minute drive from U. S. Consulate General and 6 minutes from Tata Memorial Hospital.\n\nThis hotel is 5.9 mi (9.6 km) from Juhu Beach and 10.3 mi (16.6 km) from Gateway of India.\nTake advantage of the hotel's 24-hour room service.\n\nSelf-serve breakfasts are available daily from 7:00 AM to 10:00 AM for a fee.\nFeatured amenities include a 24-hour front desk and laundry facilities.\n\nFree self parking is available onsite.\nMake yourself at home in one of the 30 air-conditioned rooms featuring LCD televisions.\n\nComplimentary wireless internet access is available to keep you connected. Bathrooms have showers and complimentary toiletries.\n\nConveniences include phones and ceiling fans, and housekeeping is provided daily.",
-      "image": "https://content.skyscnr.com/available/1353403282/1353403282_WxH.jpg",
-      "translated": false,
-      "needTranslation": false,
-      "locale": "en-US"
+    "childrenAndExtraBed": { "title": "Children and extra bed", "content": [] },
+    "location": {
+      "title": "Location",
+      "shortAddress": "Holland Walk, London",
+      "address": "Holland Walk, Kensington, W8 7QU London, United Kingdom",
+      "rawAddress": {
+        "district": "Kensington",
+        "postcode": "W8 7QU",
+        "city": "London",
+        "adm1": "England",
+        "nation": "United Kingdom",
+        "street_address": "Holland Walk",
+        "cityId": "27544008"
+      },
+      "coordinates": { "latitude": 51.50265, "longitude": -0.20238 },
+      "cta": "Explore"
     },
-    "policies": {
-      "title": "Hotel policies",
+    "gallery": {
+      "images": [
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1273357315/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1273357315/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1273357315/1273357315_WxH.jpg"
+        },
+        {
+          "category": "Traveller",
+          "dynamic": "https://content.skyscnr.com/reviews/f32e97fea5f077e258fedfa93958e1c1/f32e97fea5f077e258fedfa93958e1c1_WxH.jpg",
+          "travel_type_info": "From a solo traveler",
+          "guest_type": "solo"
+        },
+        {
+          "category": "Video",
+          "dynamic": "https://content.skyscnr.com/available/1273357315/1273357315_WxH.jpg",
+          "uri": "https://content.skyscnr.com/videos/hotels/2195748.mp4"
+        },
+        {
+          "category": "Bathroom",
+          "thumbnail": "https://content.skyscnr.com/available/1510213090/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1510213090/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1510213090/1510213090_WxH.jpg"
+        },
+        {
+          "category": "Outlook",
+          "thumbnail": "https://content.skyscnr.com/available/1586965073/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1586965073/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1586965073/1586965073_WxH.jpg"
+        },
+        {
+          "category": "Lobby",
+          "thumbnail": "https://content.skyscnr.com/available/1303672688/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303672688/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303672688/1303672688_WxH.jpg"
+        },
+        {
+          "category": "Pool",
+          "thumbnail": "https://content.skyscnr.com/available/1542790725/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1542790725/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1542790725/1542790725_WxH.jpg"
+        },
+        {
+          "category": "RestaurantBar",
+          "thumbnail": "https://content.skyscnr.com/available/1497539808/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1497539808/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1497539808/1497539808_WxH.jpg"
+        },
+        {
+          "category": "Gym",
+          "thumbnail": "https://content.skyscnr.com/available/1510212715/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1510212715/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1510212715/1510212715_WxH.jpg"
+        },
+        {
+          "category": "Others",
+          "thumbnail": "https://content.skyscnr.com/available/1497539785/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1497539785/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1497539785/1497539785_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303672773/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303672773/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303672773/1303672773_WxH.jpg"
+        },
+        {
+          "category": "Traveller",
+          "dynamic": "https://content.skyscnr.com/reviews/b99b75675e6aba48bd5218cbd8a7d472/b99b75675e6aba48bd5218cbd8a7d472_WxH.jpg",
+          "travel_type_info": "From a solo traveler",
+          "guest_type": "solo"
+        },
+        {
+          "category": "Bathroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303672906/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303672906/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303672906/1303672906_WxH.jpg"
+        },
+        {
+          "category": "Lobby",
+          "thumbnail": "https://content.skyscnr.com/available/1303673109/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303673109/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303673109/1303673109_WxH.jpg"
+        },
+        {
+          "category": "Others",
+          "thumbnail": "https://content.skyscnr.com/available/1196514759/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1196514759/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1196514759/1196514759_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303673414/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303673414/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303673414/1303673414_WxH.jpg"
+        },
+        {
+          "category": "Traveller",
+          "dynamic": "https://content.skyscnr.com/reviews/8ce6e214c07df0713717ce3a87fe6588/8ce6e214c07df0713717ce3a87fe6588_WxH.jpg",
+          "travel_type_info": "From a solo traveler",
+          "guest_type": "solo"
+        },
+        {
+          "category": "Bathroom",
+          "thumbnail": "https://content.skyscnr.com/available/1542790764/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1542790764/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1542790764/1542790764_WxH.jpg"
+        },
+        {
+          "category": "Others",
+          "thumbnail": "https://content.skyscnr.com/available/1586965090/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1586965090/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1586965090/1586965090_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1586965068/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1586965068/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1586965068/1586965068_WxH.jpg"
+        },
+        {
+          "category": "Traveller",
+          "dynamic": "https://content.skyscnr.com/reviews/a966d3fa112aed954202923fbbf8050e/a966d3fa112aed954202923fbbf8050e_WxH.jpg",
+          "travel_type_info": "From an anonymous traveler",
+          "guest_type": "other"
+        },
+        {
+          "category": "Bathroom",
+          "thumbnail": "https://content.skyscnr.com/available/1510212956/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1510212956/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1510212956/1510212956_WxH.jpg"
+        },
+        {
+          "category": "Others",
+          "thumbnail": "https://content.skyscnr.com/available/1542790844/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1542790844/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1542790844/1542790844_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303673503/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303673503/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303673503/1303673503_WxH.jpg"
+        },
+        {
+          "category": "Traveller",
+          "dynamic": "https://content.skyscnr.com/reviews/4148826054db5475517eaca19c861a6a/4148826054db5475517eaca19c861a6a_WxH.jpg",
+          "travel_type_info": "From an anonymous traveler",
+          "guest_type": "other"
+        },
+        {
+          "category": "Bathroom",
+          "thumbnail": "https://content.skyscnr.com/available/1542790918/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1542790918/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1542790918/1542790918_WxH.jpg"
+        },
+        {
+          "category": "Others",
+          "thumbnail": "https://content.skyscnr.com/available/1303673389/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303673389/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303673389/1303673389_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303673423/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303673423/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303673423/1303673423_WxH.jpg"
+        },
+        {
+          "category": "Bathroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303672927/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303672927/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303672927/1303672927_WxH.jpg"
+        },
+        {
+          "category": "Others",
+          "thumbnail": "https://content.skyscnr.com/available/1196514766/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1196514766/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1196514766/1196514766_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1586965095/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1586965095/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1586965095/1586965095_WxH.jpg"
+        },
+        {
+          "category": "Bathroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303673543/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303673543/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303673543/1303673543_WxH.jpg"
+        },
+        {
+          "category": "Others",
+          "thumbnail": "https://content.skyscnr.com/available/1303673470/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303673470/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303673470/1303673470_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1510213101/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1510213101/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1510213101/1510213101_WxH.jpg"
+        },
+        {
+          "category": "Bathroom",
+          "thumbnail": "https://content.skyscnr.com/available/1510213153/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1510213153/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1510213153/1510213153_WxH.jpg"
+        },
+        {
+          "category": "Others",
+          "thumbnail": "https://content.skyscnr.com/available/1303673135/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303673135/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303673135/1303673135_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1586965050/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1586965050/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1586965050/1586965050_WxH.jpg"
+        },
+        {
+          "category": "Bathroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303672652/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303672652/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303672652/1303672652_WxH.jpg"
+        },
+        {
+          "category": "Others",
+          "thumbnail": "https://content.skyscnr.com/available/1303673196/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303673196/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303673196/1303673196_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1586965046/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1586965046/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1586965046/1586965046_WxH.jpg"
+        },
+        {
+          "category": "Others",
+          "thumbnail": "https://content.skyscnr.com/available/1542790929/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1542790929/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1542790929/1542790929_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1586965104/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1586965104/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1586965104/1586965104_WxH.jpg"
+        },
+        {
+          "category": "Others",
+          "thumbnail": "https://content.skyscnr.com/available/1586965059/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1586965059/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1586965059/1586965059_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303673037/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303673037/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303673037/1303673037_WxH.jpg"
+        },
+        {
+          "category": "Others",
+          "thumbnail": "https://content.skyscnr.com/available/1510213207/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1510213207/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1510213207/1510213207_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303672742/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303672742/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303672742/1303672742_WxH.jpg"
+        },
+        {
+          "category": "Others",
+          "thumbnail": "https://content.skyscnr.com/available/1586965109/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1586965109/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1586965109/1586965109_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303672543/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303672543/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303672543/1303672543_WxH.jpg"
+        },
+        {
+          "category": "Others",
+          "thumbnail": "https://content.skyscnr.com/available/1303673235/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303673235/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303673235/1303673235_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1586965100/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1586965100/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1586965100/1586965100_WxH.jpg"
+        },
+        {
+          "category": "Others",
+          "thumbnail": "https://content.skyscnr.com/available/1510213070/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1510213070/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1510213070/1510213070_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1510212864/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1510212864/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1510212864/1510212864_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303672631/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303672631/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303672631/1303672631_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303672862/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303672862/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303672862/1303672862_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1497539788/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1497539788/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1497539788/1497539788_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303673399/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303673399/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303673399/1303673399_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1586965065/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1586965065/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1586965065/1586965065_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303673263/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303673263/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303673263/1303673263_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1578996032/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1578996032/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1578996032/1578996032_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303672588/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303672588/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303672588/1303672588_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303673293/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303673293/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303673293/1303673293_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303672605/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303672605/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303672605/1303672605_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303672853/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303672853/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303672853/1303672853_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303673447/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303673447/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303673447/1303673447_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1586965083/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1586965083/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1586965083/1586965083_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303672573/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303672573/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303672573/1303672573_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303673056/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303673056/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303673056/1303673056_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303673026/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303673026/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303673026/1303673026_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1542790790/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1542790790/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1542790790/1542790790_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1542790740/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1542790740/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1542790740/1542790740_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303672983/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303672983/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303672983/1303672983_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303672787/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303672787/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303672787/1303672787_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1303672799/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1303672799/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1303672799/1303672799_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1542790863/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1542790863/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1542790863/1542790863_WxH.jpg"
+        },
+        {
+          "category": "Bedroom",
+          "thumbnail": "https://content.skyscnr.com/available/1586965054/rmt.jpg",
+          "gallery": "https://content.skyscnr.com/available/1586965054/rmca.jpg",
+          "dynamic": "https://content.skyscnr.com/available/1586965054/1586965054_WxH.jpg"
+        }
+      ],
+      "categories": [
+        { "name": "All", "count": 75, "displayName": "All (75)" },
+        { "name": "Bedroom", "count": 39, "displayName": "Bedroom (39)" },
+        {
+          "name": "Traveller",
+          "count": 5,
+          "displayName": "Traveler photos (5)"
+        },
+        { "name": "Video", "count": 1, "displayName": "Videos (1)" },
+        { "name": "Bathroom", "count": 9, "displayName": "Bathroom (9)" },
+        { "name": "Outlook", "count": 1, "displayName": "Outside (1)" },
+        { "name": "Lobby", "count": 2, "displayName": "Entrance (2)" },
+        { "name": "Pool", "count": 1, "displayName": "Pool (1)" },
+        {
+          "name": "RestaurantBar",
+          "count": 1,
+          "displayName": "Food & drink (1)"
+        },
+        { "name": "Gym", "count": 1, "displayName": "Fitness (1)" },
+        { "name": "Others", "count": 15, "displayName": "Highlights (15)" }
+      ]
+    },
+    "amenities": {
+      "title": "Amenities",
+      "ctaAll": "See all",
+      "ctaLess": "Show less",
       "content": [
         {
-          "icon": "family",
-          "translated": false,
-          "needTranslation": false,
-          "locale": "en-US",
-          "key": "Children",
-          "type": "Children",
-          "values": [
-            {
-              "content": "Children are welcome at this hotel."
-            }
+          "icon": "policy",
+          "description": "24-hour Front Desk Service, Luggage storage, Garden, Ticket office, Photocopier, Café, Heat, Heat, Non-smoking, Gameroom, Laundry, Concierge, Internet access, Pool Table, ATM, Room service, Fitness Center, Tours, WiFi, WiFi, Lounge, Smoking areas, Bicycle rental, Iron, Fax, Restaurant, Table tennis"
+        }
+      ],
+      "contentV2": [
+        {
+          "id": "LeisureAndEntertainment",
+          "category": "Leisure and entertainment",
+          "items": [
+            { "id": "BicycleRentalService", "description": "Bicycle rental" },
+            { "id": "Billiards", "description": "Pool Table" },
+            { "id": "GameRoom", "description": "Gameroom" }
           ]
         },
         {
-          "icon": "hotels--pets-allowed",
-          "translated": false,
-          "needTranslation": false,
-          "locale": "en-US",
-          "key": "Pets",
-          "type": "Pets",
-          "values": [
-            {
-              "content": "Pets are not allowed."
-            }
+          "id": "FoodAndDrink",
+          "category": "Food and drink",
+          "items": [
+            { "id": "Cafe", "description": "Café", "icon": "cafe" },
+            { "id": "Restaurant", "description": "Restaurant", "icon": "meal" }
           ]
         },
         {
-          "icon": "food",
-          "translated": false,
-          "needTranslation": false,
-          "locale": "en-US",
-          "key": "Breakfast",
-          "type": "Breakfast",
-          "values": [
+          "id": "Services",
+          "category": "Services",
+          "items": [
+            { "id": "CashMachine", "description": "ATM" },
             {
-              "content": "Breakfast available."
-            }
-          ],
-          "details": [
-            {
-              "translated": false,
-              "needTranslation": false,
-              "locale": "en-US",
-              "key": "BreakfastOptions",
-              "type": "Breakfast options",
-              "values": [
-                {
-                  "content": "Vegetarian breakfast."
-                }
-              ]
+              "id": "ConciergeService",
+              "description": "Concierge",
+              "icon": "luggageall"
             },
             {
-              "translated": false,
-              "needTranslation": false,
-              "locale": "en-US",
-              "key": "BreakfastPrice",
-              "type": "Breakfast price",
-              "values": [
-                {
-                  "content": "Please contact hotel for price information."
-                }
-              ]
+              "id": "FrontDesk24hService",
+              "description": "24-hour Front Desk Service",
+              "icon": "services"
+            },
+            {
+              "id": "LuggageStorage",
+              "description": "Luggage storage",
+              "icon": "luggageall"
+            },
+            {
+              "id": "RoomService",
+              "description": "Room service",
+              "icon": "services"
+            },
+            { "id": "TourService", "description": "Tours" }
+          ]
+        },
+        {
+          "id": "MediaAndTechnology",
+          "category": "Media and technology",
+          "items": [
+            { "id": "Fax", "description": "Fax" },
+            { "id": "Photocopier", "description": "Photocopier" }
+          ]
+        },
+        {
+          "id": "Healthcare",
+          "category": "Health care",
+          "items": [{ "id": "FirstAidRoom", "description": "First-aid room" }]
+        },
+        {
+          "id": "SportAndFitness",
+          "category": "Sports and fitness",
+          "items": [
+            {
+              "id": "FitnessCenter",
+              "description": "Fitness Center",
+              "icon": "health-fitness"
+            },
+            {
+              "id": "TableTennis",
+              "description": "Table tennis",
+              "icon": "duration"
             }
           ]
         },
         {
-          "icon": "payment-card",
-          "translated": false,
-          "needTranslation": false,
-          "locale": "en-US",
-          "key": "PaymentMethod",
-          "type": "Accepted payment methods",
-          "values": [
+          "id": "PopularAndEssential",
+          "category": "Popular and essential",
+          "items": [
+            { "id": "WifiService", "description": "WiFi", "icon": "wifi" },
             {
-              "title": "The hotel accepts the following payment methods:",
-              "content": ["Master Card", "Visa Card"]
+              "id": "FitnessCenter",
+              "description": "Fitness Center",
+              "icon": "health-fitness"
+            },
+            {
+              "id": "FrontDesk24hService",
+              "description": "24-hour Front Desk Service",
+              "icon": "services"
+            },
+            { "id": "Restaurant", "description": "Restaurant", "icon": "meal" },
+            {
+              "id": "NonSmokingService",
+              "description": "Non-smoking",
+              "icon": "hotels--smoking"
+            },
+            { "id": "Laundry", "description": "Laundry", "icon": "cloakroom" },
+            { "id": "Cafe", "description": "Café", "icon": "cafe" },
+            { "id": "FirstAidRoom", "description": "First-aid room" },
+            { "id": "Garden", "description": "Garden" },
+            { "id": "Lounge", "description": "Lounge" },
+            { "id": "SmokingArea", "description": "Smoking areas" },
+            {
+              "id": "TicketOffice",
+              "description": "Ticket office",
+              "icon": "ticket"
+            },
+            { "id": "BicycleRentalService", "description": "Bicycle rental" },
+            { "id": "Billiards", "description": "Pool Table" },
+            { "id": "GameRoom", "description": "Gameroom" },
+            { "id": "Fax", "description": "Fax" },
+            { "id": "Photocopier", "description": "Photocopier" },
+            { "id": "CashMachine", "description": "ATM" },
+            {
+              "id": "ConciergeService",
+              "description": "Concierge",
+              "icon": "luggageall"
+            },
+            {
+              "id": "LuggageStorage",
+              "description": "Luggage storage",
+              "icon": "luggageall"
             }
+          ]
+        },
+        {
+          "id": "HotelAndOutdoorFacilities",
+          "category": "Hotel and outdoor facilities",
+          "items": [
+            { "id": "Garden", "description": "Garden" },
+            { "id": "Laundry", "description": "Laundry", "icon": "cloakroom" },
+            { "id": "Lounge", "description": "Lounge" },
+            {
+              "id": "NonSmokingService",
+              "description": "Non-smoking",
+              "icon": "hotels--smoking"
+            },
+            { "id": "SmokingArea", "description": "Smoking areas" },
+            {
+              "id": "TicketOffice",
+              "description": "Ticket office",
+              "icon": "ticket"
+            }
+          ]
+        },
+        {
+          "id": "WiFiAndInternet",
+          "category": "Wifi and internet",
+          "items": [
+            {
+              "id": "InternetAccessService",
+              "description": "Internet access",
+              "icon": "globe"
+            },
+            { "id": "WifiService", "description": "WiFi", "icon": "wifi" }
           ]
         }
       ]
+    },
+    "reviews": {
+      "title": "Traveler ratings",
+      "newTitle": "Hotel rating",
+      "cta": "Read reviews",
+      "summaryDescription": "Reviews by hotel guests",
+      "rating": 8,
+      "ratingDescription": "rating_very_good",
+      "ratingDescriptionText": "Very Good",
+      "numberOfReviewsLabel": "1399 reviews",
+      "numberOfReviewsLabelExpanded": "Based on 1399 reviews",
+      "badges": [],
+      "guests": { "title": "TYPE OF GUESTS", "entries": [] },
+      "categories": { "title": "SUMMARY OF RATINGS", "entries": [] },
+      "explanations": [
+        {
+          "title": "HOW OUR SUMMARY OF REVIEWS WORKS",
+          "content": "We analyze user reviews from dozens of travel websites and we generate a summary of all of them so that you can see at a glance the assessment made by the guests of this hotel.\nIn this way, you don't need to invest time in reading hundreds of reviews one by one to extract your own conclusions: we give them to you ready-made!"
+        },
+        {
+          "title": "TRUE REVIEWS",
+          "content": "All the analyzed reviews come from travel websites that allow reviews to be written only by those users who have made a booking and stayed at the hotel."
+        }
+      ]
+    },
+    "distance": "1.46 miles from Paddington Station",
+    "reviewRatingSummary": {
+      "scoreLogoImageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-64600-4.png",
+      "score": "4.0",
+      "formatScore": "4.0",
+      "totalScore": "5",
+      "count": "1399 reviews",
+      "countNumber": 1399,
+      "formatCountString": "1,399",
+      "color": "colorMonteverde",
+      "scoreDesc": "Very Good",
+      "highlights": "",
+      "categories": [
+        {
+          "type": "cleanliness",
+          "score": "4.5",
+          "formatScore": "4.5",
+          "color": "colorMonteverde",
+          "name": "Cleanliness",
+          "highlights": "",
+          "description": "Excellent"
+        },
+        {
+          "type": "location",
+          "score": "4.5",
+          "formatScore": "4.5",
+          "color": "colorMonteverde",
+          "name": "Location",
+          "highlights": "",
+          "description": "Excellent"
+        },
+        {
+          "type": "service",
+          "score": "4.5",
+          "formatScore": "4.5",
+          "color": "colorMonteverde",
+          "name": "Service",
+          "highlights": "",
+          "description": "Excellent"
+        },
+        {
+          "type": "rooms",
+          "score": "4.0",
+          "formatScore": "4.0",
+          "color": "colorMonteverde",
+          "name": "Rooms",
+          "highlights": "",
+          "description": "Very Good"
+        },
+        {
+          "type": "value",
+          "score": "4.5",
+          "formatScore": "4.5",
+          "color": "colorMonteverde",
+          "name": "Value",
+          "highlights": "",
+          "description": "Excellent"
+        },
+        {
+          "type": "sleepquality",
+          "score": "4.0",
+          "formatScore": "4.0",
+          "color": "colorMonteverde",
+          "name": "Sleep quality",
+          "highlights": "",
+          "description": "Very Good"
+        }
+      ],
+      "cleanlinessMessage": "Hotel cleanliness is rated 4.5/5",
+      "locationMessage": "Hotel location is rated 4.5/5",
+      "highScoreReviews": [
+        {
+          "type": "location",
+          "score": "4.5",
+          "icon": "thumbs-up",
+          "text": "{tag}Great choice – your hotel location is rated 4.5{/tag}/5."
+        }
+      ]
     }
-  },
-  "childrenAndExtraBed": {
-    "title": "Children and extra bed",
-    "content": []
-  },
-  "location": {
-    "title": "Location",
-    "shortAddress": "L.B.S. Marg Near Maharashtra Weigh Bridge Kurla ( W, Mumbai",
-    "address": "L.B.S. Marg Near Maharashtra Weigh Bridge Kurla ( W, Mumbai Suburban District, 400070 Mumbai, India",
-    "rawAddress": {
-      "adm1": "Maharashtra",
-      "street_address": "L.B.S. Marg Near Maharashtra Weigh Bridge Kurla ( W",
-      "district": "Mumbai Suburban District",
-      "city": "Mumbai",
-      "postcode": "400070",
-      "nation": "India",
-      "cityId": "27539520"
-    },
-    "coordinates": {
-      "latitude": 19.054391,
-      "longitude": 72.868095
-    },
-    "cta": "Explore"
-  },
-  "gallery": {
-    "images": [
-      {
-        "category": "Outlook",
-        "thumbnail": "https://content.skyscnr.com/available/1353403278/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403278/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403278/1353403278_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/1353403226/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403226/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403226/1353403226_WxH.jpg"
-      },
-      {
-        "category": "Traveller",
-        "dynamic": "https://content.skyscnr.com/reviews/62f205f58b27e1fba2530494a8d45e8c/62f205f58b27e1fba2530494a8d45e8c_WxH.jpg",
-        "travel_type_info": "From a solo traveler",
-        "guest_type": "solo"
-      },
-      {
-        "category": "Video",
-        "dynamic": "https://content.skyscnr.com/available/1353403278/1353403278_WxH.jpg",
-        "uri": "https://content.skyscnr.com/videos/hotels/7121285.mp4"
-      },
-      {
-        "category": "Bathroom",
-        "thumbnail": "https://content.skyscnr.com/available/1353403237/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403237/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403237/1353403237_WxH.jpg"
-      },
-      {
-        "category": "Outlook",
-        "thumbnail": "https://content.skyscnr.com/available/1353403282/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403282/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403282/1353403282_WxH.jpg"
-      },
-      {
-        "category": "Lobby",
-        "thumbnail": "https://content.skyscnr.com/available/1353403239/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403239/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403239/1353403239_WxH.jpg"
-      },
-      {
-        "category": "MeetingRoom",
-        "thumbnail": "https://content.skyscnr.com/available/1353403246/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403246/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403246/1353403246_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/1353403275/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403275/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403275/1353403275_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/975682160/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/975682160/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/975682160/975682160_WxH.jpg"
-      },
-      {
-        "category": "Bathroom",
-        "thumbnail": "https://content.skyscnr.com/available/721532236/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/721532236/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/721532236/721532236_WxH.jpg"
-      },
-      {
-        "category": "Outlook",
-        "thumbnail": "https://content.skyscnr.com/available/1353403224/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403224/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403224/1353403224_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/1353403270/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403270/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403270/1353403270_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/1353403258/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403258/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403258/1353403258_WxH.jpg"
-      },
-      {
-        "category": "Outlook",
-        "thumbnail": "https://content.skyscnr.com/available/1353403280/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403280/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403280/1353403280_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/1353403254/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403254/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403254/1353403254_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/975682137/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/975682137/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/975682137/975682137_WxH.jpg"
-      },
-      {
-        "category": "Outlook",
-        "thumbnail": "https://content.skyscnr.com/available/1353403274/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403274/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403274/1353403274_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/1353403272/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403272/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403272/1353403272_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/1353403266/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403266/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403266/1353403266_WxH.jpg"
-      },
-      {
-        "category": "Outlook",
-        "thumbnail": "https://content.skyscnr.com/available/1353403269/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403269/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403269/1353403269_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/1353403264/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403264/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403264/1353403264_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/721532234/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/721532234/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/721532234/721532234_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/1353403283/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403283/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403283/1353403283_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/721532231/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/721532231/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/721532231/721532231_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/1353403228/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403228/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403228/1353403228_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/1353403249/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403249/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403249/1353403249_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/1353403284/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403284/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403284/1353403284_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/1353403277/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403277/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403277/1353403277_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/721532216/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/721532216/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/721532216/721532216_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/721532222/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/721532222/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/721532222/721532222_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/975682157/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/975682157/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/975682157/975682157_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/721532201/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/721532201/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/721532201/721532201_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/1353403281/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403281/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403281/1353403281_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/1353403273/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403273/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403273/1353403273_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/1353403256/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403256/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403256/1353403256_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/1353403233/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403233/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403233/1353403233_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/1353403215/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403215/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403215/1353403215_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/721532205/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/721532205/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/721532205/721532205_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/1353403271/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403271/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403271/1353403271_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/721532229/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/721532229/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/721532229/721532229_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/1353403261/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403261/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403261/1353403261_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/721532232/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/721532232/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/721532232/721532232_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/1353403262/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403262/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403262/1353403262_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/975682154/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/975682154/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/975682154/975682154_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/1353403230/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403230/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403230/1353403230_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/975682126/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/975682126/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/975682126/975682126_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/1353403244/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403244/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403244/1353403244_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/975682119/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/975682119/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/975682119/975682119_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/1353403267/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403267/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403267/1353403267_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/1353403251/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403251/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403251/1353403251_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/1353403268/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403268/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403268/1353403268_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/975682168/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/975682168/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/975682168/975682168_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/1353403217/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403217/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403217/1353403217_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/975682089/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/975682089/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/975682089/975682089_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/1353403221/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403221/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403221/1353403221_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/975682094/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/975682094/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/975682094/975682094_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/1353403242/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403242/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403242/1353403242_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/975682086/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/975682086/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/975682086/975682086_WxH.jpg"
-      },
-      {
-        "category": "Others",
-        "thumbnail": "https://content.skyscnr.com/available/1353403263/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403263/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403263/1353403263_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/975682098/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/975682098/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/975682098/975682098_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/975682082/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/975682082/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/975682082/975682082_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/1353403265/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403265/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403265/1353403265_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/1353403259/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/1353403259/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/1353403259/1353403259_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/975682111/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/975682111/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/975682111/975682111_WxH.jpg"
-      },
-      {
-        "category": "Bedroom",
-        "thumbnail": "https://content.skyscnr.com/available/975682105/rmt.jpg",
-        "gallery": "https://content.skyscnr.com/available/975682105/rmca.jpg",
-        "dynamic": "https://content.skyscnr.com/available/975682105/975682105_WxH.jpg"
-      }
-    ],
-    "categories": [
-      {
-        "name": "All",
-        "count": 66,
-        "displayName": "All (66)"
-      },
-      {
-        "name": "Outlook",
-        "count": 6,
-        "displayName": "Outside (6)"
-      },
-      {
-        "name": "Bedroom",
-        "count": 30,
-        "displayName": "Bedroom (30)"
-      },
-      {
-        "name": "Traveller",
-        "count": 1,
-        "displayName": "Traveler photos (1)"
-      },
-      {
-        "name": "Video",
-        "count": 1,
-        "displayName": "Videos (1)"
-      },
-      {
-        "name": "Bathroom",
-        "count": 2,
-        "displayName": "Bathroom (2)"
-      },
-      {
-        "name": "Lobby",
-        "count": 1,
-        "displayName": "Entrance (1)"
-      },
-      {
-        "name": "MeetingRoom",
-        "count": 1,
-        "displayName": "Business (1)"
-      },
-      {
-        "name": "Others",
-        "count": 24,
-        "displayName": "Highlights (24)"
-      }
-    ]
-  },
-  "amenities": {
-    "title": "Amenities",
-    "ctaAll": "See all",
-    "ctaLess": "Show less",
-    "content": [
-      {
-        "icon": "wifi",
-        "description": "WiFi, Multilingual staff, Room service, 24-hour Front Desk Service, Laundry, Ticket office"
-      },
-      {
-        "icon": "settings",
-        "description": "WiFi, Multilingual staff, Room service, 24-hour Front Desk Service, Laundry, Ticket office"
-      }
-    ],
-    "contentV2": [
-      {
-        "id": "Services",
-        "category": "Services",
-        "items": [
-          {
-            "id": "ATM",
-            "description": "ATM"
-          },
-          {
-            "id": "FrontDesk24hService",
-            "description": "24-hour Front Desk Service",
-            "icon": "services"
-          },
-          {
-            "id": "MultilingualStaffService",
-            "description": "Multilingual staff"
-          },
-          {
-            "id": "RoomService",
-            "description": "Room service",
-            "icon": "services"
-          }
-        ]
-      },
-      {
-        "id": "PopularAndEssential",
-        "category": "Popular and essential",
-        "items": [
-          {
-            "id": "WifiService",
-            "description": "WiFi",
-            "icon": "wifi"
-          },
-          {
-            "id": "FrontDesk24hService",
-            "description": "24-hour Front Desk Service",
-            "icon": "services"
-          },
-          {
-            "id": "Laundry",
-            "description": "Laundry",
-            "icon": "cloakroom"
-          },
-          {
-            "id": "TicketOffice",
-            "description": "Ticket office",
-            "icon": "ticket"
-          },
-          {
-            "id": "ATM",
-            "description": "ATM"
-          },
-          {
-            "id": "MultilingualStaffService",
-            "description": "Multilingual staff"
-          },
-          {
-            "id": "RoomService",
-            "description": "Room service",
-            "icon": "services"
-          },
-          {
-            "id": "WiFiInDesignatedAreas",
-            "description": "WiFi in common areas"
-          }
-        ]
-      },
-      {
-        "id": "HotelAndOutdoorFacilities",
-        "category": "Hotel and outdoor facilities",
-        "items": [
-          {
-            "id": "Laundry",
-            "description": "Laundry",
-            "icon": "cloakroom"
-          },
-          {
-            "id": "TicketOffice",
-            "description": "Ticket office",
-            "icon": "ticket"
-          }
-        ]
-      },
-      {
-        "id": "WiFiAndInternet",
-        "category": "Wifi and internet",
-        "items": [
-          {
-            "id": "WiFiInDesignatedAreas",
-            "description": "WiFi in common areas"
-          },
-          {
-            "id": "WifiService",
-            "description": "WiFi",
-            "icon": "wifi"
-          }
-        ]
-      }
-    ]
-  },
-  "reviews": {
-    "title": "Traveler ratings",
-    "newTitle": "Hotel rating",
-    "cta": "Read reviews",
-    "summaryDescription": "Reviews by hotel guests",
-    "rating": 9.6,
-    "ratingDescription": "rating_with_honors",
-    "ratingDescriptionText": "Outstanding",
-    "numberOfReviewsLabel": "12 reviews",
-    "numberOfReviewsLabelExpanded": "Based on 12 reviews",
-    "badges": [],
-    "guests": {
-      "title": "TYPE OF GUESTS",
-      "entries": []
-    },
-    "categories": {
-      "title": "SUMMARY OF RATINGS",
-      "entries": []
-    },
-    "explanations": [
-      {
-        "title": "HOW OUR SUMMARY OF REVIEWS WORKS",
-        "content": "We analyze user reviews from dozens of travel websites and we generate a summary of all of them so that you can see at a glance the assessment made by the guests of this hotel.\nIn this way, you don't need to invest time in reading hundreds of reviews one by one to extract your own conclusions: we give them to you ready-made!"
-      },
-      {
-        "title": "TRUE REVIEWS",
-        "content": "All the analyzed reviews come from travel websites that allow reviews to be written only by those users who have made a booking and stayed at the hotel."
-      }
-    ]
-  },
-  "distance": "0.55 miles from downtown",
-  "reviewRatingSummary": {
-    "scoreLogoImageUrl": null,
-    "score": "4.8",
-    "formatScore": "4.8",
-    "totalScore": "5",
-    "count": "12 reviews",
-    "countNumber": 12,
-    "formatCountString": "12",
-    "color": "colorMonteverde",
-    "scoreDesc": "Outstanding",
-    "highlights": "",
-    "categories": [
-      {
-        "type": "cleanliness",
-        "score": "3.2",
-        "formatScore": "3.2",
-        "color": "colorKolkata",
-        "name": "Cleanliness",
-        "highlights": "",
-        "description": "Satisfactory"
-      },
-      {
-        "type": "location",
-        "score": "3.3",
-        "formatScore": "3.3",
-        "color": "colorKolkata",
-        "name": "Location",
-        "highlights": "",
-        "description": "Satisfactory"
-      },
-      {
-        "type": "service",
-        "score": "3.2",
-        "formatScore": "3.2",
-        "color": "colorKolkata",
-        "name": "Service",
-        "highlights": "",
-        "description": "Satisfactory"
-      },
-      {
-        "type": "facility",
-        "score": "3.2",
-        "formatScore": "3.2",
-        "color": "colorKolkata",
-        "name": "Facilities",
-        "highlights": "",
-        "description": "Satisfactory"
-      }
-    ],
-    "cleanlinessMessage": null,
-    "locationMessage": null,
-    "highScoreReviews": []
   }
 }
