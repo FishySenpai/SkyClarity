@@ -3,70 +3,65 @@
   "message": "success",
   "data": {
     "itinerary": {
-      "id": "12569-2408010530--31734-1-10413-2408011655",
+      "id": "13416-2407041620--31939-1-12569-2407060150",
       "legs": [
         {
-          "id": "12569-2408010530--31734-1-10413-2408011655",
+          "id": "13416-2407041620--31939-1-12569-2407060150",
           "origin": {
+            "id": "13416",
+            "name": "Los Angeles International",
+            "displayCode": "LAX",
+            "city": "Los Angeles"
+          },
+          "destination": {
             "id": "12569",
             "name": "Islamabad",
             "displayCode": "ISB",
             "city": "Islamabad"
           },
-          "destination": {
-            "id": "10413",
-            "name": "Paris Charles de Gaulle",
-            "displayCode": "CDG",
-            "city": "Paris"
-          },
           "segments": [
             {
-              "id": "12569-12585-2408010530-2408010945--31734",
+              "id": "13416-11089-2407041620-2407051755--31939",
               "origin": {
-                "id": "12569",
-                "name": "Islamabad",
-                "displayCode": "ISB",
-                "city": "Islamabad"
+                "id": "13416",
+                "name": "Los Angeles International",
+                "displayCode": "LAX",
+                "city": "Los Angeles"
               },
               "destination": {
-                "id": "12585",
-                "name": "Istanbul",
-                "displayCode": "IST",
-                "city": "Istanbul"
+                "id": "11089",
+                "name": "Hamad International",
+                "displayCode": "DOH",
+                "city": "Doha"
               },
-              "duration": 375,
-              "dayChange": 0,
-              "flightNumber": "TK711",
-              "departure": "2024-08-01T05:30:00",
-              "arrival": "2024-08-01T09:45:00",
+              "duration": 935,
+              "dayChange": 1,
+              "flightNumber": "QR740",
+              "departure": "2024-07-04T16:20:00",
+              "arrival": "2024-07-05T17:55:00",
               "marketingCarrier": {
-                "id": "-31734",
-                "name": "Turkish Airlines",
-                "displayCode": "TK",
+                "id": "-31939",
+                "name": "Qatar Airways",
+                "displayCode": "QR",
                 "displayCodeType": "IATA",
-                "brandColor": "#e31d1a",
-                "logo": "https://content.skyscnr.com/481e6ea958a6c4433a45fb382c899711/ai-template-turkish-airlines-thumb-1-xxxhdpi.png",
-                "altId": "TK"
+                "brandColor": "#662046",
+                "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                "altId": "QR"
               },
               "operatingCarrier": {
-                "id": "-31734",
-                "name": "Turkish Airlines",
-                "displayCode": "TK",
+                "id": "-31939",
+                "name": "Qatar Airways",
+                "displayCode": "QR",
                 "displayCodeType": "IATA",
-                "brandColor": "#e31d1a",
-                "logo": "https://content.skyscnr.com/481e6ea958a6c4433a45fb382c899711/ai-template-turkish-airlines-thumb-1-xxxhdpi.png",
-                "altId": "TK"
+                "brandColor": "#662046",
+                "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                "altId": "QR"
               },
               "goodToKnowItems": [
                 {
                   "icon": "duration",
                   "body": {
-                    "value": "You have a <style0>4h 20m</style0> wait here",
-                    "isHighlighted": false,
-                    "position": 1
-                  },
-                  "badge": {
-                    "value": "Long Wait",
+                    "value": "<style0>2h 25m</style0> connection in airport",
                     "isHighlighted": false,
                     "position": 0
                   }
@@ -74,130 +69,139 @@
               ]
             },
             {
-              "id": "12585-10413-2408011405-2408011655--31734",
+              "id": "11089-12569-2407052020-2407060150--31939",
               "origin": {
-                "id": "12585",
-                "name": "Istanbul",
-                "displayCode": "IST",
-                "city": "Istanbul"
+                "id": "11089",
+                "name": "Hamad International",
+                "displayCode": "DOH",
+                "city": "Doha"
               },
               "destination": {
-                "id": "10413",
-                "name": "Paris Charles de Gaulle",
-                "displayCode": "CDG",
-                "city": "Paris"
+                "id": "12569",
+                "name": "Islamabad",
+                "displayCode": "ISB",
+                "city": "Islamabad"
               },
-              "duration": 230,
-              "dayChange": 0,
-              "flightNumber": "TK1833",
-              "departure": "2024-08-01T14:05:00",
-              "arrival": "2024-08-01T16:55:00",
+              "duration": 210,
+              "dayChange": 1,
+              "flightNumber": "QR632",
+              "departure": "2024-07-05T20:20:00",
+              "arrival": "2024-07-06T01:50:00",
               "marketingCarrier": {
-                "id": "-31734",
-                "name": "Turkish Airlines",
-                "displayCode": "TK",
+                "id": "-31939",
+                "name": "Qatar Airways",
+                "displayCode": "QR",
                 "displayCodeType": "IATA",
-                "brandColor": "#e31d1a",
-                "logo": "https://content.skyscnr.com/481e6ea958a6c4433a45fb382c899711/ai-template-turkish-airlines-thumb-1-xxxhdpi.png",
-                "altId": "TK"
+                "brandColor": "#662046",
+                "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                "altId": "QR"
               },
               "operatingCarrier": {
-                "id": "-31734",
-                "name": "Turkish Airlines",
-                "displayCode": "TK",
+                "id": "-31939",
+                "name": "Qatar Airways",
+                "displayCode": "QR",
                 "displayCodeType": "IATA",
-                "brandColor": "#e31d1a",
-                "logo": "https://content.skyscnr.com/481e6ea958a6c4433a45fb382c899711/ai-template-turkish-airlines-thumb-1-xxxhdpi.png",
-                "altId": "TK"
-              }
+                "brandColor": "#662046",
+                "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                "altId": "QR"
+              },
+              "goodToKnowItems": [
+                {
+                  "icon": "normal",
+                  "body": {
+                    "value": "You'll arrive 2 days later",
+                    "isHighlighted": true,
+                    "position": 0
+                  },
+                  "date": {
+                    "value": "2024-07-06T01:50:00",
+                    "isHighlighted": true,
+                    "position": 1
+                  }
+                }
+              ]
             }
           ],
           "layovers": [
             {
-              "segmentId": "12569-12585-2408010530-2408010945--31734",
+              "segmentId": "13416-11089-2407041620-2407051755--31939",
               "origin": {
-                "id": "12585",
-                "name": "Istanbul",
-                "displayCode": "IST",
-                "city": "Istanbul"
+                "id": "11089",
+                "name": "Hamad International",
+                "displayCode": "DOH",
+                "city": "Doha"
               },
               "destination": {
-                "id": "12585",
-                "name": "Istanbul",
-                "displayCode": "IST",
-                "city": "Istanbul"
+                "id": "11089",
+                "name": "Hamad International",
+                "displayCode": "DOH",
+                "city": "Doha"
               },
-              "duration": 260
+              "duration": 145
             }
           ],
-          "duration": 865,
+          "duration": 1290,
           "stopCount": 1,
-          "departure": "2024-08-01T05:30:00",
-          "arrival": "2024-08-01T16:55:00",
-          "dayChange": 0,
-          "orderedGoodToKnow": ["Long Wait"]
+          "departure": "2024-07-04T16:20:00",
+          "arrival": "2024-07-06T01:50:00",
+          "dayChange": 2
         }
       ],
       "pricingOptions": [
         {
           "agents": [
             {
-              "id": "turk",
-              "name": "Turkish Airlines",
-              "isCarrier": true,
+              "id": "oojo",
+              "name": "Oojo",
+              "isCarrier": false,
               "bookingProposition": "PBOOK",
-              "url": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/turk/1/12569.10413.2024-08-01/air/airli/flights?itinerary=flight|-31734|711|12569|2024-08-01T05:30|12585|2024-08-01T09:45|375|SF2PXOW|S|RS;flight|-31734|1833|12585|2024-08-01T14:05|10413|2024-08-01T16:55|230|SF2PXOW|S|RS&carriers=-31734&operators=-31734;-31734&passengers=1&channel=iphone&cabin_class=economy&fps_session_id=c890d646-181e-48c6-8b49-325bafe84c57&ticket_price=1000.94&is_npt=false&is_multipart=false&client_id=skyscanner_app&q_ids=H4sIAAAAAAAA_-OS4mIpKS3KFmLmmJkkxcyxU1-hYcHqrWxGTAqMAIONAHIcAAAA|2531708700044040576|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2024-06-23T12:27:26&pqid=false",
-              "price": 1000.94,
-              "rating": { "value": 4.71, "count": 537 },
+              "url": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/oojo/1/13416.12569.2024-07-04/air/trava/flights?itinerary=flight|-31939|740|13416|2024-07-04T16:20|11089|2024-07-05T17:55|935|-|-|-;flight|-31939|632|11089|2024-07-05T20:20|12569|2024-07-06T01:50|210|-|-|-&carriers=-31939&operators=-31939;-31939&passengers=1&channel=iphone&cabin_class=economy&fps_session_id=ae866830-2b6b-4421-8413-bdefbb51d323&ticket_price=1106.76&is_npt=false&is_multipart=false&client_id=skyscanner_app&q_ids=H4sIAAAAAAAA_-OS4mLJz8_KF2Lm-KAkxcwxM0mh4cz0LWxGTAqMAB8ac3McAAAA|2232105863342384640|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2024-06-25T08:48:53&pqid=true",
+              "price": 1106.76,
+              "rating": { "value": 4.61, "count": 4594 },
               "updateStatus": "PENDING",
               "segments": [
                 {
-                  "id": "12569-12585-2408010530-2408010945--31734",
+                  "id": "13416-11089-2407041620-2407051755--31939",
                   "origin": {
-                    "id": "12569",
-                    "name": "Islamabad",
-                    "displayCode": "ISB",
-                    "city": "Islamabad"
+                    "id": "13416",
+                    "name": "Los Angeles International",
+                    "displayCode": "LAX",
+                    "city": "Los Angeles"
                   },
                   "destination": {
-                    "id": "12585",
-                    "name": "Istanbul",
-                    "displayCode": "IST",
-                    "city": "Istanbul"
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
                   },
-                  "duration": 375,
-                  "dayChange": 0,
-                  "flightNumber": "TK711",
-                  "departure": "2024-08-01T05:30:00",
-                  "arrival": "2024-08-01T09:45:00",
+                  "duration": 935,
+                  "dayChange": 1,
+                  "flightNumber": "QR740",
+                  "departure": "2024-07-04T16:20:00",
+                  "arrival": "2024-07-05T17:55:00",
                   "marketingCarrier": {
-                    "id": "-31734",
-                    "name": "Turkish Airlines",
-                    "displayCode": "TK",
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
                     "displayCodeType": "IATA",
-                    "brandColor": "#e31d1a",
-                    "logo": "https://content.skyscnr.com/481e6ea958a6c4433a45fb382c899711/ai-template-turkish-airlines-thumb-1-xxxhdpi.png",
-                    "altId": "TK"
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
                   },
                   "operatingCarrier": {
-                    "id": "-31734",
-                    "name": "Turkish Airlines",
-                    "displayCode": "TK",
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
                     "displayCodeType": "IATA",
-                    "brandColor": "#e31d1a",
-                    "logo": "https://content.skyscnr.com/481e6ea958a6c4433a45fb382c899711/ai-template-turkish-airlines-thumb-1-xxxhdpi.png",
-                    "altId": "TK"
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
                   },
                   "goodToKnowItems": [
                     {
                       "icon": "duration",
                       "body": {
-                        "value": "You have a <style0>4h 20m</style0> wait here",
-                        "isHighlighted": false,
-                        "position": 1
-                      },
-                      "badge": {
-                        "value": "Long Wait",
+                        "value": "<style0>2h 25m</style0> connection in airport",
                         "isHighlighted": false,
                         "position": 0
                       }
@@ -205,59 +209,1416 @@
                   ]
                 },
                 {
-                  "id": "12585-10413-2408011405-2408011655--31734",
+                  "id": "11089-12569-2407052020-2407060150--31939",
                   "origin": {
-                    "id": "12585",
-                    "name": "Istanbul",
-                    "displayCode": "IST",
-                    "city": "Istanbul"
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
                   },
                   "destination": {
-                    "id": "10413",
-                    "name": "Paris Charles de Gaulle",
-                    "displayCode": "CDG",
-                    "city": "Paris"
+                    "id": "12569",
+                    "name": "Islamabad",
+                    "displayCode": "ISB",
+                    "city": "Islamabad"
                   },
-                  "duration": 230,
-                  "dayChange": 0,
-                  "flightNumber": "TK1833",
-                  "departure": "2024-08-01T14:05:00",
-                  "arrival": "2024-08-01T16:55:00",
+                  "duration": 210,
+                  "dayChange": 1,
+                  "flightNumber": "QR632",
+                  "departure": "2024-07-05T20:20:00",
+                  "arrival": "2024-07-06T01:50:00",
                   "marketingCarrier": {
-                    "id": "-31734",
-                    "name": "Turkish Airlines",
-                    "displayCode": "TK",
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
                     "displayCodeType": "IATA",
-                    "brandColor": "#e31d1a",
-                    "logo": "https://content.skyscnr.com/481e6ea958a6c4433a45fb382c899711/ai-template-turkish-airlines-thumb-1-xxxhdpi.png",
-                    "altId": "TK"
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
                   },
                   "operatingCarrier": {
-                    "id": "-31734",
-                    "name": "Turkish Airlines",
-                    "displayCode": "TK",
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
                     "displayCodeType": "IATA",
-                    "brandColor": "#e31d1a",
-                    "logo": "https://content.skyscnr.com/481e6ea958a6c4433a45fb382c899711/ai-template-turkish-airlines-thumb-1-xxxhdpi.png",
-                    "altId": "TK"
-                  }
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "normal",
+                      "body": {
+                        "value": "You'll arrive 2 days later",
+                        "isHighlighted": true,
+                        "position": 0
+                      },
+                      "date": {
+                        "value": "2024-07-06T01:50:00",
+                        "isHighlighted": true,
+                        "position": 1
+                      }
+                    }
+                  ]
                 }
               ],
               "isDirectDBookUrl": false,
-              "quoteAge": 1192
+              "quoteAge": 33
             }
           ],
-          "totalPrice": 1000.94,
+          "totalPrice": 1106.76,
           "fare": { "leg_details": [] },
-          "id": "PNCjmqj5cJY9"
+          "id": "3jQqReyllurE"
+        },
+        {
+          "agents": [
+            {
+              "id": "cust",
+              "name": "Trip.com",
+              "isCarrier": false,
+              "bookingProposition": "PBOOK",
+              "url": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/cust/1/13416.12569.2024-07-04/air/trava/flights?itinerary=flight|-31939|740|13416|2024-07-04T16:20|11089|2024-07-05T17:55|935|-|-|-;flight|-31939|632|11089|2024-07-05T20:20|12569|2024-07-06T01:50|210|-|-|-&carriers=-31939&operators=-31939;-31939&passengers=1&channel=iphone&cabin_class=economy&fps_session_id=ae866830-2b6b-4421-8413-bdefbb51d323&ticket_price=1113.50&is_npt=false&is_multipart=false&client_id=skyscanner_app&q_ids=H4sIAAAAAAAA_-NS42JJLi0uEWLm-KAkxcwxM0mh4cz0LWxGTAqMRaypebqhwVXMocEuAG5rIwAoAAAA|-7689405355600789837|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2024-06-25T08:48:58&pqid=true",
+              "price": 1113.5,
+              "rating": { "value": 4.45, "count": 10131 },
+              "updateStatus": "PENDING",
+              "segments": [
+                {
+                  "id": "13416-11089-2407041620-2407051755--31939",
+                  "origin": {
+                    "id": "13416",
+                    "name": "Los Angeles International",
+                    "displayCode": "LAX",
+                    "city": "Los Angeles"
+                  },
+                  "destination": {
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
+                  },
+                  "duration": 935,
+                  "dayChange": 1,
+                  "flightNumber": "QR740",
+                  "departure": "2024-07-04T16:20:00",
+                  "arrival": "2024-07-05T17:55:00",
+                  "marketingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "duration",
+                      "body": {
+                        "value": "<style0>2h 25m</style0> connection in airport",
+                        "isHighlighted": false,
+                        "position": 0
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "11089-12569-2407052020-2407060150--31939",
+                  "origin": {
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
+                  },
+                  "destination": {
+                    "id": "12569",
+                    "name": "Islamabad",
+                    "displayCode": "ISB",
+                    "city": "Islamabad"
+                  },
+                  "duration": 210,
+                  "dayChange": 1,
+                  "flightNumber": "QR632",
+                  "departure": "2024-07-05T20:20:00",
+                  "arrival": "2024-07-06T01:50:00",
+                  "marketingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "normal",
+                      "body": {
+                        "value": "You'll arrive 2 days later",
+                        "isHighlighted": true,
+                        "position": 0
+                      },
+                      "date": {
+                        "value": "2024-07-06T01:50:00",
+                        "isHighlighted": true,
+                        "position": 1
+                      }
+                    }
+                  ]
+                }
+              ],
+              "isDirectDBookUrl": false,
+              "quoteAge": 33
+            }
+          ],
+          "totalPrice": 1113.5,
+          "fare": { "leg_details": [] },
+          "id": "ufMHX96XP5eU"
+        },
+        {
+          "agents": [
+            {
+              "id": "fnus",
+              "name": "FlightNetwork",
+              "isCarrier": false,
+              "bookingProposition": "PBOOK",
+              "url": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/fnus/1/13416.12569.2024-07-04/air/trava/flights?itinerary=flight|-31939|740|13416|2024-07-04T16:20|11089|2024-07-05T17:55|935|-|-|-;flight|-31939|632|11089|2024-07-05T20:20|12569|2024-07-06T01:50|210|-|-|-&carriers=-31939&operators=-31939;-31939&passengers=1&channel=iphone&cabin_class=economy&fps_session_id=ae866830-2b6b-4421-8413-bdefbb51d323&ticket_price=1131.99&is_npt=false&is_multipart=false&client_id=skyscanner_app&q_ids=H4sIAAAAAAAA_-OS52JJyystFmLm-KAkxcwxM0mh4cz0LWxGTAqMVcyhwS4AFKnmtSEAAAA|-7190537177658593372|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2024-06-25T08:48:52&pqid=true",
+              "price": 1131.99,
+              "rating": { "value": 3.78, "count": 890 },
+              "updateStatus": "PENDING",
+              "segments": [
+                {
+                  "id": "13416-11089-2407041620-2407051755--31939",
+                  "origin": {
+                    "id": "13416",
+                    "name": "Los Angeles International",
+                    "displayCode": "LAX",
+                    "city": "Los Angeles"
+                  },
+                  "destination": {
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
+                  },
+                  "duration": 935,
+                  "dayChange": 1,
+                  "flightNumber": "QR740",
+                  "departure": "2024-07-04T16:20:00",
+                  "arrival": "2024-07-05T17:55:00",
+                  "marketingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "duration",
+                      "body": {
+                        "value": "<style0>2h 25m</style0> connection in airport",
+                        "isHighlighted": false,
+                        "position": 0
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "11089-12569-2407052020-2407060150--31939",
+                  "origin": {
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
+                  },
+                  "destination": {
+                    "id": "12569",
+                    "name": "Islamabad",
+                    "displayCode": "ISB",
+                    "city": "Islamabad"
+                  },
+                  "duration": 210,
+                  "dayChange": 1,
+                  "flightNumber": "QR632",
+                  "departure": "2024-07-05T20:20:00",
+                  "arrival": "2024-07-06T01:50:00",
+                  "marketingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "normal",
+                      "body": {
+                        "value": "You'll arrive 2 days later",
+                        "isHighlighted": true,
+                        "position": 0
+                      },
+                      "date": {
+                        "value": "2024-07-06T01:50:00",
+                        "isHighlighted": true,
+                        "position": 1
+                      }
+                    }
+                  ]
+                }
+              ],
+              "isDirectDBookUrl": false,
+              "quoteAge": 33
+            }
+          ],
+          "totalPrice": 1131.99,
+          "fare": { "leg_details": [] },
+          "id": "UXbMa_-q2lMK"
+        },
+        {
+          "agents": [
+            {
+              "id": "vaya",
+              "name": "BudgetAir",
+              "isCarrier": false,
+              "bookingProposition": "PBOOK",
+              "url": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/vaya/1/13416.12569.2024-07-04/air/trava/flights?itinerary=flight|-31939|740|13416|2024-07-04T16:20|11089|2024-07-05T17:55|935|-|-|-;flight|-31939|632|11089|2024-07-05T20:20|12569|2024-07-06T01:50|210|-|-|-&carriers=-31939&operators=-31939;-31939&passengers=1&channel=iphone&cabin_class=economy&fps_session_id=ae866830-2b6b-4421-8413-bdefbb51d323&ticket_price=1163.00&is_npt=false&is_multipart=false&client_id=skyscanner_app&q_ids=H4sIAAAAAAAA_-OS4mIpS6xMFGLm-KAkxcwxM0mh4cz0LWxGTAqMAFbmA_EcAAAA|2232105863342384640|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2024-06-25T08:49:02&pqid=true",
+              "price": 1163,
+              "rating": { "value": 3.61, "count": 1967 },
+              "updateStatus": "PENDING",
+              "segments": [
+                {
+                  "id": "13416-11089-2407041620-2407051755--31939",
+                  "origin": {
+                    "id": "13416",
+                    "name": "Los Angeles International",
+                    "displayCode": "LAX",
+                    "city": "Los Angeles"
+                  },
+                  "destination": {
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
+                  },
+                  "duration": 935,
+                  "dayChange": 1,
+                  "flightNumber": "QR740",
+                  "departure": "2024-07-04T16:20:00",
+                  "arrival": "2024-07-05T17:55:00",
+                  "marketingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "duration",
+                      "body": {
+                        "value": "<style0>2h 25m</style0> connection in airport",
+                        "isHighlighted": false,
+                        "position": 0
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "11089-12569-2407052020-2407060150--31939",
+                  "origin": {
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
+                  },
+                  "destination": {
+                    "id": "12569",
+                    "name": "Islamabad",
+                    "displayCode": "ISB",
+                    "city": "Islamabad"
+                  },
+                  "duration": 210,
+                  "dayChange": 1,
+                  "flightNumber": "QR632",
+                  "departure": "2024-07-05T20:20:00",
+                  "arrival": "2024-07-06T01:50:00",
+                  "marketingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "normal",
+                      "body": {
+                        "value": "You'll arrive 2 days later",
+                        "isHighlighted": true,
+                        "position": 0
+                      },
+                      "date": {
+                        "value": "2024-07-06T01:50:00",
+                        "isHighlighted": true,
+                        "position": 1
+                      }
+                    }
+                  ]
+                }
+              ],
+              "isDirectDBookUrl": false,
+              "quoteAge": 33
+            }
+          ],
+          "totalPrice": 1163,
+          "fare": { "leg_details": [] },
+          "id": "TXoq4Hn2jida"
+        },
+        {
+          "agents": [
+            {
+              "id": "edus",
+              "name": "eDreams",
+              "isCarrier": false,
+              "bookingProposition": "PBOOK",
+              "url": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/edus/1/13416.12569.2024-07-04/air/trava/flights?itinerary=flight|-31939|740|13416|2024-07-04T16:20|11089|2024-07-05T17:55|935|-|-|-;flight|-31939|632|11089|2024-07-05T20:20|12569|2024-07-06T01:50|210|-|-|-&carriers=-31939&operators=-31939;-31939&passengers=1&channel=iphone&cabin_class=economy&fps_session_id=ae866830-2b6b-4421-8413-bdefbb51d323&ticket_price=1166.97&is_npt=false&is_multipart=false&client_id=skyscanner_app&q_ids=H4sIAAAAAAAA_-OS4mJJTSktFmLm-KAkxcwxM0mh4cz0LWxGTAqMAJXdmwccAAAA|-5936104072829003507|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2024-06-25T08:48:49&pqid=true",
+              "price": 1166.97,
+              "rating": { "value": 2.72, "count": 7466 },
+              "updateStatus": "PENDING",
+              "segments": [
+                {
+                  "id": "13416-11089-2407041620-2407051755--31939",
+                  "origin": {
+                    "id": "13416",
+                    "name": "Los Angeles International",
+                    "displayCode": "LAX",
+                    "city": "Los Angeles"
+                  },
+                  "destination": {
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
+                  },
+                  "duration": 935,
+                  "dayChange": 1,
+                  "flightNumber": "QR740",
+                  "departure": "2024-07-04T16:20:00",
+                  "arrival": "2024-07-05T17:55:00",
+                  "marketingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "duration",
+                      "body": {
+                        "value": "<style0>2h 25m</style0> connection in airport",
+                        "isHighlighted": false,
+                        "position": 0
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "11089-12569-2407052020-2407060150--31939",
+                  "origin": {
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
+                  },
+                  "destination": {
+                    "id": "12569",
+                    "name": "Islamabad",
+                    "displayCode": "ISB",
+                    "city": "Islamabad"
+                  },
+                  "duration": 210,
+                  "dayChange": 1,
+                  "flightNumber": "QR632",
+                  "departure": "2024-07-05T20:20:00",
+                  "arrival": "2024-07-06T01:50:00",
+                  "marketingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "normal",
+                      "body": {
+                        "value": "You'll arrive 2 days later",
+                        "isHighlighted": true,
+                        "position": 0
+                      },
+                      "date": {
+                        "value": "2024-07-06T01:50:00",
+                        "isHighlighted": true,
+                        "position": 1
+                      }
+                    }
+                  ]
+                }
+              ],
+              "isDirectDBookUrl": false,
+              "quoteAge": 33
+            }
+          ],
+          "totalPrice": 1166.97,
+          "fare": { "leg_details": [] },
+          "id": "5rF32C8Vn-xk"
+        },
+        {
+          "agents": [
+            {
+              "id": "pcln",
+              "name": "Priceline",
+              "isCarrier": false,
+              "bookingProposition": "PBOOK",
+              "url": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/pcln/1/13416.12569.2024-07-04/air/trava/flights?itinerary=flight|-31939|740|13416|2024-07-04T16:20|11089|2024-07-05T17:55|935|LKUSN1SO|L|-;flight|-31939|632|11089|2024-07-05T20:20|12569|2024-07-06T01:50|210|LKUSN1SO|L|-&carriers=-31939&operators=-31939;-31939&passengers=1&channel=iphone&cabin_class=economy&fps_session_id=ae866830-2b6b-4421-8413-bdefbb51d323&ticket_price=1170.24&is_npt=false&is_multipart=false&client_id=skyscanner_app&q_ids=H4sIAAAAAAAA_-OS4mIpSM7JE2Lm-KAkxcwxM0mh4cz0LWxGTAqMAEBVwwIcAAAA|5562083528223935207|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2024-06-25T08:48:52&pqid=false",
+              "price": 1170.24,
+              "rating": { "value": 2.65, "count": 1531 },
+              "updateStatus": "PENDING",
+              "segments": [
+                {
+                  "id": "13416-11089-2407041620-2407051755--31939",
+                  "origin": {
+                    "id": "13416",
+                    "name": "Los Angeles International",
+                    "displayCode": "LAX",
+                    "city": "Los Angeles"
+                  },
+                  "destination": {
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
+                  },
+                  "duration": 935,
+                  "dayChange": 1,
+                  "flightNumber": "QR740",
+                  "departure": "2024-07-04T16:20:00",
+                  "arrival": "2024-07-05T17:55:00",
+                  "marketingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "duration",
+                      "body": {
+                        "value": "<style0>2h 25m</style0> connection in airport",
+                        "isHighlighted": false,
+                        "position": 0
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "11089-12569-2407052020-2407060150--31939",
+                  "origin": {
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
+                  },
+                  "destination": {
+                    "id": "12569",
+                    "name": "Islamabad",
+                    "displayCode": "ISB",
+                    "city": "Islamabad"
+                  },
+                  "duration": 210,
+                  "dayChange": 1,
+                  "flightNumber": "QR632",
+                  "departure": "2024-07-05T20:20:00",
+                  "arrival": "2024-07-06T01:50:00",
+                  "marketingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "normal",
+                      "body": {
+                        "value": "You'll arrive 2 days later",
+                        "isHighlighted": true,
+                        "position": 0
+                      },
+                      "date": {
+                        "value": "2024-07-06T01:50:00",
+                        "isHighlighted": true,
+                        "position": 1
+                      }
+                    }
+                  ]
+                }
+              ],
+              "isDirectDBookUrl": false,
+              "quoteAge": 33
+            }
+          ],
+          "totalPrice": 1170.24,
+          "fare": { "leg_details": [] },
+          "id": "ZBSDbnA-KHA_"
+        },
+        {
+          "agents": [
+            {
+              "id": "byus",
+              "name": "BYOjet US",
+              "isCarrier": false,
+              "bookingProposition": "PBOOK",
+              "url": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/byus/1/13416.12569.2024-07-04/air/trava/flights?itinerary=flight|-31939|740|13416|2024-07-04T16:20|11089|2024-07-05T17:55|935|-|-|-;flight|-31939|632|11089|2024-07-05T20:20|12569|2024-07-06T01:50|210|-|-|-&carriers=-31939&operators=-31939;-31939&passengers=1&channel=iphone&cabin_class=economy&fps_session_id=ae866830-2b6b-4421-8413-bdefbb51d323&ticket_price=1174.60&is_npt=false&is_multipart=false&client_id=skyscanner_app&q_ids=H4sIAAAAAAAA_-OS4mJJqiwtFmLm-KAkxcwxM0mh4cz0LWxGTAqMAM9kZ6wcAAAA|3261238643344954937|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2024-06-25T08:48:50&pqid=false",
+              "price": 1174.6,
+              "rating": { "value": 2.03, "count": 294 },
+              "updateStatus": "PENDING",
+              "segments": [
+                {
+                  "id": "13416-11089-2407041620-2407051755--31939",
+                  "origin": {
+                    "id": "13416",
+                    "name": "Los Angeles International",
+                    "displayCode": "LAX",
+                    "city": "Los Angeles"
+                  },
+                  "destination": {
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
+                  },
+                  "duration": 935,
+                  "dayChange": 1,
+                  "flightNumber": "QR740",
+                  "departure": "2024-07-04T16:20:00",
+                  "arrival": "2024-07-05T17:55:00",
+                  "marketingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "duration",
+                      "body": {
+                        "value": "<style0>2h 25m</style0> connection in airport",
+                        "isHighlighted": false,
+                        "position": 0
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "11089-12569-2407052020-2407060150--31939",
+                  "origin": {
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
+                  },
+                  "destination": {
+                    "id": "12569",
+                    "name": "Islamabad",
+                    "displayCode": "ISB",
+                    "city": "Islamabad"
+                  },
+                  "duration": 210,
+                  "dayChange": 1,
+                  "flightNumber": "QR632",
+                  "departure": "2024-07-05T20:20:00",
+                  "arrival": "2024-07-06T01:50:00",
+                  "marketingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "normal",
+                      "body": {
+                        "value": "You'll arrive 2 days later",
+                        "isHighlighted": true,
+                        "position": 0
+                      },
+                      "date": {
+                        "value": "2024-07-06T01:50:00",
+                        "isHighlighted": true,
+                        "position": 1
+                      }
+                    }
+                  ]
+                }
+              ],
+              "isDirectDBookUrl": false,
+              "quoteAge": 33
+            }
+          ],
+          "totalPrice": 1174.6,
+          "fare": { "leg_details": [] },
+          "id": "BJt_bUoD3XLi"
+        },
+        {
+          "agents": [
+            {
+              "id": "xpus",
+              "name": "Expedia",
+              "isCarrier": false,
+              "bookingProposition": "PBOOK",
+              "url": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/xpus/1/13416.12569.2024-07-04/air/trava/flights?itinerary=flight|-31939|740|13416|2024-07-04T16:20|11089|2024-07-05T17:55|935|LKR5R1SO|L|-;flight|-31939|632|11089|2024-07-05T20:20|12569|2024-07-06T01:50|210|LKR5R1SO|L|-&carriers=-31939&operators=-31939;-31939&passengers=1&channel=iphone&cabin_class=economy&fps_session_id=ae866830-2b6b-4421-8413-bdefbb51d323&ticket_price=1180.50&is_npt=false&is_multipart=false&client_id=skyscanner_app&q_ids=H4sIAAAAAAAA_-OS4mKpKCgtFmLm-KAkxcwxM0mh4cz0LWxGTAqMALFC8EMcAAAA|1083590157436466531|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2024-06-25T08:48:53&pqid=true",
+              "price": 1180.5,
+              "rating": { "value": 4.72, "count": 9516 },
+              "updateStatus": "PENDING",
+              "segments": [
+                {
+                  "id": "13416-11089-2407041620-2407051755--31939",
+                  "origin": {
+                    "id": "13416",
+                    "name": "Los Angeles International",
+                    "displayCode": "LAX",
+                    "city": "Los Angeles"
+                  },
+                  "destination": {
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
+                  },
+                  "duration": 935,
+                  "dayChange": 1,
+                  "flightNumber": "QR740",
+                  "departure": "2024-07-04T16:20:00",
+                  "arrival": "2024-07-05T17:55:00",
+                  "marketingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "duration",
+                      "body": {
+                        "value": "<style0>2h 25m</style0> connection in airport",
+                        "isHighlighted": false,
+                        "position": 0
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "11089-12569-2407052020-2407060150--31939",
+                  "origin": {
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
+                  },
+                  "destination": {
+                    "id": "12569",
+                    "name": "Islamabad",
+                    "displayCode": "ISB",
+                    "city": "Islamabad"
+                  },
+                  "duration": 210,
+                  "dayChange": 1,
+                  "flightNumber": "QR632",
+                  "departure": "2024-07-05T20:20:00",
+                  "arrival": "2024-07-06T01:50:00",
+                  "marketingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "normal",
+                      "body": {
+                        "value": "You'll arrive 2 days later",
+                        "isHighlighted": true,
+                        "position": 0
+                      },
+                      "date": {
+                        "value": "2024-07-06T01:50:00",
+                        "isHighlighted": true,
+                        "position": 1
+                      }
+                    }
+                  ]
+                }
+              ],
+              "isDirectDBookUrl": false,
+              "quoteAge": 33
+            }
+          ],
+          "totalPrice": 1180.5,
+          "fare": { "leg_details": [] },
+          "id": "fXW7L9vM4CQe"
+        },
+        {
+          "agents": [
+            {
+              "id": "qata",
+              "name": "Qatar Airways",
+              "isCarrier": true,
+              "bookingProposition": "PBOOK",
+              "url": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/qata/1/13416.12569.2024-07-04/air/airli/flights?itinerary=flight|-31939|740|13416|2024-07-04T16:20|11089|2024-07-05T17:55|935|LKR5R1SO|L|ECSFAAR1;flight|-31939|632|11089|2024-07-05T20:20|12569|2024-07-06T01:50|210|LKR5R1SO|L|ECSFAAR1&carriers=-31939&operators=-31939;-31939&passengers=1&channel=iphone&cabin_class=economy&fps_session_id=ae866830-2b6b-4421-8413-bdefbb51d323&ticket_price=1180.50&is_npt=false&is_multipart=false&client_id=skyscanner_app&q_ids=H4sIAAAAAAAA_-OS4mIpTCxJFGLm-KAkxcwxM0mh4cz0LWxGTAqMAOEA0TIcAAAA|2612602654828129634|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2024-06-25T08:48:50&pqid=false",
+              "price": 1180.5,
+              "rating": { "value": 4.44, "count": 828 },
+              "updateStatus": "PENDING",
+              "segments": [
+                {
+                  "id": "13416-11089-2407041620-2407051755--31939",
+                  "origin": {
+                    "id": "13416",
+                    "name": "Los Angeles International",
+                    "displayCode": "LAX",
+                    "city": "Los Angeles"
+                  },
+                  "destination": {
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
+                  },
+                  "duration": 935,
+                  "dayChange": 1,
+                  "flightNumber": "QR740",
+                  "departure": "2024-07-04T16:20:00",
+                  "arrival": "2024-07-05T17:55:00",
+                  "marketingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "duration",
+                      "body": {
+                        "value": "<style0>2h 25m</style0> connection in airport",
+                        "isHighlighted": false,
+                        "position": 0
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "11089-12569-2407052020-2407060150--31939",
+                  "origin": {
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
+                  },
+                  "destination": {
+                    "id": "12569",
+                    "name": "Islamabad",
+                    "displayCode": "ISB",
+                    "city": "Islamabad"
+                  },
+                  "duration": 210,
+                  "dayChange": 1,
+                  "flightNumber": "QR632",
+                  "departure": "2024-07-05T20:20:00",
+                  "arrival": "2024-07-06T01:50:00",
+                  "marketingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "normal",
+                      "body": {
+                        "value": "You'll arrive 2 days later",
+                        "isHighlighted": true,
+                        "position": 0
+                      },
+                      "date": {
+                        "value": "2024-07-06T01:50:00",
+                        "isHighlighted": true,
+                        "position": 1
+                      }
+                    }
+                  ]
+                }
+              ],
+              "isDirectDBookUrl": false,
+              "quoteAge": 33
+            }
+          ],
+          "totalPrice": 1180.5,
+          "fare": { "leg_details": [] },
+          "id": "TEwZrFEAf_nw"
+        },
+        {
+          "agents": [
+            {
+              "id": "tlcy",
+              "name": "Travelocity",
+              "isCarrier": false,
+              "bookingProposition": "PBOOK",
+              "url": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/tlcy/1/13416.12569.2024-07-04/air/trava/flights?itinerary=flight|-31939|740|13416|2024-07-04T16:20|11089|2024-07-05T17:55|935|LKR5R1SO|L|-;flight|-31939|632|11089|2024-07-05T20:20|12569|2024-07-06T01:50|210|LKR5R1SO|L|-&carriers=-31939&operators=-31939;-31939&passengers=1&channel=iphone&cabin_class=economy&fps_session_id=ae866830-2b6b-4421-8413-bdefbb51d323&ticket_price=1180.50&is_npt=false&is_multipart=false&client_id=skyscanner_app&q_ids=H4sIAAAAAAAA_-OS4mIpyUmuFGLm-KAkxcwxM0mh4cz0LWxGTAqMAGOcXOMcAAAA|1083590157436466531|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2024-06-25T08:48:53&pqid=true",
+              "price": 1180.5,
+              "rating": { "value": 1.63, "count": 871 },
+              "updateStatus": "PENDING",
+              "segments": [
+                {
+                  "id": "13416-11089-2407041620-2407051755--31939",
+                  "origin": {
+                    "id": "13416",
+                    "name": "Los Angeles International",
+                    "displayCode": "LAX",
+                    "city": "Los Angeles"
+                  },
+                  "destination": {
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
+                  },
+                  "duration": 935,
+                  "dayChange": 1,
+                  "flightNumber": "QR740",
+                  "departure": "2024-07-04T16:20:00",
+                  "arrival": "2024-07-05T17:55:00",
+                  "marketingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "duration",
+                      "body": {
+                        "value": "<style0>2h 25m</style0> connection in airport",
+                        "isHighlighted": false,
+                        "position": 0
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "11089-12569-2407052020-2407060150--31939",
+                  "origin": {
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
+                  },
+                  "destination": {
+                    "id": "12569",
+                    "name": "Islamabad",
+                    "displayCode": "ISB",
+                    "city": "Islamabad"
+                  },
+                  "duration": 210,
+                  "dayChange": 1,
+                  "flightNumber": "QR632",
+                  "departure": "2024-07-05T20:20:00",
+                  "arrival": "2024-07-06T01:50:00",
+                  "marketingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "normal",
+                      "body": {
+                        "value": "You'll arrive 2 days later",
+                        "isHighlighted": true,
+                        "position": 0
+                      },
+                      "date": {
+                        "value": "2024-07-06T01:50:00",
+                        "isHighlighted": true,
+                        "position": 1
+                      }
+                    }
+                  ]
+                }
+              ],
+              "isDirectDBookUrl": false,
+              "quoteAge": 33
+            }
+          ],
+          "totalPrice": 1180.5,
+          "fare": { "leg_details": [] },
+          "id": "ckBzHTeIuSFv"
+        },
+        {
+          "agents": [
+            {
+              "id": "orbz",
+              "name": "Orbitz",
+              "isCarrier": false,
+              "bookingProposition": "PBOOK",
+              "url": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/orbz/1/13416.12569.2024-07-04/air/trava/flights?itinerary=flight|-31939|740|13416|2024-07-04T16:20|11089|2024-07-05T17:55|935|LKR5R1SO|L|-;flight|-31939|632|11089|2024-07-05T20:20|12569|2024-07-06T01:50|210|LKR5R1SO|L|-&carriers=-31939&operators=-31939;-31939&passengers=1&channel=iphone&cabin_class=economy&fps_session_id=ae866830-2b6b-4421-8413-bdefbb51d323&ticket_price=1180.50&is_npt=false&is_multipart=false&client_id=skyscanner_app&q_ids=H4sIAAAAAAAA_-OS4mLJL0qqEmLm-KAkxcwxM0mh4cz0LWxGTAqMAPsnE5YcAAAA|1083590157436466531|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2024-06-25T08:48:53&pqid=true",
+              "price": 1180.5,
+              "rating": { "value": 1.33, "count": 699 },
+              "updateStatus": "PENDING",
+              "segments": [
+                {
+                  "id": "13416-11089-2407041620-2407051755--31939",
+                  "origin": {
+                    "id": "13416",
+                    "name": "Los Angeles International",
+                    "displayCode": "LAX",
+                    "city": "Los Angeles"
+                  },
+                  "destination": {
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
+                  },
+                  "duration": 935,
+                  "dayChange": 1,
+                  "flightNumber": "QR740",
+                  "departure": "2024-07-04T16:20:00",
+                  "arrival": "2024-07-05T17:55:00",
+                  "marketingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "duration",
+                      "body": {
+                        "value": "<style0>2h 25m</style0> connection in airport",
+                        "isHighlighted": false,
+                        "position": 0
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "11089-12569-2407052020-2407060150--31939",
+                  "origin": {
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
+                  },
+                  "destination": {
+                    "id": "12569",
+                    "name": "Islamabad",
+                    "displayCode": "ISB",
+                    "city": "Islamabad"
+                  },
+                  "duration": 210,
+                  "dayChange": 1,
+                  "flightNumber": "QR632",
+                  "departure": "2024-07-05T20:20:00",
+                  "arrival": "2024-07-06T01:50:00",
+                  "marketingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "normal",
+                      "body": {
+                        "value": "You'll arrive 2 days later",
+                        "isHighlighted": true,
+                        "position": 0
+                      },
+                      "date": {
+                        "value": "2024-07-06T01:50:00",
+                        "isHighlighted": true,
+                        "position": 1
+                      }
+                    }
+                  ]
+                }
+              ],
+              "isDirectDBookUrl": false,
+              "quoteAge": 33
+            }
+          ],
+          "totalPrice": 1180.5,
+          "fare": { "leg_details": [] },
+          "id": "EycH587UfmD_"
+        },
+        {
+          "agents": [
+            {
+              "id": "skyp",
+              "name": "Kiwi.com",
+              "isCarrier": false,
+              "bookingProposition": "PBOOK",
+              "url": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/skyp/1/13416.12569.2024-07-04/air/trava/flights?itinerary=flight|-31939|740|13416|2024-07-04T16:20|11089|2024-07-05T17:55|935|LKR5R1SO|L|-;flight|-31939|632|11089|2024-07-05T20:20|12569|2024-07-06T01:50|210|LKR5R1SO|L|-&carriers=-31939&operators=-31939;-31939&passengers=1&channel=iphone&cabin_class=economy&fps_session_id=ae866830-2b6b-4421-8413-bdefbb51d323&ticket_price=1266.00&is_npt=false&is_multipart=false&client_id=skyscanner_app&q_ids=H4sIAAAAAAAA_-OS4mIpzq4sEGLm-KAkxcwxM0mh4cz0LWxGTAqMAJMcMSAcAAAA|-4567746345666373408|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2024-06-25T08:48:53&pqid=true",
+              "price": 1266,
+              "rating": { "value": 3.22, "count": 5029 },
+              "updateStatus": "PENDING",
+              "segments": [
+                {
+                  "id": "13416-11089-2407041620-2407051755--31939",
+                  "origin": {
+                    "id": "13416",
+                    "name": "Los Angeles International",
+                    "displayCode": "LAX",
+                    "city": "Los Angeles"
+                  },
+                  "destination": {
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
+                  },
+                  "duration": 935,
+                  "dayChange": 1,
+                  "flightNumber": "QR740",
+                  "departure": "2024-07-04T16:20:00",
+                  "arrival": "2024-07-05T17:55:00",
+                  "marketingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "duration",
+                      "body": {
+                        "value": "<style0>2h 25m</style0> connection in airport",
+                        "isHighlighted": false,
+                        "position": 0
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "11089-12569-2407052020-2407060150--31939",
+                  "origin": {
+                    "id": "11089",
+                    "name": "Hamad International",
+                    "displayCode": "DOH",
+                    "city": "Doha"
+                  },
+                  "destination": {
+                    "id": "12569",
+                    "name": "Islamabad",
+                    "displayCode": "ISB",
+                    "city": "Islamabad"
+                  },
+                  "duration": 210,
+                  "dayChange": 1,
+                  "flightNumber": "QR632",
+                  "departure": "2024-07-05T20:20:00",
+                  "arrival": "2024-07-06T01:50:00",
+                  "marketingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31939",
+                    "name": "Qatar Airways",
+                    "displayCode": "QR",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#662046",
+                    "logo": "https://content.skyscnr.com/0004a8348a7a760d3a9c27e01437c020/ai-template-qatar-airways-thumb-1-xxxhdpi.png",
+                    "altId": "QR"
+                  },
+                  "goodToKnowItems": [
+                    {
+                      "icon": "normal",
+                      "body": {
+                        "value": "You'll arrive 2 days later",
+                        "isHighlighted": true,
+                        "position": 0
+                      },
+                      "date": {
+                        "value": "2024-07-06T01:50:00",
+                        "isHighlighted": true,
+                        "position": 1
+                      }
+                    }
+                  ]
+                }
+              ],
+              "isDirectDBookUrl": false,
+              "quoteAge": 33
+            }
+          ],
+          "totalPrice": 1266,
+          "fare": { "leg_details": [] },
+          "id": "HNLenk18iZtr"
         }
       ],
       "isTransferRequired": false,
-      "destinationImage": "https://content.skyscnr.com/m/37e282443afc0ff7/original/Paris-2016-10.jpg",
+      "destinationImage": "https://content.skyscnr.com/38e61552a1459945853fbef3e94c65e1/GettyImages-153752825.jpg",
       "operatingCarrierSafetyAttributes": [
         {
-          "carrierID": "-31734",
-          "carrierName": "Turkish Airlines",
+          "carrierID": "-31939",
+          "carrierName": "Qatar Airways",
           "faceMasksCompulsory": null,
           "aircraftDeepCleanedDaily": null,
           "attendantsWearPPE": null,
@@ -269,6 +1630,6 @@
       "flexibleTicketPolicies": []
     },
     "pollingCompleted": true,
-    "bookingSessionId": "c890d646-181e-48c6-8b49-325bafe84c57"
+    "bookingSessionId": "ae866830-2b6b-4421-8413-bdefbb51d323"
   }
 }

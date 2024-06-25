@@ -6,6 +6,7 @@ import useOutsideClick from "../useOutsideClick";
 import Calendar from "react-calendar";
 import HotelCards from "./HotelCards";
 import FAQ from "../Flights/FAQ";
+import faqs from "../faq.json"
 const HotelsHome = () => {
   // const [hotelsData, setHotelsData] = useState();
   const [location, setLocation] = useState();
@@ -473,7 +474,6 @@ const HotelsHome = () => {
           </div>
         </div>
       </div>
-
       <div className="relative top-[600px] bg-gray-100 pb-12 rounded-3xl ">
         <div className="w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto pt-12 ">
           {Array(6)
@@ -483,7 +483,7 @@ const HotelsHome = () => {
             ))}
         </div>
         <div>
-          <FAQ />
+          <FAQ faqs={faqs.car} />
         </div>
       </div>
       {/* <Hotels hotelsData={hotelsData} /> */}
