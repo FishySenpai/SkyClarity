@@ -6,7 +6,7 @@ import similarHotels from "./similarHotels.json";
 const HotelDetails = () => {
   const { id } = useParams();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [col, setCol] = useState(3);
+  const [show, setShow] = useState(false);
   const [images, setImages] = useState(
     hotelDetails?.data.gallery?.images?.slice(0, 70)
   );
@@ -139,6 +139,7 @@ const HotelDetails = () => {
           </svg>
         </button>
       </div> */}
+
       <div className="mr-48 pt-4 space-y-2">
         <div className="text-4xl font-bold flex flex-row">
           <div>{hotelDetails.data.general.name}</div>
@@ -202,6 +203,152 @@ const HotelDetails = () => {
         </div>
       </div>
       <div>
+        <div>
+          <p className="text-lg font-semibold">Check in and check out</p>
+          <div className="flex space-x-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              className="h-6 w-6"
+            >
+              <path
+                d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                fill="gray"
+              />
+            </svg>
+            <p>
+              Check in from:{" "}
+              <span className="text-md font-semibold">
+                {hotelDetails?.data.goodToKnow.checkinTime.time}
+              </span>
+            </p>
+            <p>
+              Check out before:{" "}
+              <span className="text-md font-semibold">
+                {hotelDetails?.data.goodToKnow.checkoutTime.time}
+              </span>
+            </p>
+          </div>
+          <div className="">
+            <p>Good to know</p>
+            <div className="space-y-6 bg-white p-4 divide-y-2 divide-gray-300">
+              <div className="flex space-x-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"
+                  className="h-6 w-6"
+                >
+                  <path
+                    d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152z"
+                    fill="gray"
+                  />
+                </svg>
+                <p className="text-2xl font-semibold text-gray-800">Children</p>
+                <p className="text-gray-800 pl-24 ">
+                  {
+                    hotelDetails?.data.goodToKnow.policies.content[0].values[0]
+                      .content
+                  }
+                </p>
+              </div>
+              <div className="flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"
+                  className="h-6 w-6"
+                >
+                  <path
+                    d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152z"
+                    fill="gray"
+                  />
+                </svg>
+                <p className="text-2xl font-semibold text-gray-800">
+                  Additional Beds
+                </p>
+                <p className="text-gray-800 pl-24 ">
+                  {
+                    hotelDetails?.data.goodToKnow.policies.content[1].values[0]
+                      .content
+                  }
+                </p>
+              </div>
+              <div className="flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"
+                  className="h-6 w-6"
+                >
+                  <path
+                    d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152z"
+                    fill="gray"
+                  />
+                </svg>
+                <p className="text-2xl font-semibold text-gray-800">
+                  Breakfast
+                </p>
+                <div>
+                  <p className="text-gray-800 pl-24 ">
+                    {
+                      hotelDetails?.data.goodToKnow.policies.content[3]
+                        .values[0].content
+                    }
+                  </p>
+                  <p className="text-gray-800 pl-24 ">
+                    {
+                      hotelDetails?.data.goodToKnow.policies.content[3]
+                        .details[0].values[0].content
+                    }
+                  </p>
+                  <p className="text-gray-800 pl-24 ">
+                    {
+                      hotelDetails?.data.goodToKnow.policies.content[3]
+                        .details[1].values[0].content
+                    }
+                  </p>
+                </div>
+              </div>
+              <div className="flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"
+                  className="h-6 w-6"
+                >
+                  <path
+                    d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152z"
+                    fill="gray"
+                  />
+                </svg>
+                <p className="text-2xl font-semibold text-gray-800">
+                  Payment Methods
+                </p>
+                <div>
+                  <p className="text-gray-800 pl-24 ">
+                    {
+                      hotelDetails?.data.goodToKnow.policies.content[5]
+                        .values[0].title
+                    }
+                  </p>
+                  <div className="flex">
+                    <p className="text-gray-800 pl-24 font-semibold">
+                      {
+                        hotelDetails?.data.goodToKnow.policies.content[5]
+                          .values[0].content[0]
+                      }
+                    </p>
+                    <p className="text-gray-800 pl-4 font-semibold ">
+                      {
+                        hotelDetails?.data.goodToKnow.policies.content[5]
+                          .values[0].content[1]
+                      }
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
         <div className="w-[1000px] pt-6">
           <p className="font-bold text-2xl pb-3">Reviews</p>
           {reviews.data.reviews.slice(0, 7).map((review, index) => {
@@ -241,7 +388,7 @@ const HotelDetails = () => {
         <div>
           <p className="font-bold text-2xl pb-3">Hotel Recommendations</p>
           <div className={`grid grid-cols-1 md:grid-cols-3 gap-4 `}>
-            {similarHotels.data?.slice(0, col).map((hotel, index) => {
+            {similarHotels.data?.slice(0, show ? 9 : 3).map((hotel, index) => {
               return (
                 <div className="mx-auto  bg-white shadow-lg rounded-lg overflow-hidden w-fit ">
                   <div className=" flex flex-col ">
@@ -301,7 +448,7 @@ const HotelDetails = () => {
                       </span>
                       <div className="text-right flex flex-col pl-28 pr-2 pb-2">
                         <span className="font-bold text-gray-800 text-xl pl-0.5">
-                          $84
+                          ${(hotel.rawPrice / 83.58).toFixed(0)}
                         </span>
                         <span className=" text-gray-900 text-sm mb-0.5">
                           per night
@@ -313,8 +460,13 @@ const HotelDetails = () => {
               );
             })}
           </div>
-          <div className="text-center text-blue-600 cursor-pointer pt-4" onClick={()=>{setCol(6)}}>
-            See more
+          <div
+            className="text-center text-blue-600 cursor-pointer pt-4"
+            onClick={() => {
+              setShow(!show);
+            }}
+          >
+            {show ? "See less" : "See more"}
           </div>
         </div>
       </div>
