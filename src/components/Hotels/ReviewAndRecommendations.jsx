@@ -7,7 +7,7 @@ const ReviewAndRecommendations = () => {
   console.log(similarHotels);
   return (
     <div>
-      <div id="reviews" className="w-[1000px] ml-6 pt-6 text-gray-800">
+      <div id="reviews" className="w-[1040px]  pt-6 text-gray-800 ml-1">
         <p className="font-semibold text-3xl pb-3">Reviews</p>
         {reviews.data.reviews.slice(0, 5).map((review, index) => {
           return (
@@ -44,13 +44,13 @@ const ReviewAndRecommendations = () => {
         })}
       </div>
       <div id="recommendations" >
-        <p className="font-semibold ml-2  pt-6 text-3xl pb-4">Hotel Recommendations</p>
-        <div className={`grid grid-cols-1 md:grid-cols-3 gap-4 gap-x-2 w-[1050px] ml-1`}>
+        <p className="font-semibold  pt-6 text-3xl pb-4">Hotel Recommendations</p>
+        <div className={`grid grid-cols-1 md:grid-cols-3 gap-4 gap-x-2 w-[1080px]`}>
           {similarHotels.data?.slice(0, show ? 9 : 3).map((hotel, index) => {
             return (
-              <div className="mx-auto  bg-white shadow-lg rounded-lg overflow-hidden w-[340px] ">
+              <div className="mx-auto  bg-white shadow-lg rounded-lg overflow-hidden w-[350px] ">
                 <div className=" flex flex-col ">
-                  <div className="w-[340px] h-[150px] overflow-hidden">
+                  <div className="w-[350px] h-[150px] overflow-hidden">
                     <img src={hotel.heroImage} alt="Airline Logo" />
                   </div>
 
