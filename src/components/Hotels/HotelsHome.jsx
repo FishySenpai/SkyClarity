@@ -475,7 +475,7 @@ const HotelsHome = () => {
         </div>
       </div>
       <div className="relative top-[600px] bg-gray-100 pb-12 rounded-3xl ">
-        <div className="w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto pt-12 ">
+        {/* <div className="w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto pt-12 ">
           {Array(6)
             .fill(0)
             .map((_, index) => (
@@ -484,9 +484,9 @@ const HotelsHome = () => {
         </div>
         <div>
           <FAQ faqs={faqs.car} />
-        </div>
+        </div> */}
+        <Hotels hotelsData={hotelsData} />
       </div>
-      {/* <Hotels hotelsData={hotelsData} /> */}
     </div>
   );
 };

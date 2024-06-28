@@ -8,14 +8,12 @@ const Hotels = () => {
 console.log(hotelsData)
   if (hotelsData) {
     return (
-      <div>
-
-
+      <div className="mx-auto flex justify-center">
         <div className="flex flex-row">
-          <div>
-            <HotelsFilter hotelsData={hotelsData}/>
+          <div className="">
+            <HotelsFilter hotelsData={hotelsData} />
           </div>
-          <div className="flex flex-col cursor-pointer">
+          <div className="flex flex-col">
             <div>
               {hotelsData.hotels.slice(0, 10).map((hotel, index) => (
                 // <Link to={`/hotels/hotel/${hotel.id}`}>

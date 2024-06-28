@@ -8,7 +8,7 @@ const HotelsFilter = ({ hotelsData }) => {
 
   if (hotelsData) {
     return (
-      <div className="mx-12 px-4 w-[270px] rounded bg-gray-100 default-font text-gray-700 text-sm divide-y-2 divide-slate-300">
+      <div className="mx-12 px-6 w-[300px] bg-white rounded-lg default-font text-gray-700 text-sm divide-y-2 divide-slate-300">
         <div className="pt-1">
           <div className="flex flex-row">
             <div className="font-semibold text-lg py-2">Popular Filters</div>

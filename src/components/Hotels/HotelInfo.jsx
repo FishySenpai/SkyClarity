@@ -1,7 +1,41 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const HotelInfo = ({ hotel, index }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+function formatCurrency(input) {
+  if (typeof input !== "string") {
+    // Handle cases where input is not a string (or undefined)
+    return "Invalid input";
+  }
+  const currencyMatch = input.match(/₹ ([\d,]+)/);
+  if (currencyMatch) {
+    const amount = parseFloat(currencyMatch[1].replace(/,/g, ""));
+    const usdAmount = amount / 83.4;
+    return input.replace(`₹ ${currencyMatch[1]}`, `$${usdAmount.toFixed(0)}`);
+  }
+  // Check for input starting with "₹" and extract the numeric part
+  if (input.startsWith("₹")) {
+    const amount = parseFloat(input.replace(/[^\d,]/g, "").replace(/,/g, ""));
+    const usdAmount = amount / 83.4;
+    return `$${usdAmount.toFixed(0)}`;
+  }
+
+  // Check for input like "₹ 184,845 for 28 nights" and extract the numeric part
+
+
+  // If already in USD or unrecognized format, return as is
+  return input;
+}
+
+  // Example usage:
+  const amount1 = "₹ 2,731";
+  const amount2 = "$ 100"; // This would remain unchanged
+  const formattedAmount1 = formatCurrency(amount1);
+  const formattedAmount2 = formatCurrency(amount2);
+
+  console.log(formattedAmount1); // Output: $ 32.73
+  console.log(formattedAmount2); // Output: $ 100 (unchanged)
 
   const handlePrevClick = () => {
     setCurrentImageIndex(
@@ -14,23 +48,21 @@ const HotelInfo = ({ hotel, index }) => {
   };
   return (
     <div>
-      <div className="bg-gray-100 rounded text-gray-700 w-[880px] mb-2 mr-12 flex flex-row divide-x-2 divide-gray-400">
+      <div className="bg-white rounded-xl text-gray-700 w-[850px] mb-2 mr-12 flex flex-row divide-x-[1px] divide-gray-200">
         <div className="w-[650px] py-4">
           <div key={index} className="flex flex-row ">
             <div className="px-3 relative">
-              <div className="w-[300px] h-[250px]">
+              <div className="relative w-[300px] h-[250px] group">
                 <button
-                  onClick={() => {
-                    handlePrevClick();
-                  }}
-                  className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-300 p-2 rounded-full z-50"
+                  onClick={handlePrevClick}
+                  className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-50 p-2 rounded-xl z-50 opacity-0 group-hover:opacity-100 transition-opacity"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    className="w-6 h-6"
+                    className="w-5 h-5"
                   >
                     <path
                       strokeLinecap="round"
@@ -41,22 +73,20 @@ const HotelInfo = ({ hotel, index }) => {
                   </svg>
                 </button>
                 <img
-                  className="w-[300px] h-[250px] rounded"
+                  className="w-[300px] h-[250px] rounded transition-opacity duration-1000"
                   src={hotel.images[currentImageIndex]}
                   alt="image"
                 />
                 <button
-                  onClick={() => {
-                    handleNextClick();
-                  }}
-                  className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-300 p-2 rounded-full z-50"
+                  onClick={handleNextClick}
+                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-50 p-2 rounded-xl z-50 opacity-0 group-hover:opacity-100 transition-opacity"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    className="w-6 h-6"
+                    className="w-5 h-5"
                   >
                     <path
                       strokeLinecap="round"
@@ -66,9 +96,19 @@ const HotelInfo = ({ hotel, index }) => {
                     />
                   </svg>
                 </button>
+                <div className="absolute bottom-0 left-0 right-0 flex justify-center p-2">
+                  {hotel.images.map((_, index) => (
+                    <div
+                      key={index}
+                      className={`w-2 h-2 mx-1 rounded-full ${
+                        currentImageIndex === index ? "bg-white" : "bg-gray-400"
+                      }`}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
-            <div>
+            <div className="pr-4 w-[330px]">
               <div className="pr-3 font-semibold text-lg ">{hotel.name}</div>
               <div className="flex flex-row pt-2">
                 {Array(hotel.stars)
@@ -87,55 +127,95 @@ const HotelInfo = ({ hotel, index }) => {
                     </svg>
                   ))}
               </div>
-              <div className="pt-2">
+              <div className="pt-2 text-sm">
                 {hotel.relevantPoiDistance
                   ? hotel.relevantPoiDistance
                   : hotel.distance}
               </div>
-              <div className="flex flex-row space-x-2 pt-1">
+              <div className="flex flex-row space-x-2 pt-1 ">
                 <div>{hotel.reviewSummary?.value}</div>
                 <div>
                   <img src={hotel.reviewSummary?.taImage} alt="" />
                 </div>
               </div>
-              <div className="flex flex-row space-x-2 pt-1">
+              <div className="flex flex-row space-x-2 pt-1 ">
                 <div>"{hotel.reviewSummary?.description}"</div>
-                <div>{hotel.reviewSummary?.count} reviews</div>
+                <div className="text-sm mt-0.5">
+                  {hotel.reviewSummary?.count} reviews
+                </div>
+              </div>
+              <div className="cursor-pointer relative pt-1.5">
+                {hotel.otherRates[0] ? (
+                  <div className="flex  border-y-[1px]  border-gray-200 py-1">
+                    <img
+                      src={`https://www.skyscanner.pk/images/websites/220x80/${hotel.otherRates[0]?.partnerId}.png`}
+                      alt=""
+                      className="h-[25px] w-[66px]"
+                    />
+                    <p className=" absolute right-0 font-semibold">
+                      {formatCurrency(hotel.otherRates[0]?.price)}
+                    </p>
+                  </div>
+                ) : (
+                  ""
+                )}
+                {hotel.otherRates[1] ? (
+                  <div className="flex border-b-[1px]  border-gray-200 py-1">
+                    <img
+                      src={`https://www.skyscanner.pk/images/websites/220x80/${hotel.otherRates[1]?.partnerId}.png`}
+                      alt=""
+                      className="h-[25px] w-[66px]"
+                    />
+                    <p className=" absolute right-0 font-semibold">
+                      {formatCurrency(hotel.otherRates[1]?.price)}
+                    </p>
+                  </div>
+                ) : (
+                  ""
+                )}
               </div>
             </div>
           </div>
         </div>
-        <div className="pl-6 pt-6">
+        <div className="pl-4 pt-12">
           <div className="flex flex-row">
-            <div className="pr-2">Provider: </div>
             <div className="font-semibold">
-              {hotel.cheapestOfferPartnerName}
+              <img
+                src={`https://www.skyscanner.pk/images/websites/220x80/${hotel.cheapestOfferPartnerId}.png`}
+                alt=""
+                className="h-[25px] w-[66px]"
+              />
             </div>
           </div>
           <div className="flex flex-row pt-2">
             <div className="text-pink-600 line-through">
-              {hotel.cug?.priceWithoutDiscount}
+              {hotel.cug?.priceWithoutDiscount &&
+                formatCurrency(hotel.cug?.priceWithoutDiscount)}
             </div>
             <div className="text-pink-600 pl-2">{hotel.cug?.discount}</div>
           </div>
 
-          <div className="text-2xl font-bold  mt-3 ">{hotel.price}</div>
-          <div className="pt-2">{hotel.priceDescription}</div>
+          <div className="text-2xl font-bold  mt-3 ">
+            {formatCurrency(hotel.price)}
+          </div>
+          <div className="pt-2">{formatCurrency(hotel.priceDescription)}</div>
           <div className="text-sm">{hotel.taxPolicy}</div>
           <div className="pt-4">
-            <button className="px-3 py-1 rounded bg-gray-800 text-white mt-1 font-semibold flex flex-row">
-              View Details
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
-                className="w-3 h-4 ml-2 mt-1"
-              >
-                <path
-                  d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                  fill="white"
-                />
-              </svg>
-            </button>
+            <Link to={`/hotels/hotel/${hotel.hotelId}`}>
+              <button className="px-3 py-1 rounded bg-gray-800 text-white mt-1 font-semibold flex flex-row">
+                View Details
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  className="w-3 h-4 ml-2 mt-1"
+                >
+                  <path
+                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </Link>
           </div>
         </div>
       </div>
