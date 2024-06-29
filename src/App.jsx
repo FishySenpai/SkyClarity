@@ -25,9 +25,9 @@ function App() {
         <Route path="/hotels/hotel/:id" element={<HotelDetails />} />
         <Route path="/flights/flight" element={<FlightDetails />} />
       </Routes>
-      <div className="absolute right-0 left-0 ">
+      {/* <div className="absolute right-0 left-0 ">
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }

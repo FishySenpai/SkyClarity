@@ -1,6 +1,6 @@
 import React from "react";
-import carAnimated from "./car-animated.png"
-import hotelAnimated from "./hotel-animated.png";
+import carAnimated from "./Assets/car-animated.png"
+import hotelAnimated from "./Assets/hotel-animated.png";
 const CompleteYourTrip = ({destination}) => {
   return (
     <div className="p-8 ">

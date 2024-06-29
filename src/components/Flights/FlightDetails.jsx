@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
-import flightDetailsJson from "./flightDetails.json";
+import flightDetailsJson from "./Assets/flightDetails.json";
 import useOutsideClick from "../useOutsideClick";
 import CompleteYourTrip from "./CompleteYourTrip";
-import warning from "./warning.png";
+import warning from "./Assets/warning.png";
 const FlightDetails = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const modalRef = useRef(null);

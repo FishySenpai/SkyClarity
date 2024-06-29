@@ -89,12 +89,18 @@ const TimeRangeSlider = ({ min, max, onChange, inputType }) => {
         <div ref={range} className="slider__range" />
         {inputType === "time" ? (
           <>
-            <div className="slider__left-value text-gray-700">{minVal}</div>
-            <div className="slider__right-value text-gray-700">{maxVal}</div>
+            <div className="slider__left-value text-gray-700 ">
+              {minVal}
+            </div>
+            <div className="slider__right-value text-gray-700 ">
+              {maxVal}
+            </div>
           </>
         ) : (
           <>
-            <div className="slider__left-value text-gray-700">US ${minVal}</div>
+            <div className="slider__left-value text-gray-700 ">
+              US ${minVal}
+            </div>
             <div className="slider__right-value text-gray-700">
               US ${maxVal}
             </div>

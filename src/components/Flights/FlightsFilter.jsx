@@ -1,41 +1,70 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import TimeRangeSlider from "./TimeRangeSlider";
 
-const FlightsFilter = ({ flights}) => {
-    const [minPrice, setMinPrice] = useState(Infinity);
-    const [maxPrice, setMaxPrice] = useState(-Infinity);
-    const [minDuration, setMinDuration] = useState(Infinity);
-    const [maxDuration, setMaxDuration] = useState(-Infinity);
-    const [showStops, setShowStops] = useState(true);
-    const [showDepartureTimes, setShowDepartureTimes] = useState(true);
-    const [showPrice, setShowPrice] = useState(true);
-    const [showJourneyDuration, setShowJourneyDuration] = useState(true);
-    const [showAirlines, setShowAirlines] = useState(true);
+const FlightsFilter = ({ flights }) => {
+  const [minPrice, setMinPrice] = useState(Infinity);
+  const [maxPrice, setMaxPrice] = useState(-Infinity);
+  const [minDuration, setMinDuration] = useState(Infinity);
+  const [maxDuration, setMaxDuration] = useState(-Infinity);
+  const [showStops, setShowStops] = useState(true);
+  const [showDepartureTimes, setShowDepartureTimes] = useState(true);
+  const [showPrice, setShowPrice] = useState(true);
+  const [showJourneyDuration, setShowJourneyDuration] = useState(true);
+  const [showAirlines, setShowAirlines] = useState(true);
 
-    useEffect(() => {
-      if (flights && flights.itineraries) {
-        setMinDuration(((flights.filterStats.duration.min)/60).toFixed(0));
-        setMaxDuration(((flights.filterStats.duration.max) / 60).toFixed(0));
-        flights.itineraries.forEach((flight) => {
-          const price = parseFloat(flight.price.raw);;
+  const [minDepartureTime, setMinDepartureTime] = useState(Infinity);
+  const [maxDepartureTime, setMaxDepartureTime] = useState(-Infinity);
+  const [minArrivalTime, setMinArrivalTime] = useState(Infinity);
+  const [maxArrivalTime, setMaxArrivalTime] = useState(-Infinity);
 
-          // Update minimum and maximum price
-          setMinPrice((prevMinPrice) => Math.min(prevMinPrice, price));
-          setMaxPrice((prevMaxPrice) => Math.max(prevMaxPrice, price));
+  useEffect(() => {
+    if (flights && flights.itineraries) {
+      setMinDuration((flights.filterStats.duration.min / 60).toFixed(0));
+      setMaxDuration((flights.filterStats.duration.max / 60).toFixed(0));
 
-          // Update minimum and maximum duration in hours, rounded to 2 decimal places
-          
-        });
-      }
-    }, [flights]);
+      flights.itineraries.forEach((flight) => {
+        const price = parseFloat(flight.price.raw);
+        const departureDate = new Date(flight.legs[0].departure);
+        const arrivalDate = new Date(flight.legs[0].arrival);
 
-    // Add a useEffect to log the updated minPrice
-    useEffect(() => {
-      console.log("Updated minPrice:", minPrice);
-      console.log("Updated maxPrice:", maxPrice);
-      console.log("Updated minDuration:", minDuration);
-      console.log("Updated maxDuration:", maxDuration);
-    }, [minPrice]);
+        const departureTime =
+          departureDate.getHours() + departureDate.getMinutes() / 60;
+        const arrivalTime =
+          arrivalDate.getHours() + arrivalDate.getMinutes() / 60;
+
+        // Update minimum and maximum price
+        setMinPrice((prevMinPrice) => Math.min(prevMinPrice, price));
+        setMaxPrice((prevMaxPrice) => Math.max(prevMaxPrice, price));
+
+        // Update minimum and maximum departure time
+        setMinDepartureTime((prevMinDepartureTime) =>
+          Math.min(prevMinDepartureTime, departureTime).toFixed(0)
+        );
+        setMaxDepartureTime((prevMaxDepartureTime) =>
+          Math.max(prevMaxDepartureTime, departureTime).toFixed(0)
+        );
+
+        // Update minimum and maximum arrival time
+        setMinArrivalTime((prevMinArrivalTime) =>
+          Math.min(prevMinArrivalTime, arrivalTime).toFixed(0)
+        );
+        setMaxArrivalTime((prevMaxArrivalTime) =>
+          Math.max(prevMaxArrivalTime, arrivalTime).toFixed(0)
+        );
+      });
+    }
+  }, [flights]);
+  // Add a useEffect to log the updated minPrice
+  useEffect(() => {
+    console.log("Updated minPrice:", minPrice);
+    console.log("Updated maxPrice:", maxPrice);
+    console.log("Updated minDuration:", minDuration);
+    console.log("Updated maxDuration:", maxDuration);
+    console.log("Updated minDepart:", minDepartureTime);
+    console.log("Updated maxDepart:", maxDepartureTime);
+    console.log("Updated minarrival:", minArrivalTime);
+    console.log("Updated maxarrival:", maxArrivalTime);
+  }, [minPrice]);
 
   return (
     <div className="mx-12 px-4 rounded bg-gray-100 default-font text-gray-700 text-sm divide-y-2 divide-slate-300">
@@ -111,18 +140,54 @@ const FlightsFilter = ({ flights}) => {
         </div>
         {showDepartureTimes && (
           <div className="pb-12">
-            <TimeRangeSlider
-              min={0}
-              max={24}
-              onChange={({ min, max }) =>
-                console.log(`min = ${min}, max = ${max}`)
-              }
-              inputType="time"
-            />
+            {minDepartureTime !== Infinity &&
+              maxDepartureTime !== -Infinity && (
+                <TimeRangeSlider
+                  min={minDepartureTime}
+                  max={maxDepartureTime}
+                  onChange={({ min, max }) =>
+                    console.log(`min = ${min}, max = ${max}`)
+                  }
+                  inputType="time"
+                />
+              )}
           </div>
         )}
       </div>
-
+      <div>
+        <div className="flex flex-row">
+          <div className="font-semibold text-lg py-2">Arrival Times</div>
+          <div className="pl-20 pt-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              className="h-4 w-4"
+              onClick={() => {
+                setShowDepartureTimes((prev) => !prev);
+              }}
+            >
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                fill="gray"
+              />
+            </svg>
+          </div>
+        </div>
+        {showDepartureTimes && (
+          <div className="pb-12">
+            {minArrivalTime !== Infinity && maxArrivalTime !== -Infinity && (
+              <TimeRangeSlider
+                min={minArrivalTime}
+                max={maxArrivalTime}
+                onChange={({ min, max }) =>
+                  console.log(`min = ${min}, max = ${max}`)
+                }
+                inputType="time"
+              />
+            )}
+          </div>
+        )}
+      </div>
       <div className="">
         <div className="flex flex-row">
           <div className="font-semibold text-lg py-2">Price</div>
@@ -177,7 +242,7 @@ const FlightsFilter = ({ flights}) => {
           </div>
         </div>
         {showJourneyDuration && (
-          <div className="pb-12">
+          <div className="pb-12 ">
             {minDuration !== Infinity && maxDuration !== -Infinity && (
               <TimeRangeSlider
                 min={minDuration}

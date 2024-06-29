@@ -3,8 +3,8 @@ import flightsJson from "../../flights.json";
 import Flights from "./Flights";
 import Calendar from "react-calendar";
 import "../Calender/Sample.css";
-import flightsImg from "./flights-img.jpg";
-import faqs from "../faq.json"
+import flightsImg from "./Assets/flights-img.jpg";
+import faqs from "../faq.json";
 import useOutsideClick from "../useOutsideClick";
 import MultiCity from "./MultiCity";
 import FlightCards from "./FlightCards";
@@ -38,21 +38,21 @@ const Home = () => {
   const returnPopupRef = useRef(null);
   const cabinPopupRef = useRef(null);
   const [flightCount, setFlightCount] = useState(1);
-  const handleMultiCityClick = ()=>{
+  const handleMultiCityClick = () => {
     console.log(from);
     console.log(to);
-    console.log(departDate)
+    console.log(departDate);
     console.log(from2);
     console.log(to2);
     console.log(departDate1);
     console.log(from3);
     console.log(to3);
     console.log(departDate2);
-  }
+  };
   const handleFlightCount = () => {
-    if (flightCount <2) {
-      setFlightCount(flightCount+1);
-      console.log(flightCount)
+    if (flightCount < 2) {
+      setFlightCount(flightCount + 1);
+      console.log(flightCount);
     }
   };
   const fetchLocation = async (location) => {
@@ -76,7 +76,46 @@ const Home = () => {
     }
   };
 
-  const fetchFlights = async () => {
+  const fetchReturnFlights = async () => {
+    try {
+      setFlights(null);
+      const [fromId, toId] = await Promise.all([
+        fetchLocation(from),
+        fetchLocation(to),
+      ]);
+
+      if (fromId && toId) {
+        setFromId(fromId);
+        setToId(toId);
+        try {
+          const response = await fetch(url, options);
+          const result = await response.text();
+          console.log(result);
+        } catch (error) {
+          console.error(error);
+        }
+        const url = `https://skyscanner80.p.rapidapi.com/api/v1/flights/search-roundtrip?fromId=${fromId}&toId=${toId}&departDate=${departDate}&returnDate=${returnDate}&adults=1&cabinClass=economy&currency=USD&market=US&locale=en-US`;
+        const options = {
+          method: "GET",
+          headers: {
+            "X-RapidAPI-Key":
+              "325a7f72damshf16ffcb2c3ed7bep1f566djsn006db2e1a65a",
+            "X-RapidAPI-Host": "skyscanner80.p.rapidapi.com",
+          },
+        };
+
+        const response = await fetch(url, options);
+        const result = await response.json();
+        setFlights(result.data);
+        console.log(result);
+      } else {
+        console.error("Failed to fetch location IDs");
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  const fetchOneWayFlights = async () => {
     try {
       const [fromId, toId] = await Promise.all([
         fetchLocation(from),
@@ -131,10 +170,13 @@ const Home = () => {
     setReturnToggle(false);
   }, [returnDate]);
   return (
-    <div className=" text-white default-font relative bg-gray-100 min-h-screen ">
+    <div className=" text-white default-font relative bg-gray-50  ">
       <div>
         <img src={flightsImg} className="absolute inset-0 bg-cover bg-center" />
         <div className="absolute top-52 left-[300px]">
+          <div className="text-5xl pb-3 text-white font-bold">
+            Find cheap flight deals
+          </div>
           <div className="bg-gray-100 rounded text-gray-500 ">
             <div className="flex items-center space-x-4 pt-4 pl-6 text-sm">
               <label className="flex items-center">
@@ -587,8 +629,14 @@ const Home = () => {
                 ) : null}
               </div>
               <button
-                onClick={fetchFlights}
-                className="bg-gray-900 text-white p-2.5  pr-3.5 rounded-md font-semibold text-lg h-[48px]"
+                onClick={() => {
+                  if (selectedOption === "round-trip") {
+                    fetchReturnFlights();
+                  } else if (selectedOption === "one-way") {
+                    fetchOneWayFlights();
+                  }
+                }}
+                className="bg-gray-900 text-white p-2.5 pr-3.5 rounded-md font-semibold text-lg h-[48px]"
               >
                 Search
               </button>
@@ -606,7 +654,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* <div className="relative top-[600px] bg-gray-100 pb-24">
+      <div className="relative top-[600px] bg-gray-100 pb-24 rounded-t-3xl">
         <div className="w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto pt-12">
           {Array(6)
             .fill(0)
@@ -615,16 +663,16 @@ const Home = () => {
             ))}
         </div>
         <div>
-          <FAQ faqs={faqs.flight}/>
+          <FAQ faqs={faqs.flight} />
         </div>
-      </div> */}
-      {flightsJson ? (
-        <div className="absolute top-[600px]">
-          <Flights flights={flightsJson} />
+      </div>
+      {/* {flights ? (
+        <div className="absolute top-[900px]">
+          <Flights flights={flights} />
         </div>
       ) : (
         ""
-      )}
+      )} */}
     </div>
   );
 };

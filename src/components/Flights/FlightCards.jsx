@@ -1,5 +1,5 @@
 import React from "react"
-import flightCardImg from "./flightCardImg.webp";
+import flightCardImg from "./Assets/flightCardImg.webp";
 const FlightCards = () => {
   return (
       <div className="mx-auto  bg-white shadow-lg rounded-lg overflow-hidden">
