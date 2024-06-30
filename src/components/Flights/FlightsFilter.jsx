@@ -11,7 +11,7 @@ const FlightsFilter = ({ flights }) => {
   const [showPrice, setShowPrice] = useState(true);
   const [showJourneyDuration, setShowJourneyDuration] = useState(true);
   const [showAirlines, setShowAirlines] = useState(true);
-
+  const [showArrivalTimes, setShowArrivalTimes] = useState(true);
   const [minDepartureTime, setMinDepartureTime] = useState(Infinity);
   const [maxDepartureTime, setMaxDepartureTime] = useState(-Infinity);
   const [minArrivalTime, setMinArrivalTime] = useState(Infinity);
@@ -33,8 +33,8 @@ const FlightsFilter = ({ flights }) => {
           arrivalDate.getHours() + arrivalDate.getMinutes() / 60;
 
         // Update minimum and maximum price
-        setMinPrice((prevMinPrice) => Math.min(prevMinPrice, price));
-        setMaxPrice((prevMaxPrice) => Math.max(prevMaxPrice, price));
+        setMinPrice((prevMinPrice) => Math.min(prevMinPrice, price).toFixed(0));
+        setMaxPrice((prevMaxPrice) => Math.max(prevMaxPrice, price).toFixed(0));
 
         // Update minimum and maximum departure time
         setMinDepartureTime((prevMinDepartureTime) =>
@@ -67,29 +67,54 @@ const FlightsFilter = ({ flights }) => {
   }, [minPrice]);
 
   return (
-    <div className="mx-12 px-4 rounded bg-gray-100 default-font text-gray-700 text-sm divide-y-2 divide-slate-300">
+    <div className="mx-12 px-4 space-y-3 rounded bg-white default-font text-gray-700 text-sm divide-y-2 divide-slate-300 w-[300px]">
       <div>
-        <div className="flex flex-row">
+        <div
+          className="flex flex-row relative pt-2"
+          onClick={() => {
+            setShowStops((prev) => !prev);
+          }}
+        >
           <div className="font-semibold text-lg py-2">Stops</div>
-          <div className="pl-44 pt-3">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              className="h-4 w-4"
-              onClick={() => {
-                setShowStops((prev) => !prev);
-              }}
-            >
-              <path
-                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                fill="gray"
-              />
-            </svg>
+          <div className="absolute right-2 pt-3">
+            {showStops? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                className="h-3 w-3"
+                transform="rotate(180)"
+              >
+                <path
+                  d="M19.113 8.095a1.496 1.496 0 0 1 0 2.008l-6.397 5.948a1 1 0 0 1-1.358.003l-6.532-6.01a1.427 1.427 0 0 1 .138-1.949 1.57 1.57 0 0 1 1.997-.103l5.078 4.638 4.97-4.535a1.72 1.72 0 0 1 2.104 0"
+                  fill="gray"
+                ></path>
+                <path
+                  d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                  fill="gray"
+                />{" "}
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                className="h-3 w-3"
+              >
+                <path
+                  d="M19.113 8.095a1.496 1.496 0 0 1 0 2.008l-6.397 5.948a1 1 0 0 1-1.358.003l-6.532-6.01a1.427 1.427 0 0 1 .138-1.949 1.57 1.57 0 0 1 1.997-.103l5.078 4.638 4.97-4.535a1.72 1.72 0 0 1 2.104 0"
+                  fill="gray"
+                ></path>
+                <path
+                  d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                  fill="gray"
+                />{" "}
+              </svg>
+            )}
           </div>
         </div>
+
         {showStops && (
           <div className="pb-3">
-            <div>
+            <div className={``}>
               <div className="flex flex-row">
                 <input type="checkbox" />
                 <div className="pl-2">Direct</div>
@@ -120,22 +145,46 @@ const FlightsFilter = ({ flights }) => {
       </div>
 
       <div>
-        <div className="flex flex-row">
+        <div
+          className="flex flex-row relative"
+          onClick={() => {
+            setShowDepartureTimes((prev) => !prev);
+          }}
+        >
           <div className="font-semibold text-lg py-2">Departure Times</div>
-          <div className="pl-20 pt-3">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              className="h-4 w-4"
-              onClick={() => {
-                setShowDepartureTimes((prev) => !prev);
-              }}
-            >
-              <path
-                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                fill="gray"
-              />
-            </svg>
+          <div className="absolute right-2 pt-3">
+            {showDepartureTimes ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                className="h-3 w-3"
+                transform="rotate(180)"
+              >
+                <path
+                  d="M19.113 8.095a1.496 1.496 0 0 1 0 2.008l-6.397 5.948a1 1 0 0 1-1.358.003l-6.532-6.01a1.427 1.427 0 0 1 .138-1.949 1.57 1.57 0 0 1 1.997-.103l5.078 4.638 4.97-4.535a1.72 1.72 0 0 1 2.104 0"
+                  fill="gray"
+                ></path>
+                <path
+                  d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                  fill="gray"
+                />{" "}
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                className="h-3 w-3"
+              >
+                <path
+                  d="M19.113 8.095a1.496 1.496 0 0 1 0 2.008l-6.397 5.948a1 1 0 0 1-1.358.003l-6.532-6.01a1.427 1.427 0 0 1 .138-1.949 1.57 1.57 0 0 1 1.997-.103l5.078 4.638 4.97-4.535a1.72 1.72 0 0 1 2.104 0"
+                  fill="gray"
+                ></path>
+                <path
+                  d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                  fill="gray"
+                />{" "}
+              </svg>
+            )}
           </div>
         </div>
         {showDepartureTimes && (
@@ -155,25 +204,49 @@ const FlightsFilter = ({ flights }) => {
         )}
       </div>
       <div>
-        <div className="flex flex-row">
+        <div
+          className="flex flex-row relative"
+          onClick={() => {
+            setShowArrivalTimes((prev) => !prev);
+          }}
+        >
           <div className="font-semibold text-lg py-2">Arrival Times</div>
-          <div className="pl-20 pt-3">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              className="h-4 w-4"
-              onClick={() => {
-                setShowDepartureTimes((prev) => !prev);
-              }}
-            >
-              <path
-                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                fill="gray"
-              />
-            </svg>
+          <div className="absolute right-2 pt-3">
+            {showArrivalTimes ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                className="h-3 w-3"
+                transform="rotate(180)"
+              >
+                <path
+                  d="M19.113 8.095a1.496 1.496 0 0 1 0 2.008l-6.397 5.948a1 1 0 0 1-1.358.003l-6.532-6.01a1.427 1.427 0 0 1 .138-1.949 1.57 1.57 0 0 1 1.997-.103l5.078 4.638 4.97-4.535a1.72 1.72 0 0 1 2.104 0"
+                  fill="gray"
+                ></path>
+                <path
+                  d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                  fill="gray"
+                />{" "}
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                className="h-3 w-3"
+              >
+                <path
+                  d="M19.113 8.095a1.496 1.496 0 0 1 0 2.008l-6.397 5.948a1 1 0 0 1-1.358.003l-6.532-6.01a1.427 1.427 0 0 1 .138-1.949 1.57 1.57 0 0 1 1.997-.103l5.078 4.638 4.97-4.535a1.72 1.72 0 0 1 2.104 0"
+                  fill="gray"
+                ></path>
+                <path
+                  d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                  fill="gray"
+                />{" "}
+              </svg>
+            )}
           </div>
         </div>
-        {showDepartureTimes && (
+        {showArrivalTimes && (
           <div className="pb-12">
             {minArrivalTime !== Infinity && maxArrivalTime !== -Infinity && (
               <TimeRangeSlider
@@ -189,22 +262,46 @@ const FlightsFilter = ({ flights }) => {
         )}
       </div>
       <div className="">
-        <div className="flex flex-row">
+        <div
+          className="flex flex-row relative"
+          onClick={() => {
+            setShowPrice((prev) => !prev);
+          }}
+        >
           <div className="font-semibold text-lg py-2">Price</div>
-          <div className="pl-44 pt-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              className="h-4 w-4"
-              onClick={() => {
-                setShowPrice((prev) => !prev);
-              }}
-            >
-              <path
-                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                fill="gray"
-              />
-            </svg>
+          <div className="absolute right-2 pt-3">
+            {showPrice ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                className="h-3 w-3"
+                transform="rotate(180)"
+              >
+                <path
+                  d="M19.113 8.095a1.496 1.496 0 0 1 0 2.008l-6.397 5.948a1 1 0 0 1-1.358.003l-6.532-6.01a1.427 1.427 0 0 1 .138-1.949 1.57 1.57 0 0 1 1.997-.103l5.078 4.638 4.97-4.535a1.72 1.72 0 0 1 2.104 0"
+                  fill="gray"
+                ></path>
+                <path
+                  d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                  fill="gray"
+                />{" "}
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                className="h-3 w-3"
+              >
+                <path
+                  d="M19.113 8.095a1.496 1.496 0 0 1 0 2.008l-6.397 5.948a1 1 0 0 1-1.358.003l-6.532-6.01a1.427 1.427 0 0 1 .138-1.949 1.57 1.57 0 0 1 1.997-.103l5.078 4.638 4.97-4.535a1.72 1.72 0 0 1 2.104 0"
+                  fill="gray"
+                ></path>
+                <path
+                  d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                  fill="gray"
+                />{" "}
+              </svg>
+            )}
           </div>
         </div>
         {showPrice && (
@@ -223,22 +320,46 @@ const FlightsFilter = ({ flights }) => {
         )}
       </div>
       <div className="">
-        <div className="flex flex-row">
+        <div
+          className="flex flex-row relative"
+          onClick={() => {
+            setShowJourneyDuration((prev) => !prev);
+          }}
+        >
           <div className="font-semibold text-lg py-2">Journey Duration</div>
-          <div className="pl-16 pt-3">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              className="h-4 w-4"
-              onClick={() => {
-                setShowJourneyDuration((prev) => !prev);
-              }}
-            >
-              <path
-                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                fill="gray"
-              />
-            </svg>
+          <div className="absolute right-2 pt-3">
+            {showJourneyDuration ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                className="h-3 w-3"
+                transform="rotate(180)"
+              >
+                <path
+                  d="M19.113 8.095a1.496 1.496 0 0 1 0 2.008l-6.397 5.948a1 1 0 0 1-1.358.003l-6.532-6.01a1.427 1.427 0 0 1 .138-1.949 1.57 1.57 0 0 1 1.997-.103l5.078 4.638 4.97-4.535a1.72 1.72 0 0 1 2.104 0"
+                  fill="gray"
+                ></path>
+                <path
+                  d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                  fill="gray"
+                />{" "}
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                className="h-3 w-3"
+              >
+                <path
+                  d="M19.113 8.095a1.496 1.496 0 0 1 0 2.008l-6.397 5.948a1 1 0 0 1-1.358.003l-6.532-6.01a1.427 1.427 0 0 1 .138-1.949 1.57 1.57 0 0 1 1.997-.103l5.078 4.638 4.97-4.535a1.72 1.72 0 0 1 2.104 0"
+                  fill="gray"
+                ></path>
+                <path
+                  d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                  fill="gray"
+                />{" "}
+              </svg>
+            )}
           </div>
         </div>
         {showJourneyDuration && (
@@ -257,22 +378,46 @@ const FlightsFilter = ({ flights }) => {
         )}
       </div>
       <div className="mb-12 pb-3">
-        <div className="flex flex-row">
+        <div
+          className="flex flex-row relative"
+          onClick={() => {
+            setShowAirlines((prev) => !prev);
+          }}
+        >
           <div className="font-semibold text-lg py-2">Airlines</div>
-          <div className="pl-36 pt-3">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              className="h-4 w-4"
-              onClick={() => {
-                setShowAirlines((prev) => !prev);
-              }}
-            >
-              <path
-                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                fill="gray"
-              />
-            </svg>
+          <div className="absolute right-2 pt-3">
+            {showAirlines ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                className="h-3 w-3"
+                transform="rotate(180)"
+              >
+                <path
+                  d="M19.113 8.095a1.496 1.496 0 0 1 0 2.008l-6.397 5.948a1 1 0 0 1-1.358.003l-6.532-6.01a1.427 1.427 0 0 1 .138-1.949 1.57 1.57 0 0 1 1.997-.103l5.078 4.638 4.97-4.535a1.72 1.72 0 0 1 2.104 0"
+                  fill="gray"
+                ></path>
+                <path
+                  d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                  fill="gray"
+                />{" "}
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                className="h-3 w-3"
+              >
+                <path
+                  d="M19.113 8.095a1.496 1.496 0 0 1 0 2.008l-6.397 5.948a1 1 0 0 1-1.358.003l-6.532-6.01a1.427 1.427 0 0 1 .138-1.949 1.57 1.57 0 0 1 1.997-.103l5.078 4.638 4.97-4.535a1.72 1.72 0 0 1 2.104 0"
+                  fill="gray"
+                ></path>
+                <path
+                  d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                  fill="gray"
+                />{" "}
+              </svg>
+            )}
           </div>
         </div>
         {showAirlines && (

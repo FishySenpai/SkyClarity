@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import flightsJson from "../../flights.json";
+
 import HotelInfo from "./HotelInfo";
 import HotelsFilter from "./HotelsFilter";
 import hotelsData from "../../hotels.json";
 const Hotels = () => {
-  const [flights, setFlights] = useState(flightsJson);
+
 console.log(hotelsData)
   if (hotelsData) {
     return (
