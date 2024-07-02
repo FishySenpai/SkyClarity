@@ -58,16 +58,16 @@ const Flights = () => {
     }
   };
 
-  // useEffect(() => {
-  //   if (
-  //     isValidParam(fromId) &&
-  //     isValidParam(toId) &&
-  //     isValidParam(departdate) &&
-  //     isValidParam(returndate)
-  //   ) {
-  //     fetchReturnFlights();
-  //   }
-  // }, [fromId, toId, departdate, returndate]);
+  useEffect(() => {
+    if (
+      isValidParam(fromId) &&
+      isValidParam(toId) &&
+      isValidParam(departdate) &&
+      isValidParam(returndate)
+    ) {
+      fetchReturnFlights();
+    }
+  }, [fromId, toId, departdate, returndate]);
 
   useEffect(() => {
     if (flights && flights.itineraries) {
