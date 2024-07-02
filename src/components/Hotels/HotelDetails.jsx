@@ -62,11 +62,7 @@ const HotelDetails = () => {
             setShowImages(true);
           }}
         >
-          <img
-            src={images[4].gallery}
-            alt=""
-            className="w-[900px] h-[500px]"
-          />
+          <img src={images[4].gallery} alt="" className="w-[900px] h-[500px]" />
           <div className="flex flex-col space-y-1">
             <img
               src={images[8].gallery}
@@ -201,7 +197,7 @@ const HotelDetails = () => {
           </div>
         )}
 
-        <div className=" pt-4 space-y-2 mr-6">
+        <div className=" pt-4 space-y-2 mr-6 w-[1060px]">
           <div className="text-4xl font-bold flex flex-row">
             <div>{hotelDetails.data.general.name}</div>
             <div className="mt-3 ml-1 flex">
@@ -260,7 +256,7 @@ const HotelDetails = () => {
                   alt=""
                 />
                 <p className="mt-0.5 pl-1">
-                  {hotelDetails.data.reviewRatingSummary.cleanlinessMessage}
+                  This hotel's service is rated 4.5/5
                 </p>
               </div>
               <div className="px-4 pr-6 pb-[18px] pt-2.5 flex bg-white text-gray-700 text-sm rounded-lg h-fit shadow-lg">
@@ -269,12 +265,15 @@ const HotelDetails = () => {
                   alt=""
                 />
                 <p className="mt-1   pl-1">
-                  {hotelDetails.data.reviewRatingSummary.locationMessage}
+                  his hotel's location is rated 4.5/5
                 </p>
               </div>
               <div className="px-4 pt-1 pb-1.5 flex w-[300px] bg-white text-gray-700 text-sm rounded-lg h-[54px] shadow-lg">
                 <p className="mt-1 pl-1 overflow-hidden text-ellipsis line-clamp-2  text-[13px]">
-                  "{reviews.data.reviews[0].review}"
+                  "Tastefully appointed rooms. Excellent food options. But what
+                  trumps everything is the service level of everything ...
+                  concierge , front desk, in room dining , or laundry... Top of
+                  the class!"
                 </p>
               </div>
             </div>
@@ -313,7 +312,7 @@ const HotelDetails = () => {
           <div id="amenities">
             <Amenities />
           </div>
-          <ReviewAndRecommendations />
+          <ReviewAndRecommendations id={id}/>
         </div>
       </div>
     );

@@ -117,9 +117,7 @@ const HotelsSearch = ({ home }) => {
   }, [checkOutDate]);
   return (
     <div
-      className={`px-6 pt-8 bg-white h-[160px] rounded-md ${
-        !home ? "h-[110px]" : ""
-      } `}
+      className={`px-6 py-8 bg-white rounded-md `}
     >
       <div className="flex flex-row space-x-5   ">
         <div className="relative h-fit ">

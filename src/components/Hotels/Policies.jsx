@@ -1,6 +1,7 @@
 import React from "react"
 
 const Policies = ({hotelDetails}) => {
+  const policies = hotelDetails?.data.goodToKnow.policies;
   return (
     <div id="policies" className="w-[1040px]">
       <p className="font-semibold text-3xl pb-4">Policies</p>
@@ -21,7 +22,7 @@ const Policies = ({hotelDetails}) => {
           </p>
           <p className="text-gray-800  mt-1">
             {
-              hotelDetails?.data.goodToKnow.policies.content[0].values[0]
+              policies.content[0].values[0]
                 .content
             }
           </p>
@@ -42,7 +43,7 @@ const Policies = ({hotelDetails}) => {
           </p>
           <p className="text-gray-800  mt-1">
             {
-              hotelDetails?.data.goodToKnow.policies.content[1].values[0]
+              policies.content[1].values[0]
                 .content
             }
           </p>
@@ -64,7 +65,7 @@ const Policies = ({hotelDetails}) => {
           <div className="space-y-1.5 mt-1">
             <p className="text-gray-800 ">
               {
-                hotelDetails?.data.goodToKnow.policies.content[3].values[0]
+                policies.content[3].values[0]
                   .content
               }
             </p>
@@ -73,7 +74,7 @@ const Policies = ({hotelDetails}) => {
                 Breakfast menu:
               </span>
               {
-                hotelDetails?.data.goodToKnow.policies.content[3].details[0]
+                policies.content[3]
                   .values[0].content
               }
             </p>
@@ -82,7 +83,7 @@ const Policies = ({hotelDetails}) => {
                 Breakfast price:
               </span>
               {
-                hotelDetails?.data.goodToKnow.policies.content[3].details[1]
+                policies.content[3]
                   .values[0].content
               }
             </p>
@@ -104,7 +105,7 @@ const Policies = ({hotelDetails}) => {
           </p>
           <p className="text-gray-800  mt-1">
             {
-              hotelDetails?.data.goodToKnow.policies.content[2].values[0]
+              policies.content[2].values[0]
                 .content
             }
           </p>
@@ -126,21 +127,21 @@ const Policies = ({hotelDetails}) => {
           <div>
             <p className="text-gray-800  mt-1">
               {
-                hotelDetails?.data.goodToKnow.policies.content[5].values[0]
+                policies.content[5].values[0]
                   .title
               }
             </p>
             <div className="flex">
               <p className="text-gray-800  font-semibold">
                 {
-                  hotelDetails?.data.goodToKnow.policies.content[5].values[0]
+                  policies.content[5].values[0]
                     .content[0]
                 }
                 ,
               </p>
               <p className="text-gray-800 pl-1 font-semibold ">
                 {
-                  hotelDetails?.data.goodToKnow.policies.content[5].values[0]
+                  policies.content[5].values[0]
                     .content[1]
                 }
               </p>

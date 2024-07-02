@@ -20,7 +20,9 @@ const HotelsHome = () => {
         <div className="text-5xl pb-3 text-white font-bold">
           Find the right hotel today
         </div>
-        <HotelsSearch home={true}/>
+        <div className="h-[160px]">
+          <HotelsSearch home={true} />
+        </div>
       </div>
       <div className="relative top-[600px] bg-gray-100 pb-12 rounded-3xl ">
         <div className="w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto pt-12 ">
@@ -33,7 +35,6 @@ const HotelsHome = () => {
         <div>
           <FAQ faqs={faqs.car} />
         </div>
-       
       </div>
     </div>
   );
