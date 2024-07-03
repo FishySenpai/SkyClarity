@@ -8,6 +8,7 @@ import HotelCards from "./HotelCards";
 import FAQ from "../Flights/FAQ";
 import faqs from "../faq.json"
 import HotelsSearch from "./HotelsSearch";
+import hotelCards from "./hotelCards.json"
 const HotelsHome = () => {
   // const [hotelsData, setHotelsData] = useState();
 
@@ -26,11 +27,9 @@ const HotelsHome = () => {
       </div>
       <div className="relative top-[600px] bg-gray-100 pb-12 rounded-3xl ">
         <div className="w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto pt-12 ">
-          {Array(6)
-            .fill(0)
-            .map((_, index) => (
-              <HotelCards />
-            ))}
+          {Object.values(hotelCards).map((hotel, index) => (
+            <HotelCards hotel={hotel}/>
+          ))}
         </div>
         <div>
           <FAQ faqs={faqs.car} />

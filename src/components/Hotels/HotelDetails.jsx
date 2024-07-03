@@ -7,7 +7,7 @@ import Amenities from "./Amenities";
 import Policies from "./Policies";
 import useOutsideClick from "../useOutsideClick";
 const HotelDetails = () => {
-  const { id } = useParams();
+  const { id, price } = useParams();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [showImages, setShowImages] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -301,7 +301,7 @@ const HotelDetails = () => {
 
           {/* Price and Button */}
           <div className="flex items-center space-x-4">
-            <span className="text-black text-2xl mb-2 font-bold">$32</span>
+            <span className="text-black text-2xl mb-2 font-bold">{price}</span>
             <button className="bg-gray-900 font-bold text-white px-4 py-2 rounded">
               Select
             </button>

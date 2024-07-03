@@ -51,7 +51,7 @@ const convertDate = (dateString) => {
                 <img
                   src={card.airLineImageURL}
                   alt=""
-                  className="max-w-[66px] max-h-[40px] min-w-[40px] min-h-[35px]  mt-2"
+                  className="max-w-[66px] max-h-[40px]  mt-2"
                 />
               </div>
               <div className="flex flex-col  ">

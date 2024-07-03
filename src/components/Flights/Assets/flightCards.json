@@ -52,7 +52,7 @@
     "flightClass": "Economy",
     "price": "$31",
     "imageURL": "https://media.cnn.com/api/v1/images/stellar/prod/160621115931-seoul-after.jpg?q=x_4,y_219,h_2370,w_4213,c_crop/h_833,w_1480",
-    "airLineImageURL": "https://content.skyscnr.com/794dc2896b6906fcb641927e04c1a918/ai-template-azal-thumb-1-xxxhdpi.png?resize=100%3A9999px&quality=100"
+    "airLineImageURL": "https://www.skyscanner.net/images/airlines/small/EK.png"
   },
   "5": {
     "from": "Los Angeles",

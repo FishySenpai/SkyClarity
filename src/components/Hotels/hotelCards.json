@@ -1,0 +1,80 @@
+{
+  "0": {
+    "hotelName": "Grand Hôtel du Palais Royal",
+    "distanceFromCityCenter": "2.82 km from Avenue des Champs-Élysées",
+    "imageUrl": "https://content.skyscnr.com/available/1442964841/1442964841_960x576.jpg",
+    "id": "128471516",
+    "rating": "5.0",
+    "reviews": "1,593",
+    "location": {
+      "city": "Paris",
+      "country": "France"
+    },
+    "pricePerNight": "$473"
+  },
+  "1": {
+    "hotelName": "Hilton Tokyo Odaiba",
+    "distanceFromCityCenter": "2.85 km from JR Shinagawa Station",
+    "imageUrl": "https://content.skyscnr.com/available/1393841524/1393841524_960x576.jpg",
+    "id": "46944403",
+    "rating": "4.5",
+    "reviews": "4,134",
+    "location": {
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "pricePerNight": "$375"
+  },
+  "2": {
+    "hotelName": "Hotel El Palace Barcelona",
+    "distanceFromCityCenter": "1.37 km from Sagrada Familia",
+    "imageUrl": "https://content.skyscnr.com/available/1276709338/1276709338_960x576.jpg",
+    "id": "46950747",
+    "rating": "4.5",
+    "reviews": "2,624",
+    "location": {
+      "city": "Barcelona",
+      "country": "Spain"
+    },
+    "pricePerNight": "$749"
+  },
+  "3": {
+    "hotelName": "The William Vale",
+    "distanceFromCityCenter": "1.87 km from Skyports Seaplane Base",
+    "imageUrl": "https://content.skyscnr.com/available/1463859922/1463859922_960x576.jpg",
+    "id": "136379316",
+    "rating": "4.5",
+    "reviews": "1,492",
+    "location": {
+      "city": "New York",
+      "country": "USA"
+    },
+    "pricePerNight": "$484"
+  },
+  "4": {
+    "hotelName": "Atlantis, The Palm",
+    "distanceFromCityCenter": "0.87 km from Dolphin Bay",
+    "imageUrl": "https://content.skyscnr.com/available/1395422445/1395422445_960x576.jpg",
+    "id": "116089954",
+    "rating": "4.5",
+    "reviews": "7,922",
+    "location": {
+      "city": "Dubai",
+      "country": "UAE"
+    },
+    "pricePerNight": "$365"
+  },
+  "5": {
+    "hotelName": "The Westin Excelsior",
+    "distanceFromCityCenter": "3.72km",
+    "imageUrl": "https://content.skyscnr.com/available/1491008510/1491008510_960x576.jpg",
+    "id": "46950684",
+    "rating": "4.0",
+    "reviews": "3,203",
+    "location": {
+      "city": "Rome",
+      "country": "Italy"
+    },
+    "pricePerNight": "$834"
+  }
+}
