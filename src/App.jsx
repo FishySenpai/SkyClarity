@@ -20,9 +20,15 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/hotels" element={<HotelsHome />} />
-        <Route path="/hotels/search/:destination/:destinationId/:checkIn/:checkOut" element={<Hotels />} />
+        <Route
+          path="/hotels/search/:destination/:destinationId/:checkIn/:checkOut"
+          element={<Hotels />}
+        />
         <Route path="/carhire" element={<CarRentalHome />} />
-        <Route path="/carhire/info" element={<CarInfo />} />
+        <Route
+          path="/carhire/search/:pickUp/:pickUpId/:pickDate/:dropDate"
+          element={<CarInfo />}
+        />
         <Route path="/hotels/hotel/:id/:price" element={<HotelDetails />} />
         <Route path="/flights/flight" element={<FlightDetails />} />
         <Route
