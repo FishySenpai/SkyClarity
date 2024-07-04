@@ -201,7 +201,11 @@ function formatCurrency(input) {
           <div className="pt-2">{formatCurrency(hotel.priceDescription)}</div>
           <div className="text-sm">{hotel.taxPolicy}</div>
           <div className="pt-4">
-            <Link to={`/hotels/hotel/${hotel.hotelId}`}>
+            <Link
+              to={`/hotels/hotel/${hotel.hotelId}/${formatCurrency(
+                hotel.otherRates[0]?.price
+              )}`}
+            >
               <button className="px-3 py-1 rounded bg-gray-800 text-white mt-1 font-semibold flex flex-row">
                 View Details
                 <svg

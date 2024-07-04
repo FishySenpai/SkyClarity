@@ -1,12 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
-import flightsJson from "./Assets/flights.json";
-import Flights from "./Flights";
-import Calendar from "react-calendar";
-import "../Calender/Sample.css";
 import flightsImg from "./Assets/flights-img.jpg";
+import planeImg from "./Assets/plane.png";
+import clockImg from "./Assets/clock.png";
+import handshakeImg from "./Assets/handshake.png";
 import faqs from "../faq.json";
-import useOutsideClick from "../useOutsideClick";
-import MultiCity from "./MultiCity";
 import FlightCards from "./FlightCards";
 import FAQ from "./FAQ";
 import FlightsSearch from "./FlightsSearch";
@@ -35,11 +32,82 @@ const Home = () => {
           selectedOption === "multi-city" ? "top-[650px]" : "top-[600px]"
         }`}
       >
-        <div className="w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto pt-12">
+        <div className="text-3xl pb-3 pl-[350px] text-gray-800 font-bold pt-12">
+          <div>Popular Internaional Flight Deals</div>
+          <span className="text-gray-700 font-normal text-[18px]">
+            Here are the last-minute flight deals with the lowest prices. Act
+            fast – they all depart within the next three months.
+          </span>
+        </div>
+
+        <div className="w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto ">
           {Object.keys(flightCards).map((key) => {
             const card = flightCards[key];
             return <FlightCards card={card} key={key} />;
           })}
+        </div>
+        <div className="flex justify-center items-center pt-12">
+          <div className="bg-white w-fit  text-gray-800 p-8 rounded-lg">
+            <div className="max-w-[1150px] text-center pb-8">
+              <h3 className="text-3xl font-semibold mb-2">
+                Looking for what SkyClarity has to offer?
+              </h3>
+              <p className="text-gray-600">
+                It’s easy around here. 100 million travelers use us as their
+                go-to tool, comparing flight deals and offers from more than
+                1,200 airlines and travel providers. With so many options to
+                choose from in one place, you can say hello to savings and
+                goodbye to stress – here’s how.
+              </p>
+            </div>
+            <div className="flex justify-between space-x-20">
+              <div className="text-center max-w-xs">
+                <img
+                  src={planeImg}
+                  alt="Hotel deals"
+                  className="mx-auto mb-4 w-32 h-24"
+                />
+                <h3 className="text-xl font-semibold mb-2">
+                  Travel with confidence
+                </h3>
+                <p className="text-gray-600">
+                  The cheapest flight deals. No hidden fees. No funny business.
+                  With us, the price you see when you search is what you’ll pay.
+                </p>
+              </div>
+
+              <div className="text-center max-w-xs">
+                <img
+                  src={clockImg}
+                  alt="Up-to-date pricing"
+                  className="mx-auto mb-4 w-28 h-24"
+                />
+                <h3 className="text-xl font-semibold mb-2">
+                  Book when it's best with Price Alerts
+                </h3>
+                <p className="text-gray-600">
+                  Found your flight, but not quite ready to book? Set up Price
+                  Alerts and we’ll let you know when your flight price goes up
+                  or down.
+                </p>
+              </div>
+
+              <div className="text-center max-w-xs">
+                <img
+                  src={handshakeImg}
+                  alt="Precise searching"
+                  className="mx-auto mb-4 w-36 h-24"
+                />
+                <h3 className="text-xl font-semibold mb-2">
+                  Simplify Your Booking Experience
+                </h3>
+                <p className="text-gray-600">
+                  Enjoy your memorable moments with millions of favorable
+                  flights and accommodations
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         <div>
           <FAQ faqs={faqs.flight} />
@@ -52,6 +120,8 @@ const Home = () => {
       ) : (
         ""
       )} */}
+
+
     </div>
   );
 };

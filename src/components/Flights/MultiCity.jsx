@@ -72,7 +72,7 @@ const MultiCity = ({
               />
             </svg>
             <input
-              className="h-12 pl-10 border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none"
+              className="h-12 pl-10 border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none"
               type="search"
               placeholder="City or airport"
               value={from}
@@ -82,7 +82,7 @@ const MultiCity = ({
             />
             <label
               htmlFor="text"
-              className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
+              className="absolute -top-3 left-2 px-1 bg-white text-sm"
             >
               From
             </label>
@@ -100,7 +100,7 @@ const MultiCity = ({
               />
             </svg>
             <input
-              className="h-12 pl-10 border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none"
+              className="h-12 pl-10 border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none"
               type="search"
               placeholder="City or airport"
               value={to}
@@ -110,7 +110,7 @@ const MultiCity = ({
             />
             <label
               htmlFor="text"
-              className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
+              className="absolute -top-3 left-2 px-1 bg-white text-sm"
             >
               To
             </label>
@@ -134,7 +134,7 @@ const MultiCity = ({
                 />
               </svg>
               <input
-                className={`h-12 pl-10 w-[380px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none cursor-pointer ${
+                className={`h-12 pl-10 w-[380px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none cursor-pointer ${
                   departDate ? "font-semibold text-gray-800" : "font-normal"
                 } `}
                 type="search"
@@ -145,7 +145,7 @@ const MultiCity = ({
 
               <label
                 htmlFor="text"
-                className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
+                className="absolute -top-3 left-2 px-1 bg-white text-sm"
               >
                 Departure
               </label>
@@ -179,7 +179,7 @@ const MultiCity = ({
                 />
               </svg>
               <input
-                className="h-12 pl-10 border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none"
+                className="h-12 pl-10 border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none"
                 type="search"
                 placeholder="City or airport"
                 value={from2}
@@ -189,7 +189,7 @@ const MultiCity = ({
               />
               <label
                 htmlFor="text"
-                className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
+                className="absolute -top-3 left-2 px-1 bg-white text-sm"
               >
                 From
               </label>
@@ -207,7 +207,7 @@ const MultiCity = ({
                 />
               </svg>
               <input
-                className="h-12 pl-10 border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none"
+                className="h-12 pl-10 border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none"
                 type="search"
                 placeholder="City or airport"
                 value={to2}
@@ -217,7 +217,7 @@ const MultiCity = ({
               />
               <label
                 htmlFor="text"
-                className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
+                className="absolute -top-3 left-2 px-1 bg-white text-sm"
               >
                 To
               </label>
@@ -241,7 +241,7 @@ const MultiCity = ({
                   />
                 </svg>
                 <input
-                  className={`h-12 pl-10 w-[380px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none cursor-pointer ${
+                  className={`h-12 pl-10 w-[380px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none cursor-pointer ${
                     departDate1 ? "font-semibold text-gray-800" : "font-normal"
                   } `}
                   type="search"
@@ -252,7 +252,7 @@ const MultiCity = ({
 
                 <label
                   htmlFor="text"
-                  className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
+                  className="absolute -top-3 left-2 px-1 bg-white text-sm"
                 >
                   Departure
                 </label>
@@ -289,7 +289,7 @@ const MultiCity = ({
                 />
               </svg>
               <input
-                className="h-12 pl-10 border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none"
+                className="h-12 pl-10 border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none"
                 type="search"
                 placeholder="City or airport"
                 value={from3}
@@ -299,7 +299,7 @@ const MultiCity = ({
               />
               <label
                 htmlFor="text"
-                className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
+                className="absolute -top-3 left-2 px-1 bg-white text-sm"
               >
                 From
               </label>
@@ -317,7 +317,7 @@ const MultiCity = ({
                 />
               </svg>
               <input
-                className="h-12 pl-10 border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none"
+                className="h-12 pl-10 border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none"
                 type="search"
                 placeholder="City or airport"
                 value={to3}
@@ -327,7 +327,7 @@ const MultiCity = ({
               />
               <label
                 htmlFor="text"
-                className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
+                className="absolute -top-3 left-2 px-1 bg-white text-sm"
               >
                 To
               </label>
@@ -351,7 +351,7 @@ const MultiCity = ({
                   />
                 </svg>
                 <input
-                  className={`h-12 pl-10 w-[380px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-gray-100 outline-none cursor-pointer ${
+                  className={`h-12 pl-10 w-[380px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none cursor-pointer ${
                     departDate2 ? "font-semibold text-gray-800" : "font-normal"
                   } `}
                   type="search"
@@ -362,7 +362,7 @@ const MultiCity = ({
 
                 <label
                   htmlFor="text"
-                  className="absolute -top-3 left-2 px-1 bg-gray-100 text-sm"
+                  className="absolute -top-3 left-2 px-1 bg-white text-sm"
                 >
                   Departure
                 </label>

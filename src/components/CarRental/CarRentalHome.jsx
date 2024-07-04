@@ -43,10 +43,17 @@ const CarRentalHome = () => {
         <CarsSearch />
       </div>
       <div className="relative top-[600px] bg-gray-100 pb-12 rounded-t-3xl ">
-        <div className="w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto pt-12 ">
+        <div className="text-3xl pb-3 pl-[350px] text-gray-800 font-bold pt-12">
+          <div>Popular car rental destinations</div>
+          <span className="text-gray-700 font-normal text-[18px]">
+            Here are the last-minute flight deals with the lowest prices. Act
+            fast – they all depart within the next three months.
+          </span>
+        </div>
+        <div className="w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto  ">
           {Object.keys(carCards).map((key) => {
             const card = carCards[key];
-            return <CarCards card={card} key={key}/>;
+            return <CarCards card={card} key={key} />;
           })}
         </div>
         <div>
