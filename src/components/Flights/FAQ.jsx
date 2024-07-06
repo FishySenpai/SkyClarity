@@ -9,7 +9,7 @@ const FAQ = ({faqs}) => {
   };
 
   return (
-    <div className="w-[1200px] mx-auto p-4 bg-white rounded-lg shadow-lg mt-12 ">
+    <div className="w-[1300px] mx-auto p-4 bg-white rounded-lg shadow-lg mt-12 ">
       <h2 className="text-2xl font-bold mb-4 text-gray-800">
         How to Book Cheap Flights?
       </h2>

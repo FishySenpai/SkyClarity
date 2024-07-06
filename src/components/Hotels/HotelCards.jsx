@@ -5,17 +5,17 @@ const HotelCards = ({hotel, index}) => {
     <Link to={`/hotels/hotel/${hotel.id}/${hotel.pricePerNight}`}>
       <div
         key={index}
-        className="mx-auto bg-white shadow-lg rounded-lg overflow-hidden mb-4"
+        className="mx-auto bg-white shadow-lg rounded-sm overflow-hidden mb-4 w-fit"
       >
         <div className="flex flex-col ">
-          <div className="w-[392px] h-[160px] overflow-hidden ">
+          <div className="w-[305px] h-[300px] overflow-hidden ">
             <img
               src={hotel.imageUrl || "https://via.placeholder.com/392x160"}
               alt="Hotel"
-              className="object-cover object-bottom w-full h-full"
+              className="object-cover  w-full h-full"
             />
           </div>
-          <div className="pl-2 pt-3 flex justify-between px-2">
+          <div className="pl-2 pt-3 flex flex-col justify-between px-2">
             <h2 className="text-xl font-bold text-gray-800">
               {hotel.hotelName}
             </h2>
