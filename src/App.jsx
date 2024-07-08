@@ -36,9 +36,9 @@ function App() {
           element={<Flights />}
         />
       </Routes>
-      <div className="absolute right-0 left-0 -bottom-[800px]">
+      {/* <div className="absolute right-0 left-0 -bottom-[800px]">
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }

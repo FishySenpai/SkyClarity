@@ -8,7 +8,7 @@ const HotelCards = ({hotel, index}) => {
         className="mx-auto bg-white shadow-lg rounded-sm overflow-hidden mb-4 w-fit"
       >
         <div className="flex flex-col ">
-          <div className="w-[305px] h-[300px] overflow-hidden ">
+          <div className="w-[340px] 2sm:w-[250px] 2sm:h-[220px] 1sm:w-[340px] 1md:w-[400px] 1lg:w-[305px] 1sm:h-[300px] overflow-hidden ">
             <img
               src={hotel.imageUrl || "https://via.placeholder.com/392x160"}
               alt="Hotel"
@@ -16,9 +16,10 @@ const HotelCards = ({hotel, index}) => {
             />
           </div>
           <div className="pl-2 pt-3 flex flex-col justify-between px-2">
-            <h2 className="text-xl font-bold text-gray-800">
+            <h2 className="text-xl font-bold text-gray-800  overflow-hidden text-ellipsis line-clamp-1">
               {hotel.hotelName}
             </h2>
+
             <p className="text-gray-600 flex flex-row mt-1">
               {Array(5)
                 .fill(0)
@@ -38,7 +39,7 @@ const HotelCards = ({hotel, index}) => {
                 ))}
             </p>
           </div>
-          <span className="text-gray-800 text-sm px-2">
+          <span className="text-gray-800 text-sm px-2 overflow-hidden text-ellipsis line-clamp-1">
             {hotel.distanceFromCityCenter}
           </span>
           <div className="px-2 flex pt-2 space-x-1">

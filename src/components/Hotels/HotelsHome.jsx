@@ -18,6 +18,32 @@ const HotelsHome = () => {
   const [totalScrollWidth, setTotalScrollWidth] = useState(0);
   const scrollContainerRef = useRef(null);
   // const [hotelsData, setHotelsData] = useState();
+  const [showLeftArrow, setShowLeftArrow] = useState(false);
+  const [showRightArrow, setShowRightArrow] = useState(false);
+  useEffect(() => {
+    const container = scrollContainerRef.current;
+
+    function handleScroll() {
+      if (container) {
+        // Check if there's content to scroll to the left
+        setShowLeftArrow(container.scrollLeft > 0);
+
+        // Check if there's content to scroll to the right
+        setShowRightArrow(
+          container.scrollLeft < container.scrollWidth - container.clientWidth
+        );
+      }
+    }
+
+    // Attach the scroll event listener
+    container.addEventListener("scroll", handleScroll);
+
+    // Initial check when the component mounts
+    handleScroll();
+
+    // Clean up the event listener when the component unmounts
+    return () => container.removeEventListener("scroll", handleScroll);
+  }, []);
   const scrollLeft = () => {
     const container = scrollContainerRef.current;
     const scrollAmount = 1475; // Adjust this value as needed
@@ -30,7 +56,7 @@ const HotelsHome = () => {
 
   const scrollRight = () => {
     const container = scrollContainerRef.current;
-    const scrollAmount = 1475; // Adjust this value as needed
+    const scrollAmount = 75; // Adjust this value as needed
     const newScrollPosition = Math.min(
       container.scrollWidth - container.clientWidth,
       scrollPosition + scrollAmount
@@ -43,40 +69,50 @@ const HotelsHome = () => {
 
   return (
     <div className="rounded text-gray-500 relative bg-gray-100 ">
-      <img src={hotelsImg} className="absolute inset-0 bg-cover bg-center" />
-      <div className="absolute top-52 left-[300px] ">
-        <div className="text-5xl pb-3 text-white font-bold">
-          Find the right hotel today
-        </div>
-        <div className="h-[160px]">
-          <HotelsSearch home={true} />
+      <img
+        src={hotelsImg}
+        className="absolute inset-0 w-full h-[578px] object-cover"
+      />
+
+      <div className="absolute top-36 1lg:top-52 w-full flex flex-col items-center">
+        <div className="w-full flex flex-col items-start lg:items-center">
+          <div className="h-[160px] w-full lg:w-fit relative">
+            <div className="text-4xl 1lg:text-5xl pb-3 text-white font-bold text-left ml-2">
+              Find the right hotel today
+            </div>
+            <HotelsSearch home={true} />
+          </div>
         </div>
       </div>
 
-      <div className="relative top-[600px] bg-gray-100 pb-12 rounded-3xl ">
-        <div className="text-3xl pb-3 pl-[300px] text-gray-800 font-bold pt-12">
+      <div className="relative top-[600px] bg-gray-100 pb-12 rounded-3xl  ">
+        <div className="text-3xl pb-3 text-gray-800 font-bold pt-12 w-[340px] 2sm:w-[540px]  1sm:w-[680px] 1md:w-[840px] 1lg:w-[982px] 1xl:w-[1350px] flex flex-col mx-auto 1xl:pl-5">
           <div>Top Luxury 5-star Hotels</div>
           <span className="text-gray-700 font-normal text-[18px]">
             The key to a great city break? A perfectly placed base. Check out
             the best luxury hotels across cities worldwide.
           </span>
         </div>
-        <div className="relative w-[1350px] flex space-x-6 mx-auto  overflow-hidden">
-          <button
-            onClick={scrollLeft}
-            className="z-50 absolute  left-0 top-1/3 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full shadow-lg"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 320 512"
-              className="h-6 w-6"
+        <div className="relative w-[340px] 2sm:w-[540px]  1sm:w-[680px] 1md:w-[840px] 1lg:w-[982px] 1xl:w-[1350px] flex space-x-6 mx-auto  overflow-hidden">
+          {showLeftArrow ? (
+            <button
+              onClick={scrollLeft}
+              className="z-50 absolute  left-0 top-1/3 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full shadow-lg"
             >
-              <path
-                d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
-                fill="rgb(31 41 55)"
-              />
-            </svg>
-          </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+                className="h-6 w-6"
+              >
+                <path
+                  d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+                  fill="rgb(31 41 55)"
+                />
+              </svg>
+            </button>
+          ) : (
+            ""
+          )}
           <div
             className="w-[1300px] flex space-x-6 mx-auto  overflow-hidden"
             ref={scrollContainerRef}
@@ -85,21 +121,25 @@ const HotelsHome = () => {
               <HotelCards hotel={hotel} />
             ))}
           </div>
-          <button
-            onClick={scrollRight}
-            className="z-50 absolute right-3 top-1/3 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full shadow-lg"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 320 512"
-              className="h-6 w-6"
+          {showRightArrow ? (
+            <button
+              onClick={scrollRight}
+              className="z-50 absolute right-3 top-1/3 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full shadow-lg"
             >
-              <path
-                d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
-                fill="rgb(31 41 55)"
-              />
-            </svg>
-          </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+                className="h-6 w-6"
+              >
+                <path
+                  d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
+                  fill="rgb(31 41 55)"
+                />
+              </svg>
+            </button>
+          ) : (
+            ""
+          )}
         </div>
         <div className="">
           <PopularDestinations />
