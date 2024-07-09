@@ -13,18 +13,24 @@ const Home = () => {
   const [selectedOption, setSelectedOption] = useState("round-trip");
   return (
     <div className=" text-white default-font relative bg-gray-50  ">
-      <div>
-        <img src={flightsImg} className="absolute inset-0 bg-cover bg-center" />
-        <div className="absolute top-52 left-[300px]">
-          <div className="text-5xl pb-3 text-white font-bold">
+      <img
+        src={flightsImg}
+        className="absolute inset-0 w-full h-[578px] object-cover"
+      />
+
+      <div className="absolute top-36 1lg:top-52 w-full flex flex-col items-center">
+        <div className="w-full flex flex-col items-start lg:items-center">
+          <div className="h-[160px] w-full lg:w-fit relative">
+            <div className="text-4xl 1lg:text-5xl pb-3 text-white font-bold text-left ml-2">
             Find cheap flight deals
-          </div>
-          <FlightsSearch
+            </div>
+           <FlightsSearch
             flight={flights}
             setFlights={setFlights}
             selectedOption={selectedOption}
             setSelectedOption={setSelectedOption}
           />
+          </div>
         </div>
       </div>
       <div
@@ -120,8 +126,6 @@ const Home = () => {
       ) : (
         ""
       )} */}
-
-
     </div>
   );
 };
