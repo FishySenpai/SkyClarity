@@ -19,8 +19,8 @@ const Home = () => {
       />
 
       <div className="absolute top-36 1lg:top-52 w-full flex flex-col items-center">
-        <div className="w-full flex flex-col items-start lg:items-center">
-          <div className="h-[160px] w-full lg:w-fit relative">
+        <div className="w-full flex flex-col items-start 1md:items-center">
+          <div className="h-[160px] w-full md:w-[800px] 1md:w-fit relative">
             <div className="text-4xl 1lg:text-5xl pb-3 text-white font-bold text-left ml-2">
             Find cheap flight deals
             </div>
