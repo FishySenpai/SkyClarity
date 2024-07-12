@@ -207,7 +207,7 @@ const FlightsSearch = ({
   return (
     <div>
       {" "}
-      <div className="bg-white rounded-lg text-gray-500 ">
+      <div className=" bg-white rounded-lg text-gray-500 ">
         <div className="flex items-center space-x-4 pt-4 pl-6 text-sm">
           <label className="flex items-center">
             <input
@@ -279,7 +279,7 @@ const FlightsSearch = ({
             />
           ) : (
             <>
-              <div className="flex flex-row space-x-5">
+              <div className="flex flex-row space-x-5 w-full">
                 <div className="relative h-fit w-full ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -339,7 +339,7 @@ const FlightsSearch = ({
                   </label>
                 </div>
               </div>
-              <div className="flex flex-row space-x-5">
+              <div className="flex flex-row space-x-5 w-full">
                 {" "}
                 <div ref={departPopupRef} className="w-full">
                   <div
@@ -361,7 +361,7 @@ const FlightsSearch = ({
                       />
                     </svg>
                     <input
-                      className={`h-12 pl-10 w-full 1lg:w-[220px] 1xl:w-fit border rounded px-2 border-gray-400 focus:border-blue-500 bg-white outline-none cursor-pointer ${
+                      className={`h-12 pl-10 w-full 1lg:w-[220px]  border rounded px-2 border-gray-400 focus:border-blue-500 bg-white outline-none cursor-pointer ${
                         departDate
                           ? "font-semibold text-gray-800"
                           : "font-normal"
@@ -418,7 +418,7 @@ const FlightsSearch = ({
                       />
                     </svg>
                     <input
-                      className={`h-12 pl-10 w-full 1lg:w-[220px] 1xl:w-fit border rounded px-2 border-gray-400 focus:border-blue-500 bg-white outline-none cursor-pointer  ${
+                      className={`h-12 pl-10 w-full 1lg:w-[220px]  border rounded px-2 border-gray-400 focus:border-blue-500 bg-white outline-none cursor-pointer  ${
                         returnDate
                           ? "font-semibold text-gray-800"
                           : "font-normal"
@@ -476,7 +476,7 @@ const FlightsSearch = ({
                 />
               </svg>
               <input
-                className="h-12  pl-10 w-full 1lg:w-[220px] 1xl:w-fit border cursor-pointer text-[16px] pb-2 rounded px-2 text-gray-800 font-semibold  border-gray-400 focus:border-blue-500  outline-none"
+                className="h-12  pl-10 w-full 1lg:w-[220px] border cursor-pointer text-[16px] pb-2 rounded px-2 text-gray-800 font-semibold  border-gray-400 focus:border-blue-500  outline-none"
                 type="search"
                 value={adults + children + travelers}
                 onFocus={() => setIsClicked(true)}

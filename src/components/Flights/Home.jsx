@@ -20,16 +20,16 @@ const Home = () => {
 
       <div className="absolute top-36 1lg:top-52 w-full flex flex-col items-center">
         <div className="w-full flex flex-col items-start 1md:items-center">
-          <div className="h-[160px] w-full md:w-[800px] 1md:w-fit relative">
+          <div className="h-[160px] w-full 1md:w-fit relative">
             <div className="text-4xl 1lg:text-5xl pb-3 text-white font-bold text-left ml-2">
-            Find cheap flight deals
+              Find cheap flight deals
             </div>
-           <FlightsSearch
-            flight={flights}
-            setFlights={setFlights}
-            selectedOption={selectedOption}
-            setSelectedOption={setSelectedOption}
-          />
+            <FlightsSearch
+              flight={flights}
+              setFlights={setFlights}
+              selectedOption={selectedOption}
+              setSelectedOption={setSelectedOption}
+            />
           </div>
         </div>
       </div>
@@ -38,15 +38,15 @@ const Home = () => {
           selectedOption === "multi-city" ? "top-[650px]" : "top-[600px]"
         }`}
       >
-        <div className="text-3xl pb-3 pl-[350px] text-gray-800 font-bold pt-12">
+        <div className="text-3xl pb-3 text-gray-800 font-bold pt-12 pl-6 sm:pl-0 sm:w-[600px] 1sm:w-[680px]  1md:w-[820px] lg:w-[935px] 1lg:w-[935px] 1xl:w-[1240px] flex flex-col 
+        mx-auto 1xl:pl-5">
           <div>Popular Internaional Flight Deals</div>
           <span className="text-gray-700 font-normal text-[18px]">
             Here are the last-minute flight deals with the lowest prices. Act
             fast – they all depart within the next three months.
           </span>
         </div>
-
-        <div className="w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto ">
+        <div className="sm:w-[600px] 1sm:w-[680px] 1md:w-[830px] lg:w-[950px] xl:w-[1200px] grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 mx-auto ">
           {Object.keys(flightCards).map((key) => {
             const card = flightCards[key];
             return <FlightCards card={card} key={key} />;

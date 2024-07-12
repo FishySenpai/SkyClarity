@@ -29,9 +29,9 @@ const convertDate = (dateString) => {
       to={`/flights/search/${card.from}/${card.fromId}/${card.to}/${card.toId}/${departdate}/${returndate}`}
     >
       {" "}
-      <div className="mx-auto  bg-white shadow-lg rounded-lg overflow-hidden">
+      <div className="mx-auto  bg-white shadow-lg rounded-lg overflow-hidden w-[90%] sm:w-[300px] 1sm:w-[332px] 1md:w-[392px] lg:w-[450px] xl:w-[392px]">
         <div className=" flex flex-col ">
-          <div className="w-[392px] h-[160px] overflow-hidden relative ">
+          <div className="w-full h-[160px] overflow-hidden relative ">
             {" "}
             <img
               src={card.imageURL}
@@ -44,7 +44,7 @@ const convertDate = (dateString) => {
             <p className="text-gray-600">{card.country}</p>
           </div>
         </div>
-        <div className="py-4 bg-blue-50 border-t border-gray-200">
+        <div className="py-4 bg-blue-50 border-t border-gray-200 sm:text-sm 1sm:text-md">
           <div className="flex justify-between items-center px-2">
             <div className=" flex flex-row space-x-2">
               <div className="w-[66px] h-[40px] flex justify-center">
@@ -75,8 +75,8 @@ const convertDate = (dateString) => {
             {card.flightClass}
           </span>
           <div className="text-right flex flex-row justify-end items-end pt-2 pr-2">
-            <span className="text-gray-600 text-right ">From</span>
-            <span className="font-semibold text-gray-800 text-xl pl-0.5">
+            <span className="text-gray-600 text-right mb-1 1sm:mb-0">From</span>
+            <span className="font-semibold text-gray-800 text-lg 1sm:text-xl pl-0.5">
               {card.price}
             </span>
             <svg
