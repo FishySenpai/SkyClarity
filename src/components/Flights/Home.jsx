@@ -15,13 +15,12 @@ const Home = () => {
     <div className=" text-white default-font relative bg-gray-50  ">
       <img
         src={flightsImg}
-        className="absolute inset-0 w-full h-[578px] object-cover"
+        className="absolute inset-0 w-full h-[678px] object-cover"
       />
-
-      <div className="absolute top-36 1lg:top-52 w-full flex flex-col items-center">
-        <div className="w-full flex flex-col items-start 1md:items-center">
-          <div className="h-[160px] w-full 1md:w-fit relative">
-            <div className="text-4xl 1lg:text-5xl pb-3 text-white font-bold text-left ml-2">
+      <div className="absolute top-36 lg:top-52 w-full flex flex-col items-center">
+        <div className="w-fit flex flex-col items-center">
+          <div className="h-[160px] w-full 1sm:w-fit relative ">
+            <div className="text-4xl 1lg:text-5xl pb-3 text-white font-bold text-left w-[95%]">
               Find cheap flight deals
             </div>
             <FlightsSearch
@@ -38,8 +37,10 @@ const Home = () => {
           selectedOption === "multi-city" ? "top-[650px]" : "top-[600px]"
         }`}
       >
-        <div className="text-3xl pb-3 text-gray-800 font-bold pt-12 pl-6 sm:pl-0 sm:w-[600px] 1sm:w-[680px]  1md:w-[820px] lg:w-[935px] 1lg:w-[935px] 1xl:w-[1240px] flex flex-col 
-        mx-auto 1xl:pl-5">
+        <div
+          className="text-3xl pb-3 text-gray-800 font-bold pt-12 pl-6 sm:pl-0 sm:w-[600px] 1sm:w-[680px]  1md:w-[820px] lg:w-[935px] 1lg:w-[935px] 1xl:w-[1240px] flex flex-col 
+        mx-auto 1xl:pl-5"
+        >
           <div>Popular Internaional Flight Deals</div>
           <span className="text-gray-700 font-normal text-[18px]">
             Here are the last-minute flight deals with the lowest prices. Act

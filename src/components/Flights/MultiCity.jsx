@@ -72,7 +72,7 @@ const MultiCity = ({
               />
             </svg>
             <input
-              className="h-12 pl-10 border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none"
+              className="h-12 pl-10 w-full border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none"
               type="search"
               placeholder="City or airport"
               value={from}
@@ -100,7 +100,7 @@ const MultiCity = ({
               />
             </svg>
             <input
-              className="h-12 pl-10 border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none"
+              className="h-12 pl-10 w-full border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none"
               type="search"
               placeholder="City or airport"
               value={to}
@@ -134,7 +134,7 @@ const MultiCity = ({
                 />
               </svg>
               <input
-                className={`h-12 pl-10 w-[380px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none cursor-pointer ${
+                className={`h-12 pl-10 w-full xl:w-[400px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none cursor-pointer ${
                   departDate ? "font-semibold text-gray-800" : "font-normal"
                 } `}
                 type="search"
@@ -179,7 +179,7 @@ const MultiCity = ({
                 />
               </svg>
               <input
-                className="h-12 pl-10 border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none"
+                className="h-12 pl-10 border w-full rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none"
                 type="search"
                 placeholder="City or airport"
                 value={from2}
@@ -207,7 +207,7 @@ const MultiCity = ({
                 />
               </svg>
               <input
-                className="h-12 pl-10 border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none"
+                className="h-12 pl-10 w-full border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none"
                 type="search"
                 placeholder="City or airport"
                 value={to2}
@@ -241,7 +241,7 @@ const MultiCity = ({
                   />
                 </svg>
                 <input
-                  className={`h-12 pl-10 w-[380px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none cursor-pointer ${
+                  className={`h-12 pl-10 w-full xl:w-[400px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none cursor-pointer ${
                     departDate1 ? "font-semibold text-gray-800" : "font-normal"
                   } `}
                   type="search"
@@ -289,7 +289,7 @@ const MultiCity = ({
                 />
               </svg>
               <input
-                className="h-12 pl-10 border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none"
+                className="h-12 pl-10 w-full border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none"
                 type="search"
                 placeholder="City or airport"
                 value={from3}
@@ -317,7 +317,7 @@ const MultiCity = ({
                 />
               </svg>
               <input
-                className="h-12 pl-10 border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none"
+                className="h-12 pl-10 border w-full rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none"
                 type="search"
                 placeholder="City or airport"
                 value={to3}
@@ -334,7 +334,7 @@ const MultiCity = ({
             </div>
             <div ref={departPopupRef2}>
               <div
-                className="relative cursor-pointer h-fit"
+                className="relative cursor-pointer h-fit w-full"
                 onClick={() => {
                   setDepartToggle2(!departToggle2);
                   setCabinDrop(false);
@@ -351,7 +351,7 @@ const MultiCity = ({
                   />
                 </svg>
                 <input
-                  className={`h-12 pl-10 w-[380px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none cursor-pointer ${
+                  className={`h-12 pl-10 1md:min-w-[240px] w-full xl:w-[400px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-whiteoutline-none cursor-pointer ${
                     departDate2 ? "font-semibold text-gray-800" : "font-normal"
                   } `}
                   type="search"
