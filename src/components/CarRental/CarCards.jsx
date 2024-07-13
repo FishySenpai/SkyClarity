@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 const CarCards = ({card, key}) => {
   return (
     <Link to={``}>
-      <div className="mx-auto  bg-white shadow-lg rounded-lg overflow-hidden">
+      <div className="mx-auto  bg-white shadow-lg rounded-lg overflow-hidden w-[90%] sm:w-[300px] 1sm:w-[332px] 1md:w-[392px] lg:w-[450px] xl:w-[392px]">
         <div
           key={key}
           className="bg-white shadow-lg rounded-lg overflow-hidden"
         >
-          <div className="flex flex-col w-[392px] h-[170px] overflow-hidden">
+          <div className="flex flex-col w-full h-[170px] overflow-hidden">
             <img
               src={card.imageURL}
               alt={`Car card in ${card.location}`}

@@ -58,23 +58,31 @@ const CarRentalHome = () => {
     <div className="bg-gray-100 rounded text-gray-500 relative">
       <img
         src={carImg}
-        className="h-[622px] absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 w-full h-[678px] object-cover"
       />
-      <div className="absolute top-52 left-[300px]">
-        <div className="text-5xl pb-3 text-white font-bold">
-          Find the best car rental deals
+      <div className="absolute top-36 lg:top-52 w-full flex flex-col items-center">
+        <div className="w-fit flex flex-col items-center">
+          <div className="h-[160px] w-full 1sm:w-fit relative ">
+            <div className="text-4xl 1lg:text-5xl pb-3 text-white font-bold text-left w-[95%]">
+              Find cheap flight deals
+            </div>
+            <CarsSearch
+            />
+          </div>
         </div>
-        <CarsSearch />
       </div>
       <div className="relative top-[600px] bg-gray-100 pb-12 rounded-t-3xl ">
-        <div className="text-3xl pb-3 pl-[350px] text-gray-800 font-bold pt-12">
+        <div
+          className="text-3xl pb-3 text-gray-800 font-bold pt-12 pl-6 sm:pl-0 sm:w-[600px] 1sm:w-[680px]  1md:w-[820px] lg:w-[935px] 1lg:w-[935px] 1xl:w-[1240px] flex flex-col 
+        mx-auto 1xl:pl-5"
+        >
           <div>Popular car rental destinations</div>
           <span className="text-gray-700 font-normal text-[18px]">
             Here are the last-minute flight deals with the lowest prices. Act
             fast – they all depart within the next three months.
           </span>
         </div>
-        <div className="w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto  ">
+        <div className="sm:w-[600px] 1sm:w-[680px] 1md:w-[830px] lg:w-[950px] xl:w-[1200px] grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 mx-auto  ">
           {Object.keys(carCards).map((key) => {
             const card = carCards[key];
             return <CarCards card={card} key={key} />;
@@ -134,14 +142,15 @@ const CarRentalHome = () => {
                 />
                 <h3 className="text-xl font-semibold mb-2">Customer Support</h3>
                 <p className="text-gray-600">
-                  One-on-one support in multiple languages. Providing customers with best user experience.
+                  One-on-one support in multiple languages. Providing customers
+                  with best user experience.
                 </p>
               </div>
             </div>
           </div>
         </div>
         <div>
-          <CarRentalTips/>
+          <CarRentalTips />
         </div>
       </div>
     </div>
