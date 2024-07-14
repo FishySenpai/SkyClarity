@@ -58,16 +58,16 @@ const Flights = () => {
     }
   };
 
-  useEffect(() => {
-    if (
-      isValidParam(fromId) &&
-      isValidParam(toId) &&
-      isValidParam(departdate) &&
-      isValidParam(returndate)
-    ) {
-      fetchReturnFlights();
-    }
-  }, [fromId, toId, departdate, returndate]);
+  // useEffect(() => {
+  //   if (
+  //     isValidParam(fromId) &&
+  //     isValidParam(toId) &&
+  //     isValidParam(departdate) &&
+  //     isValidParam(returndate)
+  //   ) {
+  //     fetchReturnFlights();
+  //   }
+  // }, [fromId, toId, departdate, returndate]);
 
   useEffect(() => {
     if (flights && flights.itineraries) {
@@ -119,21 +119,25 @@ const Flights = () => {
   if (flights) {
     return (
       <div className="bg-gray-50">
-        <div>
-          <div className="h-[300px] absolute inset-0 top-[65px] bg-cover bg-center overflow-hidden">
+        <div className="relative">
+          <div className="h-[600px] lg:h-[300px] absolute inset-0  bg-cover bg-center overflow-hidden">
             <img src={flightsImg} className="" />
           </div>
-          <div className="absolute top-32 left-[300px]">
-            <FlightsSearch
-              flight={flights}
-              setFlights={setFlights}
-              selectedOption={selectedOption}
-              setSelectedOption={setSelectedOption}
-            />
+          <div className="absolute top-36 lg:top-16 z-50 w-full flex flex-col items-center">
+            <div className="w-fit flex flex-col items-center">
+              <div className="h-[160px] w-full 1sm:w-fit relative ">
+                <FlightsSearch
+                  flight={flights}
+                  setFlights={setFlights}
+                  selectedOption={selectedOption}
+                  setSelectedOption={setSelectedOption}
+                />
+              </div>
+            </div>
           </div>
         </div>
-        <div className="flex flex-col absolute top-[300px] pl-[267px] bg-gray-100 pt-12 rounded-t-3xl w-full">
-          <div className="relative h-[60px] w-[1230px] ml-12  rounded-t-lg overflow-hidden">
+        <div className="flex flex-col absolute pt-[150px] top-[450px] lg:top-[300px] justify-center items-center mx-auto 1lg:pr-[50px] bg-gray-100 lg:pt-12 rounded-t-3xl w-full">
+          <div className="relative h-[60px] w-[980px] 1lg:w-[1050px] xl:w-[1230px] 1lg:ml-12  rounded-t-lg overflow-hidden">
             <img
               src={flights?.destinationImageUrl}
               alt="Destination"
@@ -144,12 +148,12 @@ const Flights = () => {
             </div>
           </div>
 
-          <div className="flex flex-row ">
-            <div>
+          <div className="flex flex-row w-[980px] 1lg:w-[1050px] xl:w-[1230px]">
+            <div className="hidden 1lg:block">
               <FlightsFilter flights={flights} />
             </div>
             <div className="flex flex-col cursor-pointer">
-              <div className="flex flex-row rounded-lg px-4 space-x-2 py-2 pt-4 mb-2 text-gray-700 bg-white">
+              <div className="flex flex-row rounded-lg px-4 space-x-2 py-2 pt-4 mb-2 text-gray-700 bg-white w-[980px] 1lg:w-[743px] xl:w-[880px]">
                 <div
                   className={`pl-3 px-[164px] border-b-4 border-white hover:border-gray-600 ${
                     priceTag === "Best" ? "border-gray-700" : ""
@@ -200,8 +204,8 @@ const Flights = () => {
               <div>
                 {console.log(flights)}
                 {flights?.itineraries.slice(0, 20).map((flight, index) => (
-                  <div className=" rounded text-gray-700 w-[880px] mb-2 bg-white  flex flex-row divide-x-2 divide-gray-300">
-                    <div className="w-[680px] py-4">
+                  <div className=" rounded text-gray-700 w-[980px] 1lg:w-[743px] xl:w-[880px] mb-2 bg-white  flex flex-row divide-x-2 divide-gray-300">
+                    <div className="w-[780px] 1lg:w-[590px] xl:w-[680px] py-4">
                       {flight.legs?.map((leg, index) => (
                         <div key={index} className="flex flex-col  ">
                           <div>

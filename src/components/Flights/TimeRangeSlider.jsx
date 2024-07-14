@@ -85,7 +85,7 @@ const TimeRangeSlider = ({ min, max, onChange, inputType }) => {
       />
 
       <div className="slider ">
-        <div className="slider__track" />
+        <div className="slider__track " />
         <div ref={range} className="slider__range" />
         {inputType === "time" ? (
           <>
