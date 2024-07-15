@@ -137,7 +137,7 @@ const Flights = () => {
           </div>
         </div>
         <div className="flex flex-col absolute pt-[150px] top-[450px] lg:top-[300px] justify-center items-center mx-auto 1lg:pr-[50px] bg-gray-100 lg:pt-12 rounded-t-3xl w-full">
-          <div className="relative h-[60px] w-[980px] 1lg:w-[1050px] xl:w-[1230px] 1lg:ml-12  rounded-t-lg overflow-hidden">
+          <div className="relative h-[60px] w-full sm:w-[600px] 1sm:w-[700px] 1md:w-[800px] lg:w-[980px] 1lg:w-[1050px] xl:w-[1230px] 1lg:ml-12  rounded-t-lg overflow-hidden">
             <img
               src={flights?.destinationImageUrl}
               alt="Destination"
@@ -148,35 +148,35 @@ const Flights = () => {
             </div>
           </div>
 
-          <div className="flex flex-row w-[980px] 1lg:w-[1050px] xl:w-[1230px]">
+          <div className="flex flex-row w-full sm:w-fit 1lg:w-[1050px] xl:w-[1230px]">
             <div className="hidden 1lg:block">
               <FlightsFilter flights={flights} />
             </div>
             <div className="flex flex-col cursor-pointer">
-              <div className="flex flex-row rounded-lg px-4 space-x-2 py-2 pt-4 mb-2 text-gray-700 bg-white w-[980px] 1lg:w-[743px] xl:w-[880px]">
+              <div className="flex flex-row rounded-lg px-4 space-x-2 py-2 pt-4 mb-2 text-gray-700 bg-white overflow-hidden w-full sm:w-[600px] 1sm:w-[700px] 1md:w-[800px] lg:w-[980px] 1lg:w-[743px] xl:w-[880px]">
                 <div
-                  className={`pl-3 px-[164px] border-b-4 border-white hover:border-gray-600 ${
+                  className={`border-b-4 border-white hover:border-gray-600 ${
                     priceTag === "Best" ? "border-gray-700" : ""
-                  }`}
+                  } flex-1`}
                   onClick={() => {
                     setPriceTag("Best");
                   }}
                 >
-                  <div className={` text-lg font-semibold `}>Best</div>
+                  <div className="text-lg font-semibold">Best</div>
                   <div className="flex flex-row">
                     <div>${bestPrice?.toFixed(0)} . </div>
                     <div className="pl-1">{formatDuration(bestDuration)}</div>
                   </div>
                 </div>
                 <div
-                  className={` pl-3 px-[168px] border-b-4 border-white hover:border-gray-600 ${
+                  className={`border-b-4 border-white hover:border-gray-600 ${
                     priceTag === "Cheapest" ? "border-gray-700" : ""
-                  } `}
+                  } flex-1`}
                   onClick={() => {
                     setPriceTag("Cheapest");
                   }}
                 >
-                  <div className=" text-lg font-semibold">Cheapest</div>
+                  <div className="text-lg font-semibold">Cheapest</div>
                   <div className="flex flex-row">
                     <div>${cheapestMinPrice.toFixed(0)} . </div>
                     <div className="pl-1">
@@ -185,14 +185,14 @@ const Flights = () => {
                   </div>
                 </div>
                 <div
-                  className={`pl-3 px-[164px] border-b-4 border-white hover:border-gray-600 ${
+                  className={`border-b-4 border-white hover:border-gray-600 ${
                     priceTag === "Fastest" ? "border-gray-700" : ""
-                  }`}
+                  } flex-1`}
                   onClick={() => {
                     setPriceTag("Fastest");
                   }}
                 >
-                  <div className=" text-lg font-semibold">Fastest</div>
+                  <div className="text-lg font-semibold">Fastest</div>
                   <div className="flex flex-row">
                     <div>{shortestMinPrice} . </div>
                     <div className="pl-1">
@@ -201,13 +201,14 @@ const Flights = () => {
                   </div>
                 </div>
               </div>
+
               <div>
                 {console.log(flights)}
                 {flights?.itineraries.slice(0, 20).map((flight, index) => (
-                  <div className=" rounded text-gray-700 w-[980px] 1lg:w-[743px] xl:w-[880px] mb-2 bg-white  flex flex-row divide-x-2 divide-gray-300">
-                    <div className="w-[780px] 1lg:w-[590px] xl:w-[680px] py-4">
+                  <div className=" rounded text-gray-700 w-full sm:w-[600px] 1sm:w-[700px] 1md:w-[800px] lg:w-[980px] 1lg:w-[743px] xl:w-[880px] mb-2 bg-white  flex flex-col divide-y-2 1sm:divide-y-0 1sm:flex-row 1sm:divide-x-2 divide-gray-300">
+                    <div className="w-full 1sm:w-[600px] 1md:w-[640px] lg:w-[780px] 1lg:w-[590px] xl:w-[680px] pb-4 pt-2">
                       {flight.legs?.map((leg, index) => (
-                        <div key={index} className="flex flex-col  ">
+                        <div key={index} className="flex flex-col  relative">
                           <div>
                             {["shortest", "cheapest"].includes(
                               flight?.tags?.[0]
@@ -218,14 +219,14 @@ const Flights = () => {
                             )}
                           </div>
 
-                          <div className="flex flex-row ">
+                          <div className="flex flex-row absolute top-10">
                             <div className="flex flex-row px-4 w-[220px]">
                               <img
                                 className="h-[40px] w-[50px] "
                                 src={leg.carriers?.marketing[0].logoUrl}
                                 alt=""
                               />
-                              <div className="pr-3 pl-4 pt-2 text-lg">
+                              <div className="xl:pr-3 pl-4 pt-2 text-lg ">
                                 {leg.carriers?.marketing[0].name}
                               </div>
                             </div>
@@ -266,11 +267,15 @@ const Flights = () => {
                                       />
                                     </svg>
                                   </div>
-                                  ----------
+                                  <div className="w-[50px] xl:w-[65px] h-4 overflow-hidden">
+                                    ----------
+                                  </div>
                                   <div className="text-red-400 text-sm bg-gray-200 rounded">
                                     {leg.stopCount} stops
                                   </div>
-                                  ----------
+                                  <div className="w-[50px] xl:w-[65px] h-4 overflow-hidden">
+                                    ----------
+                                  </div>
                                   <div className="w-2 h-2 mt-[9px]">
                                     <svg
                                       xmlns="http://www.w3.org/2000/svg"
@@ -321,7 +326,7 @@ const Flights = () => {
                         </div>
                       ))}
                     </div>
-                    <div className="pl-8 py-8">
+                    <div className="pl-8 py-8 flex flex-col items-end justify-end">
                       <div className="text-lg font-semibold  mt-3 ">
                         US {flight.price.formatted}
                       </div>

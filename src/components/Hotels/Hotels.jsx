@@ -6,7 +6,7 @@ import hotelsDataJson from "../../hotels.json";
 import HotelsSearch from "./HotelsSearch";
 import { useParams } from "react-router-dom";
 const Hotels = () => {
-  const [hotelsData, setHotelsData] = useState();
+  const [hotelsData, setHotelsData] = useState(hotelsDataJson);
   const { destination, destinationId, checkIn, checkOut } = useParams();
   const isValidParam = (param) => {
     return !param.startsWith(":") && param.trim() !== "";
