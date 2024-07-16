@@ -152,7 +152,7 @@ const Flights = () => {
             <div className="hidden 1lg:block">
               <FlightsFilter flights={flights} />
             </div>
-            <div className="flex flex-col cursor-pointer">
+            <div className="flex flex-col cursor-pointer w-full">
               <div className="flex flex-row rounded-lg px-4 space-x-2 py-2 pt-4 mb-2 text-gray-700 bg-white overflow-hidden w-full sm:w-[600px] 1sm:w-[700px] 1md:w-[800px] lg:w-[980px] 1lg:w-[743px] xl:w-[880px]">
                 <div
                   className={`border-b-4 border-white hover:border-gray-600 ${
@@ -202,36 +202,38 @@ const Flights = () => {
                 </div>
               </div>
 
-              <div>
+              <div className="">
                 {console.log(flights)}
                 {flights?.itineraries.slice(0, 20).map((flight, index) => (
-                  <div className=" rounded text-gray-700 w-full sm:w-[600px] 1sm:w-[700px] 1md:w-[800px] lg:w-[980px] 1lg:w-[743px] xl:w-[880px] mb-2 bg-white  flex flex-col divide-y-2 1sm:divide-y-0 1sm:flex-row 1sm:divide-x-2 divide-gray-300">
-                    <div className="w-full 1sm:w-[600px] 1md:w-[640px] lg:w-[780px] 1lg:w-[590px] xl:w-[680px] pb-4 pt-2">
-                      {flight.legs?.map((leg, index) => (
-                        <div key={index} className="flex flex-col  relative">
-                          <div>
-                            {["shortest", "cheapest"].includes(
-                              flight?.tags?.[0]
-                            ) && (
-                              <div className="ml-6 px-2 py-1 bg-gray-200 capitalize text-gray-700 rounded-sm w-fit mb-4">
-                                {flight.tags[0]}
-                              </div>
-                            )}
+                  <div className=" rounded text-gray-700 w-full  1sm:w-[700px] 1md:w-[800px] lg:w-[980px] 1lg:w-[743px] xl:w-[880px] mb-2 bg-white  flex flex-col divide-y-2 1sm:divide-y-0 1sm:flex-row 1sm:divide-x-2 divide-gray-300">
+                    <div className="w-full 1sm:w-[520px] 1md:w-[640px] lg:w-[780px] 1lg:w-[590px] xl:w-[680px] pb-4 pt-2 ">
+                      <div>
+                        {["shortest", "cheapest"].includes(
+                          flight.legs[0]?.tags?.[0]
+                        ) && (
+                          <div className="ml-6 px-2 py-1 bg-gray-200 capitalize text-gray-700 rounded-sm w-fit mb-4">
+                            {flight.legs[0].tags[0]}
                           </div>
-
-                          <div className="flex flex-row absolute top-10">
-                            <div className="flex flex-row px-4 w-[220px]">
+                        )}
+                      </div>
+                      {flight.legs?.map((leg, index) => (
+                        <div
+                          key={index}
+                          className="flex flex-col  relative min-h-[80px]"
+                        >
+                          <div className="flex flex-row absolute top-10 justify-between">
+                            <div className="flex flex-row px-4 1md:w-[220px] lg:w-[300px] 1lg:w-[220px]">
                               <img
                                 className="h-[40px] w-[50px] "
                                 src={leg.carriers?.marketing[0].logoUrl}
                                 alt=""
                               />
-                              <div className="xl:pr-3 pl-4 pt-2 text-lg ">
+                              <div className="xl:pr-3 pl-4 pt-2 text-lg hidden 2sm:block 1sm:hidden 1md:block h-10 overflow-hidden">
                                 {leg.carriers?.marketing[0].name}
                               </div>
                             </div>
                             <div className="pr-4">
-                              <div className="text-lg font-semibold">
+                              <div className="sm:text-lg font-semibold">
                                 {new Date(leg.departure).toLocaleTimeString(
                                   [],
                                   {
@@ -267,13 +269,13 @@ const Flights = () => {
                                       />
                                     </svg>
                                   </div>
-                                  <div className="w-[50px] xl:w-[65px] h-4 overflow-hidden">
+                                  <div className="w-[25px] 2sm:w-[50px] xl:w-[65px] h-4 overflow-hidden">
                                     ----------
                                   </div>
                                   <div className="text-red-400 text-sm bg-gray-200 rounded">
                                     {leg.stopCount} stops
                                   </div>
-                                  <div className="w-[50px] xl:w-[65px] h-4 overflow-hidden">
+                                  <div className="w-[25px] 2sm:w-[50px] xl:w-[65px] h-4 overflow-hidden">
                                     ----------
                                   </div>
                                   <div className="w-2 h-2 mt-[9px]">
@@ -313,7 +315,7 @@ const Flights = () => {
                               </svg>
                             </div>
                             <div className="flex flex-col pl-4">
-                              <div className=" text-lg font-semibold">
+                              <div className=" sm:text-lg font-semibold">
                                 {new Date(leg.arrival).toLocaleTimeString([], {
                                   hour: "numeric",
                                   minute: "2-digit",
@@ -326,7 +328,7 @@ const Flights = () => {
                         </div>
                       ))}
                     </div>
-                    <div className="pl-8 py-8 flex flex-col items-end justify-end">
+                    <div className="pr-5 pt-4 pb-8 1sm:pr-0 1sm:pl-8 1sm:py-8 flex flex-col items-end justify-end">
                       <div className="text-lg font-semibold  mt-3 ">
                         US {flight.price.formatted}
                       </div>

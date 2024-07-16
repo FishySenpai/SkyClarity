@@ -1,1927 +1,2287 @@
 {
-  "token": "eyJhIjoiMSIsImMiOjAsImkiOjAsImNjIjoiZWNvbm9teSIsIm8iOiJUWU9BIiwiZCI6IklTQiIsImQxIjoiMjAyNC0wNy0wMyJ9",
-  "context": {
-    "status": "incomplete",
-    "sessionId": "ClQIARJQCk4KJGJjNjMwMzY0LTZjOTItNDEyZi05NGE5LTZhMzAzZmY0YmEyZBACGiRkYzZjMGIyZi1lMTk0LTQ0MDUtYWMzNS1mYzNiMWFlMzQ5ZjISKHVzc185ODc5Mjc3ZC0xNDJkLTQyYzAtYjVjMi05ZDFjMmEyMDU3Mjc=",
-    "totalResults": 10
-  },
-  "itineraries": [
-    {
-      "id": "12234-2407032250--31939-1-12569-2407050150",
-      "price": {
-        "raw": 494.24,
-        "formatted": "$495",
-        "pricingOptionId": "vCban5KREQcr"
-      },
-      "legs": [
+    "token": "eyJhIjoiMSIsImMiOjAsImkiOjAsImNjIjoiZWNvbm9teSIsIm8iOiJQQVJJIiwiZCI6IlRZT0EiLCJkMSI6IjIwMjQtMDctMjQiLCJkMiI6IjIwMjQtMDgtMTMifQ==",
+    "context": {
+        "status": "incomplete",
+        "sessionId": "ClQIARJQCk4KJDE2ZjgxZWEzLWJlMGItNDMwYy04NmU0LWJjOGNlODkxZDdlZRACGiQwZWMzNjQyMi03YTU3LTRiN2YtOGJlNC02YjIzMmY4YmM1ODQSKHVzc184NjJmNzQzNC1mNTE2LTRkN2EtOTk0Mi1jYTczNTRhN2NmN2I=",
+        "totalResults": 10
+    },
+    "itineraries": [
         {
-          "id": "12234-2407032250--31939-1-12569-2407050150",
-          "origin": {
-            "id": "HND",
-            "entityId": "128667143",
-            "name": "Tokyo Haneda",
-            "displayCode": "HND",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 1860,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-07-03T22:50:00",
-          "arrival": "2024-07-05T01:50:00",
-          "timeDeltaInDays": 2,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -31939,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/QR.png",
-                "name": "Qatar Airways"
-              }
+            "id": "10413-2407240925--32677-0-12234-2407250555|12234-2408130905--32677-0-10413-2408131650",
+            "price": {
+                "raw": 1300.91,
+                "formatted": "$1,301",
+                "pricingOptionId": "ExlLPKIqWSfP"
+            },
+            "legs": [
+                {
+                    "id": "10413-2407240925--32677-0-12234-2407250555",
+                    "origin": {
+                        "id": "CDG",
+                        "entityId": "95565041",
+                        "name": "Paris Charles de Gaulle",
+                        "displayCode": "CDG",
+                        "city": "Paris",
+                        "country": "France",
+                        "isHighlighted": false
+                    },
+                    "destination": {
+                        "id": "HND",
+                        "entityId": "128667143",
+                        "name": "Tokyo Haneda",
+                        "displayCode": "HND",
+                        "city": "Tokyo",
+                        "country": "Japan",
+                        "isHighlighted": false
+                    },
+                    "durationInMinutes": 810,
+                    "stopCount": 0,
+                    "isSmallestStops": false,
+                    "departure": "2024-07-24T09:25:00",
+                    "arrival": "2024-07-25T05:55:00",
+                    "timeDeltaInDays": 1,
+                    "carriers": {
+                        "marketing": [
+                            {
+                                "id": -32677,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
+                                "name": "Air France"
+                            }
+                        ],
+                        "operationType": "fully_operated"
+                    },
+                    "segments": [
+                        {
+                            "id": "10413-12234-2407240925-2407250555--32677",
+                            "origin": {
+                                "flightPlaceId": "CDG",
+                                "displayCode": "CDG",
+                                "parent": {
+                                    "flightPlaceId": "PARI",
+                                    "displayCode": "PAR",
+                                    "name": "Paris",
+                                    "type": "City"
+                                },
+                                "name": "Paris Charles de Gaulle",
+                                "type": "Airport",
+                                "country": "France"
+                            },
+                            "destination": {
+                                "flightPlaceId": "HND",
+                                "displayCode": "HND",
+                                "parent": {
+                                    "flightPlaceId": "TYOA",
+                                    "displayCode": "TYO",
+                                    "name": "Tokyo",
+                                    "type": "City"
+                                },
+                                "name": "Tokyo Haneda",
+                                "type": "Airport",
+                                "country": "Japan"
+                            },
+                            "departure": "2024-07-24T09:25:00",
+                            "arrival": "2024-07-25T05:55:00",
+                            "durationInMinutes": 810,
+                            "flightNumber": "162",
+                            "marketingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "12234-2408130905--32677-0-10413-2408131650",
+                    "origin": {
+                        "id": "HND",
+                        "entityId": "128667143",
+                        "name": "Tokyo Haneda",
+                        "displayCode": "HND",
+                        "city": "Tokyo",
+                        "country": "Japan",
+                        "isHighlighted": false
+                    },
+                    "destination": {
+                        "id": "CDG",
+                        "entityId": "95565041",
+                        "name": "Paris Charles de Gaulle",
+                        "displayCode": "CDG",
+                        "city": "Paris",
+                        "country": "France",
+                        "isHighlighted": false
+                    },
+                    "durationInMinutes": 885,
+                    "stopCount": 0,
+                    "isSmallestStops": false,
+                    "departure": "2024-08-13T09:05:00",
+                    "arrival": "2024-08-13T16:50:00",
+                    "timeDeltaInDays": 0,
+                    "carriers": {
+                        "marketing": [
+                            {
+                                "id": -32677,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
+                                "name": "Air France"
+                            }
+                        ],
+                        "operationType": "fully_operated"
+                    },
+                    "segments": [
+                        {
+                            "id": "12234-10413-2408130905-2408131650--32677",
+                            "origin": {
+                                "flightPlaceId": "HND",
+                                "displayCode": "HND",
+                                "parent": {
+                                    "flightPlaceId": "TYOA",
+                                    "displayCode": "TYO",
+                                    "name": "Tokyo",
+                                    "type": "City"
+                                },
+                                "name": "Tokyo Haneda",
+                                "type": "Airport",
+                                "country": "Japan"
+                            },
+                            "destination": {
+                                "flightPlaceId": "CDG",
+                                "displayCode": "CDG",
+                                "parent": {
+                                    "flightPlaceId": "PARI",
+                                    "displayCode": "PAR",
+                                    "name": "Paris",
+                                    "type": "City"
+                                },
+                                "name": "Paris Charles de Gaulle",
+                                "type": "Airport",
+                                "country": "France"
+                            },
+                            "departure": "2024-08-13T09:05:00",
+                            "arrival": "2024-08-13T16:50:00",
+                            "durationInMinutes": 885,
+                            "flightNumber": "163",
+                            "marketingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        }
+                    ]
+                }
             ],
-            "operating": [
-              {
+            "isSelfTransfer": false,
+            "isProtectedSelfTransfer": false,
+            "farePolicy": {
+                "isChangeAllowed": false,
+                "isPartiallyChangeable": false,
+                "isCancellationAllowed": false,
+                "isPartiallyRefundable": false
+            },
+            "eco": {
+                "ecoContenderDelta": 13.850534
+            },
+            "fareAttributes": {},
+            "tags": [
+                "cheapest",
+                "second_shortest"
+            ],
+            "isMashUp": false,
+            "hasFlexibleOptions": false,
+            "score": 0.999
+        },
+        {
+            "id": "10413-2407242200--32677-0-12234-2407251830|12234-2408130905--32677-0-10413-2408131650",
+            "price": {
+                "raw": 1300.91,
+                "formatted": "$1,301",
+                "pricingOptionId": "PJ3W69aM3Lk6"
+            },
+            "legs": [
+                {
+                    "id": "10413-2407242200--32677-0-12234-2407251830",
+                    "origin": {
+                        "id": "CDG",
+                        "entityId": "95565041",
+                        "name": "Paris Charles de Gaulle",
+                        "displayCode": "CDG",
+                        "city": "Paris",
+                        "country": "France",
+                        "isHighlighted": false
+                    },
+                    "destination": {
+                        "id": "HND",
+                        "entityId": "128667143",
+                        "name": "Tokyo Haneda",
+                        "displayCode": "HND",
+                        "city": "Tokyo",
+                        "country": "Japan",
+                        "isHighlighted": false
+                    },
+                    "durationInMinutes": 810,
+                    "stopCount": 0,
+                    "isSmallestStops": false,
+                    "departure": "2024-07-24T22:00:00",
+                    "arrival": "2024-07-25T18:30:00",
+                    "timeDeltaInDays": 1,
+                    "carriers": {
+                        "marketing": [
+                            {
+                                "id": -32677,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
+                                "name": "Air France"
+                            }
+                        ],
+                        "operationType": "fully_operated"
+                    },
+                    "segments": [
+                        {
+                            "id": "10413-12234-2407242200-2407251830--32677",
+                            "origin": {
+                                "flightPlaceId": "CDG",
+                                "displayCode": "CDG",
+                                "parent": {
+                                    "flightPlaceId": "PARI",
+                                    "displayCode": "PAR",
+                                    "name": "Paris",
+                                    "type": "City"
+                                },
+                                "name": "Paris Charles de Gaulle",
+                                "type": "Airport",
+                                "country": "France"
+                            },
+                            "destination": {
+                                "flightPlaceId": "HND",
+                                "displayCode": "HND",
+                                "parent": {
+                                    "flightPlaceId": "TYOA",
+                                    "displayCode": "TYO",
+                                    "name": "Tokyo",
+                                    "type": "City"
+                                },
+                                "name": "Tokyo Haneda",
+                                "type": "Airport",
+                                "country": "Japan"
+                            },
+                            "departure": "2024-07-24T22:00:00",
+                            "arrival": "2024-07-25T18:30:00",
+                            "durationInMinutes": 810,
+                            "flightNumber": "274",
+                            "marketingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "12234-2408130905--32677-0-10413-2408131650",
+                    "origin": {
+                        "id": "HND",
+                        "entityId": "128667143",
+                        "name": "Tokyo Haneda",
+                        "displayCode": "HND",
+                        "city": "Tokyo",
+                        "country": "Japan",
+                        "isHighlighted": false
+                    },
+                    "destination": {
+                        "id": "CDG",
+                        "entityId": "95565041",
+                        "name": "Paris Charles de Gaulle",
+                        "displayCode": "CDG",
+                        "city": "Paris",
+                        "country": "France",
+                        "isHighlighted": false
+                    },
+                    "durationInMinutes": 885,
+                    "stopCount": 0,
+                    "isSmallestStops": false,
+                    "departure": "2024-08-13T09:05:00",
+                    "arrival": "2024-08-13T16:50:00",
+                    "timeDeltaInDays": 0,
+                    "carriers": {
+                        "marketing": [
+                            {
+                                "id": -32677,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
+                                "name": "Air France"
+                            }
+                        ],
+                        "operationType": "fully_operated"
+                    },
+                    "segments": [
+                        {
+                            "id": "12234-10413-2408130905-2408131650--32677",
+                            "origin": {
+                                "flightPlaceId": "HND",
+                                "displayCode": "HND",
+                                "parent": {
+                                    "flightPlaceId": "TYOA",
+                                    "displayCode": "TYO",
+                                    "name": "Tokyo",
+                                    "type": "City"
+                                },
+                                "name": "Tokyo Haneda",
+                                "type": "Airport",
+                                "country": "Japan"
+                            },
+                            "destination": {
+                                "flightPlaceId": "CDG",
+                                "displayCode": "CDG",
+                                "parent": {
+                                    "flightPlaceId": "PARI",
+                                    "displayCode": "PAR",
+                                    "name": "Paris",
+                                    "type": "City"
+                                },
+                                "name": "Paris Charles de Gaulle",
+                                "type": "Airport",
+                                "country": "France"
+                            },
+                            "departure": "2024-08-13T09:05:00",
+                            "arrival": "2024-08-13T16:50:00",
+                            "durationInMinutes": 885,
+                            "flightNumber": "163",
+                            "marketingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        }
+                    ]
+                }
+            ],
+            "isSelfTransfer": false,
+            "isProtectedSelfTransfer": false,
+            "farePolicy": {
+                "isChangeAllowed": false,
+                "isPartiallyChangeable": false,
+                "isCancellationAllowed": false,
+                "isPartiallyRefundable": false
+            },
+            "eco": {
+                "ecoContenderDelta": 10.668337
+            },
+            "fareAttributes": {},
+            "tags": [
+                "cheapest",
+                "second_shortest"
+            ],
+            "isMashUp": false,
+            "hasFlexibleOptions": false,
+            "score": 0.977513
+        },
+        {
+            "id": "10413-2407242025--32184-0-12234-2407251720|12234-2408131020--32184-0-10413-2408131755",
+            "price": {
+                "raw": 1417.6,
+                "formatted": "$1,418",
+                "pricingOptionId": "6Vmd45VATI26"
+            },
+            "legs": [
+                {
+                    "id": "10413-2407242025--32184-0-12234-2407251720",
+                    "origin": {
+                        "id": "CDG",
+                        "entityId": "95565041",
+                        "name": "Paris Charles de Gaulle",
+                        "displayCode": "CDG",
+                        "city": "Paris",
+                        "country": "France",
+                        "isHighlighted": false
+                    },
+                    "destination": {
+                        "id": "HND",
+                        "entityId": "128667143",
+                        "name": "Tokyo Haneda",
+                        "displayCode": "HND",
+                        "city": "Tokyo",
+                        "country": "Japan",
+                        "isHighlighted": false
+                    },
+                    "durationInMinutes": 835,
+                    "stopCount": 0,
+                    "isSmallestStops": false,
+                    "departure": "2024-07-24T20:25:00",
+                    "arrival": "2024-07-25T17:20:00",
+                    "timeDeltaInDays": 1,
+                    "carriers": {
+                        "marketing": [
+                            {
+                                "id": -32184,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/JL.png",
+                                "name": "Japan Airlines"
+                            }
+                        ],
+                        "operationType": "fully_operated"
+                    },
+                    "segments": [
+                        {
+                            "id": "10413-12234-2407242025-2407251720--32184",
+                            "origin": {
+                                "flightPlaceId": "CDG",
+                                "displayCode": "CDG",
+                                "parent": {
+                                    "flightPlaceId": "PARI",
+                                    "displayCode": "PAR",
+                                    "name": "Paris",
+                                    "type": "City"
+                                },
+                                "name": "Paris Charles de Gaulle",
+                                "type": "Airport",
+                                "country": "France"
+                            },
+                            "destination": {
+                                "flightPlaceId": "HND",
+                                "displayCode": "HND",
+                                "parent": {
+                                    "flightPlaceId": "TYOA",
+                                    "displayCode": "TYO",
+                                    "name": "Tokyo",
+                                    "type": "City"
+                                },
+                                "name": "Tokyo Haneda",
+                                "type": "Airport",
+                                "country": "Japan"
+                            },
+                            "departure": "2024-07-24T20:25:00",
+                            "arrival": "2024-07-25T17:20:00",
+                            "durationInMinutes": 835,
+                            "flightNumber": "46",
+                            "marketingCarrier": {
+                                "id": -32184,
+                                "name": "Japan Airlines",
+                                "alternateId": "JL",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32184,
+                                "name": "Japan Airlines",
+                                "alternateId": "JL",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "12234-2408131020--32184-0-10413-2408131755",
+                    "origin": {
+                        "id": "HND",
+                        "entityId": "128667143",
+                        "name": "Tokyo Haneda",
+                        "displayCode": "HND",
+                        "city": "Tokyo",
+                        "country": "Japan",
+                        "isHighlighted": false
+                    },
+                    "destination": {
+                        "id": "CDG",
+                        "entityId": "95565041",
+                        "name": "Paris Charles de Gaulle",
+                        "displayCode": "CDG",
+                        "city": "Paris",
+                        "country": "France",
+                        "isHighlighted": false
+                    },
+                    "durationInMinutes": 875,
+                    "stopCount": 0,
+                    "isSmallestStops": false,
+                    "departure": "2024-08-13T10:20:00",
+                    "arrival": "2024-08-13T17:55:00",
+                    "timeDeltaInDays": 0,
+                    "carriers": {
+                        "marketing": [
+                            {
+                                "id": -32184,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/JL.png",
+                                "name": "Japan Airlines"
+                            }
+                        ],
+                        "operationType": "fully_operated"
+                    },
+                    "segments": [
+                        {
+                            "id": "12234-10413-2408131020-2408131755--32184",
+                            "origin": {
+                                "flightPlaceId": "HND",
+                                "displayCode": "HND",
+                                "parent": {
+                                    "flightPlaceId": "TYOA",
+                                    "displayCode": "TYO",
+                                    "name": "Tokyo",
+                                    "type": "City"
+                                },
+                                "name": "Tokyo Haneda",
+                                "type": "Airport",
+                                "country": "Japan"
+                            },
+                            "destination": {
+                                "flightPlaceId": "CDG",
+                                "displayCode": "CDG",
+                                "parent": {
+                                    "flightPlaceId": "PARI",
+                                    "displayCode": "PAR",
+                                    "name": "Paris",
+                                    "type": "City"
+                                },
+                                "name": "Paris Charles de Gaulle",
+                                "type": "Airport",
+                                "country": "France"
+                            },
+                            "departure": "2024-08-13T10:20:00",
+                            "arrival": "2024-08-13T17:55:00",
+                            "durationInMinutes": 875,
+                            "flightNumber": "45",
+                            "marketingCarrier": {
+                                "id": -32184,
+                                "name": "Japan Airlines",
+                                "alternateId": "JL",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32184,
+                                "name": "Japan Airlines",
+                                "alternateId": "JL",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        }
+                    ]
+                }
+            ],
+            "isSelfTransfer": false,
+            "isProtectedSelfTransfer": false,
+            "farePolicy": {
+                "isChangeAllowed": false,
+                "isPartiallyChangeable": false,
+                "isCancellationAllowed": false,
+                "isPartiallyRefundable": false
+            },
+            "fareAttributes": {},
+            "tags": [
+                "second_cheapest"
+            ],
+            "isMashUp": false,
+            "hasFlexibleOptions": false,
+            "score": 0.940677
+        },
+        {
+            "id": "10413-2407240925--32677-0-12234-2407250555|14788-2408131235--32677-1-10413-2408132150",
+            "price": {
+                "raw": 1436.4,
+                "formatted": "$1,437",
+                "pricingOptionId": "4uf2z-uvIUHb"
+            },
+            "legs": [
+                {
+                    "id": "10413-2407240925--32677-0-12234-2407250555",
+                    "origin": {
+                        "id": "CDG",
+                        "entityId": "95565041",
+                        "name": "Paris Charles de Gaulle",
+                        "displayCode": "CDG",
+                        "city": "Paris",
+                        "country": "France",
+                        "isHighlighted": false
+                    },
+                    "destination": {
+                        "id": "HND",
+                        "entityId": "128667143",
+                        "name": "Tokyo Haneda",
+                        "displayCode": "HND",
+                        "city": "Tokyo",
+                        "country": "Japan",
+                        "isHighlighted": true
+                    },
+                    "durationInMinutes": 810,
+                    "stopCount": 0,
+                    "isSmallestStops": false,
+                    "departure": "2024-07-24T09:25:00",
+                    "arrival": "2024-07-25T05:55:00",
+                    "timeDeltaInDays": 1,
+                    "carriers": {
+                        "marketing": [
+                            {
+                                "id": -32677,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
+                                "name": "Air France"
+                            }
+                        ],
+                        "operationType": "fully_operated"
+                    },
+                    "segments": [
+                        {
+                            "id": "10413-12234-2407240925-2407250555--32677",
+                            "origin": {
+                                "flightPlaceId": "CDG",
+                                "displayCode": "CDG",
+                                "parent": {
+                                    "flightPlaceId": "PARI",
+                                    "displayCode": "PAR",
+                                    "name": "Paris",
+                                    "type": "City"
+                                },
+                                "name": "Paris Charles de Gaulle",
+                                "type": "Airport",
+                                "country": "France"
+                            },
+                            "destination": {
+                                "flightPlaceId": "HND",
+                                "displayCode": "HND",
+                                "parent": {
+                                    "flightPlaceId": "TYOA",
+                                    "displayCode": "TYO",
+                                    "name": "Tokyo",
+                                    "type": "City"
+                                },
+                                "name": "Tokyo Haneda",
+                                "type": "Airport",
+                                "country": "Japan"
+                            },
+                            "departure": "2024-07-24T09:25:00",
+                            "arrival": "2024-07-25T05:55:00",
+                            "durationInMinutes": 810,
+                            "flightNumber": "162",
+                            "marketingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "14788-2408131235--32677-1-10413-2408132150",
+                    "origin": {
+                        "id": "NRT",
+                        "entityId": "128668889",
+                        "name": "Tokyo Narita",
+                        "displayCode": "NRT",
+                        "city": "Tokyo",
+                        "country": "Japan",
+                        "isHighlighted": true
+                    },
+                    "destination": {
+                        "id": "CDG",
+                        "entityId": "95565041",
+                        "name": "Paris Charles de Gaulle",
+                        "displayCode": "CDG",
+                        "city": "Paris",
+                        "country": "France",
+                        "isHighlighted": false
+                    },
+                    "durationInMinutes": 975,
+                    "stopCount": 1,
+                    "isSmallestStops": false,
+                    "departure": "2024-08-13T12:35:00",
+                    "arrival": "2024-08-13T21:50:00",
+                    "timeDeltaInDays": 0,
+                    "carriers": {
+                        "marketing": [
+                            {
+                                "id": -32677,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
+                                "name": "Air France"
+                            }
+                        ],
+                        "operating": [
+                            {
+                                "id": -32132,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
+                                "name": "KLM"
+                            }
+                        ],
+                        "operationType": "partially_operated"
+                    },
+                    "segments": [
+                        {
+                            "id": "14788-9451-2408131235-2408131915--32677",
+                            "origin": {
+                                "flightPlaceId": "NRT",
+                                "displayCode": "NRT",
+                                "parent": {
+                                    "flightPlaceId": "TYOA",
+                                    "displayCode": "TYO",
+                                    "name": "Tokyo",
+                                    "type": "City"
+                                },
+                                "name": "Tokyo Narita",
+                                "type": "Airport",
+                                "country": "Japan"
+                            },
+                            "destination": {
+                                "flightPlaceId": "AMS",
+                                "displayCode": "AMS",
+                                "parent": {
+                                    "flightPlaceId": "AMST",
+                                    "displayCode": "AMS",
+                                    "name": "Amsterdam",
+                                    "type": "City"
+                                },
+                                "name": "Amsterdam Schiphol",
+                                "type": "Airport",
+                                "country": "Netherlands"
+                            },
+                            "departure": "2024-08-13T12:35:00",
+                            "arrival": "2024-08-13T19:15:00",
+                            "durationInMinutes": 820,
+                            "flightNumber": "5134",
+                            "marketingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32132,
+                                "name": "KLM",
+                                "alternateId": "KL",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        },
+                        {
+                            "id": "9451-10413-2408132020-2408132150--32677",
+                            "origin": {
+                                "flightPlaceId": "AMS",
+                                "displayCode": "AMS",
+                                "parent": {
+                                    "flightPlaceId": "AMST",
+                                    "displayCode": "AMS",
+                                    "name": "Amsterdam",
+                                    "type": "City"
+                                },
+                                "name": "Amsterdam Schiphol",
+                                "type": "Airport",
+                                "country": "Netherlands"
+                            },
+                            "destination": {
+                                "flightPlaceId": "CDG",
+                                "displayCode": "CDG",
+                                "parent": {
+                                    "flightPlaceId": "PARI",
+                                    "displayCode": "PAR",
+                                    "name": "Paris",
+                                    "type": "City"
+                                },
+                                "name": "Paris Charles de Gaulle",
+                                "type": "Airport",
+                                "country": "France"
+                            },
+                            "departure": "2024-08-13T20:20:00",
+                            "arrival": "2024-08-13T21:50:00",
+                            "durationInMinutes": 90,
+                            "flightNumber": "1441",
+                            "marketingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        }
+                    ]
+                }
+            ],
+            "isSelfTransfer": false,
+            "isProtectedSelfTransfer": false,
+            "farePolicy": {
+                "isChangeAllowed": false,
+                "isPartiallyChangeable": false,
+                "isCancellationAllowed": false,
+                "isPartiallyRefundable": false
+            },
+            "eco": {
+                "ecoContenderDelta": 18.942732
+            },
+            "fareAttributes": {},
+            "tags": [
+                "third_cheapest"
+            ],
+            "isMashUp": false,
+            "hasFlexibleOptions": false,
+            "score": 0.881442
+        },
+        {
+            "id": "10413-2407241920--32571-0-12234-2407251555|12234-2408130935--32571-0-10413-2408131710",
+            "price": {
+                "raw": 1551.55,
+                "formatted": "$1,552",
+                "pricingOptionId": "p4hXmZZsW11_"
+            },
+            "legs": [
+                {
+                    "id": "10413-2407241920--32571-0-12234-2407251555",
+                    "origin": {
+                        "id": "CDG",
+                        "entityId": "95565041",
+                        "name": "Paris Charles de Gaulle",
+                        "displayCode": "CDG",
+                        "city": "Paris",
+                        "country": "France",
+                        "isHighlighted": false
+                    },
+                    "destination": {
+                        "id": "HND",
+                        "entityId": "128667143",
+                        "name": "Tokyo Haneda",
+                        "displayCode": "HND",
+                        "city": "Tokyo",
+                        "country": "Japan",
+                        "isHighlighted": false
+                    },
+                    "durationInMinutes": 815,
+                    "stopCount": 0,
+                    "isSmallestStops": false,
+                    "departure": "2024-07-24T19:20:00",
+                    "arrival": "2024-07-25T15:55:00",
+                    "timeDeltaInDays": 1,
+                    "carriers": {
+                        "marketing": [
+                            {
+                                "id": -32571,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/NH.png",
+                                "name": "ANA (All Nippon Airways)"
+                            }
+                        ],
+                        "operationType": "fully_operated"
+                    },
+                    "segments": [
+                        {
+                            "id": "10413-12234-2407241920-2407251555--32571",
+                            "origin": {
+                                "flightPlaceId": "CDG",
+                                "displayCode": "CDG",
+                                "parent": {
+                                    "flightPlaceId": "PARI",
+                                    "displayCode": "PAR",
+                                    "name": "Paris",
+                                    "type": "City"
+                                },
+                                "name": "Paris Charles de Gaulle",
+                                "type": "Airport",
+                                "country": "France"
+                            },
+                            "destination": {
+                                "flightPlaceId": "HND",
+                                "displayCode": "HND",
+                                "parent": {
+                                    "flightPlaceId": "TYOA",
+                                    "displayCode": "TYO",
+                                    "name": "Tokyo",
+                                    "type": "City"
+                                },
+                                "name": "Tokyo Haneda",
+                                "type": "Airport",
+                                "country": "Japan"
+                            },
+                            "departure": "2024-07-24T19:20:00",
+                            "arrival": "2024-07-25T15:55:00",
+                            "durationInMinutes": 815,
+                            "flightNumber": "216",
+                            "marketingCarrier": {
+                                "id": -32571,
+                                "name": "ANA (All Nippon Airways)",
+                                "alternateId": "NH",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32571,
+                                "name": "ANA (All Nippon Airways)",
+                                "alternateId": "NH",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "12234-2408130935--32571-0-10413-2408131710",
+                    "origin": {
+                        "id": "HND",
+                        "entityId": "128667143",
+                        "name": "Tokyo Haneda",
+                        "displayCode": "HND",
+                        "city": "Tokyo",
+                        "country": "Japan",
+                        "isHighlighted": false
+                    },
+                    "destination": {
+                        "id": "CDG",
+                        "entityId": "95565041",
+                        "name": "Paris Charles de Gaulle",
+                        "displayCode": "CDG",
+                        "city": "Paris",
+                        "country": "France",
+                        "isHighlighted": false
+                    },
+                    "durationInMinutes": 875,
+                    "stopCount": 0,
+                    "isSmallestStops": false,
+                    "departure": "2024-08-13T09:35:00",
+                    "arrival": "2024-08-13T17:10:00",
+                    "timeDeltaInDays": 0,
+                    "carriers": {
+                        "marketing": [
+                            {
+                                "id": -32571,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/NH.png",
+                                "name": "ANA (All Nippon Airways)"
+                            }
+                        ],
+                        "operationType": "fully_operated"
+                    },
+                    "segments": [
+                        {
+                            "id": "12234-10413-2408130935-2408131710--32571",
+                            "origin": {
+                                "flightPlaceId": "HND",
+                                "displayCode": "HND",
+                                "parent": {
+                                    "flightPlaceId": "TYOA",
+                                    "displayCode": "TYO",
+                                    "name": "Tokyo",
+                                    "type": "City"
+                                },
+                                "name": "Tokyo Haneda",
+                                "type": "Airport",
+                                "country": "Japan"
+                            },
+                            "destination": {
+                                "flightPlaceId": "CDG",
+                                "displayCode": "CDG",
+                                "parent": {
+                                    "flightPlaceId": "PARI",
+                                    "displayCode": "PAR",
+                                    "name": "Paris",
+                                    "type": "City"
+                                },
+                                "name": "Paris Charles de Gaulle",
+                                "type": "Airport",
+                                "country": "France"
+                            },
+                            "departure": "2024-08-13T09:35:00",
+                            "arrival": "2024-08-13T17:10:00",
+                            "durationInMinutes": 875,
+                            "flightNumber": "215",
+                            "marketingCarrier": {
+                                "id": -32571,
+                                "name": "ANA (All Nippon Airways)",
+                                "alternateId": "NH",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32571,
+                                "name": "ANA (All Nippon Airways)",
+                                "alternateId": "NH",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        }
+                    ]
+                }
+            ],
+            "isSelfTransfer": false,
+            "isProtectedSelfTransfer": false,
+            "farePolicy": {
+                "isChangeAllowed": false,
+                "isPartiallyChangeable": false,
+                "isCancellationAllowed": false,
+                "isPartiallyRefundable": false
+            },
+            "eco": {
+                "ecoContenderDelta": 9.6282425
+            },
+            "fareAttributes": {},
+            "tags": [
+                "shortest"
+            ],
+            "isMashUp": false,
+            "hasFlexibleOptions": false,
+            "score": 0.879901
+        },
+        {
+            "id": "10413-2407242200--32677-0-12234-2407251830|14788-2408131235--32677-1-10413-2408132150",
+            "price": {
+                "raw": 1436.4,
+                "formatted": "$1,437",
+                "pricingOptionId": "jH4oq7tSpsiz"
+            },
+            "legs": [
+                {
+                    "id": "10413-2407242200--32677-0-12234-2407251830",
+                    "origin": {
+                        "id": "CDG",
+                        "entityId": "95565041",
+                        "name": "Paris Charles de Gaulle",
+                        "displayCode": "CDG",
+                        "city": "Paris",
+                        "country": "France",
+                        "isHighlighted": false
+                    },
+                    "destination": {
+                        "id": "HND",
+                        "entityId": "128667143",
+                        "name": "Tokyo Haneda",
+                        "displayCode": "HND",
+                        "city": "Tokyo",
+                        "country": "Japan",
+                        "isHighlighted": true
+                    },
+                    "durationInMinutes": 810,
+                    "stopCount": 0,
+                    "isSmallestStops": false,
+                    "departure": "2024-07-24T22:00:00",
+                    "arrival": "2024-07-25T18:30:00",
+                    "timeDeltaInDays": 1,
+                    "carriers": {
+                        "marketing": [
+                            {
+                                "id": -32677,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
+                                "name": "Air France"
+                            }
+                        ],
+                        "operationType": "fully_operated"
+                    },
+                    "segments": [
+                        {
+                            "id": "10413-12234-2407242200-2407251830--32677",
+                            "origin": {
+                                "flightPlaceId": "CDG",
+                                "displayCode": "CDG",
+                                "parent": {
+                                    "flightPlaceId": "PARI",
+                                    "displayCode": "PAR",
+                                    "name": "Paris",
+                                    "type": "City"
+                                },
+                                "name": "Paris Charles de Gaulle",
+                                "type": "Airport",
+                                "country": "France"
+                            },
+                            "destination": {
+                                "flightPlaceId": "HND",
+                                "displayCode": "HND",
+                                "parent": {
+                                    "flightPlaceId": "TYOA",
+                                    "displayCode": "TYO",
+                                    "name": "Tokyo",
+                                    "type": "City"
+                                },
+                                "name": "Tokyo Haneda",
+                                "type": "Airport",
+                                "country": "Japan"
+                            },
+                            "departure": "2024-07-24T22:00:00",
+                            "arrival": "2024-07-25T18:30:00",
+                            "durationInMinutes": 810,
+                            "flightNumber": "274",
+                            "marketingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "14788-2408131235--32677-1-10413-2408132150",
+                    "origin": {
+                        "id": "NRT",
+                        "entityId": "128668889",
+                        "name": "Tokyo Narita",
+                        "displayCode": "NRT",
+                        "city": "Tokyo",
+                        "country": "Japan",
+                        "isHighlighted": true
+                    },
+                    "destination": {
+                        "id": "CDG",
+                        "entityId": "95565041",
+                        "name": "Paris Charles de Gaulle",
+                        "displayCode": "CDG",
+                        "city": "Paris",
+                        "country": "France",
+                        "isHighlighted": false
+                    },
+                    "durationInMinutes": 975,
+                    "stopCount": 1,
+                    "isSmallestStops": false,
+                    "departure": "2024-08-13T12:35:00",
+                    "arrival": "2024-08-13T21:50:00",
+                    "timeDeltaInDays": 0,
+                    "carriers": {
+                        "marketing": [
+                            {
+                                "id": -32677,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
+                                "name": "Air France"
+                            }
+                        ],
+                        "operating": [
+                            {
+                                "id": -32132,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
+                                "name": "KLM"
+                            }
+                        ],
+                        "operationType": "partially_operated"
+                    },
+                    "segments": [
+                        {
+                            "id": "14788-9451-2408131235-2408131915--32677",
+                            "origin": {
+                                "flightPlaceId": "NRT",
+                                "displayCode": "NRT",
+                                "parent": {
+                                    "flightPlaceId": "TYOA",
+                                    "displayCode": "TYO",
+                                    "name": "Tokyo",
+                                    "type": "City"
+                                },
+                                "name": "Tokyo Narita",
+                                "type": "Airport",
+                                "country": "Japan"
+                            },
+                            "destination": {
+                                "flightPlaceId": "AMS",
+                                "displayCode": "AMS",
+                                "parent": {
+                                    "flightPlaceId": "AMST",
+                                    "displayCode": "AMS",
+                                    "name": "Amsterdam",
+                                    "type": "City"
+                                },
+                                "name": "Amsterdam Schiphol",
+                                "type": "Airport",
+                                "country": "Netherlands"
+                            },
+                            "departure": "2024-08-13T12:35:00",
+                            "arrival": "2024-08-13T19:15:00",
+                            "durationInMinutes": 820,
+                            "flightNumber": "5134",
+                            "marketingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32132,
+                                "name": "KLM",
+                                "alternateId": "KL",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        },
+                        {
+                            "id": "9451-10413-2408132020-2408132150--32677",
+                            "origin": {
+                                "flightPlaceId": "AMS",
+                                "displayCode": "AMS",
+                                "parent": {
+                                    "flightPlaceId": "AMST",
+                                    "displayCode": "AMS",
+                                    "name": "Amsterdam",
+                                    "type": "City"
+                                },
+                                "name": "Amsterdam Schiphol",
+                                "type": "Airport",
+                                "country": "Netherlands"
+                            },
+                            "destination": {
+                                "flightPlaceId": "CDG",
+                                "displayCode": "CDG",
+                                "parent": {
+                                    "flightPlaceId": "PARI",
+                                    "displayCode": "PAR",
+                                    "name": "Paris",
+                                    "type": "City"
+                                },
+                                "name": "Paris Charles de Gaulle",
+                                "type": "Airport",
+                                "country": "France"
+                            },
+                            "departure": "2024-08-13T20:20:00",
+                            "arrival": "2024-08-13T21:50:00",
+                            "durationInMinutes": 90,
+                            "flightNumber": "1441",
+                            "marketingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        }
+                    ]
+                }
+            ],
+            "isSelfTransfer": false,
+            "isProtectedSelfTransfer": false,
+            "farePolicy": {
+                "isChangeAllowed": false,
+                "isPartiallyChangeable": false,
+                "isCancellationAllowed": false,
+                "isPartiallyRefundable": false
+            },
+            "eco": {
+                "ecoContenderDelta": 15.760529
+            },
+            "fareAttributes": {},
+            "tags": [
+                "third_cheapest"
+            ],
+            "isMashUp": false,
+            "hasFlexibleOptions": false,
+            "score": 0.864985
+        },
+        {
+            "id": "10413-2407240925--32677-0-12234-2407250555|12234-2408132150--32677-0-10413-2408140540",
+            "price": {
+                "raw": 1560.75,
+                "formatted": "$1,561",
+                "pricingOptionId": "vhhG93mU5yTE"
+            },
+            "legs": [
+                {
+                    "id": "10413-2407240925--32677-0-12234-2407250555",
+                    "origin": {
+                        "id": "CDG",
+                        "entityId": "95565041",
+                        "name": "Paris Charles de Gaulle",
+                        "displayCode": "CDG",
+                        "city": "Paris",
+                        "country": "France",
+                        "isHighlighted": false
+                    },
+                    "destination": {
+                        "id": "HND",
+                        "entityId": "128667143",
+                        "name": "Tokyo Haneda",
+                        "displayCode": "HND",
+                        "city": "Tokyo",
+                        "country": "Japan",
+                        "isHighlighted": false
+                    },
+                    "durationInMinutes": 810,
+                    "stopCount": 0,
+                    "isSmallestStops": false,
+                    "departure": "2024-07-24T09:25:00",
+                    "arrival": "2024-07-25T05:55:00",
+                    "timeDeltaInDays": 1,
+                    "carriers": {
+                        "marketing": [
+                            {
+                                "id": -32677,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
+                                "name": "Air France"
+                            }
+                        ],
+                        "operationType": "fully_operated"
+                    },
+                    "segments": [
+                        {
+                            "id": "10413-12234-2407240925-2407250555--32677",
+                            "origin": {
+                                "flightPlaceId": "CDG",
+                                "displayCode": "CDG",
+                                "parent": {
+                                    "flightPlaceId": "PARI",
+                                    "displayCode": "PAR",
+                                    "name": "Paris",
+                                    "type": "City"
+                                },
+                                "name": "Paris Charles de Gaulle",
+                                "type": "Airport",
+                                "country": "France"
+                            },
+                            "destination": {
+                                "flightPlaceId": "HND",
+                                "displayCode": "HND",
+                                "parent": {
+                                    "flightPlaceId": "TYOA",
+                                    "displayCode": "TYO",
+                                    "name": "Tokyo",
+                                    "type": "City"
+                                },
+                                "name": "Tokyo Haneda",
+                                "type": "Airport",
+                                "country": "Japan"
+                            },
+                            "departure": "2024-07-24T09:25:00",
+                            "arrival": "2024-07-25T05:55:00",
+                            "durationInMinutes": 810,
+                            "flightNumber": "162",
+                            "marketingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "12234-2408132150--32677-0-10413-2408140540",
+                    "origin": {
+                        "id": "HND",
+                        "entityId": "128667143",
+                        "name": "Tokyo Haneda",
+                        "displayCode": "HND",
+                        "city": "Tokyo",
+                        "country": "Japan",
+                        "isHighlighted": false
+                    },
+                    "destination": {
+                        "id": "CDG",
+                        "entityId": "95565041",
+                        "name": "Paris Charles de Gaulle",
+                        "displayCode": "CDG",
+                        "city": "Paris",
+                        "country": "France",
+                        "isHighlighted": false
+                    },
+                    "durationInMinutes": 890,
+                    "stopCount": 0,
+                    "isSmallestStops": false,
+                    "departure": "2024-08-13T21:50:00",
+                    "arrival": "2024-08-14T05:40:00",
+                    "timeDeltaInDays": 1,
+                    "carriers": {
+                        "marketing": [
+                            {
+                                "id": -32677,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
+                                "name": "Air France"
+                            }
+                        ],
+                        "operationType": "fully_operated"
+                    },
+                    "segments": [
+                        {
+                            "id": "12234-10413-2408132150-2408140540--32677",
+                            "origin": {
+                                "flightPlaceId": "HND",
+                                "displayCode": "HND",
+                                "parent": {
+                                    "flightPlaceId": "TYOA",
+                                    "displayCode": "TYO",
+                                    "name": "Tokyo",
+                                    "type": "City"
+                                },
+                                "name": "Tokyo Haneda",
+                                "type": "Airport",
+                                "country": "Japan"
+                            },
+                            "destination": {
+                                "flightPlaceId": "CDG",
+                                "displayCode": "CDG",
+                                "parent": {
+                                    "flightPlaceId": "PARI",
+                                    "displayCode": "PAR",
+                                    "name": "Paris",
+                                    "type": "City"
+                                },
+                                "name": "Paris Charles de Gaulle",
+                                "type": "Airport",
+                                "country": "France"
+                            },
+                            "departure": "2024-08-13T21:50:00",
+                            "arrival": "2024-08-14T05:40:00",
+                            "durationInMinutes": 890,
+                            "flightNumber": "293",
+                            "marketingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        }
+                    ]
+                }
+            ],
+            "isSelfTransfer": false,
+            "isProtectedSelfTransfer": false,
+            "farePolicy": {
+                "isChangeAllowed": false,
+                "isPartiallyChangeable": false,
+                "isCancellationAllowed": false,
+                "isPartiallyRefundable": false
+            },
+            "eco": {
+                "ecoContenderDelta": 10.657644
+            },
+            "fareAttributes": {},
+            "tags": [
+                "third_shortest"
+            ],
+            "isMashUp": false,
+            "hasFlexibleOptions": false,
+            "score": 0.852243
+        },
+        {
+            "id": "10413-2407242200--32677-0-12234-2407251830|12234-2408132150--32677-0-10413-2408140540",
+            "price": {
+                "raw": 1560.75,
+                "formatted": "$1,561",
+                "pricingOptionId": "M0fJ84Ol_ekO"
+            },
+            "legs": [
+                {
+                    "id": "10413-2407242200--32677-0-12234-2407251830",
+                    "origin": {
+                        "id": "CDG",
+                        "entityId": "95565041",
+                        "name": "Paris Charles de Gaulle",
+                        "displayCode": "CDG",
+                        "city": "Paris",
+                        "country": "France",
+                        "isHighlighted": false
+                    },
+                    "destination": {
+                        "id": "HND",
+                        "entityId": "128667143",
+                        "name": "Tokyo Haneda",
+                        "displayCode": "HND",
+                        "city": "Tokyo",
+                        "country": "Japan",
+                        "isHighlighted": false
+                    },
+                    "durationInMinutes": 810,
+                    "stopCount": 0,
+                    "isSmallestStops": false,
+                    "departure": "2024-07-24T22:00:00",
+                    "arrival": "2024-07-25T18:30:00",
+                    "timeDeltaInDays": 1,
+                    "carriers": {
+                        "marketing": [
+                            {
+                                "id": -32677,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
+                                "name": "Air France"
+                            }
+                        ],
+                        "operationType": "fully_operated"
+                    },
+                    "segments": [
+                        {
+                            "id": "10413-12234-2407242200-2407251830--32677",
+                            "origin": {
+                                "flightPlaceId": "CDG",
+                                "displayCode": "CDG",
+                                "parent": {
+                                    "flightPlaceId": "PARI",
+                                    "displayCode": "PAR",
+                                    "name": "Paris",
+                                    "type": "City"
+                                },
+                                "name": "Paris Charles de Gaulle",
+                                "type": "Airport",
+                                "country": "France"
+                            },
+                            "destination": {
+                                "flightPlaceId": "HND",
+                                "displayCode": "HND",
+                                "parent": {
+                                    "flightPlaceId": "TYOA",
+                                    "displayCode": "TYO",
+                                    "name": "Tokyo",
+                                    "type": "City"
+                                },
+                                "name": "Tokyo Haneda",
+                                "type": "Airport",
+                                "country": "Japan"
+                            },
+                            "departure": "2024-07-24T22:00:00",
+                            "arrival": "2024-07-25T18:30:00",
+                            "durationInMinutes": 810,
+                            "flightNumber": "274",
+                            "marketingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "12234-2408132150--32677-0-10413-2408140540",
+                    "origin": {
+                        "id": "HND",
+                        "entityId": "128667143",
+                        "name": "Tokyo Haneda",
+                        "displayCode": "HND",
+                        "city": "Tokyo",
+                        "country": "Japan",
+                        "isHighlighted": false
+                    },
+                    "destination": {
+                        "id": "CDG",
+                        "entityId": "95565041",
+                        "name": "Paris Charles de Gaulle",
+                        "displayCode": "CDG",
+                        "city": "Paris",
+                        "country": "France",
+                        "isHighlighted": false
+                    },
+                    "durationInMinutes": 890,
+                    "stopCount": 0,
+                    "isSmallestStops": false,
+                    "departure": "2024-08-13T21:50:00",
+                    "arrival": "2024-08-14T05:40:00",
+                    "timeDeltaInDays": 1,
+                    "carriers": {
+                        "marketing": [
+                            {
+                                "id": -32677,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
+                                "name": "Air France"
+                            }
+                        ],
+                        "operationType": "fully_operated"
+                    },
+                    "segments": [
+                        {
+                            "id": "12234-10413-2408132150-2408140540--32677",
+                            "origin": {
+                                "flightPlaceId": "HND",
+                                "displayCode": "HND",
+                                "parent": {
+                                    "flightPlaceId": "TYOA",
+                                    "displayCode": "TYO",
+                                    "name": "Tokyo",
+                                    "type": "City"
+                                },
+                                "name": "Tokyo Haneda",
+                                "type": "Airport",
+                                "country": "Japan"
+                            },
+                            "destination": {
+                                "flightPlaceId": "CDG",
+                                "displayCode": "CDG",
+                                "parent": {
+                                    "flightPlaceId": "PARI",
+                                    "displayCode": "PAR",
+                                    "name": "Paris",
+                                    "type": "City"
+                                },
+                                "name": "Paris Charles de Gaulle",
+                                "type": "Airport",
+                                "country": "France"
+                            },
+                            "departure": "2024-08-13T21:50:00",
+                            "arrival": "2024-08-14T05:40:00",
+                            "durationInMinutes": 890,
+                            "flightNumber": "293",
+                            "marketingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        }
+                    ]
+                }
+            ],
+            "isSelfTransfer": false,
+            "isProtectedSelfTransfer": false,
+            "farePolicy": {
+                "isChangeAllowed": false,
+                "isPartiallyChangeable": false,
+                "isCancellationAllowed": false,
+                "isPartiallyRefundable": false
+            },
+            "eco": {
+                "ecoContenderDelta": 7.475442
+            },
+            "fareAttributes": {},
+            "tags": [
+                "third_shortest"
+            ],
+            "isMashUp": false,
+            "hasFlexibleOptions": false,
+            "score": 0.848869
+        },
+        {
+            "id": "10413-2407241145--32677-1-14788-2407251045|12234-2408130905--32677-0-10413-2408131650",
+            "price": {
+                "raw": 1491.67,
+                "formatted": "$1,492",
+                "pricingOptionId": "PfNy3TWZ5D2k"
+            },
+            "legs": [
+                {
+                    "id": "10413-2407241145--32677-1-14788-2407251045",
+                    "origin": {
+                        "id": "CDG",
+                        "entityId": "95565041",
+                        "name": "Paris Charles de Gaulle",
+                        "displayCode": "CDG",
+                        "city": "Paris",
+                        "country": "France",
+                        "isHighlighted": false
+                    },
+                    "destination": {
+                        "id": "NRT",
+                        "entityId": "128668889",
+                        "name": "Tokyo Narita",
+                        "displayCode": "NRT",
+                        "city": "Tokyo",
+                        "country": "Japan",
+                        "isHighlighted": true
+                    },
+                    "durationInMinutes": 960,
+                    "stopCount": 1,
+                    "isSmallestStops": false,
+                    "departure": "2024-07-24T11:45:00",
+                    "arrival": "2024-07-25T10:45:00",
+                    "timeDeltaInDays": 1,
+                    "carriers": {
+                        "marketing": [
+                            {
+                                "id": -32677,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
+                                "name": "Air France"
+                            }
+                        ],
+                        "operating": [
+                            {
+                                "id": -32132,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
+                                "name": "KLM"
+                            }
+                        ],
+                        "operationType": "partially_operated"
+                    },
+                    "segments": [
+                        {
+                            "id": "10413-9451-2407241145-2407241310--32677",
+                            "origin": {
+                                "flightPlaceId": "CDG",
+                                "displayCode": "CDG",
+                                "parent": {
+                                    "flightPlaceId": "PARI",
+                                    "displayCode": "PAR",
+                                    "name": "Paris",
+                                    "type": "City"
+                                },
+                                "name": "Paris Charles de Gaulle",
+                                "type": "Airport",
+                                "country": "France"
+                            },
+                            "destination": {
+                                "flightPlaceId": "AMS",
+                                "displayCode": "AMS",
+                                "parent": {
+                                    "flightPlaceId": "AMST",
+                                    "displayCode": "AMS",
+                                    "name": "Amsterdam",
+                                    "type": "City"
+                                },
+                                "name": "Amsterdam Schiphol",
+                                "type": "Airport",
+                                "country": "Netherlands"
+                            },
+                            "departure": "2024-07-24T11:45:00",
+                            "arrival": "2024-07-24T13:10:00",
+                            "durationInMinutes": 85,
+                            "flightNumber": "1640",
+                            "marketingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        },
+                        {
+                            "id": "9451-14788-2407241420-2407251045--32677",
+                            "origin": {
+                                "flightPlaceId": "AMS",
+                                "displayCode": "AMS",
+                                "parent": {
+                                    "flightPlaceId": "AMST",
+                                    "displayCode": "AMS",
+                                    "name": "Amsterdam",
+                                    "type": "City"
+                                },
+                                "name": "Amsterdam Schiphol",
+                                "type": "Airport",
+                                "country": "Netherlands"
+                            },
+                            "destination": {
+                                "flightPlaceId": "NRT",
+                                "displayCode": "NRT",
+                                "parent": {
+                                    "flightPlaceId": "TYOA",
+                                    "displayCode": "TYO",
+                                    "name": "Tokyo",
+                                    "type": "City"
+                                },
+                                "name": "Tokyo Narita",
+                                "type": "Airport",
+                                "country": "Japan"
+                            },
+                            "departure": "2024-07-24T14:20:00",
+                            "arrival": "2024-07-25T10:45:00",
+                            "durationInMinutes": 805,
+                            "flightNumber": "5133",
+                            "marketingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32132,
+                                "name": "KLM",
+                                "alternateId": "KL",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "12234-2408130905--32677-0-10413-2408131650",
+                    "origin": {
+                        "id": "HND",
+                        "entityId": "128667143",
+                        "name": "Tokyo Haneda",
+                        "displayCode": "HND",
+                        "city": "Tokyo",
+                        "country": "Japan",
+                        "isHighlighted": true
+                    },
+                    "destination": {
+                        "id": "CDG",
+                        "entityId": "95565041",
+                        "name": "Paris Charles de Gaulle",
+                        "displayCode": "CDG",
+                        "city": "Paris",
+                        "country": "France",
+                        "isHighlighted": false
+                    },
+                    "durationInMinutes": 885,
+                    "stopCount": 0,
+                    "isSmallestStops": false,
+                    "departure": "2024-08-13T09:05:00",
+                    "arrival": "2024-08-13T16:50:00",
+                    "timeDeltaInDays": 0,
+                    "carriers": {
+                        "marketing": [
+                            {
+                                "id": -32677,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
+                                "name": "Air France"
+                            }
+                        ],
+                        "operationType": "fully_operated"
+                    },
+                    "segments": [
+                        {
+                            "id": "12234-10413-2408130905-2408131650--32677",
+                            "origin": {
+                                "flightPlaceId": "HND",
+                                "displayCode": "HND",
+                                "parent": {
+                                    "flightPlaceId": "TYOA",
+                                    "displayCode": "TYO",
+                                    "name": "Tokyo",
+                                    "type": "City"
+                                },
+                                "name": "Tokyo Haneda",
+                                "type": "Airport",
+                                "country": "Japan"
+                            },
+                            "destination": {
+                                "flightPlaceId": "CDG",
+                                "displayCode": "CDG",
+                                "parent": {
+                                    "flightPlaceId": "PARI",
+                                    "displayCode": "PAR",
+                                    "name": "Paris",
+                                    "type": "City"
+                                },
+                                "name": "Paris Charles de Gaulle",
+                                "type": "Airport",
+                                "country": "France"
+                            },
+                            "departure": "2024-08-13T09:05:00",
+                            "arrival": "2024-08-13T16:50:00",
+                            "durationInMinutes": 885,
+                            "flightNumber": "163",
+                            "marketingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        }
+                    ]
+                }
+            ],
+            "isSelfTransfer": false,
+            "isProtectedSelfTransfer": false,
+            "farePolicy": {
+                "isChangeAllowed": false,
+                "isPartiallyChangeable": false,
+                "isCancellationAllowed": false,
+                "isPartiallyRefundable": false
+            },
+            "eco": {
+                "ecoContenderDelta": 18.347364
+            },
+            "fareAttributes": {},
+            "isMashUp": false,
+            "hasFlexibleOptions": false,
+            "score": 0.822671
+        },
+        {
+            "id": "10413-2407241015--32677-1-14788-2407251045|12234-2408130905--32677-0-10413-2408131650",
+            "price": {
+                "raw": 1492.79,
+                "formatted": "$1,493",
+                "pricingOptionId": "0CHCjE2Ip9Sc"
+            },
+            "legs": [
+                {
+                    "id": "10413-2407241015--32677-1-14788-2407251045",
+                    "origin": {
+                        "id": "CDG",
+                        "entityId": "95565041",
+                        "name": "Paris Charles de Gaulle",
+                        "displayCode": "CDG",
+                        "city": "Paris",
+                        "country": "France",
+                        "isHighlighted": false
+                    },
+                    "destination": {
+                        "id": "NRT",
+                        "entityId": "128668889",
+                        "name": "Tokyo Narita",
+                        "displayCode": "NRT",
+                        "city": "Tokyo",
+                        "country": "Japan",
+                        "isHighlighted": true
+                    },
+                    "durationInMinutes": 1050,
+                    "stopCount": 1,
+                    "isSmallestStops": false,
+                    "departure": "2024-07-24T10:15:00",
+                    "arrival": "2024-07-25T10:45:00",
+                    "timeDeltaInDays": 1,
+                    "carriers": {
+                        "marketing": [
+                            {
+                                "id": -32677,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
+                                "name": "Air France"
+                            }
+                        ],
+                        "operating": [
+                            {
+                                "id": -32132,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
+                                "name": "KLM"
+                            }
+                        ],
+                        "operationType": "not_operated"
+                    },
+                    "segments": [
+                        {
+                            "id": "10413-9451-2407241015-2407241130--32677",
+                            "origin": {
+                                "flightPlaceId": "CDG",
+                                "displayCode": "CDG",
+                                "parent": {
+                                    "flightPlaceId": "PARI",
+                                    "displayCode": "PAR",
+                                    "name": "Paris",
+                                    "type": "City"
+                                },
+                                "name": "Paris Charles de Gaulle",
+                                "type": "Airport",
+                                "country": "France"
+                            },
+                            "destination": {
+                                "flightPlaceId": "AMS",
+                                "displayCode": "AMS",
+                                "parent": {
+                                    "flightPlaceId": "AMST",
+                                    "displayCode": "AMS",
+                                    "name": "Amsterdam",
+                                    "type": "City"
+                                },
+                                "name": "Amsterdam Schiphol",
+                                "type": "Airport",
+                                "country": "Netherlands"
+                            },
+                            "departure": "2024-07-24T10:15:00",
+                            "arrival": "2024-07-24T11:30:00",
+                            "durationInMinutes": 75,
+                            "flightNumber": "8382",
+                            "marketingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32132,
+                                "name": "KLM",
+                                "alternateId": "KL",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        },
+                        {
+                            "id": "9451-14788-2407241420-2407251045--32677",
+                            "origin": {
+                                "flightPlaceId": "AMS",
+                                "displayCode": "AMS",
+                                "parent": {
+                                    "flightPlaceId": "AMST",
+                                    "displayCode": "AMS",
+                                    "name": "Amsterdam",
+                                    "type": "City"
+                                },
+                                "name": "Amsterdam Schiphol",
+                                "type": "Airport",
+                                "country": "Netherlands"
+                            },
+                            "destination": {
+                                "flightPlaceId": "NRT",
+                                "displayCode": "NRT",
+                                "parent": {
+                                    "flightPlaceId": "TYOA",
+                                    "displayCode": "TYO",
+                                    "name": "Tokyo",
+                                    "type": "City"
+                                },
+                                "name": "Tokyo Narita",
+                                "type": "Airport",
+                                "country": "Japan"
+                            },
+                            "departure": "2024-07-24T14:20:00",
+                            "arrival": "2024-07-25T10:45:00",
+                            "durationInMinutes": 805,
+                            "flightNumber": "5133",
+                            "marketingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32132,
+                                "name": "KLM",
+                                "alternateId": "KL",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "12234-2408130905--32677-0-10413-2408131650",
+                    "origin": {
+                        "id": "HND",
+                        "entityId": "128667143",
+                        "name": "Tokyo Haneda",
+                        "displayCode": "HND",
+                        "city": "Tokyo",
+                        "country": "Japan",
+                        "isHighlighted": true
+                    },
+                    "destination": {
+                        "id": "CDG",
+                        "entityId": "95565041",
+                        "name": "Paris Charles de Gaulle",
+                        "displayCode": "CDG",
+                        "city": "Paris",
+                        "country": "France",
+                        "isHighlighted": false
+                    },
+                    "durationInMinutes": 885,
+                    "stopCount": 0,
+                    "isSmallestStops": false,
+                    "departure": "2024-08-13T09:05:00",
+                    "arrival": "2024-08-13T16:50:00",
+                    "timeDeltaInDays": 0,
+                    "carriers": {
+                        "marketing": [
+                            {
+                                "id": -32677,
+                                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
+                                "name": "Air France"
+                            }
+                        ],
+                        "operationType": "fully_operated"
+                    },
+                    "segments": [
+                        {
+                            "id": "12234-10413-2408130905-2408131650--32677",
+                            "origin": {
+                                "flightPlaceId": "HND",
+                                "displayCode": "HND",
+                                "parent": {
+                                    "flightPlaceId": "TYOA",
+                                    "displayCode": "TYO",
+                                    "name": "Tokyo",
+                                    "type": "City"
+                                },
+                                "name": "Tokyo Haneda",
+                                "type": "Airport",
+                                "country": "Japan"
+                            },
+                            "destination": {
+                                "flightPlaceId": "CDG",
+                                "displayCode": "CDG",
+                                "parent": {
+                                    "flightPlaceId": "PARI",
+                                    "displayCode": "PAR",
+                                    "name": "Paris",
+                                    "type": "City"
+                                },
+                                "name": "Paris Charles de Gaulle",
+                                "type": "Airport",
+                                "country": "France"
+                            },
+                            "departure": "2024-08-13T09:05:00",
+                            "arrival": "2024-08-13T16:50:00",
+                            "durationInMinutes": 885,
+                            "flightNumber": "163",
+                            "marketingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            },
+                            "operatingCarrier": {
+                                "id": -32677,
+                                "name": "Air France",
+                                "alternateId": "AF",
+                                "allianceId": 0,
+                                "displayCode": ""
+                            }
+                        }
+                    ]
+                }
+            ],
+            "isSelfTransfer": false,
+            "isProtectedSelfTransfer": false,
+            "farePolicy": {
+                "isChangeAllowed": false,
+                "isPartiallyChangeable": false,
+                "isCancellationAllowed": false,
+                "isPartiallyRefundable": false
+            },
+            "eco": {
+                "ecoContenderDelta": 19.273233
+            },
+            "fareAttributes": {},
+            "isMashUp": false,
+            "hasFlexibleOptions": false,
+            "score": 0.794203
+        }
+    ],
+    "messages": [],
+    "filterStats": {
+        "duration": {
+            "min": 875,
+            "max": 1050,
+            "multiCityMin": 1690,
+            "multiCityMax": 1935
+        },
+        "airports": [
+            {
+                "city": "Paris",
+                "airports": [
+                    {
+                        "id": "CDG",
+                        "entityId": "95565041",
+                        "name": "Paris Charles de Gaulle"
+                    }
+                ]
+            },
+            {
+                "city": "Tokyo",
+                "airports": [
+                    {
+                        "id": "HND",
+                        "entityId": "128667143",
+                        "name": "Tokyo Haneda"
+                    },
+                    {
+                        "id": "NRT",
+                        "entityId": "128668889",
+                        "name": "Tokyo Narita"
+                    }
+                ]
+            }
+        ],
+        "carriers": [
+            {
+                "id": -32677,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
+                "name": "Air France"
+            },
+            {
+                "id": -32571,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/NH.png",
+                "name": "ANA (All Nippon Airways)"
+            },
+            {
                 "id": -32184,
                 "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/JL.png",
                 "name": "Japan Airlines"
-              }
-            ],
-            "operationType": "partially_operated"
-          },
-          "segments": [
-            {
-              "id": "12234-11089-2407032250-2407040440--31939",
-              "origin": {
-                "flightPlaceId": "HND",
-                "displayCode": "HND",
-                "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
-                  "type": "City"
-                },
-                "name": "Tokyo Haneda",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "destination": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
-                "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
-                  "type": "City"
-                },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
-              },
-              "departure": "2024-07-03T22:50:00",
-              "arrival": "2024-07-04T04:40:00",
-              "durationInMinutes": 710,
-              "flightNumber": "4851",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32184,
-                "name": "Japan Airlines",
-                "alternateId": "JL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "11089-12569-2407042020-2407050150--31939",
-              "origin": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
-                "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
-                  "type": "City"
-                },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
-              },
-              "destination": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "departure": "2024-07-04T20:20:00",
-              "arrival": "2024-07-05T01:50:00",
-              "durationInMinutes": 210,
-              "flightNumber": "632",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              }
             }
-          ]
-        }
-      ],
-      "isSelfTransfer": false,
-      "isProtectedSelfTransfer": false,
-      "farePolicy": {
-        "isChangeAllowed": false,
-        "isPartiallyChangeable": false,
-        "isCancellationAllowed": false,
-        "isPartiallyRefundable": false
-      },
-      "fareAttributes": {},
-      "tags": ["cheapest"],
-      "isMashUp": false,
-      "hasFlexibleOptions": false,
-      "score": 0.999
-    },
-    {
-      "id": "14788-2407031200--31767-1-12569-2407032210",
-      "price": {
-        "raw": 731.42,
-        "formatted": "$732",
-        "pricingOptionId": "wh0x8NRKtHOQ"
-      },
-      "legs": [
-        {
-          "id": "14788-2407031200--31767-1-12569-2407032210",
-          "origin": {
-            "id": "NRT",
-            "entityId": "128668889",
-            "name": "Tokyo Narita",
-            "displayCode": "NRT",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 850,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-07-03T12:00:00",
-          "arrival": "2024-07-03T22:10:00",
-          "timeDeltaInDays": 0,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -31767,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/TG.png",
-                "name": "Thai Airways"
-              }
-            ],
-            "operationType": "fully_operated"
-          },
-          "segments": [
-            {
-              "id": "14788-9970-2407031200-2407031630--31767",
-              "origin": {
-                "flightPlaceId": "NRT",
-                "displayCode": "NRT",
-                "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
-                  "type": "City"
-                },
-                "name": "Tokyo Narita",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "destination": {
-                "flightPlaceId": "BKK",
-                "displayCode": "BKK",
-                "parent": {
-                  "flightPlaceId": "BKKT",
-                  "displayCode": "BKK",
-                  "name": "Bangkok",
-                  "type": "City"
-                },
-                "name": "Bangkok Suvarnabhumi",
-                "type": "Airport",
-                "country": "Thailand"
-              },
-              "departure": "2024-07-03T12:00:00",
-              "arrival": "2024-07-03T16:30:00",
-              "durationInMinutes": 390,
-              "flightNumber": "643",
-              "marketingCarrier": {
-                "id": -31767,
-                "name": "Thai Airways",
-                "alternateId": "TG",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -31767,
-                "name": "Thai Airways",
-                "alternateId": "TG",
-                "allianceId": 0,
-                "displayCode": ""
-              }
+        ],
+        "stopPrices": {
+            "direct": {
+                "isPresent": true,
+                "formattedPrice": "$1,301"
             },
-            {
-              "id": "9970-12569-2407031900-2407032210--31767",
-              "origin": {
-                "flightPlaceId": "BKK",
-                "displayCode": "BKK",
-                "parent": {
-                  "flightPlaceId": "BKKT",
-                  "displayCode": "BKK",
-                  "name": "Bangkok",
-                  "type": "City"
-                },
-                "name": "Bangkok Suvarnabhumi",
-                "type": "Airport",
-                "country": "Thailand"
-              },
-              "destination": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "departure": "2024-07-03T19:00:00",
-              "arrival": "2024-07-03T22:10:00",
-              "durationInMinutes": 310,
-              "flightNumber": "349",
-              "marketingCarrier": {
-                "id": -31767,
-                "name": "Thai Airways",
-                "alternateId": "TG",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -31767,
-                "name": "Thai Airways",
-                "alternateId": "TG",
-                "allianceId": 0,
-                "displayCode": ""
-              }
+            "one": {
+                "isPresent": true,
+                "formattedPrice": "$1,437"
+            },
+            "twoOrMore": {
+                "isPresent": false
             }
-          ]
         }
-      ],
-      "isSelfTransfer": false,
-      "isProtectedSelfTransfer": false,
-      "farePolicy": {
-        "isChangeAllowed": false,
-        "isPartiallyChangeable": false,
-        "isCancellationAllowed": false,
-        "isPartiallyRefundable": false
-      },
-      "eco": {
-        "ecoContenderDelta": 21.254969
-      },
-      "fareAttributes": {},
-      "tags": ["shortest"],
-      "isMashUp": false,
-      "hasFlexibleOptions": false,
-      "score": 0.849541
     },
-    {
-      "id": "14788-2407032230--31939-1-12569-2407050150",
-      "price": {
-        "raw": 550.57,
-        "formatted": "$551",
-        "pricingOptionId": "hs9jT8y4pWzc"
-      },
-      "legs": [
-        {
-          "id": "14788-2407032230--31939-1-12569-2407050150",
-          "origin": {
-            "id": "NRT",
-            "entityId": "128668889",
-            "name": "Tokyo Narita",
-            "displayCode": "NRT",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 1880,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-07-03T22:30:00",
-          "arrival": "2024-07-05T01:50:00",
-          "timeDeltaInDays": 2,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -31939,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/QR.png",
-                "name": "Qatar Airways"
-              }
-            ],
-            "operationType": "fully_operated"
-          },
-          "segments": [
-            {
-              "id": "14788-11089-2407032230-2407040320--31939",
-              "origin": {
-                "flightPlaceId": "NRT",
-                "displayCode": "NRT",
-                "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
-                  "type": "City"
-                },
-                "name": "Tokyo Narita",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "destination": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
-                "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
-                  "type": "City"
-                },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
-              },
-              "departure": "2024-07-03T22:30:00",
-              "arrival": "2024-07-04T03:20:00",
-              "durationInMinutes": 650,
-              "flightNumber": "807",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "11089-12569-2407042020-2407050150--31939",
-              "origin": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
-                "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
-                  "type": "City"
-                },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
-              },
-              "destination": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "departure": "2024-07-04T20:20:00",
-              "arrival": "2024-07-05T01:50:00",
-              "durationInMinutes": 210,
-              "flightNumber": "632",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        }
-      ],
-      "isSelfTransfer": false,
-      "isProtectedSelfTransfer": false,
-      "farePolicy": {
-        "isChangeAllowed": false,
-        "isPartiallyChangeable": false,
-        "isCancellationAllowed": false,
-        "isPartiallyRefundable": false
-      },
-      "fareAttributes": {},
-      "isMashUp": false,
-      "hasFlexibleOptions": false,
-      "score": 0.837185
-    },
-    {
-      "id": "12234-2407031035--31767-1-12569-2407032210",
-      "price": {
-        "raw": 729.08,
-        "formatted": "$730",
-        "pricingOptionId": "TbXkVWCxg-XE"
-      },
-      "legs": [
-        {
-          "id": "12234-2407031035--31767-1-12569-2407032210",
-          "origin": {
-            "id": "HND",
-            "entityId": "128667143",
-            "name": "Tokyo Haneda",
-            "displayCode": "HND",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 935,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-07-03T10:35:00",
-          "arrival": "2024-07-03T22:10:00",
-          "timeDeltaInDays": 0,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -31767,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/TG.png",
-                "name": "Thai Airways"
-              }
-            ],
-            "operationType": "fully_operated"
-          },
-          "segments": [
-            {
-              "id": "12234-9970-2407031035-2407031505--31767",
-              "origin": {
-                "flightPlaceId": "HND",
-                "displayCode": "HND",
-                "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
-                  "type": "City"
-                },
-                "name": "Tokyo Haneda",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "destination": {
-                "flightPlaceId": "BKK",
-                "displayCode": "BKK",
-                "parent": {
-                  "flightPlaceId": "BKKT",
-                  "displayCode": "BKK",
-                  "name": "Bangkok",
-                  "type": "City"
-                },
-                "name": "Bangkok Suvarnabhumi",
-                "type": "Airport",
-                "country": "Thailand"
-              },
-              "departure": "2024-07-03T10:35:00",
-              "arrival": "2024-07-03T15:05:00",
-              "durationInMinutes": 390,
-              "flightNumber": "683",
-              "marketingCarrier": {
-                "id": -31767,
-                "name": "Thai Airways",
-                "alternateId": "TG",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -31767,
-                "name": "Thai Airways",
-                "alternateId": "TG",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9970-12569-2407031900-2407032210--31767",
-              "origin": {
-                "flightPlaceId": "BKK",
-                "displayCode": "BKK",
-                "parent": {
-                  "flightPlaceId": "BKKT",
-                  "displayCode": "BKK",
-                  "name": "Bangkok",
-                  "type": "City"
-                },
-                "name": "Bangkok Suvarnabhumi",
-                "type": "Airport",
-                "country": "Thailand"
-              },
-              "destination": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "departure": "2024-07-03T19:00:00",
-              "arrival": "2024-07-03T22:10:00",
-              "durationInMinutes": 310,
-              "flightNumber": "349",
-              "marketingCarrier": {
-                "id": -31767,
-                "name": "Thai Airways",
-                "alternateId": "TG",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -31767,
-                "name": "Thai Airways",
-                "alternateId": "TG",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        }
-      ],
-      "isSelfTransfer": false,
-      "isProtectedSelfTransfer": false,
-      "farePolicy": {
-        "isChangeAllowed": false,
-        "isPartiallyChangeable": false,
-        "isCancellationAllowed": false,
-        "isPartiallyRefundable": false
-      },
-      "fareAttributes": {},
-      "tags": ["third_shortest"],
-      "isMashUp": false,
-      "hasFlexibleOptions": false,
-      "score": 0.814867
-    },
-    {
-      "id": "14788-2407031050--31767-1-12569-2407032210",
-      "price": {
-        "raw": 731.42,
-        "formatted": "$732",
-        "pricingOptionId": "uauRcSoHZ_IA"
-      },
-      "legs": [
-        {
-          "id": "14788-2407031050--31767-1-12569-2407032210",
-          "origin": {
-            "id": "NRT",
-            "entityId": "128668889",
-            "name": "Tokyo Narita",
-            "displayCode": "NRT",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 920,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-07-03T10:50:00",
-          "arrival": "2024-07-03T22:10:00",
-          "timeDeltaInDays": 0,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -31767,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/TG.png",
-                "name": "Thai Airways"
-              }
-            ],
-            "operationType": "fully_operated"
-          },
-          "segments": [
-            {
-              "id": "14788-9970-2407031050-2407031520--31767",
-              "origin": {
-                "flightPlaceId": "NRT",
-                "displayCode": "NRT",
-                "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
-                  "type": "City"
-                },
-                "name": "Tokyo Narita",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "destination": {
-                "flightPlaceId": "BKK",
-                "displayCode": "BKK",
-                "parent": {
-                  "flightPlaceId": "BKKT",
-                  "displayCode": "BKK",
-                  "name": "Bangkok",
-                  "type": "City"
-                },
-                "name": "Bangkok Suvarnabhumi",
-                "type": "Airport",
-                "country": "Thailand"
-              },
-              "departure": "2024-07-03T10:50:00",
-              "arrival": "2024-07-03T15:20:00",
-              "durationInMinutes": 390,
-              "flightNumber": "641",
-              "marketingCarrier": {
-                "id": -31767,
-                "name": "Thai Airways",
-                "alternateId": "TG",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -31767,
-                "name": "Thai Airways",
-                "alternateId": "TG",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9970-12569-2407031900-2407032210--31767",
-              "origin": {
-                "flightPlaceId": "BKK",
-                "displayCode": "BKK",
-                "parent": {
-                  "flightPlaceId": "BKKT",
-                  "displayCode": "BKK",
-                  "name": "Bangkok",
-                  "type": "City"
-                },
-                "name": "Bangkok Suvarnabhumi",
-                "type": "Airport",
-                "country": "Thailand"
-              },
-              "destination": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "departure": "2024-07-03T19:00:00",
-              "arrival": "2024-07-03T22:10:00",
-              "durationInMinutes": 310,
-              "flightNumber": "349",
-              "marketingCarrier": {
-                "id": -31767,
-                "name": "Thai Airways",
-                "alternateId": "TG",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -31767,
-                "name": "Thai Airways",
-                "alternateId": "TG",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        }
-      ],
-      "isSelfTransfer": false,
-      "isProtectedSelfTransfer": false,
-      "farePolicy": {
-        "isChangeAllowed": false,
-        "isPartiallyChangeable": false,
-        "isCancellationAllowed": false,
-        "isPartiallyRefundable": false
-      },
-      "eco": {
-        "ecoContenderDelta": 21.254969
-      },
-      "fareAttributes": {},
-      "tags": ["second_shortest"],
-      "isMashUp": false,
-      "hasFlexibleOptions": false,
-      "score": 0.812035
-    },
-    {
-      "id": "14788-2407032125--32228,-32690-2-12569-2407041800",
-      "price": {
-        "raw": 496.1,
-        "formatted": "$497",
-        "pricingOptionId": "DA3YRz-PebxE"
-      },
-      "legs": [
-        {
-          "id": "14788-2407032125--32228,-32690-2-12569-2407041800",
-          "origin": {
-            "id": "NRT",
-            "entityId": "128668889",
-            "name": "Tokyo Narita",
-            "displayCode": "NRT",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 1475,
-          "stopCount": 2,
-          "isSmallestStops": false,
-          "departure": "2024-07-03T21:25:00",
-          "arrival": "2024-07-04T18:00:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32228,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/UO.png",
-                "name": "HK Express"
-              },
-              {
-                "id": -32690,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/CA.png",
-                "name": "Air China"
-              }
-            ],
-            "operationType": "fully_operated"
-          },
-          "segments": [
-            {
-              "id": "14788-12191-2407032125-2407040115--32228",
-              "origin": {
-                "flightPlaceId": "NRT",
-                "displayCode": "NRT",
-                "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
-                  "type": "City"
-                },
-                "name": "Tokyo Narita",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "destination": {
-                "flightPlaceId": "HKG",
-                "displayCode": "HKG",
-                "parent": {
-                  "flightPlaceId": "HKGA",
-                  "displayCode": "HKG",
-                  "name": "Hong Kong",
-                  "type": "City"
-                },
-                "name": "Hong Kong Intl",
-                "type": "Airport",
-                "country": "Hong Kong"
-              },
-              "departure": "2024-07-03T21:25:00",
-              "arrival": "2024-07-04T01:15:00",
-              "durationInMinutes": 290,
-              "flightNumber": "653",
-              "marketingCarrier": {
-                "id": -32228,
-                "name": "HK Express",
-                "alternateId": "UO",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32228,
-                "name": "HK Express",
-                "alternateId": "UO",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "12191-15277-2407040830-2407041135--32690",
-              "origin": {
-                "flightPlaceId": "HKG",
-                "displayCode": "HKG",
-                "parent": {
-                  "flightPlaceId": "HKGA",
-                  "displayCode": "HKG",
-                  "name": "Hong Kong",
-                  "type": "City"
-                },
-                "name": "Hong Kong Intl",
-                "type": "Airport",
-                "country": "Hong Kong"
-              },
-              "destination": {
-                "flightPlaceId": "PEK",
-                "displayCode": "PEK",
-                "parent": {
-                  "flightPlaceId": "BJSA",
-                  "displayCode": "BJS",
-                  "name": "Beijing",
-                  "type": "City"
-                },
-                "name": "Beijing Capital",
-                "type": "Airport",
-                "country": "China"
-              },
-              "departure": "2024-07-04T08:30:00",
-              "arrival": "2024-07-04T11:35:00",
-              "durationInMinutes": 185,
-              "flightNumber": "118",
-              "marketingCarrier": {
-                "id": -32690,
-                "name": "Air China",
-                "alternateId": "CA",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32690,
-                "name": "Air China",
-                "alternateId": "CA",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "15277-12569-2407041430-2407041800--32690",
-              "origin": {
-                "flightPlaceId": "PEK",
-                "displayCode": "PEK",
-                "parent": {
-                  "flightPlaceId": "BJSA",
-                  "displayCode": "BJS",
-                  "name": "Beijing",
-                  "type": "City"
-                },
-                "name": "Beijing Capital",
-                "type": "Airport",
-                "country": "China"
-              },
-              "destination": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "departure": "2024-07-04T14:30:00",
-              "arrival": "2024-07-04T18:00:00",
-              "durationInMinutes": 390,
-              "flightNumber": "945",
-              "marketingCarrier": {
-                "id": -32690,
-                "name": "Air China",
-                "alternateId": "CA",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32690,
-                "name": "Air China",
-                "alternateId": "CA",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        }
-      ],
-      "isSelfTransfer": false,
-      "isProtectedSelfTransfer": true,
-      "farePolicy": {
-        "isChangeAllowed": false,
-        "isPartiallyChangeable": false,
-        "isCancellationAllowed": false,
-        "isPartiallyRefundable": false
-      },
-      "fareAttributes": {},
-      "tags": ["second_cheapest"],
-      "isMashUp": false,
-      "hasFlexibleOptions": false,
-      "score": 0.731817
-    },
-    {
-      "id": "14788-2407032040--32228,-32690-2-12569-2407041800",
-      "price": {
-        "raw": 496.1,
-        "formatted": "$497",
-        "pricingOptionId": "tSYBa03pKEUZ"
-      },
-      "legs": [
-        {
-          "id": "14788-2407032040--32228,-32690-2-12569-2407041800",
-          "origin": {
-            "id": "NRT",
-            "entityId": "128668889",
-            "name": "Tokyo Narita",
-            "displayCode": "NRT",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 1520,
-          "stopCount": 2,
-          "isSmallestStops": false,
-          "departure": "2024-07-03T20:40:00",
-          "arrival": "2024-07-04T18:00:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32228,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/UO.png",
-                "name": "HK Express"
-              },
-              {
-                "id": -32690,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/CA.png",
-                "name": "Air China"
-              }
-            ],
-            "operationType": "fully_operated"
-          },
-          "segments": [
-            {
-              "id": "14788-12191-2407032040-2407040035--32228",
-              "origin": {
-                "flightPlaceId": "NRT",
-                "displayCode": "NRT",
-                "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
-                  "type": "City"
-                },
-                "name": "Tokyo Narita",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "destination": {
-                "flightPlaceId": "HKG",
-                "displayCode": "HKG",
-                "parent": {
-                  "flightPlaceId": "HKGA",
-                  "displayCode": "HKG",
-                  "name": "Hong Kong",
-                  "type": "City"
-                },
-                "name": "Hong Kong Intl",
-                "type": "Airport",
-                "country": "Hong Kong"
-              },
-              "departure": "2024-07-03T20:40:00",
-              "arrival": "2024-07-04T00:35:00",
-              "durationInMinutes": 295,
-              "flightNumber": "651",
-              "marketingCarrier": {
-                "id": -32228,
-                "name": "HK Express",
-                "alternateId": "UO",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32228,
-                "name": "HK Express",
-                "alternateId": "UO",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "12191-15277-2407040830-2407041135--32690",
-              "origin": {
-                "flightPlaceId": "HKG",
-                "displayCode": "HKG",
-                "parent": {
-                  "flightPlaceId": "HKGA",
-                  "displayCode": "HKG",
-                  "name": "Hong Kong",
-                  "type": "City"
-                },
-                "name": "Hong Kong Intl",
-                "type": "Airport",
-                "country": "Hong Kong"
-              },
-              "destination": {
-                "flightPlaceId": "PEK",
-                "displayCode": "PEK",
-                "parent": {
-                  "flightPlaceId": "BJSA",
-                  "displayCode": "BJS",
-                  "name": "Beijing",
-                  "type": "City"
-                },
-                "name": "Beijing Capital",
-                "type": "Airport",
-                "country": "China"
-              },
-              "departure": "2024-07-04T08:30:00",
-              "arrival": "2024-07-04T11:35:00",
-              "durationInMinutes": 185,
-              "flightNumber": "118",
-              "marketingCarrier": {
-                "id": -32690,
-                "name": "Air China",
-                "alternateId": "CA",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32690,
-                "name": "Air China",
-                "alternateId": "CA",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "15277-12569-2407041430-2407041800--32690",
-              "origin": {
-                "flightPlaceId": "PEK",
-                "displayCode": "PEK",
-                "parent": {
-                  "flightPlaceId": "BJSA",
-                  "displayCode": "BJS",
-                  "name": "Beijing",
-                  "type": "City"
-                },
-                "name": "Beijing Capital",
-                "type": "Airport",
-                "country": "China"
-              },
-              "destination": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "departure": "2024-07-04T14:30:00",
-              "arrival": "2024-07-04T18:00:00",
-              "durationInMinutes": 390,
-              "flightNumber": "945",
-              "marketingCarrier": {
-                "id": -32690,
-                "name": "Air China",
-                "alternateId": "CA",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32690,
-                "name": "Air China",
-                "alternateId": "CA",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        }
-      ],
-      "isSelfTransfer": false,
-      "isProtectedSelfTransfer": true,
-      "farePolicy": {
-        "isChangeAllowed": false,
-        "isPartiallyChangeable": false,
-        "isCancellationAllowed": false,
-        "isPartiallyRefundable": false
-      },
-      "fareAttributes": {},
-      "tags": ["third_cheapest"],
-      "isMashUp": false,
-      "hasFlexibleOptions": false,
-      "score": 0.705157
-    },
-    {
-      "id": "14788-2407031920--32228,-32690-2-12569-2407041800",
-      "price": {
-        "raw": 496.1,
-        "formatted": "$497",
-        "pricingOptionId": "d8bkkvdoMmSe"
-      },
-      "legs": [
-        {
-          "id": "14788-2407031920--32228,-32690-2-12569-2407041800",
-          "origin": {
-            "id": "NRT",
-            "entityId": "128668889",
-            "name": "Tokyo Narita",
-            "displayCode": "NRT",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 1600,
-          "stopCount": 2,
-          "isSmallestStops": false,
-          "departure": "2024-07-03T19:20:00",
-          "arrival": "2024-07-04T18:00:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32228,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/UO.png",
-                "name": "HK Express"
-              },
-              {
-                "id": -32690,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/CA.png",
-                "name": "Air China"
-              }
-            ],
-            "operationType": "fully_operated"
-          },
-          "segments": [
-            {
-              "id": "14788-12191-2407031920-2407032315--32228",
-              "origin": {
-                "flightPlaceId": "NRT",
-                "displayCode": "NRT",
-                "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
-                  "type": "City"
-                },
-                "name": "Tokyo Narita",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "destination": {
-                "flightPlaceId": "HKG",
-                "displayCode": "HKG",
-                "parent": {
-                  "flightPlaceId": "HKGA",
-                  "displayCode": "HKG",
-                  "name": "Hong Kong",
-                  "type": "City"
-                },
-                "name": "Hong Kong Intl",
-                "type": "Airport",
-                "country": "Hong Kong"
-              },
-              "departure": "2024-07-03T19:20:00",
-              "arrival": "2024-07-03T23:15:00",
-              "durationInMinutes": 295,
-              "flightNumber": "647",
-              "marketingCarrier": {
-                "id": -32228,
-                "name": "HK Express",
-                "alternateId": "UO",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32228,
-                "name": "HK Express",
-                "alternateId": "UO",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "12191-15277-2407040830-2407041135--32690",
-              "origin": {
-                "flightPlaceId": "HKG",
-                "displayCode": "HKG",
-                "parent": {
-                  "flightPlaceId": "HKGA",
-                  "displayCode": "HKG",
-                  "name": "Hong Kong",
-                  "type": "City"
-                },
-                "name": "Hong Kong Intl",
-                "type": "Airport",
-                "country": "Hong Kong"
-              },
-              "destination": {
-                "flightPlaceId": "PEK",
-                "displayCode": "PEK",
-                "parent": {
-                  "flightPlaceId": "BJSA",
-                  "displayCode": "BJS",
-                  "name": "Beijing",
-                  "type": "City"
-                },
-                "name": "Beijing Capital",
-                "type": "Airport",
-                "country": "China"
-              },
-              "departure": "2024-07-04T08:30:00",
-              "arrival": "2024-07-04T11:35:00",
-              "durationInMinutes": 185,
-              "flightNumber": "118",
-              "marketingCarrier": {
-                "id": -32690,
-                "name": "Air China",
-                "alternateId": "CA",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32690,
-                "name": "Air China",
-                "alternateId": "CA",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "15277-12569-2407041430-2407041800--32690",
-              "origin": {
-                "flightPlaceId": "PEK",
-                "displayCode": "PEK",
-                "parent": {
-                  "flightPlaceId": "BJSA",
-                  "displayCode": "BJS",
-                  "name": "Beijing",
-                  "type": "City"
-                },
-                "name": "Beijing Capital",
-                "type": "Airport",
-                "country": "China"
-              },
-              "destination": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "departure": "2024-07-04T14:30:00",
-              "arrival": "2024-07-04T18:00:00",
-              "durationInMinutes": 390,
-              "flightNumber": "945",
-              "marketingCarrier": {
-                "id": -32690,
-                "name": "Air China",
-                "alternateId": "CA",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32690,
-                "name": "Air China",
-                "alternateId": "CA",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        }
-      ],
-      "isSelfTransfer": false,
-      "isProtectedSelfTransfer": true,
-      "farePolicy": {
-        "isChangeAllowed": false,
-        "isPartiallyChangeable": false,
-        "isCancellationAllowed": false,
-        "isPartiallyRefundable": false
-      },
-      "fareAttributes": {},
-      "isMashUp": false,
-      "hasFlexibleOptions": false,
-      "score": 0.667551
-    },
-    {
-      "id": "14788-2407031950--32558,-32339-2-12569-2407041835",
-      "price": {
-        "raw": 564.4,
-        "formatted": "$565",
-        "pricingOptionId": "TAdp8Y1UeqlT"
-      },
-      "legs": [
-        {
-          "id": "14788-2407031950--32558,-32339-2-12569-2407041835",
-          "origin": {
-            "id": "NRT",
-            "entityId": "128668889",
-            "name": "Tokyo Narita",
-            "displayCode": "NRT",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 1605,
-          "stopCount": 2,
-          "isSmallestStops": false,
-          "departure": "2024-07-03T19:50:00",
-          "arrival": "2024-07-04T18:35:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32558,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/OZ.png",
-                "name": "Asiana Airlines"
-              },
-              {
-                "id": -32339,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/60.png",
-                "name": "Etihad Airways"
-              }
-            ],
-            "operationType": "fully_operated"
-          },
-          "segments": [
-            {
-              "id": "14788-12409-2407031950-2407032230--32558",
-              "origin": {
-                "flightPlaceId": "NRT",
-                "displayCode": "NRT",
-                "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
-                  "type": "City"
-                },
-                "name": "Tokyo Narita",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "destination": {
-                "flightPlaceId": "ICN",
-                "displayCode": "ICN",
-                "parent": {
-                  "flightPlaceId": "SELA",
-                  "displayCode": "SEL",
-                  "name": "Seoul",
-                  "type": "City"
-                },
-                "name": "Incheon International Airport",
-                "type": "Airport",
-                "country": "South Korea"
-              },
-              "departure": "2024-07-03T19:50:00",
-              "arrival": "2024-07-03T22:30:00",
-              "durationInMinutes": 160,
-              "flightNumber": "105",
-              "marketingCarrier": {
-                "id": -32558,
-                "name": "Asiana Airlines",
-                "alternateId": "OZ",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32558,
-                "name": "Asiana Airlines",
-                "alternateId": "OZ",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "12409-9618-2407040055-2407040540--32339",
-              "origin": {
-                "flightPlaceId": "ICN",
-                "displayCode": "ICN",
-                "parent": {
-                  "flightPlaceId": "SELA",
-                  "displayCode": "SEL",
-                  "name": "Seoul",
-                  "type": "City"
-                },
-                "name": "Incheon International Airport",
-                "type": "Airport",
-                "country": "South Korea"
-              },
-              "destination": {
-                "flightPlaceId": "AUH",
-                "displayCode": "AUH",
-                "parent": {
-                  "flightPlaceId": "AUHA",
-                  "displayCode": "AUH",
-                  "name": "Abu Dhabi",
-                  "type": "City"
-                },
-                "name": "Zayed International",
-                "type": "Airport",
-                "country": "United Arab Emirates"
-              },
-              "departure": "2024-07-04T00:55:00",
-              "arrival": "2024-07-04T05:40:00",
-              "durationInMinutes": 585,
-              "flightNumber": "859",
-              "marketingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9618-12569-2407041420-2407041835--32339",
-              "origin": {
-                "flightPlaceId": "AUH",
-                "displayCode": "AUH",
-                "parent": {
-                  "flightPlaceId": "AUHA",
-                  "displayCode": "AUH",
-                  "name": "Abu Dhabi",
-                  "type": "City"
-                },
-                "name": "Zayed International",
-                "type": "Airport",
-                "country": "United Arab Emirates"
-              },
-              "destination": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "departure": "2024-07-04T14:20:00",
-              "arrival": "2024-07-04T18:35:00",
-              "durationInMinutes": 195,
-              "flightNumber": "233",
-              "marketingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        }
-      ],
-      "isSelfTransfer": false,
-      "isProtectedSelfTransfer": true,
-      "farePolicy": {
-        "isChangeAllowed": false,
-        "isPartiallyChangeable": false,
-        "isCancellationAllowed": false,
-        "isPartiallyRefundable": false
-      },
-      "fareAttributes": {},
-      "isMashUp": false,
-      "hasFlexibleOptions": false,
-      "score": 0.581433
-    },
-    {
-      "id": "14788-2407031830--31731,-32339-2-12569-2407041835",
-      "price": {
-        "raw": 541.31,
-        "formatted": "$542",
-        "pricingOptionId": "EuyRoQfCbK5r"
-      },
-      "legs": [
-        {
-          "id": "14788-2407031830--31731,-32339-2-12569-2407041835",
-          "origin": {
-            "id": "NRT",
-            "entityId": "128668889",
-            "name": "Tokyo Narita",
-            "displayCode": "NRT",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 1685,
-          "stopCount": 2,
-          "isSmallestStops": false,
-          "departure": "2024-07-03T18:30:00",
-          "arrival": "2024-07-04T18:35:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -31731,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/9R.png",
-                "name": "T'way Air"
-              },
-              {
-                "id": -32339,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/60.png",
-                "name": "Etihad Airways"
-              }
-            ],
-            "operationType": "fully_operated"
-          },
-          "segments": [
-            {
-              "id": "14788-12409-2407031830-2407032110--31731",
-              "origin": {
-                "flightPlaceId": "NRT",
-                "displayCode": "NRT",
-                "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
-                  "type": "City"
-                },
-                "name": "Tokyo Narita",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "destination": {
-                "flightPlaceId": "ICN",
-                "displayCode": "ICN",
-                "parent": {
-                  "flightPlaceId": "SELA",
-                  "displayCode": "SEL",
-                  "name": "Seoul",
-                  "type": "City"
-                },
-                "name": "Incheon International Airport",
-                "type": "Airport",
-                "country": "South Korea"
-              },
-              "departure": "2024-07-03T18:30:00",
-              "arrival": "2024-07-03T21:10:00",
-              "durationInMinutes": 160,
-              "flightNumber": "216",
-              "marketingCarrier": {
-                "id": -31731,
-                "name": "T'way Air",
-                "alternateId": "9R",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -31731,
-                "name": "T'way Air",
-                "alternateId": "9R",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "12409-9618-2407040055-2407040540--32339",
-              "origin": {
-                "flightPlaceId": "ICN",
-                "displayCode": "ICN",
-                "parent": {
-                  "flightPlaceId": "SELA",
-                  "displayCode": "SEL",
-                  "name": "Seoul",
-                  "type": "City"
-                },
-                "name": "Incheon International Airport",
-                "type": "Airport",
-                "country": "South Korea"
-              },
-              "destination": {
-                "flightPlaceId": "AUH",
-                "displayCode": "AUH",
-                "parent": {
-                  "flightPlaceId": "AUHA",
-                  "displayCode": "AUH",
-                  "name": "Abu Dhabi",
-                  "type": "City"
-                },
-                "name": "Zayed International",
-                "type": "Airport",
-                "country": "United Arab Emirates"
-              },
-              "departure": "2024-07-04T00:55:00",
-              "arrival": "2024-07-04T05:40:00",
-              "durationInMinutes": 585,
-              "flightNumber": "859",
-              "marketingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9618-12569-2407041420-2407041835--32339",
-              "origin": {
-                "flightPlaceId": "AUH",
-                "displayCode": "AUH",
-                "parent": {
-                  "flightPlaceId": "AUHA",
-                  "displayCode": "AUH",
-                  "name": "Abu Dhabi",
-                  "type": "City"
-                },
-                "name": "Zayed International",
-                "type": "Airport",
-                "country": "United Arab Emirates"
-              },
-              "destination": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "departure": "2024-07-04T14:20:00",
-              "arrival": "2024-07-04T18:35:00",
-              "durationInMinutes": 195,
-              "flightNumber": "233",
-              "marketingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        }
-      ],
-      "isSelfTransfer": false,
-      "isProtectedSelfTransfer": true,
-      "farePolicy": {
-        "isChangeAllowed": false,
-        "isPartiallyChangeable": false,
-        "isCancellationAllowed": false,
-        "isPartiallyRefundable": false
-      },
-      "fareAttributes": {},
-      "isMashUp": false,
-      "hasFlexibleOptions": false,
-      "score": 0.553666
-    }
-  ],
-  "messages": [],
-  "filterStats": {
-    "duration": {
-      "min": 850,
-      "max": 1880,
-      "multiCityMin": 850,
-      "multiCityMax": 1880
-    },
-    "airports": [
-      {
-        "city": "Islamabad",
-        "airports": [
-          {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad"
-          }
-        ]
-      },
-      {
-        "city": "Tokyo",
-        "airports": [
-          {
-            "id": "HND",
-            "entityId": "128667143",
-            "name": "Tokyo Haneda"
-          },
-          {
-            "id": "NRT",
-            "entityId": "128668889",
-            "name": "Tokyo Narita"
-          }
-        ]
-      }
-    ],
-    "carriers": [
-      {
-        "id": -32690,
-        "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/CA.png",
-        "name": "Air China"
-      },
-      {
-        "id": -32558,
-        "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/OZ.png",
-        "name": "Asiana Airlines"
-      },
-      {
-        "id": -32339,
-        "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/60.png",
-        "name": "Etihad Airways"
-      },
-      {
-        "id": -32228,
-        "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/UO.png",
-        "name": "HK Express"
-      },
-      {
-        "id": -31939,
-        "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/QR.png",
-        "name": "Qatar Airways"
-      },
-      {
-        "id": -31731,
-        "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/9R.png",
-        "name": "T'way Air"
-      },
-      {
-        "id": -31767,
-        "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/TG.png",
-        "name": "Thai Airways"
-      }
-    ],
-    "stopPrices": {
-      "direct": {
-        "isPresent": false
-      },
-      "one": {
-        "isPresent": true,
-        "formattedPrice": "$495"
-      },
-      "twoOrMore": {
-        "isPresent": true,
-        "formattedPrice": "$497"
-      }
-    }
-  },
-  "flightsSessionId": "bc630364-6c92-412f-94a9-6a303ff4ba2d",
-  "destinationImageUrl": "https://content.skyscnr.com/m/3719e8f4a5daf43d/original/Flights-Placeholder.jpg"
+    "flightsSessionId": "16f81ea3-be0b-430c-86e4-bc8ce891d7ee",
+    "destinationImageUrl": "https://content.skyscnr.com/m/3719e8f4a5daf43d/original/Flights-Placeholder.jpg"
 }
