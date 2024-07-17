@@ -7,11 +7,11 @@ const CompleteYourTrip = ({destination}) => {
       <h2 className="text-xl font-semibold mb-4">Complete your trip</h2>
 
       {/* Hotel Card */}
-      <div className="bg-white rounded-lg mb-4">
+      <div className="bg-white rounded-lg mb-4 w-full 1md:w-[400px] lg:w-[463px] ">
         <img
           src={hotelAnimated}
           alt="Hotel Icon"
-          className="w-[463px] h-[200px] rounded-t-lg"
+          className="w-full 1md:w-[463px] 1sm:h-[250px] 1md:h-[200px] rounded-t-lg"
         />
         <div className="p-3 pb-0 ">
           <h3 className="text-lg font-semibold">
@@ -34,8 +34,12 @@ const CompleteYourTrip = ({destination}) => {
       </div>
 
       {/* Car Rental Card */}
-      <div className=" bg-white rounded-lg">
-        <img src={carAnimated} alt="Car Icon" className="rounded-t-lg w-[463px] h-[200px]" />
+      <div className=" bg-white rounded-lg w-full 1md:w-[400px] lg:w-[463px] ">
+        <img
+          src={carAnimated}
+          alt="Car Icon"
+          className="rounded-t-lg w-full 1md:w-[463px] 1sm:h-[250px] 1md:h-[200px]"
+        />
         <div className="p-3 pb-0 ">
           <h3 className="text-lg font-semibold">Car rental in {destination}</h3>
           <p className="text-gray-600">

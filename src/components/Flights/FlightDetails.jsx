@@ -68,7 +68,7 @@ const FlightDetails = () => {
   return (
     <div className="bg-gray-100 text-gray-700">
       <header className="bg-gray-900 text-white p-4">
-        <div className="container mx-auto flex justify-center items-center h-[180px]">
+        <div className=" mx-auto flex justify-center items-center h-[180px]">
           <div className="text-center">
             <h1 className="text-2xl">
               {flightDetailsJson?.data.itinerary.legs[0].destination.city}
@@ -78,8 +78,8 @@ const FlightDetails = () => {
         </div>
       </header>
 
-      <div className="flex flex-row justify-center mr-20 divide-x-[1px] divide-gray-300 ">
-        <div className="p-4 w-[600px] ">
+      <div className="flex flex-col 1md:flex-row justify-center items-center 1md:items-start lg:mr-20 1md:divide-x-[1px] divide-gray-300 ">
+        <div className="p-4 w-full 1md:w-[600px] ">
           <h2 className="mb-2 text-lg font-semibold">Book your ticket</h2>
           <ul className="">
             {flightDetailsJson?.data.itinerary.pricingOptions
@@ -132,8 +132,8 @@ const FlightDetails = () => {
               ))}
           </ul>
         </div>
-        <div className="ml-8 ">
-          <div className="p-4 border-l bg-white rounded-lg ml-8 w-[463px]">
+        <div className="lg:ml-8 w-full lg:w-fit">
+          <div className="p-4 border-l bg-white rounded-lg 1md:ml-8  w-full 1md:w-[400px] lg:w-[463px]">
             <h2 className="mb-2 font-bold text-lg">Flight details</h2>
             <div>
               <p className="font-bold">
@@ -314,7 +314,7 @@ const FlightDetails = () => {
                           </div>
                         </div>
                         {index === 0 ? (
-                          <div className=" bg-red-100 px-5 py-2 rounded-md text-[#e70866] font-semibold">
+                          <div className=" bg-red-100 px-5 py-2 rounded-md text-[#e70866] font-semibold text-center">
                             {formatDuration(
                               flightDetailsJson?.data.itinerary.legs[0]
                                 .layovers[0].duration
