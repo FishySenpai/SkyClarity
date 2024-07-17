@@ -4,6 +4,7 @@ import CarFilter from "./CarFilter";
 import CarsSearch from "./CarsSearch";
 import carImg from "./car-img.jpg";
 import { useParams } from "react-router-dom";
+import CompleteTrip from "./CompleteTrip";
 const CarInfo = () => {
   const [groupsArray, setGroupsArray] = useState();
   const [providersArray, setProvidersArray] = useState();
@@ -77,19 +78,27 @@ const CarInfo = () => {
         src={carImg}
         className="h-[300px] absolute inset-0 top-[65px] w-full bg-cover bg-center overflow-hidden"
       />
-      <div className="absolute top-32 left-[300px] h-[110px]">
-        <CarsSearch/>
+      <div className="absolute top-36 lg:top-32 w-full flex flex-col items-center">
+        <div className="w-fit flex flex-col items-center">
+          <div className="h-[160px] w-full 1sm:w-fit relative z-50">
+            <CarsSearch />
+          </div>
+        </div>
       </div>
-      <div className="flex flex-row absolute top-[300px] pl-[267px] bg-gray-100 pt-12 rounded-t-3xl w-full">
-        <div>
+      <div className="flex flex-row absolute top-[300px] justify-center mx-auto bg-gray-100 pt-12 rounded-t-3xl w-full">
+        <div className="mr-12 hidden lg:block">
           <CarFilter />
         </div>
-        <div className="flex flex-col mt-6">
+        <div className="flex flex-col mt-6 pt-[100px] lg:pt-0 w-full 1sm:w-fit">
           <div>
             {groupsArray?.slice(0, 15).map((car, index) => (
-              <div className="bg-white rounded text-gray-700 w-[670px] mb-2 flex flex-col divide-y-2 divide-gray-400">
-                <div className="flex flex-row divide-x-2 divide-gray-400">
-                  <div className="w-[480px] py-4">
+              <div
+                className={`bg-white rounded text-gray-700 w-full 1sm:w-[670px] mb-2 flex flex-col divide-gray-400 ${
+                  showDeal === index ? "divide-y-[1px]" : ""
+                } `}
+              >
+                <div className="flex flex-col 1sm:flex-row divide-y-2 1sm:divide-y-0 1sm:divide-x-2 divide-gray-400 w-full">
+                  <div className="w-full 1sm:w-[480px] pb-8 1sm:pb-0 py-4 ">
                     <div className="flex flex-col ">
                       <div className="flex flex-col px-4">
                         <div className="pr-3 text-lg font-semibold">
@@ -225,15 +234,15 @@ const CarInfo = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="pl-4 text-gray-950">
-                    <div className="font-semibold pt-3">1 deal</div>
+                  <div className="pl-4 text-gray-950 flex flex-col pr-4 pt-2 justify-end items-end sm:flex-initial sm:pr-0 sm:pt-0 sm:justify-start sm:items-start">
+                    <div className="font-semibold pt-3 hidden 1sm:block">1 deal</div>
                     <div className="flex flex-row text-2xl font-bold  mt-3 ">
                       ${car.min_price.toFixed(0)}
                       <div className="text-sm font-normal text-gray-600 mt-2.5">
                         total
                       </div>
                     </div>
-                    <div className="flex flex-row pt-3">
+                    <div className="hidden 1sm:flex flex-row pt-3  ">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
@@ -248,7 +257,7 @@ const CarInfo = () => {
                     </div>
                     <div>
                       <button
-                        className={`px-8 py-1 rounded bg-gray-800 text-white mt-8  font-semibold flex flex-row ${
+                        className={`px-8 py-1 rounded bg-gray-800 text-white mt-4 1sm:mt-8 mb-4 font-semibold flex flex-row ${
                           showDeal === index ? "px-[50px] bg-gray-700" : ""
                         } `}
                         onClick={() => {
@@ -279,111 +288,116 @@ const CarInfo = () => {
                     </div>
                   </div>
                 </div>
-                {showDeal === index && (
-                  <div className="flex justify-between items-center p-4 border rounded-lg shadow-sm bg-white">
-                    <div className="flex flex-col space-y-1">
-                      {providersArray.map((prv, id) => {
-                        const quotePrvId =
-                          carsInfo?.data.quotes[index].prv_id;
-                        return quotePrvId === prv.prv_id ? (
-                          <div key={prv.prv_id} className="flex items-center">
-                            <span className="font-semibold text-lg mb-2">
-                              {prv.provider_name}
-                            </span>
-                            <div className="flex items-center ml-2 text-orange-500">
-                              {[...Array(Math.round(prv.rating))].map(
-                                (_, i) => (
-                                  <svg
-                                    key={i}
-                                    className="h-4 w-4"
-                                    fill="currentColor"
-                                    viewBox="0 0 20 20"
-                                  >
-                                    <path d="M9.049 2.927C9.321 2.266 10.679 2.266 10.951 2.927L12.091 5.91C12.217 6.27 12.554 6.53 12.931 6.575L16.144 6.972C16.859 7.058 17.15 7.935 16.619 8.413L14.128 10.666C13.843 10.916 13.716 11.33 13.822 11.712L14.634 14.559C14.832 15.282 14.088 15.865 13.435 15.476L10.436 13.74C10.136 13.573 9.864 13.573 9.564 13.74L6.565 15.476C5.912 15.865 5.168 15.282 5.366 14.559L6.178 11.712C6.284 11.33 6.157 10.916 5.872 10.666L3.381 8.413C2.85 7.935 3.141 7.058 3.856 6.972L7.069 6.575C7.446 6.53 7.783 6.27 7.909 5.91L9.049 2.927Z" />
-                                  </svg>
-                                )
-                              )}
-                              <span className="ml-2 bg-gray-200 text-gray-600 text-xs rounded-full px-2 py-0.5">
-                                {prv.reviews}
+                <div>
+                  {showDeal === index && (
+                    <div className="flex justify-between items-center p-4 border rounded-lg shadow-sm bg-white">
+                      <div className="flex flex-col space-y-1">
+                        {providersArray.map((prv, id) => {
+                          const quotePrvId =
+                            carsInfo?.data.quotes[index].prv_id;
+                          return quotePrvId === prv.prv_id ? (
+                            <div key={prv.prv_id} className="flex items-center">
+                              <span className="font-semibold text-lg mb-2">
+                                {prv.provider_name}
                               </span>
+                              <div className="flex items-center ml-2 text-orange-500">
+                                {[...Array(Math.round(prv.rating))].map(
+                                  (_, i) => (
+                                    <svg
+                                      key={i}
+                                      className="h-4 w-4"
+                                      fill="currentColor"
+                                      viewBox="0 0 20 20"
+                                    >
+                                      <path d="M9.049 2.927C9.321 2.266 10.679 2.266 10.951 2.927L12.091 5.91C12.217 6.27 12.554 6.53 12.931 6.575L16.144 6.972C16.859 7.058 17.15 7.935 16.619 8.413L14.128 10.666C13.843 10.916 13.716 11.33 13.822 11.712L14.634 14.559C14.832 15.282 14.088 15.865 13.435 15.476L10.436 13.74C10.136 13.573 9.864 13.573 9.564 13.74L6.565 15.476C5.912 15.865 5.168 15.282 5.366 14.559L6.178 11.712C6.284 11.33 6.157 10.916 5.872 10.666L3.381 8.413C2.85 7.935 3.141 7.058 3.856 6.972L7.069 6.575C7.446 6.53 7.783 6.27 7.909 5.91L9.049 2.927Z" />
+                                    </svg>
+                                  )
+                                )}
+                                <span className="ml-2 bg-gray-200 text-gray-600 text-xs rounded-full px-2 py-0.5">
+                                  {prv.reviews}
+                                </span>
+                              </div>
                             </div>
-                          </div>
-                        ) : null;
-                      })}
+                          ) : null;
+                        })}
 
-                      <div className="text-sm text-gray-600">
-                        <span className="font-semibold text-lg ">
-                          {carsInfo?.data.quotes[index].new_score.toFixed(1)}
-                        </span>
-                        <span className="text-xs text-gray-400">/10</span>
-                        <a href="#" className="ml-2 ">
-                          Very good deal
-                        </a>
-                      </div>
-                      <div className="flex items-center space-x-1 text-gray-600 text-sm ">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          className="h-4 w-4"
-                          fill="gray"
-                        >
-                          <path d="M10.5 3A1.5 1.5 0 0112 1.5a10.493 10.493 0 11-9.547 6.124 1.5 1.5 0 112.742 1.218l-.016.034A7.5 7.5 0 1012 4.5 1.5 1.5 0 0110.501 3z"></path>
-                          <path
-                            d="M6.728 3.214a1.5 1.5 0 012.058.514l4.5 7.5a1.5 1.5 0 11-2.557 1.57l-.015-.026-4.5-7.5a1.5 1.5 0 01.514-2.058z"
+                        <div className="text-sm text-gray-600">
+                          <span className="font-semibold text-lg ">
+                            {carsInfo?.data.quotes[index].new_score.toFixed(1)}
+                          </span>
+                          <span className="text-xs text-gray-400">/10</span>
+                          <a href="#" className="ml-2 ">
+                            Very good deal
+                          </a>
+                        </div>
+                        <div className="flex items-center space-x-1 text-gray-600 text-sm ">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            className="h-4 w-4"
                             fill="gray"
-                          ></path>
-                        </svg>
-                        <span>Unlimited mileage</span>
-                      </div>
-                      <div className="flex items-center space-x-1 text-gray-600">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          className="h-4 w-4"
-                        >
-                          <path
-                            d="M7.5 1.5c-3 0-4.925.895-5.756 2.026a1.496 1.496 0 00-.244.88V20.09a2.195 2.195 0 001.875 2.41h8.25a2.193 2.193 0 001.875-2.41V4.5a1.623 1.623 0 00-.313-1.014C12.262 2.358 10.5 1.5 7.5 1.5zm3 8.25a.75.75 0 01-.75.75h-4.5a.75.75 0 01-.75-.75v-3A.75.75 0 015.25 6h4.5a.75.75 0 01.75.75zm12 1.354v4.646a3.75 3.75 0 01-7.5 0v-3a1.5 1.5 0 013 0v3a.75.75 0 001.5 0v-4.647a1.5 1.5 0 00-.55-1.16l-3.4-2.783a1.5 1.5 0 011.9-2.32v-.001l3.4 2.782a4.5 4.5 0 011.65 3.483z"
-                            fill="gray"
-                          ></path>
-                        </svg>
-                        <span className="text-sm capitalize">
-                          {carsInfo?.data.quotes[index].fuel_pol.replace(
-                            /_/g,
-                            " "
-                          )}
-                        </span>
-                      </div>
-                    </div>
-                    <div className="text-right text-gray-600 ">
-                      <div className="flex flex-row text-lg font-semibold pb-8 pl-14">
-                        ${car.min_price.toFixed(0)}
-                        <div className="text-[15px] font-normal text-gray-700">
-                          total
+                          >
+                            <path d="M10.5 3A1.5 1.5 0 0112 1.5a10.493 10.493 0 11-9.547 6.124 1.5 1.5 0 112.742 1.218l-.016.034A7.5 7.5 0 1012 4.5 1.5 1.5 0 0110.501 3z"></path>
+                            <path
+                              d="M6.728 3.214a1.5 1.5 0 012.058.514l4.5 7.5a1.5 1.5 0 11-2.557 1.57l-.015-.026-4.5-7.5a1.5 1.5 0 01.514-2.058z"
+                              fill="gray"
+                            ></path>
+                          </svg>
+                          <span>Unlimited mileage</span>
+                        </div>
+                        <div className="flex items-center space-x-1 text-gray-600">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            className="h-4 w-4"
+                          >
+                            <path
+                              d="M7.5 1.5c-3 0-4.925.895-5.756 2.026a1.496 1.496 0 00-.244.88V20.09a2.195 2.195 0 001.875 2.41h8.25a2.193 2.193 0 001.875-2.41V4.5a1.623 1.623 0 00-.313-1.014C12.262 2.358 10.5 1.5 7.5 1.5zm3 8.25a.75.75 0 01-.75.75h-4.5a.75.75 0 01-.75-.75v-3A.75.75 0 015.25 6h4.5a.75.75 0 01.75.75zm12 1.354v4.646a3.75 3.75 0 01-7.5 0v-3a1.5 1.5 0 013 0v3a.75.75 0 001.5 0v-4.647a1.5 1.5 0 00-.55-1.16l-3.4-2.783a1.5 1.5 0 011.9-2.32v-.001l3.4 2.782a4.5 4.5 0 011.65 3.483z"
+                              fill="gray"
+                            ></path>
+                          </svg>
+                          <span className="text-sm capitalize">
+                            {carsInfo?.data.quotes[index].fuel_pol.replace(
+                              /_/g,
+                              " "
+                            )}
+                          </span>
                         </div>
                       </div>
-                      <a
-                        className="mt-2 px-7 py-1 bg-gray-800 text-white rounded-sm flex items-center font-semibold"
-                        href={`https://www.skyscanner.us/${carsInfo?.data.quotes[index].dplnk}`}
-                        target="_blank"
-                      >
-                        Reserve
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 448 512"
-                          className="w-3 h-4 ml-2 mt-0.5 "
+                      <div className="text-right text-gray-600 ">
+                        <div className="flex flex-row text-lg font-semibold pb-8 pl-14">
+                          ${car.min_price.toFixed(0)}
+                          <div className="text-[15px] font-normal text-gray-700">
+                            total
+                          </div>
+                        </div>
+                        <a
+                          className="mt-2 px-7 py-1 bg-gray-800 text-white rounded-sm flex items-center font-semibold"
+                          href={`https://www.skyscanner.us/${carsInfo?.data.quotes[index].dplnk}`}
+                          target="_blank"
                         >
-                          <path
-                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                            fill="white"
-                          />
-                        </svg>
-                      </a>
+                          Reserve
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                            className="w-3 h-4 ml-2 mt-0.5 "
+                          >
+                            <path
+                              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                              fill="white"
+                            />
+                          </svg>
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                )}
+                  )}
+                </div>
               </div>
             ))}
           </div>
+        </div>
+        <div className="hidden 2xl:block">
+          <CompleteTrip />
         </div>
       </div>{" "}
     </div>
