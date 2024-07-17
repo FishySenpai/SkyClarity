@@ -40,21 +40,25 @@ const Hotels = () => {
     }
   }, [destination, destinationId, checkIn, checkOut]);
   console.log(hotelsData);
-
+if (hotelsData){
   return (
     <div className="bg-gray-50">
       <img
         src={hotelsImg}
         className="h-[300px] absolute inset-0 top-[65px] w-full bg-cover bg-center overflow-hidden"
       />
-      <div className="absolute top-32 left-[300px] h-[110px]">
-        <HotelsSearch home={false} />
-      </div>
-      <div className="flex flex-row absolute top-[300px] pl-[267px] bg-gray-100 pt-12 rounded-t-3xl w-full">
-        <div className="">
-          {hotelsData ? <HotelsFilter hotelsData={hotelsData} /> : ""}
+      <div className="absolute top-36 1lg:top-32 w-full flex flex-col items-center">
+        <div className="w-full flex flex-col items-start 1md:items-center">
+          <div className="h-[120px] w-full 1md:w-fit relative z-50">
+            <HotelsSearch home={true} />
+          </div>
         </div>
-        <div className="flex flex-col">
+      </div>
+      <div className="flex flex-row absolute top-[300px] justify-center mx-auto bg-gray-100 pt-12 rounded-t-3xl w-full">
+        <div className="hidden xl:block">
+          {<HotelsFilter hotelsData={hotelsData} />}
+        </div>
+        <div className="flex flex-col pt-[150px] 1lg:pt-0 ">
           <div>
             {hotelsData?.hotels.slice(0, 10).map((hotel, index) => (
               // <Link to={`/hotels/hotel/${hotel.id}`}>
@@ -66,6 +70,7 @@ const Hotels = () => {
       </div>
     </div>
   );
+}
 };
 
 export default Hotels;
