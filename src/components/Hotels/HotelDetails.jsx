@@ -11,8 +11,10 @@ const HotelDetails = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [showImages, setShowImages] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [hotelDetails, setHotelDetails] = useState(null);
-  const [images, setImages] = useState([]);
+  const [hotelDetails, setHotelDetails] = useState(hotelDetailsJson);
+  const [images, setImages] = useState(
+    hotelDetailsJson.data?.gallery?.images?.slice(0, 70)
+  );
   const imagesRef = useRef(null);
 
   console.log(images);
@@ -44,11 +46,11 @@ const HotelDetails = () => {
     }
   };
 
-  useEffect(() => {
-    if (id) {
-      fetchHotelDetails();
-    }
-  }, [id]);
+  // useEffect(() => {
+  //   if (id) {
+  //     fetchHotelDetails();
+  //   }
+  // }, [id]);
 
   if (hotelDetails && images) {
     return (
@@ -57,42 +59,38 @@ const HotelDetails = () => {
         className="bg-gray-100 flex flex-col justify-between items-center pb-12"
       >
         <div
-          className="flex space-x-1 cursor-pointer"
+          className="flex space-x-1 cursor-pointer w-full h-[28vw]"
           onClick={() => {
             setShowImages(true);
           }}
         >
-          <img src={images[4].gallery} alt="" className="w-[900px] h-[500px]" />
-          <div className="flex flex-col space-y-1">
-            <img
-              src={images[8].gallery}
-              alt=""
-              className="w-[600px] h-[300px]"
-            />
-            <div className="flex space-x-1">
+          <img src={images[4].gallery} alt="" className="w-[50%] h-[100%]" />
+          <div className="flex flex-col space-y-1 w-[30%] h-[99.2%]">
+            <img src={images[8].gallery} alt="" className="w-[100%] h-[60%]" />
+            <div className="flex space-x-1 w-full h-[40%]">
               <img
                 src={images[13].gallery}
                 alt=""
-                className="w-[300px] h-[200px]"
+                className="w-[50%] h-[100%]"
               />
               <img
                 src={images[6].gallery}
                 alt=""
-                className="w-[300px] h-[200px]"
+                className="w-[49.3%] h-[100%]"
               />
             </div>
           </div>
-          <div>
+          <div className="w-[20%] h-[99.2%]">
             <img
               src={images[12].gallery}
               alt=""
-              className="w-[400px] h-[250px]"
+              className="w-[400px] h-[50%]"
             />
-            <div className="relative">
+            <div className="relative mt-1 h-[50%]">
               <img
                 src={images[19].gallery}
                 alt=""
-                className="w-[400px] h-[250px]"
+                className="w-[400px] h-[100%]"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 text-white text-center ">
                 <svg
@@ -312,7 +310,7 @@ const HotelDetails = () => {
           <div id="amenities">
             <Amenities />
           </div>
-          <ReviewAndRecommendations id={id}/>
+          {/* <ReviewAndRecommendations id={id}/> */}
         </div>
       </div>
     );
