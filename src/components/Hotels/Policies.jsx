@@ -3,7 +3,7 @@ import React from "react"
 const Policies = ({hotelDetails}) => {
   const policies = hotelDetails?.data.goodToKnow.policies;
   return (
-    <div id="policies" className="w-[1040px]">
+    <div id="policies" className="w-full">
       <p className="font-semibold text-3xl pb-4">Policies</p>
       <div className="space-y-6 bg-slate-50 rounded-lg p-4  divide-y-2 divide-gray-300">
         <div className="flex ">

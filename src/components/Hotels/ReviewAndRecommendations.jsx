@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import reviews from "./reviews.json";
+import Reviews from "./reviews.json";
 import similarHotels from "./similarHotels.json";
 const ReviewAndRecommendations = ({id}) => {
-  const [reviews, setReviews] = useState();
-  const [recommendations, setRecommendations] = useState();
+  const [reviews, setReviews] = useState(Reviews);
+  const [recommendations, setRecommendations] = useState(similarHotels);
   const [show, setShow] = useState(false);
   const fetchReviews = async () => {
     const url =
@@ -51,18 +51,18 @@ const ReviewAndRecommendations = ({id}) => {
       console.error(error);
     }
   };
-  useEffect(()=>{
-    if(id){
-      fetchReviews();
-      fetchRecommendations();
-    }
-  }, [id])
+  // useEffect(()=>{
+  //   if(id){
+  //     fetchReviews();
+  //     fetchRecommendations();
+  //   }
+  // }, [id])
   console.log(reviews);
   console.log(recommendations);
   if(reviews && recommendations){
     return (
       <div>
-        <div id="reviews" className="w-[1040px]  pt-6 text-gray-800 ml-1">
+        <div id="reviews" className="w-full  pt-6 text-gray-800 ml-1">
           <p className="font-semibold text-3xl pb-3">Reviews</p>
           {reviews.data.reviews.slice(0, 5).map((review, index) => {
             return (
@@ -103,7 +103,7 @@ const ReviewAndRecommendations = ({id}) => {
             Hotel Recommendations
           </p>
           <div
-            className={`grid grid-cols-1 md:grid-cols-3 gap-4 gap-x-2 w-[1080px]`}
+            className={`grid grid-cols-1 md:grid-cols-3 gap-4 gap-x-2 w-full`}
           >
             {recommendations.data?.slice(0, show ? 9 : 3).map((hotel, index) => {
               return (
