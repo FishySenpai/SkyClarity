@@ -56,7 +56,7 @@ const HotelDetails = () => {
     return (
       <div
         id="overview"
-        className="bg-gray-100 flex flex-col justify-between items-center pb-12 "
+        className="bg-gray-100 flex flex-col justify-between items-center pb-12"
       >
         <div
           className="flex space-x-1 cursor-pointer w-full h-[28vw]"
@@ -195,7 +195,7 @@ const HotelDetails = () => {
           </div>
         )}
 
-        <div className="w-full 1lg:w-fit">
+        <div className="pl-2 w-full 1lg:w-fit ">
           <div className=" pt-4 space-y-2 mr-6 w-full">
             <div className="text-4xl font-bold flex flex-row">
               <div>{hotelDetails.data.general.name}</div>
