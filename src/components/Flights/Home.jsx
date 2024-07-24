@@ -11,13 +11,14 @@ import flightCards from "./Assets/flightCards.json";
 const Home = () => {
   const [flights, setFlights] = useState();
   const [selectedOption, setSelectedOption] = useState("round-trip");
+  const [flightCount, setFlightCount] = useState(1);
   return (
     <div className=" text-white default-font relative bg-gray-50  ">
       <img
         src={flightsImg}
-        className="absolute inset-0 w-full h-[678px] object-cover"
+        className="absolute inset-0 w-full h-[678px] object-cover "
       />
-      <div className="absolute top-36 lg:top-52 w-full flex flex-col items-center">
+      <div className="absolute top-36 lg:top-52 w-full flex flex-col items-center z-50">
         <div className="w-fit flex flex-col items-center">
           <div className="h-[160px] w-full 1sm:w-fit relative ">
             <div className="text-4xl 1lg:text-5xl pb-3 text-white font-bold text-left w-[95%]">
@@ -28,13 +29,23 @@ const Home = () => {
               setFlights={setFlights}
               selectedOption={selectedOption}
               setSelectedOption={setSelectedOption}
+              flightCount={flightCount}
+              setFlightCount={setFlightCount}
             />
           </div>
         </div>
       </div>
       <div
-        className={`relative bg-gray-100 pb-24 rounded-t-3xl ${
-          selectedOption === "multi-city" ? "top-[650px]" : "top-[600px]"
+        className={`relative bg-gray-100 pb-24 rounded-t-3xl z-10  ${
+          selectedOption === "multi-city"
+            ? flightCount > 1
+              ? "pt-[200px]"
+              : "pt-[50px]"
+            : ""
+        } ${
+          selectedOption === "multi-city"
+            ? "top-[650px]  2sm:pt-0"
+            : "top-[600px] "
         }`}
       >
         <div

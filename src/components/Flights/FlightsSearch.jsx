@@ -10,10 +10,19 @@ const FlightsSearch = ({
   setFlights,
   selectedOption,
   setSelectedOption,
+  flightCount,
+  setFlightCount
 }) => {
   const { fromLocation, fromId, toLocation, toId, departdate, returndate } =
     useParams();
   console.log(fromLocation, fromId, toLocation, toId, departdate, returndate);
+  
+  const formatDate = (date) => {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const day = String(date.getDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
+  };
   const [from, setFrom] = useState();
   const [to, setTo] = useState();
   const [from2, setFrom2] = useState();
@@ -23,7 +32,7 @@ const FlightsSearch = ({
   const [isClicked, setIsClicked] = useState(false);
   const [value, onChange] = useState(new Date());
   const [departToggle, setDepartToggle] = useState(false);
-  const [departDate, setDepartDate] = useState();
+  const [departDate, setDepartDate] = useState(formatDate(new Date()));
   const [returnToggle, setReturnToggle] = useState(false);
   const [returnDate, setReturnDate] = useState();
   const [departDate1, setDepartDate1] = useState();
@@ -39,7 +48,7 @@ const FlightsSearch = ({
   const departPopupRef = useRef(null);
   const returnPopupRef = useRef(null);
   const cabinPopupRef = useRef(null);
-  const [flightCount, setFlightCount] = useState(1);
+
   const handleMultiCityClick = () => {
     console.log(from);
     console.log(to);
@@ -54,6 +63,9 @@ const FlightsSearch = ({
   const handleFlightCount = () => {
     if (flightCount < 2) {
       setFlightCount(flightCount + 1);
+      console.log(flightCount);
+    } else if (flightCount > 1) {
+      setFlightCount(flightCount - 1);
       console.log(flightCount);
     }
   };
@@ -168,12 +180,6 @@ const FlightsSearch = ({
     }
   };
 
-  const formatDate = (date) => {
-    const year = date.getFullYear();
-    const month = String(date.getMonth() + 1).padStart(2, "0");
-    const day = String(date.getDate()).padStart(2, "0");
-    return `${year}-${month}-${day}`;
-  };
   useEffect(() => {
     if (fromLocation) {
       setFrom(fromLocation);
@@ -205,7 +211,7 @@ const FlightsSearch = ({
     setReturnToggle(false);
   }, [returnDate]);
   return (
-    <div className=" bg-white rounded-lg text-gray-500 w-full 1sm:w-[700px] 1md:w-[800px] lg:w-[1000px] 1lg:w-[1100px] xl:w-[1200px] 1xl:w-[1306px] ">
+    <div className=" bg-white relative rounded-lg text-gray-500 w-full 1sm:w-[700px] 1md:w-[800px] lg:w-[1000px] 1lg:w-[1100px] xl:w-[1200px] 1xl:w-[1306px]">
       <div className="flex items-center space-x-4 pt-4 pl-6 text-sm">
         <label className="flex items-center">
           <input
@@ -669,12 +675,12 @@ const FlightsSearch = ({
       </div>
       <div className="pl-[22px] pb-4">
         <button
-          className={`bg-gray-800 text-white p-2.5  pr-3.5 rounded-md font-semibold text-[15px] absolute -bottom-[215px] lg:relative lg:bottom-auto ${
+          className={`bg-gray-900 text-white p-2.5 pr-3.5 rounded-md font-semibold text-md h-[48px] w-fit absolute bottom-[38px] lg:relative lg:bottom-auto ${
             selectedOption === "multi-city" ? "" : "hidden"
-          } ${flightCount === 2 ? "cursor-not-allowed" : ""}`}
+          }`}
           onClick={handleFlightCount}
         >
-          Add Another Flight
+          {flightCount === 2 ? "Remove Flight" : "Add Another Flight"}
         </button>
       </div>
     </div>
