@@ -138,7 +138,7 @@ const MultiCity = ({
                 />
               </svg>
               <input
-                className={`h-12 pl-10 w-full xl:w-[400px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-white outline-none cursor-pointer ${
+                className={`h-12 pl-10 w-full 2sm:max-w-[245px] xl:w-[400px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-white outline-none cursor-pointer ${
                   departDate ? "font-semibold text-gray-800" : "font-normal"
                 } `}
                 type="search"
@@ -155,7 +155,7 @@ const MultiCity = ({
               </label>
             </div>
             {departToggle0 ? (
-              <div className="z-50 absolute right-3 lg:-right-[75px]">
+              <div className="z-50 absolute right-0 lg:left-0 w-[300px]">
                 <Calendar
                   onClickDay={(value, event) => {
                     setDepartDate(formatDate(value));
@@ -249,7 +249,7 @@ const MultiCity = ({
                   />
                 </svg>
                 <input
-                  className={`h-12 pl-10 w-full xl:w-[400px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-white outline-none cursor-pointer ${
+                  className={`h-12 pl-10 w-full 2sm:max-w-[245px] xl:w-[400px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-white outline-none cursor-pointer ${
                     departDate1 ? "font-semibold text-gray-800" : "font-normal"
                   } `}
                   type="search"
@@ -266,7 +266,7 @@ const MultiCity = ({
                 </label>
               </div>
               {departToggle1 ? (
-                <div className="z-50 absolute right-3 lg:-right-[75px]">
+                <div className="z-50 absolute right-0 lg:left-0 w-[300px]">
                   <Calendar
                     onClickDay={(value, event) => {
                       setDepartDate1(formatDate(value));
@@ -364,7 +364,7 @@ const MultiCity = ({
                   />
                 </svg>
                 <input
-                  className={`h-12 pl-10  w-full xl:w-[400px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-white outline-none cursor-pointer ${
+                  className={`h-12 pl-10  w-full 2sm:max-w-[245px] xl:w-[400px] border rounded px-2 border-gray-400 focus:border-blue-500 bg-white outline-none cursor-pointer ${
                     departDate2 ? "font-semibold text-gray-800" : "font-normal"
                   } `}
                   type="search"
@@ -381,7 +381,7 @@ const MultiCity = ({
                 </label>
               </div>
               {departToggle2 ? (
-                <div className="z-50 absolute right-3 lg:-right-[75px]">
+                <div className="z-50 absolute right-0 lg:left-0 w-[300px]">
                   <Calendar
                     onClickDay={(value, event) => {
                       setDepartDate2(formatDate(value));

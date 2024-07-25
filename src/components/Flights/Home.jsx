@@ -21,7 +21,7 @@ const Home = () => {
       <div className="absolute top-36 lg:top-52 w-full flex flex-col items-center z-50">
         <div className="w-fit flex flex-col items-center">
           <div className="h-[160px] w-full 1sm:w-fit relative ">
-            <div className="text-4xl 1lg:text-5xl pb-3 text-white font-bold text-left w-[95%]">
+            <div className="text-3xl 2sm:text-4xl 1lg:text-5xl pb-3 text-white font-bold text-left w-[95%]">
               Find cheap flight deals
             </div>
             <FlightsSearch
@@ -49,8 +49,8 @@ const Home = () => {
         }`}
       >
         <div
-          className="text-3xl pb-3 text-gray-800 font-bold pt-12 pl-6 sm:pl-0 sm:w-[600px] 1sm:w-[680px]  1md:w-[820px] lg:w-[935px] 1lg:w-[935px] 1xl:w-[1240px] flex flex-col 
-        mx-auto 1xl:pl-5"
+          className="text-3xl pb-3 text-gray-800 font-bold pt-12 pl-6 sm:pl-0 sm:w-[600px] 1sm:w-[680px] 1md:w-[830px] lg:w-[950px] xl:w-[1200px] flex flex-col 
+        mx-auto"
         >
           <div>Popular Internaional Flight Deals</div>
           <span className="text-gray-700 font-normal text-[18px]">
@@ -64,7 +64,7 @@ const Home = () => {
             return <FlightCards card={card} key={key} />;
           })}
         </div>
-        <div className="flex justify-center items-center pt-12">
+        <div className="flex flex-row justify-center items-center pt-12 sm:w-[600px] 1sm:w-[680px] 1md:w-[830px] lg:w-[950px] xl:w-[1200px] mx-auto">
           <div className="bg-white w-fit  text-gray-800 p-8 rounded-lg">
             <div className="max-w-[1150px] text-center pb-8">
               <h3 className="text-3xl font-semibold mb-2">
@@ -78,8 +78,8 @@ const Home = () => {
                 goodbye to stress – here’s how.
               </p>
             </div>
-            <div className="flex justify-between space-x-20">
-              <div className="text-center max-w-xs">
+            <div className="flex flex-col 1md:flex-row justify-center items-center 1md:justify-between space-y-8 1md:space-y-8 1md:space-x-20">
+              <div className="text-center 1md:max-w-xs">
                 <img
                   src={planeImg}
                   alt="Hotel deals"
@@ -94,7 +94,7 @@ const Home = () => {
                 </p>
               </div>
 
-              <div className="text-center max-w-xs">
+              <div className="text-center 1md:max-w-xs">
                 <img
                   src={clockImg}
                   alt="Up-to-date pricing"
@@ -110,7 +110,7 @@ const Home = () => {
                 </p>
               </div>
 
-              <div className="text-center max-w-xs">
+              <div className="text-center 1md:max-w-xs">
                 <img
                   src={handshakeImg}
                   alt="Precise searching"
@@ -127,7 +127,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="sm:w-[600px] 1sm:w-[680px] 1md:w-[830px] lg:w-[950px] xl:w-[1200px] mx-auto">
           <FAQ faqs={faqs.flight} />
         </div>
       </div>
