@@ -76,7 +76,7 @@ const CarRentalTips = () => {
     },
   ];
   return (
-    <div className="w-[1200px] mx-auto p-4 px-0 pt-12">
+    <div className=" p-4 px-0 pt-12">
       <h1 className="text-3xl font-bold mb-4 text-gray-800">
         How to find the best car rental deal
       </h1>
@@ -86,8 +86,8 @@ const CarRentalTips = () => {
         hundreds of car rental companies, so you can instantly compare prices
         and then book. Here’s how to get the most out of your car rental search.
       </p>
-      <div className="grid md:grid-cols-2 gap-8">
-        <div className="flex">
+      <div className="grid md:grid-cols-2 space-y-4 md:space-x-4">
+        <div className="flex md:px-4">
           <div className="mr-4 mt-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -109,6 +109,32 @@ const CarRentalTips = () => {
               policies and free cancellation, so you can snap up the best deal
               with total flexibility to change your plans last-minute if you
               need to.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex">
+          <div className="mr-4 mt-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              className="h-6 w-6"
+            >
+              <path
+                d="M6 5.5C6 3.567 7.57 2 9.506 2a3.51 3.51 0 0 1 3.375 2.545h6.676a1.2 1.2 0 0 1 1.073.662 3.5 3.5 0 0 1 0 3.13l-.067.135a.957.957 0 0 1-1.711-.854l.067-.134c.161-.322.207-.685.136-1.03H17.16c.059.64-.06 1.294-.355 1.884l-.068.134a.957.957 0 0 1-1.71-.854l.067-.134c.161-.322.207-.685.136-1.03h-2.35A3.51 3.51 0 0 1 9.506 9 3.503 3.503 0 0 1 6 5.5m3.506-1.591a1.591 1.591 0 1 0 0 3.182 1.592 1.592 0 0 0 0-3.182M3 13.5v7a1.5 1.5 0 0 1-3 0v-7a1.5 1.5 0 0 1 3 0m2 .5a2 2 0 0 1 2-2h6.6a2 2 0 0 1 .77.154l3.015 1.256a1 1 0 0 1 .615.923v.167a1 1 0 0 1-1 1h-3.917a.75.75 0 0 0 0 1.5h2.371a1 1 0 0 0 .407-.086l6.432-2.86a1 1 0 0 1 1.301.467l.044.09a1 1 0 0 1-.27 1.227l-7.153 5.724a2 2 0 0 1-1.25.438H7a2 2 0 0 1-2-2z"
+                fill="gray"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <h2 className="text-xl font-semibold mb-2 text-gray-800">
+              Skip the lines
+            </h2>
+            <p className="text-gray-700 mb-2">
+              We call out keyless or self-service pick-up when you search with
+              us. No keys to pick up or paperwork to fill in means no queues.
+              Just head to your preferred car rental location, hop in and hit
+              the road.
             </p>
           </div>
         </div>
@@ -138,54 +164,6 @@ const CarRentalTips = () => {
           </div>
         </div>
         <div className="flex">
-          <div className="mr-4 mt-1">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              className="h-6 w-6"
-            >
-              <path
-                d="M32 64C32 28.7 60.7 0 96 0H256c35.3 0 64 28.7 64 64V256h8c48.6 0 88 39.4 88 88v32c0 13.3 10.7 24 24 24s24-10.7 24-24V222c-27.6-7.1-48-32.2-48-62V96L384 64c-8.8-8.8-8.8-23.2 0-32s23.2-8.8 32 0l77.3 77.3c12 12 18.7 28.3 18.7 45.3V168v24 32V376c0 39.8-32.2 72-72 72s-72-32.2-72-72V344c0-22.1-17.9-40-40-40h-8V448c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32V64zM96 80v96c0 8.8 7.2 16 16 16H240c8.8 0 16-7.2 16-16V80c0-8.8-7.2-16-16-16H112c-8.8 0-16 7.2-16 16z"
-                fill="gray"
-              />
-            </svg>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold mb-2 text-gray-800">
-              Compare fuel policies
-            </h2>
-            <p className="text-gray-700 mb-2">
-              To save money on topping up the tank before you take off, look out
-              for deals with a 'full-to-full' fuel tank policy.
-            </p>
-          </div>
-        </div>
-        <div className="flex">
-          <div className="mr-4 mt-1">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              className="h-6 w-6"
-            >
-              <path
-                d="M6 5.5C6 3.567 7.57 2 9.506 2a3.51 3.51 0 0 1 3.375 2.545h6.676a1.2 1.2 0 0 1 1.073.662 3.5 3.5 0 0 1 0 3.13l-.067.135a.957.957 0 0 1-1.711-.854l.067-.134c.161-.322.207-.685.136-1.03H17.16c.059.64-.06 1.294-.355 1.884l-.068.134a.957.957 0 0 1-1.71-.854l.067-.134c.161-.322.207-.685.136-1.03h-2.35A3.51 3.51 0 0 1 9.506 9 3.503 3.503 0 0 1 6 5.5m3.506-1.591a1.591 1.591 0 1 0 0 3.182 1.592 1.592 0 0 0 0-3.182M3 13.5v7a1.5 1.5 0 0 1-3 0v-7a1.5 1.5 0 0 1 3 0m2 .5a2 2 0 0 1 2-2h6.6a2 2 0 0 1 .77.154l3.015 1.256a1 1 0 0 1 .615.923v.167a1 1 0 0 1-1 1h-3.917a.75.75 0 0 0 0 1.5h2.371a1 1 0 0 0 .407-.086l6.432-2.86a1 1 0 0 1 1.301.467l.044.09a1 1 0 0 1-.27 1.227l-7.153 5.724a2 2 0 0 1-1.25.438H7a2 2 0 0 1-2-2z"
-                fill="gray"
-              ></path>
-            </svg>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold mb-2 text-gray-800">
-              Skip the lines
-            </h2>
-            <p className="text-gray-700 mb-2">
-              We call out keyless or self-service pick-up when you search with
-              us. No keys to pick up or paperwork to fill in means no queues.
-              Just head to your preferred car rental location, hop in and hit
-              the road.
-            </p>
-          </div>
-        </div>
-        <div className="flex">
           <div className="mr-3 mt-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -211,10 +189,33 @@ const CarRentalTips = () => {
           </div>
         </div>
         <div className="flex">
+          <div className="mr-4 mt-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              className="h-6 w-6"
+            >
+              <path
+                d="M32 64C32 28.7 60.7 0 96 0H256c35.3 0 64 28.7 64 64V256h8c48.6 0 88 39.4 88 88v32c0 13.3 10.7 24 24 24s24-10.7 24-24V222c-27.6-7.1-48-32.2-48-62V96L384 64c-8.8-8.8-8.8-23.2 0-32s23.2-8.8 32 0l77.3 77.3c12 12 18.7 28.3 18.7 45.3V168v24 32V376c0 39.8-32.2 72-72 72s-72-32.2-72-72V344c0-22.1-17.9-40-40-40h-8V448c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32V64zM96 80v96c0 8.8 7.2 16 16 16H240c8.8 0 16-7.2 16-16V80c0-8.8-7.2-16-16-16H112c-8.8 0-16 7.2-16 16z"
+                fill="gray"
+              />
+            </svg>
+          </div>
+          <div>
+            <h2 className="text-xl font-semibold mb-2 text-gray-800">
+              Compare fuel policies
+            </h2>
+            <p className="text-gray-700 mb-2">
+              To save money on topping up the tank before you take off, look out
+              for deals with a 'full-to-full' fuel tank policy.
+            </p>
+          </div>
+        </div>
+        <div className="flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 320 512"
-            className="h-6 w-6 mr-4 mt-1"
+            className="h-6 w-6 mr-4 mt-1 absolute"
           >
             <path
               d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"
@@ -222,7 +223,7 @@ const CarRentalTips = () => {
             />
           </svg>
 
-          <div>
+          <div className="pl-10">
             <h2 className="text-xl font-semibold mb-2 text-gray-800">
               Look further afield
             </h2>

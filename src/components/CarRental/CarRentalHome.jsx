@@ -66,8 +66,7 @@ const CarRentalHome = () => {
             <div className="text-4xl 1lg:text-5xl pb-3 text-white font-bold text-left w-[95%]">
               Find cheap flight deals
             </div>
-            <CarsSearch
-            />
+            <CarsSearch />
           </div>
         </div>
       </div>
@@ -88,25 +87,25 @@ const CarRentalHome = () => {
             return <CarCards card={card} key={key} />;
           })}
         </div>
-        <div className="flex justify-center items-center pt-12">
+        <div className="flex justify-center items-center pt-12 sm:w-[600px] 1sm:w-[680px] 1md:w-[830px] lg:w-[950px] xl:w-[1200px] mx-4 sm:mx-auto">
           <div className="bg-white w-fit  text-gray-800 p-8 rounded-lg">
             <div className="max-w-[1150px] pb-8">
-              <h3 className="text-3xl font-semibold mb-2">
+              <h3 className="text-2xl 2sm:text-3xl font-semibold mb-2">
                 Compare cars across your favorite brands
               </h3>
-              <div className="flex justify-center space-x-5 p-4 pl-1 ">
+              <div className="flex flex-wrap justify-center space-x-5 p-4 pl-1 ">
                 {logos.map((logo, index) => (
                   <img
                     key={index}
                     src={logo.src}
                     alt={logo.alt}
-                    className="h-12 w-24"
+                    className="h-8 w-11 sm:h-12 sm:w-20 mb-4"
                   />
                 ))}
               </div>
             </div>
-            <div className="flex justify-between space-x-20">
-              <div className="text-center max-w-xs">
+            <div className="flex flex-col 1md:flex-row justify-center items-center 1md:justify-between space-y-8 1md:space-y-8 1md:space-x-20">
+              <div className="text-center 1md:max-w-xs">
                 <img
                   src={searchImg}
                   alt="Hotel deals"
@@ -121,7 +120,7 @@ const CarRentalHome = () => {
                 </p>
               </div>
 
-              <div className="text-center max-w-xs">
+              <div className="text-center  1md:max-w-xs 1md:pb-[34px]">
                 <img
                   src={compareImg}
                   alt="Up-to-date pricing"
@@ -134,7 +133,7 @@ const CarRentalHome = () => {
                 </p>
               </div>
 
-              <div className="text-center max-w-xs">
+              <div className="text-center  1md:max-w-xs 1md:pb-[33px]">
                 <img
                   src={supportImg}
                   alt="Precise searching"
@@ -149,7 +148,7 @@ const CarRentalHome = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="sm:w-[600px] 1sm:w-[680px] 1md:w-[830px] lg:w-[950px] xl:w-[1200px] mx-4 sm:mx-auto">
           <CarRentalTips />
         </div>
       </div>

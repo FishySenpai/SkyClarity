@@ -74,10 +74,10 @@ const HotelsHome = () => {
         className="absolute inset-0 w-full h-[578px] object-cover"
       />
 
-      <div className="absolute top-36 1lg:top-52 w-full flex flex-col items-center">
+      <div className="absolute top-28 2sm:top-36 1lg:top-52 w-full flex flex-col items-center">
         <div className="w-full flex flex-col items-start 1md:items-center">
           <div className="h-[160px] w-full 1md:w-fit relative">
-            <div className="text-4xl 1lg:text-5xl pb-3 text-white font-bold text-left ml-2">
+            <div className="text-[28px] 2sm:text-4xl 1lg:text-5xl pb-3 text-white font-bold text-left ml-2">
               Find the right hotel today
             </div>
             <HotelsSearch home={true} />
@@ -86,7 +86,7 @@ const HotelsHome = () => {
       </div>
 
       <div className="relative top-[600px] bg-gray-100 pb-12 rounded-3xl  ">
-        <div className="text-3xl pb-3 text-gray-800 font-bold pt-12 w-[340px] 2sm:w-[540px]  1sm:w-[680px] 1md:w-[840px] 1lg:w-[982px] 1xl:w-[1350px] flex flex-col mx-auto 1xl:pl-5">
+        <div className="text-3xl pb-3 text-gray-800 font-bold 1md:pt-12 w-[340px] 2sm:w-[540px]  1sm:w-[680px] 1md:w-[840px] 1lg:w-[982px] 1xl:w-[1350px] flex flex-col mx-auto 1xl:pl-5">
           <div>Top Luxury 5-star Hotels</div>
           <span className="text-gray-700 font-normal text-[18px]">
             The key to a great city break? A perfectly placed base. Check out
@@ -144,7 +144,7 @@ const HotelsHome = () => {
         <div className="">
           <PopularDestinations />
         </div>
-        <div className="flex justify-center items-center pt-16">
+        <div className="flex justify-center items-center pt-16 w-[340px] 2sm:w-[540px]  1sm:w-[680px] 1md:w-[840px] 1lg:w-[982px] 1xl:w-[1350px] mx-auto">
           <div className="bg-white w-fit  text-gray-800 p-8 rounded-lg">
             <div className="max-w-[1230px] text-center pb-8">
               <h3 className="text-3xl font-semibold mb-2">
@@ -158,8 +158,8 @@ const HotelsHome = () => {
                 goodbye to stress – here’s how.
               </p>
             </div>
-            <div className="flex justify-between space-x-20">
-              <div className="text-center max-w-xs">
+            <div className="flex flex-col 1md:flex-row justify-center items-center 1md:justify-between space-y-8 1md:space-y-8 1md:space-x-20">
+              <div className="text-center  1md:max-w-xs">
                 <img
                   src={hotelImg}
                   alt="Hotel deals"
@@ -174,7 +174,7 @@ const HotelsHome = () => {
                 </p>
               </div>
 
-              <div className="text-center max-w-xs">
+              <div className="text-center  1md:max-w-xs 1md:pb-[34px]">
                 <img
                   src={globeImg}
                   alt="Up-to-date pricing"
@@ -189,7 +189,7 @@ const HotelsHome = () => {
                 </p>
               </div>
 
-              <div className="text-center max-w-xs">
+              <div className="text-center  1md:max-w-xs  1md:pb-[55px]">
                 <img
                   src={saveImg}
                   alt="Precise searching"
@@ -206,7 +206,7 @@ const HotelsHome = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="w-[340px] 2sm:w-[540px]  1sm:w-[680px] 1md:w-[840px] 1lg:w-[982px] 1xl:w-[1300px] mx-auto">
           <FAQ faqs={faqs.car} />
         </div>
       </div>
