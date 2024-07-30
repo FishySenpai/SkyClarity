@@ -31,12 +31,12 @@ const convertDate = (dateString) => {
       {" "}
       <div className="mx-auto  bg-white shadow-lg rounded-lg overflow-hidden w-[90%] sm:w-[300px] 1sm:w-[332px] 1md:w-[392px] lg:w-[450px] xl:w-[392px]">
         <div className=" flex flex-col ">
-          <div className="w-full h-[160px] overflow-hidden relative ">
+          <div className="w-full h-[160px] overflow-hidden relative bg-gray-200 ">
             {" "}
             <img
               src={card.imageURL}
               alt="Airline Logo"
-              className="absolute bottom-0"
+              className="absolute bottom-0 "
             />
           </div>
           <div className="pl-2 pt-3 pb-2">

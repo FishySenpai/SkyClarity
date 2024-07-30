@@ -52,7 +52,7 @@ const checkOut = getRandomDateInRange(new Date(checkIn), 30);
 console.log("Check-in Date:", checkIn);
 console.log("Check-out Date:", checkOut);
 const DestinationCard = ({ destination }) => (
-  <div className="relative overflow-hidden rounded-sm shadow-lg  flex-shrink-0">
+  <div className="relative overflow-hidden rounded-sm shadow-lg  flex-shrink-0 bg-gray-200">
     {" "}
     <Link
       to={`/hotels/search/${destination.name}/${destination.entityId}/${checkIn}/${checkOut}`}

@@ -9,7 +9,7 @@ const CarCards = ({card, key}) => {
           key={key}
           className="bg-white shadow-lg rounded-lg overflow-hidden"
         >
-          <div className="flex flex-col w-full h-[170px] overflow-hidden">
+          <div className="flex flex-col w-full h-[170px] overflow-hidden bg-gray-200">
             <img
               src={card.imageURL}
               alt={`Car card in ${card.location}`}

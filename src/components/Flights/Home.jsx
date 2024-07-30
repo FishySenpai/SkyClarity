@@ -79,7 +79,7 @@ const Home = () => {
               </p>
             </div>
             <div className="flex flex-col 1md:flex-row justify-center items-center 1md:justify-between space-y-8 1md:space-y-8 1md:space-x-20">
-              <div className="text-center 1md:max-w-xs">
+              <div className="text-center 1md:max-w-xs ">
                 <img
                   src={planeImg}
                   alt="Hotel deals"
