@@ -4,6 +4,7 @@ import FlightsSearch from "./FlightsSearch";
 import flighsJson from "./Assets/flights.json";
 import flightsImg from "./Assets/flights-img.jpg";
 import { useParams } from "react-router-dom";
+import FlightsLoading from "./FlightsLoading";
 const Flights = () => {
   const [shortestMinPrice, setShortestMinPrice] = useState(0);
   const [cheapestMinPrice, setCheapestMinPrice] = useState(Infinity);
@@ -116,38 +117,43 @@ const Flights = () => {
     const minutes = durationInMinutes % 60;
     return `${hours}h${minutes}m`;
   }
-  if (flights) {
-    return (
-      <div className="bg-gray-50">
-        <div className="relative">
-          <div className="h-[600px] lg:h-[300px] absolute inset-0  bg-cover bg-center overflow-hidden">
-            <img src={flightsImg} className="" />
-          </div>
-          <div className="absolute top-36 lg:top-16 z-50 w-full flex flex-col items-center">
-            <div className="w-fit flex flex-col items-center">
-              <div className="h-[160px] w-full 1sm:w-fit relative ">
-                <FlightsSearch
-                  flight={flights}
-                  setFlights={setFlights}
-                  selectedOption={selectedOption}
-                  setSelectedOption={setSelectedOption}
-                />
-              </div>
+
+  return (
+    <div className="bg-gray-50">
+      <div className="relative">
+        <div className="h-[600px] lg:h-[300px] absolute inset-0  bg-cover bg-center overflow-hidden">
+          <img src={flightsImg} className="" />
+        </div>
+        <div className="absolute top-36 lg:top-16 z-50 w-full flex flex-col items-center">
+          <div className="w-fit flex flex-col items-center">
+            <div className="h-[160px] w-full 1sm:w-fit relative ">
+              <FlightsSearch
+                setFlights={setFlights}
+                selectedOption={selectedOption}
+                setSelectedOption={setSelectedOption}
+              />
             </div>
           </div>
         </div>
-        <div className="flex flex-col absolute pt-[150px] top-[450px] lg:top-[300px] justify-center items-center mx-auto 1lg:pr-[50px] bg-gray-100 lg:pt-12 rounded-t-3xl w-full">
-          <div className="relative h-[60px] w-full sm:w-[600px] 1sm:w-[700px] 1md:w-[800px] lg:w-[980px] 1lg:w-[1050px] xl:w-[1230px] 1lg:ml-12  rounded-t-lg overflow-hidden">
-            <img
-              src={flights?.destinationImageUrl}
-              alt="Destination"
-              className="absolute inset-0 w-full h-full object-cover object-bottom"
-            />
-            <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-20 text-white font-semibold text-3xl capitalize">
-              Departing to {toLocation}
-            </div>
-          </div>
+      </div>
 
+      <div className="flex flex-col absolute pt-[150px] top-[450px] lg:top-[300px] justify-center items-center mx-auto 1lg:pr-[50px] bg-gray-100 lg:pt-12 rounded-t-3xl w-full">
+        <div className="relative h-[60px] w-full sm:w-[600px] 1sm:w-[700px] 1md:w-[800px] lg:w-[980px] 1lg:w-[1050px] xl:w-[1230px] 1lg:ml-12  rounded-t-lg overflow-hidden">
+          <img
+            src="https://content.skyscnr.com/m/3719e8f4a5daf43d/original/Flights-Placeholder.jpg"
+            alt="Destination"
+            className="absolute inset-0 w-full h-full object-cover object-bottom"
+          />
+          <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-20 text-white font-semibold text-3xl capitalize">
+            Departing to {toLocation || ""}
+          </div>
+        </div>
+        <div className="flex flex-row w-full sm:w-fit 1lg:w-[1050px] xl:w-[1230px]">
+          <div>
+            <FlightsLoading />
+          </div>{" "}
+        </div>
+        {flights ? (
           <div className="flex flex-row w-full sm:w-fit 1lg:w-[1050px] xl:w-[1230px]">
             <div className="hidden 1lg:block">
               <FlightsFilter flights={flights} />
@@ -353,10 +359,12 @@ const Flights = () => {
               </div>
             </div>
           </div>
-        </div>
+        ) : (
+          ""
+        )}
       </div>
-    );
-  }
+    </div>
+  );
 };
 
 export default Flights;

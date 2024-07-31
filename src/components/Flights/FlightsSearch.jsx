@@ -6,7 +6,6 @@ import MultiCity from "./MultiCity";
 import { useNavigate, useParams } from "react-router-dom";
 
 const FlightsSearch = ({
-  flights,
   setFlights,
   selectedOption,
   setSelectedOption,
