@@ -1,6 +1,6 @@
 import React from "react";
 
-const ReturnFlightDetails = ({flightDetailsJson}) => {
+const ReturnFlightDetails = ({ flightDetails }) => {
   function formatDuration(durationInMinutes) {
     const hours = Math.floor(durationInMinutes / 60);
     const minutes = durationInMinutes % 60;
@@ -40,14 +40,14 @@ const ReturnFlightDetails = ({flightDetailsJson}) => {
         <p className="font-bold">
           Return:
           <span className="font-normal pl-1">
-            {formatDate(flightDetailsJson.data.itinerary.legs[1].departure)}
+            {formatDate(flightDetails.data.itinerary.legs[1].departure)}
           </span>
         </p>
         <div className="flex flex-row bg-white py-3">
           <div className="flex flex-row  ">
             <img
               className="h-[30px] w-[60px] "
-              src={`https://www.skyscanner.net/images/airlines/small/${flightDetailsJson.data.itinerary.legs[1].segments[0].marketingCarrier.displayCode}.png
+              src={`https://www.skyscanner.net/images/airlines/small/${flightDetails.data.itinerary.legs[1].segments[0].marketingCarrier.displayCode}.png
                     
                   `}
               alt=""
@@ -56,7 +56,7 @@ const ReturnFlightDetails = ({flightDetailsJson}) => {
           <div className="pl-6 pr-2">
             <div className="text-lg font-semibold">
               {new Date(
-                flightDetailsJson.data.itinerary.legs[1].departure
+                flightDetails.data.itinerary.legs[1].departure
               ).toLocaleTimeString([], {
                 hour: "numeric",
                 minute: "2-digit",
@@ -65,16 +65,14 @@ const ReturnFlightDetails = ({flightDetailsJson}) => {
             </div>
             <div>
               {" "}
-              {flightDetailsJson.data.itinerary.legs[1].origin.displayCode}
+              {flightDetails.data.itinerary.legs[1].origin.displayCode}
             </div>
           </div>
 
           <div className="flex flex-row ">
             <div className="flex flex-col">
               <div className="flex flex-row text-[12px] justify-center ">
-                {formatDuration(
-                  flightDetailsJson?.data.itinerary.legs[1].duration
-                )}
+                {formatDuration(flightDetails?.data.itinerary.legs[1].duration)}
               </div>
               <div className="flex flex-row">
                 <div className="w-2 h-2 mt-[9px]">
@@ -87,7 +85,7 @@ const ReturnFlightDetails = ({flightDetailsJson}) => {
                 </div>
                 -----
                 <div className="text-red-400 text-sm bg-gray-200 rounded px-1">
-                  {flightDetailsJson?.data.itinerary.legs[1].stopCount} stops
+                  {flightDetails?.data.itinerary.legs[1].stopCount} stops
                 </div>
                 -----
                 <div className="w-2 h-2 mt-[9px]">
@@ -115,7 +113,7 @@ const ReturnFlightDetails = ({flightDetailsJson}) => {
           <div className="flex flex-col pl-3">
             <div className=" text-lg font-semibold">
               {new Date(
-                flightDetailsJson.data.itinerary.legs[1].arrival
+                flightDetails.data.itinerary.legs[1].arrival
               ).toLocaleTimeString([], {
                 hour: "numeric",
                 minute: "2-digit",
@@ -123,12 +121,12 @@ const ReturnFlightDetails = ({flightDetailsJson}) => {
               })}
             </div>
             <div>
-              {flightDetailsJson.data.itinerary.legs[1].destination.displayCode}
+              {flightDetails.data.itinerary.legs[1].destination.displayCode}
             </div>
           </div>
         </div>
         <div className="border p-2 mb-2 flex flex-col space-y-6">
-          {flightDetailsJson.data.itinerary.legs[1].segments.map(
+          {flightDetails.data.itinerary.legs[1].segments.map(
             (segment, index) => {
               return (
                 <>
@@ -195,8 +193,7 @@ const ReturnFlightDetails = ({flightDetailsJson}) => {
                   {index === 0 ? (
                     <div className=" bg-red-100 px-5 py-2 rounded-md text-[#e70866] font-semibold text-center">
                       {formatDuration(
-                        flightDetailsJson?.data.itinerary.legs[1].layovers[0]
-                          .duration
+                        flightDetails?.data.itinerary.legs[1].duration
                       )}
                       <span className="pl-7 ">Connect in aiport</span>
                     </div>
@@ -212,15 +209,13 @@ const ReturnFlightDetails = ({flightDetailsJson}) => {
               <span className="font-bold text-gray-800 pr-1">
                 Arrival Time:
               </span>
-              {formatDate(flightDetailsJson.data.itinerary.legs[1].arrival)}
+              {formatDate(flightDetails.data.itinerary.legs[1].arrival)}
             </p>
             <p>
               <span className="font-bold text-gray-800 pl-3 pr-1">
                 Journey duration:
               </span>
-              {formatDuration(
-                flightDetailsJson.data.itinerary.legs[1].duration
-              )}{" "}
+              {formatDuration(flightDetails.data.itinerary.legs[1].duration)}{" "}
             </p>
           </div>
         </div>

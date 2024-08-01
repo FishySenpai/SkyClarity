@@ -30,7 +30,7 @@ function App() {
           element={<CarInfo />}
         />
         <Route path="/hotels/hotel/:id/:price" element={<HotelDetails />} />
-        <Route path="/flights/flight" element={<FlightDetails />} />
+        <Route path="/flights/:token/:id" element={<FlightDetails />} />
         <Route
           path="/flights/search/:fromLocation/:fromId/:toLocation/:toId/:departdate/:returndate"
           element={<Flights />}

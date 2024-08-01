@@ -3,10 +3,10 @@
   "message": "success",
   "data": {
     "itinerary": {
-      "id": "11182-2408032205--32213-1-16292-2408041720|16292-2408140245--32213-1-11182-2408140910",
+      "id": "11182-2408021005--32348-0-16292-2408022145|16292-2408080140--32348-0-11182-2408080455",
       "legs": [
         {
-          "id": "11182-2408032205--32213-1-16292-2408041720",
+          "id": "11182-2408021005--32348-0-16292-2408022145",
           "origin": {
             "id": "11182",
             "name": "Dubai",
@@ -21,7 +21,7 @@
           },
           "segments": [
             {
-              "id": "11182-10075-2408032205-2408040245--32213",
+              "id": "11182-16292-2408021005-2408022145--32348",
               "origin": {
                 "id": "11182",
                 "name": "Dubai",
@@ -29,253 +29,100 @@
                 "city": "Dubai"
               },
               "destination": {
-                "id": "10075",
-                "name": "Mumbai",
-                "displayCode": "BOM",
-                "city": "Mumbai"
-              },
-              "duration": 190,
-              "dayChange": 1,
-              "flightNumber": "6E1456",
-              "departure": "2024-08-03T22:05:00",
-              "arrival": "2024-08-04T02:45:00",
-              "marketingCarrier": {
-                "id": "-32213",
-                "name": "IndiGo",
-                "displayCode": "6E",
-                "displayCodeType": "IATA",
-                "brandColor": "#040f5e",
-                "logo": "https://content.skyscnr.com/2741179f6d851aaa5ca917f36313556a/ai-template-indigo-thumb-1-xxxhdpi.png",
-                "altId": "49"
-              },
-              "operatingCarrier": {
-                "id": "-32213",
-                "name": "IndiGo",
-                "displayCode": "6E",
-                "displayCodeType": "IATA",
-                "brandColor": "#040f5e",
-                "logo": "https://content.skyscnr.com/2741179f6d851aaa5ca917f36313556a/ai-template-indigo-thumb-1-xxxhdpi.png",
-                "altId": "49"
-              },
-              "goodToKnowItems": [
-                {
-                  "icon": "duration",
-                  "body": {
-                    "value": "You have a <style0>6h 5m</style0> wait here",
-                    "isHighlighted": false,
-                    "position": 1
-                  },
-                  "badge": {
-                    "value": "Long Wait",
-                    "isHighlighted": false,
-                    "position": 0
-                  }
-                }
-              ]
-            },
-            {
-              "id": "10075-16292-2408040850-2408041720--32213",
-              "origin": {
-                "id": "10075",
-                "name": "Mumbai",
-                "displayCode": "BOM",
-                "city": "Mumbai"
-              },
-              "destination": {
                 "id": "16292",
                 "name": "Singapore Changi",
                 "displayCode": "SIN",
                 "city": "Singapore"
               },
-              "duration": 360,
+              "duration": 460,
               "dayChange": 0,
-              "flightNumber": "6E1011",
-              "departure": "2024-08-04T08:50:00",
-              "arrival": "2024-08-04T17:20:00",
+              "flightNumber": "EK352",
+              "departure": "2024-08-02T10:05:00",
+              "arrival": "2024-08-02T21:45:00",
               "marketingCarrier": {
-                "id": "-32213",
-                "name": "IndiGo",
-                "displayCode": "6E",
+                "id": "-32348",
+                "name": "Emirates",
+                "displayCode": "EK",
                 "displayCodeType": "IATA",
-                "brandColor": "#040f5e",
-                "logo": "https://content.skyscnr.com/2741179f6d851aaa5ca917f36313556a/ai-template-indigo-thumb-1-xxxhdpi.png",
-                "altId": "49"
+                "brandColor": "#d71921",
+                "logo": "https://content.skyscnr.com/cfe4c0b2676df2d19fa54a6141d22db3/ai-template-emirates-thumb-1-xxxhdpi.png",
+                "altId": "EK"
               },
               "operatingCarrier": {
-                "id": "-32213",
-                "name": "IndiGo",
-                "displayCode": "6E",
+                "id": "-32348",
+                "name": "Emirates",
+                "displayCode": "EK",
                 "displayCodeType": "IATA",
-                "brandColor": "#040f5e",
-                "logo": "https://content.skyscnr.com/2741179f6d851aaa5ca917f36313556a/ai-template-indigo-thumb-1-xxxhdpi.png",
-                "altId": "49"
-              },
-              "goodToKnowItems": [
-                {
-                  "icon": "normal",
-                  "body": {
-                    "value": "You'll arrive the next day",
-                    "isHighlighted": true,
-                    "position": 0
-                  },
-                  "date": {
-                    "value": "2024-08-04T17:20:00",
-                    "isHighlighted": true,
-                    "position": 1
-                  }
-                }
-              ]
-            }
-          ],
-          "layovers": [
-            {
-              "segmentId": "11182-10075-2408032205-2408040245--32213",
-              "origin": {
-                "id": "10075",
-                "name": "Mumbai",
-                "displayCode": "BOM",
-                "city": "Mumbai"
-              },
-              "destination": {
-                "id": "10075",
-                "name": "Mumbai",
-                "displayCode": "BOM",
-                "city": "Mumbai"
-              },
-              "duration": 365
-            }
-          ],
-          "duration": 915,
-          "stopCount": 1,
-          "departure": "2024-08-03T22:05:00",
-          "arrival": "2024-08-04T17:20:00",
-          "dayChange": 1,
-          "orderedGoodToKnow": ["Long Wait"]
-        },
-        {
-          "id": "16292-2408140245--32213-1-11182-2408140910",
-          "origin": {
-            "id": "16292",
-            "name": "Singapore Changi",
-            "displayCode": "SIN",
-            "city": "Singapore"
-          },
-          "destination": {
-            "id": "11182",
-            "name": "Dubai",
-            "displayCode": "DXB",
-            "city": "Dubai"
-          },
-          "segments": [
-            {
-              "id": "16292-13867-2408140245-2408140420--32213",
-              "origin": {
-                "id": "16292",
-                "name": "Singapore Changi",
-                "displayCode": "SIN",
-                "city": "Singapore"
-              },
-              "destination": {
-                "id": "13867",
-                "name": "Chennai",
-                "displayCode": "MAA",
-                "city": "Chennai"
-              },
-              "duration": 245,
-              "dayChange": 0,
-              "flightNumber": "6E1002",
-              "departure": "2024-08-14T02:45:00",
-              "arrival": "2024-08-14T04:20:00",
-              "marketingCarrier": {
-                "id": "-32213",
-                "name": "IndiGo",
-                "displayCode": "6E",
-                "displayCodeType": "IATA",
-                "brandColor": "#040f5e",
-                "logo": "https://content.skyscnr.com/2741179f6d851aaa5ca917f36313556a/ai-template-indigo-thumb-1-xxxhdpi.png",
-                "altId": "49"
-              },
-              "operatingCarrier": {
-                "id": "-32213",
-                "name": "IndiGo",
-                "displayCode": "6E",
-                "displayCodeType": "IATA",
-                "brandColor": "#040f5e",
-                "logo": "https://content.skyscnr.com/2741179f6d851aaa5ca917f36313556a/ai-template-indigo-thumb-1-xxxhdpi.png",
-                "altId": "49"
-              },
-              "goodToKnowItems": [
-                {
-                  "icon": "duration",
-                  "body": {
-                    "value": "<style0>2h 10m</style0> connection in airport",
-                    "isHighlighted": false,
-                    "position": 0
-                  }
-                }
-              ]
-            },
-            {
-              "id": "13867-11182-2408140630-2408140910--32213",
-              "origin": {
-                "id": "13867",
-                "name": "Chennai",
-                "displayCode": "MAA",
-                "city": "Chennai"
-              },
-              "destination": {
-                "id": "11182",
-                "name": "Dubai",
-                "displayCode": "DXB",
-                "city": "Dubai"
-              },
-              "duration": 250,
-              "dayChange": 0,
-              "flightNumber": "6E1471",
-              "departure": "2024-08-14T06:30:00",
-              "arrival": "2024-08-14T09:10:00",
-              "marketingCarrier": {
-                "id": "-32213",
-                "name": "IndiGo",
-                "displayCode": "6E",
-                "displayCodeType": "IATA",
-                "brandColor": "#040f5e",
-                "logo": "https://content.skyscnr.com/2741179f6d851aaa5ca917f36313556a/ai-template-indigo-thumb-1-xxxhdpi.png",
-                "altId": "49"
-              },
-              "operatingCarrier": {
-                "id": "-32213",
-                "name": "IndiGo",
-                "displayCode": "6E",
-                "displayCodeType": "IATA",
-                "brandColor": "#040f5e",
-                "logo": "https://content.skyscnr.com/2741179f6d851aaa5ca917f36313556a/ai-template-indigo-thumb-1-xxxhdpi.png",
-                "altId": "49"
+                "brandColor": "#d71921",
+                "logo": "https://content.skyscnr.com/cfe4c0b2676df2d19fa54a6141d22db3/ai-template-emirates-thumb-1-xxxhdpi.png",
+                "altId": "EK"
               }
             }
           ],
-          "layovers": [
+          "duration": 460,
+          "stopCount": 0,
+          "departure": "2024-08-02T10:05:00",
+          "arrival": "2024-08-02T21:45:00",
+          "dayChange": 0
+        },
+        {
+          "id": "16292-2408080140--32348-0-11182-2408080455",
+          "origin": {
+            "id": "16292",
+            "name": "Singapore Changi",
+            "displayCode": "SIN",
+            "city": "Singapore"
+          },
+          "destination": {
+            "id": "11182",
+            "name": "Dubai",
+            "displayCode": "DXB",
+            "city": "Dubai"
+          },
+          "segments": [
             {
-              "segmentId": "16292-13867-2408140245-2408140420--32213",
+              "id": "16292-11182-2408080140-2408080455--32348",
               "origin": {
-                "id": "13867",
-                "name": "Chennai",
-                "displayCode": "MAA",
-                "city": "Chennai"
+                "id": "16292",
+                "name": "Singapore Changi",
+                "displayCode": "SIN",
+                "city": "Singapore"
               },
               "destination": {
-                "id": "13867",
-                "name": "Chennai",
-                "displayCode": "MAA",
-                "city": "Chennai"
+                "id": "11182",
+                "name": "Dubai",
+                "displayCode": "DXB",
+                "city": "Dubai"
               },
-              "duration": 130
+              "duration": 435,
+              "dayChange": 0,
+              "flightNumber": "EK349",
+              "departure": "2024-08-08T01:40:00",
+              "arrival": "2024-08-08T04:55:00",
+              "marketingCarrier": {
+                "id": "-32348",
+                "name": "Emirates",
+                "displayCode": "EK",
+                "displayCodeType": "IATA",
+                "brandColor": "#d71921",
+                "logo": "https://content.skyscnr.com/cfe4c0b2676df2d19fa54a6141d22db3/ai-template-emirates-thumb-1-xxxhdpi.png",
+                "altId": "EK"
+              },
+              "operatingCarrier": {
+                "id": "-32348",
+                "name": "Emirates",
+                "displayCode": "EK",
+                "displayCodeType": "IATA",
+                "brandColor": "#d71921",
+                "logo": "https://content.skyscnr.com/cfe4c0b2676df2d19fa54a6141d22db3/ai-template-emirates-thumb-1-xxxhdpi.png",
+                "altId": "EK"
+              }
             }
           ],
-          "duration": 625,
-          "stopCount": 1,
-          "departure": "2024-08-14T02:45:00",
-          "arrival": "2024-08-14T09:10:00",
+          "duration": 435,
+          "stopCount": 0,
+          "departure": "2024-08-08T01:40:00",
+          "arrival": "2024-08-08T04:55:00",
           "dayChange": 0
         }
       ],
@@ -283,17 +130,20 @@
         {
           "agents": [
             {
-              "id": "ingo",
-              "name": "IndiGo",
-              "isCarrier": true,
+              "id": "skyp",
+              "name": "Kiwi.com",
+              "isCarrier": false,
               "bookingProposition": "PBOOK",
-              "url": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/ingo/2/11182.16292.2024-08-03,16292.11182.2024-08-14/air/airli/flights?itinerary=flight|-32213|1456|11182|2024-08-03T22:05|10075|2024-08-04T02:45|190|-|-|-;flight|-32213|1011|10075|2024-08-04T08:50|16292|2024-08-04T17:20|360|-|-|-,flight|-32213|1002|16292|2024-08-14T02:45|13867|2024-08-14T04:20|245|-|-|-;flight|-32213|1471|13867|2024-08-14T06:30|11182|2024-08-14T09:10|250|-|-|-&carriers=-32213&operators=-32213;-32213,-32213;-32213&passengers=1&channel=iphone&cabin_class=economy&fps_session_id=1dc95925-e3c5-4ea7-b9d1-357129f55fe8&ticket_price=447.50&is_npt=false&is_multipart=false&client_id=skyscanner_app&q_ids=H4sIAAAAAAAA_-OS42LJzEvPF2LmWBcuxcyxpF6h4dnWrWxGTAqMTkwCjACjJUo5IAAAAA|4394439216460777359|3,H4sIAAAAAAAA_-OS42LJzEvPF2LmWFIvxcyxLlyh4fn7rWxGTAqMTkwcjACysgtPIAAAAA|4879614393366072737|3&q_sources=JACQUARD,JACQUARD&commercial_filters=false&q_datetime_utc=2024-08-01T07:51:55&pqid=false",
-              "price": 447.5,
-              "rating": { "value": 4.52, "count": 531 },
-              "updateStatus": "CURRENT",
+              "url": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/skyp/2/11182.16292.2024-08-02,16292.11182.2024-08-08/air/trava/flights?itinerary=flight|-32348|352|11182|2024-08-02T10:05|16292|2024-08-02T21:45|460|MLWESAE1|M|-,flight|-32348|349|16292|2024-08-08T01:40|11182|2024-08-08T04:55|435|KLXESAE1|K|-&carriers=-32348&operators=-32348,-32348&passengers=1&channel=iphone&cabin_class=economy&fps_session_id=f75b5872-2d9a-4bf0-9656-61fea266efa9&ticket_price=1214.16&is_npt=false&is_multipart=false&client_id=skyscanner_app&q_ids=H4sIAAAAAAAA_-NS4GIpzq4sEGLm-Csoxcyx11yh4fCGrWwaDVMvbGUzYlJgBAApHdSyIgAAAA|6730860490799819825|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2024-08-01T04:09:42&pqid=true",
+              "price": 1214.16,
+              "rating": {
+                "value": 3.09,
+                "count": 4423
+              },
+              "updateStatus": "PENDING",
               "segments": [
                 {
-                  "id": "11182-10075-2408032205-2408040245--32213",
+                  "id": "11182-16292-2408021005-2408022145--32348",
                   "origin": {
                     "id": "11182",
                     "name": "Dubai",
@@ -301,158 +151,42 @@
                     "city": "Dubai"
                   },
                   "destination": {
-                    "id": "10075",
-                    "name": "Mumbai",
-                    "displayCode": "BOM",
-                    "city": "Mumbai"
-                  },
-                  "duration": 190,
-                  "dayChange": 1,
-                  "flightNumber": "6E1456",
-                  "departure": "2024-08-03T22:05:00",
-                  "arrival": "2024-08-04T02:45:00",
-                  "marketingCarrier": {
-                    "id": "-32213",
-                    "name": "IndiGo",
-                    "displayCode": "6E",
-                    "displayCodeType": "IATA",
-                    "brandColor": "#040f5e",
-                    "logo": "https://content.skyscnr.com/2741179f6d851aaa5ca917f36313556a/ai-template-indigo-thumb-1-xxxhdpi.png",
-                    "altId": "49"
-                  },
-                  "operatingCarrier": {
-                    "id": "-32213",
-                    "name": "IndiGo",
-                    "displayCode": "6E",
-                    "displayCodeType": "IATA",
-                    "brandColor": "#040f5e",
-                    "logo": "https://content.skyscnr.com/2741179f6d851aaa5ca917f36313556a/ai-template-indigo-thumb-1-xxxhdpi.png",
-                    "altId": "49"
-                  },
-                  "goodToKnowItems": [
-                    {
-                      "icon": "duration",
-                      "body": {
-                        "value": "You have a <style0>6h 5m</style0> wait here",
-                        "isHighlighted": false,
-                        "position": 1
-                      },
-                      "badge": {
-                        "value": "Long Wait",
-                        "isHighlighted": false,
-                        "position": 0
-                      }
-                    }
-                  ]
-                },
-                {
-                  "id": "10075-16292-2408040850-2408041720--32213",
-                  "origin": {
-                    "id": "10075",
-                    "name": "Mumbai",
-                    "displayCode": "BOM",
-                    "city": "Mumbai"
-                  },
-                  "destination": {
                     "id": "16292",
                     "name": "Singapore Changi",
                     "displayCode": "SIN",
                     "city": "Singapore"
                   },
-                  "duration": 360,
+                  "duration": 460,
                   "dayChange": 0,
-                  "flightNumber": "6E1011",
-                  "departure": "2024-08-04T08:50:00",
-                  "arrival": "2024-08-04T17:20:00",
+                  "flightNumber": "EK352",
+                  "departure": "2024-08-02T10:05:00",
+                  "arrival": "2024-08-02T21:45:00",
                   "marketingCarrier": {
-                    "id": "-32213",
-                    "name": "IndiGo",
-                    "displayCode": "6E",
+                    "id": "-32348",
+                    "name": "Emirates",
+                    "displayCode": "EK",
                     "displayCodeType": "IATA",
-                    "brandColor": "#040f5e",
-                    "logo": "https://content.skyscnr.com/2741179f6d851aaa5ca917f36313556a/ai-template-indigo-thumb-1-xxxhdpi.png",
-                    "altId": "49"
+                    "brandColor": "#d71921",
+                    "logo": "https://content.skyscnr.com/cfe4c0b2676df2d19fa54a6141d22db3/ai-template-emirates-thumb-1-xxxhdpi.png",
+                    "altId": "EK"
                   },
                   "operatingCarrier": {
-                    "id": "-32213",
-                    "name": "IndiGo",
-                    "displayCode": "6E",
+                    "id": "-32348",
+                    "name": "Emirates",
+                    "displayCode": "EK",
                     "displayCodeType": "IATA",
-                    "brandColor": "#040f5e",
-                    "logo": "https://content.skyscnr.com/2741179f6d851aaa5ca917f36313556a/ai-template-indigo-thumb-1-xxxhdpi.png",
-                    "altId": "49"
-                  },
-                  "goodToKnowItems": [
-                    {
-                      "icon": "normal",
-                      "body": {
-                        "value": "You'll arrive the next day",
-                        "isHighlighted": true,
-                        "position": 0
-                      },
-                      "date": {
-                        "value": "2024-08-04T17:20:00",
-                        "isHighlighted": true,
-                        "position": 1
-                      }
-                    }
-                  ]
+                    "brandColor": "#d71921",
+                    "logo": "https://content.skyscnr.com/cfe4c0b2676df2d19fa54a6141d22db3/ai-template-emirates-thumb-1-xxxhdpi.png",
+                    "altId": "EK"
+                  }
                 },
                 {
-                  "id": "16292-13867-2408140245-2408140420--32213",
+                  "id": "16292-11182-2408080140-2408080455--32348",
                   "origin": {
                     "id": "16292",
                     "name": "Singapore Changi",
                     "displayCode": "SIN",
                     "city": "Singapore"
-                  },
-                  "destination": {
-                    "id": "13867",
-                    "name": "Chennai",
-                    "displayCode": "MAA",
-                    "city": "Chennai"
-                  },
-                  "duration": 245,
-                  "dayChange": 0,
-                  "flightNumber": "6E1002",
-                  "departure": "2024-08-14T02:45:00",
-                  "arrival": "2024-08-14T04:20:00",
-                  "marketingCarrier": {
-                    "id": "-32213",
-                    "name": "IndiGo",
-                    "displayCode": "6E",
-                    "displayCodeType": "IATA",
-                    "brandColor": "#040f5e",
-                    "logo": "https://content.skyscnr.com/2741179f6d851aaa5ca917f36313556a/ai-template-indigo-thumb-1-xxxhdpi.png",
-                    "altId": "49"
-                  },
-                  "operatingCarrier": {
-                    "id": "-32213",
-                    "name": "IndiGo",
-                    "displayCode": "6E",
-                    "displayCodeType": "IATA",
-                    "brandColor": "#040f5e",
-                    "logo": "https://content.skyscnr.com/2741179f6d851aaa5ca917f36313556a/ai-template-indigo-thumb-1-xxxhdpi.png",
-                    "altId": "49"
-                  },
-                  "goodToKnowItems": [
-                    {
-                      "icon": "duration",
-                      "body": {
-                        "value": "<style0>2h 10m</style0> connection in airport",
-                        "isHighlighted": false,
-                        "position": 0
-                      }
-                    }
-                  ]
-                },
-                {
-                  "id": "13867-11182-2408140630-2408140910--32213",
-                  "origin": {
-                    "id": "13867",
-                    "name": "Chennai",
-                    "displayCode": "MAA",
-                    "city": "Chennai"
                   },
                   "destination": {
                     "id": "11182",
@@ -460,46 +194,150 @@
                     "displayCode": "DXB",
                     "city": "Dubai"
                   },
-                  "duration": 250,
+                  "duration": 435,
                   "dayChange": 0,
-                  "flightNumber": "6E1471",
-                  "departure": "2024-08-14T06:30:00",
-                  "arrival": "2024-08-14T09:10:00",
+                  "flightNumber": "EK349",
+                  "departure": "2024-08-08T01:40:00",
+                  "arrival": "2024-08-08T04:55:00",
                   "marketingCarrier": {
-                    "id": "-32213",
-                    "name": "IndiGo",
-                    "displayCode": "6E",
+                    "id": "-32348",
+                    "name": "Emirates",
+                    "displayCode": "EK",
                     "displayCodeType": "IATA",
-                    "brandColor": "#040f5e",
-                    "logo": "https://content.skyscnr.com/2741179f6d851aaa5ca917f36313556a/ai-template-indigo-thumb-1-xxxhdpi.png",
-                    "altId": "49"
+                    "brandColor": "#d71921",
+                    "logo": "https://content.skyscnr.com/cfe4c0b2676df2d19fa54a6141d22db3/ai-template-emirates-thumb-1-xxxhdpi.png",
+                    "altId": "EK"
                   },
                   "operatingCarrier": {
-                    "id": "-32213",
-                    "name": "IndiGo",
-                    "displayCode": "6E",
+                    "id": "-32348",
+                    "name": "Emirates",
+                    "displayCode": "EK",
                     "displayCodeType": "IATA",
-                    "brandColor": "#040f5e",
-                    "logo": "https://content.skyscnr.com/2741179f6d851aaa5ca917f36313556a/ai-template-indigo-thumb-1-xxxhdpi.png",
-                    "altId": "49"
+                    "brandColor": "#d71921",
+                    "logo": "https://content.skyscnr.com/cfe4c0b2676df2d19fa54a6141d22db3/ai-template-emirates-thumb-1-xxxhdpi.png",
+                    "altId": "EK"
                   }
                 }
               ],
               "isDirectDBookUrl": false,
-              "quoteAge": 1
+              "quoteAge": 702
             }
           ],
-          "totalPrice": 447.5,
-          "fare": { "leg_details": [] },
-          "id": "_dHxSgw9RdVN"
+          "totalPrice": 1214.16,
+          "fare": {
+            "leg_details": []
+          },
+          "id": "pKS6Zfy0Kidg"
+        },
+        {
+          "agents": [
+            {
+              "id": "emir",
+              "name": "Emirates",
+              "isCarrier": true,
+              "bookingProposition": "PBOOK",
+              "url": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/emir/2/11182.16292.2024-08-02,16292.11182.2024-08-08/air/airli/flights?itinerary=flight|-32348|352|11182|2024-08-02T10:05|16292|2024-08-02T21:45|460|RLWRFAE1|R|Flex+Plus,flight|-32348|349|16292|2024-08-08T01:40|11182|2024-08-08T04:55|435|KLXESAE1|K|Flex&carriers=-32348&operators=-32348,-32348&passengers=1&channel=iphone&cabin_class=economy&fps_session_id=f75b5872-2d9a-4bf0-9656-61fea266efa9&ticket_price=1304.29&is_npt=false&is_multipart=false&client_id=skyscanner_app&q_ids=H4sIAAAAAAAA_-NS4GJJzc0sEmLm-Csoxcyx11yh4fCGrWwaDVMvbGUzYlJgBADQXFwcIgAAAA|-1957771695110722227|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2024-08-01T15:51:42&pqid=false",
+              "price": 1304.29,
+              "rating": {
+                "value": 4.75,
+                "count": 680
+              },
+              "updateStatus": "CURRENT",
+              "segments": [
+                {
+                  "id": "11182-16292-2408021005-2408022145--32348",
+                  "origin": {
+                    "id": "11182",
+                    "name": "Dubai",
+                    "displayCode": "DXB",
+                    "city": "Dubai"
+                  },
+                  "destination": {
+                    "id": "16292",
+                    "name": "Singapore Changi",
+                    "displayCode": "SIN",
+                    "city": "Singapore"
+                  },
+                  "duration": 460,
+                  "dayChange": 0,
+                  "flightNumber": "EK352",
+                  "departure": "2024-08-02T10:05:00",
+                  "arrival": "2024-08-02T21:45:00",
+                  "marketingCarrier": {
+                    "id": "-32348",
+                    "name": "Emirates",
+                    "displayCode": "EK",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#d71921",
+                    "logo": "https://content.skyscnr.com/cfe4c0b2676df2d19fa54a6141d22db3/ai-template-emirates-thumb-1-xxxhdpi.png",
+                    "altId": "EK"
+                  },
+                  "operatingCarrier": {
+                    "id": "-32348",
+                    "name": "Emirates",
+                    "displayCode": "EK",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#d71921",
+                    "logo": "https://content.skyscnr.com/cfe4c0b2676df2d19fa54a6141d22db3/ai-template-emirates-thumb-1-xxxhdpi.png",
+                    "altId": "EK"
+                  }
+                },
+                {
+                  "id": "16292-11182-2408080140-2408080455--32348",
+                  "origin": {
+                    "id": "16292",
+                    "name": "Singapore Changi",
+                    "displayCode": "SIN",
+                    "city": "Singapore"
+                  },
+                  "destination": {
+                    "id": "11182",
+                    "name": "Dubai",
+                    "displayCode": "DXB",
+                    "city": "Dubai"
+                  },
+                  "duration": 435,
+                  "dayChange": 0,
+                  "flightNumber": "EK349",
+                  "departure": "2024-08-08T01:40:00",
+                  "arrival": "2024-08-08T04:55:00",
+                  "marketingCarrier": {
+                    "id": "-32348",
+                    "name": "Emirates",
+                    "displayCode": "EK",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#d71921",
+                    "logo": "https://content.skyscnr.com/cfe4c0b2676df2d19fa54a6141d22db3/ai-template-emirates-thumb-1-xxxhdpi.png",
+                    "altId": "EK"
+                  },
+                  "operatingCarrier": {
+                    "id": "-32348",
+                    "name": "Emirates",
+                    "displayCode": "EK",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#d71921",
+                    "logo": "https://content.skyscnr.com/cfe4c0b2676df2d19fa54a6141d22db3/ai-template-emirates-thumb-1-xxxhdpi.png",
+                    "altId": "EK"
+                  }
+                }
+              ],
+              "isDirectDBookUrl": false,
+              "quoteAge": 0
+            }
+          ],
+          "totalPrice": 1304.29,
+          "fare": {
+            "leg_details": []
+          },
+          "id": "HzmMpiQbslP_"
         }
       ],
       "isTransferRequired": false,
       "destinationImage": "https://content.skyscnr.com/m/13843abc13d27263/original/Singapore.jpg",
       "operatingCarrierSafetyAttributes": [
         {
-          "carrierID": "-32213",
-          "carrierName": "IndiGo",
+          "carrierID": "-32348",
+          "carrierName": "Emirates",
           "faceMasksCompulsory": null,
           "aircraftDeepCleanedDaily": null,
           "attendantsWearPPE": null,
@@ -511,6 +349,6 @@
       "flexibleTicketPolicies": []
     },
     "pollingCompleted": true,
-    "bookingSessionId": "1dc95925-e3c5-4ea7-b9d1-357129f55fe8"
+    "bookingSessionId": "f75b5872-2d9a-4bf0-9656-61fea266efa9"
   }
 }

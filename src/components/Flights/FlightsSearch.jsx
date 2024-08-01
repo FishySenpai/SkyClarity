@@ -3,6 +3,7 @@ import Calendar from "react-calendar";
 import "../Calender/Sample.css";
 import useOutsideClick from "../useOutsideClick";
 import MultiCity from "./MultiCity";
+import loading from "./Assets/loading.gif"
 import { useNavigate, useParams } from "react-router-dom";
 
 const FlightsSearch = ({
@@ -42,6 +43,7 @@ const FlightsSearch = ({
   const [cabinClassDrop, setCabinClassDrop] = useState(false);
   const [adults, setAdults] = useState(1);
   const [children, setChildren] = useState(0);
+  const [isLoading, setIsLoading] = useState(false)
 
   const navigate = useNavigate();
   const departPopupRef = useRef(null);
@@ -90,6 +92,7 @@ const FlightsSearch = ({
   };
 
   const handleSearch = async () => {
+    setIsLoading(true)
     const fromLocation = from; // Replace with actual input value
     const toLocation = to; // Replace with actual input value
     const departdate = departDate; // Replace with actual input value
@@ -666,9 +669,10 @@ const FlightsSearch = ({
         <div className="w-full flex justify-end items-end mt-4 lg:w-auto lg:flex-none lg:justify-start lg:items-start lg:mt-0">
           <button
             onClick={handleSearch}
-            className="bg-gray-900 text-white p-2.5 pr-3.5 rounded-md font-semibold text-lg h-[48px] w-fit"
+            className="bg-gray-900 text-white p-2.5 pr-3.5 rounded-md font-semibold text-lg h-[48px] w-[84px]"
           >
-            Search
+           {isLoading ?  <img src={loading} alt=""  className="w-10 h-6 ml-3"/> : "Search"}
+           
           </button>
         </div>
       </div>

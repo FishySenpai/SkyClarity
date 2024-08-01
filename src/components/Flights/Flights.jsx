@@ -3,7 +3,7 @@ import FlightsFilter from "./FlightsFilter";
 import FlightsSearch from "./FlightsSearch";
 import flighsJson from "./Assets/flights.json";
 import flightsImg from "./Assets/flights-img.jpg";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import FlightsLoading from "./FlightsLoading";
 const Flights = () => {
   const [shortestMinPrice, setShortestMinPrice] = useState(0);
@@ -333,7 +333,7 @@ const Flights = () => {
                       <div className="text-lg font-semibold  mt-3 ">
                         US {flight.price.formatted}
                       </div>
-                      <div>
+                      <Link to={`/flights/${flights?.token}/${flight.id}`}>
                         <button className="px-5 py-2 rounded bg-gray-800 text-white mt-1 font-semibold flex flex-row">
                           Select
                           <svg
@@ -347,7 +347,7 @@ const Flights = () => {
                             />
                           </svg>
                         </button>
-                      </div>
+                      </Link>
                     </div>
                   </div>
                 ))}
