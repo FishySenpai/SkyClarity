@@ -3,6 +3,7 @@ import flightDetailsJson from "./Assets/flightDetails.json";
 import useOutsideClick from "../useOutsideClick";
 import CompleteYourTrip from "./CompleteYourTrip";
 import warning from "./Assets/warning.png";
+import ReturnFlightDetails from "./ReturnFlightDetails";
 const FlightDetails = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const modalRef = useRef(null);
@@ -133,8 +134,8 @@ const FlightDetails = () => {
           </ul>
         </div>
         <div className="lg:ml-8 w-full lg:w-fit">
+          <h2 className="mb-2 font-bold text-lg ml-8 mt-2">Flight details</h2>
           <div className="p-4 border-l bg-white rounded-lg 1md:ml-8  w-full 1md:w-[400px] lg:w-[463px]">
-            <h2 className="mb-2 font-bold text-lg">Flight details</h2>
             <div>
               <p className="font-bold">
                 Departure:
@@ -328,7 +329,6 @@ const FlightDetails = () => {
                     );
                   }
                 )}
-
                 <div className="flex text-[13px]">
                   <p>
                     <span className="font-bold text-gray-800 pr-1">
@@ -350,6 +350,11 @@ const FlightDetails = () => {
               </div>
             </div>
           </div>
+          {flightDetailsJson?.data.itinerary.legs[1] ? (
+            <ReturnFlightDetails flightDetailsJson={flightDetailsJson} />
+          ) : (
+            ""
+          )}
           <CompleteYourTrip
             destination={
               flightDetailsJson?.data.itinerary.legs[0].destination.city

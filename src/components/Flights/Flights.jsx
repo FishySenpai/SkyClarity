@@ -59,16 +59,16 @@ const Flights = () => {
     }
   };
 
-  // useEffect(() => {
-  //   if (
-  //     isValidParam(fromId) &&
-  //     isValidParam(toId) &&
-  //     isValidParam(departdate) &&
-  //     isValidParam(returndate)
-  //   ) {
-  //     fetchReturnFlights();
-  //   }
-  // }, [fromId, toId, departdate, returndate]);
+  useEffect(() => {
+    if (
+      isValidParam(fromId) &&
+      isValidParam(toId) &&
+      isValidParam(departdate) &&
+      isValidParam(returndate)
+    ) {
+      fetchReturnFlights();
+    }
+  }, [fromId, toId, departdate, returndate]);
 
   useEffect(() => {
     if (flights && flights.itineraries) {
@@ -147,11 +147,6 @@ const Flights = () => {
           <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-20 text-white font-semibold text-3xl capitalize">
             Departing to {toLocation || ""}
           </div>
-        </div>
-        <div className="flex flex-row w-full sm:w-fit 1lg:w-[1050px] xl:w-[1230px]">
-          <div>
-            <FlightsLoading />
-          </div>{" "}
         </div>
         {flights ? (
           <div className="flex flex-row w-full sm:w-fit 1lg:w-[1050px] xl:w-[1230px]">
@@ -360,7 +355,9 @@ const Flights = () => {
             </div>
           </div>
         ) : (
-          ""
+          <div className="flex flex-row w-full sm:w-fit 1lg:w-[1050px] xl:w-[1230px]">
+            <FlightsLoading />
+          </div>
         )}
       </div>
     </div>
