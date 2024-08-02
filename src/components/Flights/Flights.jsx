@@ -12,7 +12,7 @@ const Flights = () => {
   const [cheapestMinDuration, setCheapestMinDuration] = useState(0);
   const [bestDuration, setBestDuration] = useState();
   const [bestPrice, setBestPrice] = useState();
-  const [flights, setFlights] = useState(flighsJson);
+  const [flights, setFlights] = useState();
   const [selectedOption, setSelectedOption] = useState("round-trip");
   const [priceTag, setPriceTag] = useState("Best");
   const { fromLocation, fromId, toLocation, toId, departdate, returndate } =

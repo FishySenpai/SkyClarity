@@ -3,7 +3,7 @@ import Calendar from "react-calendar";
 import "../Calender/Sample.css";
 import useOutsideClick from "../useOutsideClick";
 import MultiCity from "./MultiCity";
-import loading from "./Assets/loading.gif"
+import loading from "./Assets/loading.png";
 import { useNavigate, useParams } from "react-router-dom";
 
 const FlightsSearch = ({
@@ -11,12 +11,12 @@ const FlightsSearch = ({
   selectedOption,
   setSelectedOption,
   flightCount,
-  setFlightCount
+  setFlightCount,
 }) => {
   const { fromLocation, fromId, toLocation, toId, departdate, returndate } =
     useParams();
   console.log(fromLocation, fromId, toLocation, toId, departdate, returndate);
-  
+
   const formatDate = (date) => {
     const year = date.getFullYear();
     const month = String(date.getMonth() + 1).padStart(2, "0");
@@ -43,7 +43,7 @@ const FlightsSearch = ({
   const [cabinClassDrop, setCabinClassDrop] = useState(false);
   const [adults, setAdults] = useState(1);
   const [children, setChildren] = useState(0);
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(false);
 
   const navigate = useNavigate();
   const departPopupRef = useRef(null);
@@ -92,7 +92,7 @@ const FlightsSearch = ({
   };
 
   const handleSearch = async () => {
-    setIsLoading(true)
+    setIsLoading(true);
     const fromLocation = from; // Replace with actual input value
     const toLocation = to; // Replace with actual input value
     const departdate = departDate; // Replace with actual input value
@@ -669,10 +669,29 @@ const FlightsSearch = ({
         <div className="w-full flex justify-end items-end mt-4 lg:w-auto lg:flex-none lg:justify-start lg:items-start lg:mt-0">
           <button
             onClick={handleSearch}
-            className="bg-gray-900 text-white p-2.5 pr-3.5 rounded-md font-semibold text-lg h-[48px] w-[84px]"
+            className={`bg-gray-900 text-white p-2.5 pr-3.5 rounded-md font-semibold text-lg h-[48px] w-[120px] flex items-center justify-center ${
+              isLoading ? "cursor-not-allowed" : ""
+            }`}
           >
-           {isLoading ?  <img src={loading} alt=""  className="w-10 h-6 ml-3"/> : "Search"}
-           
+            {isLoading ? (
+              <img
+                src={loading}
+                alt="Loading..."
+                className="h-[25px] w-[25px] spin mr-2"
+              />
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                className="h-[18px] w-[18px] mr-2"
+              >
+                <path
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                  fill="white"
+                />
+              </svg>
+            )}
+            <span className="text-lg">Search</span>
           </button>
         </div>
       </div>

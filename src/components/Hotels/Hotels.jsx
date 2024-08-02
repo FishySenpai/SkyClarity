@@ -5,8 +5,10 @@ import HotelsFilter from "./HotelsFilter";
 import hotelsDataJson from "../../hotels.json";
 import HotelsSearch from "./HotelsSearch";
 import { useParams } from "react-router-dom";
+import HotelsLoading from "./HotelsLoading";
 const Hotels = () => {
   const [hotelsData, setHotelsData] = useState(hotelsDataJson);
+  const [isLoading, setIsLoading] = useState(true);
   const { destination, destinationId, checkIn, checkOut } = useParams();
   const isValidParam = (param) => {
     return !param.startsWith(":") && param.trim() !== "";
@@ -30,17 +32,16 @@ const Hotels = () => {
       console.error(error);
     }
   };
-  useEffect(() => {
-    if (
-      isValidParam(destinationId) &&
-      isValidParam(checkIn) &&
-      isValidParam(checkOut)
-    ) {
-      fetchHotels();
-    }
-  }, [destination, destinationId, checkIn, checkOut]);
+  // useEffect(() => {
+  //   if (
+  //     isValidParam(destinationId) &&
+  //     isValidParam(checkIn) &&
+  //     isValidParam(checkOut)
+  //   ) {
+  //     fetchHotels();
+  //   }
+  // }, [destination, destinationId, checkIn, checkOut]);
   console.log(hotelsData);
-if (hotelsData){
   return (
     <div className="bg-gray-50">
       <img
@@ -55,22 +56,26 @@ if (hotelsData){
         </div>
       </div>
       <div className="flex flex-row absolute top-[300px] justify-center mx-auto bg-gray-100 pt-12 rounded-t-3xl w-full">
-        <div className="hidden xl:block">
-          {<HotelsFilter hotelsData={hotelsData} />}
-        </div>
-        <div className="flex flex-col pt-[150px] 1lg:pt-0 ">
-          <div>
-            {hotelsData?.hotels.slice(0, 10).map((hotel, index) => (
-              // <Link to={`/hotels/hotel/${hotel.id}`}>
-
-              <HotelInfo index={hotel.id} hotel={hotel} />
-            ))}
-          </div>
-        </div>
+        {hotelsData ? (
+          <>
+            <div className="hidden xl:block">
+              <HotelsFilter hotelsData={hotelsData} />
+            </div>
+            <div className="flex flex-col pt-[150px] 1lg:pt-0">
+              <div>
+                {hotelsData?.hotels.slice(0, 10).map((hotel, index) => (
+                  // <Link to={`/hotels/hotel/${hotel.id}`}>
+                  <HotelInfo key={hotel.id} index={hotel.id} hotel={hotel} />
+                ))}
+              </div>
+            </div>
+          </>
+        ) : (
+          <HotelsLoading />
+        )}
       </div>
     </div>
   );
-}
 };
 
 export default Hotels;
