@@ -7,6 +7,7 @@ import Calendar from "react-calendar";
 import HotelCards from "./HotelCards";
 import FAQ from "../Flights/FAQ";
 import faqs from "../faq.json";
+import loading from "../Assets/loading.png";
 import { useNavigate, useParams } from "react-router-dom";
 
 const HotelsSearch = ({ home }) => {
@@ -25,6 +26,7 @@ const HotelsSearch = ({ home }) => {
   const [adults, setAdults] = useState(1);
   const [children, setChildren] = useState(0);
   const [rooms, setRooms] = useState(1);
+  const [isLoading, setIsLoading] = useState(false);
   const checkInPopupRef = useRef(null);
   const checkOutPopupRef = useRef(null);
   const cabinPopupRef = useRef(null);
@@ -438,19 +440,29 @@ const HotelsSearch = ({ home }) => {
         <div className="">
           <button
             onClick={handleSearch}
-            className="bg-gray-900 text-white p-2.5 pl-9 pr-3.5 rounded-md font-semibold text-lg w-full 1lg:w-fit relative mt-5 1lg:mt-0"
+            className={`bg-gray-900 text-white p-2.5 pr-3.5 rounded-md font-semibold text-lg h-[48px] w-[120px] flex items-center justify-center ${
+              isLoading ? "cursor-not-allowed" : ""
+            }`}
           >
-            Search
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              className="h-[18px] w-[18px] absolute right-1/2 mr-5  mt-[1px]  1lg:left-3 top-[14px]"
-            >
-              <path
-                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-                fill="white"
+            {isLoading ? (
+              <img
+                src={loading}
+                alt="Loading..."
+                className="h-[25px] w-[25px] spin mr-2"
               />
-            </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                className="h-[18px] w-[18px] mr-2"
+              >
+                <path
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                  fill="white"
+                />
+              </svg>
+            )}
+            <span className="text-lg">Search</span>
           </button>
         </div>
       </div>

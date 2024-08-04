@@ -3,7 +3,7 @@ import Calendar from "react-calendar";
 import "../Calender/Sample.css";
 import useOutsideClick from "../useOutsideClick";
 import MultiCity from "./MultiCity";
-import loading from "./Assets/loading.png";
+import loading from "../Assets/loading.png";
 import { useNavigate, useParams } from "react-router-dom";
 
 const FlightsSearch = ({

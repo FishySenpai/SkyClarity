@@ -5,6 +5,7 @@ import CarsSearch from "./CarsSearch";
 import carImg from "./car-img.jpg";
 import { useParams } from "react-router-dom";
 import CompleteTrip from "./CompleteTrip";
+import CarsLoading from "./CarsLoading";
 const CarInfo = () => {
   const [groupsArray, setGroupsArray] = useState();
   const [providersArray, setProvidersArray] = useState();
@@ -50,11 +51,11 @@ const CarInfo = () => {
       }
     };
 
-    useEffect(() => {
-      if (isValidParam(pickUpId) && isValidParam(pickDate)) {
-        fetchCars();
-      }
-    }, [pickUpId, pickDate]);
+    // useEffect(() => {
+    //   if (isValidParam(pickUpId) && isValidParam(pickDate)) {
+    //     fetchCars();
+    //   }
+    // }, [pickUpId, pickDate]);
   useEffect(() => {
     if (carsInfo?.data?.groups) {
       // Convert the object values to an array and set the state
@@ -86,6 +87,39 @@ const CarInfo = () => {
         </div>
       </div>
       <div className="flex flex-row absolute top-[300px] justify-center mx-auto bg-gray-100 pt-12 rounded-t-3xl w-full">
+        <div className="hidden xl:block">
+          <div className="mx-12 px-6 w-[300px] bg-white rounded-lg default-font text-gray-700 text-sm divide-y-2 divide-slate-300">
+            {Array(5)
+              .fill(0)
+              .map((_, starIndex) => (
+                <div className="pt-4 pb-2">
+                  <div className="flex flex-row relative pt-2 w-3/4 bg-gray-200 animate-pulse h-5 mb-3"></div>
+                  <div className="mb-3 flex relative ">
+                    <div className=" w-[30px] mr-3 bg-gray-200 animate-pulse h-5 "></div>
+                    <div className=" w-1/2 mr-3 bg-gray-200 animate-pulse h-5"></div>
+                    <div className=" w-[45px] bg-gray-200 animate-pulse h-5 absolute right-0"></div>
+                  </div>
+                  <div className="mb-3 flex relative ">
+                    <div className=" w-[30px] mr-3 bg-gray-200 animate-pulse h-5 "></div>
+                    <div className=" w-1/3 mr-3 bg-gray-200 animate-pulse h-5"></div>
+                    <div className=" w-[45px] bg-gray-200 animate-pulse h-5 absolute right-0"></div>
+                  </div>
+                  <div className="mb-3 flex relative ">
+                    <div className=" w-[30px] mr-3 bg-gray-200 animate-pulse h-5 "></div>
+                    <div className=" w-1/2 mr-3 bg-gray-200 animate-pulse h-5"></div>
+                    <div className=" w-[45px] bg-gray-200 animate-pulse h-5 absolute right-0"></div>
+                  </div>
+                  <div className="mb-3 flex relative ">
+                    <div className=" w-[30px] mr-3 bg-gray-200 animate-pulse h-5 "></div>
+                    <div className=" w-1/3 mr-3 bg-gray-200 animate-pulse h-5"></div>
+                    <div className=" w-[45px] bg-gray-200 animate-pulse h-5 absolute right-0"></div>
+                  </div>
+                </div>
+              ))}
+          </div>
+        </div>
+      </div>
+    {!carsInfo ?   <div className="flex flex-row absolute top-[300px] justify-center mx-auto bg-gray-100 pt-12 rounded-t-3xl w-full">
         <div className="mr-12 hidden lg:block">
           <CarFilter />
         </div>
@@ -235,7 +269,9 @@ const CarInfo = () => {
                     </div>
                   </div>
                   <div className="pl-4 text-gray-950 flex flex-col pr-4 pt-2 justify-end items-end sm:flex-initial sm:pr-0 sm:pt-0 sm:justify-start sm:items-start">
-                    <div className="font-semibold pt-3 hidden 1sm:block">1 deal</div>
+                    <div className="font-semibold pt-3 hidden 1sm:block">
+                      1 deal
+                    </div>
                     <div className="flex flex-row text-2xl font-bold  mt-3 ">
                       ${car.min_price.toFixed(0)}
                       <div className="text-sm font-normal text-gray-600 mt-2.5">
@@ -397,9 +433,9 @@ const CarInfo = () => {
           </div>
         </div>
         <div className="hidden 2xl:block">
-          <CompleteTrip />
+          <CompleteTrip destination={pickUp} />
         </div>
-      </div>{" "}
+      </div> : <CarsLoading/>}
     </div>
   );
 };

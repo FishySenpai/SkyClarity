@@ -4,7 +4,7 @@ import useOutsideClick from "../useOutsideClick";
 import CompleteYourTrip from "./CompleteYourTrip";
 import warning from "./Assets/warning.png";
 import ReturnFlightDetails from "./ReturnFlightDetails";
-import loading from "./Assets/loading.gif"
+import loading from "../Assets/loading.gif"
 import { useParams } from "react-router-dom";
 const FlightDetails = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
