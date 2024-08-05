@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Calendar from "react-calendar";
 import useOutsideClick from "../useOutsideClick";
 import { useNavigate } from "react-router-dom";
+import loading from "../Assets/loading.png";
 const CarsSearch = () => {
   const [pickUpLocation, setPickUpLocation] = useState();
   const [pickUpLocationId, setPickUpLocationId] = useState();
@@ -17,8 +18,10 @@ const CarsSearch = () => {
   const [togglePickUpTime, setTogglePickUpTime] = useState(false);
   const [dropOffTime, setDropOffTime] = useState("10:00");
   const [toggleDropOffTime, setToggleDropOffTime] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [driverCheck, setDriverCheck] = useState(true);
   const [dropOffCheck, setDropOffCheck] = useState(false);
+
   const pickUpPopupRef = useRef(null);
   const dropOffPopupRef = useRef(null);
   const pickUpTimePopupRef = useRef(null);
@@ -47,6 +50,7 @@ const CarsSearch = () => {
   };
 
   const handleSearch = async () => {
+    setIsLoading(true);
     const pickUp = pickUpLocation; // Replace with actual input value
     const dropOff = dropOffLocation; // Replace with actual input value
     const pickDate = pickUpDate; // Replace with actual input value
@@ -56,6 +60,7 @@ const CarsSearch = () => {
     // const dropOffId = await fetchLocation(dropOff);
 
     if (pickUpId) {
+      setIsLoading(false);
       navigate(`/carhire/search/${pickUp}/${pickUpId}/${pickDate}/${dropDate}`);
     } else {
       console.error("Failed to fetch location IDs");
@@ -352,22 +357,32 @@ const CarsSearch = () => {
             </div>
           </div>
         </div>
-        <div className="relative">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"
-            className="h-[18px] w-[18px] absolute left-3 top-[14px]"
-          >
-            <path
-              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-              fill="white"
-            />
-          </svg>
+        <div className="">
           <button
-            className="bg-gray-900 text-white p-2.5 pl-9 pr-3.5 rounded-md font-semibold text-lg"
             onClick={handleSearch}
+            className={`bg-gray-900 text-white p-2.5 pr-3.5 rounded-md font-semibold text-lg h-[48px] w-[120px] flex items-center justify-center ${
+              isLoading ? "cursor-not-allowed" : ""
+            }`}
           >
-            Search
+            {isLoading ? (
+              <img
+                src={loading}
+                alt="Loading..."
+                className="h-[25px] w-[25px] spin mr-2"
+              />
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                className="h-[18px] w-[18px] mr-2"
+              >
+                <path
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                  fill="white"
+                />
+              </svg>
+            )}
+            <span className="text-lg">Search</span>
           </button>
         </div>
       </div>
