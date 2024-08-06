@@ -17,14 +17,11 @@ const Policies = ({hotelDetails}) => {
               fill="rgb(55 65 81)"
             />
           </svg>
-          <p className="text-2xl pl-3 font-semibold text-gray-800 w-[250px]">
+          <p className="text-2xl pl-3 font-semibold text-gray-800 w-[150px] 1sm:min-w-[250px]">
             Children
           </p>
           <p className="text-gray-800  mt-1">
-            {
-              policies.content[0].values[0]
-                .content
-            }
+            {policies.content[0].values[0].content}
           </p>
         </div>
         <div className="flex pt-4">
@@ -38,14 +35,11 @@ const Policies = ({hotelDetails}) => {
               fill="rgb(55 65 81)"
             />
           </svg>
-          <p className="text-2xl font-semibold text-gray-800 pl-3 w-[250px]">
+          <p className="text-2xl font-semibold text-gray-800 pl-3 w-[150px] 1sm:min-w-[250px]">
             Additional Beds
           </p>
-          <p className="text-gray-800  mt-1">
-            {
-              policies.content[1].values[0]
-                .content
-            }
+          <p className="text-gray-800  mt-1 text-wrap">
+            {policies.content[1].values[0].content}
           </p>
         </div>
         <div className="flex pt-4">
@@ -59,33 +53,24 @@ const Policies = ({hotelDetails}) => {
               fill="rgb(55 65 81)"
             />
           </svg>
-          <p className="text-2xl pl-3 font-semibold text-gray-800 w-[250px]">
+          <p className="text-2xl pl-3 font-semibold text-gray-800 w-[150px] 1sm:min-w-[250px]">
             Breakfast
           </p>
           <div className="space-y-1.5 mt-1">
             <p className="text-gray-800 ">
-              {
-                policies.content[3].values[0]
-                  .content
-              }
+              {policies.content[4].values[0].content}
             </p>
             <p className="text-gray-800 ">
               <span className="font-semibold w-[130px] inline-block">
                 Breakfast menu:
               </span>
-              {
-                policies.content[3]
-                  .values[0].content
-              }
+              {policies.content[4].values[0].content}
             </p>
             <p className="text-gray-800  ">
               <span className="font-semibold w-[130px] inline-block">
                 Breakfast price:
               </span>
-              {
-                policies.content[3]
-                  .values[0].content
-              }
+              {policies.content[4].values[0].content}
             </p>
           </div>
         </div>
@@ -100,50 +85,37 @@ const Policies = ({hotelDetails}) => {
               fill="rgb(55 65 81)"
             />
           </svg>
-          <p className="text-2xl pl-3 font-semibold text-gray-800 w-[250px]">
+          <p className="text-2xl pl-3 font-semibold text-gray-800 w-[150px] 1sm:min-w-[250px]">
             Pets
           </p>
           <p className="text-gray-800  mt-1">
-            {
-              policies.content[2].values[0]
-                .content
-            }
+            {policies.content[3].values[0].content}
           </p>
         </div>
         <div className="flex pt-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 576 512 "
-            className="h-6 w-6 mt-1.5"
+            className="h-6 w-6 absolute mt-1.5"
           >
             <path
               d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"
               fill="rgb(55 65 81)"
             />
           </svg>
-          <p className="text-2xl pl-3 font-semibold text-gray-800 w-[250px]">
+          <p className="text-2xl pl-3 font-semibold text-gray-800 min-w-[130px] 1sm:min-w-[250px] text-wrap ml-5">
             Payment Methods
           </p>
           <div>
             <p className="text-gray-800  mt-1">
-              {
-                policies.content[5].values[0]
-                  .title
-              }
+              {policies.content[6].values[0].title}
             </p>
             <div className="flex">
               <p className="text-gray-800  font-semibold">
-                {
-                  policies.content[5].values[0]
-                    .content[0]
-                }
-                ,
+                {policies.content[6].values[0].content[0]},
               </p>
               <p className="text-gray-800 pl-1 font-semibold ">
-                {
-                  policies.content[5].values[0]
-                    .content[1]
-                }
+                {policies.content[6].values[0].content[1]}
               </p>
             </div>
           </div>
