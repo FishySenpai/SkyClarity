@@ -112,9 +112,9 @@ const HotelDetails = () => {
         </div>
 
         {showImages && (
-          <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 p-2 ">
+          <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 p-2 w-full">
             <div
-              className="bg-white p-4 pb-20 rounded-lg relative"
+              className="bg-white p-4 pb-20 rounded-lg relative w-[90%] xl:w-[80%]"
               ref={imagesRef}
             >
               <div className="font-semibold text-3xl pb-3">
@@ -141,21 +141,21 @@ const HotelDetails = () => {
                   />
                 </svg>
               </button>
-              <div className="flex flex-row  w-[1480px] ">
-                <div className="flex flex-wrap w-[1270px] h-[750px]  overflow-auto">
+              <div className="flex flex-row  w-[100%] ">
+                <div className="grid grid-cols-1 sm:grid-cols-2 1md:grid-cols-3 gap-3 w-[85%] h-[750px] overflow-auto overflow-x-clip">
                   {hotelDetails.data.gallery.images
                     .slice(3, 40) // Adjust the slice range as per your requirement
                     .map((image, index) => (
                       <div
+                        key={index} // Moved the key prop here
                         className={`${
                           image.category === selectedCategory ||
                           selectedCategory === "All"
                             ? ""
                             : "hidden"
-                        } `}
+                        } max-w-full max-h-[305px]`}
                       >
                         <img
-                          key={index}
                           src={
                             image.category === selectedCategory ||
                             selectedCategory === "All"
@@ -167,14 +167,15 @@ const HotelDetails = () => {
                           alt=""
                           className={`${
                             image.gallery || image.thumbnail || image.dynamic
-                              ? "w-[400px] h-[305px] rounded-lg"
+                              ? "w-full h-auto sm:max-w-[300px] sm:max-h-[230px] md:max-w-[350px] md:max-h-[265px] lg:max-w-[400px] lg:max-h-[305px] rounded-lg"
                               : ""
-                          } m-2`}
+                          } `}
                         />
                       </div>
                     ))}
                 </div>
-                <div className="fixed right-[220px] w-[180px]">
+
+                <div className="ml-4 ">
                   <h2 className="text-lg font-semibold mb-4">Categories</h2>
                   {hotelDetails.data.gallery.categories.map(
                     (category, index) => (
