@@ -12,15 +12,70 @@ const HotelDetails = () => {
   const [showImages, setShowImages] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [hotelDetails, setHotelDetails] = useState(hotelDetailsJson);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+
+  const handleTouchStart = (e) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+
+    const distance = touchStart - touchEnd;
+
+    // Swipe threshold to detect a valid swipe
+    const minSwipeDistance = 50;
+
+    if (distance > minSwipeDistance) {
+      handleNextSlide(); // Swipe left
+    } else if (distance < -minSwipeDistance) {
+      handlePrevSlide(); // Swipe right
+    }
+
+    // Reset values
+    setTouchStart(null);
+    setTouchEnd(null);
+  };
+
+  const handleNextSlide = () => {
+    setCurrentSlide((prevSlide) =>
+      prevSlide === images.length - 1 ? 0 : prevSlide + 1
+    );
+  };
+
+  const handlePrevSlide = () => {
+    setCurrentSlide((prevSlide) =>
+      prevSlide === 0 ? images.length - 1 : prevSlide - 1
+    );
+  };
+  
+
   const [images, setImages] = useState(
     hotelDetailsJson.data?.gallery?.images?.slice(0, 70)
   );
   const imagesRef = useRef(null);
 
+    const dotsToShow = 5;
+
+    // Calculate the range of dots to display
+    const startDot = Math.max(
+      0,
+      Math.min(
+        currentSlide - Math.floor(dotsToShow / 2),
+        images.length - dotsToShow
+      )
+    );
+    const endDot = startDot + dotsToShow;
   console.log(images);
   console.log(id);
   console.log(hotelDetails);
-
+  
   useOutsideClick(imagesRef, () => {
     setShowImages(false);
   });
@@ -59,7 +114,7 @@ const HotelDetails = () => {
         className="bg-gray-100 flex flex-col justify-between items-center pb-12"
       >
         <div
-          className="flex space-x-1 cursor-pointer w-full h-[28vw]"
+          className="2sm:flex space-x-1 cursor-pointer w-full h-[28vw] hidden "
           onClick={() => {
             setShowImages(true);
           }}
@@ -110,7 +165,42 @@ const HotelDetails = () => {
             </div>
           </div>
         </div>
-
+        <div
+          className="relative w-full mx-auto 2sm:hidden"
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+        >
+          <div className="flex overflow-x-hidden w-full">
+            {images.slice(0, 70).map((image, index) => (
+              <div
+                key={index}
+                className={`w-full transition-transform duration-500 ease-in-out transform ${
+                  index === currentSlide ? "translate-x-0" : "hidden"
+                }`}
+              >
+                <img
+                  src={image.gallery || image.thumbnail || image.dynamic}
+                  alt=""
+                  className="w-full h-[305px] "
+                />
+              </div>
+            ))}
+          </div>
+          <div className="flex justify-center absolute left-[40%] bottom-6 z-10 space-x-2">
+            {Array.from({ length: images.length })
+              .slice(startDot, endDot)
+              .map((_, index) => (
+                <span
+                  key={startDot + index}
+                  onClick={() => setCurrentSlide(startDot + index)}
+                  className={`w-2.5 h-2.5 bg-gray-100 rounded-full cursor-pointer ${
+                    startDot + index === currentSlide ? "bg-gray-400" : ""
+                  }`}
+                />
+              ))}
+          </div>
+        </div>
         {showImages && (
           <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 p-2 w-full">
             <div
