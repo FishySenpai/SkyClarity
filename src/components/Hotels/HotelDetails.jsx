@@ -54,28 +54,27 @@ const HotelDetails = () => {
       prevSlide === 0 ? images.length - 1 : prevSlide - 1
     );
   };
-  
 
   const [images, setImages] = useState(
     hotelDetailsJson.data?.gallery?.images?.slice(0, 70)
   );
   const imagesRef = useRef(null);
 
-    const dotsToShow = 5;
+  const dotsToShow = 5;
 
-    // Calculate the range of dots to display
-    const startDot = Math.max(
-      0,
-      Math.min(
-        currentSlide - Math.floor(dotsToShow / 2),
-        images.length - dotsToShow
-      )
-    );
-    const endDot = startDot + dotsToShow;
+  // Calculate the range of dots to display
+  const startDot = Math.max(
+    0,
+    Math.min(
+      currentSlide - Math.floor(dotsToShow / 2),
+      images.length - dotsToShow
+    )
+  );
+  const endDot = startDot + dotsToShow;
   console.log(images);
   console.log(id);
   console.log(hotelDetails);
-  
+
   useOutsideClick(imagesRef, () => {
     setShowImages(false);
   });
@@ -111,7 +110,7 @@ const HotelDetails = () => {
     return (
       <div
         id="overview"
-        className="bg-gray-100 flex flex-col justify-between items-center pb-12"
+        className="bg-gray-100 flex flex-col justify-between items-center pb-12 overflow-hidden max-w-full"
       >
         <div
           className="2sm:flex space-x-1 cursor-pointer w-full h-[28vw] hidden "
@@ -151,15 +150,18 @@ const HotelDetails = () => {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  className="h-8 w-8"
+                  className="w-6 h-6 lg:h-8 lg:w-8"
                 >
                   <path
                     d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"
                     fill="white"
                   />
                 </svg>
-                <span className="font-semibold text-md">
+                <span className="font-semibold hidden md:block text-sm lg:text-lg">
                   Click to see all images
+                </span>
+                <span className="font-semibold md:hidden  text-sm">
+                  View all images
                 </span>
               </div>
             </div>
@@ -288,7 +290,7 @@ const HotelDetails = () => {
 
         <div className="pl-2 w-full 1lg:w-fit ">
           <div className=" pt-4 space-y-2 mr-6 w-full">
-            <div className="text-4xl font-bold flex flex-row">
+            <div className="text-[27px] 2sm:text-4xl font-bold flex flex-col 2sm:flex-row">
               <div>{hotelDetails.data.general.name}</div>
               <div className="mt-3 ml-1 flex">
                 {Array(hotelDetails.data.general.stars)
@@ -334,7 +336,7 @@ const HotelDetails = () => {
                 </div>
               </div>
               <div className="space-x-6 flex ">
-                <div className="text-sm text-gray-600 flex flex-col pr-5">
+                <div className="text-sm text-gray-600 flex flex-col 2sm:pr-5">
                   <div className="text-md text-black font-semibold">
                     {hotelDetails?.data.reviewRatingSummary.scoreDesc}
                   </div>
@@ -369,10 +371,10 @@ const HotelDetails = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-between items-center border-b pt-6 pb-2 w-full mr-6">
+          <div className="flex justify-between items-center border-b pt-6 pb-2 w-full mr-6 text-sm 2sm:text-[17px]">
             {/* Navigation Links */}
-            <div className="flex space-x-6 font-semibold">
-              <a href="#overview" className="text-black">
+            <div className="flex 1sm:space-x-6 font-semibold">
+              <a href="#overview" className="text-black hidden sm:block">
                 Overview
               </a>
               <a href="#policies" className="text-black hidden sm:block">
@@ -381,7 +383,7 @@ const HotelDetails = () => {
               <a href="#amenities" className="text-black hidden sm:block">
                 Amenities
               </a>
-              <a href="#reviews" className="text-black">
+              <a href="#reviews" className="text-black mr-4 1sm:mr-0">
                 Reviews
               </a>
               <a href="#recommendations" className="text-black">
@@ -390,8 +392,8 @@ const HotelDetails = () => {
             </div>
 
             {/* Price and Button */}
-            <div className="flex items-center space-x-4">
-              <span className="text-black text-2xl mb-2 font-bold">
+            <div className="flex items-center space-x-1 2sm:space-x-4 mr-1">
+              <span className="text-black text-xl 2sm:text-2xl mb-2 font-bold">
                 {price}
               </span>
               <button className="bg-gray-900 font-bold text-white px-4 py-2 rounded">
