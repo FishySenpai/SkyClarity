@@ -12,7 +12,7 @@ const Flights = () => {
   const [cheapestMinDuration, setCheapestMinDuration] = useState(0);
   const [bestDuration, setBestDuration] = useState();
   const [bestPrice, setBestPrice] = useState();
-  const [flights, setFlights] = useState();
+  const [flights, setFlights] = useState(flighsJson);
   const [selectedOption, setSelectedOption] = useState("round-trip");
   const [priceTag, setPriceTag] = useState("Best");
   const { fromLocation, fromId, toLocation, toId, departdate, returndate } =
@@ -59,16 +59,16 @@ const Flights = () => {
     }
   };
 
-  useEffect(() => {
-    if (
-      isValidParam(fromId) &&
-      isValidParam(toId) &&
-      isValidParam(departdate) &&
-      isValidParam(returndate)
-    ) {
-      fetchReturnFlights();
-    }
-  }, [fromId, toId, departdate, returndate]);
+  // useEffect(() => {
+  //   if (
+  //     isValidParam(fromId) &&
+  //     isValidParam(toId) &&
+  //     isValidParam(departdate) &&
+  //     isValidParam(returndate)
+  //   ) {
+  //     fetchReturnFlights();
+  //   }
+  // }, [fromId, toId, departdate, returndate]);
 
   useEffect(() => {
     if (flights && flights.itineraries) {
@@ -210,11 +210,13 @@ const Flights = () => {
                     <div className="w-full 1sm:w-[520px] 1md:w-[640px] lg:w-[780px] 1lg:w-[590px] xl:w-[680px] pb-4 pt-2 ">
                       <div>
                         {["shortest", "cheapest"].includes(
-                          flight.legs[0]?.tags?.[0]
-                        ) && (
-                          <div className="ml-6 px-2 py-1 bg-gray-200 capitalize text-gray-700 rounded-sm w-fit mb-4">
-                            {flight.legs[0].tags[0]}
+                          flight.tags?.[0]
+                        ) ? (
+                          <div className="ml-3 px-2 py-1 bg-gray-200 capitalize text-red-400 rounded-sm w-fit mb-4 text-sm absolute">
+                            {flight.tags[0]}
                           </div>
+                        ) : (
+                          ""
                         )}
                       </div>
                       {flight.legs?.map((leg, index) => (
