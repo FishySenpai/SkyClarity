@@ -17,11 +17,22 @@ const Flights = () => {
   const [priceTag, setPriceTag] = useState("Best");
   const { fromLocation, fromId, toLocation, toId, departdate, returndate } =
     useParams();
-
+  const [filters, setFilters] = useState("");
   const isValidParam = (param) => {
     return !param.startsWith(":") && param.trim() !== "";
   };
-
+  const filteredFlights = flights?.itineraries
+    .filter((flight) => {
+      if (filters === "direct") {
+        return flight.legs[0].stopCount === 0 && flight.legs[1].stopCount === 0;
+      } else if (filters === "1stop") {
+        return flight.legs[0].stopCount === 1;
+      } else if (filters === "2stops") {
+        return flight.legs[0].stopCount === 2;
+      }
+      return true; // Show all flights if no filter is applied
+    })
+    .slice(0, 20);
   const fetchReturnFlights = async () => {
     try {
       setFlights(null);
@@ -151,7 +162,11 @@ const Flights = () => {
         {flights ? (
           <div className="flex flex-row w-full sm:w-fit 1lg:w-[1050px] xl:w-[1230px]">
             <div className="hidden 1lg:block">
-              <FlightsFilter flights={flights} />
+              <FlightsFilter
+                flights={flights}
+                filters={filters}
+                setFilters={setFilters}
+              />
             </div>
             <div className="flex flex-col cursor-pointer w-full">
               <div className="flex flex-row rounded-lg px-4 space-x-2 py-2 pt-4 mb-2 text-gray-700 bg-white overflow-hidden w-full sm:w-[600px] 1sm:w-[700px] 1md:w-[800px] lg:w-[980px] 1lg:w-[743px] xl:w-[880px]">
@@ -205,13 +220,11 @@ const Flights = () => {
 
               <div className="">
                 {console.log(flights)}
-                {flights?.itineraries.slice(0, 20).map((flight, index) => (
+                {filteredFlights.map((flight, index) => (
                   <div className=" rounded text-gray-700 w-full  1sm:w-[700px] 1md:w-[800px] lg:w-[980px] 1lg:w-[743px] xl:w-[880px] mb-2 bg-white  flex flex-col divide-y-2 1sm:divide-y-0 1sm:flex-row 1sm:divide-x-2 divide-gray-300">
                     <div className="w-full 1sm:w-[520px] 1md:w-[640px] lg:w-[780px] 1lg:w-[590px] xl:w-[680px] pb-4 pt-2 ">
                       <div>
-                        {["shortest", "cheapest"].includes(
-                          flight.tags?.[0]
-                        ) ? (
+                        {["shortest", "cheapest"].includes(flight.tags?.[0]) ? (
                           <div className="ml-3 px-2 py-1 bg-gray-200 capitalize text-red-400 rounded-sm w-fit mb-4 text-sm absolute">
                             {flight.tags[0]}
                           </div>

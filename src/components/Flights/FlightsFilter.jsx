@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import TimeRangeSlider from "./TimeRangeSlider";
 
-const FlightsFilter = ({ flights }) => {
+const FlightsFilter = ({ flights,filters, setFilters }) => {
   const [minPrice, setMinPrice] = useState(Infinity);
   const [maxPrice, setMaxPrice] = useState(-Infinity);
   const [minDuration, setMinDuration] = useState(Infinity);
@@ -77,7 +77,7 @@ const FlightsFilter = ({ flights }) => {
         >
           <div className="font-semibold text-lg py-2">Stops</div>
           <div className="absolute right-2 pt-3">
-            {showStops? (
+            {showStops ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
@@ -116,28 +116,64 @@ const FlightsFilter = ({ flights }) => {
           <div className="pb-3">
             <div className={``}>
               <div className="flex flex-row">
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  checked={filters === "direct"}
+                  onChange={(event) =>
+                    setFilters(event.target.checked ? "direct" : "")
+                  }
+                />
                 <div className="pl-2">Direct</div>
               </div>
-              <div className="pl-5">None</div>
+              <div className="pl-5">
+                {flights.filterStats.stopPrices.direct.formattedPrice
+                  ? `from US ${flights.filterStats.stopPrices.direct.formattedPrice}`
+                  : "None"}
+              </div>
             </div>
             <div>
               <div className="flex flex-row">
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  checked={filters === "1stop"}
+                  onChange={(event) =>
+                    setFilters(event.target.checked ? "1stop" : "")
+                  }
+                />
                 <div className="pl-2">1 Stop</div>
               </div>
               <div className="pl-5">
-                from US {flights.filterStats.stopPrices.one.formattedPrice}
+                {flights.filterStats.stopPrices.one.formattedPrice
+                  ? `from US ${flights.filterStats.stopPrices.one.formattedPrice}`
+                  : "None"}
               </div>
             </div>
-            <div>
+            <div
+              className={`${
+                flights.filterStats.stopPrices.twoOrMore.formattedPrice
+                  ? ""
+                  : "text-gray-500"
+              }`}
+            >
               <div className="flex flex-row">
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  checked={filters === "2stops"}
+                  onChange={(event) =>
+                    setFilters(event.target.checked ? "2stops" : "")
+                  }
+                  className={`${
+                    flights.filterStats.stopPrices.twoOrMore.formattedPrice
+                      ? ""
+                      : "cursor-not-allowed"
+                  }`}
+                />
                 <div className="pl-2">2+ Stops</div>
               </div>
               <div className="pl-5">
-                from US{" "}
-                {flights.filterStats.stopPrices.twoOrMore.formattedPrice}
+                {flights.filterStats.stopPrices.twoOrMore.formattedPrice
+                  ? `from US ${flights.filterStats.stopPrices.twoOrMore.formattedPrice}`
+                  : "None"}
               </div>
             </div>
           </div>
