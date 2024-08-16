@@ -1,7 +1,21 @@
 import React, { useEffect, useState } from "react";
 import TimeRangeSlider from "./TimeRangeSlider";
 
-const FlightsFilter = ({ flights,filters, setFilters }) => {
+const FlightsFilter = ({
+  flights,
+  filters,
+  setFilters,
+  max,
+  setMax,
+  maxCurrentArrival,
+  setMaxCurrentArrival,
+  maxCurrentDeparture,
+  setMaxCurrentDeparture,
+  maxCurrentDuration,
+  setMaxCurrentDuration,
+  airline,
+  setAirline,
+}) => {
   const [minPrice, setMinPrice] = useState(Infinity);
   const [maxPrice, setMaxPrice] = useState(-Infinity);
   const [minDuration, setMinDuration] = useState(Infinity);
@@ -114,7 +128,13 @@ const FlightsFilter = ({ flights,filters, setFilters }) => {
 
         {showStops && (
           <div className="pb-3">
-            <div className={``}>
+            <div
+              className={`${
+                flights.filterStats.stopPrices.direct.formattedPrice
+                  ? ""
+                  : "text-gray-500"
+              }`}
+            >
               <div className="flex flex-row">
                 <input
                   type="checkbox"
@@ -122,7 +142,13 @@ const FlightsFilter = ({ flights,filters, setFilters }) => {
                   onChange={(event) =>
                     setFilters(event.target.checked ? "direct" : "")
                   }
+                  className={`${
+                    flights.filterStats.stopPrices.direct.formattedPrice
+                      ? ""
+                      : "cursor-not-allowed"
+                  }`}
                 />
+
                 <div className="pl-2">Direct</div>
               </div>
               <div className="pl-5">
@@ -131,7 +157,13 @@ const FlightsFilter = ({ flights,filters, setFilters }) => {
                   : "None"}
               </div>
             </div>
-            <div>
+            <div
+              className={`${
+                flights.filterStats.stopPrices.one.formattedPrice
+                  ? ""
+                  : "text-gray-500"
+              }`}
+            >
               <div className="flex flex-row">
                 <input
                   type="checkbox"
@@ -139,6 +171,11 @@ const FlightsFilter = ({ flights,filters, setFilters }) => {
                   onChange={(event) =>
                     setFilters(event.target.checked ? "1stop" : "")
                   }
+                  className={`${
+                    flights.filterStats.stopPrices.one.formattedPrice
+                      ? ""
+                      : "cursor-not-allowed"
+                  }`}
                 />
                 <div className="pl-2">1 Stop</div>
               </div>
@@ -230,9 +267,10 @@ const FlightsFilter = ({ flights,filters, setFilters }) => {
                 <TimeRangeSlider
                   min={minDepartureTime}
                   max={maxDepartureTime}
-                  onChange={({ min, max }) =>
-                    console.log(`min = ${min}, max = ${max}`)
-                  }
+                  onChange={({ min, max }) => {
+                    console.log(`min = ${min}, max = ${max}`);
+                    setMaxCurrentDeparture(max);
+                  }}
                   inputType="time"
                 />
               )}
@@ -288,9 +326,10 @@ const FlightsFilter = ({ flights,filters, setFilters }) => {
               <TimeRangeSlider
                 min={minArrivalTime}
                 max={maxArrivalTime}
-                onChange={({ min, max }) =>
-                  console.log(`min = ${min}, max = ${max}`)
-                }
+                onChange={({ min, max }) => {
+                  console.log(`min = ${min}, max = ${max}`);
+                  setMaxCurrentArrival(max);
+                }}
                 inputType="time"
               />
             )}
@@ -346,9 +385,10 @@ const FlightsFilter = ({ flights,filters, setFilters }) => {
               <TimeRangeSlider
                 min={minPrice}
                 max={maxPrice}
-                onChange={({ min, max }) =>
-                  console.log(`min = ${min}, max = ${max}`)
-                }
+                onChange={({ min, max }) => {
+                  console.log(`min = ${min}, max = ${max}`);
+                  setMax(max);
+                }}
                 inputType="price"
               />
             )}
@@ -404,9 +444,12 @@ const FlightsFilter = ({ flights,filters, setFilters }) => {
               <TimeRangeSlider
                 min={minDuration}
                 max={maxDuration}
-                onChange={({ min, max }) =>
-                  console.log(`min = ${min}, max = ${max}`)
-                }
+                onChange={({ min, max }) => {
+                  console.log(
+                    `min = ${min}, max = ${max}, duration= ${maxCurrentDuration}`
+                  );
+                  setMaxCurrentDuration(max * 60);
+                }}
                 inputType="time"
               />
             )}
@@ -462,11 +505,18 @@ const FlightsFilter = ({ flights,filters, setFilters }) => {
               .slice(0, 10)
               .map((carrier, index) => (
                 <div>
-                  <div className="flex flex-row">
-                    <input type="checkbox" defaultChecked />
+                  <div className="flex flex-row mb-3">
+                    <input
+                      type="checkbox"
+                      checked={airline === carrier.name}
+                      onChange={(event) => {
+                        airline === carrier.name
+                          ? setAirline("")
+                          : setAirline(carrier.name);
+                      }}
+                    />
                     <div className="pl-2">{carrier.name}</div>
                   </div>
-                  <div className="pl-5">None</div>{" "}
                 </div>
               ))}
           </div>

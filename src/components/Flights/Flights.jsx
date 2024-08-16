@@ -15,24 +15,148 @@ const Flights = () => {
   const [flights, setFlights] = useState(flighsJson);
   const [selectedOption, setSelectedOption] = useState("round-trip");
   const [priceTag, setPriceTag] = useState("Best");
+  const [max, setMax] = useState(-Infinity);
+  const [maxCurrentDeparture, setMaxCurrentDeparture] = useState(-Infinity);
+  const [maxCurrentArrival, setMaxCurrentArrival] = useState(-Infinity);
+  const [maxCurrentDuration, setMaxCurrentDuration] = useState(-Infinity);
+  const [airline, setAirline] = useState("");
+  const [filteredFlights, setFilteredFlights] = useState([]);
   const { fromLocation, fromId, toLocation, toId, departdate, returndate } =
     useParams();
   const [filters, setFilters] = useState("");
   const isValidParam = (param) => {
     return !param.startsWith(":") && param.trim() !== "";
   };
-  const filteredFlights = flights?.itineraries
-    .filter((flight) => {
-      if (filters === "direct") {
-        return flight.legs[0].stopCount === 0 && flight.legs[1].stopCount === 0;
-      } else if (filters === "1stop") {
-        return flight.legs[0].stopCount === 1;
-      } else if (filters === "2stops") {
-        return flight.legs[0].stopCount === 2;
-      }
-      return true; // Show all flights if no filter is applied
-    })
-    .slice(0, 20);
+  useEffect(() => {
+    const newFilteredFlights = flights?.itineraries
+      .filter((flight) => {
+        // Filter by stop count
+        if (filters === "direct") {
+          return (
+            flight.legs[0].stopCount === 0 && flight.legs[1].stopCount === 0
+          );
+        } else if (filters === "1stop") {
+          return flight.legs[0].stopCount === 1;
+        } else if (filters === "2stops") {
+          return flight.legs[0].stopCount === 2;
+        }
+        return true; // Show all flights if no stop count filter is applied
+      })
+      .filter((flight) => {
+        // Filter by price
+        if (max !== -Infinity) {
+          console.log("Price Filter:", max, flight.price.raw);
+          return flight.price.raw <= max;
+        }
+        return true; // Show all flights if no price filter is applied
+      })
+      .filter((flight) => {
+        // Filter by price
+        if (airline) {
+          console.log(
+            "Airline:",
+            airline,
+            flight.legs[0].carriers.marketing[0].name
+          );
+          return flight.legs[0].carriers.marketing[0].name === airline;
+        }
+        return true; // Show all flights if no price filter is applied
+      })
+      .filter((flight) => {
+        console.log("Test");
+        // Filter by duration
+        if (maxCurrentDuration !== -Infinity) {
+          if (returndate) {
+            const duration1 = flight.legs[0]?.durationInMinutes;
+            const duration2 = flight.legs[1]?.durationInMinutes;
+            console.log(
+              "Duration Filter:",
+              maxCurrentDuration,
+              duration1,
+              duration2
+            );
+            return (
+              duration1 <= maxCurrentDuration && duration2 <= maxCurrentDuration
+            );
+          } else {
+            const duration1 = flight.legs[0]?.durationInMinutes;
+            console.log("Duration Filter:", maxCurrentDuration, duration1);
+            return duration1 <= maxCurrentDuration;
+          }
+        }
+        return true; // Show all flights if no duration filter is applied
+      })
+      .filter((flight) => {
+        console.log("Test");
+        // Filter by departure
+        if (maxCurrentDeparture !== -Infinity) {
+          if (returndate) {
+            const d1 = new Date(flight.legs[0]?.arrival);
+            const d2 = new Date(flight.legs[1]?.arrival);
+            const departure1 = d1.getHours();
+
+            const departure2 = d2.getHours();
+
+            console.log(
+              "Departure Filter:",
+              maxCurrentDeparture,
+              departure1,
+              departure2
+            );
+
+            return (
+              departure1 <= maxCurrentDeparture &&
+              departure2 <= maxCurrentDeparture
+            );
+          } else {
+            const departure1 =
+              flight.legs[0]?.arrival.getHours() +
+              flight.legs[0]?.arrival.getMinutes() / 60;
+
+            console.log("Departure Filter:", maxCurrentDeparture, departure1);
+            return departure1 <= maxCurrentDeparture;
+          }
+        }
+        return true; // Show all flights if no departure filter is applied
+      })
+      .filter((flight) => {
+        console.log("Test");
+        // Filter by departure
+        if (maxCurrentArrival !== -Infinity) {
+          if (returndate) {
+            const a1 = new Date(flight.legs[0]?.arrival);
+            const a2 = new Date(flight.legs[1]?.arrival);
+            const arrival1 = a1.getHours();
+
+            const arrival2 = a2.getHours();
+
+            console.log(
+              "Departure Filter:",
+              maxCurrentArrival,
+              arrival1,
+              arrival2
+            );
+
+            return (
+              arrival1 <= maxCurrentArrival &&
+              arrival2 <= maxCurrentArrival
+            );
+          } else {
+            const arrival1 =
+              flight.legs[0]?.arrival.getHours() +
+              flight.legs[0]?.arrival.getMinutes() / 60;
+
+            console.log("Departure Filter:", maxCurrentArrival, arrival1);
+            return arrival1 <= maxCurrentArrival;
+          }
+        }
+        return true; // Show all flights if no departure filter is applied
+      })
+      .slice(0, 20);
+
+    setFilteredFlights(newFilteredFlights);
+  }, [filters, max, flights, maxCurrentDeparture, maxCurrentArrival, maxCurrentDuration, airline]);
+
   const fetchReturnFlights = async () => {
     try {
       setFlights(null);
@@ -166,6 +290,16 @@ const Flights = () => {
                 flights={flights}
                 filters={filters}
                 setFilters={setFilters}
+                max={max}
+                setMax={setMax}
+                maxCurrentArrival={maxCurrentArrival}
+                setMaxCurrentArrival={setMaxCurrentArrival}
+                maxCurrentDeparture={maxCurrentDeparture}
+                setMaxCurrentDeparture={setMaxCurrentDeparture}
+                maxCurrentDuration={maxCurrentDuration}
+                setMaxCurrentDuration={setMaxCurrentDuration}
+                airline={airline}
+                setAirline={setAirline}
               />
             </div>
             <div className="flex flex-col cursor-pointer w-full">
@@ -265,13 +399,7 @@ const Flights = () => {
                             <div className="flex flex-row ">
                               <div className="flex flex-col">
                                 <div className="flex flex-row  justify-center ">
-                                  {formatDuration(
-                                    flight.legs?.reduce(
-                                      (totalDuration, leg) =>
-                                        totalDuration + leg.durationInMinutes,
-                                      0
-                                    )
-                                  )}
+                                  {formatDuration(leg.durationInMinutes)}
                                 </div>
                                 <div className="flex flex-row">
                                   <div className="w-2 h-2 mt-[9px]">
