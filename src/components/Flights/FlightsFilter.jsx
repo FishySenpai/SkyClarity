@@ -31,43 +31,53 @@ const FlightsFilter = ({
   const [minArrivalTime, setMinArrivalTime] = useState(Infinity);
   const [maxArrivalTime, setMaxArrivalTime] = useState(-Infinity);
 
-  useEffect(() => {
-    if (flights && flights.itineraries) {
-      setMinDuration((flights.filterStats.duration.min / 60).toFixed(0));
-      setMaxDuration((flights.filterStats.duration.max / 60).toFixed(0));
+useEffect(() => {
+  if (flights && flights.itineraries) {
+    setMinDuration((flights.filterStats.duration.min / 60).toFixed(0));
+    setMaxDuration((flights.filterStats.duration.max / 60).toFixed(0));
 
-      flights.itineraries.forEach((flight) => {
-        const price = parseFloat(flight.price.raw);
-        const departureDate = new Date(flight.legs[0].departure);
-        const arrivalDate = new Date(flight.legs[0].arrival);
+    flights.itineraries.forEach((flight) => {
+    const price = Math.ceil(parseFloat(flight.price.raw));
 
-        const departureTime =
-          departureDate.getHours() + departureDate.getMinutes() / 60;
-        const arrivalTime =
-          arrivalDate.getHours() + arrivalDate.getMinutes() / 60;
+console.log(flight.legs.map((leg) => new Date(leg.arrival)));
 
-        // Update minimum and maximum price
-        setMinPrice((prevMinPrice) => Math.min(prevMinPrice, price).toFixed(0));
-        setMaxPrice((prevMaxPrice) => Math.max(prevMaxPrice, price).toFixed(0));
+      // Find the earliest departure and latest arrival across all legs
+      const departureDate = new Date(
+        Math.max(...flight.legs.map((leg) => new Date(leg.departure)))
+      );
+      const arrivalDate = new Date(
+        Math.max(...flight.legs.map((leg) => new Date(leg.arrival).getTime()))
+      );
 
-        // Update minimum and maximum departure time
-        setMinDepartureTime((prevMinDepartureTime) =>
-          Math.min(prevMinDepartureTime, departureTime).toFixed(0)
-        );
-        setMaxDepartureTime((prevMaxDepartureTime) =>
-          Math.max(prevMaxDepartureTime, departureTime).toFixed(0)
-        );
+      const departureTime =
+        departureDate.getHours() + departureDate.getMinutes() / 60;
+      const arrivalTime =
+        arrivalDate.getHours() + arrivalDate.getMinutes() / 60;
 
-        // Update minimum and maximum arrival time
-        setMinArrivalTime((prevMinArrivalTime) =>
-          Math.min(prevMinArrivalTime, arrivalTime).toFixed(0)
-        );
-        setMaxArrivalTime((prevMaxArrivalTime) =>
-          Math.max(prevMaxArrivalTime, arrivalTime).toFixed(0)
-        );
-      });
-    }
-  }, [flights]);
+      // Update minimum and maximum price
+      setMinPrice((prevMinPrice) => Math.min(prevMinPrice, price).toFixed(0));
+      setMaxPrice((prevMaxPrice) => Math.max(prevMaxPrice, price).toFixed(0));
+
+      // Update minimum and maximum departure time
+      setMinDepartureTime((prevMinDepartureTime) =>
+        Math.min(prevMinDepartureTime, departureTime).toFixed(0)
+      );
+      setMaxDepartureTime((prevMaxDepartureTime) =>
+        Math.max(prevMaxDepartureTime, departureTime).toFixed(0)
+      );
+
+      // Update minimum and maximum arrival time
+      setMinArrivalTime((prevMinArrivalTime) =>
+        Math.min(prevMinArrivalTime, arrivalTime).toFixed(0)
+      );
+      setMaxArrivalTime((prevMaxArrivalTime) =>
+        Math.max(prevMaxArrivalTime, arrivalTime).toFixed(0)
+      );
+      console.log(arrivalTime);
+    });
+  }
+}, [flights]);
+
   // Add a useEffect to log the updated minPrice
   useEffect(() => {
     console.log("Updated minPrice:", minPrice);
@@ -448,7 +458,7 @@ const FlightsFilter = ({
                   console.log(
                     `min = ${min}, max = ${max}, duration= ${maxCurrentDuration}`
                   );
-                  setMaxCurrentDuration(max * 60);
+                  setMaxCurrentDuration(flights.filterStats.duration.max);
                 }}
                 inputType="time"
               />

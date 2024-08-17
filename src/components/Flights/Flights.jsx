@@ -28,6 +28,7 @@ const Flights = () => {
     return !param.startsWith(":") && param.trim() !== "";
   };
   useEffect(() => {
+    console.log("test")
     const newFilteredFlights = flights?.itineraries
       .filter((flight) => {
         // Filter by stop count
@@ -75,9 +76,12 @@ const Flights = () => {
               duration1,
               duration2
             );
-            return (
-              duration1 <= maxCurrentDuration && duration2 <= maxCurrentDuration
-            );
+            if(duration1 !== duration2){
+              return (
+                duration1 <= maxCurrentDuration &&
+                duration2 <= maxCurrentDuration
+              );
+            }
           } else {
             const duration1 = flight.legs[0]?.durationInMinutes;
             console.log("Duration Filter:", maxCurrentDuration, duration1);
@@ -94,9 +98,7 @@ const Flights = () => {
             const d1 = new Date(flight.legs[0]?.arrival);
             const d2 = new Date(flight.legs[1]?.arrival);
             const departure1 = d1.getHours();
-
             const departure2 = d2.getHours();
-
             console.log(
               "Departure Filter:",
               maxCurrentDeparture,
@@ -131,7 +133,7 @@ const Flights = () => {
             const arrival2 = a2.getHours();
 
             console.log(
-              "Departure Filter:",
+              "Arrival Filter:",
               maxCurrentArrival,
               arrival1,
               arrival2
@@ -146,7 +148,7 @@ const Flights = () => {
               flight.legs[0]?.arrival.getHours() +
               flight.legs[0]?.arrival.getMinutes() / 60;
 
-            console.log("Departure Filter:", maxCurrentArrival, arrival1);
+            console.log("Arrival Filter:", maxCurrentArrival, arrival1);
             return arrival1 <= maxCurrentArrival;
           }
         }
@@ -305,11 +307,12 @@ const Flights = () => {
             <div className="flex flex-col cursor-pointer w-full">
               <div className="flex flex-row rounded-lg px-4 space-x-2 py-2 pt-4 mb-2 text-gray-700 bg-white overflow-hidden w-full sm:w-[600px] 1sm:w-[700px] 1md:w-[800px] lg:w-[980px] 1lg:w-[743px] xl:w-[880px]">
                 <div
-                  className={`border-b-4 border-white hover:border-gray-600 ${
-                    priceTag === "Best" ? "border-gray-700" : ""
+                  className={`hover:border-b-4 hover:border-gray-600   ${
+                    priceTag === "Best" ? "border-b-4 border-gray-700" : ""
                   } flex-1`}
                   onClick={() => {
                     setPriceTag("Best");
+                    console.log(priceTag);
                   }}
                 >
                   <div className="text-lg font-semibold">Best</div>
@@ -319,8 +322,8 @@ const Flights = () => {
                   </div>
                 </div>
                 <div
-                  className={`border-b-4 border-white hover:border-gray-600 ${
-                    priceTag === "Cheapest" ? "border-gray-700" : ""
+                  className={`hover:border-b-4 hover:border-gray-600   ${
+                    priceTag === "Cheapest" ? "border-b-4 border-gray-700" : ""
                   } flex-1`}
                   onClick={() => {
                     setPriceTag("Cheapest");
@@ -335,8 +338,8 @@ const Flights = () => {
                   </div>
                 </div>
                 <div
-                  className={`border-b-4 border-white hover:border-gray-600 ${
-                    priceTag === "Fastest" ? "border-gray-700" : ""
+                  className={`hover:border-b-4 hover:border-gray-600   ${
+                    priceTag === "Fastest" ? "border-b-4 border-gray-700" : ""
                   } flex-1`}
                   onClick={() => {
                     setPriceTag("Fastest");
@@ -354,7 +357,7 @@ const Flights = () => {
 
               <div className="">
                 {console.log(flights)}
-                {filteredFlights.map((flight, index) => (
+                {filteredFlights?.map((flight, index) => (
                   <div className=" rounded text-gray-700 w-full  1sm:w-[700px] 1md:w-[800px] lg:w-[980px] 1lg:w-[743px] xl:w-[880px] mb-2 bg-white  flex flex-col divide-y-2 1sm:divide-y-0 1sm:flex-row 1sm:divide-x-2 divide-gray-300">
                     <div className="w-full 1sm:w-[520px] 1md:w-[640px] lg:w-[780px] 1lg:w-[590px] xl:w-[680px] pb-4 pt-2 ">
                       <div>
