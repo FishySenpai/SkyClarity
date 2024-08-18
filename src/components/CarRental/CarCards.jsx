@@ -2,8 +2,28 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const CarCards = ({card, key}) => {
+    const getRandomDateInRange = (startDate, rangeInDays) => {
+      const randomDays = Math.floor(Math.random() * rangeInDays);
+      const randomDate = new Date(startDate);
+      randomDate.setDate(randomDate.getDate() + randomDays);
+      return randomDate.toISOString().split("T")[0];
+    };
+    const convertDate = (dateString) => {
+      const date = new Date(dateString);
+
+      const options = { weekday: "short", month: "short", day: "numeric" };
+      const formattedDate = date.toLocaleDateString("en-US", options);
+
+      return formattedDate;
+    };
+    const today = new Date();
+    const pickDate = getRandomDateInRange(today, 15);
+    const dropDate = getRandomDateInRange(new Date(pickDate), 15);
+
+    console.log("Check-in Date:", pickDate);
+    console.log("Check-out Date:", dropDate);
   return (
-    <Link to={``}>
+    <Link to={`/carhire/search/${card.location}/${card.id}/${pickDate}/${dropDate}`}>
       <div className="mx-auto  bg-white shadow-lg rounded-lg overflow-hidden w-[90%] sm:w-[300px] 1sm:w-[332px] 1md:w-[392px] lg:w-[450px] xl:w-[392px]">
         <div
           key={key}

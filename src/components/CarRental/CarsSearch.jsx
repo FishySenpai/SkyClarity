@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import Calendar from "react-calendar";
 import useOutsideClick from "../useOutsideClick";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import loading from "../Assets/loading.png";
 const CarsSearch = () => {
+  const {pickUp, pickUpId, pickDate, dropDate} = useParams()
   const [pickUpLocation, setPickUpLocation] = useState();
   const [pickUpLocationId, setPickUpLocationId] = useState();
   const [dropOffLocation, setDropOffLocation] = useState();
@@ -88,12 +89,29 @@ const CarsSearch = () => {
   useOutsideClick(dropOffPopupRef, () => {
     setdropOffToggle(false);
   });
-  //   useOutsideClick(pickUpTimePopupRef, () => {
-  //     togglePickUpTime(false);
-  //   });
-  //   useOutsideClick(dropOffTimePopupRef, () => {
-  //     toggleDropOffTime(false);
-  //   });
+    useOutsideClick(pickUpTimePopupRef, () => {
+      setTogglePickUpTime(false);
+    });
+    useOutsideClick(dropOffTimePopupRef, () => {
+      setToggleDropOffTime(false);
+    });
+
+    useEffect(() => {
+      if (pickUp) {
+        setPickUpLocation(pickUp);
+        console.log("test");
+      }
+      if (pickUpId) {
+        setPickUpLocationId(pickUpId);
+      }
+      if (pickDate) {
+        setpickUpDate(pickDate);
+      }
+      if (dropDate) {
+        setdropOffDate(dropDate);
+      }
+    }, [pickUp, pickUpId, pickDate, dropDate]);
+
   useEffect(() => {
     setpickUpToggle(false);
   }, [pickUpDate]);
@@ -172,7 +190,8 @@ const CarsSearch = () => {
               onClick={() => {
                 setpickUpToggle(!pickUpToggle);
                 setdropOffToggle(false);
-                setCabinDrop(false);
+                setToggleDropOffTime(false);
+                setTogglePickUpTime(false);
               }}
             >
               <svg
@@ -223,7 +242,7 @@ const CarsSearch = () => {
                 setTogglePickUpTime(!togglePickUpTime);
                 setpickUpToggle(false);
                 setdropOffToggle(false);
-                setCabinDrop(false);
+                setToggleDropOffTime(false);
               }}
             >
               <input
@@ -242,7 +261,7 @@ const CarsSearch = () => {
                 |
               </label>
               {togglePickUpTime && (
-                <div className="absolute top-[46px] -left-[22px] z-10 bg-white border border-gray-400 max-h-60 w-[75px] rounded-md overflow-hidden">
+                <div className="absolute top-[46px] -left-[22px] z-10 bg-white border border-gray-400 max-h-60 w-[75px] rounded-md overflow-auto">
                   {times.map((time) => (
                     <div
                       key={time}
@@ -267,7 +286,8 @@ const CarsSearch = () => {
               onClick={() => {
                 setdropOffToggle(!dropOffToggle);
                 setpickUpToggle(false);
-                setCabinDrop(false);
+                setToggleDropOffTime(false);
+                setTogglePickUpTime(false)
               }}
             >
               <svg
@@ -306,7 +326,7 @@ const CarsSearch = () => {
                   showWeekNumbers
                   value={value}
                   minDetail="month"
-                  minDate={new Date()}
+                  minDate={pickUpDate ? new Date(pickUpDate) : new Date()}
                 />
               </div>
             ) : null}
@@ -318,7 +338,7 @@ const CarsSearch = () => {
                 setToggleDropOffTime(!toggleDropOffTime);
                 setpickUpToggle(false);
                 setdropOffToggle(false);
-                setCabinDrop(false);
+                setTogglePickUpTime(false);
               }}
             >
               <input
@@ -337,7 +357,7 @@ const CarsSearch = () => {
                 |
               </label>
               {toggleDropOffTime && (
-                <div className="absolute top-[46px] -left-[22px] z-10 bg-white border border-gray-400 max-h-60 w-[75px] rounded-md overflow-hidden">
+                <div className="absolute top-[46px] -left-[22px] z-10 bg-white border border-gray-400 max-h-60 w-[75px] rounded-md overflow-auto">
                   {times.map((time) => (
                     <div
                       key={time}

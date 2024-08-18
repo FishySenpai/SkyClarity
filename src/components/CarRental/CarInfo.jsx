@@ -12,7 +12,7 @@ const CarInfo = () => {
   const [showDeal, setShowDeal] = useState();
   const { pickUp, pickUpId, pickDate, dropDate } = useParams();
 
-  const [carsInfo, setCarsInfo] = useState();
+  const [carsInfo, setCarsInfo] = useState(carInfoJson);
   const isValidParam = (param) => {
     return !param.startsWith(":") && param.trim() !== "";
   };
@@ -49,11 +49,11 @@ const CarInfo = () => {
     }
   };
 
-  useEffect(() => {
-    if (isValidParam(pickUpId) && isValidParam(pickDate)) {
-      fetchCars();
-    }
-  }, [pickUpId, pickDate]);
+  // useEffect(() => {
+  //   if (isValidParam(pickUpId) && isValidParam(pickDate)) {
+  //     fetchCars();
+  //   }
+  // }, [pickUpId, pickDate]);
   useEffect(() => {
     if (carsInfo?.data?.groups) {
       // Convert the object values to an array and set the state
