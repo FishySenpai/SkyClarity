@@ -10,6 +10,37 @@ const CarInfo = () => {
   const [groupsArray, setGroupsArray] = useState();
   const [providersArray, setProvidersArray] = useState();
   const [showDeal, setShowDeal] = useState();
+    const [filteredCars, setFilteredCars] = useState([]);
+  const [seatFilter, setSeatFilter] = useState([]);
+  const [pickupFilter, setPickupFilter] = useState([]);
+  const [policiesFilter, setPoliciesFilter] = useState([]);
+  const [transmissionFilter, setTransmissionFilter] = useState([]);
+  const [lowEmissionFilter, setLowEmissionFilter] = useState([]);
+  const [featuresFilter, setFeaturesFilter] = useState([]);
+// useEffect(() => {
+//   // Apply filters based on the current state
+//   const filteredCars = carsInfo.data.cars.filter((car) => {
+//     return (
+//       (seatFilter.length === 0 || seatFilter.includes(car.seats)) &&
+//       (pickupFilter.length === 0 || pickupFilter.includes(car.pickup)) &&
+//       (policiesFilter.length === 0 || policiesFilter.includes(car.policies)) &&
+//       (transmissionFilter.length === 0 ||
+//         transmissionFilter.includes(car.transmission)) &&
+//       (lowEmissionFilter.length === 0 ||
+//         lowEmissionFilter.includes(car.lowEmission)) &&
+//       (featuresFilter.length === 0 || featuresFilter.includes(car.features))
+//     );
+//   });
+//   setFilteredCars(filteredCars);
+// }, [
+//   seatFilter,
+//   pickupFilter,
+//   policiesFilter,
+//   transmissionFilter,
+//   lowEmissionFilter,
+//   featuresFilter,
+// ]);
+
   const { pickUp, pickUpId, pickDate, dropDate } = useParams();
 
   const [carsInfo, setCarsInfo] = useState(carInfoJson);
@@ -80,47 +111,27 @@ const CarInfo = () => {
       <div className="absolute top-36 lg:top-32 w-full flex flex-col items-center">
         <div className="w-fit flex flex-col items-center">
           <div className="h-[160px] w-full 1sm:w-fit relative z-50">
-            <CarsSearch/>
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-row absolute top-[300px] justify-center mx-auto bg-gray-100 pt-12 rounded-t-3xl w-full">
-        <div className="hidden xl:block">
-          <div className="mx-12 px-6 w-[300px] bg-white rounded-lg default-font text-gray-700 text-sm divide-y-2 divide-slate-300">
-            {Array(5)
-              .fill(0)
-              .map((_, starIndex) => (
-                <div className="pt-4 pb-2">
-                  <div className="flex flex-row relative pt-2 w-3/4 bg-gray-200 animate-pulse h-5 mb-3"></div>
-                  <div className="mb-3 flex relative ">
-                    <div className=" w-[30px] mr-3 bg-gray-200 animate-pulse h-5 "></div>
-                    <div className=" w-1/2 mr-3 bg-gray-200 animate-pulse h-5"></div>
-                    <div className=" w-[45px] bg-gray-200 animate-pulse h-5 absolute right-0"></div>
-                  </div>
-                  <div className="mb-3 flex relative ">
-                    <div className=" w-[30px] mr-3 bg-gray-200 animate-pulse h-5 "></div>
-                    <div className=" w-1/3 mr-3 bg-gray-200 animate-pulse h-5"></div>
-                    <div className=" w-[45px] bg-gray-200 animate-pulse h-5 absolute right-0"></div>
-                  </div>
-                  <div className="mb-3 flex relative ">
-                    <div className=" w-[30px] mr-3 bg-gray-200 animate-pulse h-5 "></div>
-                    <div className=" w-1/2 mr-3 bg-gray-200 animate-pulse h-5"></div>
-                    <div className=" w-[45px] bg-gray-200 animate-pulse h-5 absolute right-0"></div>
-                  </div>
-                  <div className="mb-3 flex relative ">
-                    <div className=" w-[30px] mr-3 bg-gray-200 animate-pulse h-5 "></div>
-                    <div className=" w-1/3 mr-3 bg-gray-200 animate-pulse h-5"></div>
-                    <div className=" w-[45px] bg-gray-200 animate-pulse h-5 absolute right-0"></div>
-                  </div>
-                </div>
-              ))}
+            <CarsSearch />
           </div>
         </div>
       </div>
       {carsInfo ? (
         <div className="flex flex-row absolute top-[300px] justify-center mx-auto bg-gray-100 pt-12 rounded-t-3xl w-full">
           <div className="mr-12 hidden lg:block">
-            <CarFilter />
+            <CarFilter
+              seatFilter={seatFilter}
+              setSeatFilter={setSeatFilter}
+              pickupFilter={pickupFilter}
+              setPickupFilter={setPickupFilter}
+              policiesFilter={policiesFilter}
+              setPoliciesFilter={setPoliciesFilter}
+              transmissionFilter={transmissionFilter}
+              setTransmissionFilter={setTransmissionFilter}
+              lowEmissionFilter={lowEmissionFilter}
+              setLowEmissionFilter={setLowEmissionFilter}
+              featuresFilter={featuresFilter}
+              setFeaturesFilter={setFeaturesFilter}
+            />
           </div>
           <div className="flex flex-col mt-6 pt-[100px] lg:pt-0 w-full 1sm:w-fit">
             <div>
