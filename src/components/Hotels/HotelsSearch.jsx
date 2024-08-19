@@ -111,6 +111,20 @@ const HotelsSearch = ({ home }) => {
     setCabinDrop(false);
   });
 
+    useEffect(() => {
+      if (destination) {
+        setLocation(destination);
+      }
+      if (destinationId) {
+        setLocationId(destinationId);
+      }
+      if (checkIn) {
+        setcheckInDate(checkIn);
+      }
+      if (checkOut) {
+        setcheckOutDate(checkOut);
+      }
+    }, [destination, destinationId, checkIn, checkOut]);
   useEffect(() => {
     setcheckInToggle(false);
   }, [checkInDate]);

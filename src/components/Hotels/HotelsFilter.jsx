@@ -1,11 +1,47 @@
 import React, { useEffect, useState } from "react";
 import TimeRangeSlider from "../Flights/TimeRangeSlider";
 
-const HotelsFilter = ({ hotelsData }) => {
+const HotelsFilter = ({
+  hotelsData,
+  popularFilters,
+  setPopularFilters,
+  priceRange,
+  setPriceRange,
+  starRating,
+  setStarRating,
+  guestRating,
+  setGuestRating,
+}) => {
   const [seeMoreProperties, setSeeMoreProperties] = useState(false);
   const [seeMoreChains, setSeeMoreChains] = useState(false);
   const [seeMoreDistricts, setSeeMoreDistricts] = useState(false);
+ const handlePickupChange = (event) => {
+   const { value, checked } = event.target;
+   setPickupFilter((prev) =>
+     checked ? [...prev, value] : prev.filter((item) => item !== value)
+   );
+ };
 
+ const handlePoliciesChange = (event) => {
+   const { value, checked } = event.target;
+   setPoliciesFilter((prev) =>
+     checked ? [...prev, value] : prev.filter((item) => item !== value)
+   );
+ };
+
+ const handleTransmissionChange = (event) => {
+   const { value, checked } = event.target;
+   setTransmissionFilter((prev) =>
+     checked ? [...prev, value] : prev.filter((item) => item !== value)
+   );
+ };
+
+ const handleClassChange = (event) => {
+   const { value, checked } = event.target;
+   setClassFilter((prev) =>
+     checked ? [...prev, value] : prev.filter((item) => item !== value)
+   );
+ };
   if (hotelsData) {
     return (
       <div className="mx-12 px-6 w-[300px] bg-white rounded-lg default-font text-gray-700 text-sm divide-y-2 divide-slate-300">
@@ -55,8 +91,8 @@ const HotelsFilter = ({ hotelsData }) => {
                   htmlFor={bucket.id}
                   className="flex justify-between w-full text-sm"
                 >
-                  {`Rs ${bucket.minPrice.toLocaleString()} - Rs ${
-                    bucket.maxPrice ? bucket.maxPrice.toLocaleString() : "+"
+                  {`$ ${(bucket.minPrice / 278).toFixed(0)} - $ ${
+                    bucket.maxPrice ? (bucket.maxPrice / 278).toFixed(0) : "+"
                   }`}
                   <span className="text-gray-500 ml-2 ">{bucket.count}</span>
                 </label>
@@ -129,7 +165,7 @@ const HotelsFilter = ({ hotelsData }) => {
               ))}
           </div>
         </div>
-        <div className="pt-1">
+        {/* <div className="pt-1">
           <div className="flex flex-row">
             <div className="font-semibold text-lg py-2">Property type</div>
           </div>
@@ -249,7 +285,7 @@ const HotelsFilter = ({ hotelsData }) => {
               {seeMoreDistricts ? "See less" : "See more"}
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }

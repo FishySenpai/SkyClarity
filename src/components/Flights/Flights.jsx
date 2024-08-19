@@ -21,6 +21,7 @@ const Flights = () => {
   const [maxCurrentDuration, setMaxCurrentDuration] = useState(-Infinity);
   const [airline, setAirline] = useState("");
   const [filteredFlights, setFilteredFlights] = useState([]);
+
   const { fromLocation, fromId, toLocation, toId, departdate, returndate } =
     useParams();
   const [filters, setFilters] = useState("");
@@ -28,7 +29,7 @@ const Flights = () => {
     return !param.startsWith(":") && param.trim() !== "";
   };
   useEffect(() => {
-    console.log("test")
+    console.log("test");
     const newFilteredFlights = flights?.itineraries
       .filter((flight) => {
         // Filter by stop count
@@ -76,7 +77,7 @@ const Flights = () => {
               duration1,
               duration2
             );
-            if(duration1 !== duration2){
+            if (duration1 !== duration2) {
               return (
                 duration1 <= maxCurrentDuration &&
                 duration2 <= maxCurrentDuration
@@ -140,8 +141,7 @@ const Flights = () => {
             );
 
             return (
-              arrival1 <= maxCurrentArrival &&
-              arrival2 <= maxCurrentArrival
+              arrival1 <= maxCurrentArrival && arrival2 <= maxCurrentArrival
             );
           } else {
             const arrival1 =
@@ -157,7 +157,15 @@ const Flights = () => {
       .slice(0, 20);
 
     setFilteredFlights(newFilteredFlights);
-  }, [filters, max, flights, maxCurrentDeparture, maxCurrentArrival, maxCurrentDuration, airline]);
+  }, [
+    filters,
+    max,
+    flights,
+    maxCurrentDeparture,
+    maxCurrentArrival,
+    maxCurrentDuration,
+    airline,
+  ]);
 
   const fetchReturnFlights = async () => {
     try {

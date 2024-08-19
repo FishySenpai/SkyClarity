@@ -9,6 +9,10 @@ import HotelsLoading from "./HotelsLoading";
 const Hotels = () => {
   const [hotelsData, setHotelsData] = useState(hotelsDataJson);
   const [isLoading, setIsLoading] = useState(true);
+    const [popularFilters, setPopularFilters] = useState([]);
+    const [priceRange, setPriceRange] = useState([]);
+    const [starRating, setStarRating] = useState([]);
+    const [guestRating, setGuestRating] = useState([]);
   const { destination, destinationId, checkIn, checkOut } = useParams();
   const isValidParam = (param) => {
     return !param.startsWith(":") && param.trim() !== "";
@@ -59,7 +63,17 @@ const Hotels = () => {
         {hotelsData ? (
           <>
             <div className="hidden xl:block">
-              <HotelsFilter hotelsData={hotelsData} />
+              <HotelsFilter
+                hotelsData={hotelsData}
+                popularFilters={popularFilters}
+                setPopularFilters={setPopularFilters}
+                priceRange={priceRange}
+                setPriceRange={setPriceRange}
+                starRating={starRating}
+                setStarRating={setStarRating}
+                guestRating={guestRating}
+                setGuestRating={setGuestRating}
+              />
             </div>
             <div className="flex flex-col pt-[150px] 1lg:pt-0">
               <div>
