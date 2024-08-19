@@ -8,39 +8,17 @@ import CompleteTrip from "./CompleteTrip";
 import CarsLoading from "./CarsLoading";
 const CarInfo = () => {
   const [groupsArray, setGroupsArray] = useState();
+  const [filteredGroupsArray, setFilteredGroupsArray] = useState();
   const [providersArray, setProvidersArray] = useState();
   const [showDeal, setShowDeal] = useState();
-    const [filteredCars, setFilteredCars] = useState([]);
+  const [filteredCars, setFilteredCars] = useState([]);
   const [seatFilter, setSeatFilter] = useState([]);
   const [pickupFilter, setPickupFilter] = useState([]);
   const [policiesFilter, setPoliciesFilter] = useState([]);
   const [transmissionFilter, setTransmissionFilter] = useState([]);
-  const [lowEmissionFilter, setLowEmissionFilter] = useState([]);
+  const [classFilter, setClassFilter] = useState([]);
   const [featuresFilter, setFeaturesFilter] = useState([]);
-// useEffect(() => {
-//   // Apply filters based on the current state
-//   const filteredCars = carsInfo.data.cars.filter((car) => {
-//     return (
-//       (seatFilter.length === 0 || seatFilter.includes(car.seats)) &&
-//       (pickupFilter.length === 0 || pickupFilter.includes(car.pickup)) &&
-//       (policiesFilter.length === 0 || policiesFilter.includes(car.policies)) &&
-//       (transmissionFilter.length === 0 ||
-//         transmissionFilter.includes(car.transmission)) &&
-//       (lowEmissionFilter.length === 0 ||
-//         lowEmissionFilter.includes(car.lowEmission)) &&
-//       (featuresFilter.length === 0 || featuresFilter.includes(car.features))
-//     );
-//   });
-//   setFilteredCars(filteredCars);
-// }, [
-//   seatFilter,
-//   pickupFilter,
-//   policiesFilter,
-//   transmissionFilter,
-//   lowEmissionFilter,
-//   featuresFilter,
-// ]);
-
+  const [vendorsFilter, setVendorsFilter] = useState([]);
   const { pickUp, pickUpId, pickDate, dropDate } = useParams();
 
   const [carsInfo, setCarsInfo] = useState(carInfoJson);
@@ -86,10 +64,19 @@ const CarInfo = () => {
   //   }
   // }, [pickUpId, pickDate]);
   useEffect(() => {
+    console.log(carsInfo);
+
     if (carsInfo?.data?.groups) {
-      // Convert the object values to an array and set the state
-      setGroupsArray(Object.values(carsInfo.data.groups));
+      // Convert the object values to an array, add an id field, and set the state
+      const groupsArrayWithId = Object.values(carsInfo.data.groups).map(
+        (group, index) => ({
+          id: index, // Assign id based on the index
+          ...group,
+        })
+      );
+      setGroupsArray(groupsArrayWithId);
     }
+
     if (carsInfo?.data?.providers) {
       const providersWithId = Object.entries(carsInfo.data.providers).map(
         ([prv_id, providerData]) => ({
@@ -100,7 +87,96 @@ const CarInfo = () => {
       setProvidersArray(providersWithId);
     }
   }, [carsInfo]);
-  console.log(carsInfo);
+
+  useEffect(() => {
+    console.log(seatFilter);
+    console.log(policiesFilter);
+    console.log(pickupFilter);
+    console.log(transmissionFilter);
+    console.log(classFilter);
+    console.log(featuresFilter);
+    // Apply filters based on the current state
+    if (groupsArray) {
+      const newGroupsArray = groupsArray
+        .filter((car) => {
+          if (
+            Array.isArray(transmissionFilter) &&
+            transmissionFilter.length > 0
+          ) {
+            // Normalize and filter
+            return transmissionFilter
+              .map((filter) => filter.toLowerCase())
+              .includes(car.trans);
+          }
+          return true; // Include all cars if transmissionFilter is empty
+        })
+        .filter((car) => {
+          if (Array.isArray(classFilter) && transmissionFilter.length > 0) {
+            // Normalize and filter
+            return transmissionFilter
+              .map((filter) => filter.toLowerCase())
+              .includes(car.trans);
+          }
+          return true; // Include all cars if transmissionFilter is empty
+        })
+        .filter((car) => {
+          if (featuresFilter.length > 0) {
+            return featuresFilter.some((feature) => {
+              if (feature === "A/C") {
+                return car.ac;
+              } 
+              return false;
+            });
+          }
+          return true; // Include all cars if transmissionFilter is empty
+        })
+        .filter((car, index) => {
+          if (Array.isArray(vendorsFilter) && vendorsFilter.length > 0) {
+            const vendor = carsInfo?.data.quotes[index]?.vndr?.toLowerCase();
+            const normalizedFilters = vendorsFilter.map((filter) =>
+              filter.toLowerCase()
+            );
+            return vendor ? normalizedFilters.includes(vendor) : false;
+          }
+          return true;
+        })
+        .filter((car) => {
+          if (Array.isArray(classFilter) && classFilter.length > 0) {
+            // Normalize and filter
+            return classFilter
+              .map((filter) => filter.toLowerCase())
+              .includes(car.cls);
+          }
+          return true; // Include all cars if transmissionFilter is empty
+        })
+        .filter((car) => {
+          if (seatFilter.length > 0) {
+            return seatFilter.some((range) => {
+              if (range === "1-4") {
+                return car.max_seats >= 1 && car.max_seats <= 4;
+              } else if (range === "5-6") {
+                return car.max_seats >= 5 && car.max_seats <= 6;
+              } else if (range === "7+") {
+                return car.max_seats >= 7;
+              }
+              return false;
+            });
+          }
+          return true; // Include all cars if seatFilter is empty
+        });
+      setFilteredGroupsArray(newGroupsArray);
+    }
+  }, [
+    seatFilter,
+    pickupFilter,
+    policiesFilter,
+    transmissionFilter,
+    classFilter,
+    featuresFilter,
+    vendorsFilter,
+    groupsArray,
+  ]);
+
   return (
     <div className="bg-gray-50">
       {" "}
@@ -127,15 +203,19 @@ const CarInfo = () => {
               setPoliciesFilter={setPoliciesFilter}
               transmissionFilter={transmissionFilter}
               setTransmissionFilter={setTransmissionFilter}
-              lowEmissionFilter={lowEmissionFilter}
-              setLowEmissionFilter={setLowEmissionFilter}
+              classFilter={classFilter}
+              setClassFilter={setClassFilter}
               featuresFilter={featuresFilter}
               setFeaturesFilter={setFeaturesFilter}
+              vendorsFilter={vendorsFilter}
+              setVendorsFilter={setVendorsFilter}
+              carsInfo={carsInfo}
             />
           </div>
           <div className="flex flex-col mt-6 pt-[100px] lg:pt-0 w-full 1sm:w-fit">
-            <div>
-              {groupsArray?.slice(0, 15).map((car, index) => (
+            <div className="w-full 1sm:w-[670px]">
+              {console.log(filteredGroupsArray)}
+              {filteredGroupsArray?.slice(0, 15).map((car, index) => (
                 <div
                   className={`bg-white rounded text-gray-700 w-full 1sm:w-[670px] mb-2 flex flex-col divide-gray-400 ${
                     showDeal === index ? "divide-y-[1px]" : ""
@@ -175,7 +255,9 @@ const CarInfo = () => {
                             </svg>
                             <div className="capitalize">{car.cls}</div>
                             <img
-                              src={`https://logos.skyscnr.com/images/carhire/vendors/${carsInfo?.data.quotes[index].vndr_id}.png`}
+                              src={`https://logos.skyscnr.com/images/carhire/vendors/${
+                                carsInfo?.data.quotes[car.id].vndr_id
+                              }.png`}
                               alt=""
                               className="absolute right-0 -top-10 h-[35px] w-[70px]"
                             />

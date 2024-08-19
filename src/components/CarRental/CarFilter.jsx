@@ -9,10 +9,13 @@ const CarFilter = ({
   setPoliciesFilter,
   transmissionFilter,
   setTransmissionFilter,
-  lowEmissionFilter,
-  setLowEmissionFilter,
+  classFilter,
+  setClassFilter,
   featuresFilter,
   setFeaturesFilter,
+  vendorsFilter,
+  setVendorsFilter,
+  carsInfo,
 }) => {
   const arrayEquals = (a, b) => {
     return (
@@ -23,10 +26,13 @@ const CarFilter = ({
     );
   };
 
-  const handleSeatChange = (seats) => {
-    setSeatFilter(seats);
+  const handleSeatChange = (newFilter) => {
+    if (seatFilter.includes(newFilter[0])) {
+      setSeatFilter(seatFilter.filter((item) => item !== newFilter[0])); // Remove if exists
+    } else {
+      setSeatFilter([...seatFilter, ...newFilter]); // Add if not exists
+    }
   };
-
   const handlePickupChange = (event) => {
     const { value, checked } = event.target;
     setPickupFilter((prev) =>
@@ -48,9 +54,9 @@ const CarFilter = ({
     );
   };
 
-  const handleLowEmissionChange = (event) => {
+  const handleClassChange = (event) => {
     const { value, checked } = event.target;
-    setLowEmissionFilter((prev) =>
+    setClassFilter((prev) =>
       checked ? [...prev, value] : prev.filter((item) => item !== value)
     );
   };
@@ -61,6 +67,14 @@ const CarFilter = ({
       checked ? [...prev, value] : prev.filter((item) => item !== value)
     );
   };
+  const handleVendorsChange = (event) => {
+    const { value, checked } = event.target;
+    setVendorsFilter((prev) =>
+      checked ? [...prev, value] : prev.filter((item) => item !== value)
+    );
+  };
+
+  const uniqueVendors = new Set(carsInfo?.data.quotes.map((car) => car.vndr));
 
   return (
     <div className="w-[270px] p-4 bg-white rounded-sm mt-6 text-gray-700">
@@ -69,32 +83,32 @@ const CarFilter = ({
         <div className="mt-2 space-x-2">
           <button
             className={`px-6 py-1 border rounded ${
-              arrayEquals(seatFilter, [1, 4]) ? "bg-gray-200" : ""
+              seatFilter.includes("1-4") ? "bg-gray-200" : ""
             }`}
-            onClick={() => handleSeatChange([1, 4])}
+            onClick={() => handleSeatChange(["1-4"])}
           >
             1-4
           </button>
           <button
             className={`px-6 py-1 border rounded ${
-              arrayEquals(seatFilter, [5, 6]) ? "bg-gray-200" : ""
+              seatFilter.includes("5-6") ? "bg-gray-200" : ""
             }`}
-            onClick={() => handleSeatChange([5, 6])}
+            onClick={() => handleSeatChange(["5-6"])}
           >
             5-6
           </button>
           <button
             className={`px-6 py-1 border rounded ${
-              arrayEquals(seatFilter, [7]) ? "bg-gray-200" : ""
+              seatFilter.includes("7+") ? "bg-gray-200" : ""
             }`}
-            onClick={() => handleSeatChange([7])}
+            onClick={() => handleSeatChange(["7+"])}
           >
             7+
           </button>
         </div>
       </div>
 
-      <div className="border-b pb-3 mb-2">
+      {/* <div className="border-b pb-3 mb-2">
         <h2 className="text-lg font-semibold">Pickup</h2>
         <div className="mt-2 space-y-2">
           <label className="block">
@@ -128,7 +142,7 @@ const CarFilter = ({
             Free shuttle bus
           </label>
         </div>
-      </div>
+      </div> */}
 
       <div className="border-b pb-3 mb-2">
         <h2 className="text-lg font-semibold">Policies</h2>
@@ -185,32 +199,51 @@ const CarFilter = ({
       </div>
 
       <div className="border-b pb-3 mb-2">
-        <h2 className="text-lg font-semibold">Low-emission vehicles</h2>
+        <h2 className="text-lg font-semibold">Class</h2>
         <div className="mt-2 space-y-2">
           <label className="block">
             <input
               type="checkbox"
               className="mr-2"
-              value="Electric"
-              onChange={handleLowEmissionChange}
-              checked={lowEmissionFilter.includes("Electric")}
+              value="premium"
+              onChange={handleClassChange}
+              checked={classFilter.includes("premium")}
             />
-            Electric
+            Premium
           </label>
           <label className="block">
             <input
               type="checkbox"
               className="mr-2"
-              value="Hybrid"
-              onChange={handleLowEmissionChange}
-              checked={lowEmissionFilter.includes("Hybrid")}
+              value="compact"
+              onChange={handleClassChange}
+              checked={classFilter.includes("compact")}
             />
-            Hybrid
+            Compact
+          </label>
+          <label className="block">
+            <input
+              type="checkbox"
+              className="mr-2"
+              value="intermediate"
+              onChange={handleClassChange}
+              checked={classFilter.includes("intermediate")}
+            />
+            Intermediate
+          </label>
+          <label className="block">
+            <input
+              type="checkbox"
+              className="mr-2"
+              value="economy"
+              onChange={handleClassChange}
+              checked={classFilter.includes("economy")}
+            />
+            Economy
           </label>
         </div>
       </div>
-
-      <div>
+      <div className="border-b pb-3 mb-2">
         <h2 className="text-lg font-semibold">Features</h2>
         <div className="mt-2 space-y-2">
           <label className="block">
@@ -227,16 +260,6 @@ const CarFilter = ({
             <input
               type="checkbox"
               className="mr-2"
-              value="4 wheel drive"
-              onChange={handleFeaturesChange}
-              checked={featuresFilter.includes("4 wheel drive")}
-            />
-            4 wheel drive
-          </label>
-          <label className="block">
-            <input
-              type="checkbox"
-              className="mr-2"
               value="Free roadside assistance"
               onChange={handleFeaturesChange}
               checked={featuresFilter.includes("Free roadside assistance")}
@@ -244,6 +267,24 @@ const CarFilter = ({
             Free roadside assistance
           </label>
         </div>
+      </div>
+
+      <div>
+        <h2 className="text-lg font-semibold">Suppliers</h2>
+        {[...uniqueVendors].map((vendor, index) => (
+          <div key={index} className="mt-2 space-y-2">
+            <label className="block">
+              <input
+                type="checkbox"
+                className="mr-2"
+                value={vendor}
+                onChange={handleVendorsChange}
+                checked={vendorsFilter.includes(vendor)}
+              />
+              {vendor}
+            </label>
+          </div>
+        ))}
       </div>
     </div>
   );
