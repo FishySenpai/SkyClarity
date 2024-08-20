@@ -36,9 +36,9 @@ const HotelsFilter = ({
    );
  };
 
- const handleClassChange = (event) => {
+ const handleStarChange = (event) => {
    const { value, checked } = event.target;
-   setClassFilter((prev) =>
+   setStarRating((prev) =>
      checked ? [...prev, value] : prev.filter((item) => item !== value)
    );
  };
@@ -108,7 +108,14 @@ const HotelsFilter = ({
           <div className="pb-3">
             {hotelsData.filters[1].values.map((stars, index) => (
               <div key={stars.id} className="flex items-center mb-2">
-                <input type="checkbox" id={stars.id} className="mr-2" />
+                <input
+                  type="checkbox"
+                  id={stars.id}
+                  className="mr-2"
+                  value={stars.id}
+                  onChange={handleStarChange}
+                  checked={starRating.includes(stars.id)}
+                />
                 <label
                   htmlFor={stars.id}
                   className="flex justify-between w-full text-sm"

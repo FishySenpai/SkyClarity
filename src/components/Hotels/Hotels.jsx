@@ -9,10 +9,11 @@ import HotelsLoading from "./HotelsLoading";
 const Hotels = () => {
   const [hotelsData, setHotelsData] = useState(hotelsDataJson);
   const [isLoading, setIsLoading] = useState(true);
-    const [popularFilters, setPopularFilters] = useState([]);
-    const [priceRange, setPriceRange] = useState([]);
-    const [starRating, setStarRating] = useState([]);
-    const [guestRating, setGuestRating] = useState([]);
+  const [filteredData, setFilteredData] = useState(hotelsDataJson.hotels)
+  const [popularFilters, setPopularFilters] = useState([]);
+  const [priceRange, setPriceRange] = useState([]);
+  const [starRating, setStarRating] = useState([]);
+  const [guestRating, setGuestRating] = useState([]);
   const { destination, destinationId, checkIn, checkOut } = useParams();
   const isValidParam = (param) => {
     return !param.startsWith(":") && param.trim() !== "";
@@ -31,7 +32,7 @@ const Hotels = () => {
       const response = await fetch(url, options);
       const result = await response.json();
       console.log(result);
-      setHotelsData(result.data);
+      setHotelsData(result.data.hotels);
     } catch (error) {
       console.error(error);
     }
@@ -46,6 +47,23 @@ const Hotels = () => {
   //   }
   // }, [destination, destinationId, checkIn, checkOut]);
   console.log(hotelsData);
+
+  useEffect(() => {
+    console.log("test");
+    const newFilteredData = hotelsData.hotels
+      .filter((hotel) => {
+        // Filter by price
+        if (Array.isArray(starRating) && starRating.length > 0) {
+          console.log("Stars:", starRating, hotel.stars);
+          return starRating.toLocaleString().includes(hotel.stars);
+        }
+        return true; // Show all flights if no price filter is applied
+      })
+      .slice(0, 20);
+
+    setFilteredData(newFilteredData);
+  }, [starRating]);
+
   return (
     <div className="bg-gray-50">
       <img
@@ -75,9 +93,10 @@ const Hotels = () => {
                 setGuestRating={setGuestRating}
               />
             </div>
-            <div className="flex flex-col pt-[150px] 1lg:pt-0">
-              <div>
-                {hotelsData?.hotels.slice(0, 10).map((hotel, index) => (
+            <div className="flex flex-col pt-[150px] 1lg:pt-0 ">
+              {console.log(filteredData)}
+              <div className="w-full 1sm:w-[625px] 1md:w-[880px] 1lg:w-[925px]">
+                {filteredData?.map((hotel, index) => (
                   // <Link to={`/hotels/hotel/${hotel.id}`}>
                   <HotelInfo key={hotel.id} index={hotel.id} hotel={hotel} />
                 ))}
