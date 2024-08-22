@@ -99,28 +99,28 @@ const PopularDestinations = () => {
     // Clean up the event listener when the component unmounts
     return () => container.removeEventListener("scroll", handleScroll);
   }, []);
-  const scrollLeft = () => {
-    const container = scrollContainerRef.current;
-    const scrollAmount = 1475; // Adjust this value as needed
-    const newScrollPosition = Math.max(0, scrollPosition - scrollAmount);
-    setScrollPosition(newScrollPosition);
-    if (container) {
-      container.scroll({ left: newScrollPosition, behavior: "smooth" });
-    }
-  };
+const scrollLeft = () => {
+  const container = scrollContainerRef.current;
+  const scrollAmount = window.innerWidth * 0.9; // 75% of the window's width
+  const newScrollPosition = Math.max(0, scrollPosition - scrollAmount);
+  setScrollPosition(newScrollPosition);
+  if (container) {
+    container.scroll({ left: newScrollPosition, behavior: "smooth" });
+  }
+};
 
-  const scrollRight = () => {
-    const container = scrollContainerRef.current;
-    const scrollAmount = 10; // Adjust this value as needed
-    const newScrollPosition = Math.min(
-      container.scrollWidth - container.clientWidth,
-      scrollPosition + scrollAmount
-    );
-    setScrollPosition(newScrollPosition);
-    if (container) {
-      container.scroll({ left: newScrollPosition, behavior: "smooth" });
-    }
-  };
+const scrollRight = () => {
+  const container = scrollContainerRef.current;
+  const scrollAmount = window.innerWidth * 0.8; // 75% of the window's width
+  const newScrollPosition = Math.min(
+    container.scrollWidth - container.clientWidth,
+    scrollPosition + scrollAmount
+  );
+  setScrollPosition(newScrollPosition);
+  if (container) {
+    container.scroll({ left: newScrollPosition, behavior: "smooth" });
+  }
+};
 
   return (
     <div>
@@ -131,7 +131,7 @@ const PopularDestinations = () => {
           best luxury hotels across cities worldwide.
         </span>
       </div>
-      <div className="relative w-[340px] 2sm:w-[540px]  1sm:w-[680px] 1md:w-[840px] 1lg:w-[982px] 1xl:w-[1350px] flex space-x-6 mx-auto  overflow-hidden">
+      <div className="relative w-[340px] 2sm:w-[540px]  1sm:w-[680px] 1md:w-[840px] 1lg:w-[982px] 1xl:w-[1350px] flex mx-auto  overflow-hidden">
         {showLeftArrow ? (
           <button
             onClick={scrollLeft}
@@ -162,7 +162,7 @@ const PopularDestinations = () => {
         {showRightArrow ? (
           <button
             onClick={scrollRight}
-            className="z-50 absolute right-3 top-1/2 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full shadow-lg"
+            className="z-50 absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full shadow-lg"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
