@@ -8,7 +8,7 @@ import { useParams } from "react-router-dom";
 import HotelsLoading from "./HotelsLoading";
 import NoResults from "../Assets/noresults.png";
 const Hotels = () => {
-  const [hotelsData, setHotelsData] = useState(hotelsDataJson.data);
+  const [hotelsData, setHotelsData] = useState();
   const [isLoading, setIsLoading] = useState(true);
   const [filteredData, setFilteredData] = useState(hotelsData?.hotels);
   const [popularFilters, setPopularFilters] = useState([]);

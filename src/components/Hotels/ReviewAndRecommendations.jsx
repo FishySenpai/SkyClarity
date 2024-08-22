@@ -1,37 +1,36 @@
 import React, { useEffect, useState, useRef } from "react";
 import Reviews from "./reviews.json";
 import similarHotels from "./similarHotels.json";
-const ReviewAndRecommendations = ({id}) => {
+const ReviewAndRecommendations = ({ id }) => {
   const [reviews, setReviews] = useState(Reviews);
   const [recommendations, setRecommendations] = useState(similarHotels);
   const [show, setShow] = useState(false);
-    const [scrollPosition, setScrollPosition] = useState(0);
-    const scrollContainerRef = useRef(null);
-    const [showLeftArrow, setShowLeftArrow] = useState(false);
-    const [showRightArrow, setShowRightArrow] = useState(false);
-    useEffect(() => {
-      const container = scrollContainerRef.current;
-      function handleScroll() {
-        if (container) {
-          // Check if there's content to scroll to the left
-          setShowLeftArrow(container.scrollLeft > 0);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const scrollContainerRef = useRef(null);
+  const [showLeftArrow, setShowLeftArrow] = useState(false);
+  const [showRightArrow, setShowRightArrow] = useState(false);
+  useEffect(() => {
+    const container = scrollContainerRef.current;
+    function handleScroll() {
+      if (container) {
+        // Check if there's content to scroll to the left
+        setShowLeftArrow(container.scrollLeft > 0);
 
-          // Check if there's content to scroll to the right
-          setShowRightArrow(
-            container.scrollLeft < container.scrollWidth - container.clientWidth
-          );
-        }
+        // Check if there's content to scroll to the right
+        setShowRightArrow(
+          container.scrollLeft < container.scrollWidth - container.clientWidth
+        );
       }
-      // Attach the scroll event listener
-      container.addEventListener("scroll", handleScroll);
-      // Initial check when the component mounts
-      handleScroll();
-      // Clean up the event listener when the component unmounts
-      return () => container.removeEventListener("scroll", handleScroll);
-    }, []);
+    }
+    // Attach the scroll event listener
+    container.addEventListener("scroll", handleScroll);
+    // Initial check when the component mounts
+    handleScroll();
+    // Clean up the event listener when the component unmounts
+    return () => container.removeEventListener("scroll", handleScroll);
+  }, []);
   const fetchReviews = async () => {
-    const url =
-      `https://skyscanner80.p.rapidapi.com/api/v1/hotels/reviews?id=${id}&page=1&sort=recommended&guestType=all&tags=all&travellerRating=all&dataSource=all&filterLocale=all`;
+    const url = `https://skyscanner80.p.rapidapi.com/api/v1/hotels/reviews?id=${id}&page=1&sort=recommended&guestType=all&tags=all&travellerRating=all&dataSource=all&filterLocale=all`;
     const options = {
       method: "GET",
       headers: {
@@ -83,29 +82,30 @@ const ReviewAndRecommendations = ({id}) => {
   // }, [id])
   console.log(reviews);
   console.log(recommendations);
-    const scrollLeft = () => {
-      const container = scrollContainerRef.current;
-      const scrollAmount = 1475; // Adjust this value as needed
-      const newScrollPosition = Math.max(0, scrollPosition - scrollAmount);
-      setScrollPosition(newScrollPosition);
-      if (container) {
-        container.scroll({ left: newScrollPosition, behavior: "smooth" });
-      }
-    };
+const scrollLeft = () => {
+  const container = scrollContainerRef.current;
+  const scrollAmount = window.innerWidth * 0.585; // 75% of the window's width
+  const newScrollPosition = Math.max(0, scrollPosition - scrollAmount);
+  setScrollPosition(newScrollPosition);
+  if (container) {
+    container.scroll({ left: newScrollPosition, behavior: "smooth" });
+  }
+};
 
-    const scrollRight = () => {
-      const container = scrollContainerRef.current;
-      const scrollAmount = 1120; // Adjust this value as needed
-      const newScrollPosition = Math.min(
-        container.scrollWidth - container.clientWidth,
-        scrollPosition + scrollAmount
-      );
-      setScrollPosition(newScrollPosition);
-      if (container) {
-        container.scroll({ left: newScrollPosition, behavior: "smooth" });
-      }
-    };
-  if(reviews && recommendations){
+const scrollRight = () => {
+  const container = scrollContainerRef.current;
+  const scrollAmount = window.innerWidth * 0.585; // 75% of the window's width
+  const newScrollPosition = Math.min(
+    container.scrollWidth - container.clientWidth,
+    scrollPosition + scrollAmount
+  );
+  setScrollPosition(newScrollPosition);
+  if (container) {
+    container.scroll({ left: newScrollPosition, behavior: "smooth" });
+  }
+};
+
+  if (reviews && recommendations) {
     return (
       <div>
         <div id="reviews" className="w-[99%]  pt-6 text-gray-800 ml-1">
@@ -148,28 +148,27 @@ const ReviewAndRecommendations = ({id}) => {
           <p className="font-semibold  pt-6 text-3xl pb-4">
             Hotel Recommendations
           </p>
-          <div className="relative  flex space-x-6 mx-auto  overflow-hidden">
-            {showLeftArrow ? (
-              <button
-                onClick={scrollLeft}
-                className="z-50 absolute  left-0 top-1/3 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full shadow-lg"
+          <div className="relative  flex  mx-auto  overflow-hidden">
+            <button
+              onClick={scrollLeft}
+              className={`z-50 absolute -left-0 1lg:left-0 top-1/3 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full shadow-lg ${
+                showLeftArrow ? "" : "opacity-0"
+              }`}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+                className="h-6 w-6"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 320 512"
-                  className="h-6 w-6"
-                >
-                  <path
-                    d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
-                    fill="rgb(31 41 55)"
-                  />
-                </svg>
-              </button>
-            ) : (
-              ""
-            )}
+                <path
+                  d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+                  fill="rgb(31 41 55)"
+                />
+              </svg>
+            </button>
+
             <div
-              className={`flex space-x-6 mx-auto  overflow-hidden w-full 1lg:w-[1100px]`}
+              className={`flex space-x-6 mx-auto  overflow-hidden w-full 1lg:w-[1100px] `}
               ref={scrollContainerRef}
             >
               {recommendations.data.map((hotel, index) => {
@@ -245,25 +244,24 @@ const ReviewAndRecommendations = ({id}) => {
                 );
               })}
             </div>
-            {showRightArrow ? (
-              <button
-                onClick={scrollRight}
-                className="z-50 absolute -right-0 top-1/3 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full shadow-lg"
+
+            <button
+              onClick={scrollRight}
+              className={`z-50 absolute -right-0 top-1/3 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full shadow-lg ${
+                scrollRight ? "" : "opacity-0"
+              }`}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+                className="h-6 w-6"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 320 512"
-                  className="h-6 w-6"
-                >
-                  <path
-                    d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
-                    fill="rgb(31 41 55)"
-                  />
-                </svg>
-              </button>
-            ) : (
-              ""
-            )}
+                <path
+                  d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
+                  fill="rgb(31 41 55)"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </div>

@@ -44,28 +44,29 @@ const HotelsHome = () => {
     // Clean up the event listener when the component unmounts
     return () => container.removeEventListener("scroll", handleScroll);
   }, []);
-  const scrollLeft = () => {
-    const container = scrollContainerRef.current;
-    const scrollAmount = 1475; // Adjust this value as needed
-    const newScrollPosition = Math.max(0, scrollPosition - scrollAmount);
-    setScrollPosition(newScrollPosition);
-    if (container) {
-      container.scroll({ left: newScrollPosition, behavior: "smooth" });
-    }
-  };
+const scrollLeft = () => {
+  const container = scrollContainerRef.current;
+  const scrollAmount = window.innerWidth * 0.90; // 75% of the window's width
+  const newScrollPosition = Math.max(0, scrollPosition - scrollAmount);
+  setScrollPosition(newScrollPosition);
+  if (container) {
+    container.scroll({ left: newScrollPosition, behavior: "smooth" });
+  }
+};
 
-  const scrollRight = () => {
-    const container = scrollContainerRef.current;
-    const scrollAmount = 75; // Adjust this value as needed
-    const newScrollPosition = Math.min(
-      container.scrollWidth - container.clientWidth,
-      scrollPosition + scrollAmount
-    );
-    setScrollPosition(newScrollPosition);
-    if (container) {
-      container.scroll({ left: newScrollPosition, behavior: "smooth" });
-    }
-  };
+const scrollRight = () => {
+  const container = scrollContainerRef.current;
+  const scrollAmount = window.innerWidth * 0.80; // 75% of the window's width
+  const newScrollPosition = Math.min(
+    container.scrollWidth - container.clientWidth,
+    scrollPosition + scrollAmount
+  );
+  setScrollPosition(newScrollPosition);
+  if (container) {
+    container.scroll({ left: newScrollPosition, behavior: "smooth" });
+  }
+};
+
 
   return (
     <div className="rounded text-gray-500 relative bg-gray-100 ">
@@ -93,26 +94,24 @@ const HotelsHome = () => {
             the best luxury hotels across cities worldwide.
           </span>
         </div>
-        <div className="relative w-[340px] 2sm:w-[540px]  1sm:w-[680px] 1md:w-[840px] 1lg:w-[982px] 1xl:w-[1350px] flex space-x-6 mx-auto  overflow-hidden">
-          {showLeftArrow ? (
-            <button
-              onClick={scrollLeft}
-              className="z-50 absolute  left-0 top-1/3 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full shadow-lg"
+        <div className="relative w-[340px] 2sm:w-[540px]  1sm:w-[680px] 1md:w-[840px] 1lg:w-[982px] 1xl:w-[1350px] flex  mx-auto  overflow-hidden">
+          <button
+            onClick={scrollLeft}
+            className={`z-50 absolute -left-0 1lg:left-0 top-1/3 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full shadow-lg ${
+              showLeftArrow ? "" : "opacity-0"
+            }`}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+              className="h-6 w-6"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 320 512"
-                className="h-6 w-6"
-              >
-                <path
-                  d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
-                  fill="rgb(31 41 55)"
-                />
-              </svg>
-            </button>
-          ) : (
-            ""
-          )}
+              <path
+                d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+                fill="rgb(31 41 55)"
+              />
+            </svg>
+          </button>
           <div
             className="w-[1300px] flex space-x-6 mx-auto  overflow-hidden"
             ref={scrollContainerRef}
