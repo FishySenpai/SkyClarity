@@ -1,2810 +1,3043 @@
 {
-  "searchStatus": {
-    "completionPercentage": 100,
-    "status": "COMPLETED",
-    "searchId": "bc121d43fa5dd9d2da72e9f4be3e10b37eadc9be574db355cc1ba770ab315c4c",
-    "firstPageStatus": "COMPLETED"
-  },
-  "hotels": [
-    {
-      "hotelId": "131925512",
-      "heroImage": "https://content.skyscnr.com/available/1646394471/1646394471_WxH.jpg",
-      "name": "easyHotel Glasgow City",
-      "stars": 3,
-      "brandIds": ["90719399"],
-      "distance": "0.62 km from city centre",
-      "relevantPoiDistance": "0.81 km from Sir Robert Peel Statue",
-      "coordinates": [-4.260143, 55.866431],
-      "price": "₹ 7,361",
-      "cheapestOfferPartnerId": "h_fd",
-      "cheapestOfferRateId": null,
-      "rawPrice": 7361,
-      "rating": {
-        "description": "Satisfactory",
-        "count": 1246,
-        "value": "6.0",
-        "color": "colorKolkata"
-      },
-      "reviewSummary": {
-        "description": "Satisfactory",
-        "count": 1246,
-        "formatCount": "1,246",
-        "value": "3.0",
-        "formatValue": "3.0",
-        "color": "colorKolkata",
-        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/3.0-64600-4.png"
-      },
-      "cheapestOffer": "meta",
-      "offerTypes": "meta",
-      "guestType": null,
-      "exclusiveDealLabel": null,
-      "pricesFrom": "2 prices from",
-      "images": [
-        "https://content.skyscnr.com/available/1646394471/1646394471_WxH.jpg",
-        "https://content.skyscnr.com/available/1463221154/1463221154_WxH.jpg",
-        "https://content.skyscnr.com/available/1545999603/1545999603_WxH.jpg"
-      ],
-      "otherRates": [
-        {
-          "partnerId": "h_bc",
-          "partnerName": "Booking.com",
-          "rawPrice": 118124,
-          "price": "₹ 7,383"
-        }
-      ],
-      "priceDescription": "₹ 117,764 for 16 nights",
-      "taxPolicy": "Taxes and fees not included",
-      "rateFeatures": [],
-      "cheapestOfferPartnerName": "Vio.com"
+  "status": true,
+  "message": "success",
+  "data": {
+    "searchStatus": {
+      "completionPercentage": 100,
+      "status": "COMPLETED",
+      "searchId": "b6c341533faedba4434b9220948b881104102fc9ea691685553c8b0dd4db8095",
+      "firstPageStatus": "COMPLETED"
     },
-    {
-      "hotelId": "162229351",
-      "heroImage": "https://content.skyscnr.com/available/1645759397/1645759397_WxH.jpg",
-      "name": "Travelodge Glasgow Queen Street",
-      "stars": 3,
-      "brandIds": [],
-      "distance": "0.34 km from city centre",
-      "relevantPoiDistance": "0.27 km from Sir Robert Peel Statue",
-      "coordinates": [-4.251953, 55.859531],
-      "price": "₹ 8,725",
-      "cheapestOfferPartnerId": "h_fd",
-      "cheapestOfferRateId": null,
-      "rawPrice": 8725,
-      "rating": {
-        "description": "Very good",
-        "count": 2172,
-        "value": "8.0",
-        "color": "colorMonteverde"
-      },
-      "reviewSummary": {
-        "description": "Very good",
-        "count": 2172,
-        "formatCount": "2,172",
-        "value": "4.0",
-        "formatValue": "4.0",
-        "color": "colorMonteverde",
-        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-64600-4.png",
-        "confidenceBadge": {
-          "type": "location",
-          "score": 5,
-          "icon": "thumbs-up",
-          "color": {
-            "light": "colorMonteverde",
-            "dark": "colorMonteverde"
-          },
-          "message": "Hotel location is rated 5/5"
-        }
-      },
-      "cheapestOffer": "meta",
-      "offerTypes": "meta",
-      "guestType": null,
-      "exclusiveDealLabel": null,
-      "pricesFrom": "1 price",
-      "images": [
-        "https://content.skyscnr.com/available/1645759397/1645759397_WxH.jpg",
-        "https://content.skyscnr.com/available/1363173969/1363173969_WxH.jpg",
-        "https://content.skyscnr.com/available/1619955863/1619955863_WxH.jpg"
-      ],
-      "otherRates": [],
-      "priceDescription": "₹ 139,599 for 16 nights",
-      "taxPolicy": "Taxes and fees not included",
-      "rateFeatures": [],
-      "cheapestOfferPartnerName": "Vio.com"
-    },
-    {
-      "hotelId": "153312093",
-      "heroImage": "https://content.skyscnr.com/available/1647148290/1647148290_WxH.jpg",
-      "name": "Point A Hotel Glasgow",
-      "stars": 3,
-      "brandIds": [],
-      "distance": "0.31 km from city centre",
-      "relevantPoiDistance": "0.50 km from Sir Robert Peel Statue",
-      "coordinates": [-4.257142, 55.864022],
-      "price": "₹ 9,571",
-      "cheapestOfferPartnerId": "h_fd",
-      "cheapestOfferRateId": null,
-      "rawPrice": 9571,
-      "rating": {
-        "description": "Excellent",
-        "count": 2663,
-        "value": "9.0",
-        "color": "colorMonteverde"
-      },
-      "reviewSummary": {
-        "description": "Excellent",
-        "count": 2663,
-        "formatCount": "2,663",
-        "value": "4.5",
-        "formatValue": "4.5",
-        "color": "colorMonteverde",
-        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.png",
-        "confidenceBadge": {
-          "type": "location",
-          "score": 4.5,
-          "icon": "thumbs-up",
-          "color": {
-            "light": "colorMonteverde",
-            "dark": "colorMonteverde"
-          },
-          "message": "Hotel location is rated 4.5/5"
-        }
-      },
-      "cheapestOffer": "meta",
-      "offerTypes": "meta",
-      "guestType": null,
-      "exclusiveDealLabel": null,
-      "pricesFrom": "2 prices from",
-      "images": [
-        "https://content.skyscnr.com/available/1647148290/1647148290_WxH.jpg",
-        "https://content.skyscnr.com/available/721581610/721581610_WxH.jpg",
-        "https://content.skyscnr.com/available/1544056880/1544056880_WxH.jpg"
-      ],
-      "otherRates": [
-        {
-          "partnerId": "h_bc",
-          "partnerName": "Booking.com",
-          "rawPrice": 162141,
-          "price": "₹ 10,134"
-        }
-      ],
-      "priceDescription": "₹ 153,134 for 16 nights",
-      "taxPolicy": "Taxes and fees not included",
-      "rateFeatures": [],
-      "cheapestOfferPartnerName": "Vio.com"
-    },
-    {
-      "hotelId": "47042761",
-      "heroImage": "https://content.skyscnr.com/available/1645891385/1645891385_WxH.jpg",
-      "name": "Ibis Budget Glasgow",
-      "stars": 3,
-      "brandIds": ["90718394", "90719199"],
-      "distance": "1.71 km from city centre",
-      "relevantPoiDistance": "1.82 km from Sir Robert Peel Statue",
-      "coordinates": [-4.27607, 55.85415],
-      "price": "₹ 8,025",
-      "cheapestOfferPartnerId": "h_fd",
-      "cheapestOfferRateId": null,
-      "rawPrice": 8025,
-      "rating": {
-        "description": "Good",
-        "count": 2193,
-        "value": "7.0",
-        "color": "colorKolkata"
-      },
-      "reviewSummary": {
-        "description": "Good",
-        "count": 2193,
-        "formatCount": "2,193",
-        "value": "3.5",
-        "formatValue": "3.5",
-        "color": "colorKolkata",
-        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/3.5-64600-4.png"
-      },
-      "cheapestOffer": "meta",
-      "offerTypes": "meta",
-      "guestType": null,
-      "exclusiveDealLabel": null,
-      "pricesFrom": "2 prices from",
-      "images": [
-        "https://content.skyscnr.com/available/1645891385/1645891385_WxH.jpg",
-        "https://content.skyscnr.com/available/1612431311/1612431311_WxH.jpg",
-        "https://content.skyscnr.com/available/1553085222/1553085222_WxH.jpg"
-      ],
-      "otherRates": [
-        {
-          "partnerId": "h_bc",
-          "partnerName": "Booking.com",
-          "rawPrice": 128781,
-          "price": "₹ 8,049"
-        }
-      ],
-      "priceDescription": "₹ 128,389 for 16 nights",
-      "taxPolicy": "Taxes and fees not included",
-      "rateFeatures": [],
-      "cheapestOfferPartnerName": "Vio.com"
-    },
-    {
-      "hotelId": "153328629",
-      "heroImage": "https://content.skyscnr.com/available/917735755/917735755_WxH.jpg",
-      "name": "Crosshill House",
-      "stars": 4,
-      "brandIds": [],
-      "distance": "3.36 km from city centre",
-      "relevantPoiDistance": "2.96 km from Glasgow Central Station",
-      "coordinates": [-4.259548, 55.832493],
-      "price": "₹ 7,620",
-      "cheapestOfferPartnerId": "h_bc",
-      "cheapestOfferRateId": null,
-      "rawPrice": 7620,
-      "rating": {
-        "description": "Good",
-        "count": 104,
-        "value": "7.0",
-        "color": "colorKolkata"
-      },
-      "reviewSummary": {
-        "description": "Good",
-        "count": 104,
-        "formatCount": "104",
-        "value": "3.5",
-        "formatValue": "3.5",
-        "color": "colorKolkata",
-        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/3.5-64600-4.png"
-      },
-      "cheapestOffer": "meta",
-      "offerTypes": "meta",
-      "guestType": null,
-      "exclusiveDealLabel": null,
-      "pricesFrom": "2 prices from",
-      "images": [
-        "https://content.skyscnr.com/available/917735755/917735755_WxH.jpg",
-        "https://content.skyscnr.com/available/1544305457/1544305457_WxH.jpg",
-        "https://content.skyscnr.com/available/721798903/721798903_WxH.jpg"
-      ],
-      "otherRates": [
-        {
-          "partnerId": "h_fd",
-          "partnerName": "Vio.com",
-          "rawPrice": 142099,
-          "price": "₹ 8,882"
-        }
-      ],
-      "priceDescription": "₹ 121,907 for 16 nights",
-      "taxPolicy": "Taxes and fees not included",
-      "rateFeatures": [],
-      "cheapestOfferPartnerName": "Booking.com"
-    },
-    {
-      "hotelId": "81985556",
-      "heroImage": "https://content.skyscnr.com/available/1646341040/1646341040_WxH.jpg",
-      "name": "Carlton George Hotel",
-      "stars": 4,
-      "brandIds": [],
-      "distance": "0.05 km from city centre",
-      "relevantPoiDistance": "0.17 km from Sir Robert Peel Statue",
-      "coordinates": [-4.252921, 55.862034],
-      "price": "₹ 13,601",
-      "cheapestOfferPartnerId": "h_fd",
-      "cheapestOfferRateId": null,
-      "rawPrice": 13601,
-      "rating": {
-        "description": "Excellent",
-        "count": 2936,
-        "value": "9.0",
-        "color": "colorMonteverde"
-      },
-      "reviewSummary": {
-        "description": "Excellent",
-        "count": 2936,
-        "formatCount": "2,936",
-        "value": "4.5",
-        "formatValue": "4.5",
-        "color": "colorMonteverde",
-        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.png",
-        "confidenceBadge": {
-          "type": "location",
-          "score": 5,
-          "icon": "thumbs-up",
-          "color": {
-            "light": "colorMonteverde",
-            "dark": "colorMonteverde"
-          },
-          "message": "Hotel location is rated 5/5"
-        }
-      },
-      "cheapestOffer": "meta",
-      "offerTypes": "meta",
-      "guestType": null,
-      "exclusiveDealLabel": null,
-      "pricesFrom": "3 prices from",
-      "images": [
-        "https://content.skyscnr.com/available/1646341040/1646341040_WxH.jpg",
-        "https://content.skyscnr.com/available/1394585888/1394585888_WxH.jpg",
-        "https://content.skyscnr.com/available/1552698084/1552698084_WxH.jpg"
-      ],
-      "otherRates": [
-        {
-          "partnerId": "h_ck",
-          "partnerName": "TravelClick",
-          "rawPrice": 217630,
-          "price": "₹ 13,602"
+    "hotels": [
+      {
+        "hotelId": "203823529",
+        "heroImage": "https://content.skyscnr.com/available/1389307609/1389307609_WxH.jpg",
+        "name": "CoDE Pod – The CoURT - Edinburgh",
+        "stars": 4,
+        "brandIds": [],
+        "distance": "0.40 km from city centre",
+        "relevantPoiDistance": "0.56 km from Princes Street",
+        "coordinates": [-3.18994, 55.94948],
+        "price": "₹ 6,059",
+        "cheapestOfferPartnerId": "h_bc",
+        "cheapestOfferRateId": null,
+        "rawPrice": 6059,
+        "rating": {
+          "description": "Excellent",
+          "count": 742,
+          "value": "9.0",
+          "color": "colorMonteverde"
         },
-        {
-          "partnerId": "h_bc",
-          "partnerName": "Booking.com",
-          "rawPrice": 241810,
-          "price": "₹ 15,114"
-        }
-      ],
-      "priceDescription": "₹ 217,615 for 16 nights",
-      "taxPolicy": "Taxes and fees not included",
-      "rateFeatures": [],
-      "cheapestOfferPartnerName": "Vio.com"
-    },
-    {
-      "hotelId": "47022426",
-      "heroImage": "https://content.skyscnr.com/available/1443098834/1443098834_WxH.jpg",
-      "name": "Ibis Glasgow City Centre - Sauchiehall Street",
-      "stars": 3,
-      "brandIds": ["90718434", "90719199"],
-      "distance": "0.84 km from city centre",
-      "relevantPoiDistance": "1.03 km from Sir Robert Peel Statue",
-      "coordinates": [-4.266112, 55.864368],
-      "price": "₹ 9,278",
-      "cheapestOfferPartnerId": "h_fd",
-      "cheapestOfferRateId": null,
-      "rawPrice": 9278,
-      "rating": {
-        "description": "Very good",
-        "count": 1993,
-        "value": "8.0",
-        "color": "colorMonteverde"
-      },
-      "reviewSummary": {
-        "description": "Very good",
-        "count": 1993,
-        "formatCount": "1,993",
-        "value": "4.0",
-        "formatValue": "4.0",
-        "color": "colorMonteverde",
-        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-64600-4.png"
-      },
-      "cheapestOffer": "meta",
-      "offerTypes": "meta",
-      "guestType": null,
-      "exclusiveDealLabel": null,
-      "pricesFrom": "2 prices from",
-      "images": [
-        "https://content.skyscnr.com/available/1443098834/1443098834_WxH.jpg",
-        "https://content.skyscnr.com/available/1380904982/1380904982_WxH.jpg",
-        "https://content.skyscnr.com/available/1196395300/1196395300_WxH.jpg"
-      ],
-      "otherRates": [
-        {
-          "partnerId": "h_bc",
-          "partnerName": "Booking.com",
-          "rawPrice": 148897,
-          "price": "₹ 9,307"
-        }
-      ],
-      "priceDescription": "₹ 148,440 for 16 nights",
-      "taxPolicy": "Taxes and fees not included",
-      "rateFeatures": [],
-      "cheapestOfferPartnerName": "Vio.com"
-    },
-    {
-      "hotelId": "46951225",
-      "heroImage": "https://content.skyscnr.com/available/1395136551/1395136551_WxH.jpg",
-      "name": "Leonardo Inn Glasgow West End",
-      "stars": 3,
-      "brandIds": ["90718997"],
-      "distance": "4.40 km from city centre",
-      "relevantPoiDistance": "1.90 km from University of Glasgow",
-      "coordinates": [-4.311652, 55.884474],
-      "price": "₹ 8,110",
-      "cheapestOfferPartnerId": "h_fd",
-      "cheapestOfferRateId": null,
-      "rawPrice": 8110,
-      "rating": {
-        "description": "Very good",
-        "count": 1990,
-        "value": "8.0",
-        "color": "colorMonteverde"
-      },
-      "reviewSummary": {
-        "description": "Very good",
-        "count": 1990,
-        "formatCount": "1,990",
-        "value": "4.0",
-        "formatValue": "4.0",
-        "color": "colorMonteverde",
-        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-64600-4.png"
-      },
-      "cheapestOffer": "meta",
-      "offerTypes": "meta",
-      "guestType": null,
-      "exclusiveDealLabel": null,
-      "pricesFrom": "2 prices from",
-      "images": [
-        "https://content.skyscnr.com/available/1395136551/1395136551_WxH.jpg",
-        "https://content.skyscnr.com/available/1395136569/1395136569_WxH.jpg",
-        "https://content.skyscnr.com/available/1395136586/1395136586_WxH.jpg"
-      ],
-      "otherRates": [
-        {
-          "partnerId": "h_bc",
-          "partnerName": "Booking.com",
-          "rawPrice": 162426,
-          "price": "₹ 10,152"
-        }
-      ],
-      "priceDescription": "₹ 129,760 for 16 nights",
-      "taxPolicy": "Taxes and fees not included",
-      "rateFeatures": [],
-      "cheapestOfferPartnerName": "Vio.com"
-    },
-    {
-      "hotelId": "46994785",
-      "heroImage": "https://content.skyscnr.com/available/1645891582/1645891582_WxH.jpg",
-      "name": "Britannia Inn Glasgow",
-      "stars": 3,
-      "brandIds": ["90718306"],
-      "distance": "1.08 km from city centre",
-      "relevantPoiDistance": "1.27 km from Sir Robert Peel Statue",
-      "coordinates": [-4.26978, 55.86487],
-      "price": "₹ 9,985",
-      "cheapestOfferPartnerId": "h_fd",
-      "cheapestOfferRateId": null,
-      "rawPrice": 9985,
-      "rating": {
-        "description": "Good",
-        "count": 3171,
-        "value": "7.0",
-        "color": "colorKolkata"
-      },
-      "reviewSummary": {
-        "description": "Good",
-        "count": 3171,
-        "formatCount": "3,171",
-        "value": "3.5",
-        "formatValue": "3.5",
-        "color": "colorKolkata",
-        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/3.5-64600-4.png",
-        "confidenceBadge": {
-          "type": "location",
-          "score": 4.5,
-          "icon": "thumbs-up",
-          "color": {
-            "light": "colorMonteverde",
-            "dark": "colorMonteverde"
-          },
-          "message": "Hotel location is rated 4.5/5"
-        }
-      },
-      "cheapestOffer": "meta",
-      "offerTypes": "meta",
-      "guestType": null,
-      "exclusiveDealLabel": null,
-      "pricesFrom": "2 prices from",
-      "images": [
-        "https://content.skyscnr.com/available/1645891582/1645891582_WxH.jpg",
-        "https://content.skyscnr.com/available/1442985234/1442985234_WxH.jpg",
-        "https://content.skyscnr.com/available/1442985431/1442985431_WxH.jpg"
-      ],
-      "otherRates": [
-        {
-          "partnerId": "h_bc",
-          "partnerName": "Booking.com",
-          "rawPrice": 160240,
-          "price": "₹ 10,015"
-        }
-      ],
-      "priceDescription": "₹ 159,748 for 16 nights",
-      "taxPolicy": "Taxes and fees not included",
-      "rateFeatures": [],
-      "cheapestOfferPartnerName": "Vio.com"
-    },
-    {
-      "hotelId": "105033662",
-      "heroImage": "https://content.skyscnr.com/available/1645704051/1645704051_WxH.jpg",
-      "name": "Novotel Glasgow Centre",
-      "stars": 4,
-      "brandIds": ["90718511", "90719199"],
-      "distance": "0.79 km from city centre",
-      "relevantPoiDistance": "0.99 km from Sir Robert Peel Statue",
-      "coordinates": [-4.265309, 55.86443],
-      "price": "₹ 13,369",
-      "cheapestOfferPartnerId": "h_fd",
-      "cheapestOfferRateId": null,
-      "rawPrice": 13369,
-      "rating": {
-        "description": "Very good",
-        "count": 2169,
-        "value": "8.0",
-        "color": "colorMonteverde"
-      },
-      "reviewSummary": {
-        "description": "Very good",
-        "count": 2169,
-        "formatCount": "2,169",
-        "value": "4.0",
-        "formatValue": "4.0",
-        "color": "colorMonteverde",
-        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-64600-4.png",
-        "confidenceBadge": {
-          "type": "location",
-          "score": 4.5,
-          "icon": "thumbs-up",
-          "color": {
-            "light": "colorMonteverde",
-            "dark": "colorMonteverde"
-          },
-          "message": "Hotel location is rated 4.5/5"
-        }
-      },
-      "cheapestOffer": "meta",
-      "offerTypes": "meta",
-      "guestType": null,
-      "exclusiveDealLabel": null,
-      "pricesFrom": "2 prices from",
-      "images": [
-        "https://content.skyscnr.com/available/1645704051/1645704051_WxH.jpg",
-        "https://content.skyscnr.com/available/1379022617/1379022617_WxH.jpg",
-        "https://content.skyscnr.com/available/1196375701/1196375701_WxH.jpg"
-      ],
-      "otherRates": [
-        {
-          "partnerId": "h_bc",
-          "partnerName": "Booking.com",
-          "rawPrice": 214560,
-          "price": "₹ 13,410"
-        }
-      ],
-      "priceDescription": "₹ 213,901 for 16 nights",
-      "taxPolicy": "Taxes and fees not included",
-      "rateFeatures": [],
-      "cheapestOfferPartnerName": "Vio.com"
-    },
-    {
-      "hotelId": "47023400",
-      "heroImage": "https://content.skyscnr.com/available/1645891235/1645891235_WxH.jpg",
-      "name": "Leonardo Royal Hotel Glasgow",
-      "stars": 4,
-      "brandIds": ["90718997"],
-      "distance": "0.70 km from city centre",
-      "relevantPoiDistance": "0.72 km from Sir Robert Peel Statue",
-      "coordinates": [-4.25759, 55.85676],
-      "price": "₹ 12,551",
-      "cheapestOfferPartnerId": "h_fd",
-      "cheapestOfferRateId": null,
-      "rawPrice": 12551,
-      "rating": {
-        "description": "Very good",
-        "count": 6013,
-        "value": "8.0",
-        "color": "colorMonteverde"
-      },
-      "reviewSummary": {
-        "description": "Very good",
-        "count": 6013,
-        "formatCount": "6,013",
-        "value": "4.0",
-        "formatValue": "4.0",
-        "color": "colorMonteverde",
-        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-64600-4.png",
-        "confidenceBadge": {
-          "type": "location",
-          "score": 4.5,
-          "icon": "thumbs-up",
-          "color": {
-            "light": "colorMonteverde",
-            "dark": "colorMonteverde"
-          },
-          "message": "Hotel location is rated 4.5/5"
-        }
-      },
-      "cheapestOffer": "meta",
-      "offerTypes": "meta",
-      "guestType": null,
-      "exclusiveDealLabel": null,
-      "pricesFrom": "2 prices from",
-      "images": [
-        "https://content.skyscnr.com/available/1645891235/1645891235_WxH.jpg",
-        "https://content.skyscnr.com/available/1275082903/1275082903_WxH.jpg",
-        "https://content.skyscnr.com/available/1558050306/1558050306_WxH.jpg"
-      ],
-      "otherRates": [
-        {
-          "partnerId": "h_bc",
-          "partnerName": "Booking.com",
-          "rawPrice": 223817,
-          "price": "₹ 13,989"
-        }
-      ],
-      "priceDescription": "₹ 200,814 for 16 nights",
-      "taxPolicy": "Taxes and fees not included",
-      "rateFeatures": [],
-      "cheapestOfferPartnerName": "Vio.com"
-    },
-    {
-      "hotelId": "47005499",
-      "heroImage": "https://content.skyscnr.com/available/1579535508/1579535508_WxH.jpg",
-      "name": "Glasgow Argyle Hotel, BW Signature Collection",
-      "stars": 4,
-      "brandIds": [],
-      "distance": "1.04 km from city centre",
-      "relevantPoiDistance": "1.18 km from Sir Robert Peel Statue",
-      "coordinates": [-4.26825, 55.85871],
-      "price": "₹ 11,485",
-      "cheapestOfferPartnerId": "h_bw",
-      "cheapestOfferRateId": null,
-      "rawPrice": 11485,
-      "rating": {
-        "description": "Very good",
-        "count": 3031,
-        "value": "8.0",
-        "color": "colorMonteverde"
-      },
-      "reviewSummary": {
-        "description": "Very good",
-        "count": 3031,
-        "formatCount": "3,031",
-        "value": "4.0",
-        "formatValue": "4.0",
-        "color": "colorMonteverde",
-        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-64600-4.png"
-      },
-      "cheapestOffer": "meta",
-      "offerTypes": "meta",
-      "guestType": null,
-      "exclusiveDealLabel": null,
-      "pricesFrom": "3 prices from",
-      "images": [
-        "https://content.skyscnr.com/available/1579535508/1579535508_WxH.jpg",
-        "https://content.skyscnr.com/available/1579535504/1579535504_WxH.jpg",
-        "https://content.skyscnr.com/available/1579535367/1579535367_WxH.jpg"
-      ],
-      "otherRates": [
-        {
-          "partnerId": "h_fd",
-          "partnerName": "Vio.com",
-          "rawPrice": 190842,
-          "price": "₹ 11,928"
-        },
-        {
-          "partnerId": "h_bc",
-          "partnerName": "Booking.com",
-          "rawPrice": 190926,
-          "price": "₹ 11,933"
-        }
-      ],
-      "priceDescription": "₹ 183,759 for 16 nights",
-      "taxPolicy": "Taxes and fees not included",
-      "rateFeatures": [],
-      "cheapestOfferPartnerName": "Best Western"
-    },
-    {
-      "hotelId": "136333851",
-      "heroImage": "https://content.skyscnr.com/available/1394632811/1394632811_WxH.jpg",
-      "name": "Ibis Styles Glasgow Centre George Square",
-      "stars": 3,
-      "brandIds": ["90718876", "90719199"],
-      "distance": "0.38 km from city centre",
-      "relevantPoiDistance": "0.26 km from Sir Robert Peel Statue",
-      "coordinates": [-4.250648, 55.859364],
-      "price": "₹ 10,823",
-      "cheapestOfferPartnerId": "h_fd",
-      "cheapestOfferRateId": null,
-      "rawPrice": 10823,
-      "rating": {
-        "description": "Excellent",
-        "count": 2119,
-        "value": "9.0",
-        "color": "colorMonteverde"
-      },
-      "reviewSummary": {
-        "description": "Excellent",
-        "count": 2119,
-        "formatCount": "2,119",
-        "value": "4.5",
-        "formatValue": "4.5",
-        "color": "colorMonteverde",
-        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.png",
-        "confidenceBadge": {
-          "type": "location",
-          "score": 5,
-          "icon": "thumbs-up",
-          "color": {
-            "light": "colorMonteverde",
-            "dark": "colorMonteverde"
-          },
-          "message": "Hotel location is rated 5/5"
-        }
-      },
-      "cheapestOffer": "meta",
-      "offerTypes": "meta",
-      "guestType": null,
-      "exclusiveDealLabel": null,
-      "pricesFrom": "2 prices from",
-      "images": [
-        "https://content.skyscnr.com/available/1394632811/1394632811_WxH.jpg",
-        "https://content.skyscnr.com/available/997854386/997854386_WxH.jpg",
-        "https://content.skyscnr.com/available/1542316171/1542316171_WxH.jpg"
-      ],
-      "otherRates": [
-        {
-          "partnerId": "h_bc",
-          "partnerName": "Booking.com",
-          "rawPrice": 192995,
-          "price": "₹ 12,063"
-        }
-      ],
-      "priceDescription": "₹ 173,157 for 16 nights",
-      "taxPolicy": "Taxes and fees not included",
-      "rateFeatures": [],
-      "cheapestOfferPartnerName": "Vio.com"
-    },
-    {
-      "hotelId": "46949241",
-      "heroImage": "https://content.skyscnr.com/available/1444319064/1444319064_WxH.jpg",
-      "name": "Mercure Glasgow City Hotel",
-      "stars": 3,
-      "brandIds": ["90718490", "90719199"],
-      "distance": "0.36 km from city centre",
-      "relevantPoiDistance": "0.22 km from Sir Robert Peel Statue",
-      "coordinates": [-4.249995, 55.859713],
-      "price": "₹ 10,263",
-      "cheapestOfferPartnerId": "h_fd",
-      "cheapestOfferRateId": null,
-      "rawPrice": 10263,
-      "rating": {
-        "description": "Good",
-        "count": 1492,
-        "value": "7.0",
-        "color": "colorKolkata"
-      },
-      "reviewSummary": {
-        "description": "Good",
-        "count": 1492,
-        "formatCount": "1,492",
-        "value": "3.5",
-        "formatValue": "3.5",
-        "color": "colorKolkata",
-        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/3.5-64600-4.png",
-        "confidenceBadge": {
-          "type": "location",
-          "score": 4.5,
-          "icon": "thumbs-up",
-          "color": {
-            "light": "colorMonteverde",
-            "dark": "colorMonteverde"
-          },
-          "message": "Hotel location is rated 4.5/5"
-        }
-      },
-      "cheapestOffer": "meta",
-      "offerTypes": "meta",
-      "guestType": null,
-      "exclusiveDealLabel": null,
-      "pricesFrom": "2 prices from",
-      "images": [
-        "https://content.skyscnr.com/available/1444319064/1444319064_WxH.jpg",
-        "https://content.skyscnr.com/available/1444319082/1444319082_WxH.jpg",
-        "https://content.skyscnr.com/available/1407612512/1407612512_WxH.jpg"
-      ],
-      "otherRates": [
-        {
-          "partnerId": "h_bc",
-          "partnerName": "Booking.com",
-          "rawPrice": 183018,
-          "price": "₹ 11,439"
-        }
-      ],
-      "priceDescription": "₹ 164,207 for 16 nights",
-      "taxPolicy": "Taxes and fees not included",
-      "rateFeatures": [],
-      "cheapestOfferPartnerName": "Vio.com"
-    },
-    {
-      "hotelId": "213313129",
-      "heroImage": "https://content.skyscnr.com/available/1388220949/1388220949_WxH.jpg",
-      "name": "Aparthotel Adagio Glasgow Central",
-      "stars": 4,
-      "brandIds": [],
-      "distance": "0.70 km from city centre",
-      "relevantPoiDistance": "0.69 km from Sir Robert Peel Statue",
-      "coordinates": [-4.256004, 55.856406],
-      "price": "₹ 12,095",
-      "cheapestOfferPartnerId": "h_fd",
-      "cheapestOfferRateId": null,
-      "rawPrice": 12095,
-      "rating": {
-        "description": "Very good",
-        "count": 70,
-        "value": "8.0",
-        "color": "colorMonteverde"
-      },
-      "reviewSummary": {
-        "description": "Very good",
-        "count": 70,
-        "formatCount": "70",
-        "value": "4.0",
-        "formatValue": "4.0",
-        "color": "colorMonteverde",
-        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-64600-4.png",
-        "confidenceBadge": {
-          "type": "location",
-          "score": 5,
-          "icon": "thumbs-up",
-          "color": {
-            "light": "colorMonteverde",
-            "dark": "colorMonteverde"
-          },
-          "message": "Hotel location is rated 5/5"
-        }
-      },
-      "cheapestOffer": "meta",
-      "offerTypes": "meta",
-      "guestType": null,
-      "exclusiveDealLabel": null,
-      "pricesFrom": "2 prices from",
-      "images": [
-        "https://content.skyscnr.com/available/1388220949/1388220949_WxH.jpg",
-        "https://content.skyscnr.com/available/1220610638/1220610638_WxH.jpg",
-        "https://content.skyscnr.com/available/1645253033/1645253033_WxH.jpg"
-      ],
-      "otherRates": [
-        {
-          "partnerId": "h_bc",
-          "partnerName": "Booking.com",
-          "rawPrice": 194111,
-          "price": "₹ 12,132"
-        }
-      ],
-      "priceDescription": "₹ 193,513 for 16 nights",
-      "taxPolicy": "Taxes and fees not included",
-      "rateFeatures": [
-        {
-          "key": "free_cancellation",
-          "text": "Free cancellation",
-          "color": {
-            "light": "colorAbisko",
-            "dark": "colorValensole"
+        "reviewSummary": {
+          "description": "Excellent",
+          "count": 742,
+          "formatCount": "742",
+          "value": "4.5",
+          "formatValue": "4.5",
+          "color": "colorMonteverde",
+          "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.png",
+          "confidenceBadge": {
+            "type": "location",
+            "score": 5,
+            "icon": "thumbs-up",
+            "color": {
+              "light": "colorMonteverde",
+              "dark": "colorMonteverde"
+            },
+            "message": "Hotel location is rated 5/5"
           }
-        }
-      ],
-      "cheapestOfferPartnerName": "Vio.com"
-    }
-  ],
-  "nightsForPrice": "Per night",
-  "resultsSummary": "113 results sorted by Best",
-  "filters": [
-    {
-      "type": "price_buckets",
-      "title": "Price",
-      "values": [
-        {
-          "id": "PR_BK_0",
-          "label": "PR_BK_0",
-          "minPrice": 0,
-          "maxPrice": 74800,
-          "count": 0
         },
-        {
-          "id": "PR_BK_1",
-          "label": "PR_BK_1",
-          "minPrice": 74800,
-          "maxPrice": 149600,
-          "count": 12
+        "cheapestOffer": "meta",
+        "offerTypes": "meta",
+        "guestType": null,
+        "exclusiveDealLabel": null,
+        "pricesFrom": "1 price",
+        "images": [
+          "https://content.skyscnr.com/available/1389307609/1389307609_WxH.jpg",
+          "https://content.skyscnr.com/available/1389307526/1389307526_WxH.jpg",
+          "https://content.skyscnr.com/available/1549102851/1549102851_WxH.jpg"
+        ],
+        "otherRates": [],
+        "priceDescription": "₹ 54,527 for 9 nights",
+        "taxPolicy": "Taxes and fees not included",
+        "rateFeatures": [],
+        "cheapestOfferPartnerName": "Booking.com"
+      },
+      {
+        "hotelId": "162223823",
+        "heroImage": "https://content.skyscnr.com/available/1352396606/1352396606_WxH.jpg",
+        "name": "Travelodge Edinburgh Dreghorn",
+        "stars": 3,
+        "brandIds": [],
+        "distance": "6.30 km from city centre",
+        "relevantPoiDistance": null,
+        "coordinates": [-3.233257, 55.900424],
+        "price": "₹ 13,048",
+        "cheapestOfferPartnerId": "h_ad",
+        "cheapestOfferRateId": null,
+        "rawPrice": 13048,
+        "rating": {
+          "description": "Very good",
+          "count": 1002,
+          "value": "8.0",
+          "color": "colorMonteverde"
         },
-        {
-          "id": "PR_BK_2",
-          "label": "PR_BK_2",
-          "minPrice": 149600,
-          "maxPrice": 224400,
-          "count": 32
+        "reviewSummary": {
+          "description": "Very good",
+          "count": 1002,
+          "formatCount": "1,002",
+          "value": "4.0",
+          "formatValue": "4.0",
+          "color": "colorMonteverde",
+          "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-64600-4.png",
+          "confidenceBadge": {
+            "type": "location",
+            "score": 4.5,
+            "icon": "thumbs-up",
+            "color": {
+              "light": "colorMonteverde",
+              "dark": "colorMonteverde"
+            },
+            "message": "Hotel location is rated 4.5/5"
+          }
         },
-        {
-          "id": "PR_BK_3",
-          "label": "PR_BK_3",
-          "minPrice": 224400,
-          "maxPrice": 299200,
-          "count": 34
+        "cheapestOffer": "meta",
+        "offerTypes": "meta",
+        "guestType": null,
+        "exclusiveDealLabel": null,
+        "pricesFrom": "2 prices from",
+        "images": [
+          "https://content.skyscnr.com/available/1352396606/1352396606_WxH.jpg",
+          "https://content.skyscnr.com/available/1441621269/1441621269_WxH.jpg",
+          "https://content.skyscnr.com/available/1352396558/1352396558_WxH.jpg"
+        ],
+        "otherRates": [
+          {
+            "partnerId": "h_fd",
+            "partnerName": "Vio.com",
+            "rawPrice": 119422,
+            "price": "₹ 13,270"
+          }
+        ],
+        "priceDescription": "₹ 117,427 for 9 nights",
+        "taxPolicy": "Taxes and fees not included",
+        "rateFeatures": [],
+        "cheapestOfferPartnerName": "Agoda"
+      },
+      {
+        "hotelId": "129283581",
+        "heroImage": "https://content.skyscnr.com/available/1646920482/1646920482_WxH.jpg",
+        "name": "Ibis Budget Edinburgh Park",
+        "stars": 3,
+        "brandIds": ["90718394", "90719199"],
+        "distance": "8.06 km from city centre",
+        "relevantPoiDistance": "1.33 km from Edinburgh Park Station",
+        "coordinates": [-3.319919, 55.937511],
+        "price": "₹ 16,210",
+        "cheapestOfferPartnerId": "h_bc",
+        "cheapestOfferRateId": null,
+        "rawPrice": 16210,
+        "rating": {
+          "description": "Very good",
+          "count": 2018,
+          "value": "8.0",
+          "color": "colorMonteverde"
         },
-        {
-          "id": "PR_BK_4",
-          "label": "PR_BK_4",
-          "minPrice": 299200,
-          "maxPrice": 374000,
-          "count": 18
+        "reviewSummary": {
+          "description": "Very good",
+          "count": 2018,
+          "formatCount": "2,018",
+          "value": "4.0",
+          "formatValue": "4.0",
+          "color": "colorMonteverde",
+          "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-64600-4.png"
         },
-        {
-          "id": "PR_BK_5",
-          "label": "PR_BK_5",
-          "minPrice": 374000,
-          "maxPrice": null,
-          "count": 17
-        }
-      ]
+        "cheapestOffer": "meta",
+        "offerTypes": "meta",
+        "guestType": null,
+        "exclusiveDealLabel": null,
+        "pricesFrom": "2 prices from",
+        "images": [
+          "https://content.skyscnr.com/available/1646920482/1646920482_WxH.jpg",
+          "https://content.skyscnr.com/available/1274364385/1274364385_WxH.jpg",
+          "https://content.skyscnr.com/available/1217385062/1217385062_WxH.jpg"
+        ],
+        "otherRates": [
+          {
+            "partnerId": "h_ad",
+            "partnerName": "Agoda",
+            "rawPrice": 146254,
+            "price": "₹ 16,251"
+          }
+        ],
+        "priceDescription": "₹ 145,890 for 9 nights",
+        "taxPolicy": "Taxes and fees not included",
+        "rateFeatures": [],
+        "cheapestOfferPartnerName": "Booking.com"
+      },
+      {
+        "hotelId": "117259187",
+        "heroImage": "https://content.skyscnr.com/available/1315474879/1315474879_WxH.jpg",
+        "name": "Holiday Inn Edinburgh Zoo, an IHG Hotel",
+        "stars": 4,
+        "brandIds": ["90718423", "90719191"],
+        "distance": "4.73 km from city centre",
+        "relevantPoiDistance": "2.41 km from Edinburgh Napier University",
+        "coordinates": [-3.267278, 55.942858],
+        "price": "₹ 19,636",
+        "cheapestOfferPartnerId": "h_bc",
+        "cheapestOfferRateId": null,
+        "rawPrice": 19636,
+        "rating": {
+          "description": "Good",
+          "count": 3176,
+          "value": "7.0",
+          "color": "colorKolkata"
+        },
+        "reviewSummary": {
+          "description": "Good",
+          "count": 3176,
+          "formatCount": "3,176",
+          "value": "3.5",
+          "formatValue": "3.5",
+          "color": "colorKolkata",
+          "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/3.5-64600-4.png"
+        },
+        "cheapestOffer": "meta",
+        "offerTypes": "meta",
+        "guestType": null,
+        "exclusiveDealLabel": null,
+        "pricesFrom": "2 prices from",
+        "images": [
+          "https://content.skyscnr.com/available/1315474879/1315474879_WxH.jpg",
+          "https://content.skyscnr.com/available/1315474727/1315474727_WxH.jpg",
+          "https://content.skyscnr.com/available/1315474776/1315474776_WxH.jpg"
+        ],
+        "otherRates": [
+          {
+            "partnerId": "h_ad",
+            "partnerName": "Agoda",
+            "rawPrice": 177164,
+            "price": "₹ 19,685"
+          }
+        ],
+        "priceDescription": "₹ 176,723 for 9 nights",
+        "taxPolicy": "Taxes and fees not included",
+        "rateFeatures": [
+          {
+            "key": "breakfast_included",
+            "text": "Breakfast included",
+            "color": {
+              "light": "colorMonteverde",
+              "dark": "colorMonteverde"
+            }
+          }
+        ],
+        "cheapestOfferPartnerName": "Booking.com"
+      },
+      {
+        "hotelId": "131187598",
+        "heroImage": "https://content.skyscnr.com/available/1646069696/1646069696_WxH.jpg",
+        "name": "Village Hotel Edinburgh",
+        "stars": 4,
+        "brandIds": [],
+        "distance": "3.13 km from city centre",
+        "relevantPoiDistance": "2.94 km from Princes Street",
+        "coordinates": [-3.23557, 55.9678],
+        "price": "₹ 20,288",
+        "cheapestOfferPartnerId": "h_ad",
+        "cheapestOfferRateId": null,
+        "rawPrice": 20288,
+        "rating": {
+          "description": "Very good",
+          "count": 4339,
+          "value": "8.0",
+          "color": "colorMonteverde"
+        },
+        "reviewSummary": {
+          "description": "Very good",
+          "count": 4339,
+          "formatCount": "4,339",
+          "value": "4.0",
+          "formatValue": "4.0",
+          "color": "colorMonteverde",
+          "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-64600-4.png"
+        },
+        "cheapestOffer": "meta",
+        "offerTypes": "meta",
+        "guestType": null,
+        "exclusiveDealLabel": null,
+        "pricesFrom": "3 prices from",
+        "images": [
+          "https://content.skyscnr.com/available/1646069696/1646069696_WxH.jpg",
+          "https://content.skyscnr.com/available/1556555294/1556555294_WxH.jpg",
+          "https://content.skyscnr.com/available/1646069717/1646069717_WxH.jpg"
+        ],
+        "otherRates": [
+          {
+            "partnerId": "h_bc",
+            "partnerName": "Booking.com",
+            "rawPrice": 202374,
+            "price": "₹ 22,486"
+          },
+          {
+            "partnerId": "h_ck",
+            "partnerName": "TravelClick",
+            "rawPrice": 202374,
+            "price": "₹ 22,486"
+          }
+        ],
+        "priceDescription": "₹ 182,591 for 9 nights",
+        "taxPolicy": "Taxes and fees not included",
+        "rateFeatures": [],
+        "cheapestOfferPartnerName": "Agoda"
+      },
+      {
+        "hotelId": "151671430",
+        "heroImage": "https://content.skyscnr.com/available/1645402160/1645402160_WxH.jpg",
+        "name": "Dakota Edinburgh",
+        "stars": 4,
+        "brandIds": [],
+        "distance": "13.31 km from city centre",
+        "relevantPoiDistance": null,
+        "coordinates": [-3.40053, 55.98228],
+        "price": "₹ 20,242",
+        "cheapestOfferPartnerId": "h_ad",
+        "cheapestOfferRateId": null,
+        "rawPrice": 20242,
+        "rating": {
+          "description": "Excellent",
+          "count": 3563,
+          "value": "9.0",
+          "color": "colorMonteverde"
+        },
+        "reviewSummary": {
+          "description": "Excellent",
+          "count": 3563,
+          "formatCount": "3,563",
+          "value": "4.5",
+          "formatValue": "4.5",
+          "color": "colorMonteverde",
+          "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.png"
+        },
+        "cheapestOffer": "meta",
+        "offerTypes": "meta",
+        "guestType": null,
+        "exclusiveDealLabel": null,
+        "pricesFrom": "2 prices from",
+        "images": [
+          "https://content.skyscnr.com/available/1645402160/1645402160_WxH.jpg",
+          "https://content.skyscnr.com/available/1516071904/1516071904_WxH.jpg",
+          "https://content.skyscnr.com/available/1277547962/1277547962_WxH.jpg"
+        ],
+        "otherRates": [
+          {
+            "partnerId": "h_bc",
+            "partnerName": "Booking.com",
+            "rawPrice": 207063,
+            "price": "₹ 23,007"
+          }
+        ],
+        "priceDescription": "₹ 182,177 for 9 nights",
+        "taxPolicy": "Taxes and fees not included",
+        "rateFeatures": [],
+        "cheapestOfferPartnerName": "Agoda"
+      },
+      {
+        "hotelId": "153328516",
+        "heroImage": "https://content.skyscnr.com/available/1352850130/1352850130_WxH.jpg",
+        "name": "Leonardo Royal Edinburgh Haymarket",
+        "stars": 4,
+        "brandIds": ["90718997"],
+        "distance": "1.48 km from city centre",
+        "relevantPoiDistance": "1.18 km from Princes Street",
+        "coordinates": [-3.213888, 55.945893],
+        "price": "₹ 25,186",
+        "cheapestOfferPartnerId": "h_bc",
+        "cheapestOfferRateId": null,
+        "rawPrice": 25186,
+        "rating": {
+          "description": "Very good",
+          "count": 4826,
+          "value": "8.0",
+          "color": "colorMonteverde"
+        },
+        "reviewSummary": {
+          "description": "Very good",
+          "count": 4826,
+          "formatCount": "4,826",
+          "value": "4.0",
+          "formatValue": "4.0",
+          "color": "colorMonteverde",
+          "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-64600-4.png",
+          "confidenceBadge": {
+            "type": "location",
+            "score": 4.5,
+            "icon": "thumbs-up",
+            "color": {
+              "light": "colorMonteverde",
+              "dark": "colorMonteverde"
+            },
+            "message": "Hotel location is rated 4.5/5"
+          }
+        },
+        "cheapestOffer": "meta",
+        "offerTypes": "meta",
+        "guestType": null,
+        "exclusiveDealLabel": null,
+        "pricesFrom": "2 prices from",
+        "images": [
+          "https://content.skyscnr.com/available/1352850130/1352850130_WxH.jpg",
+          "https://content.skyscnr.com/available/1579912492/1579912492_WxH.jpg",
+          "https://content.skyscnr.com/available/1352850228/1352850228_WxH.jpg"
+        ],
+        "otherRates": [
+          {
+            "partnerId": "h_ad",
+            "partnerName": "Agoda",
+            "rawPrice": 227232,
+            "price": "₹ 25,248"
+          }
+        ],
+        "priceDescription": "₹ 226,666 for 9 nights",
+        "taxPolicy": "Taxes and fees not included",
+        "rateFeatures": [],
+        "cheapestOfferPartnerName": "Booking.com"
+      },
+      {
+        "hotelId": "203792795",
+        "heroImage": "https://content.skyscnr.com/available/1394740636/1394740636_WxH.jpg",
+        "name": "Point A Hotel Edinburgh Haymarket",
+        "stars": 3,
+        "brandIds": [],
+        "distance": "1.31 km from city centre",
+        "relevantPoiDistance": "1.02 km from Princes Street",
+        "coordinates": [-3.210905, 55.946073],
+        "price": "₹ 19,924",
+        "cheapestOfferPartnerId": "h_ad",
+        "cheapestOfferRateId": null,
+        "rawPrice": 19924,
+        "rating": {
+          "description": "Excellent",
+          "count": 870,
+          "value": "9.0",
+          "color": "colorMonteverde"
+        },
+        "reviewSummary": {
+          "description": "Excellent",
+          "count": 870,
+          "formatCount": "870",
+          "value": "4.5",
+          "formatValue": "4.5",
+          "color": "colorMonteverde",
+          "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.png",
+          "confidenceBadge": {
+            "type": "location",
+            "score": 4.5,
+            "icon": "thumbs-up",
+            "color": {
+              "light": "colorMonteverde",
+              "dark": "colorMonteverde"
+            },
+            "message": "Hotel location is rated 4.5/5"
+          }
+        },
+        "cheapestOffer": "meta",
+        "offerTypes": "meta",
+        "guestType": null,
+        "exclusiveDealLabel": null,
+        "pricesFrom": "3 prices from",
+        "images": [
+          "https://content.skyscnr.com/available/1394740636/1394740636_WxH.jpg",
+          "https://content.skyscnr.com/available/1394740681/1394740681_WxH.jpg",
+          "https://content.skyscnr.com/available/1330531405/1330531405_WxH.jpg"
+        ],
+        "otherRates": [
+          {
+            "partnerId": "h_fd",
+            "partnerName": "Vio.com",
+            "rawPrice": 181531,
+            "price": "₹ 20,171"
+          },
+          {
+            "partnerId": "h_bc",
+            "partnerName": "Booking.com",
+            "rawPrice": 243009,
+            "price": "₹ 27,001"
+          }
+        ],
+        "priceDescription": "₹ 179,311 for 9 nights",
+        "taxPolicy": "Taxes and fees not included",
+        "rateFeatures": [],
+        "cheapestOfferPartnerName": "Agoda"
+      },
+      {
+        "hotelId": "47026933",
+        "heroImage": "https://content.skyscnr.com/available/1500748254/1500748254_WxH.jpg",
+        "name": "Novotel Edinburgh Park",
+        "stars": 4,
+        "brandIds": ["90718511", "90719199"],
+        "distance": "7.88 km from city centre",
+        "relevantPoiDistance": "1.99 km from Heriot-Watt University",
+        "coordinates": [-3.311149, 55.926627],
+        "price": "₹ 23,927",
+        "cheapestOfferPartnerId": "h_bc",
+        "cheapestOfferRateId": null,
+        "rawPrice": 23927,
+        "rating": {
+          "description": "Very good",
+          "count": 3571,
+          "value": "8.0",
+          "color": "colorMonteverde"
+        },
+        "reviewSummary": {
+          "description": "Very good",
+          "count": 3571,
+          "formatCount": "3,571",
+          "value": "4.0",
+          "formatValue": "4.0",
+          "color": "colorMonteverde",
+          "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-64600-4.png"
+        },
+        "cheapestOffer": "meta",
+        "offerTypes": "meta",
+        "guestType": null,
+        "exclusiveDealLabel": null,
+        "pricesFrom": "2 prices from",
+        "images": [
+          "https://content.skyscnr.com/available/1500748254/1500748254_WxH.jpg",
+          "https://content.skyscnr.com/available/1544330416/1544330416_WxH.jpg",
+          "https://content.skyscnr.com/available/1620224673/1620224673_WxH.jpg"
+        ],
+        "otherRates": [
+          {
+            "partnerId": "h_ad",
+            "partnerName": "Agoda",
+            "rawPrice": 215880,
+            "price": "₹ 23,987"
+          }
+        ],
+        "priceDescription": "₹ 215,342 for 9 nights",
+        "taxPolicy": "Taxes and fees not included",
+        "rateFeatures": [],
+        "cheapestOfferPartnerName": "Booking.com"
+      },
+      {
+        "hotelId": "115270000",
+        "heroImage": "https://content.skyscnr.com/available/1645891186/1645891186_WxH.jpg",
+        "name": "Mercure Edinburgh City - Princes Street Hotel",
+        "stars": 3,
+        "brandIds": ["90718490", "90719199"],
+        "distance": "0.07 km from city centre",
+        "relevantPoiDistance": "0.24 km from Princes Street",
+        "coordinates": [-3.1944, 55.95259],
+        "price": "₹ 26,484",
+        "cheapestOfferPartnerId": "h_bc",
+        "cheapestOfferRateId": null,
+        "rawPrice": 26484,
+        "rating": {
+          "description": "Good",
+          "count": 3600,
+          "value": "7.0",
+          "color": "colorKolkata"
+        },
+        "reviewSummary": {
+          "description": "Good",
+          "count": 3600,
+          "formatCount": "3,600",
+          "value": "3.5",
+          "formatValue": "3.5",
+          "color": "colorKolkata",
+          "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/3.5-64600-4.png",
+          "confidenceBadge": {
+            "type": "location",
+            "score": 5,
+            "icon": "thumbs-up",
+            "color": {
+              "light": "colorMonteverde",
+              "dark": "colorMonteverde"
+            },
+            "message": "Hotel location is rated 5/5"
+          }
+        },
+        "cheapestOffer": "meta",
+        "offerTypes": "meta",
+        "guestType": null,
+        "exclusiveDealLabel": null,
+        "pricesFrom": "2 prices from",
+        "images": [
+          "https://content.skyscnr.com/available/1645891186/1645891186_WxH.jpg",
+          "https://content.skyscnr.com/available/1508500134/1508500134_WxH.jpg",
+          "https://content.skyscnr.com/available/1508500115/1508500115_WxH.jpg"
+        ],
+        "otherRates": [
+          {
+            "partnerId": "h_ad",
+            "partnerName": "Agoda",
+            "rawPrice": 238951,
+            "price": "₹ 26,551"
+          }
+        ],
+        "priceDescription": "₹ 238,356 for 9 nights",
+        "taxPolicy": "Taxes and fees not included",
+        "rateFeatures": [
+          {
+            "key": "free_cancellation",
+            "text": "Free cancellation",
+            "color": {
+              "light": "colorAbisko",
+              "dark": "colorValensole"
+            }
+          }
+        ],
+        "cheapestOfferPartnerName": "Booking.com"
+      },
+      {
+        "hotelId": "203764158",
+        "heroImage": "https://content.skyscnr.com/available/1167873182/1167873182_WxH.jpg",
+        "name": "Yotel Edinburgh",
+        "stars": 4,
+        "brandIds": [],
+        "distance": "0.79 km from city centre",
+        "relevantPoiDistance": "0.53 km from Princes Street",
+        "coordinates": [-3.205938, 55.953455],
+        "price": "₹ 25,172",
+        "cheapestOfferPartnerId": "h_fd",
+        "cheapestOfferRateId": null,
+        "rawPrice": 25172,
+        "rating": {
+          "description": "Very good",
+          "count": 1288,
+          "value": "8.0",
+          "color": "colorMonteverde"
+        },
+        "reviewSummary": {
+          "description": "Very good",
+          "count": 1288,
+          "formatCount": "1,288",
+          "value": "4.0",
+          "formatValue": "4.0",
+          "color": "colorMonteverde",
+          "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-64600-4.png",
+          "confidenceBadge": {
+            "type": "location",
+            "score": 4.5,
+            "icon": "thumbs-up",
+            "color": {
+              "light": "colorMonteverde",
+              "dark": "colorMonteverde"
+            },
+            "message": "Hotel location is rated 4.5/5"
+          }
+        },
+        "cheapestOffer": "meta",
+        "offerTypes": "meta",
+        "guestType": null,
+        "exclusiveDealLabel": null,
+        "pricesFrom": "3 prices from",
+        "images": [
+          "https://content.skyscnr.com/available/1167873182/1167873182_WxH.jpg",
+          "https://content.skyscnr.com/available/1611018272/1611018272_WxH.jpg",
+          "https://content.skyscnr.com/available/1301947773/1301947773_WxH.jpg"
+        ],
+        "otherRates": [
+          {
+            "partnerId": "h_ad",
+            "partnerName": "Agoda",
+            "rawPrice": 231368,
+            "price": "₹ 25,708"
+          },
+          {
+            "partnerId": "h_bc",
+            "partnerName": "Booking.com",
+            "rawPrice": 264043,
+            "price": "₹ 29,339"
+          }
+        ],
+        "priceDescription": "₹ 226,547 for 9 nights",
+        "taxPolicy": "Taxes and fees not included",
+        "rateFeatures": [],
+        "cheapestOfferPartnerName": "Vio.com"
+      },
+      {
+        "hotelId": "46948212",
+        "heroImage": "https://content.skyscnr.com/available/1579796150/1579796150_WxH.jpg",
+        "name": "Old Waverley Hotel",
+        "stars": 3,
+        "brandIds": [],
+        "distance": "0.03 km from city centre",
+        "relevantPoiDistance": "0.32 km from Princes Street",
+        "coordinates": [-3.193132, 55.952795],
+        "price": "₹ 27,328",
+        "cheapestOfferPartnerId": "h_fd",
+        "cheapestOfferRateId": null,
+        "rawPrice": 27328,
+        "rating": {
+          "description": "Very good",
+          "count": 60,
+          "value": "8.6",
+          "color": "colorMonteverde"
+        },
+        "reviewSummary": {
+          "description": "Excellent",
+          "count": 60,
+          "formatCount": "60",
+          "value": "4.3",
+          "formatValue": "4.3",
+          "color": "colorMonteverde",
+          "taImage": null
+        },
+        "cheapestOffer": "meta",
+        "offerTypes": "meta",
+        "guestType": null,
+        "exclusiveDealLabel": null,
+        "pricesFrom": "3 prices from",
+        "images": [
+          "https://content.skyscnr.com/available/1579796150/1579796150_WxH.jpg",
+          "https://content.skyscnr.com/available/1646025758/1646025758_WxH.jpg",
+          "https://content.skyscnr.com/available/1609728397/1609728397_WxH.jpg"
+        ],
+        "otherRates": [
+          {
+            "partnerId": "h_bc",
+            "partnerName": "Booking.com",
+            "rawPrice": 271780,
+            "price": "₹ 30,198"
+          },
+          {
+            "partnerId": "h_ad",
+            "partnerName": "Agoda",
+            "rawPrice": 272459,
+            "price": "₹ 30,274"
+          }
+        ],
+        "priceDescription": "₹ 245,948 for 9 nights",
+        "taxPolicy": "Taxes and fees not included",
+        "rateFeatures": [
+          {
+            "key": "free_cancellation",
+            "text": "Free cancellation",
+            "color": {
+              "light": "colorAbisko",
+              "dark": "colorValensole"
+            }
+          }
+        ],
+        "cheapestOfferPartnerName": "Vio.com"
+      },
+      {
+        "hotelId": "105050487",
+        "heroImage": "https://content.skyscnr.com/available/1491586190/1491586190_WxH.jpg",
+        "name": "Leonardo Edinburgh Murrayfield",
+        "stars": 4,
+        "brandIds": ["90718997"],
+        "distance": "5.37 km from city centre",
+        "relevantPoiDistance": null,
+        "coordinates": [-3.27943, 55.95574],
+        "price": "₹ 26,341",
+        "cheapestOfferPartnerId": "h_bc",
+        "cheapestOfferRateId": null,
+        "rawPrice": 26341,
+        "rating": {
+          "description": "Very good",
+          "count": 1926,
+          "value": "8.0",
+          "color": "colorMonteverde"
+        },
+        "reviewSummary": {
+          "description": "Very good",
+          "count": 1926,
+          "formatCount": "1,926",
+          "value": "4.0",
+          "formatValue": "4.0",
+          "color": "colorMonteverde",
+          "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-64600-4.png"
+        },
+        "cheapestOffer": "meta",
+        "offerTypes": "meta",
+        "guestType": null,
+        "exclusiveDealLabel": null,
+        "pricesFrom": "2 prices from",
+        "images": [
+          "https://content.skyscnr.com/available/1491586190/1491586190_WxH.jpg",
+          "https://content.skyscnr.com/available/1491586140/1491586140_WxH.jpg",
+          "https://content.skyscnr.com/available/676746947/676746947_WxH.jpg"
+        ],
+        "otherRates": [
+          {
+            "partnerId": "h_ad",
+            "partnerName": "Agoda",
+            "rawPrice": 237660,
+            "price": "₹ 26,407"
+          }
+        ],
+        "priceDescription": "₹ 237,068 for 9 nights",
+        "taxPolicy": "Taxes and fees not included",
+        "rateFeatures": [],
+        "cheapestOfferPartnerName": "Booking.com"
+      },
+      {
+        "hotelId": "204977709",
+        "heroImage": "https://content.skyscnr.com/available/1383021602/1383021602_WxH.jpg",
+        "name": "Travelodge Edinburgh Park",
+        "stars": 2,
+        "brandIds": [],
+        "distance": "7.10 km from city centre",
+        "relevantPoiDistance": "2.91 km from Heriot-Watt University",
+        "coordinates": [-3.302244, 55.933555],
+        "price": "₹ 17,413",
+        "cheapestOfferPartnerId": "h_fd",
+        "cheapestOfferRateId": null,
+        "rawPrice": 17413,
+        "rating": {
+          "description": "Excellent",
+          "count": 450,
+          "value": "9.0",
+          "color": "colorMonteverde"
+        },
+        "reviewSummary": {
+          "description": "Excellent",
+          "count": 450,
+          "formatCount": "450",
+          "value": "4.5",
+          "formatValue": "4.5",
+          "color": "colorMonteverde",
+          "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.png",
+          "confidenceBadge": {
+            "type": "location",
+            "score": 4.5,
+            "icon": "thumbs-up",
+            "color": {
+              "light": "colorMonteverde",
+              "dark": "colorMonteverde"
+            },
+            "message": "Hotel location is rated 4.5/5"
+          }
+        },
+        "cheapestOffer": "meta",
+        "offerTypes": "meta",
+        "guestType": null,
+        "exclusiveDealLabel": null,
+        "pricesFrom": "1 price",
+        "images": [
+          "https://content.skyscnr.com/available/1383021602/1383021602_WxH.jpg",
+          "https://content.skyscnr.com/available/1383021569/1383021569_WxH.jpg",
+          "https://content.skyscnr.com/available/1085711657/1085711657_WxH.jpg"
+        ],
+        "otherRates": [],
+        "priceDescription": "₹ 156,712 for 9 nights",
+        "taxPolicy": "Taxes and fees not included",
+        "rateFeatures": [
+          {
+            "key": "breakfast_included",
+            "text": "Breakfast included",
+            "color": {
+              "light": "colorMonteverde",
+              "dark": "colorMonteverde"
+            }
+          }
+        ],
+        "cheapestOfferPartnerName": "Vio.com"
+      },
+      {
+        "hotelId": "115727411",
+        "heroImage": "https://content.skyscnr.com/available/1380938444/1380938444_WxH.jpg",
+        "name": "Cheval Old Town Chambers",
+        "stars": 5,
+        "brandIds": [],
+        "distance": "0.33 km from city centre",
+        "relevantPoiDistance": "0.49 km from Princes Street",
+        "coordinates": [-3.19084, 55.949884],
+        "price": "₹ 65,261",
+        "cheapestOfferPartnerId": "h_ad",
+        "cheapestOfferRateId": null,
+        "rawPrice": 65261,
+        "rating": {
+          "description": "With honours",
+          "count": 2153,
+          "value": "10.0",
+          "color": "colorMonteverde"
+        },
+        "reviewSummary": {
+          "description": "With honours",
+          "count": 2153,
+          "formatCount": "2,153",
+          "value": "5.0",
+          "formatValue": "5.0",
+          "color": "colorMonteverde",
+          "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/5.0-64600-4.png",
+          "confidenceBadge": {
+            "type": "location",
+            "score": 5,
+            "icon": "thumbs-up",
+            "color": {
+              "light": "colorMonteverde",
+              "dark": "colorMonteverde"
+            },
+            "message": "Hotel location is rated 5/5"
+          }
+        },
+        "cheapestOffer": "meta",
+        "offerTypes": "meta",
+        "guestType": null,
+        "exclusiveDealLabel": null,
+        "pricesFrom": "1 price",
+        "images": [
+          "https://content.skyscnr.com/available/1380938444/1380938444_WxH.jpg",
+          "https://content.skyscnr.com/available/1348540703/1348540703_WxH.jpg",
+          "https://content.skyscnr.com/available/1212915153/1212915153_WxH.jpg"
+        ],
+        "otherRates": [],
+        "priceDescription": "₹ 587,344 for 9 nights",
+        "taxPolicy": "Taxes and fees not included",
+        "rateFeatures": [],
+        "cheapestOfferPartnerName": "Agoda"
+      }
+    ],
+    "nightsForPrice": "Per night",
+    "resultsSummary": "99 results sorted by Best",
+    "filters": [
+      {
+        "type": "price_buckets",
+        "title": "Price",
+        "values": [
+          {
+            "id": "PR_BK_0",
+            "label": "PR_BK_0",
+            "minPrice": 0,
+            "maxPrice": 77000,
+            "count": 6
+          },
+          {
+            "id": "PR_BK_1",
+            "label": "PR_BK_1",
+            "minPrice": 77000,
+            "maxPrice": 154000,
+            "count": 10
+          },
+          {
+            "id": "PR_BK_2",
+            "label": "PR_BK_2",
+            "minPrice": 154000,
+            "maxPrice": 231000,
+            "count": 32
+          },
+          {
+            "id": "PR_BK_3",
+            "label": "PR_BK_3",
+            "minPrice": 231000,
+            "maxPrice": 308000,
+            "count": 24
+          },
+          {
+            "id": "PR_BK_4",
+            "label": "PR_BK_4",
+            "minPrice": 308000,
+            "maxPrice": 385000,
+            "count": 13
+          },
+          {
+            "id": "PR_BK_5",
+            "label": "PR_BK_5",
+            "minPrice": 385000,
+            "maxPrice": null,
+            "count": 14
+          }
+        ]
+      },
+      {
+        "type": "stars",
+        "title": "Star rating",
+        "values": [
+          {
+            "id": "5",
+            "label": "5 stars",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 6
+          },
+          {
+            "id": "4",
+            "label": "4 stars",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 29
+          },
+          {
+            "id": "3",
+            "label": "3 stars",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 22
+          },
+          {
+            "id": "2",
+            "label": "2 stars",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 6
+          },
+          {
+            "id": "1",
+            "label": "1 star",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 0
+          },
+          {
+            "id": "no_stars",
+            "label": "Unrated",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 36
+          }
+        ]
+      },
+      {
+        "type": "meal_plan",
+        "title": "Meal plan",
+        "values": [
+          {
+            "id": "breakfast_included",
+            "label": "Breakfast included",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 46
+          },
+          {
+            "id": "RoomRates_label_mealsNotIncluded",
+            "label": "Meals not included",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 83
+          }
+        ]
+      },
+      {
+        "type": "guest_rating",
+        "title": "Guest rating",
+        "values": [
+          {
+            "id": "6",
+            "label": "Satisfactory",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 2
+          },
+          {
+            "id": "7",
+            "label": "Good",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 10
+          },
+          {
+            "id": "8",
+            "label": "Very good",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 25
+          },
+          {
+            "id": "9",
+            "label": "Excellent",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 23
+          },
+          {
+            "id": "9.5",
+            "label": "With honours",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 3
+          }
+        ]
+      },
+      {
+        "type": "rating",
+        "title": "Guest rating",
+        "values": [
+          {
+            "id": "3",
+            "label": "Satisfactory",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 2
+          },
+          {
+            "id": "3.5",
+            "label": "Good",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 10
+          },
+          {
+            "id": "4",
+            "label": "Very good",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 25
+          },
+          {
+            "id": "4.5",
+            "label": "Excellent",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 23
+          },
+          {
+            "id": "5",
+            "label": "With honours",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 3
+          }
+        ]
+      },
+      {
+        "type": "guest_type",
+        "title": "Popular with",
+        "values": [
+          {
+            "id": "business",
+            "label": "Business travellers",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 0
+          },
+          {
+            "id": "couple",
+            "label": "Couples",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 1
+          },
+          {
+            "id": "family",
+            "label": "Families",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 9
+          },
+          {
+            "id": "solo",
+            "label": "Solo travellers",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 0
+          }
+        ]
+      },
+      {
+        "type": "chain",
+        "title": "Hotel chain",
+        "values": [
+          {
+            "id": "90718958,90718423",
+            "label": "InterContinental Hotels Group",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 5
+          },
+          {
+            "id": "90718411,90718360,90718422",
+            "label": "Hilton",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 5
+          },
+          {
+            "id": "90718997",
+            "label": "Leonardo",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 4
+          },
+          {
+            "id": "90718338,90718485,113914902",
+            "label": "Marriott International",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 4
+          },
+          {
+            "id": "90718511,90718394,90718490,90718876",
+            "label": "Accor Hotels",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 4
+          },
+          {
+            "id": "90718306",
+            "label": "Britannia",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 1
+          }
+        ]
+      },
+      {
+        "type": "cancellation",
+        "title": "Cancellation policy",
+        "values": [
+          {
+            "id": "free_cancellation",
+            "label": "Free cancellation",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 70,
+            "type": "cancellation",
+            "linkageType": "covid"
+          },
+          {
+            "id": "refundable",
+            "label": "Refundable",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 0
+          },
+          {
+            "id": "non_refundable",
+            "label": "Non refundable",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 76
+          }
+        ]
+      },
+      {
+        "type": "amenities",
+        "title": "Amenities",
+        "values": [
+          {
+            "id": "WifiService",
+            "label": "Wi-Fi",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 92
+          },
+          {
+            "id": "Parking",
+            "label": "Parking",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 60
+          },
+          {
+            "id": "AirConditioning",
+            "label": "Air conditioning",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 38
+          },
+          {
+            "id": "AirportShuttleService",
+            "label": "Airport shuttle",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 11
+          },
+          {
+            "id": "Pool",
+            "label": "Pool",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 10
+          },
+          {
+            "id": "FitnessCenter",
+            "label": "Fitness centre",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 29
+          },
+          {
+            "id": "Spa",
+            "label": "Spa",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 11
+          },
+          {
+            "id": "FrontDesk24hService",
+            "label": "Front desk 24 hour",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 54
+          },
+          {
+            "id": "Restaurant",
+            "label": "Restaurant",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 46
+          },
+          {
+            "id": "NonSmokingService",
+            "label": "Non-smoking",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 94
+          },
+          {
+            "id": "Bathtub",
+            "label": "Bathtub",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 2
+          },
+          {
+            "id": "Laundry",
+            "label": "Laundry",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 47
+          },
+          {
+            "id": "Kitchen",
+            "label": "Kitchen",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 8
+          },
+          {
+            "id": "PetsAllowedService",
+            "label": "Pets allowed",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 30
+          },
+          {
+            "id": "Television",
+            "label": "Television",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 24
+          },
+          {
+            "id": "BabySittingService",
+            "label": "Baby-sitting",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 3
+          },
+          {
+            "id": "Lift",
+            "label": "Lift",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 57
+          },
+          {
+            "id": "DisabledFacility",
+            "label": "Disabled facilities",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 46
+          },
+          {
+            "id": "InternetAccessService",
+            "label": "Internet access",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 87
+          },
+          {
+            "id": "Heating",
+            "label": "Heating",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 73
+          },
+          {
+            "id": "FirstAidRoom",
+            "label": "First aid room",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 66
+          },
+          {
+            "id": "LuggageStorage",
+            "label": "Luggage storage",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 60
+          },
+          {
+            "id": "WiFiInDesignatedAreas",
+            "label": "WiFi in common areas",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 54
+          },
+          {
+            "id": "Bar",
+            "label": "Bar",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 48
+          },
+          {
+            "id": "RoomService",
+            "label": "Room service",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 51
+          },
+          {
+            "id": "MultilingualStaffService",
+            "label": "Multilingual staff",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 48
+          },
+          {
+            "id": "SafeDepositBox",
+            "label": "Safe deposit box",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 47
+          },
+          {
+            "id": "ExpressCheckinService",
+            "label": "Express check-in",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 53
+          },
+          {
+            "id": "ExpressCheckoutService",
+            "label": "Express check-out",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 50
+          },
+          {
+            "id": "Fax",
+            "label": "Fax",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 37
+          },
+          {
+            "id": "MeetingRoom",
+            "label": "Meeting facilities",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 32
+          },
+          {
+            "id": "WheelChairAccess",
+            "label": "Wheelchair access",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 33
+          },
+          {
+            "id": "Photocopier",
+            "label": "Photocopier",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 32
+          },
+          {
+            "id": "Shower",
+            "label": "Shower",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 29
+          },
+          {
+            "id": "BanquetingService",
+            "label": "Banqueting service",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 25
+          },
+          {
+            "id": "HairDryer",
+            "label": "Hairdryer",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 27
+          },
+          {
+            "id": "BathroomEmergencyPullCord",
+            "label": "Bathroom emergency pull cord",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 26
+          },
+          {
+            "id": "SmokingArea",
+            "label": "Smoking areas",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 31
+          },
+          {
+            "id": "ToiletWithGrabBar",
+            "label": "Toilet with grab bar",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 26
+          },
+          {
+            "id": "LobbyBar",
+            "label": "Lobby bar",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 24
+          },
+          {
+            "id": "LoweredBathroomSink",
+            "label": "Lowered bathroom sink",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 23
+          },
+          {
+            "id": "Desk",
+            "label": "Desk",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 21
+          },
+          {
+            "id": "AccessibleParking",
+            "label": "Accessible parking",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 23
+          },
+          {
+            "id": "Telephone",
+            "label": "Telephone",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 20
+          },
+          {
+            "id": "RaisedToilet",
+            "label": "Raised toilet",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 19
+          },
+          {
+            "id": "BusinessCenter",
+            "label": "Business centre",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 20
+          },
+          {
+            "id": "ConciergeService",
+            "label": "Concierge",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 25
+          },
+          {
+            "id": "Teahouse",
+            "label": "Teahouse",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 16
+          },
+          {
+            "id": "Cafe",
+            "label": "Café",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 16
+          },
+          {
+            "id": "WakeUpCallService",
+            "label": "Wake up call",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 18
+          },
+          {
+            "id": "IroningService",
+            "label": "Iron",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 20
+          },
+          {
+            "id": "TicketOffice",
+            "label": "Ticket office",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 18
+          },
+          {
+            "id": "BrailleOrTactileSignage",
+            "label": "Braille or tactile signage",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 11
+          },
+          {
+            "id": "Lounge",
+            "label": "Lounge",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 18
+          },
+          {
+            "id": "NonsmokingFloor",
+            "label": "Non-smoking floor",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 15
+          },
+          {
+            "id": "Sauna",
+            "label": "Sauna",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 11
+          },
+          {
+            "id": "WeddingFacility",
+            "label": "Wedding facilities",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 11
+          },
+          {
+            "id": "CarRental",
+            "label": "Car hire",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 16
+          },
+          {
+            "id": "IndoorSwimmingPool",
+            "label": "Indoor pool",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 10
+          },
+          {
+            "id": "Garden",
+            "label": "Garden",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 26
+          },
+          {
+            "id": "GameRoom",
+            "label": "Games room",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 16
+          },
+          {
+            "id": "MassageService",
+            "label": "Massage",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 9
+          },
+          {
+            "id": "SteamRoom",
+            "label": "Steam room",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 9
+          },
+          {
+            "id": "GolfAmenity",
+            "label": "Golf course",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 16
+          },
+          {
+            "id": "VisualAlarms",
+            "label": "Visual alarms",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 11
+          },
+          {
+            "id": "CurrencyExchangeService",
+            "label": "Currency exchange",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 11
+          },
+          {
+            "id": "BottledWaterService",
+            "label": "Complimentary bottled water",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 9
+          },
+          {
+            "id": "AssistiveListeningDevicesAvailable",
+            "label": "Assistive listening devices available",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 10
+          },
+          {
+            "id": "SatelliteTV",
+            "label": "Satellite TV",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 5
+          },
+          {
+            "id": "TourService",
+            "label": "Tours",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 13
+          },
+          {
+            "id": "TrouserPress",
+            "label": "Trouser press",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 8
+          },
+          {
+            "id": "BicycleRentalService",
+            "label": "Bicycle hire",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 10
+          },
+          {
+            "id": "CashMachine",
+            "label": "Cash machine",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 4
+          },
+          {
+            "id": "ElectricVehicleChargingStation",
+            "label": "Electric vehicle (EV) charging station",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 9
+          },
+          {
+            "id": "Fireplace",
+            "label": "Fireplace",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 6
+          },
+          {
+            "id": "TennisCourt",
+            "label": "Tennis court",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 6
+          },
+          {
+            "id": "BeautySalon",
+            "label": "Beauty salon",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 6
+          },
+          {
+            "id": "AuditoryGuidance",
+            "label": "Auditory guidance",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 3
+          },
+          {
+            "id": "BathrobeService",
+            "label": "Bathrobe",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 4
+          },
+          {
+            "id": "ValetParkingService",
+            "label": "Valet parking",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 5
+          },
+          {
+            "id": "HandrailsInStairways",
+            "label": "Handrails in stairways",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 6
+          },
+          {
+            "id": "Hairdressers",
+            "label": "Hairdressers",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 2
+          },
+          {
+            "id": "Shop",
+            "label": "Shops",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 4
+          },
+          {
+            "id": "CoffeeMaker",
+            "label": "Coffee maker",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 3
+          },
+          {
+            "id": "ExecutiveFloor",
+            "label": "Executive floor",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 3
+          },
+          {
+            "id": "ShuttleService",
+            "label": "Shuttle service",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 5
+          },
+          {
+            "id": "SquashCourt",
+            "label": "Squash",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 3
+          },
+          {
+            "id": "MiniBar",
+            "label": "Minibar",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 2
+          },
+          {
+            "id": "ShowerWithGrabBar",
+            "label": "Shower with grab bar",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 1
+          },
+          {
+            "id": "Barbeque",
+            "label": "Barbecue",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 4
+          },
+          {
+            "id": "ChildrenFacility",
+            "label": "Children's facilities",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 3
+          },
+          {
+            "id": "UVSunbeds",
+            "label": "UV sunbeds",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 3
+          },
+          {
+            "id": "Microwave",
+            "label": "Microwave",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 3
+          },
+          {
+            "id": "BowlingAlley",
+            "label": "Bowling alley",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 2
+          },
+          {
+            "id": "ATM",
+            "label": "ATM",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 2
+          },
+          {
+            "id": "Billiards",
+            "label": "Billiards",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 3
+          },
+          {
+            "id": "ConnectingRoomsService",
+            "label": "Connecting rooms",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 2
+          },
+          {
+            "id": "Library",
+            "label": "Library",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 2
+          },
+          {
+            "id": "VideogameService",
+            "label": "Video games console",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 1
+          },
+          {
+            "id": "ChildrenPool",
+            "label": "Children's pool",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 2
+          },
+          {
+            "id": "TableTennis",
+            "label": "Table tennis",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 2
+          },
+          {
+            "id": "DiningRoom",
+            "label": "Dining room",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 2
+          },
+          {
+            "id": "OutdoorSwimmingPool",
+            "label": "Outdoor pool",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 1
+          },
+          {
+            "id": "HorseRidingService",
+            "label": "Horse riding",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 2
+          },
+          {
+            "id": "Nightclub",
+            "label": "Nightclub",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 2
+          },
+          {
+            "id": "Solarium",
+            "label": "Solarium",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 1
+          },
+          {
+            "id": "Karaoke",
+            "label": "Karaoke",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 1
+          },
+          {
+            "id": "Playground",
+            "label": "Playground",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 1
+          },
+          {
+            "id": "RollInShower",
+            "label": "Roll-in shower",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 1
+          },
+          {
+            "id": "AccessibleRoomsAvailable",
+            "label": "Accessible rooms available",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 1
+          },
+          {
+            "id": "BathSeat",
+            "label": "Bath seat",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 1
+          },
+          {
+            "id": "TransferShower",
+            "label": "Transfer shower",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 1
+          },
+          {
+            "id": "EntertainmentRooms",
+            "label": "Entertainment rooms",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 1
+          },
+          {
+            "id": "Minigolf",
+            "label": "Minigolf",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 1
+          }
+        ]
+      },
+      {
+        "type": "property_type",
+        "title": "Accommodation type",
+        "values": [
+          {
+            "id": "Hotel",
+            "label": "Hotel",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 54
+          },
+          {
+            "id": "Hostel",
+            "label": "Hostel",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 5
+          },
+          {
+            "id": "GuestHouse",
+            "label": "Guest house",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 6
+          },
+          {
+            "id": "Resort",
+            "label": "Resort",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 0
+          },
+          {
+            "id": "UniqueStays",
+            "label": "Unique stays",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 1
+          },
+          {
+            "id": "HolidayRentals",
+            "label": "Holiday rentals",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 6
+          },
+          {
+            "id": "Apartment",
+            "label": "Apartment",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 27
+          }
+        ]
+      },
+      {
+        "type": "district",
+        "title": "Neighbourhoods",
+        "values": [
+          {
+            "id": "216546452",
+            "label": "New Town",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 6
+          },
+          {
+            "id": "205267006",
+            "label": "Old Town",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 12
+          },
+          {
+            "id": "205364696",
+            "label": "West End",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 8
+          },
+          {
+            "id": "205364700",
+            "label": "New Town/Broughton",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 7
+          },
+          {
+            "id": "205267005",
+            "label": "Tollcross",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 6
+          },
+          {
+            "id": "205364701",
+            "label": "Leith Harbour & Newhaven",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 4
+          },
+          {
+            "id": "204214824",
+            "label": "Ratho And District",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 4
+          },
+          {
+            "id": "216546460",
+            "label": "Haymarket",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 3
+          },
+          {
+            "id": "216546581",
+            "label": "Calton Hill",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 4
+          },
+          {
+            "id": "216546522",
+            "label": "Fountainbridge",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 2
+          },
+          {
+            "id": "205364702",
+            "label": "Sighthill, Broomhouse And Parkhead",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 1
+          },
+          {
+            "id": "205364692",
+            "label": "Leith Central",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 4
+          },
+          {
+            "id": "205292871",
+            "label": "Craigmillar",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 3
+          },
+          {
+            "id": "205364686",
+            "label": "Murrayfield",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 2
+          },
+          {
+            "id": "216544979",
+            "label": "Leith Links",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 3
+          },
+          {
+            "id": "216546590",
+            "label": "Canongate",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 2
+          },
+          {
+            "id": "216545159",
+            "label": "South Queensferry/Dalmeny",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 1
+          },
+          {
+            "id": "204214828",
+            "label": "Gilmerton/Inch",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 2
+          },
+          {
+            "id": "205315977",
+            "label": "Currie",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 1
+          },
+          {
+            "id": "205315979",
+            "label": "Juniper Green",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 1
+          },
+          {
+            "id": "205269048",
+            "label": "Trinity",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 1
+          },
+          {
+            "id": "205364699",
+            "label": "Northfield/Willowbrae",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 1
+          },
+          {
+            "id": "216544782",
+            "label": "Craigentinny",
+            "minPrice": null,
+            "maxPrice": null,
+            "count": 1
+          }
+        ]
+      },
+      {
+        "type": "discounts",
+        "title": "Deals",
+        "values": [
+          {
+            "id": "1",
+            "label": "Show discounts"
+          }
+        ]
+      }
+    ],
+    "sortOptions": [
+      {
+        "optionName": "Best",
+        "type": "-relevance"
+      },
+      {
+        "optionName": "Price (high to low)",
+        "type": "-price"
+      },
+      {
+        "optionName": "Price (low to high)",
+        "type": "price"
+      },
+      {
+        "optionName": "Distance from city centre",
+        "type": "distance"
+      },
+      {
+        "optionName": "Guest rating",
+        "type": "-hotel_rating"
+      },
+      {
+        "optionName": "Stars (5 to 1)",
+        "type": "-stars"
+      },
+      {
+        "optionName": "Stars (1 to 5)",
+        "type": "stars"
+      }
+    ],
+    "closedUserGroupDeals": [],
+    "pricePolicy": "Taxes and fees not included",
+    "mapBoundary": {
+      "n_e_lat": 55.991284160000006,
+      "s_w_lat": 55.882333824,
+      "n_e_lng": -3.1815164,
+      "s_w_lng": -3.4089536
     },
-    {
-      "type": "stars",
-      "title": "Star rating",
-      "values": [
-        {
-          "id": "5",
-          "label": "5 stars",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 2
-        },
-        {
-          "id": "4",
-          "label": "4 stars",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 32
-        },
-        {
-          "id": "3",
-          "label": "3 stars",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 21
-        },
-        {
-          "id": "2",
-          "label": "2 stars",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 0
-        },
-        {
-          "id": "1",
-          "label": "1 star",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 0
-        },
-        {
-          "id": "no_stars",
-          "label": "Unrated",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 58
-        }
-      ]
+    "hotelPivot": null,
+    "medianMinPrice": null,
+    "entity": {
+      "entity_type": "City",
+      "name": "Edinburgh",
+      "entity_id": "27540851",
+      "centroid": {
+        "coordinates": [-3.193311, 55.952503],
+        "type": "Point"
+      },
+      "official_center": {
+        "coordinates": [-3.193311, 55.952503],
+        "type": "Point"
+      },
+      "levelOfEntityType": "PoliticalTypes"
     },
-    {
-      "type": "meal_plan",
-      "title": "Meal plan",
-      "values": [
-        {
-          "id": "breakfast_included",
-          "label": "Breakfast included",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 39
-        },
-        {
-          "id": "RoomRates_label_mealsNotIncluded",
-          "label": "Meals not included",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 109
-        }
-      ]
+    "location": [
+      {
+        "entity_type": "SecondLevelNationAdministrativeDivision",
+        "entity_id": "44304553",
+        "name": "City of Edinburgh"
+      },
+      {
+        "entity_type": "FirstLevelNationAdministrativeDivision",
+        "entity_id": "44293286",
+        "name": "Scotland"
+      },
+      {
+        "entity_type": "Nation",
+        "entity_id": "29475375",
+        "name": "United Kingdom"
+      }
+    ],
+    "priceType": "per",
+    "localCurrency": "GBP",
+    "hotelsCoordinates": [
+      {
+        "longitude": -3.18994,
+        "latitude": 55.94948,
+        "hotelId": "203823529"
+      },
+      {
+        "longitude": -3.233257,
+        "latitude": 55.900424,
+        "hotelId": "162223823"
+      },
+      {
+        "longitude": -3.319919,
+        "latitude": 55.937511,
+        "hotelId": "129283581"
+      },
+      {
+        "longitude": -3.267278,
+        "latitude": 55.942858,
+        "hotelId": "117259187"
+      },
+      {
+        "longitude": -3.23557,
+        "latitude": 55.9678,
+        "hotelId": "131187598"
+      },
+      {
+        "longitude": -3.40053,
+        "latitude": 55.98228,
+        "hotelId": "151671430"
+      },
+      {
+        "longitude": -3.213888,
+        "latitude": 55.945893,
+        "hotelId": "153328516"
+      },
+      {
+        "longitude": -3.210905,
+        "latitude": 55.946073,
+        "hotelId": "203792795"
+      },
+      {
+        "longitude": -3.311149,
+        "latitude": 55.926627,
+        "hotelId": "47026933"
+      },
+      {
+        "longitude": -3.1944,
+        "latitude": 55.95259,
+        "hotelId": "115270000"
+      },
+      {
+        "longitude": -3.205938,
+        "latitude": 55.953455,
+        "hotelId": "203764158"
+      },
+      {
+        "longitude": -3.193132,
+        "latitude": 55.952795,
+        "hotelId": "46948212"
+      },
+      {
+        "longitude": -3.27943,
+        "latitude": 55.95574,
+        "hotelId": "105050487"
+      },
+      {
+        "longitude": -3.302244,
+        "latitude": 55.933555,
+        "hotelId": "204977709"
+      },
+      {
+        "longitude": -3.19084,
+        "latitude": 55.949884,
+        "hotelId": "115727411"
+      }
+    ],
+    "hotelsRegion": {
+      "latitude": 55.955329,
+      "longitude": -3.228609,
+      "longitudeDelta": 0.08533800000000014,
+      "latitudeDelta": 0.0329419999999958
     },
-    {
-      "type": "guest_rating",
-      "title": "Guest rating",
-      "values": [
-        {
-          "id": "6",
-          "label": "Satisfactory",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 4
-        },
-        {
-          "id": "7",
-          "label": "Good",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 6
-        },
-        {
-          "id": "8",
-          "label": "Very good",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 24
-        },
-        {
-          "id": "9",
-          "label": "Excellent",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 16
-        },
-        {
-          "id": "9.5",
-          "label": "With honours",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 3
-        }
-      ]
+    "totalHotels": 99,
+    "totalHotelsFiltered": 99,
+    "pois": [
+      {
+        "coordinate": [-3.3635, 55.9497],
+        "is_extend": null,
+        "image_url": null,
+        "name": "Edinburgh",
+        "id": 95673668,
+        "sub_poi_type": "Airport",
+        "type": "Transportation"
+      },
+      {
+        "coordinate": [-3.1979604, 55.9517197],
+        "is_extend": null,
+        "image_url": null,
+        "name": "Princes Street",
+        "id": 206570160,
+        "sub_poi_type": "TouristAttraction",
+        "type": "Landmark"
+      },
+      {
+        "coordinate": [-3.1883014, 55.9524097],
+        "is_extend": null,
+        "image_url": null,
+        "name": "Edinburgh Waverley Station",
+        "id": 207975465,
+        "sub_poi_type": "TrainStation",
+        "type": "Transportation"
+      },
+      {
+        "coordinate": [-3.1999135, 55.9485947],
+        "is_extend": null,
+        "image_url": "https://content.skyscnr.com/POI/206569349/1738094/1738094_WxH.jpg",
+        "name": "Edinburgh Castle",
+        "id": 206569349,
+        "sub_poi_type": "TouristAttraction",
+        "type": "Landmark"
+      },
+      {
+        "coordinate": [-3.1892413, 55.9445158],
+        "is_extend": null,
+        "image_url": null,
+        "name": "University of Edinburgh",
+        "id": 207982970,
+        "sub_poi_type": "UniversityBuilding",
+        "type": "Education"
+      }
+    ],
+    "discountAnalysis": {
+      "couponHotels": [],
+      "couponRanks": [],
+      "couponAmounts": [],
+      "discountPercentage": null,
+      "couponType": null,
+      "hasCugDeal": false,
+      "cugHotels": [],
+      "cugRanks": [],
+      "cugAmounts": []
     },
-    {
-      "type": "rating",
-      "title": "Guest rating",
-      "values": [
-        {
-          "id": "3",
-          "label": "Satisfactory",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 4
-        },
-        {
-          "id": "3.5",
-          "label": "Good",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 6
-        },
-        {
-          "id": "4",
-          "label": "Very good",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 24
-        },
-        {
-          "id": "4.5",
-          "label": "Excellent",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 17
-        },
-        {
-          "id": "5",
-          "label": "With honours",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 2
-        }
-      ]
-    },
-    {
-      "type": "guest_type",
-      "title": "Popular with",
-      "values": [
-        {
-          "id": "business",
-          "label": "Business travellers",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 2
-        },
-        {
-          "id": "couple",
-          "label": "Couples",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 1
-        },
-        {
-          "id": "family",
-          "label": "Families",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 5
-        },
-        {
-          "id": "solo",
-          "label": "Solo travellers",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 0
-        }
-      ]
-    },
-    {
-      "type": "chain",
-      "title": "Hotel chain",
-      "values": [
-        {
-          "id": "90718511,90718434,90718490,90718876,90718394",
-          "label": "Accor Hotels",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 5
-        },
-        {
-          "id": "90718958,90718688,90718423",
-          "label": "InterContinental Hotels Group",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 4
-        },
-        {
-          "id": "90718360,90718422,90718686,90718411",
-          "label": "Hilton",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 4
-        },
-        {
-          "id": "90718997",
-          "label": "Leonardo",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 2
-        },
-        {
-          "id": "90718241,90718485",
-          "label": "Marriott International",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 2
-        },
-        {
-          "id": "90718701",
-          "label": "Apex",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 1
-        },
-        {
-          "id": "90718297",
-          "label": "Best Western",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 1
-        },
-        {
-          "id": "90718306",
-          "label": "Britannia",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 1
-        },
-        {
-          "id": "90719406",
-          "label": "Motel One",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 1
-        },
-        {
-          "id": "90719399",
-          "label": "easyHotel",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 1
-        }
-      ]
-    },
-    {
-      "type": "cancellation",
-      "title": "Cancellation policy",
-      "values": [
+    "outBoundIndex": -1,
+    "partners": [
+      "Booking.com",
+      "OYO",
+      "Trip.com",
+      "Expedia",
+      "Hotels.com",
+      "Holiday Inn"
+    ],
+    "covidFilter": {
+      "title": "Book with peace of mind",
+      "filterOptions": [
         {
           "id": "free_cancellation",
-          "label": "Free cancellation",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 93,
-          "type": "cancellation",
-          "linkageType": "covid"
+          "type": "covid",
+          "count": 70,
+          "linkageType": "cancellation",
+          "label": "Free cancellation"
         },
         {
-          "id": "refundable",
-          "label": "Refundable",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 0
-        },
+          "id": "RoomRates_option_payOnArrival",
+          "type": "covid",
+          "count": 20,
+          "linkageType": "pay_type",
+          "label": "Pay on arrival"
+        }
+      ],
+      "switcherOptions": [
         {
-          "id": "non_refundable",
-          "label": "Non refundable",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 65
+          "id": "free_cancellation",
+          "type": "covid",
+          "count": 70,
+          "linkageType": "cancellation",
+          "label": "Only show hotels with free cancellation",
+          "filterLabel": "Free cancellation"
         }
       ]
     },
-    {
-      "type": "amenities",
-      "title": "Amenities",
-      "values": [
-        {
-          "id": "WifiService",
-          "label": "Wi-Fi",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 101
-        },
-        {
-          "id": "Parking",
-          "label": "Parking",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 85
-        },
-        {
-          "id": "AirConditioning",
-          "label": "Air conditioning",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 36
-        },
-        {
-          "id": "AirportShuttleService",
-          "label": "Airport shuttle",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 3
-        },
-        {
-          "id": "Pool",
-          "label": "Pool",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 5
-        },
-        {
-          "id": "FitnessCenter",
-          "label": "Fitness centre",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 23
-        },
-        {
-          "id": "Spa",
-          "label": "Spa",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 6
-        },
-        {
-          "id": "FrontDesk24hService",
-          "label": "Front desk 24 hour",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 50
-        },
-        {
-          "id": "Restaurant",
-          "label": "Restaurant",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 45
-        },
-        {
-          "id": "NonSmokingService",
-          "label": "Non-smoking",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 111
-        },
-        {
-          "id": "Bathtub",
-          "label": "Bathtub",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 2
-        },
-        {
-          "id": "Laundry",
-          "label": "Laundry",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 46
-        },
-        {
-          "id": "Kitchen",
-          "label": "Kitchen",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 10
-        },
-        {
-          "id": "PetsAllowedService",
-          "label": "Pets allowed",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 29
-        },
-        {
-          "id": "Television",
-          "label": "Television",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 15
-        },
-        {
-          "id": "BabySittingService",
-          "label": "Baby-sitting",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 3
-        },
-        {
-          "id": "Lift",
-          "label": "Lift",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 49
-        },
-        {
-          "id": "DisabledFacility",
-          "label": "Disabled facilities",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 41
-        },
-        {
-          "id": "InternetAccessService",
-          "label": "Internet access",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 97
-        },
-        {
-          "id": "Heating",
-          "label": "Heating",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 80
-        },
-        {
-          "id": "FirstAidRoom",
-          "label": "First aid room",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 67
-        },
-        {
-          "id": "WiFiInDesignatedAreas",
-          "label": "WiFi in common areas",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 48
-        },
-        {
-          "id": "Bar",
-          "label": "Bar",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 42
-        },
-        {
-          "id": "RoomService",
-          "label": "Room service",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 46
-        },
-        {
-          "id": "LuggageStorage",
-          "label": "Luggage storage",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 47
-        },
-        {
-          "id": "MultilingualStaffService",
-          "label": "Multilingual staff",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 41
-        },
-        {
-          "id": "ExpressCheckinService",
-          "label": "Express check-in",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 48
-        },
-        {
-          "id": "SafeDepositBox",
-          "label": "Safe deposit box",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 37
-        },
-        {
-          "id": "Fax",
-          "label": "Fax",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 37
-        },
-        {
-          "id": "Photocopier",
-          "label": "Photocopier",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 36
-        },
-        {
-          "id": "ExpressCheckoutService",
-          "label": "Express check-out",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 44
-        },
-        {
-          "id": "HairDryer",
-          "label": "Hairdryer",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 32
-        },
-        {
-          "id": "MeetingRoom",
-          "label": "Meeting facilities",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 29
-        },
-        {
-          "id": "BanquetingService",
-          "label": "Banqueting service",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 26
-        },
-        {
-          "id": "Desk",
-          "label": "Desk",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 24
-        },
-        {
-          "id": "SmokingArea",
-          "label": "Smoking areas",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 28
-        },
-        {
-          "id": "WheelChairAccess",
-          "label": "Wheelchair access",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 24
-        },
-        {
-          "id": "ToiletWithGrabBar",
-          "label": "Toilet with grab bar",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 19
-        },
-        {
-          "id": "LoweredBathroomSink",
-          "label": "Lowered bathroom sink",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 17
-        },
-        {
-          "id": "BathroomEmergencyPullCord",
-          "label": "Bathroom emergency pull cord",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 17
-        },
-        {
-          "id": "Cafe",
-          "label": "Café",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 18
-        },
-        {
-          "id": "Telephone",
-          "label": "Telephone",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 18
-        },
-        {
-          "id": "Shower",
-          "label": "Shower",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 22
-        },
-        {
-          "id": "ConciergeService",
-          "label": "Concierge",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 20
-        },
-        {
-          "id": "Teahouse",
-          "label": "Teahouse",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 14
-        },
-        {
-          "id": "IroningService",
-          "label": "Iron",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 18
-        },
-        {
-          "id": "WakeUpCallService",
-          "label": "Wake up call",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 14
-        },
-        {
-          "id": "WeddingFacility",
-          "label": "Wedding facilities",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 12
-        },
-        {
-          "id": "AssistiveListeningDevicesAvailable",
-          "label": "Assistive listening devices available",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 13
-        },
-        {
-          "id": "SatelliteTV",
-          "label": "Satellite TV",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 12
-        },
-        {
-          "id": "AccessibleParking",
-          "label": "Accessible parking",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 13
-        },
-        {
-          "id": "RaisedToilet",
-          "label": "Raised toilet",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 11
-        },
-        {
-          "id": "BusinessCenter",
-          "label": "Business centre",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 13
-        },
-        {
-          "id": "BrailleOrTactileSignage",
-          "label": "Braille or tactile signage",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 8
-        },
-        {
-          "id": "Garden",
-          "label": "Garden",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 25
-        },
-        {
-          "id": "LobbyBar",
-          "label": "Lobby bar",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 10
-        },
-        {
-          "id": "Sauna",
-          "label": "Sauna",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 7
-        },
-        {
-          "id": "CurrencyExchangeService",
-          "label": "Currency exchange",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 8
-        },
-        {
-          "id": "TicketOffice",
-          "label": "Ticket office",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 8
-        },
-        {
-          "id": "CarRental",
-          "label": "Car hire",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 9
-        },
-        {
-          "id": "Lounge",
-          "label": "Lounge",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 12
-        },
-        {
-          "id": "GolfAmenity",
-          "label": "Golf course",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 10
-        },
-        {
-          "id": "SteamRoom",
-          "label": "Steam room",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 6
-        },
-        {
-          "id": "ElectricVehicleChargingStation",
-          "label": "Electric vehicle (EV) charging station",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 6
-        },
-        {
-          "id": "BottledWaterService",
-          "label": "Complimentary bottled water",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 5
-        },
-        {
-          "id": "IndoorSwimmingPool",
-          "label": "Indoor pool",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 5
-        },
-        {
-          "id": "GameRoom",
-          "label": "Games room",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 8
-        },
-        {
-          "id": "Billiards",
-          "label": "Billiards",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 5
-        },
-        {
-          "id": "TrouserPress",
-          "label": "Trouser press",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 5
-        },
-        {
-          "id": "Fireplace",
-          "label": "Fireplace",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 3
-        },
-        {
-          "id": "MassageService",
-          "label": "Massage",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 6
-        },
-        {
-          "id": "BowlingAlley",
-          "label": "Bowling alley",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 6
-        },
-        {
-          "id": "TourService",
-          "label": "Tours",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 5
-        },
-        {
-          "id": "Microwave",
-          "label": "Microwave",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 7
-        },
-        {
-          "id": "VisualAlarms",
-          "label": "Visual alarms",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 6
-        },
-        {
-          "id": "MiniBar",
-          "label": "Minibar",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 2
-        },
-        {
-          "id": "BicycleRentalService",
-          "label": "Bicycle hire",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 10
-        },
-        {
-          "id": "CashMachine",
-          "label": "Cash machine",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 4
-        },
-        {
-          "id": "NonsmokingFloor",
-          "label": "Non-smoking floor",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 2
-        },
-        {
-          "id": "AuditoryGuidance",
-          "label": "Auditory guidance",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 3
-        },
-        {
-          "id": "HandrailsInStairways",
-          "label": "Handrails in stairways",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 6
-        },
-        {
-          "id": "Shop",
-          "label": "Shops",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 3
-        },
-        {
-          "id": "UVSunbeds",
-          "label": "UV sunbeds",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 2
-        },
-        {
-          "id": "Nightclub",
-          "label": "Nightclub",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 2
-        },
-        {
-          "id": "BeautySalon",
-          "label": "Beauty salon",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 5
-        },
-        {
-          "id": "ConnectingRoomsService",
-          "label": "Connecting rooms",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 2
-        },
-        {
-          "id": "ConferenceFacility",
-          "label": "Conference facilities",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 1
-        },
-        {
-          "id": "Gymnasium",
-          "label": "Gymnasium",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 1
-        },
-        {
-          "id": "ATM",
-          "label": "ATM",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 2
-        },
-        {
-          "id": "TennisCourt",
-          "label": "Tennis court",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 6
-        },
-        {
-          "id": "Casino",
-          "label": "Casino",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 2
-        },
-        {
-          "id": "ChildrenFacility",
-          "label": "Children's facilities",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 2
-        },
-        {
-          "id": "Barbeque",
-          "label": "Barbecue",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 1
-        },
-        {
-          "id": "ExecutiveFloor",
-          "label": "Executive floor",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 1
-        },
-        {
-          "id": "ExecutiveLounge",
-          "label": "Executive lounge",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 1
-        },
-        {
-          "id": "HorseRidingService",
-          "label": "Horse riding",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 4
-        },
-        {
-          "id": "Solarium",
-          "label": "Solarium",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 1
-        },
-        {
-          "id": "CoffeeMaker",
-          "label": "Coffee maker",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 2
-        },
-        {
-          "id": "Minigolf",
-          "label": "Minigolf",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 3
-        },
-        {
-          "id": "SquashCourt",
-          "label": "Squash",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 2
-        },
-        {
-          "id": "ValetParkingService",
-          "label": "Valet parking",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 1
-        },
-        {
-          "id": "ShuttleService",
-          "label": "Shuttle service",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 2
-        },
-        {
-          "id": "TableTennis",
-          "label": "Table tennis",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 2
-        },
-        {
-          "id": "DiningRoom",
-          "label": "Dining room",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 1
-        }
-      ]
-    },
-    {
-      "type": "property_type",
-      "title": "Accommodation type",
-      "values": [
-        {
-          "id": "Hotel",
-          "label": "Hotel",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 50
-        },
-        {
-          "id": "Hostel",
-          "label": "Hostel",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 0
-        },
-        {
-          "id": "GuestHouse",
-          "label": "Guest house",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 10
-        },
-        {
-          "id": "Resort",
-          "label": "Resort",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 0
-        },
-        {
-          "id": "UniqueStays",
-          "label": "Unique stays",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 0
-        },
-        {
-          "id": "HolidayRentals",
-          "label": "Holiday rentals",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 6
-        },
-        {
-          "id": "Apartment",
-          "label": "Apartment",
-          "minPrice": null,
-          "maxPrice": null,
-          "count": 47
-        }
-      ]
-    },
-    {
-      "type": "discounts",
-      "title": "Deals",
-      "values": [
-        {
-          "id": "1",
-          "label": "Show discounts"
-        }
-      ]
-    }
-  ],
-  "sortOptions": [
-    {
-      "optionName": "Best",
-      "type": "-relevance"
-    },
-    {
-      "optionName": "Price (high to low)",
-      "type": "-price"
-    },
-    {
-      "optionName": "Price (low to high)",
-      "type": "price"
-    },
-    {
-      "optionName": "Distance from city centre",
-      "type": "distance"
-    },
-    {
-      "optionName": "Guest rating",
-      "type": "-hotel_rating"
-    },
-    {
-      "optionName": "Stars (5 to 1)",
-      "type": "-stars"
-    },
-    {
-      "optionName": "Stars (1 to 5)",
-      "type": "stars"
-    }
-  ],
-  "closedUserGroupDeals": [],
-  "pricePolicy": "Taxes and fees not included",
-  "mapBoundary": {
-    "n_e_lat": 55.89019191,
-    "s_w_lat": 55.821005199,
-    "n_e_lng": -4.24752872,
-    "s_w_lng": -4.31411828
-  },
-  "hotelPivot": null,
-  "medianMinPrice": null,
-  "entity": {
-    "official_center": {
-      "coordinates": [-4.253059, 55.862488],
-      "type": "Point"
-    },
-    "entity_id": "27541852",
-    "entity_type": "City",
-    "centroid": {
-      "coordinates": [-4.253059, 55.862488],
-      "type": "Point"
-    },
-    "name": "Glasgow",
-    "levelOfEntityType": "PoliticalTypes"
-  },
-  "location": [
-    {
-      "name": "Scotland",
-      "entity_id": "44293286",
-      "entity_type": "FirstLevelNationAdministrativeDivision"
-    },
-    {
-      "name": "United Kingdom",
-      "entity_id": "29475375",
-      "entity_type": "Nation"
-    }
-  ],
-  "priceType": "per",
-  "localCurrency": "GBP",
-  "hotelsCoordinates": [
-    {
-      "longitude": -4.260143,
-      "latitude": 55.866431,
-      "hotelId": "131925512"
-    },
-    {
-      "longitude": -4.251953,
-      "latitude": 55.859531,
-      "hotelId": "162229351"
-    },
-    {
-      "longitude": -4.257142,
-      "latitude": 55.864022,
-      "hotelId": "153312093"
-    },
-    {
-      "longitude": -4.27607,
-      "latitude": 55.85415,
-      "hotelId": "47042761"
-    },
-    {
-      "longitude": -4.259548,
-      "latitude": 55.832493,
-      "hotelId": "153328629"
-    },
-    {
-      "longitude": -4.252921,
-      "latitude": 55.862034,
-      "hotelId": "81985556"
-    },
-    {
-      "longitude": -4.266112,
-      "latitude": 55.864368,
-      "hotelId": "47022426"
-    },
-    {
-      "longitude": -4.311652,
-      "latitude": 55.884474,
-      "hotelId": "46951225"
-    },
-    {
-      "longitude": -4.26978,
-      "latitude": 55.86487,
-      "hotelId": "46994785"
-    },
-    {
-      "longitude": -4.265309,
-      "latitude": 55.86443,
-      "hotelId": "105033662"
-    },
-    {
-      "longitude": -4.25759,
-      "latitude": 55.85676,
-      "hotelId": "47023400"
-    },
-    {
-      "longitude": -4.26825,
-      "latitude": 55.85871,
-      "hotelId": "47005499"
-    },
-    {
-      "longitude": -4.250648,
-      "latitude": 55.859364,
-      "hotelId": "136333851"
-    },
-    {
-      "longitude": -4.249995,
-      "latitude": 55.859713,
-      "hotelId": "46949241"
-    },
-    {
-      "longitude": -4.256004,
-      "latitude": 55.856406,
-      "hotelId": "213313129"
-    }
-  ],
-  "hotelsRegion": {
-    "latitude": 55.8614185,
-    "longitude": -4.25838,
-    "longitudeDelta": 0.0234639999999997,
-    "latitudeDelta": 0.01802499999999884
-  },
-  "totalHotels": 113,
-  "totalHotelsFiltered": 113,
-  "pois": [
-    {
-      "coordinate": [-4.433333, 55.866667],
-      "id": 104120237,
-      "image_url": null,
-      "type": "Transportation",
-      "name": "Glasgow Intl",
-      "is_extend": null,
-      "sub_poi_type": "Airport"
-    },
-    {
-      "coordinate": [-4.592294, 55.5098273],
-      "id": 95673669,
-      "image_url": null,
-      "type": "Transportation",
-      "name": "Glasgow Prestwick",
-      "is_extend": null,
-      "sub_poi_type": "Airport"
-    },
-    {
-      "coordinate": [-4.2381, 55.8609],
-      "id": 207674817,
-      "image_url": "https://content.skyscnr.com/POI/207674817/2696068/2696068_WxH.jpg",
-      "type": "Landmark",
-      "name": "City Centre Mural Trail",
-      "is_extend": null,
-      "sub_poi_type": "TouristAttraction"
-    },
-    {
-      "coordinate": [-4.250194, 55.861725],
-      "id": 207674879,
-      "image_url": "https://content.skyscnr.com/POI/207674879/2696361/2696361_WxH.jpg",
-      "type": "Landmark",
-      "name": "Sir Robert Peel Statue",
-      "is_extend": null,
-      "sub_poi_type": "TouristAttraction"
-    },
-    {
-      "coordinate": [-4.2581088, 55.8591118],
-      "id": 207605217,
-      "image_url": "https://content.skyscnr.com/POI/207605217/2555399/2555399_WxH.jpg",
-      "type": "Landmark",
-      "name": "Glasgow Central Station",
-      "is_extend": null,
-      "sub_poi_type": "TouristAttraction"
-    }
-  ],
-  "discountAnalysis": {
-    "couponHotels": [],
-    "couponRanks": [],
-    "couponAmounts": [],
-    "discountPercentage": null,
-    "couponType": null,
-    "hasCugDeal": false,
-    "cugHotels": [],
-    "cugRanks": [],
-    "cugAmounts": []
-  },
-  "outBoundIndex": -1,
-  "partners": [
-    "Booking.com",
-    "OYO",
-    "Trip.com",
-    "Expedia",
-    "Hotels.com",
-    "Holiday Inn"
-  ],
-  "covidFilter": {
-    "title": "Book with peace of mind",
-    "filterOptions": [
-      {
-        "id": "free_cancellation",
-        "type": "covid",
-        "count": 93,
-        "linkageType": "cancellation",
-        "label": "Free cancellation"
+    "poiFilter": {
+      "entity": null,
+      "defaultPoiItem": null,
+      "poiFilterTitle": "From where?",
+      "poiRecommendCardTitle": "Search for hotels close to",
+      "poiTypeIconMapping": {
+        "Beach": "beach",
+        "Landmark": "landmark",
+        "Entertainment": "bar",
+        "Shopping": "deals",
+        "Transportation": "cars",
+        "Education": "education"
       },
-      {
-        "id": "RoomRates_option_payOnArrival",
-        "type": "covid",
-        "count": 14,
-        "linkageType": "pay_type",
-        "label": "Pay on arrival"
-      }
-    ],
-    "switcherOptions": [
-      {
-        "id": "free_cancellation",
-        "type": "covid",
-        "count": 93,
-        "linkageType": "cancellation",
-        "label": "Only show hotels with free cancellation",
-        "filterLabel": "Free cancellation"
-      }
-    ]
-  },
-  "poiFilter": {
-    "entity": null,
-    "defaultPoiItem": null,
-    "poiFilterTitle": "From where?",
-    "poiRecommendCardTitle": "Search for hotels close to",
-    "poiTypeIconMapping": {
-      "Beach": "beach",
-      "Landmark": "landmark",
-      "Entertainment": "bar",
-      "Shopping": "deals",
-      "Transportation": "cars",
-      "Education": "education"
-    },
-    "translations": {
-      "Beach": "Beach",
-      "Landmark": "Landmark",
-      "Entertainment": "Entertainment",
-      "Shopping": "Shopping",
-      "Transportation": "Transportation",
-      "Education": "Education"
-    },
-    "quickSelectOptions": [
-      {
-        "coordinate": "-4.2381,55.8609",
-        "id": "207674817",
-        "image_url": "https://content.skyscnr.com/POI/207674817/2696068/2696068_WxH.jpg",
-        "type": "Landmark",
-        "name": "City Centre Mural Trail",
-        "sub_poi_type": "TouristAttraction",
-        "icon": "landmark"
+      "translations": {
+        "Beach": "Beach",
+        "Landmark": "Landmark",
+        "Entertainment": "Entertainment",
+        "Shopping": "Shopping",
+        "Transportation": "Transportation",
+        "Education": "Education"
       },
-      {
-        "coordinate": "-4.2695373,55.881566",
-        "id": "209452818",
-        "image_url": "https://content.skyscnr.com/POI/209452818/2701590/2701590_WxH.jpg",
-        "type": "Entertainment",
-        "name": "Firhill Stadium",
-        "sub_poi_type": "Stadium",
-        "icon": "bar"
-      },
-      {
-        "coordinate": "-4.2524325,55.8638319",
-        "id": "208340592",
-        "image_url": null,
-        "type": "Shopping",
-        "name": "Buchanan Galleries",
-        "sub_poi_type": "ShoppingMall",
-        "icon": "deals"
-      },
-      {
-        "coordinate": "-4.433333,55.866667",
-        "id": "104120237",
-        "image_url": null,
-        "type": "Transportation",
-        "name": "Glasgow Intl",
-        "sub_poi_type": "Airport",
-        "icon": "cars"
-      },
-      {
-        "coordinate": "-4.2900009,55.8724256",
-        "id": "208340499",
-        "image_url": null,
-        "type": "Education",
-        "name": "University of Glasgow",
-        "sub_poi_type": "UniversityBuilding",
-        "icon": "education"
-      }
-    ],
-    "allOptions": [
-      {
-        "coordinate": "-4.2381,55.8609",
-        "id": "207674817",
-        "image_url": "https://content.skyscnr.com/POI/207674817/2696068/2696068_WxH.jpg",
-        "type": "Landmark",
-        "name": "City Centre Mural Trail",
-        "sub_poi_type": "TouristAttraction",
-        "icon": "landmark"
-      },
-      {
-        "coordinate": "-4.250194,55.861725",
-        "id": "207674879",
-        "image_url": "https://content.skyscnr.com/POI/207674879/2696361/2696361_WxH.jpg",
-        "type": "Landmark",
-        "name": "Sir Robert Peel Statue",
-        "sub_poi_type": "TouristAttraction",
-        "icon": "landmark"
-      },
-      {
-        "coordinate": "-4.2581088,55.8591118",
-        "id": "207605217",
-        "image_url": "https://content.skyscnr.com/POI/207605217/2555399/2555399_WxH.jpg",
-        "type": "Landmark",
-        "name": "Glasgow Central Station",
-        "sub_poi_type": "TouristAttraction",
-        "icon": "landmark"
-      },
-      {
-        "coordinate": "-4.2501651,55.8611637",
-        "id": "206531108",
-        "image_url": "https://content.skyscnr.com/POI/206531108/1608472/1608472_WxH.jpg",
-        "type": "Landmark",
-        "name": "George Square",
-        "sub_poi_type": "TouristAttraction",
-        "icon": "landmark"
-      },
-      {
-        "coordinate": "-4.2906039,55.8685891",
-        "id": "206590364",
-        "image_url": null,
-        "type": "Landmark",
-        "name": "Kelvingrove Art Gallery and Museum",
-        "sub_poi_type": "TouristAttraction",
-        "icon": "landmark"
-      },
-      {
-        "coordinate": "-4.2695373,55.881566",
-        "id": "209452818",
-        "image_url": "https://content.skyscnr.com/POI/209452818/2701590/2701590_WxH.jpg",
-        "type": "Entertainment",
-        "name": "Firhill Stadium",
-        "sub_poi_type": "Stadium",
-        "icon": "bar"
-      },
-      {
-        "coordinate": "-4.3574076999999996,55.8834774",
-        "id": "219387722",
-        "image_url": null,
-        "type": "Entertainment",
-        "name": "Kingsway Court Playground",
-        "sub_poi_type": "AmusementPark",
-        "icon": "bar"
-      },
-      {
-        "coordinate": "-4.3129290000000005,55.8479488",
-        "id": "219267810",
-        "image_url": null,
-        "type": "Entertainment",
-        "name": "Bellahouston Park Playground (East)",
-        "sub_poi_type": "AmusementPark",
-        "icon": "bar"
-      },
-      {
-        "coordinate": "-4.2432731,55.9001505",
-        "id": "219319834",
-        "image_url": null,
-        "type": "Entertainment",
-        "name": "Milton Park Play Area",
-        "sub_poi_type": "AmusementPark",
-        "icon": "bar"
-      },
-      {
-        "coordinate": "-4.1937635,55.8538643",
-        "id": "219369295",
-        "image_url": null,
-        "type": "Entertainment",
-        "name": "Play Kingdom",
-        "sub_poi_type": "AmusementPark",
-        "icon": "bar"
-      },
-      {
-        "coordinate": "-4.433333,55.866667",
-        "id": "104120237",
-        "image_url": null,
-        "type": "Transportation",
-        "name": "Glasgow Intl",
-        "sub_poi_type": "Airport",
-        "icon": "cars"
-      },
-      {
-        "coordinate": "-4.592294,55.5098273",
-        "id": "95673669",
-        "image_url": null,
-        "type": "Transportation",
-        "name": "Glasgow Prestwick",
-        "sub_poi_type": "Airport",
-        "icon": "cars"
-      },
-      {
-        "coordinate": "-4.2511723,55.8624627",
-        "id": "207975618",
-        "image_url": null,
-        "type": "Transportation",
-        "name": "Queen Street Station",
-        "sub_poi_type": "TrainStation",
-        "icon": "cars"
-      },
-      {
-        "coordinate": "-4.258109,55.859112",
-        "id": "207975433",
-        "image_url": null,
-        "type": "Transportation",
-        "name": "Glasgow Central Station",
-        "sub_poi_type": "TrainStation",
-        "icon": "cars"
-      },
-      {
-        "coordinate": "-4.3091667,55.8697222",
-        "id": "205755651",
-        "image_url": null,
-        "type": "Transportation",
-        "name": "Partick station",
-        "sub_poi_type": "MetroStation",
-        "icon": "cars"
-      },
-      {
-        "coordinate": "-4.2524325,55.8638319",
-        "id": "208340592",
-        "image_url": null,
-        "type": "Shopping",
-        "name": "Buchanan Galleries",
-        "sub_poi_type": "ShoppingMall",
-        "icon": "deals"
-      },
-      {
-        "coordinate": "-4.283724,55.86452",
-        "id": "212170441",
-        "image_url": null,
-        "type": "Shopping",
-        "name": "The Hidden Lane",
-        "sub_poi_type": "ShoppingMall",
-        "icon": "deals"
-      },
-      {
-        "coordinate": "-4.3754172,55.9050092",
-        "id": "212012521",
-        "image_url": null,
-        "type": "Shopping",
-        "name": "B&M Store",
-        "sub_poi_type": "ShoppingMall",
-        "icon": "deals"
-      },
-      {
-        "coordinate": "-4.2543424,55.8593083",
-        "id": "208340603",
-        "image_url": null,
-        "type": "Shopping",
-        "name": "Princes Square",
-        "sub_poi_type": "ShoppingMall",
-        "icon": "deals"
-      },
-      {
-        "coordinate": "-4.2862274,55.8870368",
-        "id": "211521877",
-        "image_url": null,
-        "type": "Shopping",
-        "name": "Tesco Extra",
-        "sub_poi_type": "ShoppingMall",
-        "icon": "deals"
-      },
-      {
-        "coordinate": "-4.2900009,55.8724256",
-        "id": "208340499",
-        "image_url": null,
-        "type": "Education",
-        "name": "University of Glasgow",
-        "sub_poi_type": "UniversityBuilding",
-        "icon": "education"
-      },
-      {
-        "coordinate": "-4.2423901,55.8621114",
-        "id": "207983055",
-        "image_url": "https://content.skyscnr.com/POI/207983055/1975957/1975957_WxH.jpg",
-        "type": "Education",
-        "name": "University of Strathclyde",
-        "sub_poi_type": "UniversityBuilding",
-        "icon": "education"
-      },
-      {
-        "coordinate": "-4.2636933,55.866147",
-        "id": "207983062",
-        "image_url": "https://content.skyscnr.com/POI/207983062/1976179/1976179_WxH.jpg",
-        "type": "Education",
-        "name": "The Glasgow School of Art",
-        "sub_poi_type": "UniversityBuilding",
-        "icon": "education"
-      },
-      {
-        "coordinate": "-4.2575887,55.8661893",
-        "id": "208367625",
-        "image_url": null,
-        "type": "Education",
-        "name": "Royal Conservatoire of Scotland",
-        "sub_poi_type": "UniversityBuilding",
-        "icon": "education"
-      },
-      {
-        "coordinate": "-4.2499602,55.8668183",
-        "id": "207982935",
-        "image_url": null,
-        "type": "Education",
-        "name": "Glasgow Caledonian University",
-        "sub_poi_type": "UniversityBuilding",
-        "icon": "education"
-      }
-    ],
-    "clusterList": [
-      [
+      "quickSelectOptions": [
         {
-          "coordinate": "-4.2381,55.8609",
-          "id": "207674817",
-          "image_url": "https://content.skyscnr.com/POI/207674817/2696068/2696068_WxH.jpg",
-          "type": "Landmark",
-          "name": "City Centre Mural Trail",
+          "coordinate": "-3.1979604,55.9517197",
+          "image_url": null,
+          "name": "Princes Street",
+          "id": "206570160",
           "sub_poi_type": "TouristAttraction",
+          "type": "Landmark",
           "icon": "landmark"
         },
         {
-          "coordinate": "-4.250194,55.861725",
-          "id": "207674879",
-          "image_url": "https://content.skyscnr.com/POI/207674879/2696361/2696361_WxH.jpg",
-          "type": "Landmark",
-          "name": "Sir Robert Peel Statue",
-          "sub_poi_type": "TouristAttraction",
-          "icon": "landmark"
-        },
-        {
-          "coordinate": "-4.2581088,55.8591118",
-          "id": "207605217",
-          "image_url": "https://content.skyscnr.com/POI/207605217/2555399/2555399_WxH.jpg",
-          "type": "Landmark",
-          "name": "Glasgow Central Station",
-          "sub_poi_type": "TouristAttraction",
-          "icon": "landmark"
-        },
-        {
-          "coordinate": "-4.2501651,55.8611637",
-          "id": "206531108",
-          "image_url": "https://content.skyscnr.com/POI/206531108/1608472/1608472_WxH.jpg",
-          "type": "Landmark",
-          "name": "George Square",
-          "sub_poi_type": "TouristAttraction",
-          "icon": "landmark"
-        },
-        {
-          "coordinate": "-4.2695373,55.881566",
-          "id": "209452818",
-          "image_url": "https://content.skyscnr.com/POI/209452818/2701590/2701590_WxH.jpg",
+          "coordinate": "-3.1843286,55.9409335",
+          "image_url": null,
+          "name": "Meadow Playground",
+          "id": "219566209",
+          "sub_poi_type": "AmusementPark",
           "type": "Entertainment",
-          "name": "Firhill Stadium",
+          "icon": "bar"
+        },
+        {
+          "coordinate": "-3.2004714,55.9529237",
+          "image_url": null,
+          "name": "George Street",
+          "id": "207982513",
+          "sub_poi_type": "ShoppingMall",
+          "type": "Shopping",
+          "icon": "deals"
+        },
+        {
+          "coordinate": "-3.3635,55.9497",
+          "image_url": null,
+          "name": "Edinburgh",
+          "id": "95673668",
+          "sub_poi_type": "Airport",
+          "type": "Transportation",
+          "icon": "cars"
+        },
+        {
+          "coordinate": "-3.1892413,55.9445158",
+          "image_url": null,
+          "name": "University of Edinburgh",
+          "id": "207982970",
+          "sub_poi_type": "UniversityBuilding",
+          "type": "Education",
+          "icon": "education"
+        }
+      ],
+      "allOptions": [
+        {
+          "coordinate": "-3.1979604,55.9517197",
+          "image_url": null,
+          "name": "Princes Street",
+          "id": "206570160",
+          "sub_poi_type": "TouristAttraction",
+          "type": "Landmark",
+          "icon": "landmark"
+        },
+        {
+          "coordinate": "-3.1999135,55.9485947",
+          "image_url": "https://content.skyscnr.com/POI/206569349/1738094/1738094_WxH.jpg",
+          "name": "Edinburgh Castle",
+          "id": "206569349",
+          "sub_poi_type": "TouristAttraction",
+          "type": "Landmark",
+          "icon": "landmark"
+        },
+        {
+          "coordinate": "-3.1722723999999998,55.9527138",
+          "image_url": null,
+          "name": "Palace of Holyroodhouse",
+          "id": "206530936",
+          "sub_poi_type": "TouristAttraction",
+          "type": "Landmark",
+          "icon": "landmark"
+        },
+        {
+          "coordinate": "-3.1889219,55.9529723",
+          "image_url": null,
+          "name": "N Bridge",
+          "id": "206530939",
+          "sub_poi_type": "TouristAttraction",
+          "type": "Landmark",
+          "icon": "landmark"
+        },
+        {
+          "coordinate": "-3.1905666,55.9469995",
+          "image_url": "https://content.skyscnr.com/POI/206530921/1608050/1608050_WxH.jpg",
+          "name": "National Museum of Scotland",
+          "id": "206530921",
+          "sub_poi_type": "TouristAttraction",
+          "type": "Landmark",
+          "icon": "landmark"
+        },
+        {
+          "coordinate": "-3.1843286,55.9409335",
+          "image_url": null,
+          "name": "Meadow Playground",
+          "id": "219566209",
+          "sub_poi_type": "AmusementPark",
+          "type": "Entertainment",
+          "icon": "bar"
+        },
+        {
+          "coordinate": "-3.1877038,55.957608",
+          "image_url": null,
+          "name": "Edinburgh Yoga Room",
+          "id": "221770190",
           "sub_poi_type": "Stadium",
-          "icon": "bar"
-        },
-        {
-          "coordinate": "-4.2524325,55.8638319",
-          "id": "208340592",
-          "image_url": null,
-          "type": "Shopping",
-          "name": "Buchanan Galleries",
-          "sub_poi_type": "ShoppingMall",
-          "icon": "deals"
-        }
-      ],
-      [
-        {
-          "coordinate": "-4.2906039,55.8685891",
-          "id": "206590364",
-          "image_url": null,
-          "type": "Landmark",
-          "name": "Kelvingrove Art Gallery and Museum",
-          "sub_poi_type": "TouristAttraction",
-          "icon": "landmark"
-        },
-        {
-          "coordinate": "-4.3574076999999996,55.8834774",
-          "id": "219387722",
-          "image_url": null,
           "type": "Entertainment",
-          "name": "Kingsway Court Playground",
-          "sub_poi_type": "AmusementPark",
           "icon": "bar"
         },
         {
-          "coordinate": "-4.283724,55.86452",
-          "id": "212170441",
+          "coordinate": "-3.1944149,55.9487328",
           "image_url": null,
-          "type": "Shopping",
-          "name": "The Hidden Lane",
-          "sub_poi_type": "ShoppingMall",
-          "icon": "deals"
+          "name": "C ARTS | C venues | C aquila",
+          "id": "219387427",
+          "sub_poi_type": "TheatreHall",
+          "type": "Entertainment",
+          "icon": "bar"
         },
         {
-          "coordinate": "-4.433333,55.866667",
-          "id": "104120237",
+          "coordinate": "-3.1930941,55.9491994",
           "image_url": null,
-          "type": "Transportation",
-          "name": "Glasgow Intl",
+          "name": "C ARTS | C venues | C cubed",
+          "id": "219388167",
+          "sub_poi_type": "TheatreHall",
+          "type": "Entertainment",
+          "icon": "bar"
+        },
+        {
+          "coordinate": "-3.2135281,55.9431614",
+          "image_url": null,
+          "name": "McEwan Square Playground",
+          "id": "219763324",
+          "sub_poi_type": "AmusementPark",
+          "type": "Entertainment",
+          "icon": "bar"
+        },
+        {
+          "coordinate": "-3.3635,55.9497",
+          "image_url": null,
+          "name": "Edinburgh",
+          "id": "95673668",
           "sub_poi_type": "Airport",
+          "type": "Transportation",
           "icon": "cars"
         },
         {
-          "coordinate": "-4.2900009,55.8724256",
-          "id": "208340499",
+          "coordinate": "-3.1883014,55.9524097",
           "image_url": null,
-          "type": "Education",
-          "name": "University of Glasgow",
-          "sub_poi_type": "UniversityBuilding",
-          "icon": "education"
-        },
-        {
-          "coordinate": "-4.3129290000000005,55.8479488",
-          "id": "219267810",
-          "image_url": null,
-          "type": "Entertainment",
-          "name": "Bellahouston Park Playground (East)",
-          "sub_poi_type": "AmusementPark",
-          "icon": "bar"
-        }
-      ],
-      [
-        {
-          "coordinate": "-4.2432731,55.9001505",
-          "id": "219319834",
-          "image_url": null,
-          "type": "Entertainment",
-          "name": "Milton Park Play Area",
-          "sub_poi_type": "AmusementPark",
-          "icon": "bar"
-        },
-        {
-          "coordinate": "-4.3754172,55.9050092",
-          "id": "212012521",
-          "image_url": null,
-          "type": "Shopping",
-          "name": "B&M Store",
-          "sub_poi_type": "ShoppingMall",
-          "icon": "deals"
-        },
-        {
-          "coordinate": "-4.592294,55.5098273",
-          "id": "95673669",
-          "image_url": null,
-          "type": "Transportation",
-          "name": "Glasgow Prestwick",
-          "sub_poi_type": "Airport",
-          "icon": "cars"
-        },
-        {
-          "coordinate": "-4.2423901,55.8621114",
-          "id": "207983055",
-          "image_url": "https://content.skyscnr.com/POI/207983055/1975957/1975957_WxH.jpg",
-          "type": "Education",
-          "name": "University of Strathclyde",
-          "sub_poi_type": "UniversityBuilding",
-          "icon": "education"
-        },
-        {
-          "coordinate": "-4.1937635,55.8538643",
-          "id": "219369295",
-          "image_url": null,
-          "type": "Entertainment",
-          "name": "Play Kingdom",
-          "sub_poi_type": "AmusementPark",
-          "icon": "bar"
-        },
-        {
-          "coordinate": "-4.2543424,55.8593083",
-          "id": "208340603",
-          "image_url": null,
-          "type": "Shopping",
-          "name": "Princes Square",
-          "sub_poi_type": "ShoppingMall",
-          "icon": "deals"
-        }
-      ],
-      [
-        {
-          "coordinate": "-4.2862274,55.8870368",
-          "id": "211521877",
-          "image_url": null,
-          "type": "Shopping",
-          "name": "Tesco Extra",
-          "sub_poi_type": "ShoppingMall",
-          "icon": "deals"
-        },
-        {
-          "coordinate": "-4.2511723,55.8624627",
-          "id": "207975618",
-          "image_url": null,
-          "type": "Transportation",
-          "name": "Queen Street Station",
+          "name": "Edinburgh Waverley Station",
+          "id": "207975465",
           "sub_poi_type": "TrainStation",
+          "type": "Transportation",
           "icon": "cars"
         },
         {
-          "coordinate": "-4.2636933,55.866147",
-          "id": "207983062",
-          "image_url": "https://content.skyscnr.com/POI/207983062/1976179/1976179_WxH.jpg",
-          "type": "Education",
-          "name": "The Glasgow School of Art",
-          "sub_poi_type": "UniversityBuilding",
-          "icon": "education"
-        },
-        {
-          "coordinate": "-4.258109,55.859112",
-          "id": "207975433",
+          "coordinate": "-3.2182815,55.945626",
           "image_url": null,
-          "type": "Transportation",
-          "name": "Glasgow Central Station",
+          "name": "Haymarket Train Station",
+          "id": "207975719",
           "sub_poi_type": "TrainStation",
+          "type": "Transportation",
           "icon": "cars"
         },
         {
-          "coordinate": "-4.2575887,55.8661893",
-          "id": "208367625",
+          "coordinate": "-3.307833,55.9276646",
           "image_url": null,
-          "type": "Education",
-          "name": "Royal Conservatoire of Scotland",
+          "name": "Edinburgh Park Station",
+          "id": "207975842",
+          "sub_poi_type": "TrainStation",
+          "type": "Transportation",
+          "icon": "cars"
+        },
+        {
+          "coordinate": "-3.3204014,55.9408869",
+          "image_url": null,
+          "name": "Edinburgh Gateway",
+          "id": "210888505",
+          "sub_poi_type": "TrainStation",
+          "type": "Transportation",
+          "icon": "cars"
+        },
+        {
+          "coordinate": "-3.2004714,55.9529237",
+          "image_url": null,
+          "name": "George Street",
+          "id": "207982513",
+          "sub_poi_type": "ShoppingMall",
+          "type": "Shopping",
+          "icon": "deals"
+        },
+        {
+          "coordinate": "-3.1907388,55.9527511",
+          "image_url": null,
+          "name": "Waverley Mall",
+          "id": "208536158",
+          "sub_poi_type": "ShoppingMall",
+          "type": "Shopping",
+          "icon": "deals"
+        },
+        {
+          "coordinate": "-3.1947272,55.9482882",
+          "image_url": null,
+          "name": "Isle of Skye Candle Company",
+          "id": "207982556",
+          "sub_poi_type": "ShoppingMall",
+          "type": "Shopping",
+          "icon": "deals"
+        },
+        {
+          "coordinate": "-3.1909273,55.9525793",
+          "image_url": null,
+          "name": "The Body Shop",
+          "id": "208355063",
+          "sub_poi_type": "ShoppingMall",
+          "type": "Shopping",
+          "icon": "deals"
+        },
+        {
+          "coordinate": "-3.1930662,55.9495124",
+          "image_url": null,
+          "name": "Jamie Scotts",
+          "id": "208353921",
+          "sub_poi_type": "ShoppingMall",
+          "type": "Shopping",
+          "icon": "deals"
+        },
+        {
+          "coordinate": "-3.1892413,55.9445158",
+          "image_url": null,
+          "name": "University of Edinburgh",
+          "id": "207982970",
           "sub_poi_type": "UniversityBuilding",
+          "type": "Education",
           "icon": "education"
         },
         {
-          "coordinate": "-4.3091667,55.8697222",
-          "id": "205755651",
+          "coordinate": "-3.320646,55.9095155",
           "image_url": null,
-          "type": "Transportation",
-          "name": "Partick station",
-          "sub_poi_type": "MetroStation",
-          "icon": "cars"
+          "name": "Heriot-Watt University",
+          "id": "209492171",
+          "sub_poi_type": "UniversityBuilding",
+          "type": "Education",
+          "icon": "education"
+        },
+        {
+          "coordinate": "-3.1980624,55.9451324",
+          "image_url": null,
+          "name": "Edinburgh College of Art",
+          "id": "207982987",
+          "sub_poi_type": "UniversityBuilding",
+          "type": "Education",
+          "icon": "education"
+        },
+        {
+          "coordinate": "-3.2887076,55.9248537",
+          "image_url": null,
+          "name": "Edinburgh Napier University",
+          "id": "207983236",
+          "sub_poi_type": "UniversityBuilding",
+          "type": "Education",
+          "icon": "education"
+        },
+        {
+          "coordinate": "-3.1872571,55.9474302",
+          "image_url": null,
+          "name": "Old College",
+          "id": "207982939",
+          "sub_poi_type": "UniversityBuilding",
+          "type": "Education",
+          "icon": "education"
         }
       ],
-      [
-        {
-          "coordinate": "-4.2499602,55.8668183",
-          "id": "207982935",
-          "image_url": null,
-          "type": "Education",
-          "name": "Glasgow Caledonian University",
-          "sub_poi_type": "UniversityBuilding",
-          "icon": "education"
-        }
-      ]
-    ],
-    "QUICKSELECT_OPTIONS_LIMIT": 4
-  },
-  "QUICKFILTER_OFFSET": 10,
-  "QUICKFILTER_MIN_RESULTS": 10,
-  "POICARD_OFFSET": 8,
-  "POICARD_MIN_RESULTS": 14,
-  "requestId": "c8b290ea-e901-2659-a0d0-a1061c75ffcb",
-  "searchByCurrentLocation": false,
-  "warningCrisis": null,
-  "correlationId": "3c549f1d-26d0-b405-1c25-5ce2fd45a116"
+      "clusterList": [
+        [
+          {
+            "coordinate": "-3.1979604,55.9517197",
+            "image_url": null,
+            "name": "Princes Street",
+            "id": "206570160",
+            "sub_poi_type": "TouristAttraction",
+            "type": "Landmark",
+            "icon": "landmark"
+          },
+          {
+            "coordinate": "-3.1999135,55.9485947",
+            "image_url": "https://content.skyscnr.com/POI/206569349/1738094/1738094_WxH.jpg",
+            "name": "Edinburgh Castle",
+            "id": "206569349",
+            "sub_poi_type": "TouristAttraction",
+            "type": "Landmark",
+            "icon": "landmark"
+          },
+          {
+            "coordinate": "-3.1722723999999998,55.9527138",
+            "image_url": null,
+            "name": "Palace of Holyroodhouse",
+            "id": "206530936",
+            "sub_poi_type": "TouristAttraction",
+            "type": "Landmark",
+            "icon": "landmark"
+          },
+          {
+            "coordinate": "-3.1889219,55.9529723",
+            "image_url": null,
+            "name": "N Bridge",
+            "id": "206530939",
+            "sub_poi_type": "TouristAttraction",
+            "type": "Landmark",
+            "icon": "landmark"
+          },
+          {
+            "coordinate": "-3.1843286,55.9409335",
+            "image_url": null,
+            "name": "Meadow Playground",
+            "id": "219566209",
+            "sub_poi_type": "AmusementPark",
+            "type": "Entertainment",
+            "icon": "bar"
+          },
+          {
+            "coordinate": "-3.2004714,55.9529237",
+            "image_url": null,
+            "name": "George Street",
+            "id": "207982513",
+            "sub_poi_type": "ShoppingMall",
+            "type": "Shopping",
+            "icon": "deals"
+          }
+        ],
+        [
+          {
+            "coordinate": "-3.1905666,55.9469995",
+            "image_url": "https://content.skyscnr.com/POI/206530921/1608050/1608050_WxH.jpg",
+            "name": "National Museum of Scotland",
+            "id": "206530921",
+            "sub_poi_type": "TouristAttraction",
+            "type": "Landmark",
+            "icon": "landmark"
+          },
+          {
+            "coordinate": "-3.1877038,55.957608",
+            "image_url": null,
+            "name": "Edinburgh Yoga Room",
+            "id": "221770190",
+            "sub_poi_type": "Stadium",
+            "type": "Entertainment",
+            "icon": "bar"
+          },
+          {
+            "coordinate": "-3.1907388,55.9527511",
+            "image_url": null,
+            "name": "Waverley Mall",
+            "id": "208536158",
+            "sub_poi_type": "ShoppingMall",
+            "type": "Shopping",
+            "icon": "deals"
+          },
+          {
+            "coordinate": "-3.3635,55.9497",
+            "image_url": null,
+            "name": "Edinburgh",
+            "id": "95673668",
+            "sub_poi_type": "Airport",
+            "type": "Transportation",
+            "icon": "cars"
+          },
+          {
+            "coordinate": "-3.1892413,55.9445158",
+            "image_url": null,
+            "name": "University of Edinburgh",
+            "id": "207982970",
+            "sub_poi_type": "UniversityBuilding",
+            "type": "Education",
+            "icon": "education"
+          },
+          {
+            "coordinate": "-3.1944149,55.9487328",
+            "image_url": null,
+            "name": "C ARTS | C venues | C aquila",
+            "id": "219387427",
+            "sub_poi_type": "TheatreHall",
+            "type": "Entertainment",
+            "icon": "bar"
+          }
+        ],
+        [
+          {
+            "coordinate": "-3.1930941,55.9491994",
+            "image_url": null,
+            "name": "C ARTS | C venues | C cubed",
+            "id": "219388167",
+            "sub_poi_type": "TheatreHall",
+            "type": "Entertainment",
+            "icon": "bar"
+          },
+          {
+            "coordinate": "-3.1947272,55.9482882",
+            "image_url": null,
+            "name": "Isle of Skye Candle Company",
+            "id": "207982556",
+            "sub_poi_type": "ShoppingMall",
+            "type": "Shopping",
+            "icon": "deals"
+          },
+          {
+            "coordinate": "-3.1883014,55.9524097",
+            "image_url": null,
+            "name": "Edinburgh Waverley Station",
+            "id": "207975465",
+            "sub_poi_type": "TrainStation",
+            "type": "Transportation",
+            "icon": "cars"
+          },
+          {
+            "coordinate": "-3.320646,55.9095155",
+            "image_url": null,
+            "name": "Heriot-Watt University",
+            "id": "209492171",
+            "sub_poi_type": "UniversityBuilding",
+            "type": "Education",
+            "icon": "education"
+          },
+          {
+            "coordinate": "-3.2135281,55.9431614",
+            "image_url": null,
+            "name": "McEwan Square Playground",
+            "id": "219763324",
+            "sub_poi_type": "AmusementPark",
+            "type": "Entertainment",
+            "icon": "bar"
+          },
+          {
+            "coordinate": "-3.1909273,55.9525793",
+            "image_url": null,
+            "name": "The Body Shop",
+            "id": "208355063",
+            "sub_poi_type": "ShoppingMall",
+            "type": "Shopping",
+            "icon": "deals"
+          }
+        ],
+        [
+          {
+            "coordinate": "-3.1930662,55.9495124",
+            "image_url": null,
+            "name": "Jamie Scotts",
+            "id": "208353921",
+            "sub_poi_type": "ShoppingMall",
+            "type": "Shopping",
+            "icon": "deals"
+          },
+          {
+            "coordinate": "-3.2182815,55.945626",
+            "image_url": null,
+            "name": "Haymarket Train Station",
+            "id": "207975719",
+            "sub_poi_type": "TrainStation",
+            "type": "Transportation",
+            "icon": "cars"
+          },
+          {
+            "coordinate": "-3.1980624,55.9451324",
+            "image_url": null,
+            "name": "Edinburgh College of Art",
+            "id": "207982987",
+            "sub_poi_type": "UniversityBuilding",
+            "type": "Education",
+            "icon": "education"
+          },
+          {
+            "coordinate": "-3.307833,55.9276646",
+            "image_url": null,
+            "name": "Edinburgh Park Station",
+            "id": "207975842",
+            "sub_poi_type": "TrainStation",
+            "type": "Transportation",
+            "icon": "cars"
+          },
+          {
+            "coordinate": "-3.2887076,55.9248537",
+            "image_url": null,
+            "name": "Edinburgh Napier University",
+            "id": "207983236",
+            "sub_poi_type": "UniversityBuilding",
+            "type": "Education",
+            "icon": "education"
+          },
+          {
+            "coordinate": "-3.3204014,55.9408869",
+            "image_url": null,
+            "name": "Edinburgh Gateway",
+            "id": "210888505",
+            "sub_poi_type": "TrainStation",
+            "type": "Transportation",
+            "icon": "cars"
+          }
+        ],
+        [
+          {
+            "coordinate": "-3.1872571,55.9474302",
+            "image_url": null,
+            "name": "Old College",
+            "id": "207982939",
+            "sub_poi_type": "UniversityBuilding",
+            "type": "Education",
+            "icon": "education"
+          }
+        ]
+      ],
+      "QUICKSELECT_OPTIONS_LIMIT": 4
+    },
+    "QUICKFILTER_OFFSET": 10,
+    "QUICKFILTER_MIN_RESULTS": 10,
+    "POICARD_OFFSET": 8,
+    "POICARD_MIN_RESULTS": 14,
+    "requestId": "f75e3d4d-a840-bd31-983d-d31e8c4ec57b",
+    "searchByCurrentLocation": false,
+    "warningCrisis": null,
+    "correlationId": "c1b4de28-03e8-df43-878f-349b9d0ccb66"
+  }
 }

@@ -108,7 +108,7 @@ function formatCurrency(input) {
             </div>
           </div>
         </div>
-        <div className="w-full  flex flex-col 2sm:flex-row  divide-x-[1px] pt-4">
+        <div className="w-full  flex flex-col 2sm:flex-row divide-x-[1px] pt-4">
           <div className="pl-4 pr-4 w-full 1sm:w-[1000px] 1md:w-[550px] 1lg:w-[630px]">
             <div className="pr-3 font-semibold text-lg ">{hotel.name}</div>
             <div className="flex flex-row pt-2">

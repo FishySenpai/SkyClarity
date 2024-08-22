@@ -15,42 +15,35 @@ const HotelsFilter = ({
   const [seeMoreProperties, setSeeMoreProperties] = useState(false);
   const [seeMoreChains, setSeeMoreChains] = useState(false);
   const [seeMoreDistricts, setSeeMoreDistricts] = useState(false);
- const handlePickupChange = (event) => {
-   const { value, checked } = event.target;
-   setPickupFilter((prev) =>
-     checked ? [...prev, value] : prev.filter((item) => item !== value)
-   );
- };
 
- const handlePoliciesChange = (event) => {
-   const { value, checked } = event.target;
-   setPoliciesFilter((prev) =>
-     checked ? [...prev, value] : prev.filter((item) => item !== value)
-   );
- };
+  const handlePriceChange = (event) => {
+    const { value, checked } = event.target;
+    setPriceRange((prev) =>
+      checked ? [...prev, value] : prev.filter((item) => item !== value)
+    );
+  };
 
- const handleTransmissionChange = (event) => {
-   const { value, checked } = event.target;
-   setTransmissionFilter((prev) =>
-     checked ? [...prev, value] : prev.filter((item) => item !== value)
-   );
- };
-
- const handleStarChange = (event) => {
-   const { value, checked } = event.target;
-   setStarRating((prev) =>
-     checked ? [...prev, value] : prev.filter((item) => item !== value)
-   );
- };
+  const handleRatingChange = (event) => {
+    const { value, checked } = event.target;
+    setGuestRating((prev) =>
+      checked ? [...prev, value] : prev.filter((item) => item !== value)
+    );
+  };
+  const handleStarChange = (event) => {
+    const { value, checked } = event.target;
+    setStarRating((prev) =>
+      checked ? [...prev, value] : prev.filter((item) => item !== value)
+    );
+  };
   if (hotelsData) {
     return (
-      <div className="mx-12 px-6 w-[300px] bg-white rounded-lg default-font text-gray-700 text-sm divide-y-2 divide-slate-300">
+      <div className="mx-12 px-6 w-[270px] bg-white rounded-lg default-font text-gray-700 text-sm divide-y-2 divide-slate-300">
         <div className="pt-1">
           <div className="flex flex-row">
             <div className="font-semibold text-lg py-2">Popular Filters</div>
           </div>
           <div className="pb-3">
-            {hotelsData.filters[7].values.map((cancellation, index) => (
+            {hotelsData.filters[7]?.values.slice(0,1).map((cancellation, index) => (
               <div key={cancellation.id} className="flex items-center mb-2">
                 <input type="checkbox" id={cancellation.id} className="mr-2" />
                 <label
@@ -58,13 +51,10 @@ const HotelsFilter = ({
                   className="flex justify-between w-full text-sm"
                 >
                   {cancellation.label}
-                  <span className="text-gray-500 ml-2">
-                    {cancellation.count}
-                  </span>
                 </label>
               </div>
             ))}
-            {hotelsData.filters[2].values.map((meal, index) => (
+            {hotelsData.filters[2]?.values.map((meal, index) => (
               <div key={meal.id} className="flex items-center mb-2">
                 <input type="checkbox" id={meal.id} className="mr-2" />
                 <label
@@ -72,7 +62,6 @@ const HotelsFilter = ({
                   className="flex justify-between w-full text-sm"
                 >
                   {meal.label}
-                  <span className="text-gray-500 ml-2 ">{meal.count}</span>
                 </label>
               </div>
             ))}
@@ -86,7 +75,20 @@ const HotelsFilter = ({
           <div className="pb-3">
             {hotelsData.filters[0].values.map((bucket, index) => (
               <div key={bucket.id} className="flex items-center mb-2">
-                <input type="checkbox" id={bucket.id} className="mr-2" />
+                <input
+                  type="checkbox"
+                  id={bucket.id}
+                  className="mr-2"
+                  value={`${(bucket.minPrice / 278).toFixed(0)} - ${
+                    bucket.maxPrice ? (bucket.maxPrice / 278).toFixed(0) : "+"
+                  }`}
+                  onChange={handlePriceChange}
+                  checked={priceRange.includes(
+                    `${(bucket.minPrice / 278).toFixed(0)} - ${
+                      bucket.maxPrice ? (bucket.maxPrice / 278).toFixed(0) : "+"
+                    }`
+                  )}
+                />
                 <label
                   htmlFor={bucket.id}
                   className="flex justify-between w-full text-sm"
@@ -94,7 +96,6 @@ const HotelsFilter = ({
                   {`$ ${(bucket.minPrice / 278).toFixed(0)} - $ ${
                     bucket.maxPrice ? (bucket.maxPrice / 278).toFixed(0) : "+"
                   }`}
-                  <span className="text-gray-500 ml-2 ">{bucket.count}</span>
                 </label>
               </div>
             ))}
@@ -104,9 +105,8 @@ const HotelsFilter = ({
           <div className="flex flex-row">
             <div className="font-semibold text-lg py-2">Star Rating</div>
           </div>
-
           <div className="pb-3">
-            {hotelsData.filters[1].values.map((stars, index) => (
+            {hotelsData.filters[1]?.values.map((stars, index) => (
               <div key={stars.id} className="flex items-center mb-2">
                 <input
                   type="checkbox"
@@ -139,7 +139,6 @@ const HotelsFilter = ({
                         </svg>
                       ))}
                   </span>
-                  <span className="text-gray-500 ml-2">{stars.count}</span>
                 </label>
               </div>
             ))}
@@ -150,12 +149,19 @@ const HotelsFilter = ({
             <div className="font-semibold text-lg py-2">Guest Rating</div>
           </div>
           <div className="pb-3">
-            {hotelsData.filters[4].values
+            {hotelsData.filters[4]?.values
               .slice()
               .reverse()
               .map((guest, index) => (
                 <div key={guest.id} className="flex items-center mb-2">
-                  <input type="checkbox" id={guest.id} className="mr-2" />
+                  <input
+                    type="checkbox"
+                    id={guest.id}
+                    className="mr-2"
+                    value={guest.id}
+                    onChange={handleRatingChange}
+                    checked={guestRating.includes(guest.id)}
+                  />
                   <label
                     htmlFor={guest.id}
                     className="flex justify-between w-full text-sm"
@@ -166,7 +172,6 @@ const HotelsFilter = ({
                       </span>
                       <span>{guest.label}</span>
                     </span>
-                    <span className="text-gray-500 ml-2">{guest.count}</span>
                   </label>
                 </div>
               ))}
