@@ -70,7 +70,7 @@ const CarRentalHome = () => {
           </div>
         </div>
       </div>
-      <div className="relative top-[650px] bg-gray-100 pb-12 rounded-t-3xl ">
+      <div className="relative top-[650px] 2sm:top-[600px] bg-gray-100 pb-12 rounded-t-3xl ">
         <div
           className="text-3xl pb-3 text-gray-800 font-bold pt-12 pl-6 sm:pl-0 sm:w-[600px] 1sm:w-[680px]  1md:w-[820px] lg:w-[935px] 1lg:w-[935px] 1xl:w-[1240px] flex flex-col 
         mx-auto 1xl:pl-5"

@@ -86,8 +86,8 @@ const scrollRight = () => {
         </div>
       </div>
 
-      <div className="relative top-[600px] bg-gray-100 pb-12 rounded-3xl  ">
-        <div className="text-3xl pb-3 text-gray-800 font-bold 1md:pt-12 w-[340px] 2sm:w-[540px]  1sm:w-[680px] 1md:w-[840px] 1lg:w-[982px] 1xl:w-[1350px] flex flex-col mx-auto 1xl:pl-5">
+      <div className="relative top-[600px] 1sm:top-[550px] bg-gray-100 pb-12 rounded-3xl  ">
+        <div className="text-3xl pb-3 text-gray-800 font-bold 1sm:pt-6 w-[340px] 2sm:w-[540px]  1sm:w-[680px] 1md:w-[840px] 1lg:w-[982px] 1xl:w-[1350px] flex flex-col mx-auto 1xl:pl-5">
           <div>Top Luxury 5-star Hotels</div>
           <span className="text-gray-700 font-normal text-[18px]">
             The key to a great city break? A perfectly placed base. Check out
