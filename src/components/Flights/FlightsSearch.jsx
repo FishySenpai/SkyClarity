@@ -32,7 +32,7 @@ const FlightsSearch = ({
   const [isClicked, setIsClicked] = useState(false);
   const [value, onChange] = useState(new Date());
   const [departToggle, setDepartToggle] = useState(false);
-  const [departDate, setDepartDate] = useState(formatDate(new Date()));
+  const [departDate, setDepartDate] = useState();
   const [returnToggle, setReturnToggle] = useState(false);
   const [returnDate, setReturnDate] = useState();
   const [departDate1, setDepartDate1] = useState();
@@ -328,7 +328,7 @@ const FlightsSearch = ({
                 </svg>
                 <input
                   className={`h-12 w-full pl-10 border rounded px-2 border-gray-400 focus:border-blue-500 bg-white outline-none ${
-                    from ? "text-gray-800 font-semibold" : ""
+                    to ? "text-gray-800 font-semibold" : ""
                   }`}
                   type="search"
                   placeholder="City or airport"
@@ -447,7 +447,7 @@ const FlightsSearch = ({
                       showWeekNumbers
                       value={value}
                       minDetail="month"
-                      minDate={new Date()}
+                      minDate={departDate ? new Date(departDate) : new Date()}
                     />
                   </div>
                 ) : null}

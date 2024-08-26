@@ -5,12 +5,20 @@ const FlightsFilter = ({
   flights,
   filters,
   setFilters,
-  max,
-  setMax,
+  maxCurrentPrice,
+  setMaxCurrentPrice,
+  minCurrentPrice,
+  setMinCurrentPrice,
   maxCurrentArrival,
   setMaxCurrentArrival,
+  minCurrentArrival,
+  setMinCurrentArrival,
+  minCurrentDeparture,
+  setMinCurrentDeparture,
   maxCurrentDeparture,
   setMaxCurrentDeparture,
+  minCurrentDuration,
+  setMinCurrentDuration,
   maxCurrentDuration,
   setMaxCurrentDuration,
   airline,
@@ -31,52 +39,28 @@ const FlightsFilter = ({
   const [minArrivalTime, setMinArrivalTime] = useState(Infinity);
   const [maxArrivalTime, setMaxArrivalTime] = useState(-Infinity);
 
-useEffect(() => {
-  if (flights && flights.itineraries) {
-    setMinDuration((flights.filterStats.duration.min / 60).toFixed(0));
-    setMaxDuration((flights.filterStats.duration.max / 60).toFixed(0));
+  useEffect(() => {
+    if (flights && flights.itineraries) {
+      setMinDuration((flights.filterStats.duration.min / 60).toFixed(0));
+      setMaxDuration((flights.filterStats.duration.max / 60).toFixed(0));
 
-    flights.itineraries.forEach((flight) => {
-    const price = Math.ceil(parseFloat(flight.price.raw));
+      flights.itineraries.forEach((flight) => {
+        const price = Math.ceil(parseFloat(flight.price.raw));
 
-console.log(flight.legs.map((leg) => new Date(leg.arrival)));
+        // Update minimum and maximum price
+        setMinPrice((prevMinPrice) => Math.min(prevMinPrice, price).toFixed(0));
+        setMaxPrice((prevMaxPrice) => Math.max(prevMaxPrice, price).toFixed(0));
 
-      // Find the earliest departure and latest arrival across all legs
-      const departureDate = new Date(
-        Math.max(...flight.legs.map((leg) => new Date(leg.departure)))
-      );
-      const arrivalDate = new Date(
-        Math.max(...flight.legs.map((leg) => new Date(leg.arrival).getTime()))
-      );
+        // Update minimum and maximum departure time
+        setMinDepartureTime(0);
+        setMaxDepartureTime(24);
 
-      const departureTime =
-        departureDate.getHours() + departureDate.getMinutes() / 60;
-      const arrivalTime =
-        arrivalDate.getHours() + arrivalDate.getMinutes() / 60;
-
-      // Update minimum and maximum price
-      setMinPrice((prevMinPrice) => Math.min(prevMinPrice, price).toFixed(0));
-      setMaxPrice((prevMaxPrice) => Math.max(prevMaxPrice, price).toFixed(0));
-
-      // Update minimum and maximum departure time
-      setMinDepartureTime((prevMinDepartureTime) =>
-        Math.min(prevMinDepartureTime, departureTime).toFixed(0)
-      );
-      setMaxDepartureTime((prevMaxDepartureTime) =>
-        Math.max(prevMaxDepartureTime, departureTime).toFixed(0)
-      );
-
-      // Update minimum and maximum arrival time
-      setMinArrivalTime((prevMinArrivalTime) =>
-        Math.min(prevMinArrivalTime, arrivalTime).toFixed(0)
-      );
-      setMaxArrivalTime((prevMaxArrivalTime) =>
-        Math.max(prevMaxArrivalTime, arrivalTime).toFixed(0)
-      );
-      console.log(arrivalTime);
-    });
-  }
-}, [flights]);
+        // Update minimum and maximum arrival time
+        setMinArrivalTime(0);
+        setMaxArrivalTime(24);
+      });
+    }
+  }, [flights]);
 
   // Add a useEffect to log the updated minPrice
   useEffect(() => {
@@ -280,6 +264,7 @@ console.log(flight.legs.map((leg) => new Date(leg.arrival)));
                   onChange={({ min, max }) => {
                     console.log(`min = ${min}, max = ${max}`);
                     setMaxCurrentDeparture(max);
+                    setMinCurrentDeparture(min);
                   }}
                   inputType="time"
                 />
@@ -339,6 +324,7 @@ console.log(flight.legs.map((leg) => new Date(leg.arrival)));
                 onChange={({ min, max }) => {
                   console.log(`min = ${min}, max = ${max}`);
                   setMaxCurrentArrival(max);
+                  setMinCurrentArrival(min);
                 }}
                 inputType="time"
               />
@@ -397,7 +383,8 @@ console.log(flight.legs.map((leg) => new Date(leg.arrival)));
                 max={maxPrice}
                 onChange={({ min, max }) => {
                   console.log(`min = ${min}, max = ${max}`);
-                  setMax(max);
+                  setMaxCurrentPrice(max);
+                  setMinCurrentPrice(min);
                 }}
                 inputType="price"
               />
@@ -450,7 +437,7 @@ console.log(flight.legs.map((leg) => new Date(leg.arrival)));
         </div>
         {showJourneyDuration && (
           <div className="pb-12 ">
-            {minDuration !== Infinity && maxDuration !== -Infinity && (
+            {maxDuration !== -Infinity && (
               <TimeRangeSlider
                 min={minDuration}
                 max={maxDuration}
@@ -458,9 +445,10 @@ console.log(flight.legs.map((leg) => new Date(leg.arrival)));
                   console.log(
                     `min = ${min}, max = ${max}, duration= ${maxCurrentDuration}`
                   );
-                  setMaxCurrentDuration(flights.filterStats.duration.max);
+                  setMaxCurrentDuration(max * 60);
                 }}
                 inputType="time"
+                isJourney="journey"
               />
             )}
           </div>

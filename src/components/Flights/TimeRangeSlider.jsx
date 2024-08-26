@@ -3,7 +3,7 @@ import classnames from "classnames";
 import PropTypes from "prop-types";
 import "./TimeRangeSlider.css";
 
-const TimeRangeSlider = ({ min, max, onChange, inputType }) => {
+const TimeRangeSlider = ({ min, max, onChange, inputType, isJourney }) => {
   const [minVal, setMinVal] = useState(convertToType(min));
   const [maxVal, setMaxVal] = useState(convertToType(max));
   const minValRef = useRef(null);
@@ -49,24 +49,27 @@ const TimeRangeSlider = ({ min, max, onChange, inputType }) => {
 
   return (
     <div className="pt-4">
-      <input
-        type="range"
-        min={min}
-        max={max}
-        step="0.5"
-        value={convertToValue(minVal)}
-        ref={minValRef}
-        onChange={(event) => {
-          const value = Math.min(
-            +event.target.value,
-            convertToValue(maxVal) - 0.5
-          );
-          setMinVal(convertToType(value));
-        }}
-        className={classnames("thumb thumb--zindex-3", {
-          "thumb--zindex-5": convertToValue(minVal) > max - 0.5,
-        })}
-      />
+      {isJourney !== "journey" ? (
+        <input
+          type="range"
+          min={min}
+          max={max}
+          step="0.5"
+          value={convertToValue(minVal)}
+          ref={minValRef}
+          onChange={(event) => {
+            const value = Math.min(
+              +event.target.value,
+              convertToValue(maxVal) - 0.5
+            );
+            setMinVal(convertToType(value));
+          }}
+          className={classnames("thumb thumb--zindex-3", {
+            "thumb--zindex-5": convertToValue(minVal) > max - 0.5,
+          })}
+        />
+      ) : null}
+
       <input
         type="range"
         min={min}
@@ -89,12 +92,8 @@ const TimeRangeSlider = ({ min, max, onChange, inputType }) => {
         <div ref={range} className="slider__range" />
         {inputType === "time" ? (
           <>
-            <div className="slider__left-value text-gray-700 ">
-              {minVal}
-            </div>
-            <div className="slider__right-value text-gray-700 ">
-              {maxVal}
-            </div>
+            <div className="slider__left-value text-gray-700 ">{minVal}</div>
+            <div className="slider__right-value text-gray-700 ">{maxVal}</div>
           </>
         ) : (
           <>
