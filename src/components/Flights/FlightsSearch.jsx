@@ -71,12 +71,12 @@ const FlightsSearch = ({
     }
   };
   const fetchLocation = async (location) => {
-    const url = `https://skyscanner80.p.rapidapi.com/api/v1/flights/auto-complete?query=${location}&market=US&locale=en-US`;
+    const url = `https://sky-scanner3.p.rapidapi.com/flights/auto-complete?query=${location}`;
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": "325a7f72damshf16ffcb2c3ed7bep1f566djsn006db2e1a65a",
-        "X-RapidAPI-Host": "skyscanner80.p.rapidapi.com",
+        "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
+        "x-rapidapi-host": "sky-scanner3.p.rapidapi.com",
       },
     };
 
@@ -84,7 +84,7 @@ const FlightsSearch = ({
       const response = await fetch(url, options);
       const result = await response.json();
       console.log(result);
-      return result.data[0].id;
+      return result.data[0].presentation.id;
     } catch (error) {
       console.error(error);
       return null;
@@ -132,8 +132,7 @@ const FlightsSearch = ({
         const options = {
           method: "GET",
           headers: {
-            "X-RapidAPI-Key":
-              "325a7f72damshf16ffcb2c3ed7bep1f566djsn006db2e1a65a",
+            "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
             "X-RapidAPI-Host": "skyscanner80.p.rapidapi.com",
           },
         };
@@ -164,8 +163,7 @@ const FlightsSearch = ({
         const options = {
           method: "GET",
           headers: {
-            "X-RapidAPI-Key":
-              "325a7f72damshf16ffcb2c3ed7bep1f566djsn006db2e1a65a",
+            "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
             "X-RapidAPI-Host": "skyscanner80.p.rapidapi.com",
           },
         };

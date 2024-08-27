@@ -40,7 +40,7 @@ const HotelsSearch = ({ home }) => {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": "325a7f72damshf16ffcb2c3ed7bep1f566djsn006db2e1a65a",
+        "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
         "X-RapidAPI-Host": "skyscanner80.p.rapidapi.com",
       },
     };
@@ -64,7 +64,7 @@ const HotelsSearch = ({ home }) => {
     const options = {
       method: "GET",
       headers: {
-        "x-rapidapi-key": "325a7f72damshf16ffcb2c3ed7bep1f566djsn006db2e1a65a",
+        "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
         "x-rapidapi-host": "skyscanner80.p.rapidapi.com",
       },
     };

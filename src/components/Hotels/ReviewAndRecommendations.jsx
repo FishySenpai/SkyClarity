@@ -34,7 +34,7 @@ const ReviewAndRecommendations = ({ id }) => {
     const options = {
       method: "GET",
       headers: {
-        "x-rapidapi-key": "325a7f72damshf16ffcb2c3ed7bep1f566djsn006db2e1a65a",
+        "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
         "x-rapidapi-host": "skyscanner80.p.rapidapi.com",
       },
     };
@@ -60,7 +60,7 @@ const ReviewAndRecommendations = ({ id }) => {
     const options = {
       method: "GET",
       headers: {
-        "x-rapidapi-key": "325a7f72damshf16ffcb2c3ed7bep1f566djsn006db2e1a65a",
+        "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
         "x-rapidapi-host": "skyscanner80.p.rapidapi.com",
       },
     };
@@ -82,28 +82,28 @@ const ReviewAndRecommendations = ({ id }) => {
   // }, [id])
   console.log(reviews);
   console.log(recommendations);
-const scrollLeft = () => {
-  const container = scrollContainerRef.current;
-  const scrollAmount = window.innerWidth * 0.585; // 75% of the window's width
-  const newScrollPosition = Math.max(0, scrollPosition - scrollAmount);
-  setScrollPosition(newScrollPosition);
-  if (container) {
-    container.scroll({ left: newScrollPosition, behavior: "smooth" });
-  }
-};
+  const scrollLeft = () => {
+    const container = scrollContainerRef.current;
+    const scrollAmount = window.innerWidth * 0.585; // 75% of the window's width
+    const newScrollPosition = Math.max(0, scrollPosition - scrollAmount);
+    setScrollPosition(newScrollPosition);
+    if (container) {
+      container.scroll({ left: newScrollPosition, behavior: "smooth" });
+    }
+  };
 
-const scrollRight = () => {
-  const container = scrollContainerRef.current;
-  const scrollAmount = window.innerWidth * 0.585; // 75% of the window's width
-  const newScrollPosition = Math.min(
-    container.scrollWidth - container.clientWidth,
-    scrollPosition + scrollAmount
-  );
-  setScrollPosition(newScrollPosition);
-  if (container) {
-    container.scroll({ left: newScrollPosition, behavior: "smooth" });
-  }
-};
+  const scrollRight = () => {
+    const container = scrollContainerRef.current;
+    const scrollAmount = window.innerWidth * 0.585; // 75% of the window's width
+    const newScrollPosition = Math.min(
+      container.scrollWidth - container.clientWidth,
+      scrollPosition + scrollAmount
+    );
+    setScrollPosition(newScrollPosition);
+    if (container) {
+      container.scroll({ left: newScrollPosition, behavior: "smooth" });
+    }
+  };
 
   if (reviews && recommendations) {
     return (

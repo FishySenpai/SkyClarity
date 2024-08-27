@@ -34,8 +34,7 @@ const CarInfo = () => {
         const options = {
           method: "GET",
           headers: {
-            "X-RapidAPI-Key":
-              "325a7f72damshf16ffcb2c3ed7bep1f566djsn006db2e1a65a",
+            "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
             "X-RapidAPI-Host": "skyscanner80.p.rapidapi.com",
           },
         };
@@ -58,11 +57,11 @@ const CarInfo = () => {
     }
   };
 
-  // useEffect(() => {
-  //   if (isValidParam(pickUpId) && isValidParam(pickDate)) {
-  //     fetchCars();
-  //   }
-  // }, [pickUpId, pickDate]);
+  useEffect(() => {
+    if (isValidParam(pickUpId) && isValidParam(pickDate)) {
+      fetchCars();
+    }
+  }, [pickUpId, pickDate]);
   useEffect(() => {
     console.log(carsInfo);
 
@@ -124,7 +123,7 @@ const CarInfo = () => {
             return featuresFilter.some((feature) => {
               if (feature === "A/C") {
                 return car.ac;
-              } 
+              }
               return false;
             });
           }

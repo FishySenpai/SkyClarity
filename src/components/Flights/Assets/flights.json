@@ -1,683 +1,266 @@
 {
-  "token": "eyJhIjoiMSIsImMiOjAsImkiOjAsImNjIjoiZWNvbm9teSIsIm8iOiJJU0IiLCJkIjoiVFlPQSIsImQxIjoiMjAyNC0wOC0yOSIsImQyIjoiMjAyNC0wOS0wNSJ9",
   "context": {
     "status": "incomplete",
-    "sessionId": "ClQIARJQCk4KJGI3MGU5YWJjLTEwZWUtNGYwZC05MWQ2LWU3ZmZhZjVjOWRlNhACGiRhNTYwNDc4ZC04ZWFjLTQ2MDgtODA5Ny0wMThmMGVmZjhhMjMSKHVzc19jY2U0MjNjMy04Y2ZkLTRjMzgtYWRkNC1iOGNhYmM5YjhmNWU=",
+    "sessionId": "ClQIARJQCk4KJDE5Yjc3YWMxLWM2MDctNGNlZS05MDljLWYxZDliYzgyODAxZRACGiQ5NzE0N2NlOC1iMGQyLTRkZGYtYjM3Yi1hOTFmOTViZmZmZDY=",
     "totalResults": 10
   },
   "itineraries": [
     {
-      "id": "12569-2408290335--31939-1-12234-2408292355|12234-2409051245--31939-2-12569-2409060740",
+      "id": "10413-2402141550--32385-1-14355-2402142218|14355-2402151225--32385-1-10413-2402160610",
       "price": {
-        "raw": 1188.08,
-        "formatted": "$1,189",
-        "pricingOptionId": "drxnYUA7QEZr"
+        "raw": 2688.86,
+        "formatted": "$2,689",
+        "pricingOptionId": "_nCdcHSSssLM"
       },
       "legs": [
         {
-          "id": "12569-2408290335--31939-1-12234-2408292355",
+          "id": "10413-2402141550--32385-1-14355-2402142218",
           "origin": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle",
+            "displayCode": "CDG",
+            "city": "Paris",
+            "country": "France",
             "isHighlighted": false
           },
           "destination": {
-            "id": "HND",
-            "entityId": "128667143",
-            "name": "Tokyo Haneda",
-            "displayCode": "HND",
-            "city": "Tokyo",
-            "country": "Japan",
+            "id": "MSY",
+            "name": "New Orleans Louis Armstrong",
+            "displayCode": "MSY",
+            "city": "New Orleans",
+            "country": "United States",
             "isHighlighted": false
           },
-          "durationInMinutes": 980,
+          "durationInMinutes": 808,
           "stopCount": 1,
           "isSmallestStops": false,
-          "departure": "2024-08-29T03:35:00",
-          "arrival": "2024-08-29T23:55:00",
+          "departure": "2024-02-14T15:50:00",
+          "arrival": "2024-02-14T22:18:00",
           "timeDeltaInDays": 0,
           "carriers": {
             "marketing": [
               {
-                "id": -31939,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/QR.png",
-                "name": "Qatar Airways"
-              }
-            ],
-            "operating": [
-              {
-                "id": -32184,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/JL.png",
-                "name": "Japan Airlines"
-              }
-            ],
-            "operationType": "partially_operated"
-          },
-          "segments": [
-            {
-              "id": "12569-11089-2408290335-2408290515--31939",
-              "origin": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "destination": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
-                "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
-                  "type": "City"
-                },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
-              },
-              "departure": "2024-08-29T03:35:00",
-              "arrival": "2024-08-29T05:15:00",
-              "durationInMinutes": 220,
-              "flightNumber": "633",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "11089-12234-2408290715-2408292355--31939",
-              "origin": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
-                "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
-                  "type": "City"
-                },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
-              },
-              "destination": {
-                "flightPlaceId": "HND",
-                "displayCode": "HND",
-                "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
-                  "type": "City"
-                },
-                "name": "Tokyo Haneda",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "departure": "2024-08-29T07:15:00",
-              "arrival": "2024-08-29T23:55:00",
-              "durationInMinutes": 640,
-              "flightNumber": "4850",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32184,
-                "name": "Japan Airlines",
-                "alternateId": "JL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        },
-        {
-          "id": "12234-2409051245--31939-2-12569-2409060740",
-          "origin": {
-            "id": "HND",
-            "entityId": "128667143",
-            "name": "Tokyo Haneda",
-            "displayCode": "HND",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 1375,
-          "stopCount": 2,
-          "isSmallestStops": false,
-          "departure": "2024-09-05T12:45:00",
-          "arrival": "2024-09-06T07:40:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -31939,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/QR.png",
-                "name": "Qatar Airways"
-              }
-            ],
-            "operating": [
-              {
-                "id": -32184,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/JL.png",
-                "name": "Japan Airlines"
-              }
-            ],
-            "operationType": "partially_operated"
-          },
-          "segments": [
-            {
-              "id": "12234-13068-2409051245-2409051405--31939",
-              "origin": {
-                "flightPlaceId": "HND",
-                "displayCode": "HND",
-                "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
-                  "type": "City"
-                },
-                "name": "Tokyo Haneda",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "destination": {
-                "flightPlaceId": "KIX",
-                "displayCode": "KIX",
-                "parent": {
-                  "flightPlaceId": "OSAA",
-                  "displayCode": "OSA",
-                  "name": "Osaka",
-                  "type": "City"
-                },
-                "name": "Kansai International (Osaka)",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "departure": "2024-09-05T12:45:00",
-              "arrival": "2024-09-05T14:05:00",
-              "durationInMinutes": 80,
-              "flightNumber": "6034",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32184,
-                "name": "Japan Airlines",
-                "alternateId": "JL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "13068-11089-2409051830-2409052320--31939",
-              "origin": {
-                "flightPlaceId": "KIX",
-                "displayCode": "KIX",
-                "parent": {
-                  "flightPlaceId": "OSAA",
-                  "displayCode": "OSA",
-                  "name": "Osaka",
-                  "type": "City"
-                },
-                "name": "Kansai International (Osaka)",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "destination": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
-                "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
-                  "type": "City"
-                },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
-              },
-              "departure": "2024-09-05T18:30:00",
-              "arrival": "2024-09-05T23:20:00",
-              "durationInMinutes": 650,
-              "flightNumber": "803",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "11089-12569-2409060210-2409060740--31939",
-              "origin": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
-                "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
-                  "type": "City"
-                },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
-              },
-              "destination": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "departure": "2024-09-06T02:10:00",
-              "arrival": "2024-09-06T07:40:00",
-              "durationInMinutes": 210,
-              "flightNumber": "614",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        }
-      ],
-      "isSelfTransfer": false,
-      "isProtectedSelfTransfer": false,
-      "farePolicy": {
-        "isChangeAllowed": false,
-        "isPartiallyChangeable": false,
-        "isCancellationAllowed": false,
-        "isPartiallyRefundable": false
-      },
-      "fareAttributes": {},
-      "tags": ["third_cheapest", "shortest"],
-      "isMashUp": false,
-      "hasFlexibleOptions": false,
-      "score": 0.999
-    },
-    {
-      "id": "12569-2408291945--32339-2-14788-2408311120|14788-2409051730--32339-1-12569-2409061850",
-      "price": {
-        "raw": 977.7,
-        "formatted": "$978",
-        "pricingOptionId": "_jOwZlKG5vTV"
-      },
-      "legs": [
-        {
-          "id": "12569-2408291945--32339-2-14788-2408311120",
-          "origin": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "NRT",
-            "entityId": "128668889",
-            "name": "Tokyo Narita",
-            "displayCode": "NRT",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 2135,
-          "stopCount": 2,
-          "isSmallestStops": false,
-          "departure": "2024-08-29T19:45:00",
-          "arrival": "2024-08-31T11:20:00",
-          "timeDeltaInDays": 2,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32339,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/60.png",
-                "name": "Etihad Airways"
-              }
-            ],
-            "operating": [
-              {
-                "id": -32558,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/OZ.png",
-                "name": "Asiana Airlines"
-              }
-            ],
-            "operationType": "partially_operated"
-          },
-          "segments": [
-            {
-              "id": "12569-9618-2408291945-2408292210--32339",
-              "origin": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "destination": {
-                "flightPlaceId": "AUH",
-                "displayCode": "AUH",
-                "parent": {
-                  "flightPlaceId": "AUHA",
-                  "displayCode": "AUH",
-                  "name": "Abu Dhabi",
-                  "type": "City"
-                },
-                "name": "Zayed International",
-                "type": "Airport",
-                "country": "United Arab Emirates"
-              },
-              "departure": "2024-08-29T19:45:00",
-              "arrival": "2024-08-29T22:10:00",
-              "durationInMinutes": 205,
-              "flightNumber": "234",
-              "marketingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9618-12409-2408300815-2408302140--32339",
-              "origin": {
-                "flightPlaceId": "AUH",
-                "displayCode": "AUH",
-                "parent": {
-                  "flightPlaceId": "AUHA",
-                  "displayCode": "AUH",
-                  "name": "Abu Dhabi",
-                  "type": "City"
-                },
-                "name": "Zayed International",
-                "type": "Airport",
-                "country": "United Arab Emirates"
-              },
-              "destination": {
-                "flightPlaceId": "ICN",
-                "displayCode": "ICN",
-                "parent": {
-                  "flightPlaceId": "SELA",
-                  "displayCode": "SEL",
-                  "name": "Seoul",
-                  "type": "City"
-                },
-                "name": "Incheon International Airport",
-                "type": "Airport",
-                "country": "South Korea"
-              },
-              "departure": "2024-08-30T08:15:00",
-              "arrival": "2024-08-30T21:40:00",
-              "durationInMinutes": 505,
-              "flightNumber": "858",
-              "marketingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "12409-14788-2408310900-2408311120--32339",
-              "origin": {
-                "flightPlaceId": "ICN",
-                "displayCode": "ICN",
-                "parent": {
-                  "flightPlaceId": "SELA",
-                  "displayCode": "SEL",
-                  "name": "Seoul",
-                  "type": "City"
-                },
-                "name": "Incheon International Airport",
-                "type": "Airport",
-                "country": "South Korea"
-              },
-              "destination": {
-                "flightPlaceId": "NRT",
-                "displayCode": "NRT",
-                "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
-                  "type": "City"
-                },
-                "name": "Tokyo Narita",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "departure": "2024-08-31T09:00:00",
-              "arrival": "2024-08-31T11:20:00",
-              "durationInMinutes": 140,
-              "flightNumber": "8453",
-              "marketingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32558,
-                "name": "Asiana Airlines",
-                "alternateId": "OZ",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        },
-        {
-          "id": "14788-2409051730--32339-1-12569-2409061850",
-          "origin": {
-            "id": "NRT",
-            "entityId": "128668889",
-            "name": "Tokyo Narita",
-            "displayCode": "NRT",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 1760,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-09-05T17:30:00",
-          "arrival": "2024-09-06T18:50:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32339,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/60.png",
-                "name": "Etihad Airways"
+                "id": -32385,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
+                "name": "Delta"
               }
             ],
             "operationType": "fully_operated"
           },
           "segments": [
             {
-              "id": "14788-9618-2409051730-2409060005--32339",
+              "id": "10413-9596-2402141550-2402142015--32385",
               "origin": {
-                "flightPlaceId": "NRT",
-                "displayCode": "NRT",
+                "flightPlaceId": "CDG",
+                "displayCode": "CDG",
                 "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
+                  "flightPlaceId": "PARI",
+                  "displayCode": "PAR",
+                  "name": "Paris",
                   "type": "City"
                 },
-                "name": "Tokyo Narita",
-                "type": "Airport",
-                "country": "Japan"
+                "name": "Paris Charles de Gaulle",
+                "type": "Airport"
               },
               "destination": {
-                "flightPlaceId": "AUH",
-                "displayCode": "AUH",
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
                 "parent": {
-                  "flightPlaceId": "AUHA",
-                  "displayCode": "AUH",
-                  "name": "Abu Dhabi",
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
                   "type": "City"
                 },
-                "name": "Zayed International",
-                "type": "Airport",
-                "country": "United Arab Emirates"
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
               },
-              "departure": "2024-09-05T17:30:00",
-              "arrival": "2024-09-06T00:05:00",
-              "durationInMinutes": 695,
-              "flightNumber": "871",
+              "departure": "2024-02-14T15:50:00",
+              "arrival": "2024-02-14T20:15:00",
+              "durationInMinutes": 625,
+              "flightNumber": "85",
               "marketingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               }
             },
             {
-              "id": "9618-12569-2409061435-2409061850--32339",
+              "id": "9596-14355-2402142144-2402142218--32385",
               "origin": {
-                "flightPlaceId": "AUH",
-                "displayCode": "AUH",
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
                 "parent": {
-                  "flightPlaceId": "AUHA",
-                  "displayCode": "AUH",
-                  "name": "Abu Dhabi",
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
                   "type": "City"
                 },
-                "name": "Zayed International",
-                "type": "Airport",
-                "country": "United Arab Emirates"
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
               },
               "destination": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
+                "flightPlaceId": "MSY",
+                "displayCode": "MSY",
                 "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
+                  "flightPlaceId": "MSYA",
+                  "displayCode": "MSY",
+                  "name": "New Orleans",
                   "type": "City"
                 },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
+                "name": "New Orleans Louis Armstrong",
+                "type": "Airport"
               },
-              "departure": "2024-09-06T14:35:00",
-              "arrival": "2024-09-06T18:50:00",
-              "durationInMinutes": 195,
-              "flightNumber": "233",
+              "departure": "2024-02-14T21:44:00",
+              "arrival": "2024-02-14T22:18:00",
+              "durationInMinutes": 94,
+              "flightNumber": "2521",
               "marketingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            }
+          ]
+        },
+        {
+          "id": "14355-2402151225--32385-1-10413-2402160610",
+          "origin": {
+            "id": "MSY",
+            "name": "New Orleans Louis Armstrong",
+            "displayCode": "MSY",
+            "city": "New Orleans",
+            "country": "United States",
+            "isHighlighted": false
+          },
+          "destination": {
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle",
+            "displayCode": "CDG",
+            "city": "Paris",
+            "country": "France",
+            "isHighlighted": false
+          },
+          "durationInMinutes": 645,
+          "stopCount": 1,
+          "isSmallestStops": false,
+          "departure": "2024-02-15T12:25:00",
+          "arrival": "2024-02-16T06:10:00",
+          "timeDeltaInDays": 1,
+          "carriers": {
+            "marketing": [
+              {
+                "id": -32385,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
+                "name": "Delta"
+              }
+            ],
+            "operationType": "fully_operated"
+          },
+          "segments": [
+            {
+              "id": "14355-9596-2402151225-2402151453--32385",
+              "origin": {
+                "flightPlaceId": "MSY",
+                "displayCode": "MSY",
+                "parent": {
+                  "flightPlaceId": "MSYA",
+                  "displayCode": "MSY",
+                  "name": "New Orleans",
+                  "type": "City"
+                },
+                "name": "New Orleans Louis Armstrong",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "departure": "2024-02-15T12:25:00",
+              "arrival": "2024-02-15T14:53:00",
+              "durationInMinutes": 88,
+              "flightNumber": "2542",
+              "marketingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            },
+            {
+              "id": "9596-10413-2402151535-2402160610--32385",
+              "origin": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "CDG",
+                "displayCode": "CDG",
+                "parent": {
+                  "flightPlaceId": "PARI",
+                  "displayCode": "PAR",
+                  "name": "Paris",
+                  "type": "City"
+                },
+                "name": "Paris Charles de Gaulle",
+                "type": "Airport"
+              },
+              "departure": "2024-02-15T15:35:00",
+              "arrival": "2024-02-16T06:10:00",
+              "durationInMinutes": 515,
+              "flightNumber": "82",
+              "marketingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               }
@@ -694,153 +277,140 @@
         "isPartiallyRefundable": false
       },
       "fareAttributes": {},
-      "tags": ["cheapest"],
+      "tags": ["cheapest", "shortest"],
       "isMashUp": false,
       "hasFlexibleOptions": false,
-      "score": 0.981606
+      "score": 0.999
     },
     {
-      "id": "12569-2408290335--31939-1-12234-2408292355|14788-2409051020--31939-2-12569-2409060740",
+      "id": "10413-2402141550--32385-1-14355-2402142218|14355-2402151920--32385-1-10413-2402161320",
       "price": {
-        "raw": 1215.58,
-        "formatted": "$1,216",
-        "pricingOptionId": "sYTBKWBOjdIx"
+        "raw": 2688.86,
+        "formatted": "$2,689",
+        "pricingOptionId": "MzFHM_qaX1UU"
       },
       "legs": [
         {
-          "id": "12569-2408290335--31939-1-12234-2408292355",
+          "id": "10413-2402141550--32385-1-14355-2402142218",
           "origin": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle",
+            "displayCode": "CDG",
+            "city": "Paris",
+            "country": "France",
             "isHighlighted": false
           },
           "destination": {
-            "id": "HND",
-            "entityId": "128667143",
-            "name": "Tokyo Haneda",
-            "displayCode": "HND",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": true
+            "id": "MSY",
+            "name": "New Orleans Louis Armstrong",
+            "displayCode": "MSY",
+            "city": "New Orleans",
+            "country": "United States",
+            "isHighlighted": false
           },
-          "durationInMinutes": 980,
+          "durationInMinutes": 808,
           "stopCount": 1,
           "isSmallestStops": false,
-          "departure": "2024-08-29T03:35:00",
-          "arrival": "2024-08-29T23:55:00",
+          "departure": "2024-02-14T15:50:00",
+          "arrival": "2024-02-14T22:18:00",
           "timeDeltaInDays": 0,
           "carriers": {
             "marketing": [
               {
-                "id": -31939,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/QR.png",
-                "name": "Qatar Airways"
+                "id": -32385,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
+                "name": "Delta"
               }
             ],
-            "operating": [
-              {
-                "id": -32184,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/JL.png",
-                "name": "Japan Airlines"
-              }
-            ],
-            "operationType": "partially_operated"
+            "operationType": "fully_operated"
           },
           "segments": [
             {
-              "id": "12569-11089-2408290335-2408290515--31939",
+              "id": "10413-9596-2402141550-2402142015--32385",
               "origin": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
+                "flightPlaceId": "CDG",
+                "displayCode": "CDG",
                 "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
+                  "flightPlaceId": "PARI",
+                  "displayCode": "PAR",
+                  "name": "Paris",
                   "type": "City"
                 },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
+                "name": "Paris Charles de Gaulle",
+                "type": "Airport"
               },
               "destination": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
                 "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
                   "type": "City"
                 },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
               },
-              "departure": "2024-08-29T03:35:00",
-              "arrival": "2024-08-29T05:15:00",
-              "durationInMinutes": 220,
-              "flightNumber": "633",
+              "departure": "2024-02-14T15:50:00",
+              "arrival": "2024-02-14T20:15:00",
+              "durationInMinutes": 625,
+              "flightNumber": "85",
               "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               }
             },
             {
-              "id": "11089-12234-2408290715-2408292355--31939",
+              "id": "9596-14355-2402142144-2402142218--32385",
               "origin": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
                 "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
                   "type": "City"
                 },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
               },
               "destination": {
-                "flightPlaceId": "HND",
-                "displayCode": "HND",
+                "flightPlaceId": "MSY",
+                "displayCode": "MSY",
                 "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
+                  "flightPlaceId": "MSYA",
+                  "displayCode": "MSY",
+                  "name": "New Orleans",
                   "type": "City"
                 },
-                "name": "Tokyo Haneda",
-                "type": "Airport",
-                "country": "Japan"
+                "name": "New Orleans Louis Armstrong",
+                "type": "Airport"
               },
-              "departure": "2024-08-29T07:15:00",
-              "arrival": "2024-08-29T23:55:00",
-              "durationInMinutes": 640,
-              "flightNumber": "4850",
+              "departure": "2024-02-14T21:44:00",
+              "arrival": "2024-02-14T22:18:00",
+              "durationInMinutes": 94,
+              "flightNumber": "2521",
               "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -32184,
-                "name": "Japan Airlines",
-                "alternateId": "JL",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               }
@@ -848,186 +418,700 @@
           ]
         },
         {
-          "id": "14788-2409051020--31939-2-12569-2409060740",
+          "id": "14355-2402151920--32385-1-10413-2402161320",
           "origin": {
-            "id": "NRT",
-            "entityId": "128668889",
-            "name": "Tokyo Narita",
-            "displayCode": "NRT",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": true
-          },
-          "destination": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
+            "id": "MSY",
+            "name": "New Orleans Louis Armstrong",
+            "displayCode": "MSY",
+            "city": "New Orleans",
+            "country": "United States",
             "isHighlighted": false
           },
-          "durationInMinutes": 1520,
-          "stopCount": 2,
+          "destination": {
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle",
+            "displayCode": "CDG",
+            "city": "Paris",
+            "country": "France",
+            "isHighlighted": false
+          },
+          "durationInMinutes": 660,
+          "stopCount": 1,
           "isSmallestStops": false,
-          "departure": "2024-09-05T10:20:00",
-          "arrival": "2024-09-06T07:40:00",
+          "departure": "2024-02-15T19:20:00",
+          "arrival": "2024-02-16T13:20:00",
           "timeDeltaInDays": 1,
           "carriers": {
             "marketing": [
               {
-                "id": -31939,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/QR.png",
-                "name": "Qatar Airways"
+                "id": -32385,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
+                "name": "Delta"
+              }
+            ],
+            "operationType": "fully_operated"
+          },
+          "segments": [
+            {
+              "id": "14355-9596-2402151920-2402152150--32385",
+              "origin": {
+                "flightPlaceId": "MSY",
+                "displayCode": "MSY",
+                "parent": {
+                  "flightPlaceId": "MSYA",
+                  "displayCode": "MSY",
+                  "name": "New Orleans",
+                  "type": "City"
+                },
+                "name": "New Orleans Louis Armstrong",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "departure": "2024-02-15T19:20:00",
+              "arrival": "2024-02-15T21:50:00",
+              "durationInMinutes": 90,
+              "flightNumber": "2367",
+              "marketingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            },
+            {
+              "id": "9596-10413-2402152245-2402161320--32385",
+              "origin": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "CDG",
+                "displayCode": "CDG",
+                "parent": {
+                  "flightPlaceId": "PARI",
+                  "displayCode": "PAR",
+                  "name": "Paris",
+                  "type": "City"
+                },
+                "name": "Paris Charles de Gaulle",
+                "type": "Airport"
+              },
+              "departure": "2024-02-15T22:45:00",
+              "arrival": "2024-02-16T13:20:00",
+              "durationInMinutes": 515,
+              "flightNumber": "84",
+              "marketingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            }
+          ]
+        }
+      ],
+      "isSelfTransfer": false,
+      "isProtectedSelfTransfer": false,
+      "farePolicy": {
+        "isChangeAllowed": false,
+        "isPartiallyChangeable": false,
+        "isCancellationAllowed": false,
+        "isPartiallyRefundable": false
+      },
+      "fareAttributes": {},
+      "tags": ["second_cheapest", "third_shortest"],
+      "isMashUp": false,
+      "hasFlexibleOptions": false,
+      "score": 0.982508
+    },
+    {
+      "id": "10413-2402141550--32132-1-14355-2402142218|14355-2402151920--32132-1-10413-2402161320",
+      "price": {
+        "raw": 2695.29,
+        "formatted": "$2,696",
+        "pricingOptionId": "Xi-63c5jmeQv"
+      },
+      "legs": [
+        {
+          "id": "10413-2402141550--32132-1-14355-2402142218",
+          "origin": {
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle",
+            "displayCode": "CDG",
+            "city": "Paris",
+            "country": "France",
+            "isHighlighted": false
+          },
+          "destination": {
+            "id": "MSY",
+            "name": "New Orleans Louis Armstrong",
+            "displayCode": "MSY",
+            "city": "New Orleans",
+            "country": "United States",
+            "isHighlighted": false
+          },
+          "durationInMinutes": 808,
+          "stopCount": 1,
+          "isSmallestStops": false,
+          "departure": "2024-02-14T15:50:00",
+          "arrival": "2024-02-14T22:18:00",
+          "timeDeltaInDays": 0,
+          "carriers": {
+            "marketing": [
+              {
+                "id": -32132,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
+                "name": "KLM"
               }
             ],
             "operating": [
               {
-                "id": -32080,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/MH.png",
-                "name": "Malaysia Airlines"
+                "id": -32385,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
+                "name": "Delta"
+              }
+            ],
+            "operationType": "not_operated"
+          },
+          "segments": [
+            {
+              "id": "10413-9596-2402141550-2402142015--32132",
+              "origin": {
+                "flightPlaceId": "CDG",
+                "displayCode": "CDG",
+                "parent": {
+                  "flightPlaceId": "PARI",
+                  "displayCode": "PAR",
+                  "name": "Paris",
+                  "type": "City"
+                },
+                "name": "Paris Charles de Gaulle",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "departure": "2024-02-14T15:50:00",
+              "arrival": "2024-02-14T20:15:00",
+              "durationInMinutes": 625,
+              "flightNumber": "6100",
+              "marketingCarrier": {
+                "id": -32132,
+                "name": "KLM",
+                "alternateId": "KL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            },
+            {
+              "id": "9596-14355-2402142144-2402142218--32132",
+              "origin": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "MSY",
+                "displayCode": "MSY",
+                "parent": {
+                  "flightPlaceId": "MSYA",
+                  "displayCode": "MSY",
+                  "name": "New Orleans",
+                  "type": "City"
+                },
+                "name": "New Orleans Louis Armstrong",
+                "type": "Airport"
+              },
+              "departure": "2024-02-14T21:44:00",
+              "arrival": "2024-02-14T22:18:00",
+              "durationInMinutes": 94,
+              "flightNumber": "6930",
+              "marketingCarrier": {
+                "id": -32132,
+                "name": "KLM",
+                "alternateId": "KL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            }
+          ]
+        },
+        {
+          "id": "14355-2402151920--32132-1-10413-2402161320",
+          "origin": {
+            "id": "MSY",
+            "name": "New Orleans Louis Armstrong",
+            "displayCode": "MSY",
+            "city": "New Orleans",
+            "country": "United States",
+            "isHighlighted": false
+          },
+          "destination": {
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle",
+            "displayCode": "CDG",
+            "city": "Paris",
+            "country": "France",
+            "isHighlighted": false
+          },
+          "durationInMinutes": 660,
+          "stopCount": 1,
+          "isSmallestStops": false,
+          "departure": "2024-02-15T19:20:00",
+          "arrival": "2024-02-16T13:20:00",
+          "timeDeltaInDays": 1,
+          "carriers": {
+            "marketing": [
+              {
+                "id": -32132,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
+                "name": "KLM"
+              }
+            ],
+            "operating": [
+              {
+                "id": -32385,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
+                "name": "Delta"
+              }
+            ],
+            "operationType": "not_operated"
+          },
+          "segments": [
+            {
+              "id": "14355-9596-2402151920-2402152150--32132",
+              "origin": {
+                "flightPlaceId": "MSY",
+                "displayCode": "MSY",
+                "parent": {
+                  "flightPlaceId": "MSYA",
+                  "displayCode": "MSY",
+                  "name": "New Orleans",
+                  "type": "City"
+                },
+                "name": "New Orleans Louis Armstrong",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "departure": "2024-02-15T19:20:00",
+              "arrival": "2024-02-15T21:50:00",
+              "durationInMinutes": 90,
+              "flightNumber": "7849",
+              "marketingCarrier": {
+                "id": -32132,
+                "name": "KLM",
+                "alternateId": "KL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            },
+            {
+              "id": "9596-10413-2402152245-2402161320--32132",
+              "origin": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "CDG",
+                "displayCode": "CDG",
+                "parent": {
+                  "flightPlaceId": "PARI",
+                  "displayCode": "PAR",
+                  "name": "Paris",
+                  "type": "City"
+                },
+                "name": "Paris Charles de Gaulle",
+                "type": "Airport"
+              },
+              "departure": "2024-02-15T22:45:00",
+              "arrival": "2024-02-16T13:20:00",
+              "durationInMinutes": 515,
+              "flightNumber": "6097",
+              "marketingCarrier": {
+                "id": -32132,
+                "name": "KLM",
+                "alternateId": "KL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            }
+          ]
+        }
+      ],
+      "isSelfTransfer": false,
+      "isProtectedSelfTransfer": false,
+      "farePolicy": {
+        "isChangeAllowed": false,
+        "isPartiallyChangeable": false,
+        "isCancellationAllowed": false,
+        "isPartiallyRefundable": false
+      },
+      "fareAttributes": {},
+      "isMashUp": false,
+      "hasFlexibleOptions": false,
+      "score": 0.927642
+    },
+    {
+      "id": "10413-2402141550--32385-1-14355-2402142218|14355-2402151651--32385-1-10413-2402161045",
+      "price": {
+        "raw": 2828.2,
+        "formatted": "$2,829",
+        "pricingOptionId": "pT7UL0oq9whl"
+      },
+      "legs": [
+        {
+          "id": "10413-2402141550--32385-1-14355-2402142218",
+          "origin": {
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle",
+            "displayCode": "CDG",
+            "city": "Paris",
+            "country": "France",
+            "isHighlighted": false
+          },
+          "destination": {
+            "id": "MSY",
+            "name": "New Orleans Louis Armstrong",
+            "displayCode": "MSY",
+            "city": "New Orleans",
+            "country": "United States",
+            "isHighlighted": false
+          },
+          "durationInMinutes": 808,
+          "stopCount": 1,
+          "isSmallestStops": false,
+          "departure": "2024-02-14T15:50:00",
+          "arrival": "2024-02-14T22:18:00",
+          "timeDeltaInDays": 0,
+          "carriers": {
+            "marketing": [
+              {
+                "id": -32385,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
+                "name": "Delta"
+              }
+            ],
+            "operationType": "fully_operated"
+          },
+          "segments": [
+            {
+              "id": "10413-9596-2402141550-2402142015--32385",
+              "origin": {
+                "flightPlaceId": "CDG",
+                "displayCode": "CDG",
+                "parent": {
+                  "flightPlaceId": "PARI",
+                  "displayCode": "PAR",
+                  "name": "Paris",
+                  "type": "City"
+                },
+                "name": "Paris Charles de Gaulle",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "departure": "2024-02-14T15:50:00",
+              "arrival": "2024-02-14T20:15:00",
+              "durationInMinutes": 625,
+              "flightNumber": "85",
+              "marketingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            },
+            {
+              "id": "9596-14355-2402142144-2402142218--32385",
+              "origin": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "MSY",
+                "displayCode": "MSY",
+                "parent": {
+                  "flightPlaceId": "MSYA",
+                  "displayCode": "MSY",
+                  "name": "New Orleans",
+                  "type": "City"
+                },
+                "name": "New Orleans Louis Armstrong",
+                "type": "Airport"
+              },
+              "departure": "2024-02-14T21:44:00",
+              "arrival": "2024-02-14T22:18:00",
+              "durationInMinutes": 94,
+              "flightNumber": "2521",
+              "marketingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            }
+          ]
+        },
+        {
+          "id": "14355-2402151651--32385-1-10413-2402161045",
+          "origin": {
+            "id": "MSY",
+            "name": "New Orleans Louis Armstrong",
+            "displayCode": "MSY",
+            "city": "New Orleans",
+            "country": "United States",
+            "isHighlighted": false
+          },
+          "destination": {
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle",
+            "displayCode": "CDG",
+            "city": "Paris",
+            "country": "France",
+            "isHighlighted": false
+          },
+          "durationInMinutes": 654,
+          "stopCount": 1,
+          "isSmallestStops": false,
+          "departure": "2024-02-15T16:51:00",
+          "arrival": "2024-02-16T10:45:00",
+          "timeDeltaInDays": 1,
+          "carriers": {
+            "marketing": [
+              {
+                "id": -32385,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
+                "name": "Delta"
+              }
+            ],
+            "operating": [
+              {
+                "id": -32677,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
+                "name": "Air France"
               }
             ],
             "operationType": "partially_operated"
           },
           "segments": [
             {
-              "id": "14788-13311-2409051020-2409051645--31939",
+              "id": "14355-9596-2402151651-2402151922--32385",
               "origin": {
-                "flightPlaceId": "NRT",
-                "displayCode": "NRT",
+                "flightPlaceId": "MSY",
+                "displayCode": "MSY",
                 "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
+                  "flightPlaceId": "MSYA",
+                  "displayCode": "MSY",
+                  "name": "New Orleans",
                   "type": "City"
                 },
-                "name": "Tokyo Narita",
-                "type": "Airport",
-                "country": "Japan"
+                "name": "New Orleans Louis Armstrong",
+                "type": "Airport"
               },
               "destination": {
-                "flightPlaceId": "KUL",
-                "displayCode": "KUL",
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
                 "parent": {
-                  "flightPlaceId": "KULM",
-                  "displayCode": "KUL",
-                  "name": "Kuala Lumpur",
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
                   "type": "City"
                 },
-                "name": "Kuala Lumpur International",
-                "type": "Airport",
-                "country": "Malaysia"
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
               },
-              "departure": "2024-09-05T10:20:00",
-              "arrival": "2024-09-05T16:45:00",
-              "durationInMinutes": 445,
-              "flightNumber": "5045",
+              "departure": "2024-02-15T16:51:00",
+              "arrival": "2024-02-15T19:22:00",
+              "durationInMinutes": 91,
+              "flightNumber": "2612",
               "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -32080,
-                "name": "Malaysia Airlines",
-                "alternateId": "MH",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               }
             },
             {
-              "id": "13311-11089-2409052100-2409052330--31939",
+              "id": "9596-10413-2402152030-2402161045--32385",
               "origin": {
-                "flightPlaceId": "KUL",
-                "displayCode": "KUL",
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
                 "parent": {
-                  "flightPlaceId": "KULM",
-                  "displayCode": "KUL",
-                  "name": "Kuala Lumpur",
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
                   "type": "City"
                 },
-                "name": "Kuala Lumpur International",
-                "type": "Airport",
-                "country": "Malaysia"
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
               },
               "destination": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
+                "flightPlaceId": "CDG",
+                "displayCode": "CDG",
                 "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
+                  "flightPlaceId": "PARI",
+                  "displayCode": "PAR",
+                  "name": "Paris",
                   "type": "City"
                 },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
+                "name": "Paris Charles de Gaulle",
+                "type": "Airport"
               },
-              "departure": "2024-09-05T21:00:00",
-              "arrival": "2024-09-05T23:30:00",
-              "durationInMinutes": 450,
-              "flightNumber": "4990",
+              "departure": "2024-02-15T20:30:00",
+              "arrival": "2024-02-16T10:45:00",
+              "durationInMinutes": 495,
+              "flightNumber": "8672",
               "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -32080,
-                "name": "Malaysia Airlines",
-                "alternateId": "MH",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "11089-12569-2409060210-2409060740--31939",
-              "origin": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
-                "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
-                  "type": "City"
-                },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
-              },
-              "destination": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "departure": "2024-09-06T02:10:00",
-              "arrival": "2024-09-06T07:40:00",
-              "durationInMinutes": 210,
-              "flightNumber": "614",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32677,
+                "name": "Air France",
+                "alternateId": "AF",
                 "allianceId": 0,
                 "displayCode": ""
               }
@@ -1047,784 +1131,137 @@
       "tags": ["second_shortest"],
       "isMashUp": false,
       "hasFlexibleOptions": false,
-      "score": 0.918985
+      "score": 0.868441
     },
     {
-      "id": "12569-2408290435--32339-1-14788-2408301300|14788-2409051730--32339-1-12569-2409061850",
+      "id": "10413-2402141550--32385-1-14355-2402142218|14355-2402151814--32385-1-10413-2402161320",
       "price": {
-        "raw": 1201.3,
-        "formatted": "$1,202",
-        "pricingOptionId": "HC6ec6JJQ6KQ"
+        "raw": 2688.86,
+        "formatted": "$2,689",
+        "pricingOptionId": "LkTSOzjLhGEs"
       },
       "legs": [
         {
-          "id": "12569-2408290435--32339-1-14788-2408301300",
+          "id": "10413-2402141550--32385-1-14355-2402142218",
           "origin": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle",
+            "displayCode": "CDG",
+            "city": "Paris",
+            "country": "France",
             "isHighlighted": false
           },
           "destination": {
-            "id": "NRT",
-            "entityId": "128668889",
-            "name": "Tokyo Narita",
-            "displayCode": "NRT",
-            "city": "Tokyo",
-            "country": "Japan",
+            "id": "MSY",
+            "name": "New Orleans Louis Armstrong",
+            "displayCode": "MSY",
+            "city": "New Orleans",
+            "country": "United States",
             "isHighlighted": false
           },
-          "durationInMinutes": 1705,
+          "durationInMinutes": 808,
           "stopCount": 1,
           "isSmallestStops": false,
-          "departure": "2024-08-29T04:35:00",
-          "arrival": "2024-08-30T13:00:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32339,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/60.png",
-                "name": "Etihad Airways"
-              }
-            ],
-            "operationType": "fully_operated"
-          },
-          "segments": [
-            {
-              "id": "12569-9618-2408290435-2408290700--32339",
-              "origin": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "destination": {
-                "flightPlaceId": "AUH",
-                "displayCode": "AUH",
-                "parent": {
-                  "flightPlaceId": "AUHA",
-                  "displayCode": "AUH",
-                  "name": "Abu Dhabi",
-                  "type": "City"
-                },
-                "name": "Zayed International",
-                "type": "Airport",
-                "country": "United Arab Emirates"
-              },
-              "departure": "2024-08-29T04:35:00",
-              "arrival": "2024-08-29T07:00:00",
-              "durationInMinutes": 205,
-              "flightNumber": "232",
-              "marketingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9618-14788-2408292155-2408301300--32339",
-              "origin": {
-                "flightPlaceId": "AUH",
-                "displayCode": "AUH",
-                "parent": {
-                  "flightPlaceId": "AUHA",
-                  "displayCode": "AUH",
-                  "name": "Abu Dhabi",
-                  "type": "City"
-                },
-                "name": "Zayed International",
-                "type": "Airport",
-                "country": "United Arab Emirates"
-              },
-              "destination": {
-                "flightPlaceId": "NRT",
-                "displayCode": "NRT",
-                "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
-                  "type": "City"
-                },
-                "name": "Tokyo Narita",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "departure": "2024-08-29T21:55:00",
-              "arrival": "2024-08-30T13:00:00",
-              "durationInMinutes": 605,
-              "flightNumber": "878",
-              "marketingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        },
-        {
-          "id": "14788-2409051730--32339-1-12569-2409061850",
-          "origin": {
-            "id": "NRT",
-            "entityId": "128668889",
-            "name": "Tokyo Narita",
-            "displayCode": "NRT",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 1760,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-09-05T17:30:00",
-          "arrival": "2024-09-06T18:50:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32339,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/60.png",
-                "name": "Etihad Airways"
-              }
-            ],
-            "operationType": "fully_operated"
-          },
-          "segments": [
-            {
-              "id": "14788-9618-2409051730-2409060005--32339",
-              "origin": {
-                "flightPlaceId": "NRT",
-                "displayCode": "NRT",
-                "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
-                  "type": "City"
-                },
-                "name": "Tokyo Narita",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "destination": {
-                "flightPlaceId": "AUH",
-                "displayCode": "AUH",
-                "parent": {
-                  "flightPlaceId": "AUHA",
-                  "displayCode": "AUH",
-                  "name": "Abu Dhabi",
-                  "type": "City"
-                },
-                "name": "Zayed International",
-                "type": "Airport",
-                "country": "United Arab Emirates"
-              },
-              "departure": "2024-09-05T17:30:00",
-              "arrival": "2024-09-06T00:05:00",
-              "durationInMinutes": 695,
-              "flightNumber": "871",
-              "marketingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9618-12569-2409061435-2409061850--32339",
-              "origin": {
-                "flightPlaceId": "AUH",
-                "displayCode": "AUH",
-                "parent": {
-                  "flightPlaceId": "AUHA",
-                  "displayCode": "AUH",
-                  "name": "Abu Dhabi",
-                  "type": "City"
-                },
-                "name": "Zayed International",
-                "type": "Airport",
-                "country": "United Arab Emirates"
-              },
-              "destination": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "departure": "2024-09-06T14:35:00",
-              "arrival": "2024-09-06T18:50:00",
-              "durationInMinutes": 195,
-              "flightNumber": "233",
-              "marketingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        }
-      ],
-      "isSelfTransfer": false,
-      "isProtectedSelfTransfer": false,
-      "farePolicy": {
-        "isChangeAllowed": false,
-        "isPartiallyChangeable": false,
-        "isCancellationAllowed": false,
-        "isPartiallyRefundable": false
-      },
-      "eco": {
-        "ecoContenderDelta": 15.296137
-      },
-      "fareAttributes": {},
-      "isMashUp": false,
-      "hasFlexibleOptions": false,
-      "score": 0.722655
-    },
-    {
-      "id": "12569-2408290435--32339-2-12234-2408301700|14788-2409051730--32339-1-12569-2409061850",
-      "price": {
-        "raw": 1169.8,
-        "formatted": "$1,170",
-        "pricingOptionId": "G0do3mLprDWS"
-      },
-      "legs": [
-        {
-          "id": "12569-2408290435--32339-2-12234-2408301700",
-          "origin": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "HND",
-            "entityId": "128667143",
-            "name": "Tokyo Haneda",
-            "displayCode": "HND",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": true
-          },
-          "durationInMinutes": 1945,
-          "stopCount": 2,
-          "isSmallestStops": false,
-          "departure": "2024-08-29T04:35:00",
-          "arrival": "2024-08-30T17:00:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32339,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/60.png",
-                "name": "Etihad Airways"
-              }
-            ],
-            "operating": [
-              {
-                "id": -32571,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/NH.png",
-                "name": "ANA (All Nippon Airways)"
-              }
-            ],
-            "operationType": "partially_operated"
-          },
-          "segments": [
-            {
-              "id": "12569-9618-2408290435-2408290700--32339",
-              "origin": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "destination": {
-                "flightPlaceId": "AUH",
-                "displayCode": "AUH",
-                "parent": {
-                  "flightPlaceId": "AUHA",
-                  "displayCode": "AUH",
-                  "name": "Abu Dhabi",
-                  "type": "City"
-                },
-                "name": "Zayed International",
-                "type": "Airport",
-                "country": "United Arab Emirates"
-              },
-              "departure": "2024-08-29T04:35:00",
-              "arrival": "2024-08-29T07:00:00",
-              "durationInMinutes": 205,
-              "flightNumber": "232",
-              "marketingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9618-13068-2408292125-2408301155--32339",
-              "origin": {
-                "flightPlaceId": "AUH",
-                "displayCode": "AUH",
-                "parent": {
-                  "flightPlaceId": "AUHA",
-                  "displayCode": "AUH",
-                  "name": "Abu Dhabi",
-                  "type": "City"
-                },
-                "name": "Zayed International",
-                "type": "Airport",
-                "country": "United Arab Emirates"
-              },
-              "destination": {
-                "flightPlaceId": "KIX",
-                "displayCode": "KIX",
-                "parent": {
-                  "flightPlaceId": "OSAA",
-                  "displayCode": "OSA",
-                  "name": "Osaka",
-                  "type": "City"
-                },
-                "name": "Kansai International (Osaka)",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "departure": "2024-08-29T21:25:00",
-              "arrival": "2024-08-30T11:55:00",
-              "durationInMinutes": 570,
-              "flightNumber": "814",
-              "marketingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "13068-12234-2408301540-2408301700--32339",
-              "origin": {
-                "flightPlaceId": "KIX",
-                "displayCode": "KIX",
-                "parent": {
-                  "flightPlaceId": "OSAA",
-                  "displayCode": "OSA",
-                  "name": "Osaka",
-                  "type": "City"
-                },
-                "name": "Kansai International (Osaka)",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "destination": {
-                "flightPlaceId": "HND",
-                "displayCode": "HND",
-                "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
-                  "type": "City"
-                },
-                "name": "Tokyo Haneda",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "departure": "2024-08-30T15:40:00",
-              "arrival": "2024-08-30T17:00:00",
-              "durationInMinutes": 80,
-              "flightNumber": "7829",
-              "marketingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32571,
-                "name": "ANA (All Nippon Airways)",
-                "alternateId": "NH",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        },
-        {
-          "id": "14788-2409051730--32339-1-12569-2409061850",
-          "origin": {
-            "id": "NRT",
-            "entityId": "128668889",
-            "name": "Tokyo Narita",
-            "displayCode": "NRT",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": true
-          },
-          "destination": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 1760,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-09-05T17:30:00",
-          "arrival": "2024-09-06T18:50:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32339,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/60.png",
-                "name": "Etihad Airways"
-              }
-            ],
-            "operationType": "fully_operated"
-          },
-          "segments": [
-            {
-              "id": "14788-9618-2409051730-2409060005--32339",
-              "origin": {
-                "flightPlaceId": "NRT",
-                "displayCode": "NRT",
-                "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
-                  "type": "City"
-                },
-                "name": "Tokyo Narita",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "destination": {
-                "flightPlaceId": "AUH",
-                "displayCode": "AUH",
-                "parent": {
-                  "flightPlaceId": "AUHA",
-                  "displayCode": "AUH",
-                  "name": "Abu Dhabi",
-                  "type": "City"
-                },
-                "name": "Zayed International",
-                "type": "Airport",
-                "country": "United Arab Emirates"
-              },
-              "departure": "2024-09-05T17:30:00",
-              "arrival": "2024-09-06T00:05:00",
-              "durationInMinutes": 695,
-              "flightNumber": "871",
-              "marketingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9618-12569-2409061435-2409061850--32339",
-              "origin": {
-                "flightPlaceId": "AUH",
-                "displayCode": "AUH",
-                "parent": {
-                  "flightPlaceId": "AUHA",
-                  "displayCode": "AUH",
-                  "name": "Abu Dhabi",
-                  "type": "City"
-                },
-                "name": "Zayed International",
-                "type": "Airport",
-                "country": "United Arab Emirates"
-              },
-              "destination": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "departure": "2024-09-06T14:35:00",
-              "arrival": "2024-09-06T18:50:00",
-              "durationInMinutes": 195,
-              "flightNumber": "233",
-              "marketingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32339,
-                "name": "Etihad Airways",
-                "alternateId": "60",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        }
-      ],
-      "isSelfTransfer": false,
-      "isProtectedSelfTransfer": false,
-      "farePolicy": {
-        "isChangeAllowed": false,
-        "isPartiallyChangeable": false,
-        "isCancellationAllowed": false,
-        "isPartiallyRefundable": false
-      },
-      "fareAttributes": {},
-      "tags": ["second_cheapest"],
-      "isMashUp": false,
-      "hasFlexibleOptions": false,
-      "score": 0.698008
-    },
-    {
-      "id": "12569-2408290335--31939-1-12234-2408292355|14788-2409052230--31939-1-12569-2409070150",
-      "price": {
-        "raw": 1420.54,
-        "formatted": "$1,421",
-        "pricingOptionId": "qvuQzsdsif_A"
-      },
-      "legs": [
-        {
-          "id": "12569-2408290335--31939-1-12234-2408292355",
-          "origin": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "HND",
-            "entityId": "128667143",
-            "name": "Tokyo Haneda",
-            "displayCode": "HND",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": true
-          },
-          "durationInMinutes": 980,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-08-29T03:35:00",
-          "arrival": "2024-08-29T23:55:00",
+          "departure": "2024-02-14T15:50:00",
+          "arrival": "2024-02-14T22:18:00",
           "timeDeltaInDays": 0,
           "carriers": {
             "marketing": [
               {
-                "id": -31939,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/QR.png",
-                "name": "Qatar Airways"
+                "id": -32385,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
+                "name": "Delta"
               }
             ],
-            "operating": [
-              {
-                "id": -32184,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/JL.png",
-                "name": "Japan Airlines"
-              }
-            ],
-            "operationType": "partially_operated"
+            "operationType": "fully_operated"
           },
           "segments": [
             {
-              "id": "12569-11089-2408290335-2408290515--31939",
+              "id": "10413-9596-2402141550-2402142015--32385",
               "origin": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
+                "flightPlaceId": "CDG",
+                "displayCode": "CDG",
                 "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
+                  "flightPlaceId": "PARI",
+                  "displayCode": "PAR",
+                  "name": "Paris",
                   "type": "City"
                 },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
+                "name": "Paris Charles de Gaulle",
+                "type": "Airport"
               },
               "destination": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
                 "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
                   "type": "City"
                 },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
               },
-              "departure": "2024-08-29T03:35:00",
-              "arrival": "2024-08-29T05:15:00",
-              "durationInMinutes": 220,
-              "flightNumber": "633",
+              "departure": "2024-02-14T15:50:00",
+              "arrival": "2024-02-14T20:15:00",
+              "durationInMinutes": 625,
+              "flightNumber": "85",
               "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               }
             },
             {
-              "id": "11089-12234-2408290715-2408292355--31939",
+              "id": "9596-14355-2402142144-2402142218--32385",
               "origin": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
                 "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
                   "type": "City"
                 },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
               },
               "destination": {
-                "flightPlaceId": "HND",
-                "displayCode": "HND",
+                "flightPlaceId": "MSY",
+                "displayCode": "MSY",
                 "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
+                  "flightPlaceId": "MSYA",
+                  "displayCode": "MSY",
+                  "name": "New Orleans",
                   "type": "City"
                 },
-                "name": "Tokyo Haneda",
-                "type": "Airport",
-                "country": "Japan"
+                "name": "New Orleans Louis Armstrong",
+                "type": "Airport"
               },
-              "departure": "2024-08-29T07:15:00",
-              "arrival": "2024-08-29T23:55:00",
-              "durationInMinutes": 640,
-              "flightNumber": "4850",
+              "departure": "2024-02-14T21:44:00",
+              "arrival": "2024-02-14T22:18:00",
+              "durationInMinutes": 94,
+              "flightNumber": "2521",
               "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -32184,
-                "name": "Japan Airlines",
-                "alternateId": "JL",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               }
@@ -1832,132 +1269,126 @@
           ]
         },
         {
-          "id": "14788-2409052230--31939-1-12569-2409070150",
+          "id": "14355-2402151814--32385-1-10413-2402161320",
           "origin": {
-            "id": "NRT",
-            "entityId": "128668889",
-            "name": "Tokyo Narita",
-            "displayCode": "NRT",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": true
-          },
-          "destination": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
+            "id": "MSY",
+            "name": "New Orleans Louis Armstrong",
+            "displayCode": "MSY",
+            "city": "New Orleans",
+            "country": "United States",
             "isHighlighted": false
           },
-          "durationInMinutes": 1880,
+          "destination": {
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle",
+            "displayCode": "CDG",
+            "city": "Paris",
+            "country": "France",
+            "isHighlighted": false
+          },
+          "durationInMinutes": 726,
           "stopCount": 1,
           "isSmallestStops": false,
-          "departure": "2024-09-05T22:30:00",
-          "arrival": "2024-09-07T01:50:00",
-          "timeDeltaInDays": 2,
+          "departure": "2024-02-15T18:14:00",
+          "arrival": "2024-02-16T13:20:00",
+          "timeDeltaInDays": 1,
           "carriers": {
             "marketing": [
               {
-                "id": -31939,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/QR.png",
-                "name": "Qatar Airways"
+                "id": -32385,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
+                "name": "Delta"
               }
             ],
             "operationType": "fully_operated"
           },
           "segments": [
             {
-              "id": "14788-11089-2409052230-2409060405--31939",
+              "id": "14355-9596-2402151814-2402152048--32385",
               "origin": {
-                "flightPlaceId": "NRT",
-                "displayCode": "NRT",
+                "flightPlaceId": "MSY",
+                "displayCode": "MSY",
                 "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
+                  "flightPlaceId": "MSYA",
+                  "displayCode": "MSY",
+                  "name": "New Orleans",
                   "type": "City"
                 },
-                "name": "Tokyo Narita",
-                "type": "Airport",
-                "country": "Japan"
+                "name": "New Orleans Louis Armstrong",
+                "type": "Airport"
               },
               "destination": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
                 "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
                   "type": "City"
                 },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
               },
-              "departure": "2024-09-05T22:30:00",
-              "arrival": "2024-09-06T04:05:00",
-              "durationInMinutes": 695,
-              "flightNumber": "807",
+              "departure": "2024-02-15T18:14:00",
+              "arrival": "2024-02-15T20:48:00",
+              "durationInMinutes": 94,
+              "flightNumber": "2783",
               "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               }
             },
             {
-              "id": "11089-12569-2409062020-2409070150--31939",
+              "id": "9596-10413-2402152245-2402161320--32385",
               "origin": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
                 "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
                   "type": "City"
                 },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
               },
               "destination": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
+                "flightPlaceId": "CDG",
+                "displayCode": "CDG",
                 "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
+                  "flightPlaceId": "PARI",
+                  "displayCode": "PAR",
+                  "name": "Paris",
                   "type": "City"
                 },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
+                "name": "Paris Charles de Gaulle",
+                "type": "Airport"
               },
-              "departure": "2024-09-06T20:20:00",
-              "arrival": "2024-09-07T01:50:00",
-              "durationInMinutes": 210,
-              "flightNumber": "632",
+              "departure": "2024-02-15T22:45:00",
+              "arrival": "2024-02-16T13:20:00",
+              "durationInMinutes": 515,
+              "flightNumber": "84",
               "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               }
@@ -1974,153 +1405,147 @@
         "isPartiallyRefundable": false
       },
       "fareAttributes": {},
-      "tags": ["third_shortest"],
+      "tags": ["third_cheapest"],
       "isMashUp": false,
       "hasFlexibleOptions": false,
-      "score": 0.651234
+      "score": 0.860094
     },
     {
-      "id": "12569-2408290930--31939-1-12234-2408302355|12234-2409051245--31939-2-12569-2409060740",
+      "id": "10413-2402141550--32132-1-14355-2402142218|14355-2402151225--32132-1-10413-2402160710",
       "price": {
-        "raw": 1282.05,
-        "formatted": "$1,283",
-        "pricingOptionId": "dbHxWDFytd3-"
+        "raw": 2695.29,
+        "formatted": "$2,696",
+        "pricingOptionId": "SY5YTP8boP0E"
       },
       "legs": [
         {
-          "id": "12569-2408290930--31939-1-12234-2408302355",
+          "id": "10413-2402141550--32132-1-14355-2402142218",
           "origin": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle",
+            "displayCode": "CDG",
+            "city": "Paris",
+            "country": "France",
             "isHighlighted": false
           },
           "destination": {
-            "id": "HND",
-            "entityId": "128667143",
-            "name": "Tokyo Haneda",
-            "displayCode": "HND",
-            "city": "Tokyo",
-            "country": "Japan",
+            "id": "MSY",
+            "name": "New Orleans Louis Armstrong",
+            "displayCode": "MSY",
+            "city": "New Orleans",
+            "country": "United States",
             "isHighlighted": false
           },
-          "durationInMinutes": 2065,
+          "durationInMinutes": 808,
           "stopCount": 1,
           "isSmallestStops": false,
-          "departure": "2024-08-29T09:30:00",
-          "arrival": "2024-08-30T23:55:00",
-          "timeDeltaInDays": 1,
+          "departure": "2024-02-14T15:50:00",
+          "arrival": "2024-02-14T22:18:00",
+          "timeDeltaInDays": 0,
           "carriers": {
             "marketing": [
               {
-                "id": -31939,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/QR.png",
-                "name": "Qatar Airways"
+                "id": -32132,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
+                "name": "KLM"
               }
             ],
             "operating": [
               {
-                "id": -32184,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/JL.png",
-                "name": "Japan Airlines"
+                "id": -32385,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
+                "name": "Delta"
               }
             ],
-            "operationType": "partially_operated"
+            "operationType": "not_operated"
           },
           "segments": [
             {
-              "id": "12569-11089-2408290930-2408291110--31939",
+              "id": "10413-9596-2402141550-2402142015--32132",
               "origin": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
+                "flightPlaceId": "CDG",
+                "displayCode": "CDG",
                 "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
+                  "flightPlaceId": "PARI",
+                  "displayCode": "PAR",
+                  "name": "Paris",
                   "type": "City"
                 },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
+                "name": "Paris Charles de Gaulle",
+                "type": "Airport"
               },
               "destination": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
                 "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
                   "type": "City"
                 },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
               },
-              "departure": "2024-08-29T09:30:00",
-              "arrival": "2024-08-29T11:10:00",
-              "durationInMinutes": 220,
-              "flightNumber": "615",
+              "departure": "2024-02-14T15:50:00",
+              "arrival": "2024-02-14T20:15:00",
+              "durationInMinutes": 625,
+              "flightNumber": "6100",
               "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32132,
+                "name": "KLM",
+                "alternateId": "KL",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               }
             },
             {
-              "id": "11089-12234-2408300715-2408302355--31939",
+              "id": "9596-14355-2402142144-2402142218--32132",
               "origin": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
                 "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
                   "type": "City"
                 },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
               },
               "destination": {
-                "flightPlaceId": "HND",
-                "displayCode": "HND",
+                "flightPlaceId": "MSY",
+                "displayCode": "MSY",
                 "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
+                  "flightPlaceId": "MSYA",
+                  "displayCode": "MSY",
+                  "name": "New Orleans",
                   "type": "City"
                 },
-                "name": "Tokyo Haneda",
-                "type": "Airport",
-                "country": "Japan"
+                "name": "New Orleans Louis Armstrong",
+                "type": "Airport"
               },
-              "departure": "2024-08-30T07:15:00",
-              "arrival": "2024-08-30T23:55:00",
-              "durationInMinutes": 640,
-              "flightNumber": "4850",
+              "departure": "2024-02-14T21:44:00",
+              "arrival": "2024-02-14T22:18:00",
+              "durationInMinutes": 94,
+              "flightNumber": "6930",
               "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32132,
+                "name": "KLM",
+                "alternateId": "KL",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -32184,
-                "name": "Japan Airlines",
-                "alternateId": "JL",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               }
@@ -2128,186 +1553,1032 @@
           ]
         },
         {
-          "id": "12234-2409051245--31939-2-12569-2409060740",
+          "id": "14355-2402151225--32132-1-10413-2402160710",
           "origin": {
-            "id": "HND",
-            "entityId": "128667143",
-            "name": "Tokyo Haneda",
-            "displayCode": "HND",
-            "city": "Tokyo",
-            "country": "Japan",
+            "id": "MSY",
+            "name": "New Orleans Louis Armstrong",
+            "displayCode": "MSY",
+            "city": "New Orleans",
+            "country": "United States",
             "isHighlighted": false
           },
           "destination": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle",
+            "displayCode": "CDG",
+            "city": "Paris",
+            "country": "France",
             "isHighlighted": false
           },
-          "durationInMinutes": 1375,
-          "stopCount": 2,
+          "durationInMinutes": 705,
+          "stopCount": 1,
           "isSmallestStops": false,
-          "departure": "2024-09-05T12:45:00",
-          "arrival": "2024-09-06T07:40:00",
+          "departure": "2024-02-15T12:25:00",
+          "arrival": "2024-02-16T07:10:00",
           "timeDeltaInDays": 1,
           "carriers": {
             "marketing": [
               {
-                "id": -31939,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/QR.png",
-                "name": "Qatar Airways"
+                "id": -32132,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
+                "name": "KLM"
               }
             ],
             "operating": [
               {
-                "id": -32184,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/JL.png",
-                "name": "Japan Airlines"
+                "id": -32385,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
+                "name": "Delta"
+              },
+              {
+                "id": -32677,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
+                "name": "Air France"
+              }
+            ],
+            "operationType": "not_operated"
+          },
+          "segments": [
+            {
+              "id": "14355-9596-2402151225-2402151453--32132",
+              "origin": {
+                "flightPlaceId": "MSY",
+                "displayCode": "MSY",
+                "parent": {
+                  "flightPlaceId": "MSYA",
+                  "displayCode": "MSY",
+                  "name": "New Orleans",
+                  "type": "City"
+                },
+                "name": "New Orleans Louis Armstrong",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "departure": "2024-02-15T12:25:00",
+              "arrival": "2024-02-15T14:53:00",
+              "durationInMinutes": 88,
+              "flightNumber": "5327",
+              "marketingCarrier": {
+                "id": -32132,
+                "name": "KLM",
+                "alternateId": "KL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            },
+            {
+              "id": "9596-10413-2402151655-2402160710--32132",
+              "origin": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "CDG",
+                "displayCode": "CDG",
+                "parent": {
+                  "flightPlaceId": "PARI",
+                  "displayCode": "PAR",
+                  "name": "Paris",
+                  "type": "City"
+                },
+                "name": "Paris Charles de Gaulle",
+                "type": "Airport"
+              },
+              "departure": "2024-02-15T16:55:00",
+              "arrival": "2024-02-16T07:10:00",
+              "durationInMinutes": 495,
+              "flightNumber": "2199",
+              "marketingCarrier": {
+                "id": -32132,
+                "name": "KLM",
+                "alternateId": "KL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32677,
+                "name": "Air France",
+                "alternateId": "AF",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            }
+          ]
+        }
+      ],
+      "isSelfTransfer": false,
+      "isProtectedSelfTransfer": false,
+      "farePolicy": {
+        "isChangeAllowed": false,
+        "isPartiallyChangeable": false,
+        "isCancellationAllowed": false,
+        "isPartiallyRefundable": false
+      },
+      "fareAttributes": {},
+      "isMashUp": false,
+      "hasFlexibleOptions": false,
+      "score": 0.839091
+    },
+    {
+      "id": "10413-2402141550--32132-1-14355-2402142218|14355-2402151814--32132-1-10413-2402161320",
+      "price": {
+        "raw": 2695.29,
+        "formatted": "$2,696",
+        "pricingOptionId": "Z5Esc7borU_2"
+      },
+      "legs": [
+        {
+          "id": "10413-2402141550--32132-1-14355-2402142218",
+          "origin": {
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle",
+            "displayCode": "CDG",
+            "city": "Paris",
+            "country": "France",
+            "isHighlighted": false
+          },
+          "destination": {
+            "id": "MSY",
+            "name": "New Orleans Louis Armstrong",
+            "displayCode": "MSY",
+            "city": "New Orleans",
+            "country": "United States",
+            "isHighlighted": false
+          },
+          "durationInMinutes": 808,
+          "stopCount": 1,
+          "isSmallestStops": false,
+          "departure": "2024-02-14T15:50:00",
+          "arrival": "2024-02-14T22:18:00",
+          "timeDeltaInDays": 0,
+          "carriers": {
+            "marketing": [
+              {
+                "id": -32132,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
+                "name": "KLM"
+              }
+            ],
+            "operating": [
+              {
+                "id": -32385,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
+                "name": "Delta"
+              }
+            ],
+            "operationType": "not_operated"
+          },
+          "segments": [
+            {
+              "id": "10413-9596-2402141550-2402142015--32132",
+              "origin": {
+                "flightPlaceId": "CDG",
+                "displayCode": "CDG",
+                "parent": {
+                  "flightPlaceId": "PARI",
+                  "displayCode": "PAR",
+                  "name": "Paris",
+                  "type": "City"
+                },
+                "name": "Paris Charles de Gaulle",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "departure": "2024-02-14T15:50:00",
+              "arrival": "2024-02-14T20:15:00",
+              "durationInMinutes": 625,
+              "flightNumber": "6100",
+              "marketingCarrier": {
+                "id": -32132,
+                "name": "KLM",
+                "alternateId": "KL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            },
+            {
+              "id": "9596-14355-2402142144-2402142218--32132",
+              "origin": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "MSY",
+                "displayCode": "MSY",
+                "parent": {
+                  "flightPlaceId": "MSYA",
+                  "displayCode": "MSY",
+                  "name": "New Orleans",
+                  "type": "City"
+                },
+                "name": "New Orleans Louis Armstrong",
+                "type": "Airport"
+              },
+              "departure": "2024-02-14T21:44:00",
+              "arrival": "2024-02-14T22:18:00",
+              "durationInMinutes": 94,
+              "flightNumber": "6930",
+              "marketingCarrier": {
+                "id": -32132,
+                "name": "KLM",
+                "alternateId": "KL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            }
+          ]
+        },
+        {
+          "id": "14355-2402151814--32132-1-10413-2402161320",
+          "origin": {
+            "id": "MSY",
+            "name": "New Orleans Louis Armstrong",
+            "displayCode": "MSY",
+            "city": "New Orleans",
+            "country": "United States",
+            "isHighlighted": false
+          },
+          "destination": {
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle",
+            "displayCode": "CDG",
+            "city": "Paris",
+            "country": "France",
+            "isHighlighted": false
+          },
+          "durationInMinutes": 726,
+          "stopCount": 1,
+          "isSmallestStops": false,
+          "departure": "2024-02-15T18:14:00",
+          "arrival": "2024-02-16T13:20:00",
+          "timeDeltaInDays": 1,
+          "carriers": {
+            "marketing": [
+              {
+                "id": -32132,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
+                "name": "KLM"
+              }
+            ],
+            "operating": [
+              {
+                "id": -32385,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
+                "name": "Delta"
+              }
+            ],
+            "operationType": "not_operated"
+          },
+          "segments": [
+            {
+              "id": "14355-9596-2402151814-2402152048--32132",
+              "origin": {
+                "flightPlaceId": "MSY",
+                "displayCode": "MSY",
+                "parent": {
+                  "flightPlaceId": "MSYA",
+                  "displayCode": "MSY",
+                  "name": "New Orleans",
+                  "type": "City"
+                },
+                "name": "New Orleans Louis Armstrong",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "departure": "2024-02-15T18:14:00",
+              "arrival": "2024-02-15T20:48:00",
+              "durationInMinutes": 94,
+              "flightNumber": "5136",
+              "marketingCarrier": {
+                "id": -32132,
+                "name": "KLM",
+                "alternateId": "KL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            },
+            {
+              "id": "9596-10413-2402152245-2402161320--32132",
+              "origin": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "CDG",
+                "displayCode": "CDG",
+                "parent": {
+                  "flightPlaceId": "PARI",
+                  "displayCode": "PAR",
+                  "name": "Paris",
+                  "type": "City"
+                },
+                "name": "Paris Charles de Gaulle",
+                "type": "Airport"
+              },
+              "departure": "2024-02-15T22:45:00",
+              "arrival": "2024-02-16T13:20:00",
+              "durationInMinutes": 515,
+              "flightNumber": "6097",
+              "marketingCarrier": {
+                "id": -32132,
+                "name": "KLM",
+                "alternateId": "KL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            }
+          ]
+        }
+      ],
+      "isSelfTransfer": false,
+      "isProtectedSelfTransfer": false,
+      "farePolicy": {
+        "isChangeAllowed": false,
+        "isPartiallyChangeable": false,
+        "isCancellationAllowed": false,
+        "isPartiallyRefundable": false
+      },
+      "fareAttributes": {},
+      "isMashUp": false,
+      "hasFlexibleOptions": false,
+      "score": 0.819049
+    },
+    {
+      "id": "10413-2402141550--32385-1-14355-2402142218|14355-2402151016--32385-1-10413-2402160610",
+      "price": {
+        "raw": 2688.86,
+        "formatted": "$2,689",
+        "pricingOptionId": "1xmHPYKDAW3L"
+      },
+      "legs": [
+        {
+          "id": "10413-2402141550--32385-1-14355-2402142218",
+          "origin": {
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle",
+            "displayCode": "CDG",
+            "city": "Paris",
+            "country": "France",
+            "isHighlighted": false
+          },
+          "destination": {
+            "id": "MSY",
+            "name": "New Orleans Louis Armstrong",
+            "displayCode": "MSY",
+            "city": "New Orleans",
+            "country": "United States",
+            "isHighlighted": false
+          },
+          "durationInMinutes": 808,
+          "stopCount": 1,
+          "isSmallestStops": false,
+          "departure": "2024-02-14T15:50:00",
+          "arrival": "2024-02-14T22:18:00",
+          "timeDeltaInDays": 0,
+          "carriers": {
+            "marketing": [
+              {
+                "id": -32385,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
+                "name": "Delta"
+              }
+            ],
+            "operationType": "fully_operated"
+          },
+          "segments": [
+            {
+              "id": "10413-9596-2402141550-2402142015--32385",
+              "origin": {
+                "flightPlaceId": "CDG",
+                "displayCode": "CDG",
+                "parent": {
+                  "flightPlaceId": "PARI",
+                  "displayCode": "PAR",
+                  "name": "Paris",
+                  "type": "City"
+                },
+                "name": "Paris Charles de Gaulle",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "departure": "2024-02-14T15:50:00",
+              "arrival": "2024-02-14T20:15:00",
+              "durationInMinutes": 625,
+              "flightNumber": "85",
+              "marketingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            },
+            {
+              "id": "9596-14355-2402142144-2402142218--32385",
+              "origin": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "MSY",
+                "displayCode": "MSY",
+                "parent": {
+                  "flightPlaceId": "MSYA",
+                  "displayCode": "MSY",
+                  "name": "New Orleans",
+                  "type": "City"
+                },
+                "name": "New Orleans Louis Armstrong",
+                "type": "Airport"
+              },
+              "departure": "2024-02-14T21:44:00",
+              "arrival": "2024-02-14T22:18:00",
+              "durationInMinutes": 94,
+              "flightNumber": "2521",
+              "marketingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            }
+          ]
+        },
+        {
+          "id": "14355-2402151016--32385-1-10413-2402160610",
+          "origin": {
+            "id": "MSY",
+            "name": "New Orleans Louis Armstrong",
+            "displayCode": "MSY",
+            "city": "New Orleans",
+            "country": "United States",
+            "isHighlighted": false
+          },
+          "destination": {
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle",
+            "displayCode": "CDG",
+            "city": "Paris",
+            "country": "France",
+            "isHighlighted": false
+          },
+          "durationInMinutes": 774,
+          "stopCount": 1,
+          "isSmallestStops": false,
+          "departure": "2024-02-15T10:16:00",
+          "arrival": "2024-02-16T06:10:00",
+          "timeDeltaInDays": 1,
+          "carriers": {
+            "marketing": [
+              {
+                "id": -32385,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
+                "name": "Delta"
+              }
+            ],
+            "operationType": "fully_operated"
+          },
+          "segments": [
+            {
+              "id": "14355-9596-2402151016-2402151250--32385",
+              "origin": {
+                "flightPlaceId": "MSY",
+                "displayCode": "MSY",
+                "parent": {
+                  "flightPlaceId": "MSYA",
+                  "displayCode": "MSY",
+                  "name": "New Orleans",
+                  "type": "City"
+                },
+                "name": "New Orleans Louis Armstrong",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "departure": "2024-02-15T10:16:00",
+              "arrival": "2024-02-15T12:50:00",
+              "durationInMinutes": 94,
+              "flightNumber": "2237",
+              "marketingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            },
+            {
+              "id": "9596-10413-2402151535-2402160610--32385",
+              "origin": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "CDG",
+                "displayCode": "CDG",
+                "parent": {
+                  "flightPlaceId": "PARI",
+                  "displayCode": "PAR",
+                  "name": "Paris",
+                  "type": "City"
+                },
+                "name": "Paris Charles de Gaulle",
+                "type": "Airport"
+              },
+              "departure": "2024-02-15T15:35:00",
+              "arrival": "2024-02-16T06:10:00",
+              "durationInMinutes": 515,
+              "flightNumber": "82",
+              "marketingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            }
+          ]
+        }
+      ],
+      "isSelfTransfer": false,
+      "isProtectedSelfTransfer": false,
+      "farePolicy": {
+        "isChangeAllowed": false,
+        "isPartiallyChangeable": false,
+        "isCancellationAllowed": false,
+        "isPartiallyRefundable": false
+      },
+      "fareAttributes": {},
+      "isMashUp": false,
+      "hasFlexibleOptions": false,
+      "score": 0.800542
+    },
+    {
+      "id": "10413-2402141550--32385-1-14355-2402142218|14355-2402151225--32385-2-10413-2402160810",
+      "price": {
+        "raw": 2702.57,
+        "formatted": "$2,703",
+        "pricingOptionId": "h2yJfc2WpZqM"
+      },
+      "legs": [
+        {
+          "id": "10413-2402141550--32385-1-14355-2402142218",
+          "origin": {
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle",
+            "displayCode": "CDG",
+            "city": "Paris",
+            "country": "France",
+            "isHighlighted": false
+          },
+          "destination": {
+            "id": "MSY",
+            "name": "New Orleans Louis Armstrong",
+            "displayCode": "MSY",
+            "city": "New Orleans",
+            "country": "United States",
+            "isHighlighted": false
+          },
+          "durationInMinutes": 808,
+          "stopCount": 1,
+          "isSmallestStops": false,
+          "departure": "2024-02-14T15:50:00",
+          "arrival": "2024-02-14T22:18:00",
+          "timeDeltaInDays": 0,
+          "carriers": {
+            "marketing": [
+              {
+                "id": -32385,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
+                "name": "Delta"
+              }
+            ],
+            "operationType": "fully_operated"
+          },
+          "segments": [
+            {
+              "id": "10413-9596-2402141550-2402142015--32385",
+              "origin": {
+                "flightPlaceId": "CDG",
+                "displayCode": "CDG",
+                "parent": {
+                  "flightPlaceId": "PARI",
+                  "displayCode": "PAR",
+                  "name": "Paris",
+                  "type": "City"
+                },
+                "name": "Paris Charles de Gaulle",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "departure": "2024-02-14T15:50:00",
+              "arrival": "2024-02-14T20:15:00",
+              "durationInMinutes": 625,
+              "flightNumber": "85",
+              "marketingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            },
+            {
+              "id": "9596-14355-2402142144-2402142218--32385",
+              "origin": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "MSY",
+                "displayCode": "MSY",
+                "parent": {
+                  "flightPlaceId": "MSYA",
+                  "displayCode": "MSY",
+                  "name": "New Orleans",
+                  "type": "City"
+                },
+                "name": "New Orleans Louis Armstrong",
+                "type": "Airport"
+              },
+              "departure": "2024-02-14T21:44:00",
+              "arrival": "2024-02-14T22:18:00",
+              "durationInMinutes": 94,
+              "flightNumber": "2521",
+              "marketingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            }
+          ]
+        },
+        {
+          "id": "14355-2402151225--32385-2-10413-2402160810",
+          "origin": {
+            "id": "MSY",
+            "name": "New Orleans Louis Armstrong",
+            "displayCode": "MSY",
+            "city": "New Orleans",
+            "country": "United States",
+            "isHighlighted": false
+          },
+          "destination": {
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle",
+            "displayCode": "CDG",
+            "city": "Paris",
+            "country": "France",
+            "isHighlighted": false
+          },
+          "durationInMinutes": 765,
+          "stopCount": 2,
+          "isSmallestStops": false,
+          "departure": "2024-02-15T12:25:00",
+          "arrival": "2024-02-16T08:10:00",
+          "timeDeltaInDays": 1,
+          "carriers": {
+            "marketing": [
+              {
+                "id": -32385,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
+                "name": "Delta"
+              }
+            ],
+            "operating": [
+              {
+                "id": -32132,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
+                "name": "KLM"
               }
             ],
             "operationType": "partially_operated"
           },
           "segments": [
             {
-              "id": "12234-13068-2409051245-2409051405--31939",
+              "id": "14355-9596-2402151225-2402151453--32385",
               "origin": {
-                "flightPlaceId": "HND",
-                "displayCode": "HND",
+                "flightPlaceId": "MSY",
+                "displayCode": "MSY",
                 "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
+                  "flightPlaceId": "MSYA",
+                  "displayCode": "MSY",
+                  "name": "New Orleans",
                   "type": "City"
                 },
-                "name": "Tokyo Haneda",
-                "type": "Airport",
-                "country": "Japan"
+                "name": "New Orleans Louis Armstrong",
+                "type": "Airport"
               },
               "destination": {
-                "flightPlaceId": "KIX",
-                "displayCode": "KIX",
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
                 "parent": {
-                  "flightPlaceId": "OSAA",
-                  "displayCode": "OSA",
-                  "name": "Osaka",
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
                   "type": "City"
                 },
-                "name": "Kansai International (Osaka)",
-                "type": "Airport",
-                "country": "Japan"
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
               },
-              "departure": "2024-09-05T12:45:00",
-              "arrival": "2024-09-05T14:05:00",
+              "departure": "2024-02-15T12:25:00",
+              "arrival": "2024-02-15T14:53:00",
+              "durationInMinutes": 88,
+              "flightNumber": "2542",
+              "marketingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            },
+            {
+              "id": "9596-9451-2402151540-2402160555--32385",
+              "origin": {
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
+                "parent": {
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
+                  "type": "City"
+                },
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "AMS",
+                "displayCode": "AMS",
+                "parent": {
+                  "flightPlaceId": "AMST",
+                  "displayCode": "AMS",
+                  "name": "Amsterdam",
+                  "type": "City"
+                },
+                "name": "Amsterdam Schiphol",
+                "type": "Airport"
+              },
+              "departure": "2024-02-15T15:40:00",
+              "arrival": "2024-02-16T05:55:00",
+              "durationInMinutes": 495,
+              "flightNumber": "9667",
+              "marketingCarrier": {
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32132,
+                "name": "KLM",
+                "alternateId": "KL",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            },
+            {
+              "id": "9451-10413-2402160650-2402160810--32385",
+              "origin": {
+                "flightPlaceId": "AMS",
+                "displayCode": "AMS",
+                "parent": {
+                  "flightPlaceId": "AMST",
+                  "displayCode": "AMS",
+                  "name": "Amsterdam",
+                  "type": "City"
+                },
+                "name": "Amsterdam Schiphol",
+                "type": "Airport"
+              },
+              "destination": {
+                "flightPlaceId": "CDG",
+                "displayCode": "CDG",
+                "parent": {
+                  "flightPlaceId": "PARI",
+                  "displayCode": "PAR",
+                  "name": "Paris",
+                  "type": "City"
+                },
+                "name": "Paris Charles de Gaulle",
+                "type": "Airport"
+              },
+              "departure": "2024-02-16T06:50:00",
+              "arrival": "2024-02-16T08:10:00",
               "durationInMinutes": 80,
-              "flightNumber": "6034",
+              "flightNumber": "9540",
               "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -32184,
-                "name": "Japan Airlines",
-                "alternateId": "JL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "13068-11089-2409051830-2409052320--31939",
-              "origin": {
-                "flightPlaceId": "KIX",
-                "displayCode": "KIX",
-                "parent": {
-                  "flightPlaceId": "OSAA",
-                  "displayCode": "OSA",
-                  "name": "Osaka",
-                  "type": "City"
-                },
-                "name": "Kansai International (Osaka)",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "destination": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
-                "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
-                  "type": "City"
-                },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
-              },
-              "departure": "2024-09-05T18:30:00",
-              "arrival": "2024-09-05T23:20:00",
-              "durationInMinutes": 650,
-              "flightNumber": "803",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "11089-12569-2409060210-2409060740--31939",
-              "origin": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
-                "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
-                  "type": "City"
-                },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
-              },
-              "destination": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "departure": "2024-09-06T02:10:00",
-              "arrival": "2024-09-06T07:40:00",
-              "durationInMinutes": 210,
-              "flightNumber": "614",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32132,
+                "name": "KLM",
+                "alternateId": "KL",
                 "allianceId": 0,
                 "displayCode": ""
               }
@@ -2326,143 +2597,144 @@
       "fareAttributes": {},
       "isMashUp": false,
       "hasFlexibleOptions": false,
-      "score": 0.639786
+      "score": 0.797272
     },
     {
-      "id": "12569-2408290930--31939-1-14788-2408301855|12234-2409051245--31939-2-12569-2409060740",
+      "id": "10413-2402141550--32132-1-14355-2402142218|14355-2402151508--32132-1-10413-2402161045",
       "price": {
-        "raw": 1387.48,
-        "formatted": "$1,388",
-        "pricingOptionId": "PxEjIz6T0lXd"
+        "raw": 2695.29,
+        "formatted": "$2,696",
+        "pricingOptionId": "bpgTaEUavwgm"
       },
       "legs": [
         {
-          "id": "12569-2408290930--31939-1-14788-2408301855",
+          "id": "10413-2402141550--32132-1-14355-2402142218",
           "origin": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle",
+            "displayCode": "CDG",
+            "city": "Paris",
+            "country": "France",
             "isHighlighted": false
           },
           "destination": {
-            "id": "NRT",
-            "entityId": "128668889",
-            "name": "Tokyo Narita",
-            "displayCode": "NRT",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": true
+            "id": "MSY",
+            "name": "New Orleans Louis Armstrong",
+            "displayCode": "MSY",
+            "city": "New Orleans",
+            "country": "United States",
+            "isHighlighted": false
           },
-          "durationInMinutes": 1765,
+          "durationInMinutes": 808,
           "stopCount": 1,
           "isSmallestStops": false,
-          "departure": "2024-08-29T09:30:00",
-          "arrival": "2024-08-30T18:55:00",
-          "timeDeltaInDays": 1,
+          "departure": "2024-02-14T15:50:00",
+          "arrival": "2024-02-14T22:18:00",
+          "timeDeltaInDays": 0,
           "carriers": {
             "marketing": [
               {
-                "id": -31939,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/QR.png",
-                "name": "Qatar Airways"
+                "id": -32132,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
+                "name": "KLM"
               }
             ],
-            "operationType": "fully_operated"
+            "operating": [
+              {
+                "id": -32385,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
+                "name": "Delta"
+              }
+            ],
+            "operationType": "not_operated"
           },
           "segments": [
             {
-              "id": "12569-11089-2408290930-2408291110--31939",
+              "id": "10413-9596-2402141550-2402142015--32132",
               "origin": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
+                "flightPlaceId": "CDG",
+                "displayCode": "CDG",
                 "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
+                  "flightPlaceId": "PARI",
+                  "displayCode": "PAR",
+                  "name": "Paris",
                   "type": "City"
                 },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
+                "name": "Paris Charles de Gaulle",
+                "type": "Airport"
               },
               "destination": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
                 "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
                   "type": "City"
                 },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
               },
-              "departure": "2024-08-29T09:30:00",
-              "arrival": "2024-08-29T11:10:00",
-              "durationInMinutes": 220,
-              "flightNumber": "615",
+              "departure": "2024-02-14T15:50:00",
+              "arrival": "2024-02-14T20:15:00",
+              "durationInMinutes": 625,
+              "flightNumber": "6100",
               "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32132,
+                "name": "KLM",
+                "alternateId": "KL",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               }
             },
             {
-              "id": "11089-14788-2408300235-2408301855--31939",
+              "id": "9596-14355-2402142144-2402142218--32132",
               "origin": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
                 "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
                   "type": "City"
                 },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
               },
               "destination": {
-                "flightPlaceId": "NRT",
-                "displayCode": "NRT",
+                "flightPlaceId": "MSY",
+                "displayCode": "MSY",
                 "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
+                  "flightPlaceId": "MSYA",
+                  "displayCode": "MSY",
+                  "name": "New Orleans",
                   "type": "City"
                 },
-                "name": "Tokyo Narita",
-                "type": "Airport",
-                "country": "Japan"
+                "name": "New Orleans Louis Armstrong",
+                "type": "Airport"
               },
-              "departure": "2024-08-30T02:35:00",
-              "arrival": "2024-08-30T18:55:00",
-              "durationInMinutes": 620,
-              "flightNumber": "806",
+              "departure": "2024-02-14T21:44:00",
+              "arrival": "2024-02-14T22:18:00",
+              "durationInMinutes": 94,
+              "flightNumber": "6930",
               "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32132,
+                "name": "KLM",
+                "alternateId": "KL",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               }
@@ -2470,535 +2742,138 @@
           ]
         },
         {
-          "id": "12234-2409051245--31939-2-12569-2409060740",
+          "id": "14355-2402151508--32132-1-10413-2402161045",
           "origin": {
-            "id": "HND",
-            "entityId": "128667143",
-            "name": "Tokyo Haneda",
-            "displayCode": "HND",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": true
-          },
-          "destination": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 1375,
-          "stopCount": 2,
-          "isSmallestStops": false,
-          "departure": "2024-09-05T12:45:00",
-          "arrival": "2024-09-06T07:40:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -31939,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/QR.png",
-                "name": "Qatar Airways"
-              }
-            ],
-            "operating": [
-              {
-                "id": -32184,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/JL.png",
-                "name": "Japan Airlines"
-              }
-            ],
-            "operationType": "partially_operated"
-          },
-          "segments": [
-            {
-              "id": "12234-13068-2409051245-2409051405--31939",
-              "origin": {
-                "flightPlaceId": "HND",
-                "displayCode": "HND",
-                "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
-                  "type": "City"
-                },
-                "name": "Tokyo Haneda",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "destination": {
-                "flightPlaceId": "KIX",
-                "displayCode": "KIX",
-                "parent": {
-                  "flightPlaceId": "OSAA",
-                  "displayCode": "OSA",
-                  "name": "Osaka",
-                  "type": "City"
-                },
-                "name": "Kansai International (Osaka)",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "departure": "2024-09-05T12:45:00",
-              "arrival": "2024-09-05T14:05:00",
-              "durationInMinutes": 80,
-              "flightNumber": "6034",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32184,
-                "name": "Japan Airlines",
-                "alternateId": "JL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "13068-11089-2409051830-2409052320--31939",
-              "origin": {
-                "flightPlaceId": "KIX",
-                "displayCode": "KIX",
-                "parent": {
-                  "flightPlaceId": "OSAA",
-                  "displayCode": "OSA",
-                  "name": "Osaka",
-                  "type": "City"
-                },
-                "name": "Kansai International (Osaka)",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "destination": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
-                "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
-                  "type": "City"
-                },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
-              },
-              "departure": "2024-09-05T18:30:00",
-              "arrival": "2024-09-05T23:20:00",
-              "durationInMinutes": 650,
-              "flightNumber": "803",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "11089-12569-2409060210-2409060740--31939",
-              "origin": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
-                "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
-                  "type": "City"
-                },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
-              },
-              "destination": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "departure": "2024-09-06T02:10:00",
-              "arrival": "2024-09-06T07:40:00",
-              "durationInMinutes": 210,
-              "flightNumber": "614",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        }
-      ],
-      "isSelfTransfer": false,
-      "isProtectedSelfTransfer": false,
-      "farePolicy": {
-        "isChangeAllowed": false,
-        "isPartiallyChangeable": false,
-        "isCancellationAllowed": false,
-        "isPartiallyRefundable": false
-      },
-      "fareAttributes": {},
-      "isMashUp": false,
-      "hasFlexibleOptions": false,
-      "score": 0.624804
-    },
-    {
-      "id": "12569-2408290930--31939-1-12234-2408302355|14788-2409051020--31939-2-12569-2409060740",
-      "price": {
-        "raw": 1309.56,
-        "formatted": "$1,310",
-        "pricingOptionId": "IaCpIV2vd6IN"
-      },
-      "legs": [
-        {
-          "id": "12569-2408290930--31939-1-12234-2408302355",
-          "origin": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
+            "id": "MSY",
+            "name": "New Orleans Louis Armstrong",
+            "displayCode": "MSY",
+            "city": "New Orleans",
+            "country": "United States",
             "isHighlighted": false
           },
           "destination": {
-            "id": "HND",
-            "entityId": "128667143",
-            "name": "Tokyo Haneda",
-            "displayCode": "HND",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": true
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle",
+            "displayCode": "CDG",
+            "city": "Paris",
+            "country": "France",
+            "isHighlighted": false
           },
-          "durationInMinutes": 2065,
+          "durationInMinutes": 757,
           "stopCount": 1,
           "isSmallestStops": false,
-          "departure": "2024-08-29T09:30:00",
-          "arrival": "2024-08-30T23:55:00",
+          "departure": "2024-02-15T15:08:00",
+          "arrival": "2024-02-16T10:45:00",
           "timeDeltaInDays": 1,
           "carriers": {
             "marketing": [
               {
-                "id": -31939,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/QR.png",
-                "name": "Qatar Airways"
+                "id": -32132,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
+                "name": "KLM"
               }
             ],
             "operating": [
               {
-                "id": -32184,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/JL.png",
-                "name": "Japan Airlines"
+                "id": -32385,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
+                "name": "Delta"
+              },
+              {
+                "id": -32677,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
+                "name": "Air France"
               }
             ],
-            "operationType": "partially_operated"
+            "operationType": "not_operated"
           },
           "segments": [
             {
-              "id": "12569-11089-2408290930-2408291110--31939",
+              "id": "14355-9596-2402151508-2402151738--32132",
               "origin": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
+                "flightPlaceId": "MSY",
+                "displayCode": "MSY",
                 "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
+                  "flightPlaceId": "MSYA",
+                  "displayCode": "MSY",
+                  "name": "New Orleans",
                   "type": "City"
                 },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
+                "name": "New Orleans Louis Armstrong",
+                "type": "Airport"
               },
               "destination": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
                 "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
                   "type": "City"
                 },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
               },
-              "departure": "2024-08-29T09:30:00",
-              "arrival": "2024-08-29T11:10:00",
-              "durationInMinutes": 220,
-              "flightNumber": "615",
+              "departure": "2024-02-15T15:08:00",
+              "arrival": "2024-02-15T17:38:00",
+              "durationInMinutes": 90,
+              "flightNumber": "5134",
               "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32132,
+                "name": "KLM",
+                "alternateId": "KL",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32385,
+                "name": "Delta",
+                "alternateId": "DL",
                 "allianceId": 0,
                 "displayCode": ""
               }
             },
             {
-              "id": "11089-12234-2408300715-2408302355--31939",
+              "id": "9596-10413-2402152030-2402161045--32132",
               "origin": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
+                "flightPlaceId": "ATL",
+                "displayCode": "ATL",
                 "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
+                  "flightPlaceId": "ATLA",
+                  "displayCode": "ATL",
+                  "name": "Atlanta",
                   "type": "City"
                 },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
+                "name": "Atlanta Hartsfield-Jackson",
+                "type": "Airport"
               },
               "destination": {
-                "flightPlaceId": "HND",
-                "displayCode": "HND",
+                "flightPlaceId": "CDG",
+                "displayCode": "CDG",
                 "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
+                  "flightPlaceId": "PARI",
+                  "displayCode": "PAR",
+                  "name": "Paris",
                   "type": "City"
                 },
-                "name": "Tokyo Haneda",
-                "type": "Airport",
-                "country": "Japan"
+                "name": "Paris Charles de Gaulle",
+                "type": "Airport"
               },
-              "departure": "2024-08-30T07:15:00",
-              "arrival": "2024-08-30T23:55:00",
-              "durationInMinutes": 640,
-              "flightNumber": "4850",
+              "departure": "2024-02-15T20:30:00",
+              "arrival": "2024-02-16T10:45:00",
+              "durationInMinutes": 495,
+              "flightNumber": "2200",
               "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32132,
+                "name": "KLM",
+                "alternateId": "KL",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -32184,
-                "name": "Japan Airlines",
-                "alternateId": "JL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        },
-        {
-          "id": "14788-2409051020--31939-2-12569-2409060740",
-          "origin": {
-            "id": "NRT",
-            "entityId": "128668889",
-            "name": "Tokyo Narita",
-            "displayCode": "NRT",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": true
-          },
-          "destination": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 1520,
-          "stopCount": 2,
-          "isSmallestStops": false,
-          "departure": "2024-09-05T10:20:00",
-          "arrival": "2024-09-06T07:40:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -31939,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/QR.png",
-                "name": "Qatar Airways"
-              }
-            ],
-            "operating": [
-              {
-                "id": -32080,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/MH.png",
-                "name": "Malaysia Airlines"
-              }
-            ],
-            "operationType": "partially_operated"
-          },
-          "segments": [
-            {
-              "id": "14788-13311-2409051020-2409051645--31939",
-              "origin": {
-                "flightPlaceId": "NRT",
-                "displayCode": "NRT",
-                "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
-                  "type": "City"
-                },
-                "name": "Tokyo Narita",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "destination": {
-                "flightPlaceId": "KUL",
-                "displayCode": "KUL",
-                "parent": {
-                  "flightPlaceId": "KULM",
-                  "displayCode": "KUL",
-                  "name": "Kuala Lumpur",
-                  "type": "City"
-                },
-                "name": "Kuala Lumpur International",
-                "type": "Airport",
-                "country": "Malaysia"
-              },
-              "departure": "2024-09-05T10:20:00",
-              "arrival": "2024-09-05T16:45:00",
-              "durationInMinutes": 445,
-              "flightNumber": "5045",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32080,
-                "name": "Malaysia Airlines",
-                "alternateId": "MH",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "13311-11089-2409052100-2409052330--31939",
-              "origin": {
-                "flightPlaceId": "KUL",
-                "displayCode": "KUL",
-                "parent": {
-                  "flightPlaceId": "KULM",
-                  "displayCode": "KUL",
-                  "name": "Kuala Lumpur",
-                  "type": "City"
-                },
-                "name": "Kuala Lumpur International",
-                "type": "Airport",
-                "country": "Malaysia"
-              },
-              "destination": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
-                "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
-                  "type": "City"
-                },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
-              },
-              "departure": "2024-09-05T21:00:00",
-              "arrival": "2024-09-05T23:30:00",
-              "durationInMinutes": 450,
-              "flightNumber": "4990",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32080,
-                "name": "Malaysia Airlines",
-                "alternateId": "MH",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "11089-12569-2409060210-2409060740--31939",
-              "origin": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
-                "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
-                  "type": "City"
-                },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
-              },
-              "destination": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "departure": "2024-09-06T02:10:00",
-              "arrival": "2024-09-06T07:40:00",
-              "durationInMinutes": 210,
-              "flightNumber": "614",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
+                "id": -32677,
+                "name": "Air France",
+                "alternateId": "AF",
                 "allianceId": 0,
                 "displayCode": ""
               }
@@ -3017,396 +2892,47 @@
       "fareAttributes": {},
       "isMashUp": false,
       "hasFlexibleOptions": false,
-      "score": 0.590704
-    },
-    {
-      "id": "12569-2408290930--31939-1-14788-2408301855|14788-2409051020--31939-2-12569-2409060740",
-      "price": {
-        "raw": 1414.99,
-        "formatted": "$1,415",
-        "pricingOptionId": "sQvdPdjahOUf"
-      },
-      "legs": [
-        {
-          "id": "12569-2408290930--31939-1-14788-2408301855",
-          "origin": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "NRT",
-            "entityId": "128668889",
-            "name": "Tokyo Narita",
-            "displayCode": "NRT",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 1765,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-08-29T09:30:00",
-          "arrival": "2024-08-30T18:55:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -31939,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/QR.png",
-                "name": "Qatar Airways"
-              }
-            ],
-            "operationType": "fully_operated"
-          },
-          "segments": [
-            {
-              "id": "12569-11089-2408290930-2408291110--31939",
-              "origin": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "destination": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
-                "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
-                  "type": "City"
-                },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
-              },
-              "departure": "2024-08-29T09:30:00",
-              "arrival": "2024-08-29T11:10:00",
-              "durationInMinutes": 220,
-              "flightNumber": "615",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "11089-14788-2408300235-2408301855--31939",
-              "origin": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
-                "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
-                  "type": "City"
-                },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
-              },
-              "destination": {
-                "flightPlaceId": "NRT",
-                "displayCode": "NRT",
-                "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
-                  "type": "City"
-                },
-                "name": "Tokyo Narita",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "departure": "2024-08-30T02:35:00",
-              "arrival": "2024-08-30T18:55:00",
-              "durationInMinutes": 620,
-              "flightNumber": "806",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        },
-        {
-          "id": "14788-2409051020--31939-2-12569-2409060740",
-          "origin": {
-            "id": "NRT",
-            "entityId": "128668889",
-            "name": "Tokyo Narita",
-            "displayCode": "NRT",
-            "city": "Tokyo",
-            "country": "Japan",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad",
-            "displayCode": "ISB",
-            "city": "Islamabad",
-            "country": "Pakistan",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 1520,
-          "stopCount": 2,
-          "isSmallestStops": false,
-          "departure": "2024-09-05T10:20:00",
-          "arrival": "2024-09-06T07:40:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -31939,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/QR.png",
-                "name": "Qatar Airways"
-              }
-            ],
-            "operating": [
-              {
-                "id": -32080,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/MH.png",
-                "name": "Malaysia Airlines"
-              }
-            ],
-            "operationType": "partially_operated"
-          },
-          "segments": [
-            {
-              "id": "14788-13311-2409051020-2409051645--31939",
-              "origin": {
-                "flightPlaceId": "NRT",
-                "displayCode": "NRT",
-                "parent": {
-                  "flightPlaceId": "TYOA",
-                  "displayCode": "TYO",
-                  "name": "Tokyo",
-                  "type": "City"
-                },
-                "name": "Tokyo Narita",
-                "type": "Airport",
-                "country": "Japan"
-              },
-              "destination": {
-                "flightPlaceId": "KUL",
-                "displayCode": "KUL",
-                "parent": {
-                  "flightPlaceId": "KULM",
-                  "displayCode": "KUL",
-                  "name": "Kuala Lumpur",
-                  "type": "City"
-                },
-                "name": "Kuala Lumpur International",
-                "type": "Airport",
-                "country": "Malaysia"
-              },
-              "departure": "2024-09-05T10:20:00",
-              "arrival": "2024-09-05T16:45:00",
-              "durationInMinutes": 445,
-              "flightNumber": "5045",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32080,
-                "name": "Malaysia Airlines",
-                "alternateId": "MH",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "13311-11089-2409052100-2409052330--31939",
-              "origin": {
-                "flightPlaceId": "KUL",
-                "displayCode": "KUL",
-                "parent": {
-                  "flightPlaceId": "KULM",
-                  "displayCode": "KUL",
-                  "name": "Kuala Lumpur",
-                  "type": "City"
-                },
-                "name": "Kuala Lumpur International",
-                "type": "Airport",
-                "country": "Malaysia"
-              },
-              "destination": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
-                "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
-                  "type": "City"
-                },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
-              },
-              "departure": "2024-09-05T21:00:00",
-              "arrival": "2024-09-05T23:30:00",
-              "durationInMinutes": 450,
-              "flightNumber": "4990",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32080,
-                "name": "Malaysia Airlines",
-                "alternateId": "MH",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "11089-12569-2409060210-2409060740--31939",
-              "origin": {
-                "flightPlaceId": "DOH",
-                "displayCode": "DOH",
-                "parent": {
-                  "flightPlaceId": "DOHA",
-                  "displayCode": "DOH",
-                  "name": "Doha",
-                  "type": "City"
-                },
-                "name": "Hamad International",
-                "type": "Airport",
-                "country": "Qatar"
-              },
-              "destination": {
-                "flightPlaceId": "ISB",
-                "displayCode": "ISB",
-                "parent": {
-                  "flightPlaceId": "ISBA",
-                  "displayCode": "ISB",
-                  "name": "Islamabad",
-                  "type": "City"
-                },
-                "name": "Islamabad",
-                "type": "Airport",
-                "country": "Pakistan"
-              },
-              "departure": "2024-09-06T02:10:00",
-              "arrival": "2024-09-06T07:40:00",
-              "durationInMinutes": 210,
-              "flightNumber": "614",
-              "marketingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -31939,
-                "name": "Qatar Airways",
-                "alternateId": "QR",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        }
-      ],
-      "isSelfTransfer": false,
-      "isProtectedSelfTransfer": false,
-      "farePolicy": {
-        "isChangeAllowed": false,
-        "isPartiallyChangeable": false,
-        "isCancellationAllowed": false,
-        "isPartiallyRefundable": false
-      },
-      "fareAttributes": {},
-      "isMashUp": false,
-      "hasFlexibleOptions": false,
-      "score": 0.57873
+      "score": 0.774073
     }
   ],
   "messages": [],
   "filterStats": {
     "duration": {
-      "min": 1375,
-      "max": 2135,
-      "multiCityMin": 2355,
-      "multiCityMax": 3895
+      "min": 808,
+      "max": 808,
+      "multiCityMin": 1453,
+      "multiCityMax": 1582
     },
     "airports": [
       {
-        "city": "Islamabad",
+        "city": "New Orleans",
         "airports": [
           {
-            "id": "ISB",
-            "entityId": "128667932",
-            "name": "Islamabad"
+            "id": "MSY",
+            "name": "New Orleans Louis Armstrong"
           }
         ]
       },
       {
-        "city": "Tokyo",
+        "city": "Paris",
         "airports": [
           {
-            "id": "HND",
-            "entityId": "128667143",
-            "name": "Tokyo Haneda"
-          },
-          {
-            "id": "NRT",
-            "entityId": "128668889",
-            "name": "Tokyo Narita"
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle"
           }
         ]
       }
     ],
     "carriers": [
       {
-        "id": -32339,
-        "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/60.png",
-        "name": "Etihad Airways"
+        "id": -32385,
+        "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
+        "name": "Delta"
       },
       {
-        "id": -31939,
-        "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/QR.png",
-        "name": "Qatar Airways"
+        "id": -32132,
+        "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
+        "name": "KLM"
       }
     ],
     "stopPrices": {
@@ -3415,14 +2941,15 @@
       },
       "one": {
         "isPresent": true,
-        "formattedPrice": "$1,202"
+        "formattedPrice": "$2,689"
       },
       "twoOrMore": {
         "isPresent": true,
-        "formattedPrice": "$978"
+        "formattedPrice": "$2,703"
       }
     }
   },
-  "flightsSessionId": "b70e9abc-10ee-4f0d-91d6-e7ffaf5c9de6",
-  "destinationImageUrl": "https://content.skyscnr.com/m/3719e8f4a5daf43d/original/Flights-Placeholder.jpg"
+  "flightsSessionId": "19b77ac1-c607-4cee-909c-f1d9bc82801e",
+  "destinationImageUrl": "https://content.skyscnr.com/m/3719e8f4a5daf43d/original/Flights-Placeholder.jpg",
+  "token": "eyJhIjoxLCJjIjowLCJpIjowLCJjYyI6ImVjb25vbXkiLCJvIjoiUEFSSSIsImQiOiJNU1lBIiwiZDEiOiIyMDI0LTAyLTE0IiwiZDIiOiIyMDI0LTAyLTE1In0="
 }

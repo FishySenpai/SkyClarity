@@ -4,7 +4,7 @@ import useOutsideClick from "../useOutsideClick";
 import { useNavigate, useParams } from "react-router-dom";
 import loading from "../Assets/loading.png";
 const CarsSearch = () => {
-  const {pickUp, pickUpId, pickDate, dropDate} = useParams()
+  const { pickUp, pickUpId, pickDate, dropDate } = useParams();
   const [pickUpLocation, setPickUpLocation] = useState();
   const [pickUpLocationId, setPickUpLocationId] = useState();
   const [dropOffLocation, setDropOffLocation] = useState();
@@ -34,7 +34,7 @@ const CarsSearch = () => {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": "325a7f72damshf16ffcb2c3ed7bep1f566djsn006db2e1a65a",
+        "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
         "X-RapidAPI-Host": "skyscanner80.p.rapidapi.com",
       },
     };
@@ -89,28 +89,28 @@ const CarsSearch = () => {
   useOutsideClick(dropOffPopupRef, () => {
     setdropOffToggle(false);
   });
-    useOutsideClick(pickUpTimePopupRef, () => {
-      setTogglePickUpTime(false);
-    });
-    useOutsideClick(dropOffTimePopupRef, () => {
-      setToggleDropOffTime(false);
-    });
+  useOutsideClick(pickUpTimePopupRef, () => {
+    setTogglePickUpTime(false);
+  });
+  useOutsideClick(dropOffTimePopupRef, () => {
+    setToggleDropOffTime(false);
+  });
 
-    useEffect(() => {
-      if (pickUp) {
-        setPickUpLocation(pickUp);
-        console.log("test");
-      }
-      if (pickUpId) {
-        setPickUpLocationId(pickUpId);
-      }
-      if (pickDate) {
-        setpickUpDate(pickDate);
-      }
-      if (dropDate) {
-        setdropOffDate(dropDate);
-      }
-    }, [pickUp, pickUpId, pickDate, dropDate]);
+  useEffect(() => {
+    if (pickUp) {
+      setPickUpLocation(pickUp);
+      console.log("test");
+    }
+    if (pickUpId) {
+      setPickUpLocationId(pickUpId);
+    }
+    if (pickDate) {
+      setpickUpDate(pickDate);
+    }
+    if (dropDate) {
+      setdropOffDate(dropDate);
+    }
+  }, [pickUp, pickUpId, pickDate, dropDate]);
 
   useEffect(() => {
     setpickUpToggle(false);

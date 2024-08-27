@@ -153,31 +153,28 @@ const Flights = () => {
       .filter((flight) => {
         console.log("Test");
         // Filter by duration
-        if (
-          maxCurrentDuration !== -Infinity 
-        ) {
+        if (maxCurrentDuration !== -Infinity) {
           if (returndate) {
             const duration1 = flight.legs[0]?.durationInMinutes;
             const duration2 = flight.legs[1]?.durationInMinutes;
             console.log(
               "Duration Filter:",
-              minCurrentDuration,
-              maxCurrentDuration,
-              duration1,
-              duration2
+              (maxCurrentDuration / 60).toFixed(0),
+              (duration1 / 60).toFixed(0),
+              (duration2 / 60).toFixed(0)
             );
             if ((duration1 / 60).toFixed(0) !== (duration2 / 60).toFixed(0)) {
               return (
-                duration1 <= maxCurrentDuration &&
-                duration2 <= maxCurrentDuration 
+                (duration1 / 60).toFixed(0) <=
+                  (maxCurrentDuration / 60).toFixed(0) &&
+                (duration2 / 60).toFixed(0) <=
+                  (maxCurrentDuration / 60).toFixed(0)
               );
             }
           } else {
             const duration1 = flight.legs[0]?.durationInMinutes;
             console.log("Duration Filter:", maxCurrentDuration, duration1);
-            return (
-              duration1 <= maxCurrentDuration
-            );
+            return duration1 <= maxCurrentDuration;
           }
         }
         return true; // Show all flights if no duration filter is applied
@@ -219,16 +216,14 @@ const Flights = () => {
         isValidParam(departdate) &&
         isValidParam(returndate)
       ) {
-        const url = `https://skyscanner80.p.rapidapi.com/api/v1/flights/search-roundtrip?fromId=${fromId}&toId=${toId}&departDate=${departdate}&returnDate=${returndate}&adults=1&cabinClass=economy&currency=USD&market=US&locale=en-US`;
+        const url = `https://sky-scanner3.p.rapidapi.com/flights/search-roundtrip?fromEntityId=${fromId}&toEntityId=${toId}&departDate=${departdate}&returnDate=${returndate}`;
         const options = {
           method: "GET",
           headers: {
-            "X-RapidAPI-Key":
-              "325a7f72damshf16ffcb2c3ed7bep1f566djsn006db2e1a65a",
-            "X-RapidAPI-Host": "skyscanner80.p.rapidapi.com",
+            "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
+            "x-rapidapi-host": "sky-scanner3.p.rapidapi.com",
           },
         };
-
         try {
           const response = await fetch(url, options);
           const result = await response.json();
@@ -247,16 +242,16 @@ const Flights = () => {
     }
   };
 
-  // useEffect(() => {
-  //   if (
-  //     isValidParam(fromId) &&
-  //     isValidParam(toId) &&
-  //     isValidParam(departdate) &&
-  //     isValidParam(returndate)
-  //   ) {
-  //     fetchReturnFlights();
-  //   }
-  // }, [fromId, toId, departdate, returndate]);
+  useEffect(() => {
+    if (
+      isValidParam(fromId) &&
+      isValidParam(toId) &&
+      isValidParam(departdate) &&
+      isValidParam(returndate)
+    ) {
+      fetchReturnFlights();
+    }
+  }, [fromId, toId, departdate, returndate]);
 
   useEffect(() => {
     if (flights && flights.itineraries) {
