@@ -1,7 +1,152 @@
 import React from "react"
 
 const Policies = ({hotelDetails}) => {
-  const policies = hotelDetails?.data.goodToKnow.policies;
+  const policies = {
+    title: "Hotel policies",
+    content: [
+      {
+        icon: "family",
+        translated: false,
+        needTranslation: false,
+        locale: "en-US",
+        key: "Children",
+        type: "Children",
+        values: [
+          {
+            content: "Children are welcome at this hotel.",
+          },
+        ],
+      },
+      {
+        icon: "hotels",
+        translated: false,
+        needTranslation: false,
+        locale: "en-US",
+        key: "AdditionalBeds",
+        type: "Additional beds",
+        values: [
+          {
+            title: "2 years old and over",
+            content:
+              "Children can use extra beds for an additional charge of USD 100.0.",
+            is_free: false,
+          },
+          {
+            title: "2 years old and under",
+            content: "Children can use extra beds for free.",
+            is_free: true,
+          },
+        ],
+      },
+      {
+        icon: "hotels",
+        translated: false,
+        needTranslation: false,
+        locale: "en-US",
+        key: "AvailableBeds",
+        type: "Available beds",
+        values: [
+          {
+            title: "11 years old and under",
+            content: "For each room, 1 child can use existing beds for free.",
+            is_free: true,
+          },
+          {
+            title: "From 12 to 17 years old",
+            content:
+              "For each room, 1 child can use existing beds for an additional charge of EUR 100.0.",
+            is_free: false,
+          },
+        ],
+      },
+      {
+        icon: "hotels--pets-allowed",
+        translated: false,
+        needTranslation: false,
+        locale: "en-US",
+        key: "Pets",
+        type: "Pets",
+        values: [
+          {
+            content: "Pets allowed with extra charge.",
+          },
+        ],
+      },
+      {
+        icon: "food",
+        translated: false,
+        needTranslation: false,
+        locale: "en-US",
+        key: "Breakfast",
+        type: "Breakfast",
+        values: [
+          {
+            content: "Breakfast available.",
+          },
+        ],
+        details: [
+          {
+            translated: false,
+            needTranslation: false,
+            locale: "en-US",
+            key: "BreakfastMenu",
+            type: "Breakfast menu",
+            values: [
+              {
+                content: "Buffet.",
+              },
+            ],
+          },
+          {
+            translated: false,
+            needTranslation: false,
+            locale: "en-US",
+            key: "BreakfastPrice",
+            type: "Breakfast price",
+            values: [
+              {
+                content: "$38 (≈EUR 35.0)/person",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        icon: "information--language-alert",
+        translated: false,
+        needTranslation: false,
+        locale: "en-US",
+        key: "ImportantNoticeFromTheHotel",
+        type: "Important information from the hotel",
+        values: [
+          {
+            content:
+              "Guests are required to show a photo ID and credit card upon check-in. Please note that all Special Requests are subject to availability and additional charges may apply. The name on the credit card used for the booking should correspond to the guest staying at the property.",
+          },
+        ],
+      },
+      {
+        icon: "payment-card",
+        translated: false,
+        needTranslation: false,
+        locale: "en-US",
+        key: "PaymentMethod",
+        type: "Accepted payment methods",
+        values: [
+          {
+            title: "The hotel accepts the following payment methods:",
+            content: [
+              "Master Card",
+              "Visa Card",
+              "American Express Card",
+              "Diners Card",
+              "Cash",
+            ],
+          },
+        ],
+      },
+    ],
+  };
   return (
     <div id="policies" className="w-full">
       <p className="font-semibold text-3xl pb-4">Policies</p>
@@ -71,13 +216,13 @@ const Policies = ({hotelDetails}) => {
               <span className="font-semibold w-[130px] inline-block">
                 Breakfast menu:
               </span>
-              {policies.content[4].values[0].content}
+              {policies.content[4].details[0].values[0].content}
             </p>
             <p className="text-gray-800  ">
               <span className="font-semibold w-[130px] inline-block">
                 Breakfast price:
               </span>
-              {policies.content[4].values[0].content}
+              {policies.content[4].details[1].values[0].content}
             </p>
           </div>
         </div>

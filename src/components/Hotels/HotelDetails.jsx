@@ -6,12 +6,13 @@ import reviews from "./reviews.json";
 import Amenities from "./Amenities";
 import Policies from "./Policies";
 import useOutsideClick from "../useOutsideClick";
+import loading from "../Assets/loading.gif";
 const HotelDetails = () => {
   const { id, price } = useParams();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [showImages, setShowImages] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [hotelDetails, setHotelDetails] = useState(hotelDetailsJson);
+  const [hotelDetails, setHotelDetails] = useState();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
@@ -93,18 +94,23 @@ const HotelDetails = () => {
       const response = await fetch(url, options);
       const result = await response.json();
       setHotelDetails(result);
-      setImages(result?.data?.gallery?.images?.slice(0, 70) || []);
+      setImages(
+        result?.data?.gallery?.images
+          ?.filter((image) => image.gallery)
+          .slice(0, 70) || []
+      );
+
       console.log(result);
     } catch (error) {
       console.error(error);
     }
   };
 
-  useEffect(() => {
-    if (id) {
-      fetchHotelDetails();
-    }
-  }, [id]);
+    useEffect(() => {
+      if (id) {
+        fetchHotelDetails();
+      }
+    }, [id]);
 
   if (hotelDetails && images) {
     return (
@@ -118,7 +124,7 @@ const HotelDetails = () => {
             setShowImages(true);
           }}
         >
-          <img src={images[4].gallery} alt="" className="w-[50%] h-[100%]" />
+          <img src={images[0].gallery} alt="" className="w-[50%] h-[100%]" />
           <div className="flex flex-col space-y-1 w-[30%] h-[99.2%]">
             <img src={images[8].gallery} alt="" className="w-[100%] h-[60%]" />
             <div className="flex space-x-1 w-full h-[40%]">
@@ -288,7 +294,7 @@ const HotelDetails = () => {
           </div>
         )}
 
-        <div className="pl-2 w-full 1lg:w-fit ">
+        <div className="pl-2 w-full 1lg:w-fit max-w-[1150px]">
           <div className=" pt-4 space-y-2 mr-6 w-full">
             <div className="text-[27px] 2sm:text-4xl font-bold flex flex-col 2sm:flex-row">
               <div>{hotelDetails.data.general.name}</div>
@@ -409,6 +415,12 @@ const HotelDetails = () => {
             <ReviewAndRecommendations />
           </div>
         </div>
+      </div>
+    );
+  } else {
+    return (
+      <div className="flex mt-12 justify-center h-[92vh]">
+        <img src={loading} alt="" className="h-12" />
       </div>
     );
   }
