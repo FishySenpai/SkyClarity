@@ -8,7 +8,7 @@ const HotelCards = ({hotel, index}) => {
         className="mx-auto bg-white shadow-lg rounded-sm overflow-hidden mb-4 w-fit"
       >
         <div className="flex flex-col ">
-          <div className="w-[340px] 2sm:w-[250px] 2sm:h-[220px] 1sm:w-[340px] 1md:w-[400px] 1lg:w-[305px] 1sm:h-[300px] overflow-hidden bg-gray-200">
+          <div className="w-[340px] 2sm:w-[250px] 2sm:h-[220px] 1sm:w-[320px] 1md:w-[400px] 1lg:w-[305px] 1sm:h-[300px] overflow-hidden bg-gray-200">
             <img
               src={hotel.imageUrl || "https://via.placeholder.com/392x160"}
               alt="Hotel"

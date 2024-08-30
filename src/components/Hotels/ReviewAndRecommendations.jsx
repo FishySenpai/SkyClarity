@@ -82,28 +82,45 @@ const ReviewAndRecommendations = ({ id }) => {
   // }, [id])
   console.log(reviews);
   console.log(recommendations);
-  const scrollLeft = () => {
-    const container = scrollContainerRef.current;
-    const scrollAmount = window.innerWidth * 0.585; // 75% of the window's width
-    const newScrollPosition = Math.max(0, scrollPosition - scrollAmount);
-    setScrollPosition(newScrollPosition);
-    if (container) {
-      container.scroll({ left: newScrollPosition, behavior: "smooth" });
+  const getCardWidth = () => {
+    const windowWidth = window.innerWidth;
+
+    if (windowWidth >= 1110) {
+      // 1lg (>=1280px)
+      return 372; // width in px
+    } else {
+      // Default (for smaller than 640px)
+      return 330; // width in px
     }
   };
 
-  const scrollRight = () => {
-    const container = scrollContainerRef.current;
-    const scrollAmount = window.innerWidth * 0.585; // 75% of the window's width
-    const newScrollPosition = Math.min(
-      container.scrollWidth - container.clientWidth,
-      scrollPosition + scrollAmount
-    );
-    setScrollPosition(newScrollPosition);
-    if (container) {
-      container.scroll({ left: newScrollPosition, behavior: "smooth" });
-    }
-  };
+const elementsToScroll = 2; // Number of elements to scroll
+
+const scrollLeft = () => {
+  const container = scrollContainerRef.current;
+  const cardWidth = getCardWidth(); // Get the current card width based on window size
+  const scrollAmount = cardWidth * elementsToScroll; // Calculate the scroll amount based on the number of elements
+  const newScrollPosition = Math.max(0, scrollPosition - scrollAmount);
+  setScrollPosition(newScrollPosition);
+  if (container) {
+    container.scroll({ left: newScrollPosition, behavior: "smooth" });
+  }
+};
+
+const scrollRight = () => {
+  const container = scrollContainerRef.current;
+  const cardWidth = getCardWidth(); // Get the current card width based on window size
+  const scrollAmount = cardWidth * elementsToScroll; // Calculate the scroll amount based on the number of elements
+  const newScrollPosition = Math.min(
+    container.scrollWidth - container.clientWidth,
+    scrollPosition + scrollAmount
+  );
+  setScrollPosition(newScrollPosition);
+  if (container) {
+    container.scroll({ left: newScrollPosition, behavior: "smooth" });
+  }
+};
+
 
   if (reviews && recommendations) {
     return (
@@ -148,10 +165,10 @@ const ReviewAndRecommendations = ({ id }) => {
           <p className="font-semibold  pt-6 text-3xl pb-4">
             Hotel Recommendations
           </p>
-          <div className="relative  flex  mx-auto  overflow-hidden">
+          <div className="relative  flex  mx-auto  overflow-hidden ">
             <button
               onClick={scrollLeft}
-              className={`z-50 absolute -left-0 1lg:left-0 top-1/3 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full shadow-lg ${
+              className={`hidden md:block z-50 absolute -left-0 1lg:left-0 top-1/3 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full shadow-lg ${
                 showLeftArrow ? "" : "opacity-0"
               }`}
             >
@@ -168,7 +185,7 @@ const ReviewAndRecommendations = ({ id }) => {
             </button>
 
             <div
-              className={`flex space-x-6 mx-auto  overflow-hidden w-full 1lg:w-[1100px] `}
+              className={`flex space-x-6 mx-auto overflow md:overflow-hidden w-full 1lg:w-[1100px] `}
               ref={scrollContainerRef}
             >
               {recommendations.data.map((hotel, index) => {
@@ -247,7 +264,7 @@ const ReviewAndRecommendations = ({ id }) => {
 
             <button
               onClick={scrollRight}
-              className={`z-50 absolute -right-0 top-1/3 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full shadow-lg ${
+              className={`hidden md:block z-50 absolute -right-0 top-1/3 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full shadow-lg ${
                 scrollRight ? "" : "opacity-0"
               }`}
             >

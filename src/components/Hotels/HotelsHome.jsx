@@ -44,28 +44,59 @@ const HotelsHome = () => {
     // Clean up the event listener when the component unmounts
     return () => container.removeEventListener("scroll", handleScroll);
   }, []);
-const scrollLeft = () => {
-  const container = scrollContainerRef.current;
-  const scrollAmount = window.innerWidth * 0.90; // 75% of the window's width
-  const newScrollPosition = Math.max(0, scrollPosition - scrollAmount);
-  setScrollPosition(newScrollPosition);
-  if (container) {
-    container.scroll({ left: newScrollPosition, behavior: "smooth" });
-  }
-};
+  const getCardWidth = () => {
+    const windowWidth = window.innerWidth;
 
-const scrollRight = () => {
-  const container = scrollContainerRef.current;
-  const scrollAmount = window.innerWidth * 0.80; // 75% of the window's width
-  const newScrollPosition = Math.min(
-    container.scrollWidth - container.clientWidth,
-    scrollPosition + scrollAmount
-  );
-  setScrollPosition(newScrollPosition);
-  if (container) {
-    container.scroll({ left: newScrollPosition, behavior: "smooth" });
-  }
-};
+    if (windowWidth >= 1280) {
+      // 1lg (>=1280px)
+      return 305; // width in px
+    } else if (windowWidth >= 1150) {
+      // 1md (>=1024px)
+      return 480; // width in px
+    } else if (windowWidth >= 880) {
+      // 1md (>=1024px)
+      return 400; // width in px
+    } else if (windowWidth >= 720) {
+      // 1sm (>=768px)
+      return 320; // width in px
+    } else if (windowWidth >= 565) {
+      // 2sm (>=640px)
+      return 250; // width in px
+    } else if (windowWidth >= 30) {
+      // 2sm (>=640px)
+      return 162; // width in px
+    } else {
+      // Default (for smaller than 640px)
+      return 340; // width in px
+    }
+  };
+
+  const elementsToScroll = 2; // Number of elements to scroll
+
+  const scrollLeft = () => {
+    const container = scrollContainerRef.current;
+    const cardWidth = getCardWidth(); // Get the current card width based on window size
+    const scrollAmount = cardWidth * elementsToScroll+40; // Calculate the scroll amount based on the number of elements
+    const newScrollPosition = Math.max(0, scrollPosition - scrollAmount);
+    setScrollPosition(newScrollPosition);
+    if (container) {
+      container.scroll({ left: newScrollPosition, behavior: "smooth" });
+    }
+  };
+
+  const scrollRight = () => {
+    const container = scrollContainerRef.current;
+    const cardWidth = getCardWidth(); // Get the current card width based on window size
+    const scrollAmount = cardWidth * elementsToScroll+40; // Calculate the scroll amount based on the number of elements
+    const newScrollPosition = Math.min(
+      container.scrollWidth - container.clientWidth,
+      scrollPosition + scrollAmount
+    );
+    setScrollPosition(newScrollPosition);
+    if (container) {
+      container.scroll({ left: newScrollPosition, behavior: "smooth" });
+    }
+  };
 
 
   return (
@@ -123,7 +154,7 @@ const scrollRight = () => {
           {showRightArrow ? (
             <button
               onClick={scrollRight}
-              className="z-50 absolute right-3 top-1/3 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full shadow-lg"
+              className="z-50 absolute right-0 2sm:right-3 top-1/3 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full shadow-lg"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

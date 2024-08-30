@@ -12,7 +12,7 @@ const HotelDetails = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [showImages, setShowImages] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [hotelDetails, setHotelDetails] = useState();
+  const [hotelDetails, setHotelDetails] = useState(hotelDetailsJson);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
@@ -106,11 +106,11 @@ const HotelDetails = () => {
     }
   };
 
-    useEffect(() => {
-      if (id) {
-        fetchHotelDetails();
-      }
-    }, [id]);
+    // useEffect(() => {
+    //   if (id) {
+    //     fetchHotelDetails();
+    //   }
+    // }, [id]);
 
   if (hotelDetails && images) {
     return (

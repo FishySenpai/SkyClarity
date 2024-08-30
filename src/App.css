@@ -37,3 +37,12 @@ html {
   .spin {
     animation: spin 1s linear infinite;
   }
+
+.overflow {
+    overflow-x: scroll;
+    
+  }
+  .overflow::-webkit-scrollbar {
+    width: 0px; /* Set the width of the scrollbar */
+
+  }
