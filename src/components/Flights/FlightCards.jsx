@@ -23,10 +23,10 @@ const convertDate = (dateString) => {
 
   console.log("Check-in Date:", departdate);
   console.log("Check-out Date:", returndate);
-
+  const selected = "round-trip"
   return (
     <Link
-      to={`/flights/search/${card.from}/${card.fromId}/${card.to}/${card.toId}/${departdate}/${returndate}`}
+      to={`/flights/${selected}/${card.from}/${card.fromId}/${card.to}/${card.toId}/${departdate}/${returndate}`}
     >
       {" "}
       <div className="mx-auto  bg-white shadow-lg rounded-lg overflow-hidden w-[90%] sm:w-[300px] 1sm:w-[332px] 1md:w-[392px] lg:w-[450px] xl:w-[392px]">

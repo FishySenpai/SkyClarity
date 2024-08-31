@@ -7,14 +7,23 @@ import { useParams, Link } from "react-router-dom";
 import FlightsLoading from "./FlightsLoading";
 import NoResults from "../Assets/noresults.png";
 const Flights = () => {
+  const {
+    fromLocation,
+    fromId,
+    toLocation,
+    toId,
+    departdate,
+    returndate,
+    selected,
+  } = useParams();
   const [shortestMinPrice, setShortestMinPrice] = useState(0);
   const [cheapestMinPrice, setCheapestMinPrice] = useState(Infinity);
   const [shortestMinDuration, setShortestMinDuration] = useState(Infinity);
   const [cheapestMinDuration, setCheapestMinDuration] = useState(0);
   const [bestDuration, setBestDuration] = useState();
   const [bestPrice, setBestPrice] = useState();
-  const [flights, setFlights] = useState(flighsJson);
-  const [selectedOption, setSelectedOption] = useState("round-trip");
+  const [flights, setFlights] = useState();
+  const [selectedOption, setSelectedOption] = useState(selected);
   const [priceTag, setPriceTag] = useState("Best");
   const [maxCurrentPrice, setMaxCurrentPrice] = useState(-Infinity);
   const [minCurrentPrice, setMinCurrentPrice] = useState(Infinity);
@@ -27,12 +36,16 @@ const Flights = () => {
   const [airline, setAirline] = useState("");
   const [filteredFlights, setFilteredFlights] = useState([]);
 
-  const { fromLocation, fromId, toLocation, toId, departdate, returndate } =
-    useParams();
   const [filters, setFilters] = useState("");
   const isValidParam = (param) => {
-    return !param.startsWith(":") && param.trim() !== "";
+    return (
+      param !== undefined &&
+      param !== null &&
+      !param.startsWith(":") &&
+      param.trim() !== ""
+    );
   };
+
   useEffect(() => {
     console.log("test");
     const newFilteredFlights = flights?.itineraries
@@ -56,9 +69,9 @@ const Flights = () => {
           maxCurrentDeparture !== -Infinity &&
           minCurrentDeparture !== Infinity
         ) {
-          if (returndate) {
-            const d1 = new Date(flight.legs[0]?.arrival);
-            const d2 = new Date(flight.legs[1]?.arrival);
+          if (selected === "round-trip") {
+            const d1 = new Date(flight.legs[0]?.departure);
+            const d2 = new Date(flight.legs[1]?.departure);
             const departure1 = d1.getHours();
             const departure2 = d2.getHours();
             console.log(
@@ -76,9 +89,8 @@ const Flights = () => {
               departure2 >= minCurrentDeparture
             );
           } else {
-            const departure1 =
-              flight.legs[0]?.arrival.getHours() +
-              flight.legs[0]?.arrival.getMinutes() / 60;
+            const d1 = new Date(flight.legs[0]?.departure);
+            const departure1 = d1.getHours();
 
             console.log("Departure Filter:", maxCurrentDeparture, departure1);
             return (
@@ -93,7 +105,9 @@ const Flights = () => {
         console.log("Test");
         // Filter by departure
         if (maxCurrentArrival !== -Infinity && minCurrentArrival !== Infinity) {
-          if (returndate) {
+          console.log("round-trip");
+          if (selected === "round-trip") {
+            console.log("round-trip");
             const a1 = new Date(flight.legs[0]?.arrival);
             const a2 = new Date(flight.legs[1]?.arrival);
             const arrival1 = a1.getHours();
@@ -115,9 +129,9 @@ const Flights = () => {
               arrival2 >= minCurrentArrival
             );
           } else {
-            const arrival1 =
-              flight.legs[0]?.arrival.getHours() +
-              flight.legs[0]?.arrival.getMinutes() / 60;
+            console.log("oneway");
+            const a1 = new Date(flight.legs[0]?.arrival);
+            const arrival1 = a1.getHours();
 
             console.log(
               "Arrival Filter:",
@@ -154,7 +168,7 @@ const Flights = () => {
         console.log("Test");
         // Filter by duration
         if (maxCurrentDuration !== -Infinity) {
-          if (returndate) {
+          if (selected === "round-trip") {
             const duration1 = flight.legs[0]?.durationInMinutes;
             const duration2 = flight.legs[1]?.durationInMinutes;
             console.log(
@@ -172,6 +186,7 @@ const Flights = () => {
               );
             }
           } else {
+            console.log("oneway");
             const duration1 = flight.legs[0]?.durationInMinutes;
             console.log("Duration Filter:", maxCurrentDuration, duration1);
             return duration1 <= maxCurrentDuration;
@@ -206,39 +221,66 @@ const Flights = () => {
     maxCurrentDuration,
     airline,
   ]);
-
   const fetchReturnFlights = async () => {
-    try {
-      setFlights(null);
-      if (
-        isValidParam(fromId) &&
-        isValidParam(toId) &&
-        isValidParam(departdate) &&
-        isValidParam(returndate)
-      ) {
-        const url = `https://sky-scanner3.p.rapidapi.com/flights/search-roundtrip?fromEntityId=${fromId}&toEntityId=${toId}&departDate=${departdate}&returnDate=${returndate}`;
-        const options = {
-          method: "GET",
-          headers: {
-            "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
-            "x-rapidapi-host": "sky-scanner3.p.rapidapi.com",
-          },
-        };
-        try {
-          const response = await fetch(url, options);
-          const result = await response.json();
-          setFlights(result.data);
-          console.log(result);
-        } catch (error) {
-          console.error(error);
+    if (
+      isValidParam(fromId) &&
+      isValidParam(toId) &&
+      isValidParam(departdate) &&
+      isValidParam(returndate)
+    ) {
+      const url = `https://sky-scanner3.p.rapidapi.com/flights/search-roundtrip?fromEntityId=${fromId}&toEntityId=${toId}&departDate=${departdate}&returnDate=${returndate}`;
+      const options = {
+        method: "GET",
+        headers: {
+          "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
+          "x-rapidapi-host": "sky-scanner3.p.rapidapi.com",
+        },
+      };
+      try {
+        const response = await fetch(url, options);
+        if (!response.ok) {
+          throw new Error(`Error: ${response.status} ${response.statusText}`);
         }
-      } else {
-        console.error(
-          "Invalid parameters: fromId, toId, departDate, or returnDate"
-        );
+        const result = await response.json();
+        setFlights(result.data);
+        console.log(result);
+      } catch (error) {
+        console.error("Error fetching round-trip flights:", error);
       }
-    } catch (error) {
-      console.error(error);
+    } else {
+      console.error(
+        "Invalid parameters: fromId, toId, departDate, or returnDate"
+      );
+    }
+  };
+
+  const fetchOneWayFlights = async () => {
+    if (
+      isValidParam(fromId) &&
+      isValidParam(toId) &&
+      isValidParam(departdate)
+    ) {
+      const url = `https://sky-scanner3.p.rapidapi.com/flights/search-one-way?fromEntityId=${fromId}&toEntityId=${toId}&departDate=${departdate}`;
+      const options = {
+        method: "GET",
+        headers: {
+          "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
+          "x-rapidapi-host": "sky-scanner3.p.rapidapi.com",
+        },
+      };
+      try {
+        const response = await fetch(url, options);
+        if (!response.ok) {
+          throw new Error(`Error: ${response.status} ${response.statusText}`);
+        }
+        const result = await response.json();
+        setFlights(result.data);
+        console.log(result);
+      } catch (error) {
+        console.error("Error fetching one-way flights:", error);
+      }
+    } else {
+      console.error("Invalid parameters: fromId, toId, or departDate");
     }
   };
 
@@ -247,11 +289,19 @@ const Flights = () => {
       isValidParam(fromId) &&
       isValidParam(toId) &&
       isValidParam(departdate) &&
-      isValidParam(returndate)
+      isValidParam(returndate) &&
+      selectedOption === "round-trip"
     ) {
       fetchReturnFlights();
+    } else if (
+      isValidParam(fromId) &&
+      isValidParam(toId) &&
+      isValidParam(departdate) &&
+      selectedOption === "one-way"
+    ) {
+      fetchOneWayFlights();
     }
-  }, [fromId, toId, departdate, returndate]);
+  }, [fromId, toId, departdate, returndate, selectedOption]);
 
   useEffect(() => {
     if (flights && flights.itineraries) {

@@ -100,10 +100,10 @@ const FlightsSearch = ({
 
     const fromId = await fetchLocation(fromLocation);
     const toId = await fetchLocation(toLocation);
-
+    const selected = selectedOption;
     if (fromId && toId) {
       navigate(
-        `/flights/search/${fromLocation}/${fromId}/${toLocation}/${toId}/${departdate}/${returndate}`
+        `/flights/${selected}/${fromLocation}/${fromId}/${toLocation}/${toId}/${departdate}/${returndate}`
       );
     } else {
       console.error("Failed to fetch location IDs");
@@ -148,39 +148,9 @@ const FlightsSearch = ({
       console.error(error);
     }
   };
-  const fetchOneWayFlights = async () => {
-    try {
-      const [fromId, toId] = await Promise.all([
-        fetchLocation(from),
-        fetchLocation(to),
-      ]);
-
-      if (fromId && toId) {
-        setFromId(fromId);
-        setToId(toId);
-
-        const url = `https://skyscanner80.p.rapidapi.com/api/v1/flights/search-one-way?fromId=${fromId}&toId=${toId}&departDate=${departDate}&adults=${adults}&currency=USD&market=US&locale=en-US`;
-        const options = {
-          method: "GET",
-          headers: {
-            "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
-            "X-RapidAPI-Host": "skyscanner80.p.rapidapi.com",
-          },
-        };
-
-        const response = await fetch(url, options);
-        const result = await response.json();
-        setFlights(result.data);
-        console.log(result);
-      } else {
-        console.error("Failed to fetch location IDs");
-      }
-    } catch (error) {
-      console.error(error);
-    }
-  };
 
   useEffect(() => {
+    const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
     if (fromLocation) {
       setFrom(fromLocation);
       console.log("test");
@@ -191,7 +161,7 @@ const FlightsSearch = ({
     if (departdate) {
       setDepartDate(departdate);
     }
-    if (returndate) {
+    if (returndate && dateRegex.test(returndate)) {
       setReturnDate(returndate);
     }
   }, [fromLocation, toLocation, departdate, returndate]);

@@ -1,1117 +1,145 @@
 {
   "context": {
     "status": "incomplete",
-    "sessionId": "ClQIARJQCk4KJDE5Yjc3YWMxLWM2MDctNGNlZS05MDljLWYxZDliYzgyODAxZRACGiQ5NzE0N2NlOC1iMGQyLTRkZGYtYjM3Yi1hOTFmOTViZmZmZDY=",
+    "sessionId": "ClQIARJQCk4KJGUxNTdiYTNhLTlmMzItNGNjOS05YzVjLThlNjhlMzQxMzI1YRACGiQzN2VkYzUxNC1hYjBjLTRhYTUtYjYwZS1lYjQxYzYzNDQ1NGESKHVzc184ZDFiZDNkOC05YzEzLTRmYTYtODkwNS0wNWFiNjk2YTcyNDU=",
     "totalResults": 10
   },
   "itineraries": [
     {
-      "id": "10413-2402141550--32385-1-14355-2402142218|14355-2402151225--32385-1-10413-2402160610",
+      "id": "12234-2409052000--32442-1-13542-2409060640",
       "price": {
-        "raw": 2688.86,
-        "formatted": "$2,689",
-        "pricingOptionId": "_nCdcHSSssLM"
+        "raw": 674.99,
+        "formatted": "$675",
+        "pricingOptionId": "MAtRgYzxfsCt"
       },
       "legs": [
         {
-          "id": "10413-2402141550--32385-1-14355-2402142218",
+          "id": "12234-2409052000--32442-1-13542-2409060640",
           "origin": {
-            "id": "CDG",
-            "name": "Paris Charles de Gaulle",
-            "displayCode": "CDG",
-            "city": "Paris",
-            "country": "France",
+            "id": "HND",
+            "entityId": "128667143",
+            "name": "Tokyo Haneda",
+            "displayCode": "HND",
+            "city": "Tokyo",
+            "country": "Japan",
             "isHighlighted": false
           },
           "destination": {
-            "id": "MSY",
-            "name": "New Orleans Louis Armstrong",
-            "displayCode": "MSY",
-            "city": "New Orleans",
-            "country": "United States",
+            "id": "LGW",
+            "entityId": "95565051",
+            "name": "London Gatwick",
+            "displayCode": "LGW",
+            "city": "London",
+            "country": "United Kingdom",
             "isHighlighted": false
           },
-          "durationInMinutes": 808,
+          "durationInMinutes": 1120,
           "stopCount": 1,
           "isSmallestStops": false,
-          "departure": "2024-02-14T15:50:00",
-          "arrival": "2024-02-14T22:18:00",
-          "timeDeltaInDays": 0,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32385,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
-                "name": "Delta"
-              }
-            ],
-            "operationType": "fully_operated"
-          },
-          "segments": [
-            {
-              "id": "10413-9596-2402141550-2402142015--32385",
-              "origin": {
-                "flightPlaceId": "CDG",
-                "displayCode": "CDG",
-                "parent": {
-                  "flightPlaceId": "PARI",
-                  "displayCode": "PAR",
-                  "name": "Paris",
-                  "type": "City"
-                },
-                "name": "Paris Charles de Gaulle",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "departure": "2024-02-14T15:50:00",
-              "arrival": "2024-02-14T20:15:00",
-              "durationInMinutes": 625,
-              "flightNumber": "85",
-              "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9596-14355-2402142144-2402142218--32385",
-              "origin": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "MSY",
-                "displayCode": "MSY",
-                "parent": {
-                  "flightPlaceId": "MSYA",
-                  "displayCode": "MSY",
-                  "name": "New Orleans",
-                  "type": "City"
-                },
-                "name": "New Orleans Louis Armstrong",
-                "type": "Airport"
-              },
-              "departure": "2024-02-14T21:44:00",
-              "arrival": "2024-02-14T22:18:00",
-              "durationInMinutes": 94,
-              "flightNumber": "2521",
-              "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        },
-        {
-          "id": "14355-2402151225--32385-1-10413-2402160610",
-          "origin": {
-            "id": "MSY",
-            "name": "New Orleans Louis Armstrong",
-            "displayCode": "MSY",
-            "city": "New Orleans",
-            "country": "United States",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "CDG",
-            "name": "Paris Charles de Gaulle",
-            "displayCode": "CDG",
-            "city": "Paris",
-            "country": "France",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 645,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-02-15T12:25:00",
-          "arrival": "2024-02-16T06:10:00",
+          "departure": "2024-09-05T20:00:00",
+          "arrival": "2024-09-06T06:40:00",
           "timeDeltaInDays": 1,
           "carriers": {
             "marketing": [
               {
-                "id": -32385,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
-                "name": "Delta"
+                "id": -32442,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/MU.png",
+                "name": "China Eastern"
               }
             ],
             "operationType": "fully_operated"
           },
           "segments": [
             {
-              "id": "14355-9596-2402151225-2402151453--32385",
+              "id": "12234-15641-2409052000-2409052215--32442",
               "origin": {
-                "flightPlaceId": "MSY",
-                "displayCode": "MSY",
+                "flightPlaceId": "HND",
+                "displayCode": "HND",
                 "parent": {
-                  "flightPlaceId": "MSYA",
-                  "displayCode": "MSY",
-                  "name": "New Orleans",
+                  "flightPlaceId": "TYOA",
+                  "displayCode": "TYO",
+                  "name": "Tokyo",
                   "type": "City"
                 },
-                "name": "New Orleans Louis Armstrong",
-                "type": "Airport"
+                "name": "Tokyo Haneda",
+                "type": "Airport",
+                "country": "Japan"
               },
               "destination": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
+                "flightPlaceId": "PVG",
+                "displayCode": "PVG",
                 "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
+                  "flightPlaceId": "CSHA",
+                  "displayCode": "SHA",
+                  "name": "Shanghai",
                   "type": "City"
                 },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
+                "name": "Shanghai Pudong",
+                "type": "Airport",
+                "country": "China"
               },
-              "departure": "2024-02-15T12:25:00",
-              "arrival": "2024-02-15T14:53:00",
-              "durationInMinutes": 88,
-              "flightNumber": "2542",
+              "departure": "2024-09-05T20:00:00",
+              "arrival": "2024-09-05T22:15:00",
+              "durationInMinutes": 195,
+              "flightNumber": "540",
               "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
+                "id": -32442,
+                "name": "China Eastern",
+                "alternateId": "MU",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
+                "id": -32442,
+                "name": "China Eastern",
+                "alternateId": "MU",
                 "allianceId": 0,
                 "displayCode": ""
               }
             },
             {
-              "id": "9596-10413-2402151535-2402160610--32385",
+              "id": "15641-13542-2409060150-2409060640--32442",
               "origin": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
+                "flightPlaceId": "PVG",
+                "displayCode": "PVG",
                 "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
+                  "flightPlaceId": "CSHA",
+                  "displayCode": "SHA",
+                  "name": "Shanghai",
                   "type": "City"
                 },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
+                "name": "Shanghai Pudong",
+                "type": "Airport",
+                "country": "China"
               },
               "destination": {
-                "flightPlaceId": "CDG",
-                "displayCode": "CDG",
+                "flightPlaceId": "LGW",
+                "displayCode": "LGW",
                 "parent": {
-                  "flightPlaceId": "PARI",
-                  "displayCode": "PAR",
-                  "name": "Paris",
+                  "flightPlaceId": "LOND",
+                  "displayCode": "LON",
+                  "name": "London",
                   "type": "City"
                 },
-                "name": "Paris Charles de Gaulle",
-                "type": "Airport"
+                "name": "London Gatwick",
+                "type": "Airport",
+                "country": "United Kingdom"
               },
-              "departure": "2024-02-15T15:35:00",
-              "arrival": "2024-02-16T06:10:00",
-              "durationInMinutes": 515,
-              "flightNumber": "82",
+              "departure": "2024-09-06T01:50:00",
+              "arrival": "2024-09-06T06:40:00",
+              "durationInMinutes": 710,
+              "flightNumber": "201",
               "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
+                "id": -32442,
+                "name": "China Eastern",
+                "alternateId": "MU",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        }
-      ],
-      "isSelfTransfer": false,
-      "isProtectedSelfTransfer": false,
-      "farePolicy": {
-        "isChangeAllowed": false,
-        "isPartiallyChangeable": false,
-        "isCancellationAllowed": false,
-        "isPartiallyRefundable": false
-      },
-      "fareAttributes": {},
-      "tags": ["cheapest", "shortest"],
-      "isMashUp": false,
-      "hasFlexibleOptions": false,
-      "score": 0.999
-    },
-    {
-      "id": "10413-2402141550--32385-1-14355-2402142218|14355-2402151920--32385-1-10413-2402161320",
-      "price": {
-        "raw": 2688.86,
-        "formatted": "$2,689",
-        "pricingOptionId": "MzFHM_qaX1UU"
-      },
-      "legs": [
-        {
-          "id": "10413-2402141550--32385-1-14355-2402142218",
-          "origin": {
-            "id": "CDG",
-            "name": "Paris Charles de Gaulle",
-            "displayCode": "CDG",
-            "city": "Paris",
-            "country": "France",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "MSY",
-            "name": "New Orleans Louis Armstrong",
-            "displayCode": "MSY",
-            "city": "New Orleans",
-            "country": "United States",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 808,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-02-14T15:50:00",
-          "arrival": "2024-02-14T22:18:00",
-          "timeDeltaInDays": 0,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32385,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
-                "name": "Delta"
-              }
-            ],
-            "operationType": "fully_operated"
-          },
-          "segments": [
-            {
-              "id": "10413-9596-2402141550-2402142015--32385",
-              "origin": {
-                "flightPlaceId": "CDG",
-                "displayCode": "CDG",
-                "parent": {
-                  "flightPlaceId": "PARI",
-                  "displayCode": "PAR",
-                  "name": "Paris",
-                  "type": "City"
-                },
-                "name": "Paris Charles de Gaulle",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "departure": "2024-02-14T15:50:00",
-              "arrival": "2024-02-14T20:15:00",
-              "durationInMinutes": 625,
-              "flightNumber": "85",
-              "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9596-14355-2402142144-2402142218--32385",
-              "origin": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "MSY",
-                "displayCode": "MSY",
-                "parent": {
-                  "flightPlaceId": "MSYA",
-                  "displayCode": "MSY",
-                  "name": "New Orleans",
-                  "type": "City"
-                },
-                "name": "New Orleans Louis Armstrong",
-                "type": "Airport"
-              },
-              "departure": "2024-02-14T21:44:00",
-              "arrival": "2024-02-14T22:18:00",
-              "durationInMinutes": 94,
-              "flightNumber": "2521",
-              "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        },
-        {
-          "id": "14355-2402151920--32385-1-10413-2402161320",
-          "origin": {
-            "id": "MSY",
-            "name": "New Orleans Louis Armstrong",
-            "displayCode": "MSY",
-            "city": "New Orleans",
-            "country": "United States",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "CDG",
-            "name": "Paris Charles de Gaulle",
-            "displayCode": "CDG",
-            "city": "Paris",
-            "country": "France",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 660,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-02-15T19:20:00",
-          "arrival": "2024-02-16T13:20:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32385,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
-                "name": "Delta"
-              }
-            ],
-            "operationType": "fully_operated"
-          },
-          "segments": [
-            {
-              "id": "14355-9596-2402151920-2402152150--32385",
-              "origin": {
-                "flightPlaceId": "MSY",
-                "displayCode": "MSY",
-                "parent": {
-                  "flightPlaceId": "MSYA",
-                  "displayCode": "MSY",
-                  "name": "New Orleans",
-                  "type": "City"
-                },
-                "name": "New Orleans Louis Armstrong",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "departure": "2024-02-15T19:20:00",
-              "arrival": "2024-02-15T21:50:00",
-              "durationInMinutes": 90,
-              "flightNumber": "2367",
-              "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9596-10413-2402152245-2402161320--32385",
-              "origin": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "CDG",
-                "displayCode": "CDG",
-                "parent": {
-                  "flightPlaceId": "PARI",
-                  "displayCode": "PAR",
-                  "name": "Paris",
-                  "type": "City"
-                },
-                "name": "Paris Charles de Gaulle",
-                "type": "Airport"
-              },
-              "departure": "2024-02-15T22:45:00",
-              "arrival": "2024-02-16T13:20:00",
-              "durationInMinutes": 515,
-              "flightNumber": "84",
-              "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        }
-      ],
-      "isSelfTransfer": false,
-      "isProtectedSelfTransfer": false,
-      "farePolicy": {
-        "isChangeAllowed": false,
-        "isPartiallyChangeable": false,
-        "isCancellationAllowed": false,
-        "isPartiallyRefundable": false
-      },
-      "fareAttributes": {},
-      "tags": ["second_cheapest", "third_shortest"],
-      "isMashUp": false,
-      "hasFlexibleOptions": false,
-      "score": 0.982508
-    },
-    {
-      "id": "10413-2402141550--32132-1-14355-2402142218|14355-2402151920--32132-1-10413-2402161320",
-      "price": {
-        "raw": 2695.29,
-        "formatted": "$2,696",
-        "pricingOptionId": "Xi-63c5jmeQv"
-      },
-      "legs": [
-        {
-          "id": "10413-2402141550--32132-1-14355-2402142218",
-          "origin": {
-            "id": "CDG",
-            "name": "Paris Charles de Gaulle",
-            "displayCode": "CDG",
-            "city": "Paris",
-            "country": "France",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "MSY",
-            "name": "New Orleans Louis Armstrong",
-            "displayCode": "MSY",
-            "city": "New Orleans",
-            "country": "United States",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 808,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-02-14T15:50:00",
-          "arrival": "2024-02-14T22:18:00",
-          "timeDeltaInDays": 0,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32132,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
-                "name": "KLM"
-              }
-            ],
-            "operating": [
-              {
-                "id": -32385,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
-                "name": "Delta"
-              }
-            ],
-            "operationType": "not_operated"
-          },
-          "segments": [
-            {
-              "id": "10413-9596-2402141550-2402142015--32132",
-              "origin": {
-                "flightPlaceId": "CDG",
-                "displayCode": "CDG",
-                "parent": {
-                  "flightPlaceId": "PARI",
-                  "displayCode": "PAR",
-                  "name": "Paris",
-                  "type": "City"
-                },
-                "name": "Paris Charles de Gaulle",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "departure": "2024-02-14T15:50:00",
-              "arrival": "2024-02-14T20:15:00",
-              "durationInMinutes": 625,
-              "flightNumber": "6100",
-              "marketingCarrier": {
-                "id": -32132,
-                "name": "KLM",
-                "alternateId": "KL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9596-14355-2402142144-2402142218--32132",
-              "origin": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "MSY",
-                "displayCode": "MSY",
-                "parent": {
-                  "flightPlaceId": "MSYA",
-                  "displayCode": "MSY",
-                  "name": "New Orleans",
-                  "type": "City"
-                },
-                "name": "New Orleans Louis Armstrong",
-                "type": "Airport"
-              },
-              "departure": "2024-02-14T21:44:00",
-              "arrival": "2024-02-14T22:18:00",
-              "durationInMinutes": 94,
-              "flightNumber": "6930",
-              "marketingCarrier": {
-                "id": -32132,
-                "name": "KLM",
-                "alternateId": "KL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        },
-        {
-          "id": "14355-2402151920--32132-1-10413-2402161320",
-          "origin": {
-            "id": "MSY",
-            "name": "New Orleans Louis Armstrong",
-            "displayCode": "MSY",
-            "city": "New Orleans",
-            "country": "United States",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "CDG",
-            "name": "Paris Charles de Gaulle",
-            "displayCode": "CDG",
-            "city": "Paris",
-            "country": "France",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 660,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-02-15T19:20:00",
-          "arrival": "2024-02-16T13:20:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32132,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
-                "name": "KLM"
-              }
-            ],
-            "operating": [
-              {
-                "id": -32385,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
-                "name": "Delta"
-              }
-            ],
-            "operationType": "not_operated"
-          },
-          "segments": [
-            {
-              "id": "14355-9596-2402151920-2402152150--32132",
-              "origin": {
-                "flightPlaceId": "MSY",
-                "displayCode": "MSY",
-                "parent": {
-                  "flightPlaceId": "MSYA",
-                  "displayCode": "MSY",
-                  "name": "New Orleans",
-                  "type": "City"
-                },
-                "name": "New Orleans Louis Armstrong",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "departure": "2024-02-15T19:20:00",
-              "arrival": "2024-02-15T21:50:00",
-              "durationInMinutes": 90,
-              "flightNumber": "7849",
-              "marketingCarrier": {
-                "id": -32132,
-                "name": "KLM",
-                "alternateId": "KL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9596-10413-2402152245-2402161320--32132",
-              "origin": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "CDG",
-                "displayCode": "CDG",
-                "parent": {
-                  "flightPlaceId": "PARI",
-                  "displayCode": "PAR",
-                  "name": "Paris",
-                  "type": "City"
-                },
-                "name": "Paris Charles de Gaulle",
-                "type": "Airport"
-              },
-              "departure": "2024-02-15T22:45:00",
-              "arrival": "2024-02-16T13:20:00",
-              "durationInMinutes": 515,
-              "flightNumber": "6097",
-              "marketingCarrier": {
-                "id": -32132,
-                "name": "KLM",
-                "alternateId": "KL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        }
-      ],
-      "isSelfTransfer": false,
-      "isProtectedSelfTransfer": false,
-      "farePolicy": {
-        "isChangeAllowed": false,
-        "isPartiallyChangeable": false,
-        "isCancellationAllowed": false,
-        "isPartiallyRefundable": false
-      },
-      "fareAttributes": {},
-      "isMashUp": false,
-      "hasFlexibleOptions": false,
-      "score": 0.927642
-    },
-    {
-      "id": "10413-2402141550--32385-1-14355-2402142218|14355-2402151651--32385-1-10413-2402161045",
-      "price": {
-        "raw": 2828.2,
-        "formatted": "$2,829",
-        "pricingOptionId": "pT7UL0oq9whl"
-      },
-      "legs": [
-        {
-          "id": "10413-2402141550--32385-1-14355-2402142218",
-          "origin": {
-            "id": "CDG",
-            "name": "Paris Charles de Gaulle",
-            "displayCode": "CDG",
-            "city": "Paris",
-            "country": "France",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "MSY",
-            "name": "New Orleans Louis Armstrong",
-            "displayCode": "MSY",
-            "city": "New Orleans",
-            "country": "United States",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 808,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-02-14T15:50:00",
-          "arrival": "2024-02-14T22:18:00",
-          "timeDeltaInDays": 0,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32385,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
-                "name": "Delta"
-              }
-            ],
-            "operationType": "fully_operated"
-          },
-          "segments": [
-            {
-              "id": "10413-9596-2402141550-2402142015--32385",
-              "origin": {
-                "flightPlaceId": "CDG",
-                "displayCode": "CDG",
-                "parent": {
-                  "flightPlaceId": "PARI",
-                  "displayCode": "PAR",
-                  "name": "Paris",
-                  "type": "City"
-                },
-                "name": "Paris Charles de Gaulle",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "departure": "2024-02-14T15:50:00",
-              "arrival": "2024-02-14T20:15:00",
-              "durationInMinutes": 625,
-              "flightNumber": "85",
-              "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9596-14355-2402142144-2402142218--32385",
-              "origin": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "MSY",
-                "displayCode": "MSY",
-                "parent": {
-                  "flightPlaceId": "MSYA",
-                  "displayCode": "MSY",
-                  "name": "New Orleans",
-                  "type": "City"
-                },
-                "name": "New Orleans Louis Armstrong",
-                "type": "Airport"
-              },
-              "departure": "2024-02-14T21:44:00",
-              "arrival": "2024-02-14T22:18:00",
-              "durationInMinutes": 94,
-              "flightNumber": "2521",
-              "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        },
-        {
-          "id": "14355-2402151651--32385-1-10413-2402161045",
-          "origin": {
-            "id": "MSY",
-            "name": "New Orleans Louis Armstrong",
-            "displayCode": "MSY",
-            "city": "New Orleans",
-            "country": "United States",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "CDG",
-            "name": "Paris Charles de Gaulle",
-            "displayCode": "CDG",
-            "city": "Paris",
-            "country": "France",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 654,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-02-15T16:51:00",
-          "arrival": "2024-02-16T10:45:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32385,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
-                "name": "Delta"
-              }
-            ],
-            "operating": [
-              {
-                "id": -32677,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
-                "name": "Air France"
-              }
-            ],
-            "operationType": "partially_operated"
-          },
-          "segments": [
-            {
-              "id": "14355-9596-2402151651-2402151922--32385",
-              "origin": {
-                "flightPlaceId": "MSY",
-                "displayCode": "MSY",
-                "parent": {
-                  "flightPlaceId": "MSYA",
-                  "displayCode": "MSY",
-                  "name": "New Orleans",
-                  "type": "City"
-                },
-                "name": "New Orleans Louis Armstrong",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "departure": "2024-02-15T16:51:00",
-              "arrival": "2024-02-15T19:22:00",
-              "durationInMinutes": 91,
-              "flightNumber": "2612",
-              "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9596-10413-2402152030-2402161045--32385",
-              "origin": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "CDG",
-                "displayCode": "CDG",
-                "parent": {
-                  "flightPlaceId": "PARI",
-                  "displayCode": "PAR",
-                  "name": "Paris",
-                  "type": "City"
-                },
-                "name": "Paris Charles de Gaulle",
-                "type": "Airport"
-              },
-              "departure": "2024-02-15T20:30:00",
-              "arrival": "2024-02-16T10:45:00",
-              "durationInMinutes": 495,
-              "flightNumber": "8672",
-              "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32677,
-                "name": "Air France",
-                "alternateId": "AF",
+                "id": -32442,
+                "name": "China Eastern",
+                "alternateId": "MU",
                 "allianceId": 0,
                 "displayCode": ""
               }
@@ -1131,264 +159,1242 @@
       "tags": ["second_shortest"],
       "isMashUp": false,
       "hasFlexibleOptions": false,
-      "score": 0.868441
+      "score": 0.999
     },
     {
-      "id": "10413-2402141550--32385-1-14355-2402142218|14355-2402151814--32385-1-10413-2402161320",
+      "id": "14788-2409051655--32442-1-13542-2409060640",
       "price": {
-        "raw": 2688.86,
-        "formatted": "$2,689",
-        "pricingOptionId": "LkTSOzjLhGEs"
+        "raw": 652.9,
+        "formatted": "$653",
+        "pricingOptionId": "B3w6W8L5UWy5"
       },
       "legs": [
         {
-          "id": "10413-2402141550--32385-1-14355-2402142218",
+          "id": "14788-2409051655--32442-1-13542-2409060640",
           "origin": {
-            "id": "CDG",
-            "name": "Paris Charles de Gaulle",
-            "displayCode": "CDG",
-            "city": "Paris",
-            "country": "France",
+            "id": "NRT",
+            "entityId": "128668889",
+            "name": "Tokyo Narita",
+            "displayCode": "NRT",
+            "city": "Tokyo",
+            "country": "Japan",
             "isHighlighted": false
           },
           "destination": {
-            "id": "MSY",
-            "name": "New Orleans Louis Armstrong",
-            "displayCode": "MSY",
-            "city": "New Orleans",
-            "country": "United States",
+            "id": "LGW",
+            "entityId": "95565051",
+            "name": "London Gatwick",
+            "displayCode": "LGW",
+            "city": "London",
+            "country": "United Kingdom",
             "isHighlighted": false
           },
-          "durationInMinutes": 808,
+          "durationInMinutes": 1305,
           "stopCount": 1,
           "isSmallestStops": false,
-          "departure": "2024-02-14T15:50:00",
-          "arrival": "2024-02-14T22:18:00",
-          "timeDeltaInDays": 0,
+          "departure": "2024-09-05T16:55:00",
+          "arrival": "2024-09-06T06:40:00",
+          "timeDeltaInDays": 1,
           "carriers": {
             "marketing": [
               {
-                "id": -32385,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
-                "name": "Delta"
+                "id": -32442,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/MU.png",
+                "name": "China Eastern"
               }
             ],
             "operationType": "fully_operated"
           },
           "segments": [
             {
-              "id": "10413-9596-2402141550-2402142015--32385",
+              "id": "14788-15641-2409051655-2409051915--32442",
               "origin": {
-                "flightPlaceId": "CDG",
-                "displayCode": "CDG",
+                "flightPlaceId": "NRT",
+                "displayCode": "NRT",
                 "parent": {
-                  "flightPlaceId": "PARI",
-                  "displayCode": "PAR",
-                  "name": "Paris",
+                  "flightPlaceId": "TYOA",
+                  "displayCode": "TYO",
+                  "name": "Tokyo",
                   "type": "City"
                 },
-                "name": "Paris Charles de Gaulle",
-                "type": "Airport"
+                "name": "Tokyo Narita",
+                "type": "Airport",
+                "country": "Japan"
               },
               "destination": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
+                "flightPlaceId": "PVG",
+                "displayCode": "PVG",
                 "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
+                  "flightPlaceId": "CSHA",
+                  "displayCode": "SHA",
+                  "name": "Shanghai",
                   "type": "City"
                 },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
+                "name": "Shanghai Pudong",
+                "type": "Airport",
+                "country": "China"
               },
-              "departure": "2024-02-14T15:50:00",
-              "arrival": "2024-02-14T20:15:00",
-              "durationInMinutes": 625,
-              "flightNumber": "85",
+              "departure": "2024-09-05T16:55:00",
+              "arrival": "2024-09-05T19:15:00",
+              "durationInMinutes": 200,
+              "flightNumber": "522",
               "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
+                "id": -32442,
+                "name": "China Eastern",
+                "alternateId": "MU",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
+                "id": -32442,
+                "name": "China Eastern",
+                "alternateId": "MU",
                 "allianceId": 0,
                 "displayCode": ""
               }
             },
             {
-              "id": "9596-14355-2402142144-2402142218--32385",
+              "id": "15641-13542-2409060150-2409060640--32442",
               "origin": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
+                "flightPlaceId": "PVG",
+                "displayCode": "PVG",
                 "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
+                  "flightPlaceId": "CSHA",
+                  "displayCode": "SHA",
+                  "name": "Shanghai",
                   "type": "City"
                 },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
+                "name": "Shanghai Pudong",
+                "type": "Airport",
+                "country": "China"
               },
               "destination": {
-                "flightPlaceId": "MSY",
-                "displayCode": "MSY",
+                "flightPlaceId": "LGW",
+                "displayCode": "LGW",
                 "parent": {
-                  "flightPlaceId": "MSYA",
-                  "displayCode": "MSY",
-                  "name": "New Orleans",
+                  "flightPlaceId": "LOND",
+                  "displayCode": "LON",
+                  "name": "London",
                   "type": "City"
                 },
-                "name": "New Orleans Louis Armstrong",
-                "type": "Airport"
+                "name": "London Gatwick",
+                "type": "Airport",
+                "country": "United Kingdom"
               },
-              "departure": "2024-02-14T21:44:00",
-              "arrival": "2024-02-14T22:18:00",
-              "durationInMinutes": 94,
-              "flightNumber": "2521",
+              "departure": "2024-09-06T01:50:00",
+              "arrival": "2024-09-06T06:40:00",
+              "durationInMinutes": 710,
+              "flightNumber": "201",
               "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
+                "id": -32442,
+                "name": "China Eastern",
+                "alternateId": "MU",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
+                "id": -32442,
+                "name": "China Eastern",
+                "alternateId": "MU",
                 "allianceId": 0,
                 "displayCode": ""
               }
             }
           ]
-        },
+        }
+      ],
+      "isSelfTransfer": false,
+      "isProtectedSelfTransfer": false,
+      "farePolicy": {
+        "isChangeAllowed": false,
+        "isPartiallyChangeable": false,
+        "isCancellationAllowed": false,
+        "isPartiallyRefundable": false
+      },
+      "fareAttributes": {},
+      "tags": ["second_cheapest"],
+      "isMashUp": false,
+      "hasFlexibleOptions": false,
+      "score": 0.787736
+    },
+    {
+      "id": "14788-2409052250--32093-1-13554-2409060920",
+      "price": {
+        "raw": 849.99,
+        "formatted": "$850",
+        "pricingOptionId": "8pUjaMuntW6v"
+      },
+      "legs": [
         {
-          "id": "14355-2402151814--32385-1-10413-2402161320",
+          "id": "14788-2409052250--32093-1-13554-2409060920",
           "origin": {
-            "id": "MSY",
-            "name": "New Orleans Louis Armstrong",
-            "displayCode": "MSY",
-            "city": "New Orleans",
-            "country": "United States",
+            "id": "NRT",
+            "entityId": "128668889",
+            "name": "Tokyo Narita",
+            "displayCode": "NRT",
+            "city": "Tokyo",
+            "country": "Japan",
             "isHighlighted": false
           },
           "destination": {
-            "id": "CDG",
-            "name": "Paris Charles de Gaulle",
-            "displayCode": "CDG",
-            "city": "Paris",
-            "country": "France",
+            "id": "LHR",
+            "entityId": "95565050",
+            "name": "London Heathrow",
+            "displayCode": "LHR",
+            "city": "London",
+            "country": "United Kingdom",
             "isHighlighted": false
           },
-          "durationInMinutes": 726,
+          "durationInMinutes": 1110,
           "stopCount": 1,
           "isSmallestStops": false,
-          "departure": "2024-02-15T18:14:00",
-          "arrival": "2024-02-16T13:20:00",
+          "departure": "2024-09-05T22:50:00",
+          "arrival": "2024-09-06T09:20:00",
           "timeDeltaInDays": 1,
           "carriers": {
             "marketing": [
               {
-                "id": -32385,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
-                "name": "Delta"
+                "id": -32093,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/LO.png",
+                "name": "LOT"
               }
             ],
             "operationType": "fully_operated"
           },
           "segments": [
             {
-              "id": "14355-9596-2402151814-2402152048--32385",
+              "id": "14788-17648-2409052250-2409060600--32093",
               "origin": {
-                "flightPlaceId": "MSY",
-                "displayCode": "MSY",
+                "flightPlaceId": "NRT",
+                "displayCode": "NRT",
                 "parent": {
-                  "flightPlaceId": "MSYA",
-                  "displayCode": "MSY",
-                  "name": "New Orleans",
+                  "flightPlaceId": "TYOA",
+                  "displayCode": "TYO",
+                  "name": "Tokyo",
                   "type": "City"
                 },
-                "name": "New Orleans Louis Armstrong",
-                "type": "Airport"
+                "name": "Tokyo Narita",
+                "type": "Airport",
+                "country": "Japan"
               },
               "destination": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
+                "flightPlaceId": "WAW",
+                "displayCode": "WAW",
                 "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
+                  "flightPlaceId": "WARS",
+                  "displayCode": "WAW",
+                  "name": "Warsaw",
                   "type": "City"
                 },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
+                "name": "Warsaw Chopin",
+                "type": "Airport",
+                "country": "Poland"
               },
-              "departure": "2024-02-15T18:14:00",
-              "arrival": "2024-02-15T20:48:00",
-              "durationInMinutes": 94,
-              "flightNumber": "2783",
+              "departure": "2024-09-05T22:50:00",
+              "arrival": "2024-09-06T06:00:00",
+              "durationInMinutes": 850,
+              "flightNumber": "80",
               "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
+                "id": -32093,
+                "name": "LOT",
+                "alternateId": "LO",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
+                "id": -32093,
+                "name": "LOT",
+                "alternateId": "LO",
                 "allianceId": 0,
                 "displayCode": ""
               }
             },
             {
-              "id": "9596-10413-2402152245-2402161320--32385",
+              "id": "17648-13554-2409060725-2409060920--32093",
               "origin": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
+                "flightPlaceId": "WAW",
+                "displayCode": "WAW",
                 "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
+                  "flightPlaceId": "WARS",
+                  "displayCode": "WAW",
+                  "name": "Warsaw",
                   "type": "City"
                 },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
+                "name": "Warsaw Chopin",
+                "type": "Airport",
+                "country": "Poland"
               },
               "destination": {
-                "flightPlaceId": "CDG",
-                "displayCode": "CDG",
+                "flightPlaceId": "LHR",
+                "displayCode": "LHR",
                 "parent": {
-                  "flightPlaceId": "PARI",
-                  "displayCode": "PAR",
-                  "name": "Paris",
+                  "flightPlaceId": "LOND",
+                  "displayCode": "LON",
+                  "name": "London",
                   "type": "City"
                 },
-                "name": "Paris Charles de Gaulle",
-                "type": "Airport"
+                "name": "London Heathrow",
+                "type": "Airport",
+                "country": "United Kingdom"
               },
-              "departure": "2024-02-15T22:45:00",
-              "arrival": "2024-02-16T13:20:00",
-              "durationInMinutes": 515,
-              "flightNumber": "84",
+              "departure": "2024-09-06T07:25:00",
+              "arrival": "2024-09-06T09:20:00",
+              "durationInMinutes": 175,
+              "flightNumber": "281",
               "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
+                "id": -32093,
+                "name": "LOT",
+                "alternateId": "LO",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
+                "id": -32093,
+                "name": "LOT",
+                "alternateId": "LO",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            }
+          ]
+        }
+      ],
+      "isSelfTransfer": false,
+      "isProtectedSelfTransfer": false,
+      "farePolicy": {
+        "isChangeAllowed": false,
+        "isPartiallyChangeable": false,
+        "isCancellationAllowed": false,
+        "isPartiallyRefundable": false
+      },
+      "eco": {
+        "ecoContenderDelta": 32.62643
+      },
+      "fareAttributes": {},
+      "tags": ["shortest"],
+      "isMashUp": false,
+      "hasFlexibleOptions": false,
+      "score": 0.695094
+    },
+    {
+      "id": "12234-2409051710--32442-1-13542-2409060640",
+      "price": {
+        "raw": 675.99,
+        "formatted": "$676",
+        "pricingOptionId": "gDLzzr0qj35f"
+      },
+      "legs": [
+        {
+          "id": "12234-2409051710--32442-1-13542-2409060640",
+          "origin": {
+            "id": "HND",
+            "entityId": "128667143",
+            "name": "Tokyo Haneda",
+            "displayCode": "HND",
+            "city": "Tokyo",
+            "country": "Japan",
+            "isHighlighted": false
+          },
+          "destination": {
+            "id": "LGW",
+            "entityId": "95565051",
+            "name": "London Gatwick",
+            "displayCode": "LGW",
+            "city": "London",
+            "country": "United Kingdom",
+            "isHighlighted": false
+          },
+          "durationInMinutes": 1290,
+          "stopCount": 1,
+          "isSmallestStops": false,
+          "departure": "2024-09-05T17:10:00",
+          "arrival": "2024-09-06T06:40:00",
+          "timeDeltaInDays": 1,
+          "carriers": {
+            "marketing": [
+              {
+                "id": -32442,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/MU.png",
+                "name": "China Eastern"
+              }
+            ],
+            "operating": [
+              {
+                "id": -31882,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/FM.png",
+                "name": "Shanghai Airlines"
+              }
+            ],
+            "operationType": "partially_operated"
+          },
+          "segments": [
+            {
+              "id": "12234-15641-2409051710-2409051910--32442",
+              "origin": {
+                "flightPlaceId": "HND",
+                "displayCode": "HND",
+                "parent": {
+                  "flightPlaceId": "TYOA",
+                  "displayCode": "TYO",
+                  "name": "Tokyo",
+                  "type": "City"
+                },
+                "name": "Tokyo Haneda",
+                "type": "Airport",
+                "country": "Japan"
+              },
+              "destination": {
+                "flightPlaceId": "PVG",
+                "displayCode": "PVG",
+                "parent": {
+                  "flightPlaceId": "CSHA",
+                  "displayCode": "SHA",
+                  "name": "Shanghai",
+                  "type": "City"
+                },
+                "name": "Shanghai Pudong",
+                "type": "Airport",
+                "country": "China"
+              },
+              "departure": "2024-09-05T17:10:00",
+              "arrival": "2024-09-05T19:10:00",
+              "durationInMinutes": 180,
+              "flightNumber": "8634",
+              "marketingCarrier": {
+                "id": -32442,
+                "name": "China Eastern",
+                "alternateId": "MU",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -31882,
+                "name": "Shanghai Airlines",
+                "alternateId": "FM",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            },
+            {
+              "id": "15641-13542-2409060150-2409060640--32442",
+              "origin": {
+                "flightPlaceId": "PVG",
+                "displayCode": "PVG",
+                "parent": {
+                  "flightPlaceId": "CSHA",
+                  "displayCode": "SHA",
+                  "name": "Shanghai",
+                  "type": "City"
+                },
+                "name": "Shanghai Pudong",
+                "type": "Airport",
+                "country": "China"
+              },
+              "destination": {
+                "flightPlaceId": "LGW",
+                "displayCode": "LGW",
+                "parent": {
+                  "flightPlaceId": "LOND",
+                  "displayCode": "LON",
+                  "name": "London",
+                  "type": "City"
+                },
+                "name": "London Gatwick",
+                "type": "Airport",
+                "country": "United Kingdom"
+              },
+              "departure": "2024-09-06T01:50:00",
+              "arrival": "2024-09-06T06:40:00",
+              "durationInMinutes": 710,
+              "flightNumber": "201",
+              "marketingCarrier": {
+                "id": -32442,
+                "name": "China Eastern",
+                "alternateId": "MU",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32442,
+                "name": "China Eastern",
+                "alternateId": "MU",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            }
+          ]
+        }
+      ],
+      "isSelfTransfer": false,
+      "isProtectedSelfTransfer": false,
+      "farePolicy": {
+        "isChangeAllowed": false,
+        "isPartiallyChangeable": false,
+        "isCancellationAllowed": false,
+        "isPartiallyRefundable": false
+      },
+      "fareAttributes": {},
+      "isMashUp": false,
+      "hasFlexibleOptions": false,
+      "score": 0.603591
+    },
+    {
+      "id": "14788-2409051830--32456-1-13554-2409060620",
+      "price": {
+        "raw": 891.4,
+        "formatted": "$892",
+        "pricingOptionId": "oKgNZNqadoFC"
+      },
+      "legs": [
+        {
+          "id": "14788-2409051830--32456-1-13554-2409060620",
+          "origin": {
+            "id": "NRT",
+            "entityId": "128668889",
+            "name": "Tokyo Narita",
+            "displayCode": "NRT",
+            "city": "Tokyo",
+            "country": "Japan",
+            "isHighlighted": false
+          },
+          "destination": {
+            "id": "LHR",
+            "entityId": "95565050",
+            "name": "London Heathrow",
+            "displayCode": "LHR",
+            "city": "London",
+            "country": "United Kingdom",
+            "isHighlighted": false
+          },
+          "durationInMinutes": 1190,
+          "stopCount": 1,
+          "isSmallestStops": false,
+          "departure": "2024-09-05T18:30:00",
+          "arrival": "2024-09-06T06:20:00",
+          "timeDeltaInDays": 1,
+          "carriers": {
+            "marketing": [
+              {
+                "id": -32456,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/CX.png",
+                "name": "Cathay Pacific"
+              }
+            ],
+            "operationType": "fully_operated"
+          },
+          "segments": [
+            {
+              "id": "14788-12191-2409051830-2409052220--32456",
+              "origin": {
+                "flightPlaceId": "NRT",
+                "displayCode": "NRT",
+                "parent": {
+                  "flightPlaceId": "TYOA",
+                  "displayCode": "TYO",
+                  "name": "Tokyo",
+                  "type": "City"
+                },
+                "name": "Tokyo Narita",
+                "type": "Airport",
+                "country": "Japan"
+              },
+              "destination": {
+                "flightPlaceId": "HKG",
+                "displayCode": "HKG",
+                "parent": {
+                  "flightPlaceId": "HKGA",
+                  "displayCode": "HKG",
+                  "name": "Hong Kong",
+                  "type": "City"
+                },
+                "name": "Hong Kong Intl",
+                "type": "Airport",
+                "country": "Hong Kong"
+              },
+              "departure": "2024-09-05T18:30:00",
+              "arrival": "2024-09-05T22:20:00",
+              "durationInMinutes": 290,
+              "flightNumber": "505",
+              "marketingCarrier": {
+                "id": -32456,
+                "name": "Cathay Pacific",
+                "alternateId": "CX",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32456,
+                "name": "Cathay Pacific",
+                "alternateId": "CX",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            },
+            {
+              "id": "12191-13554-2409052315-2409060620--32456",
+              "origin": {
+                "flightPlaceId": "HKG",
+                "displayCode": "HKG",
+                "parent": {
+                  "flightPlaceId": "HKGA",
+                  "displayCode": "HKG",
+                  "name": "Hong Kong",
+                  "type": "City"
+                },
+                "name": "Hong Kong Intl",
+                "type": "Airport",
+                "country": "Hong Kong"
+              },
+              "destination": {
+                "flightPlaceId": "LHR",
+                "displayCode": "LHR",
+                "parent": {
+                  "flightPlaceId": "LOND",
+                  "displayCode": "LON",
+                  "name": "London",
+                  "type": "City"
+                },
+                "name": "London Heathrow",
+                "type": "Airport",
+                "country": "United Kingdom"
+              },
+              "departure": "2024-09-05T23:15:00",
+              "arrival": "2024-09-06T06:20:00",
+              "durationInMinutes": 845,
+              "flightNumber": "255",
+              "marketingCarrier": {
+                "id": -32456,
+                "name": "Cathay Pacific",
+                "alternateId": "CX",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32456,
+                "name": "Cathay Pacific",
+                "alternateId": "CX",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            }
+          ]
+        }
+      ],
+      "isSelfTransfer": false,
+      "isProtectedSelfTransfer": false,
+      "farePolicy": {
+        "isChangeAllowed": false,
+        "isPartiallyChangeable": false,
+        "isCancellationAllowed": false,
+        "isPartiallyRefundable": false
+      },
+      "fareAttributes": {},
+      "isMashUp": false,
+      "hasFlexibleOptions": false,
+      "score": 0.598492
+    },
+    {
+      "id": "14788-2409051715--32456-1-13554-2409060540",
+      "price": {
+        "raw": 891.4,
+        "formatted": "$892",
+        "pricingOptionId": "nnh14DQJC-xz"
+      },
+      "legs": [
+        {
+          "id": "14788-2409051715--32456-1-13554-2409060540",
+          "origin": {
+            "id": "NRT",
+            "entityId": "128668889",
+            "name": "Tokyo Narita",
+            "displayCode": "NRT",
+            "city": "Tokyo",
+            "country": "Japan",
+            "isHighlighted": false
+          },
+          "destination": {
+            "id": "LHR",
+            "entityId": "95565050",
+            "name": "London Heathrow",
+            "displayCode": "LHR",
+            "city": "London",
+            "country": "United Kingdom",
+            "isHighlighted": false
+          },
+          "durationInMinutes": 1225,
+          "stopCount": 1,
+          "isSmallestStops": false,
+          "departure": "2024-09-05T17:15:00",
+          "arrival": "2024-09-06T05:40:00",
+          "timeDeltaInDays": 1,
+          "carriers": {
+            "marketing": [
+              {
+                "id": -32456,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/CX.png",
+                "name": "Cathay Pacific"
+              }
+            ],
+            "operationType": "fully_operated"
+          },
+          "segments": [
+            {
+              "id": "14788-12191-2409051715-2409052105--32456",
+              "origin": {
+                "flightPlaceId": "NRT",
+                "displayCode": "NRT",
+                "parent": {
+                  "flightPlaceId": "TYOA",
+                  "displayCode": "TYO",
+                  "name": "Tokyo",
+                  "type": "City"
+                },
+                "name": "Tokyo Narita",
+                "type": "Airport",
+                "country": "Japan"
+              },
+              "destination": {
+                "flightPlaceId": "HKG",
+                "displayCode": "HKG",
+                "parent": {
+                  "flightPlaceId": "HKGA",
+                  "displayCode": "HKG",
+                  "name": "Hong Kong",
+                  "type": "City"
+                },
+                "name": "Hong Kong Intl",
+                "type": "Airport",
+                "country": "Hong Kong"
+              },
+              "departure": "2024-09-05T17:15:00",
+              "arrival": "2024-09-05T21:05:00",
+              "durationInMinutes": 290,
+              "flightNumber": "521",
+              "marketingCarrier": {
+                "id": -32456,
+                "name": "Cathay Pacific",
+                "alternateId": "CX",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32456,
+                "name": "Cathay Pacific",
+                "alternateId": "CX",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            },
+            {
+              "id": "12191-13554-2409052240-2409060540--32456",
+              "origin": {
+                "flightPlaceId": "HKG",
+                "displayCode": "HKG",
+                "parent": {
+                  "flightPlaceId": "HKGA",
+                  "displayCode": "HKG",
+                  "name": "Hong Kong",
+                  "type": "City"
+                },
+                "name": "Hong Kong Intl",
+                "type": "Airport",
+                "country": "Hong Kong"
+              },
+              "destination": {
+                "flightPlaceId": "LHR",
+                "displayCode": "LHR",
+                "parent": {
+                  "flightPlaceId": "LOND",
+                  "displayCode": "LON",
+                  "name": "London",
+                  "type": "City"
+                },
+                "name": "London Heathrow",
+                "type": "Airport",
+                "country": "United Kingdom"
+              },
+              "departure": "2024-09-05T22:40:00",
+              "arrival": "2024-09-06T05:40:00",
+              "durationInMinutes": 840,
+              "flightNumber": "251",
+              "marketingCarrier": {
+                "id": -32456,
+                "name": "Cathay Pacific",
+                "alternateId": "CX",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32456,
+                "name": "Cathay Pacific",
+                "alternateId": "CX",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            }
+          ]
+        }
+      ],
+      "isSelfTransfer": false,
+      "isProtectedSelfTransfer": false,
+      "farePolicy": {
+        "isChangeAllowed": false,
+        "isPartiallyChangeable": false,
+        "isCancellationAllowed": false,
+        "isPartiallyRefundable": false
+      },
+      "fareAttributes": {},
+      "isMashUp": false,
+      "hasFlexibleOptions": false,
+      "score": 0.581341
+    },
+    {
+      "id": "14788-2409051725--31767-1-13554-2409060715",
+      "price": {
+        "raw": 829,
+        "formatted": "$829",
+        "pricingOptionId": "WMlN2b7gPOS9"
+      },
+      "legs": [
+        {
+          "id": "14788-2409051725--31767-1-13554-2409060715",
+          "origin": {
+            "id": "NRT",
+            "entityId": "128668889",
+            "name": "Tokyo Narita",
+            "displayCode": "NRT",
+            "city": "Tokyo",
+            "country": "Japan",
+            "isHighlighted": false
+          },
+          "destination": {
+            "id": "LHR",
+            "entityId": "95565050",
+            "name": "London Heathrow",
+            "displayCode": "LHR",
+            "city": "London",
+            "country": "United Kingdom",
+            "isHighlighted": false
+          },
+          "durationInMinutes": 1310,
+          "stopCount": 1,
+          "isSmallestStops": false,
+          "departure": "2024-09-05T17:25:00",
+          "arrival": "2024-09-06T07:15:00",
+          "timeDeltaInDays": 1,
+          "carriers": {
+            "marketing": [
+              {
+                "id": -31767,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/TG.png",
+                "name": "Thai Airways"
+              }
+            ],
+            "operationType": "fully_operated"
+          },
+          "segments": [
+            {
+              "id": "14788-9970-2409051725-2409052155--31767",
+              "origin": {
+                "flightPlaceId": "NRT",
+                "displayCode": "NRT",
+                "parent": {
+                  "flightPlaceId": "TYOA",
+                  "displayCode": "TYO",
+                  "name": "Tokyo",
+                  "type": "City"
+                },
+                "name": "Tokyo Narita",
+                "type": "Airport",
+                "country": "Japan"
+              },
+              "destination": {
+                "flightPlaceId": "BKK",
+                "displayCode": "BKK",
+                "parent": {
+                  "flightPlaceId": "BKKT",
+                  "displayCode": "BKK",
+                  "name": "Bangkok",
+                  "type": "City"
+                },
+                "name": "Bangkok Suvarnabhumi",
+                "type": "Airport",
+                "country": "Thailand"
+              },
+              "departure": "2024-09-05T17:25:00",
+              "arrival": "2024-09-05T21:55:00",
+              "durationInMinutes": 390,
+              "flightNumber": "677",
+              "marketingCarrier": {
+                "id": -31767,
+                "name": "Thai Airways",
+                "alternateId": "TG",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -31767,
+                "name": "Thai Airways",
+                "alternateId": "TG",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            },
+            {
+              "id": "9970-13554-2409060045-2409060715--31767",
+              "origin": {
+                "flightPlaceId": "BKK",
+                "displayCode": "BKK",
+                "parent": {
+                  "flightPlaceId": "BKKT",
+                  "displayCode": "BKK",
+                  "name": "Bangkok",
+                  "type": "City"
+                },
+                "name": "Bangkok Suvarnabhumi",
+                "type": "Airport",
+                "country": "Thailand"
+              },
+              "destination": {
+                "flightPlaceId": "LHR",
+                "displayCode": "LHR",
+                "parent": {
+                  "flightPlaceId": "LOND",
+                  "displayCode": "LON",
+                  "name": "London",
+                  "type": "City"
+                },
+                "name": "London Heathrow",
+                "type": "Airport",
+                "country": "United Kingdom"
+              },
+              "departure": "2024-09-06T00:45:00",
+              "arrival": "2024-09-06T07:15:00",
+              "durationInMinutes": 750,
+              "flightNumber": "910",
+              "marketingCarrier": {
+                "id": -31767,
+                "name": "Thai Airways",
+                "alternateId": "TG",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -31767,
+                "name": "Thai Airways",
+                "alternateId": "TG",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            }
+          ]
+        }
+      ],
+      "isSelfTransfer": false,
+      "isProtectedSelfTransfer": false,
+      "farePolicy": {
+        "isChangeAllowed": false,
+        "isPartiallyChangeable": false,
+        "isCancellationAllowed": false,
+        "isPartiallyRefundable": false
+      },
+      "fareAttributes": {},
+      "isMashUp": false,
+      "hasFlexibleOptions": false,
+      "score": 0.581193
+    },
+    {
+      "id": "12234-2409051430--32442-1-13542-2409060640",
+      "price": {
+        "raw": 650.4,
+        "formatted": "$651",
+        "pricingOptionId": "tBd_cvEND3Au"
+      },
+      "legs": [
+        {
+          "id": "12234-2409051430--32442-1-13542-2409060640",
+          "origin": {
+            "id": "HND",
+            "entityId": "128667143",
+            "name": "Tokyo Haneda",
+            "displayCode": "HND",
+            "city": "Tokyo",
+            "country": "Japan",
+            "isHighlighted": false
+          },
+          "destination": {
+            "id": "LGW",
+            "entityId": "95565051",
+            "name": "London Gatwick",
+            "displayCode": "LGW",
+            "city": "London",
+            "country": "United Kingdom",
+            "isHighlighted": false
+          },
+          "durationInMinutes": 1450,
+          "stopCount": 1,
+          "isSmallestStops": false,
+          "departure": "2024-09-05T14:30:00",
+          "arrival": "2024-09-06T06:40:00",
+          "timeDeltaInDays": 1,
+          "carriers": {
+            "marketing": [
+              {
+                "id": -32442,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/MU.png",
+                "name": "China Eastern"
+              }
+            ],
+            "operationType": "fully_operated"
+          },
+          "airportChangesIn": ["Shanghai"],
+          "segments": [
+            {
+              "id": "12234-16253-2409051430-2409051710--32442",
+              "origin": {
+                "flightPlaceId": "HND",
+                "displayCode": "HND",
+                "parent": {
+                  "flightPlaceId": "TYOA",
+                  "displayCode": "TYO",
+                  "name": "Tokyo",
+                  "type": "City"
+                },
+                "name": "Tokyo Haneda",
+                "type": "Airport",
+                "country": "Japan"
+              },
+              "destination": {
+                "flightPlaceId": "SHA",
+                "displayCode": "SHA",
+                "parent": {
+                  "flightPlaceId": "CSHA",
+                  "displayCode": "SHA",
+                  "name": "Shanghai",
+                  "type": "City"
+                },
+                "name": "Shanghai Hongqiao",
+                "type": "Airport",
+                "country": "China"
+              },
+              "departure": "2024-09-05T14:30:00",
+              "arrival": "2024-09-05T17:10:00",
+              "durationInMinutes": 220,
+              "flightNumber": "538",
+              "marketingCarrier": {
+                "id": -32442,
+                "name": "China Eastern",
+                "alternateId": "MU",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32442,
+                "name": "China Eastern",
+                "alternateId": "MU",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            },
+            {
+              "id": "15641-13542-2409060150-2409060640--32442",
+              "origin": {
+                "flightPlaceId": "PVG",
+                "displayCode": "PVG",
+                "parent": {
+                  "flightPlaceId": "CSHA",
+                  "displayCode": "SHA",
+                  "name": "Shanghai",
+                  "type": "City"
+                },
+                "name": "Shanghai Pudong",
+                "type": "Airport",
+                "country": "China"
+              },
+              "destination": {
+                "flightPlaceId": "LGW",
+                "displayCode": "LGW",
+                "parent": {
+                  "flightPlaceId": "LOND",
+                  "displayCode": "LON",
+                  "name": "London",
+                  "type": "City"
+                },
+                "name": "London Gatwick",
+                "type": "Airport",
+                "country": "United Kingdom"
+              },
+              "departure": "2024-09-06T01:50:00",
+              "arrival": "2024-09-06T06:40:00",
+              "durationInMinutes": 710,
+              "flightNumber": "201",
+              "marketingCarrier": {
+                "id": -32442,
+                "name": "China Eastern",
+                "alternateId": "MU",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32442,
+                "name": "China Eastern",
+                "alternateId": "MU",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            }
+          ]
+        }
+      ],
+      "isSelfTransfer": false,
+      "isProtectedSelfTransfer": false,
+      "farePolicy": {
+        "isChangeAllowed": false,
+        "isPartiallyChangeable": false,
+        "isCancellationAllowed": false,
+        "isPartiallyRefundable": false
+      },
+      "fareAttributes": {},
+      "tags": ["cheapest"],
+      "isMashUp": false,
+      "hasFlexibleOptions": false,
+      "score": 0.572408
+    },
+    {
+      "id": "14788-2409051350--32442-1-13542-2409060640",
+      "price": {
+        "raw": 653.1,
+        "formatted": "$654",
+        "pricingOptionId": "19RY-aSl9uUk"
+      },
+      "legs": [
+        {
+          "id": "14788-2409051350--32442-1-13542-2409060640",
+          "origin": {
+            "id": "NRT",
+            "entityId": "128668889",
+            "name": "Tokyo Narita",
+            "displayCode": "NRT",
+            "city": "Tokyo",
+            "country": "Japan",
+            "isHighlighted": false
+          },
+          "destination": {
+            "id": "LGW",
+            "entityId": "95565051",
+            "name": "London Gatwick",
+            "displayCode": "LGW",
+            "city": "London",
+            "country": "United Kingdom",
+            "isHighlighted": false
+          },
+          "durationInMinutes": 1490,
+          "stopCount": 1,
+          "isSmallestStops": false,
+          "departure": "2024-09-05T13:50:00",
+          "arrival": "2024-09-06T06:40:00",
+          "timeDeltaInDays": 1,
+          "carriers": {
+            "marketing": [
+              {
+                "id": -32442,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/MU.png",
+                "name": "China Eastern"
+              }
+            ],
+            "operationType": "fully_operated"
+          },
+          "segments": [
+            {
+              "id": "14788-15641-2409051350-2409051615--32442",
+              "origin": {
+                "flightPlaceId": "NRT",
+                "displayCode": "NRT",
+                "parent": {
+                  "flightPlaceId": "TYOA",
+                  "displayCode": "TYO",
+                  "name": "Tokyo",
+                  "type": "City"
+                },
+                "name": "Tokyo Narita",
+                "type": "Airport",
+                "country": "Japan"
+              },
+              "destination": {
+                "flightPlaceId": "PVG",
+                "displayCode": "PVG",
+                "parent": {
+                  "flightPlaceId": "CSHA",
+                  "displayCode": "SHA",
+                  "name": "Shanghai",
+                  "type": "City"
+                },
+                "name": "Shanghai Pudong",
+                "type": "Airport",
+                "country": "China"
+              },
+              "departure": "2024-09-05T13:50:00",
+              "arrival": "2024-09-05T16:15:00",
+              "durationInMinutes": 205,
+              "flightNumber": "524",
+              "marketingCarrier": {
+                "id": -32442,
+                "name": "China Eastern",
+                "alternateId": "MU",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32442,
+                "name": "China Eastern",
+                "alternateId": "MU",
+                "allianceId": 0,
+                "displayCode": ""
+              }
+            },
+            {
+              "id": "15641-13542-2409060150-2409060640--32442",
+              "origin": {
+                "flightPlaceId": "PVG",
+                "displayCode": "PVG",
+                "parent": {
+                  "flightPlaceId": "CSHA",
+                  "displayCode": "SHA",
+                  "name": "Shanghai",
+                  "type": "City"
+                },
+                "name": "Shanghai Pudong",
+                "type": "Airport",
+                "country": "China"
+              },
+              "destination": {
+                "flightPlaceId": "LGW",
+                "displayCode": "LGW",
+                "parent": {
+                  "flightPlaceId": "LOND",
+                  "displayCode": "LON",
+                  "name": "London",
+                  "type": "City"
+                },
+                "name": "London Gatwick",
+                "type": "Airport",
+                "country": "United Kingdom"
+              },
+              "departure": "2024-09-06T01:50:00",
+              "arrival": "2024-09-06T06:40:00",
+              "durationInMinutes": 710,
+              "flightNumber": "201",
+              "marketingCarrier": {
+                "id": -32442,
+                "name": "China Eastern",
+                "alternateId": "MU",
+                "allianceId": 0,
+                "displayCode": ""
+              },
+              "operatingCarrier": {
+                "id": -32442,
+                "name": "China Eastern",
+                "alternateId": "MU",
                 "allianceId": 0,
                 "displayCode": ""
               }
@@ -1408,1472 +1414,195 @@
       "tags": ["third_cheapest"],
       "isMashUp": false,
       "hasFlexibleOptions": false,
-      "score": 0.860094
+      "score": 0.561756
     },
     {
-      "id": "10413-2402141550--32132-1-14355-2402142218|14355-2402151225--32132-1-10413-2402160710",
+      "id": "14788-2409050900--32558,-32690-2-13554-2409052000",
       "price": {
-        "raw": 2695.29,
-        "formatted": "$2,696",
-        "pricingOptionId": "SY5YTP8boP0E"
+        "raw": 824.99,
+        "formatted": "$825",
+        "pricingOptionId": "I14MaTC6-ziO"
       },
       "legs": [
         {
-          "id": "10413-2402141550--32132-1-14355-2402142218",
+          "id": "14788-2409050900--32558,-32690-2-13554-2409052000",
           "origin": {
-            "id": "CDG",
-            "name": "Paris Charles de Gaulle",
-            "displayCode": "CDG",
-            "city": "Paris",
-            "country": "France",
+            "id": "NRT",
+            "entityId": "128668889",
+            "name": "Tokyo Narita",
+            "displayCode": "NRT",
+            "city": "Tokyo",
+            "country": "Japan",
             "isHighlighted": false
           },
           "destination": {
-            "id": "MSY",
-            "name": "New Orleans Louis Armstrong",
-            "displayCode": "MSY",
-            "city": "New Orleans",
-            "country": "United States",
+            "id": "LHR",
+            "entityId": "95565050",
+            "name": "London Heathrow",
+            "displayCode": "LHR",
+            "city": "London",
+            "country": "United Kingdom",
             "isHighlighted": false
           },
-          "durationInMinutes": 808,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-02-14T15:50:00",
-          "arrival": "2024-02-14T22:18:00",
-          "timeDeltaInDays": 0,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32132,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
-                "name": "KLM"
-              }
-            ],
-            "operating": [
-              {
-                "id": -32385,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
-                "name": "Delta"
-              }
-            ],
-            "operationType": "not_operated"
-          },
-          "segments": [
-            {
-              "id": "10413-9596-2402141550-2402142015--32132",
-              "origin": {
-                "flightPlaceId": "CDG",
-                "displayCode": "CDG",
-                "parent": {
-                  "flightPlaceId": "PARI",
-                  "displayCode": "PAR",
-                  "name": "Paris",
-                  "type": "City"
-                },
-                "name": "Paris Charles de Gaulle",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "departure": "2024-02-14T15:50:00",
-              "arrival": "2024-02-14T20:15:00",
-              "durationInMinutes": 625,
-              "flightNumber": "6100",
-              "marketingCarrier": {
-                "id": -32132,
-                "name": "KLM",
-                "alternateId": "KL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9596-14355-2402142144-2402142218--32132",
-              "origin": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "MSY",
-                "displayCode": "MSY",
-                "parent": {
-                  "flightPlaceId": "MSYA",
-                  "displayCode": "MSY",
-                  "name": "New Orleans",
-                  "type": "City"
-                },
-                "name": "New Orleans Louis Armstrong",
-                "type": "Airport"
-              },
-              "departure": "2024-02-14T21:44:00",
-              "arrival": "2024-02-14T22:18:00",
-              "durationInMinutes": 94,
-              "flightNumber": "6930",
-              "marketingCarrier": {
-                "id": -32132,
-                "name": "KLM",
-                "alternateId": "KL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        },
-        {
-          "id": "14355-2402151225--32132-1-10413-2402160710",
-          "origin": {
-            "id": "MSY",
-            "name": "New Orleans Louis Armstrong",
-            "displayCode": "MSY",
-            "city": "New Orleans",
-            "country": "United States",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "CDG",
-            "name": "Paris Charles de Gaulle",
-            "displayCode": "CDG",
-            "city": "Paris",
-            "country": "France",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 705,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-02-15T12:25:00",
-          "arrival": "2024-02-16T07:10:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32132,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
-                "name": "KLM"
-              }
-            ],
-            "operating": [
-              {
-                "id": -32385,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
-                "name": "Delta"
-              },
-              {
-                "id": -32677,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
-                "name": "Air France"
-              }
-            ],
-            "operationType": "not_operated"
-          },
-          "segments": [
-            {
-              "id": "14355-9596-2402151225-2402151453--32132",
-              "origin": {
-                "flightPlaceId": "MSY",
-                "displayCode": "MSY",
-                "parent": {
-                  "flightPlaceId": "MSYA",
-                  "displayCode": "MSY",
-                  "name": "New Orleans",
-                  "type": "City"
-                },
-                "name": "New Orleans Louis Armstrong",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "departure": "2024-02-15T12:25:00",
-              "arrival": "2024-02-15T14:53:00",
-              "durationInMinutes": 88,
-              "flightNumber": "5327",
-              "marketingCarrier": {
-                "id": -32132,
-                "name": "KLM",
-                "alternateId": "KL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9596-10413-2402151655-2402160710--32132",
-              "origin": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "CDG",
-                "displayCode": "CDG",
-                "parent": {
-                  "flightPlaceId": "PARI",
-                  "displayCode": "PAR",
-                  "name": "Paris",
-                  "type": "City"
-                },
-                "name": "Paris Charles de Gaulle",
-                "type": "Airport"
-              },
-              "departure": "2024-02-15T16:55:00",
-              "arrival": "2024-02-16T07:10:00",
-              "durationInMinutes": 495,
-              "flightNumber": "2199",
-              "marketingCarrier": {
-                "id": -32132,
-                "name": "KLM",
-                "alternateId": "KL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32677,
-                "name": "Air France",
-                "alternateId": "AF",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        }
-      ],
-      "isSelfTransfer": false,
-      "isProtectedSelfTransfer": false,
-      "farePolicy": {
-        "isChangeAllowed": false,
-        "isPartiallyChangeable": false,
-        "isCancellationAllowed": false,
-        "isPartiallyRefundable": false
-      },
-      "fareAttributes": {},
-      "isMashUp": false,
-      "hasFlexibleOptions": false,
-      "score": 0.839091
-    },
-    {
-      "id": "10413-2402141550--32132-1-14355-2402142218|14355-2402151814--32132-1-10413-2402161320",
-      "price": {
-        "raw": 2695.29,
-        "formatted": "$2,696",
-        "pricingOptionId": "Z5Esc7borU_2"
-      },
-      "legs": [
-        {
-          "id": "10413-2402141550--32132-1-14355-2402142218",
-          "origin": {
-            "id": "CDG",
-            "name": "Paris Charles de Gaulle",
-            "displayCode": "CDG",
-            "city": "Paris",
-            "country": "France",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "MSY",
-            "name": "New Orleans Louis Armstrong",
-            "displayCode": "MSY",
-            "city": "New Orleans",
-            "country": "United States",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 808,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-02-14T15:50:00",
-          "arrival": "2024-02-14T22:18:00",
-          "timeDeltaInDays": 0,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32132,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
-                "name": "KLM"
-              }
-            ],
-            "operating": [
-              {
-                "id": -32385,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
-                "name": "Delta"
-              }
-            ],
-            "operationType": "not_operated"
-          },
-          "segments": [
-            {
-              "id": "10413-9596-2402141550-2402142015--32132",
-              "origin": {
-                "flightPlaceId": "CDG",
-                "displayCode": "CDG",
-                "parent": {
-                  "flightPlaceId": "PARI",
-                  "displayCode": "PAR",
-                  "name": "Paris",
-                  "type": "City"
-                },
-                "name": "Paris Charles de Gaulle",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "departure": "2024-02-14T15:50:00",
-              "arrival": "2024-02-14T20:15:00",
-              "durationInMinutes": 625,
-              "flightNumber": "6100",
-              "marketingCarrier": {
-                "id": -32132,
-                "name": "KLM",
-                "alternateId": "KL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9596-14355-2402142144-2402142218--32132",
-              "origin": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "MSY",
-                "displayCode": "MSY",
-                "parent": {
-                  "flightPlaceId": "MSYA",
-                  "displayCode": "MSY",
-                  "name": "New Orleans",
-                  "type": "City"
-                },
-                "name": "New Orleans Louis Armstrong",
-                "type": "Airport"
-              },
-              "departure": "2024-02-14T21:44:00",
-              "arrival": "2024-02-14T22:18:00",
-              "durationInMinutes": 94,
-              "flightNumber": "6930",
-              "marketingCarrier": {
-                "id": -32132,
-                "name": "KLM",
-                "alternateId": "KL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        },
-        {
-          "id": "14355-2402151814--32132-1-10413-2402161320",
-          "origin": {
-            "id": "MSY",
-            "name": "New Orleans Louis Armstrong",
-            "displayCode": "MSY",
-            "city": "New Orleans",
-            "country": "United States",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "CDG",
-            "name": "Paris Charles de Gaulle",
-            "displayCode": "CDG",
-            "city": "Paris",
-            "country": "France",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 726,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-02-15T18:14:00",
-          "arrival": "2024-02-16T13:20:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32132,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
-                "name": "KLM"
-              }
-            ],
-            "operating": [
-              {
-                "id": -32385,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
-                "name": "Delta"
-              }
-            ],
-            "operationType": "not_operated"
-          },
-          "segments": [
-            {
-              "id": "14355-9596-2402151814-2402152048--32132",
-              "origin": {
-                "flightPlaceId": "MSY",
-                "displayCode": "MSY",
-                "parent": {
-                  "flightPlaceId": "MSYA",
-                  "displayCode": "MSY",
-                  "name": "New Orleans",
-                  "type": "City"
-                },
-                "name": "New Orleans Louis Armstrong",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "departure": "2024-02-15T18:14:00",
-              "arrival": "2024-02-15T20:48:00",
-              "durationInMinutes": 94,
-              "flightNumber": "5136",
-              "marketingCarrier": {
-                "id": -32132,
-                "name": "KLM",
-                "alternateId": "KL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9596-10413-2402152245-2402161320--32132",
-              "origin": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "CDG",
-                "displayCode": "CDG",
-                "parent": {
-                  "flightPlaceId": "PARI",
-                  "displayCode": "PAR",
-                  "name": "Paris",
-                  "type": "City"
-                },
-                "name": "Paris Charles de Gaulle",
-                "type": "Airport"
-              },
-              "departure": "2024-02-15T22:45:00",
-              "arrival": "2024-02-16T13:20:00",
-              "durationInMinutes": 515,
-              "flightNumber": "6097",
-              "marketingCarrier": {
-                "id": -32132,
-                "name": "KLM",
-                "alternateId": "KL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        }
-      ],
-      "isSelfTransfer": false,
-      "isProtectedSelfTransfer": false,
-      "farePolicy": {
-        "isChangeAllowed": false,
-        "isPartiallyChangeable": false,
-        "isCancellationAllowed": false,
-        "isPartiallyRefundable": false
-      },
-      "fareAttributes": {},
-      "isMashUp": false,
-      "hasFlexibleOptions": false,
-      "score": 0.819049
-    },
-    {
-      "id": "10413-2402141550--32385-1-14355-2402142218|14355-2402151016--32385-1-10413-2402160610",
-      "price": {
-        "raw": 2688.86,
-        "formatted": "$2,689",
-        "pricingOptionId": "1xmHPYKDAW3L"
-      },
-      "legs": [
-        {
-          "id": "10413-2402141550--32385-1-14355-2402142218",
-          "origin": {
-            "id": "CDG",
-            "name": "Paris Charles de Gaulle",
-            "displayCode": "CDG",
-            "city": "Paris",
-            "country": "France",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "MSY",
-            "name": "New Orleans Louis Armstrong",
-            "displayCode": "MSY",
-            "city": "New Orleans",
-            "country": "United States",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 808,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-02-14T15:50:00",
-          "arrival": "2024-02-14T22:18:00",
-          "timeDeltaInDays": 0,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32385,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
-                "name": "Delta"
-              }
-            ],
-            "operationType": "fully_operated"
-          },
-          "segments": [
-            {
-              "id": "10413-9596-2402141550-2402142015--32385",
-              "origin": {
-                "flightPlaceId": "CDG",
-                "displayCode": "CDG",
-                "parent": {
-                  "flightPlaceId": "PARI",
-                  "displayCode": "PAR",
-                  "name": "Paris",
-                  "type": "City"
-                },
-                "name": "Paris Charles de Gaulle",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "departure": "2024-02-14T15:50:00",
-              "arrival": "2024-02-14T20:15:00",
-              "durationInMinutes": 625,
-              "flightNumber": "85",
-              "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9596-14355-2402142144-2402142218--32385",
-              "origin": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "MSY",
-                "displayCode": "MSY",
-                "parent": {
-                  "flightPlaceId": "MSYA",
-                  "displayCode": "MSY",
-                  "name": "New Orleans",
-                  "type": "City"
-                },
-                "name": "New Orleans Louis Armstrong",
-                "type": "Airport"
-              },
-              "departure": "2024-02-14T21:44:00",
-              "arrival": "2024-02-14T22:18:00",
-              "durationInMinutes": 94,
-              "flightNumber": "2521",
-              "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        },
-        {
-          "id": "14355-2402151016--32385-1-10413-2402160610",
-          "origin": {
-            "id": "MSY",
-            "name": "New Orleans Louis Armstrong",
-            "displayCode": "MSY",
-            "city": "New Orleans",
-            "country": "United States",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "CDG",
-            "name": "Paris Charles de Gaulle",
-            "displayCode": "CDG",
-            "city": "Paris",
-            "country": "France",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 774,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-02-15T10:16:00",
-          "arrival": "2024-02-16T06:10:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32385,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
-                "name": "Delta"
-              }
-            ],
-            "operationType": "fully_operated"
-          },
-          "segments": [
-            {
-              "id": "14355-9596-2402151016-2402151250--32385",
-              "origin": {
-                "flightPlaceId": "MSY",
-                "displayCode": "MSY",
-                "parent": {
-                  "flightPlaceId": "MSYA",
-                  "displayCode": "MSY",
-                  "name": "New Orleans",
-                  "type": "City"
-                },
-                "name": "New Orleans Louis Armstrong",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "departure": "2024-02-15T10:16:00",
-              "arrival": "2024-02-15T12:50:00",
-              "durationInMinutes": 94,
-              "flightNumber": "2237",
-              "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9596-10413-2402151535-2402160610--32385",
-              "origin": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "CDG",
-                "displayCode": "CDG",
-                "parent": {
-                  "flightPlaceId": "PARI",
-                  "displayCode": "PAR",
-                  "name": "Paris",
-                  "type": "City"
-                },
-                "name": "Paris Charles de Gaulle",
-                "type": "Airport"
-              },
-              "departure": "2024-02-15T15:35:00",
-              "arrival": "2024-02-16T06:10:00",
-              "durationInMinutes": 515,
-              "flightNumber": "82",
-              "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        }
-      ],
-      "isSelfTransfer": false,
-      "isProtectedSelfTransfer": false,
-      "farePolicy": {
-        "isChangeAllowed": false,
-        "isPartiallyChangeable": false,
-        "isCancellationAllowed": false,
-        "isPartiallyRefundable": false
-      },
-      "fareAttributes": {},
-      "isMashUp": false,
-      "hasFlexibleOptions": false,
-      "score": 0.800542
-    },
-    {
-      "id": "10413-2402141550--32385-1-14355-2402142218|14355-2402151225--32385-2-10413-2402160810",
-      "price": {
-        "raw": 2702.57,
-        "formatted": "$2,703",
-        "pricingOptionId": "h2yJfc2WpZqM"
-      },
-      "legs": [
-        {
-          "id": "10413-2402141550--32385-1-14355-2402142218",
-          "origin": {
-            "id": "CDG",
-            "name": "Paris Charles de Gaulle",
-            "displayCode": "CDG",
-            "city": "Paris",
-            "country": "France",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "MSY",
-            "name": "New Orleans Louis Armstrong",
-            "displayCode": "MSY",
-            "city": "New Orleans",
-            "country": "United States",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 808,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-02-14T15:50:00",
-          "arrival": "2024-02-14T22:18:00",
-          "timeDeltaInDays": 0,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32385,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
-                "name": "Delta"
-              }
-            ],
-            "operationType": "fully_operated"
-          },
-          "segments": [
-            {
-              "id": "10413-9596-2402141550-2402142015--32385",
-              "origin": {
-                "flightPlaceId": "CDG",
-                "displayCode": "CDG",
-                "parent": {
-                  "flightPlaceId": "PARI",
-                  "displayCode": "PAR",
-                  "name": "Paris",
-                  "type": "City"
-                },
-                "name": "Paris Charles de Gaulle",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "departure": "2024-02-14T15:50:00",
-              "arrival": "2024-02-14T20:15:00",
-              "durationInMinutes": 625,
-              "flightNumber": "85",
-              "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9596-14355-2402142144-2402142218--32385",
-              "origin": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "MSY",
-                "displayCode": "MSY",
-                "parent": {
-                  "flightPlaceId": "MSYA",
-                  "displayCode": "MSY",
-                  "name": "New Orleans",
-                  "type": "City"
-                },
-                "name": "New Orleans Louis Armstrong",
-                "type": "Airport"
-              },
-              "departure": "2024-02-14T21:44:00",
-              "arrival": "2024-02-14T22:18:00",
-              "durationInMinutes": 94,
-              "flightNumber": "2521",
-              "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        },
-        {
-          "id": "14355-2402151225--32385-2-10413-2402160810",
-          "origin": {
-            "id": "MSY",
-            "name": "New Orleans Louis Armstrong",
-            "displayCode": "MSY",
-            "city": "New Orleans",
-            "country": "United States",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "CDG",
-            "name": "Paris Charles de Gaulle",
-            "displayCode": "CDG",
-            "city": "Paris",
-            "country": "France",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 765,
+          "durationInMinutes": 1140,
           "stopCount": 2,
           "isSmallestStops": false,
-          "departure": "2024-02-15T12:25:00",
-          "arrival": "2024-02-16T08:10:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32385,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
-                "name": "Delta"
-              }
-            ],
-            "operating": [
-              {
-                "id": -32132,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
-                "name": "KLM"
-              }
-            ],
-            "operationType": "partially_operated"
-          },
-          "segments": [
-            {
-              "id": "14355-9596-2402151225-2402151453--32385",
-              "origin": {
-                "flightPlaceId": "MSY",
-                "displayCode": "MSY",
-                "parent": {
-                  "flightPlaceId": "MSYA",
-                  "displayCode": "MSY",
-                  "name": "New Orleans",
-                  "type": "City"
-                },
-                "name": "New Orleans Louis Armstrong",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "departure": "2024-02-15T12:25:00",
-              "arrival": "2024-02-15T14:53:00",
-              "durationInMinutes": 88,
-              "flightNumber": "2542",
-              "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9596-9451-2402151540-2402160555--32385",
-              "origin": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "AMS",
-                "displayCode": "AMS",
-                "parent": {
-                  "flightPlaceId": "AMST",
-                  "displayCode": "AMS",
-                  "name": "Amsterdam",
-                  "type": "City"
-                },
-                "name": "Amsterdam Schiphol",
-                "type": "Airport"
-              },
-              "departure": "2024-02-15T15:40:00",
-              "arrival": "2024-02-16T05:55:00",
-              "durationInMinutes": 495,
-              "flightNumber": "9667",
-              "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32132,
-                "name": "KLM",
-                "alternateId": "KL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            },
-            {
-              "id": "9451-10413-2402160650-2402160810--32385",
-              "origin": {
-                "flightPlaceId": "AMS",
-                "displayCode": "AMS",
-                "parent": {
-                  "flightPlaceId": "AMST",
-                  "displayCode": "AMS",
-                  "name": "Amsterdam",
-                  "type": "City"
-                },
-                "name": "Amsterdam Schiphol",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "CDG",
-                "displayCode": "CDG",
-                "parent": {
-                  "flightPlaceId": "PARI",
-                  "displayCode": "PAR",
-                  "name": "Paris",
-                  "type": "City"
-                },
-                "name": "Paris Charles de Gaulle",
-                "type": "Airport"
-              },
-              "departure": "2024-02-16T06:50:00",
-              "arrival": "2024-02-16T08:10:00",
-              "durationInMinutes": 80,
-              "flightNumber": "9540",
-              "marketingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32132,
-                "name": "KLM",
-                "alternateId": "KL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        }
-      ],
-      "isSelfTransfer": false,
-      "isProtectedSelfTransfer": false,
-      "farePolicy": {
-        "isChangeAllowed": false,
-        "isPartiallyChangeable": false,
-        "isCancellationAllowed": false,
-        "isPartiallyRefundable": false
-      },
-      "fareAttributes": {},
-      "isMashUp": false,
-      "hasFlexibleOptions": false,
-      "score": 0.797272
-    },
-    {
-      "id": "10413-2402141550--32132-1-14355-2402142218|14355-2402151508--32132-1-10413-2402161045",
-      "price": {
-        "raw": 2695.29,
-        "formatted": "$2,696",
-        "pricingOptionId": "bpgTaEUavwgm"
-      },
-      "legs": [
-        {
-          "id": "10413-2402141550--32132-1-14355-2402142218",
-          "origin": {
-            "id": "CDG",
-            "name": "Paris Charles de Gaulle",
-            "displayCode": "CDG",
-            "city": "Paris",
-            "country": "France",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "MSY",
-            "name": "New Orleans Louis Armstrong",
-            "displayCode": "MSY",
-            "city": "New Orleans",
-            "country": "United States",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 808,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-02-14T15:50:00",
-          "arrival": "2024-02-14T22:18:00",
+          "departure": "2024-09-05T09:00:00",
+          "arrival": "2024-09-05T20:00:00",
           "timeDeltaInDays": 0,
           "carriers": {
             "marketing": [
               {
-                "id": -32132,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
-                "name": "KLM"
-              }
-            ],
-            "operating": [
+                "id": -32558,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/OZ.png",
+                "name": "Asiana Airlines"
+              },
               {
-                "id": -32385,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
-                "name": "Delta"
+                "id": -32690,
+                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/CA.png",
+                "name": "Air China"
               }
             ],
-            "operationType": "not_operated"
+            "operationType": "fully_operated"
           },
           "segments": [
             {
-              "id": "10413-9596-2402141550-2402142015--32132",
+              "id": "14788-12409-2409050900-2409051130--32558",
               "origin": {
-                "flightPlaceId": "CDG",
-                "displayCode": "CDG",
+                "flightPlaceId": "NRT",
+                "displayCode": "NRT",
                 "parent": {
-                  "flightPlaceId": "PARI",
-                  "displayCode": "PAR",
-                  "name": "Paris",
+                  "flightPlaceId": "TYOA",
+                  "displayCode": "TYO",
+                  "name": "Tokyo",
                   "type": "City"
                 },
-                "name": "Paris Charles de Gaulle",
-                "type": "Airport"
+                "name": "Tokyo Narita",
+                "type": "Airport",
+                "country": "Japan"
               },
               "destination": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
+                "flightPlaceId": "ICN",
+                "displayCode": "ICN",
                 "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
+                  "flightPlaceId": "SELA",
+                  "displayCode": "SEL",
+                  "name": "Seoul",
                   "type": "City"
                 },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
+                "name": "Incheon International Airport",
+                "type": "Airport",
+                "country": "South Korea"
               },
-              "departure": "2024-02-14T15:50:00",
-              "arrival": "2024-02-14T20:15:00",
-              "durationInMinutes": 625,
-              "flightNumber": "6100",
+              "departure": "2024-09-05T09:00:00",
+              "arrival": "2024-09-05T11:30:00",
+              "durationInMinutes": 150,
+              "flightNumber": "107",
               "marketingCarrier": {
-                "id": -32132,
-                "name": "KLM",
-                "alternateId": "KL",
+                "id": -32558,
+                "name": "Asiana Airlines",
+                "alternateId": "OZ",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
+                "id": -32558,
+                "name": "Asiana Airlines",
+                "alternateId": "OZ",
                 "allianceId": 0,
                 "displayCode": ""
               }
             },
             {
-              "id": "9596-14355-2402142144-2402142218--32132",
+              "id": "12409-15277-2409051305-2409051355--32690",
               "origin": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
+                "flightPlaceId": "ICN",
+                "displayCode": "ICN",
                 "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
+                  "flightPlaceId": "SELA",
+                  "displayCode": "SEL",
+                  "name": "Seoul",
                   "type": "City"
                 },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
+                "name": "Incheon International Airport",
+                "type": "Airport",
+                "country": "South Korea"
               },
               "destination": {
-                "flightPlaceId": "MSY",
-                "displayCode": "MSY",
+                "flightPlaceId": "PEK",
+                "displayCode": "PEK",
                 "parent": {
-                  "flightPlaceId": "MSYA",
-                  "displayCode": "MSY",
-                  "name": "New Orleans",
+                  "flightPlaceId": "BJSA",
+                  "displayCode": "BJS",
+                  "name": "Beijing",
                   "type": "City"
                 },
-                "name": "New Orleans Louis Armstrong",
-                "type": "Airport"
+                "name": "Beijing Capital",
+                "type": "Airport",
+                "country": "China"
               },
-              "departure": "2024-02-14T21:44:00",
-              "arrival": "2024-02-14T22:18:00",
-              "durationInMinutes": 94,
-              "flightNumber": "6930",
+              "departure": "2024-09-05T13:05:00",
+              "arrival": "2024-09-05T13:55:00",
+              "durationInMinutes": 110,
+              "flightNumber": "124",
               "marketingCarrier": {
-                "id": -32132,
-                "name": "KLM",
-                "alternateId": "KL",
+                "id": -32690,
+                "name": "Air China",
+                "alternateId": "CA",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
-                "allianceId": 0,
-                "displayCode": ""
-              }
-            }
-          ]
-        },
-        {
-          "id": "14355-2402151508--32132-1-10413-2402161045",
-          "origin": {
-            "id": "MSY",
-            "name": "New Orleans Louis Armstrong",
-            "displayCode": "MSY",
-            "city": "New Orleans",
-            "country": "United States",
-            "isHighlighted": false
-          },
-          "destination": {
-            "id": "CDG",
-            "name": "Paris Charles de Gaulle",
-            "displayCode": "CDG",
-            "city": "Paris",
-            "country": "France",
-            "isHighlighted": false
-          },
-          "durationInMinutes": 757,
-          "stopCount": 1,
-          "isSmallestStops": false,
-          "departure": "2024-02-15T15:08:00",
-          "arrival": "2024-02-16T10:45:00",
-          "timeDeltaInDays": 1,
-          "carriers": {
-            "marketing": [
-              {
-                "id": -32132,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
-                "name": "KLM"
-              }
-            ],
-            "operating": [
-              {
-                "id": -32385,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
-                "name": "Delta"
-              },
-              {
-                "id": -32677,
-                "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
-                "name": "Air France"
-              }
-            ],
-            "operationType": "not_operated"
-          },
-          "segments": [
-            {
-              "id": "14355-9596-2402151508-2402151738--32132",
-              "origin": {
-                "flightPlaceId": "MSY",
-                "displayCode": "MSY",
-                "parent": {
-                  "flightPlaceId": "MSYA",
-                  "displayCode": "MSY",
-                  "name": "New Orleans",
-                  "type": "City"
-                },
-                "name": "New Orleans Louis Armstrong",
-                "type": "Airport"
-              },
-              "destination": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
-                "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
-                  "type": "City"
-                },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
-              },
-              "departure": "2024-02-15T15:08:00",
-              "arrival": "2024-02-15T17:38:00",
-              "durationInMinutes": 90,
-              "flightNumber": "5134",
-              "marketingCarrier": {
-                "id": -32132,
-                "name": "KLM",
-                "alternateId": "KL",
-                "allianceId": 0,
-                "displayCode": ""
-              },
-              "operatingCarrier": {
-                "id": -32385,
-                "name": "Delta",
-                "alternateId": "DL",
+                "id": -32690,
+                "name": "Air China",
+                "alternateId": "CA",
                 "allianceId": 0,
                 "displayCode": ""
               }
             },
             {
-              "id": "9596-10413-2402152030-2402161045--32132",
+              "id": "15277-13554-2409051545-2409052000--32690",
               "origin": {
-                "flightPlaceId": "ATL",
-                "displayCode": "ATL",
+                "flightPlaceId": "PEK",
+                "displayCode": "PEK",
                 "parent": {
-                  "flightPlaceId": "ATLA",
-                  "displayCode": "ATL",
-                  "name": "Atlanta",
+                  "flightPlaceId": "BJSA",
+                  "displayCode": "BJS",
+                  "name": "Beijing",
                   "type": "City"
                 },
-                "name": "Atlanta Hartsfield-Jackson",
-                "type": "Airport"
+                "name": "Beijing Capital",
+                "type": "Airport",
+                "country": "China"
               },
               "destination": {
-                "flightPlaceId": "CDG",
-                "displayCode": "CDG",
+                "flightPlaceId": "LHR",
+                "displayCode": "LHR",
                 "parent": {
-                  "flightPlaceId": "PARI",
-                  "displayCode": "PAR",
-                  "name": "Paris",
+                  "flightPlaceId": "LOND",
+                  "displayCode": "LON",
+                  "name": "London",
                   "type": "City"
                 },
-                "name": "Paris Charles de Gaulle",
-                "type": "Airport"
+                "name": "London Heathrow",
+                "type": "Airport",
+                "country": "United Kingdom"
               },
-              "departure": "2024-02-15T20:30:00",
-              "arrival": "2024-02-16T10:45:00",
-              "durationInMinutes": 495,
-              "flightNumber": "2200",
+              "departure": "2024-09-05T15:45:00",
+              "arrival": "2024-09-05T20:00:00",
+              "durationInMinutes": 675,
+              "flightNumber": "855",
               "marketingCarrier": {
-                "id": -32132,
-                "name": "KLM",
-                "alternateId": "KL",
+                "id": -32690,
+                "name": "Air China",
+                "alternateId": "CA",
                 "allianceId": 0,
                 "displayCode": ""
               },
               "operatingCarrier": {
-                "id": -32677,
-                "name": "Air France",
-                "alternateId": "AF",
+                "id": -32690,
+                "name": "Air China",
+                "alternateId": "CA",
                 "allianceId": 0,
                 "displayCode": ""
               }
@@ -2882,57 +1611,93 @@
         }
       ],
       "isSelfTransfer": false,
-      "isProtectedSelfTransfer": false,
+      "isProtectedSelfTransfer": true,
       "farePolicy": {
         "isChangeAllowed": false,
         "isPartiallyChangeable": false,
         "isCancellationAllowed": false,
         "isPartiallyRefundable": false
       },
+      "eco": {
+        "ecoContenderDelta": 15.291065
+      },
       "fareAttributes": {},
+      "tags": ["third_shortest"],
       "isMashUp": false,
       "hasFlexibleOptions": false,
-      "score": 0.774073
+      "score": 0.550391
     }
   ],
   "messages": [],
   "filterStats": {
     "duration": {
-      "min": 808,
-      "max": 808,
-      "multiCityMin": 1453,
-      "multiCityMax": 1582
+      "min": 1110,
+      "max": 1490,
+      "multiCityMin": 1110,
+      "multiCityMax": 1490
     },
     "airports": [
       {
-        "city": "New Orleans",
+        "city": "London",
         "airports": [
           {
-            "id": "MSY",
-            "name": "New Orleans Louis Armstrong"
+            "id": "LGW",
+            "entityId": "95565051",
+            "name": "London Gatwick"
+          },
+          {
+            "id": "LHR",
+            "entityId": "95565050",
+            "name": "London Heathrow"
           }
         ]
       },
       {
-        "city": "Paris",
+        "city": "Tokyo",
         "airports": [
           {
-            "id": "CDG",
-            "name": "Paris Charles de Gaulle"
+            "id": "HND",
+            "entityId": "128667143",
+            "name": "Tokyo Haneda"
+          },
+          {
+            "id": "NRT",
+            "entityId": "128668889",
+            "name": "Tokyo Narita"
           }
         ]
       }
     ],
     "carriers": [
       {
-        "id": -32385,
-        "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DL.png",
-        "name": "Delta"
+        "id": -32690,
+        "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/CA.png",
+        "name": "Air China"
       },
       {
-        "id": -32132,
-        "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KL.png",
-        "name": "KLM"
+        "id": -32558,
+        "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/OZ.png",
+        "name": "Asiana Airlines"
+      },
+      {
+        "id": -32456,
+        "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/CX.png",
+        "name": "Cathay Pacific"
+      },
+      {
+        "id": -32442,
+        "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/MU.png",
+        "name": "China Eastern"
+      },
+      {
+        "id": -32093,
+        "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/LO.png",
+        "name": "LOT"
+      },
+      {
+        "id": -31767,
+        "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/TG.png",
+        "name": "Thai Airways"
       }
     ],
     "stopPrices": {
@@ -2941,15 +1706,15 @@
       },
       "one": {
         "isPresent": true,
-        "formattedPrice": "$2,689"
+        "formattedPrice": "$651"
       },
       "twoOrMore": {
         "isPresent": true,
-        "formattedPrice": "$2,703"
+        "formattedPrice": "$825"
       }
     }
   },
-  "flightsSessionId": "19b77ac1-c607-4cee-909c-f1d9bc82801e",
+  "flightsSessionId": "e157ba3a-9f32-4cc9-9c5c-8e68e341325a",
   "destinationImageUrl": "https://content.skyscnr.com/m/3719e8f4a5daf43d/original/Flights-Placeholder.jpg",
-  "token": "eyJhIjoxLCJjIjowLCJpIjowLCJjYyI6ImVjb25vbXkiLCJvIjoiUEFSSSIsImQiOiJNU1lBIiwiZDEiOiIyMDI0LTAyLTE0IiwiZDIiOiIyMDI0LTAyLTE1In0="
+  "token": "eyJhIjoxLCJjIjowLCJpIjowLCJjYyI6ImVjb25vbXkiLCJvIjoiVFlPQSIsImQiOiJMT05EIiwiZDEiOiIyMDI0LTA5LTA1In0="
 }

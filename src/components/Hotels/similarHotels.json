@@ -4,295 +4,307 @@
   "data": [
     {
       "hotelId": "136295916",
-      "heroImage": "https://content.skyscnr.com/available/1534653729/1534653729_WxH.jpg",
+      "heroImage": "https://content.skyscnr.com/available/1640934737/1640934737_WxH.jpg",
       "name": "The St. Regis Mumbai",
       "stars": 5,
-      "distance": "1.56 km",
-      "distanceFromHotel": "1.56 km",
+      "distance": "0.46 km",
+      "distanceFromHotel": "0.46 km",
       "exclusiveInfo": null,
-      "price": "₹ 16,493",
+      "price": "₹ 41,990",
       "cheapestOfferPartnerId": "h_pi",
-      "rawPrice": 16493,
+      "rawPrice": 41990,
       "rating": {
         "description": "Excellent",
-        "count": 3331,
+        "count": 3364,
         "value": "4.5",
         "formatValue": "4.5",
         "color": "colorMonteverde",
         "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.png"
       },
-      "coordinate": { "longitude": 72.824781, "latitude": 18.993762 }
+      "coordinate": {
+        "longitude": 72.82463,
+        "latitude": 18.9939
+      }
     },
     {
-      "hotelId": "95825447",
-      "heroImage": "https://content.skyscnr.com/available/1380926759/1380926759_WxH.jpg",
-      "name": "Four Seasons Hotel Mumbai",
+      "hotelId": "46952652",
+      "heroImage": "https://content.skyscnr.com/available/1640812002/1640812002_WxH.jpg",
+      "name": "Sun-n-Sand Mumbai Juhu Beach",
       "stars": 5,
-      "distance": "2.00 km",
-      "distanceFromHotel": "2.00 km",
+      "distance": "12.74 km",
+      "distanceFromHotel": "12.74 km",
       "exclusiveInfo": null,
-      "price": "₹ 15,993",
-      "cheapestOfferPartnerId": "h_pi",
-      "rawPrice": 15993,
-      "rating": {
-        "description": "Excellent",
-        "count": 2864,
-        "value": "4.5",
-        "formatValue": "4.5",
-        "color": "colorMonteverde",
-        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.png"
+      "price": "₹ 22,757",
+      "cug": {
+        "type": "general",
+        "priceWithoutDiscount": "₹ 28,500",
+        "icons": [],
+        "discount": "Special offer 20% off",
+        "rawDiscountPercentage": 20,
+        "rawType": "general"
       },
-      "coordinate": { "longitude": 72.8203, "latitude": 18.994411 }
+      "cheapestOfferPartnerId": "h_mq",
+      "rawPrice": 22757,
+      "rating": {
+        "description": "Very good",
+        "count": 1136,
+        "value": "4.0",
+        "formatValue": "4.0",
+        "color": "colorMonteverde",
+        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-64600-4.png"
+      },
+      "coordinate": {
+        "longitude": 72.82417,
+        "latitude": 19.109426
+      }
     },
     {
-      "hotelId": "46956572",
-      "heroImage": "https://content.skyscnr.com/available/1491635317/1491635317_WxH.jpg",
-      "name": "Taj Lands End",
+      "hotelId": "46962878",
+      "heroImage": "https://content.skyscnr.com/available/1608727805/1608727805_WxH.jpg",
+      "name": "ITC Grand Central, a Luxury Collection Hotel, Mumbai",
       "stars": 5,
-      "distance": "5.45 km",
-      "distanceFromHotel": "5.45 km",
+      "distance": "1.99 km",
+      "distanceFromHotel": "1.99 km",
       "exclusiveInfo": null,
-      "price": "₹ 9,813",
-      "cheapestOfferPartnerId": "h_ct",
-      "rawPrice": 9813,
+      "price": "₹ 39,690",
+      "cheapestOfferPartnerId": "h_mq",
+      "rawPrice": 39690,
+      "rating": {
+        "description": "With honours",
+        "count": 5301,
+        "value": "5.0",
+        "formatValue": "5.0",
+        "color": "colorMonteverde",
+        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/5.0-64600-4.png"
+      },
+      "coordinate": {
+        "longitude": 72.838777,
+        "latitude": 18.998363
+      }
+    },
+    {
+      "hotelId": "47027042",
+      "heroImage": "https://content.skyscnr.com/available/1394113579/1394113579_WxH.jpg",
+      "name": "Novotel Mumbai Juhu Beach",
+      "stars": 5,
+      "distance": "12.66 km",
+      "distanceFromHotel": "12.66 km",
+      "exclusiveInfo": null,
+      "price": "₹ 29,400",
+      "cheapestOfferPartnerId": "h_bc",
+      "rawPrice": 29400,
+      "rating": {
+        "description": "Very good",
+        "count": 4191,
+        "value": "4.0",
+        "formatValue": "4.0",
+        "color": "colorMonteverde",
+        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-64600-4.png"
+      },
+      "coordinate": {
+        "longitude": 72.824338,
+        "latitude": 19.108725
+      }
+    },
+    {
+      "hotelId": "47029991",
+      "heroImage": "https://content.skyscnr.com/available/1625874806/1625874806_WxH.jpg",
+      "name": "Ramada Plaza By Wyndham Palm Grove",
+      "stars": 5,
+      "distance": "11.58 km",
+      "distanceFromHotel": "11.58 km",
+      "exclusiveInfo": null,
+      "price": "₹ 20,091",
+      "cug": {
+        "type": "general",
+        "priceWithoutDiscount": "₹ 39,394",
+        "icons": [],
+        "discount": "Special offer 49% off",
+        "rawDiscountPercentage": 49,
+        "rawType": "general"
+      },
+      "cheapestOfferPartnerId": "h_mq",
+      "rawPrice": 20091,
       "rating": {
         "description": "Excellent",
-        "count": 8238,
+        "count": 2910,
         "value": "4.5",
         "formatValue": "4.5",
         "color": "colorMonteverde",
         "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.png"
       },
-      "coordinate": { "longitude": 72.819268, "latitude": 19.043912 }
+      "coordinate": {
+        "longitude": 72.82747,
+        "latitude": 19.09877
+      }
     },
     {
       "hotelId": "47023017",
       "heroImage": "https://content.skyscnr.com/available/755742929/755742929_WxH.jpg",
       "name": "InterContinental Hotels Marine Drive-Mumbai",
       "stars": 5,
-      "distance": "7.16 km",
-      "distanceFromHotel": "7.16 km",
+      "distance": "6.58 km",
+      "distanceFromHotel": "6.58 km",
       "exclusiveInfo": null,
-      "price": "₹ 11,869",
-      "cheapestOfferPartnerId": "h_xp",
-      "rawPrice": 11869,
+      "price": "₹ 39,817",
+      "cheapestOfferPartnerId": "h_pi",
+      "rawPrice": 39817,
       "rating": {
         "description": "Excellent",
-        "count": 1330,
+        "count": 1357,
         "value": "4.5",
         "formatValue": "4.5",
         "color": "colorMonteverde",
         "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.png"
       },
-      "coordinate": { "longitude": 72.824405, "latitude": 18.935062 }
-    },
-    {
-      "hotelId": "46975171",
-      "heroImage": "https://content.skyscnr.com/available/1395225447/1395225447_WxH.jpg",
-      "name": "Trident Bandra Kurla",
-      "stars": 5,
-      "distance": "8.14 km",
-      "distanceFromHotel": "8.14 km",
-      "exclusiveInfo": null,
-      "price": "₹ 11,750",
-      "cheapestOfferPartnerId": "h_bc",
-      "rawPrice": 11750,
-      "rating": {
-        "description": "Excellent",
-        "count": 6935,
-        "value": "4.5",
-        "formatValue": "4.5",
-        "color": "colorMonteverde",
-        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.png"
-      },
-      "coordinate": { "longitude": 72.867432, "latitude": 19.066603 }
+      "coordinate": {
+        "longitude": 72.824405,
+        "latitude": 18.935062
+      }
     },
     {
       "hotelId": "46941335",
       "heroImage": "https://content.skyscnr.com/available/1353652326/1353652326_WxH.jpg",
       "name": "Trident Nariman Point",
       "stars": 5,
-      "distance": "8.03 km",
-      "distanceFromHotel": "8.03 km",
+      "distance": "7.38 km",
+      "distanceFromHotel": "7.38 km",
       "exclusiveInfo": null,
-      "price": "₹ 11,245",
-      "cug": {
-        "type": "mobile",
-        "priceWithoutDiscount": "₹ 12,720",
-        "icons": ["mobile"],
-        "discount": "12% off",
-        "rawDiscountPercentage": 12,
-        "rawType": "apps"
-      },
-      "cheapestOfferPartnerId": "d_ct",
-      "rawPrice": 11245,
+      "price": "₹ 40,241",
+      "cheapestOfferPartnerId": "h_pi",
+      "rawPrice": 40241,
       "rating": {
         "description": "Excellent",
-        "count": 6785,
+        "count": 6913,
         "value": "4.5",
         "formatValue": "4.5",
         "color": "colorMonteverde",
         "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.png"
       },
-      "coordinate": { "longitude": 72.821199, "latitude": 18.927731 }
-    },
-    {
-      "hotelId": "46948833",
-      "heroImage": "https://content.skyscnr.com/available/1395219653/1395219653_WxH.jpg",
-      "name": "President - Ihcl SeleQtions",
-      "stars": 5,
-      "distance": "9.46 km",
-      "distanceFromHotel": "9.46 km",
-      "exclusiveInfo": null,
-      "price": "₹ 11,244",
-      "cug": {
-        "type": "mobile",
-        "priceWithoutDiscount": "₹ 12,719",
-        "icons": ["mobile"],
-        "discount": "12% off",
-        "rawDiscountPercentage": 12,
-        "rawType": "apps"
-      },
-      "cheapestOfferPartnerId": "d_ct",
-      "rawPrice": 11244,
-      "rating": {
-        "description": "Excellent",
-        "count": 4529,
-        "value": "4.5",
-        "formatValue": "4.5",
-        "color": "colorMonteverde",
-        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.png"
-      },
-      "coordinate": { "longitude": 72.820726, "latitude": 18.914593 }
-    },
-    {
-      "hotelId": "136308180",
-      "heroImage": "https://content.skyscnr.com/available/1247494132/1247494132_WxH.jpg",
-      "name": "Taj Santacruz",
-      "stars": 5,
-      "distance": "10.56 km",
-      "distanceFromHotel": "10.56 km",
-      "exclusiveInfo": null,
-      "price": "₹ 10,345",
-      "cug": {
-        "type": "mobile",
-        "priceWithoutDiscount": "₹ 11,111",
-        "icons": ["mobile"],
-        "discount": "7% off",
-        "rawDiscountPercentage": 7,
-        "rawType": "apps"
-      },
-      "cheapestOfferPartnerId": "d_ct",
-      "rawPrice": 10345,
-      "rating": {
-        "description": "Excellent",
-        "count": 3539,
-        "value": "4.5",
-        "formatValue": "4.5",
-        "color": "colorMonteverde",
-        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.png"
-      },
-      "coordinate": { "longitude": 72.854343, "latitude": 19.092607 }
-    },
-    {
-      "hotelId": "47023446",
-      "heroImage": "https://content.skyscnr.com/available/1555734052/1555734052_WxH.jpg",
-      "name": "JW Marriott Mumbai Juhu",
-      "stars": 5,
-      "distance": "11.55 km",
-      "distanceFromHotel": "11.55 km",
-      "exclusiveInfo": null,
-      "price": "₹ 13,000",
-      "cheapestOfferPartnerId": "h_bc",
-      "rawPrice": 13000,
-      "rating": {
-        "description": "Excellent",
-        "count": 5297,
-        "value": "4.5",
-        "formatValue": "4.5",
-        "color": "colorMonteverde",
-        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.png"
-      },
-      "coordinate": { "longitude": 72.82656, "latitude": 19.10196 }
-    },
-    {
-      "hotelId": "47029991",
-      "heroImage": "https://content.skyscnr.com/available/1359138112/1359138112_WxH.jpg",
-      "name": "Ramada Plaza by Wyndham Palm Grove",
-      "stars": 5,
-      "distance": "11.19 km",
-      "distanceFromHotel": "11.19 km",
-      "exclusiveInfo": null,
-      "price": "₹ 6,989",
-      "cug": {
-        "type": "general",
-        "priceWithoutDiscount": "₹ 9,743",
-        "icons": [],
-        "discount": "Special offer 28% off",
-        "rawDiscountPercentage": 28,
-        "rawType": "general"
-      },
-      "cheapestOfferPartnerId": "h_yt",
-      "rawPrice": 6989,
-      "rating": {
-        "description": "Excellent",
-        "count": 2761,
-        "value": "4.5",
-        "formatValue": "4.5",
-        "color": "colorMonteverde",
-        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.png"
-      },
-      "coordinate": { "longitude": 72.82747, "latitude": 19.09877 }
-    },
-    {
-      "hotelId": "134657448",
-      "heroImage": "https://content.skyscnr.com/available/1315759065/1315759065_WxH.jpg",
-      "name": "JW Marriott Mumbai Sahar Airport",
-      "stars": 5,
-      "distance": "12.26 km",
-      "distanceFromHotel": "12.26 km",
-      "exclusiveInfo": null,
-      "price": "₹ 10,498",
-      "cheapestOfferPartnerId": "d_ct",
-      "rawPrice": 10498,
-      "rating": {
-        "description": "Excellent",
-        "count": 5359,
-        "value": "4.5",
-        "formatValue": "4.5",
-        "color": "colorMonteverde",
-        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.png"
-      },
-      "coordinate": { "longitude": 72.878248, "latitude": 19.102507 }
+      "coordinate": {
+        "longitude": 72.821199,
+        "latitude": 18.927731
+      }
     },
     {
       "hotelId": "115509952",
       "heroImage": "https://content.skyscnr.com/available/1512579580/1512579580_WxH.jpg",
       "name": "The Taj Mahal Palace, Mumbai",
       "stars": 5,
-      "distance": "8.50 km",
-      "distanceFromHotel": "8.50 km",
+      "distance": "8.17 km",
+      "distanceFromHotel": "8.17 km",
       "exclusiveInfo": null,
-      "price": "₹ 18,567",
-      "cug": {
-        "type": "mobile",
-        "priceWithoutDiscount": "₹ 19,769",
-        "icons": ["mobile"],
-        "discount": "6% off",
-        "rawDiscountPercentage": 6,
-        "rawType": "apps"
-      },
-      "cheapestOfferPartnerId": "d_ct",
-      "rawPrice": 18567,
+      "price": "₹ 66,000",
+      "cheapestOfferPartnerId": "h_bc",
+      "rawPrice": 66000,
       "rating": {
         "description": "Excellent",
-        "count": 10433,
+        "count": 10498,
         "value": "4.5",
         "formatValue": "4.5",
         "color": "colorMonteverde",
         "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.png"
       },
-      "coordinate": { "longitude": 72.833203, "latitude": 18.921663 }
+      "coordinate": {
+        "longitude": 72.83317,
+        "latitude": 18.92164
+      }
+    },
+    {
+      "hotelId": "46975171",
+      "heroImage": "https://content.skyscnr.com/available/1395225447/1395225447_WxH.jpg",
+      "name": "Trident Bandra Kurla",
+      "stars": 5,
+      "distance": "9.41 km",
+      "distanceFromHotel": "9.41 km",
+      "exclusiveInfo": null,
+      "price": "₹ 35,173",
+      "cheapestOfferPartnerId": "h_ad",
+      "rawPrice": 35173,
+      "rating": {
+        "description": "Excellent",
+        "count": 7124,
+        "value": "4.5",
+        "formatValue": "4.5",
+        "color": "colorMonteverde",
+        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.png"
+      },
+      "coordinate": {
+        "longitude": 72.867432,
+        "latitude": 19.066603
+      }
+    },
+    {
+      "hotelId": "136308180",
+      "heroImage": "https://content.skyscnr.com/available/1247494132/1247494132_WxH.jpg",
+      "name": "Taj Santacruz",
+      "stars": 5,
+      "distance": "11.37 km",
+      "distanceFromHotel": "11.37 km",
+      "exclusiveInfo": null,
+      "price": "₹ 32,600",
+      "cheapestOfferPartnerId": "h_mq",
+      "rawPrice": 32600,
+      "rating": {
+        "description": "Excellent",
+        "count": 3676,
+        "value": "4.5",
+        "formatValue": "4.5",
+        "color": "colorMonteverde",
+        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.png"
+      },
+      "coordinate": {
+        "longitude": 72.85341,
+        "latitude": 19.09219
+      }
+    },
+    {
+      "hotelId": "47023446",
+      "heroImage": "https://content.skyscnr.com/available/1638052410/1638052410_WxH.jpg",
+      "name": "JW Marriott Mumbai Juhu",
+      "stars": 5,
+      "distance": "11.92 km",
+      "distanceFromHotel": "11.92 km",
+      "exclusiveInfo": null,
+      "price": "₹ 40,992",
+      "cheapestOfferPartnerId": "h_pi",
+      "rawPrice": 40992,
+      "rating": {
+        "description": "Excellent",
+        "count": 5350,
+        "value": "4.5",
+        "formatValue": "4.5",
+        "color": "colorMonteverde",
+        "taImage": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.png"
+      },
+      "coordinate": {
+        "longitude": 72.82656,
+        "latitude": 19.10196
+      }
+    },
+    {
+      "hotelId": "217023612",
+      "heroImage": "https://content.skyscnr.com/available/1511137602/1511137602_WxH.jpg",
+      "name": "Sahara Star",
+      "stars": 5,
+      "distance": "11.76 km",
+      "distanceFromHotel": "11.76 km",
+      "exclusiveInfo": null,
+      "price": "₹ 25,868",
+      "cheapestOfferPartnerId": "h_pi",
+      "rawPrice": 25868,
+      "rating": {
+        "description": "Very good",
+        "count": 70,
+        "value": "3.8",
+        "formatValue": "3.8",
+        "color": "colorMonteverde",
+        "taImage": null
+      },
+      "coordinate": {
+        "longitude": 72.8538296,
+        "latitude": 19.0957428
+      }
     }
   ]
 }

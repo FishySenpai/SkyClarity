@@ -32,7 +32,7 @@ function App() {
         <Route path="/hotels/hotel/:id/:price" element={<HotelDetails />} />
         <Route path="/flights/:token/:id" element={<FlightDetails />} />
         <Route
-          path="/flights/search/:fromLocation/:fromId/:toLocation/:toId/:departdate/:returndate"
+          path="/flights/:selected/:fromLocation/:fromId/:toLocation/:toId/:departdate/:returndate"
           element={<Flights />}
         />
       </Routes>
