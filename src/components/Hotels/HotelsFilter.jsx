@@ -37,23 +37,29 @@ const HotelsFilter = ({
   };
   if (hotelsData) {
     return (
-      <div className="mx-12 px-6 w-[270px] bg-white rounded-lg default-font text-gray-700 text-sm divide-y-2 divide-slate-300">
+      <div className=" px-6 w-[270px] bg-white rounded-lg default-font text-gray-700 text-sm divide-y-2 divide-slate-300">
         <div className="pt-1">
           <div className="flex flex-row">
             <div className="font-semibold text-lg py-2">Popular Filters</div>
           </div>
           <div className="pb-3">
-            {hotelsData.filters[7]?.values.slice(0,1).map((cancellation, index) => (
-              <div key={cancellation.id} className="flex items-center mb-2">
-                <input type="checkbox" id={cancellation.id} className="mr-2" />
-                <label
-                  htmlFor={cancellation.id}
-                  className="flex justify-between w-full text-sm"
-                >
-                  {cancellation.label}
-                </label>
-              </div>
-            ))}
+            {hotelsData.filters[7]?.values
+              .slice(0, 1)
+              .map((cancellation, index) => (
+                <div key={cancellation.id} className="flex items-center mb-2">
+                  <input
+                    type="checkbox"
+                    id={cancellation.id}
+                    className="mr-2"
+                  />
+                  <label
+                    htmlFor={cancellation.id}
+                    className="flex justify-between w-full text-sm"
+                  >
+                    {cancellation.label}
+                  </label>
+                </div>
+              ))}
             {hotelsData.filters[2]?.values.map((meal, index) => (
               <div key={meal.id} className="flex items-center mb-2">
                 <input type="checkbox" id={meal.id} className="mr-2" />

@@ -22,7 +22,7 @@ const Flights = () => {
   const [cheapestMinDuration, setCheapestMinDuration] = useState(0);
   const [bestDuration, setBestDuration] = useState();
   const [bestPrice, setBestPrice] = useState();
-  const [flights, setFlights] = useState();
+  const [flights, setFlights] = useState(flighsJson);
   const [selectedOption, setSelectedOption] = useState(selected);
   const [priceTag, setPriceTag] = useState("Best");
   const [maxCurrentPrice, setMaxCurrentPrice] = useState(-Infinity);
@@ -284,24 +284,24 @@ const Flights = () => {
     }
   };
 
-  useEffect(() => {
-    if (
-      isValidParam(fromId) &&
-      isValidParam(toId) &&
-      isValidParam(departdate) &&
-      isValidParam(returndate) &&
-      selectedOption === "round-trip"
-    ) {
-      fetchReturnFlights();
-    } else if (
-      isValidParam(fromId) &&
-      isValidParam(toId) &&
-      isValidParam(departdate) &&
-      selectedOption === "one-way"
-    ) {
-      fetchOneWayFlights();
-    }
-  }, [fromId, toId, departdate, returndate, selectedOption]);
+  // useEffect(() => {
+  //   if (
+  //     isValidParam(fromId) &&
+  //     isValidParam(toId) &&
+  //     isValidParam(departdate) &&
+  //     isValidParam(returndate) &&
+  //     selectedOption === "round-trip"
+  //   ) {
+  //     fetchReturnFlights();
+  //   } else if (
+  //     isValidParam(fromId) &&
+  //     isValidParam(toId) &&
+  //     isValidParam(departdate) &&
+  //     selectedOption === "one-way"
+  //   ) {
+  //     fetchOneWayFlights();
+  //   }
+  // }, [fromId, toId, departdate, returndate, selectedOption]);
 
   useEffect(() => {
     if (flights && flights.itineraries) {
