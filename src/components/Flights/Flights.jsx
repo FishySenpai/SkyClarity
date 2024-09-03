@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import FlightsFilter from "./FlightsFilter";
 import FlightsSearch from "./FlightsSearch";
 import flighsJson from "./Assets/flights.json";
@@ -6,6 +6,7 @@ import flightsImg from "./Assets/flights-img.jpg";
 import { useParams, Link } from "react-router-dom";
 import FlightsLoading from "./FlightsLoading";
 import NoResults from "../Assets/noresults.png";
+import useOutsideClick from "../useOutsideClick";
 const Flights = () => {
   const {
     fromLocation,
@@ -35,8 +36,13 @@ const Flights = () => {
   const [minCurrentDuration, setMinCurrentDuration] = useState(Infinity);
   const [airline, setAirline] = useState("");
   const [filteredFlights, setFilteredFlights] = useState([]);
-
   const [filters, setFilters] = useState("");
+  const [showFilter, setShowFilter] = useState(false);
+  const filterRef = useRef(null);
+  useOutsideClick(filterRef, () => {
+    console.log("test");
+    setShowFilter(false);
+  });
   const isValidParam = (param) => {
     return (
       param !== undefined &&
@@ -354,9 +360,11 @@ const Flights = () => {
   return (
     <div className="bg-gray-50">
       <div className="relative">
-        <div className="h-[600px] lg:h-[300px] absolute inset-0  bg-cover bg-center overflow-hidden">
-          <img src={flightsImg} className="" />
-        </div>
+        <img
+          src={flightsImg}
+          className="absolute inset-0 w-full h-[678px] object-cover"
+        />
+
         <div className="absolute top-36 lg:top-16 z-50 w-full flex flex-col items-center">
           <div className="w-fit flex flex-col items-center">
             <div className="h-[160px] w-full 1sm:w-fit relative ">
@@ -370,20 +378,31 @@ const Flights = () => {
         </div>
       </div>
 
-      <div className="flex flex-col absolute pt-[150px] top-[450px] lg:top-[300px] justify-center items-center mx-auto 1lg:pr-[50px] bg-gray-100 lg:pt-12 rounded-t-3xl w-full">
+      <div className="flex flex-col pb-12 absolute pt-[150px] top-[450px] lg:top-[300px] justify-center items-center mx-auto 1lg:pr-[50px] bg-gray-100 lg:pt-12 rounded-t-3xl w-full">
         <div className="relative h-[60px] w-full sm:w-[600px] 1sm:w-[700px] 1md:w-[800px] lg:w-[980px] 1lg:w-[1050px] xl:w-[1230px] 1lg:ml-12  rounded-t-lg overflow-hidden">
           <img
             src="https://content.skyscnr.com/m/3719e8f4a5daf43d/original/Flights-Placeholder.jpg"
             alt="Destination"
             className="absolute inset-0 w-full h-full object-cover object-bottom"
           />
-          <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-20 text-white font-semibold text-3xl capitalize">
+          <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-20 text-white font-semibold text-2xl sm:text-3xl capitalize">
             Departing to {toLocation || ""}
           </div>
         </div>
         {flights ? (
           <div className="flex flex-row w-full sm:w-fit 1lg:w-[1050px] xl:w-[1230px]">
-            <div className="hidden 1lg:block">
+            {showFilter && (
+              <div className="fixed inset-0 bg-gray-900 opacity-50 z-50"></div>
+            )}
+
+            <div
+              ref={filterRef}
+              className={`${
+                showFilter
+                  ? "fixed top-0 left-0 z-50 bg-white duration-500 overflow-x-hidden overflow-y-auto"
+                  : " fixed top-0 -left-[320px] z-50 bg-white  duration-500"
+              } 1lg:static 1lg:mx-6 xl:mr-12 xl:ml-6 k h-full`}
+            >
               <FlightsFilter
                 flights={flights}
                 filters={filters}
@@ -409,56 +428,79 @@ const Flights = () => {
               />
             </div>
             <div className="flex flex-col cursor-pointer w-full">
-              <div className="flex flex-row rounded-lg px-4 space-x-2 py-2 pt-4 mb-2 text-gray-700 bg-white overflow-hidden w-full sm:w-[600px] 1sm:w-[700px] 1md:w-[800px] lg:w-[980px] 1lg:w-[743px] xl:w-[880px]">
-                <div
-                  className={`hover:border-b-4 hover:border-gray-600   ${
-                    priceTag === "Best" ? "border-b-4 border-gray-700" : ""
-                  } flex-1`}
-                  onClick={() => {
-                    setPriceTag("Best");
-                    console.log(priceTag);
-                  }}
-                >
-                  <div className="text-lg font-semibold">Best</div>
-                  <div className="flex flex-row">
-                    <div>${bestPrice?.toFixed(0)} . </div>
-                    <div className="pl-1">{formatDuration(bestDuration)}</div>
+              <div className="flex w-full">
+                <div className="flex flex-row rounded-l-lg rounded-t-none pl-4 space-x-2 sm:py-2 pt-1 sm:pt-4 h-fit mb-2 text-gray-700 bg-white overflow-hidden w-full sm:w-[518px] 1sm:w-[618px] 1md:w-[718px] lg:w-[898px] 1lg:w-[743px] xl:w-[880px]">
+                  <div
+                    className={`hover:border-b-4 hover:border-gray-600   ${
+                      priceTag === "Best" ? "border-b-4 border-gray-700" : ""
+                    } flex-1`}
+                    onClick={() => {
+                      setPriceTag("Best");
+                      console.log(priceTag);
+                    }}
+                  >
+                    <div className="text-lg font-semibold">Best</div>
+                    <div className="flex flex-col sm:flex-row">
+                      <div>${bestPrice?.toFixed(0)} . </div>
+                      <div className="sm:pl-1">
+                        {formatDuration(bestDuration)}
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div
-                  className={`hover:border-b-4 hover:border-gray-600   ${
-                    priceTag === "Cheapest" ? "border-b-4 border-gray-700" : ""
-                  } flex-1`}
-                  onClick={() => {
-                    setPriceTag("Cheapest");
-                  }}
-                >
-                  <div className="text-lg font-semibold">Cheapest</div>
-                  <div className="flex flex-row">
-                    <div>${cheapestMinPrice.toFixed(0)} . </div>
-                    <div className="pl-1">
-                      {formatDuration(cheapestMinDuration)}
+                  <div
+                    className={`hover:border-b-4 hover:border-gray-600   ${
+                      priceTag === "Cheapest"
+                        ? "border-b-4 border-gray-700"
+                        : ""
+                    } flex-1`}
+                    onClick={() => {
+                      setPriceTag("Cheapest");
+                    }}
+                  >
+                    <div className="text-lg font-semibold">Cheapest</div>
+                    <div className="flex flex-col sm:flex-row">
+                      <div>${cheapestMinPrice.toFixed(0)} . </div>
+                      <div className="sm:pl-1">
+                        {formatDuration(cheapestMinDuration)}
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className={`hover:border-b-4 hover:border-gray-600   ${
+                      priceTag === "Fastest" ? "border-b-4 border-gray-700" : ""
+                    } flex-1`}
+                    onClick={() => {
+                      setPriceTag("Fastest");
+                    }}
+                  >
+                    <div className="text-lg font-semibold">Fastest</div>
+                    <div className="flex flex-col sm:flex-row">
+                      <div>{shortestMinPrice} . </div>
+                      <div className="sm:pl-1">
+                        {formatDuration(shortestMinDuration)}
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div
-                  className={`hover:border-b-4 hover:border-gray-600   ${
-                    priceTag === "Fastest" ? "border-b-4 border-gray-700" : ""
-                  } flex-1`}
+                <button
+                  className="w-fit h-[83px] rounded-r-lg rounded-t-none sm:h-[80px] flex 1lg:hidden text-[18px] items-center space-x-1 bg-gray-800  text-gray-50 px-2"
                   onClick={() => {
-                    setPriceTag("Fastest");
+                    setShowFilter(!showFilter);
                   }}
                 >
-                  <div className="text-lg font-semibold">Fastest</div>
-                  <div className="flex flex-row">
-                    <div>{shortestMinPrice} . </div>
-                    <div className="pl-1">
-                      {formatDuration(shortestMinDuration)}
-                    </div>
-                  </div>
-                </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    className="h-4 w-4"
+                  >
+                    <path
+                      d="M0 416c0 17.7 14.3 32 32 32l54.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-246.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 384c-17.7 0-32 14.3-32 32zm128 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM320 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm32-80c-32.8 0-61 19.7-73.3 48L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l246.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48l54.7 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-54.7 0c-12.3-28.3-40.5-48-73.3-48zM192 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm73.3-64C253 35.7 224.8 16 192 16s-61 19.7-73.3 48L32 64C14.3 64 0 78.3 0 96s14.3 32 32 32l86.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 128c17.7 0 32-14.3 32-32s-14.3-32-32-32L265.3 64z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span>Filters</span>
+                </button>
               </div>
-
               <div className="">
                 {console.log(flights)}
                 {filteredFlights?.map((flight, index) => (
@@ -476,7 +518,7 @@ const Flights = () => {
                       {flight.legs?.map((leg, index) => (
                         <div
                           key={index}
-                          className="flex flex-col  relative min-h-[80px]"
+                          className="flex flex-col  relative min-h-[110px]"
                         >
                           <div className="flex flex-row absolute top-10 justify-between">
                             <div className="flex flex-row px-4 1md:w-[220px] lg:w-[300px] 1lg:w-[220px]">
@@ -579,7 +621,7 @@ const Flights = () => {
                         </div>
                       ))}
                     </div>
-                    <div className="pr-5 pt-4 pb-8 1sm:pr-0 1sm:pl-8 1sm:py-8 flex flex-col items-end justify-end">
+                    <div className="pr-5 1sm:pt-4 pb-4 1sm:pb-8 1sm:pr-0 1sm:pl-8 1sm:py-8 flex flex-col items-end justify-end">
                       <div className="text-lg font-semibold  mt-3 ">
                         US {flight.price.formatted}
                       </div>

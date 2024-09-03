@@ -177,7 +177,7 @@ const Hotels = () => {
                   showFilter
                     ? "fixed top-0 left-0 z-50 bg-white duration-500"
                     : " fixed top-0 -left-[300px] z-50 bg-white  duration-500"
-                } xl:static xl:mx-12 xl:block`}
+                } xl:static xl:mx-12 xl:block h-fit`}
               >
                 <HotelsFilter
                   hotelsData={hotelsData}

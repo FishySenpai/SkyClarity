@@ -75,7 +75,7 @@ const FlightsFilter = ({
   }, [minPrice]);
 
   return (
-    <div className="mx-6 xl:mr-12 px-4 space-y-3 rounded bg-white default-font text-gray-700 text-sm divide-y-2 divide-slate-300 w-fit xl:w-[300px]">
+    <div className=" px-4 space-y-3 rounded bg-white default-font text-gray-700 text-sm divide-y-2 divide-slate-300 w-[300px] 1lg:w-fit xl:w-[300px]">
       <div>
         <div
           className="flex flex-row relative pt-2"
