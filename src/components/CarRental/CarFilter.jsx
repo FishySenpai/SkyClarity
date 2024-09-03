@@ -77,7 +77,7 @@ const CarFilter = ({
   const uniqueVendors = new Set(carsInfo?.data.quotes.map((car) => car.vndr));
 
   return (
-    <div className="w-[270px] p-4 bg-white rounded-sm mt-6 text-gray-700">
+    <div className="w-[270px] p-4  bg-white rounded-sm text-gray-700">
       <div className="border-b pb-3 mb-2">
         <h2 className="text-lg font-semibold">Seats</h2>
         <div className="mt-2 space-x-2">

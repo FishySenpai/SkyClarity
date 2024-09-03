@@ -3,7 +3,7 @@ import Calendar from "react-calendar";
 import useOutsideClick from "../useOutsideClick";
 import { useNavigate, useParams } from "react-router-dom";
 import loading from "../Assets/loading.png";
-const CarsSearch = () => {
+const CarsSearch = ({dropOffCheck, setDropOffCheck}) => {
   const { pickUp, pickUpId, pickDate, dropDate } = useParams();
   const [pickUpLocation, setPickUpLocation] = useState();
   const [pickUpLocationId, setPickUpLocationId] = useState();
@@ -21,7 +21,7 @@ const CarsSearch = () => {
   const [toggleDropOffTime, setToggleDropOffTime] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [driverCheck, setDriverCheck] = useState(true);
-  const [dropOffCheck, setDropOffCheck] = useState(false);
+
 
   const pickUpPopupRef = useRef(null);
   const dropOffPopupRef = useRef(null);

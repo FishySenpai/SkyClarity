@@ -12,6 +12,7 @@ import compareImg from "./compare.png";
 import supportImg from "./support.png";
 import CarRentalTips from "./CarRentalTips";
 const CarRentalHome = () => {
+   const [dropOffCheck, setDropOffCheck] = useState(false);
    const logos = [
      {
        src: "https://ak-d.tripcdn.com/images/1of5k12000cedj57dEABF.png",
@@ -66,7 +67,10 @@ const CarRentalHome = () => {
             <div className="text-3xl 2sm:text-4xl 1lg:text-5xl pb-3 text-white font-bold text-left w-[95%]">
               Find cheap flight deals
             </div>
-            <CarsSearch />
+            <CarsSearch
+              dropOffCheck={dropOffCheck}
+              setDropOffCheck={setDropOffCheck}
+            />
           </div>
         </div>
       </div>
