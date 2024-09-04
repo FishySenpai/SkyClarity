@@ -310,6 +310,39 @@ const Flights = () => {
   // }, [fromId, toId, departdate, returndate, selectedOption]);
 
   useEffect(() => {
+    const sortFlights = () => {
+      if (!filteredFlights) return;
+
+      let sortedFlights = [...filteredFlights]; // Copy to avoid mutating state directly
+
+      if (priceTag === "Cheapest") {
+        sortedFlights.sort((a, b) => {
+          const priceA = a.price?.raw || 0;
+          const priceB = b.price?.raw || 0;
+          return priceA - priceB;
+        });
+      } else if (priceTag === "Fastest") {
+        sortedFlights.sort((a, b) => {
+          const durationA =
+            a.legs?.reduce((total, leg) => total + leg.durationInMinutes, 0) ||
+            0;
+          const durationB =
+            b.legs?.reduce((total, leg) => total + leg.durationInMinutes, 0) ||
+            0;
+          return durationA - durationB;
+        });
+      } else if (priceTag === "Best") {
+       return flights?.itineraries;
+      }
+
+      return sortedFlights;
+    };
+
+    const sortedFlights = sortFlights();
+    setFilteredFlights(sortedFlights); // Only update state once per effect run
+  }, [priceTag]); // Depend only on priceTag
+
+  useEffect(() => {
     if (flights && flights.itineraries) {
       let shortestDuration = Infinity;
       let shortestPrice = 0;
