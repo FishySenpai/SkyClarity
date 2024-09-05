@@ -17,6 +17,7 @@ const Hotels = () => {
   const [starRating, setStarRating] = useState([]);
   const [guestRating, setGuestRating] = useState([]);
   const [showFilter, setShowFilter] = useState(false);
+  const [filterTag, setFilterTag] = useState("Recommended");
   const { destination, destinationId, checkIn, checkOut } = useParams();
   const filterRef = useRef(null);
   useOutsideClick(filterRef, () => {
@@ -120,6 +121,40 @@ const Hotels = () => {
   // useEffect(() => {
   //   setShowFilter(false);
   // }, [popularFilters, guestRating, priceRange, starRating]);
+
+  useEffect(() => {
+    const sortHotels = () => {
+      if (!filteredData) return;
+
+      let sortedHotels = [...filteredData]; // Copy to avoid mutating state directly
+
+      if (filterTag === "TopReviews") {
+        sortedHotels.sort((a, b) => {
+          const priceA = a.reviewSummary.value || 0;
+          const priceB = b.reviewSummary.value || 0;
+          return priceB - priceA;
+        });
+      } else if (filterTag === "LowestPrice") {
+        sortedHotels.sort((a, b) => {
+          const priceA = a.rawPrice || 0;
+          const priceB = b.rawPrice || 0;
+          return priceA - priceB;
+        });
+      } else if (filterTag === "MostStars") {
+        sortedHotels.sort((a, b) => {
+          const priceA = a.stars || 0;
+          const priceB = b.stars || 0;
+          return priceB - priceA;
+        });
+      } else if (filterTag === "Recommended") {
+       return hotelsData?.hotels;
+      }
+      return sortedHotels;
+    };
+
+    const sortedHotels = sortHotels();
+    setFilteredData(sortedHotels); // Only update state once per effect run
+  }, [filterTag]);
   useEffect(() => {
     setFilteredData(hotelsData?.hotels);
     console.log(filteredData);
@@ -144,7 +179,7 @@ const Hotels = () => {
             Showing results for your stay from September 20, 2024, to October 8,
             2024. Use the filters on the left to find the perfect match.
           </span>
-          <button
+          {/* <button
             className="w-fit flex xl:hidden text-[18px] items-center space-x-1 bg-gray-800 rounded-lg text-gray-50 px-2"
             onClick={() => {
               setShowFilter(!showFilter);
@@ -161,7 +196,7 @@ const Hotels = () => {
               />
             </svg>
             <span>Filters</span>
-          </button>
+          </button> */}
         </div>
 
         <div className="flex flex-row  justify-center mx-auto bg-gray-100 pt-4 rounded-t-3xl w-full">
@@ -175,8 +210,8 @@ const Hotels = () => {
                 ref={filterRef}
                 className={`${
                   showFilter
-                    ? "fixed top-0 left-0 z-50 bg-white duration-500"
-                    : " fixed top-0 -left-[300px] z-50 bg-white  duration-500"
+                    ? "fixed top-0 left-0 z-50 bg-white duration-500 h-full"
+                    : " fixed top-0 -left-[300px] z-50 bg-white duration-500"
                 } xl:static xl:mx-12 xl:block h-fit`}
               >
                 <HotelsFilter
@@ -193,6 +228,86 @@ const Hotels = () => {
               </div>
 
               <div className="flex flex-col  ">
+                <div className="flex flex-row sm:text-lg cursor-pointer font-semibold rounded-lg  pl-4 sm:space-x-2 sm:py-2 pt-3 sm:pt-3   h-fit mb-2 text-gray-700 bg-white overflow-hidden w-full 1sm:w-[625px] 1md:w-[880px] 1lg:w-[923px]">
+                  <div
+                    className={`hover:border-b-4 hover:border-gray-600 pr-3 sm:pr-0   ${
+                      filterTag === "Recommended"
+                        ? "border-b-4 border-gray-700"
+                        : ""
+                    } flex-1`}
+                    onClick={() => {
+                      setFilterTag("Recommended");
+                      console.log(filterTag);
+                    }}
+                  >
+                    <div className="">Recommended</div>
+                  </div>
+                  <div
+                    className={`hover:border-b-4 hover:border-gray-600 hidden 3sm:block  ${
+                      filterTag === "TopReviews"
+                        ? "border-b-4 border-gray-700"
+                        : ""
+                    } flex-1`}
+                    onClick={() => {
+                      setFilterTag("TopReviews");
+                    }}
+                  >
+                    <div className="">Top Reviews</div>
+                  </div>
+                  <div
+                    className={`hover:border-b-4 hover:border-gray-600  hidden sm:block  ${
+                      filterTag === "LowestPrice"
+                        ? "border-b-4 border-gray-700"
+                        : ""
+                    } flex-1`}
+                    onClick={() => {
+                      setFilterTag("LowestPrice");
+                    }}
+                  >
+                    <div className="">Lowest Price</div>
+                  </div>
+                  <div
+                    className={`hover:border-b-4 hover:border-gray-600  hidden xl:block  ${
+                      filterTag === "MostStars"
+                        ? "border-b-4 border-gray-700"
+                        : ""
+                    } flex-1`}
+                    onClick={() => {
+                      setFilterTag("MostStars");
+                    }}
+                  >
+                    <div className="">Most Stars</div>
+                  </div>
+                  <div
+                    className={`hover:border-b-4 hover:border-gray-600 block xl:hidden  ${
+                      filterTag === "ShowFilter"
+                        ? "border-b-4 border-gray-700"
+                        : ""
+                    } flex-1`}
+                    onClick={() => {
+                      setFilterTag("ShowFilter");
+                    }}
+                  >
+                    <button
+                      className="w-fit flex items-center space-x-1  text-gray-700"
+                      onClick={() => {
+                        setShowFilter(!showFilter);
+                      }}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        className="h-3.5 w-3.5 sm:h-4 sm:w-4"
+                      >
+                        <path
+                          d="M0 416c0 17.7 14.3 32 32 32l54.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-246.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 384c-17.7 0-32 14.3-32 32zm128 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM320 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm32-80c-32.8 0-61 19.7-73.3 48L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l246.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48l54.7 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-54.7 0c-12.3-28.3-40.5-48-73.3-48zM192 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm73.3-64C253 35.7 224.8 16 192 16s-61 19.7-73.3 48L32 64C14.3 64 0 78.3 0 96s14.3 32 32 32l86.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 128c17.7 0 32-14.3 32-32s-14.3-32-32-32L265.3 64z"
+                          fill="rgb(55 65 81)"
+                        />
+                      </svg>
+                      <span>All Filters</span>
+                    </button>
+                  </div>
+                </div>
                 {console.log(filteredData)}
                 <div className="w-full 1sm:w-[625px] 1md:w-[880px] 1lg:w-[975px]">
                   {filteredData?.map((hotel, index) => (
@@ -200,7 +315,7 @@ const Hotels = () => {
                     <HotelInfo key={hotel.id} index={hotel.id} hotel={hotel} />
                   ))}
                   {filteredData?.length === 0 ? (
-                    <div className="w-full 1sm:w-[625px] 1md:w-[880px] 1lg:w-[925px]  ">
+                    <div className="w-full 1sm:w-[625px] 1md:w-[880px] 1lg:w-[925px]  pb-12">
                       <div className="flex flex-col justify-center items-center">
                         <img src={NoResults} alt="" className="h-[300px] " />
                         <div className="text-3xl text-black font-semibold">

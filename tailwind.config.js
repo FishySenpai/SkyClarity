@@ -10,6 +10,7 @@ export default {
         "1md": "880px",
         "1sm": "720px",
         "2sm": "565px",
+        "3sm": "360px"
       },
     },
   },

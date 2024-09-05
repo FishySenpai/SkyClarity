@@ -54,7 +54,7 @@ function formatCurrency(input) {
             <div className="relative w-full 1sm:w-[600px] 1md:w-[350px] h-[300px] 1sm:h-[350px] 1md:h-[250px] group">
               <button
                 onClick={handlePrevClick}
-                className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-50 p-2 rounded-xl z-50 opacity-0 group-hover:opacity-100 transition-opacity"
+                className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-50 p-2 rounded-xl z-50 1md:opacity-0 group-hover:opacity-100 transition-opacity"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ function formatCurrency(input) {
               />
               <button
                 onClick={handleNextClick}
-                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-50 p-2 rounded-xl z-50 opacity-0 group-hover:opacity-100 transition-opacity"
+                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-50 p-2 rounded-xl z-50 1md:opacity-0 group-hover:opacity-100 transition-opacity"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +135,7 @@ function formatCurrency(input) {
             </div>
             <div className="flex flex-row space-x-2 pt-1 ">
               <div>{hotel.reviewSummary?.value}</div>
-              <div>
+              <div className="mt-[3px]">
                 <img src={hotel.reviewSummary?.taImage} alt="" />
               </div>
             </div>

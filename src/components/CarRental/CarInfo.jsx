@@ -24,6 +24,7 @@ const CarInfo = () => {
   const { pickUp, pickUpId, pickDate, dropDate } = useParams();
   const [showFilter, setShowFilter] = useState(false);
   const [dropOffCheck, setDropOffCheck] = useState(false);
+  const [filterTag, setFilterTag] = useState("Recommended");
   const filterRef = useRef(null);
   useOutsideClick(filterRef, () => {
     console.log("test");
@@ -263,6 +264,74 @@ const CarInfo = () => {
               />
             </div>
             <div className="flex flex-col w-full 1sm:w-fit">
+              <div className="flex flex-row sm:text-lg cursor-pointer font-semibold rounded-lg  pl-4 sm:space-x-2 sm:py-2 pt-3 sm:pt-3   h-fit mb-2 text-gray-700 bg-white overflow-hidden w-full 1sm:w-[670px]">
+                <div
+                  className={`hover:border-b-4 hover:border-gray-600 pr-3 sm:pr-0   ${
+                    filterTag === "Recommended"
+                      ? "border-b-4 border-gray-700"
+                      : ""
+                  } flex-1`}
+                  onClick={() => {
+                    setFilterTag("Recommended");
+                    console.log(filterTag);
+                  }}
+                >
+                  <div className="">Recommended</div>
+                </div>
+                <div
+                  className={`hover:border-b-4 hover:border-gray-600 hidden 3sm:block  ${
+                    filterTag === "TopReviews"
+                      ? "border-b-4 border-gray-700"
+                      : ""
+                  } flex-1`}
+                  onClick={() => {
+                    setFilterTag("TopReviews");
+                  }}
+                >
+                  <div className="">Top Reviews</div>
+                </div>
+                <div
+                  className={`hover:border-b-4 hover:border-gray-600  hidden sm:block  ${
+                    filterTag === "LowestPrice"
+                      ? "border-b-4 border-gray-700"
+                      : ""
+                  } flex-1`}
+                  onClick={() => {
+                    setFilterTag("LowestPrice");
+                  }}
+                >
+                  <div className="">Lowest Price</div>
+                </div>
+                <div
+                  className={`hover:border-b-4 hover:border-gray-600 block xl:hidden  ${
+                    filterTag === "ShowFilter"
+                      ? "border-b-4 border-gray-700"
+                      : ""
+                  } flex-1`}
+                  onClick={() => {
+                    setFilterTag("ShowFilter");
+                  }}
+                >
+                  <button
+                    className="w-fit flex items-center space-x-1  text-gray-700"
+                    onClick={() => {
+                      setShowFilter(!showFilter);
+                    }}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      className="h-3.5 w-3.5 sm:h-4 sm:w-4"
+                    >
+                      <path
+                        d="M0 416c0 17.7 14.3 32 32 32l54.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-246.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 384c-17.7 0-32 14.3-32 32zm128 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM320 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm32-80c-32.8 0-61 19.7-73.3 48L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l246.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48l54.7 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-54.7 0c-12.3-28.3-40.5-48-73.3-48zM192 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm73.3-64C253 35.7 224.8 16 192 16s-61 19.7-73.3 48L32 64C14.3 64 0 78.3 0 96s14.3 32 32 32l86.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 128c17.7 0 32-14.3 32-32s-14.3-32-32-32L265.3 64z"
+                        fill="rgb(55 65 81)"
+                      />
+                    </svg>
+                    <span>All Filters</span>
+                  </button>
+                </div>
+              </div>
               <div className="w-full 1sm:w-[670px]">
                 {console.log(filteredGroupsArray)}
                 {filteredGroupsArray?.slice(0, 15).map((car, index) => (
