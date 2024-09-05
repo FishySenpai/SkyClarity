@@ -3,7 +3,7 @@ import carAnimated from "./car-animated.png";
 import hotelAnimated from "./hotel-animated.png";
 const CompleteTrip = ({ destination }) => {
   return (
-    <div className="p-8 pt-4">
+    <div className="p-8 pt-0 ">
       <h2 className="text-xl font-semibold mb-4">Complete your trip</h2>
 
       {/* Hotel Card */}

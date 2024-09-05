@@ -9,11 +9,11 @@ import CarsLoading from "./CarsLoading";
 import NoResults from "../Assets/noresults.png";
 import useOutsideClick from "../useOutsideClick";
 const CarInfo = () => {
+  const [carsInfo, setCarsInfo] = useState(carInfoJson);
   const [groupsArray, setGroupsArray] = useState();
   const [filteredGroupsArray, setFilteredGroupsArray] = useState();
   const [providersArray, setProvidersArray] = useState();
   const [showDeal, setShowDeal] = useState();
-  const [filteredCars, setFilteredCars] = useState([]);
   const [seatFilter, setSeatFilter] = useState([]);
   const [pickupFilter, setPickupFilter] = useState([]);
   const [policiesFilter, setPoliciesFilter] = useState([]);
@@ -30,7 +30,7 @@ const CarInfo = () => {
     console.log("test");
     setShowFilter(false);
   });
-  const [carsInfo, setCarsInfo] = useState(carInfoJson);
+
   const isValidParam = (param) => {
     return !param.startsWith(":") && param.trim() !== "";
   };
@@ -184,7 +184,33 @@ const CarInfo = () => {
     vendorsFilter,
     groupsArray,
   ]);
+  useEffect(() => {
+    const sortCars = () => {
+      if (!filteredGroupsArray) return;
 
+      let sortedCars = [...filteredGroupsArray]; // Copy to avoid mutating state directly
+
+      if (filterTag === "TopReviews") {
+        sortedCars.sort((a, b) => {
+          const priceA = a.max_score || 0;
+          const priceB = b.max_score || 0;
+          return priceB - priceA;
+        });
+      } else if (filterTag === "LowestPrice") {
+        sortedCars.sort((a, b) => {
+          const priceA = a.min_price || 0;
+          const priceB = b.min_price || 0;
+          return priceA - priceB;
+        });
+      } else if (filterTag === "Recommended") {
+        return groupsArray;
+      }
+      return sortedCars;
+    };
+
+    const sortedCars = sortCars();
+    setFilteredGroupsArray(sortedCars); // Only update state once per effect run
+  }, [filterTag]);
   return (
     <div className="bg-gray-50">
       {" "}
@@ -214,24 +240,6 @@ const CarInfo = () => {
               Showing results for your stay from September 20, 2024, to October
               8, 2024. Use the filters on the left to find the perfect match.
             </span>
-            <button
-              className="w-fit flex lg:hidden text-[18px] items-center space-x-1 bg-gray-800 rounded-lg text-gray-50 px-2"
-              onClick={() => {
-                setShowFilter(!showFilter);
-              }}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                className="h-4 w-4"
-              >
-                <path
-                  d="M0 416c0 17.7 14.3 32 32 32l54.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-246.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 384c-17.7 0-32 14.3-32 32zm128 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM320 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm32-80c-32.8 0-61 19.7-73.3 48L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l246.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48l54.7 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-54.7 0c-12.3-28.3-40.5-48-73.3-48zM192 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm73.3-64C253 35.7 224.8 16 192 16s-61 19.7-73.3 48L32 64C14.3 64 0 78.3 0 96s14.3 32 32 32l86.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 128c17.7 0 32-14.3 32-32s-14.3-32-32-32L265.3 64z"
-                  fill="white"
-                />
-              </svg>
-              <span>Filters</span>
-            </button>
           </div>
           <div className="flex flex-row justify-center mx-auto rounded-t-3xl w-full">
             {showFilter && (
@@ -264,7 +272,7 @@ const CarInfo = () => {
               />
             </div>
             <div className="flex flex-col w-full 1sm:w-fit">
-              <div className="flex flex-row sm:text-lg cursor-pointer font-semibold rounded-lg  pl-4 sm:space-x-2 sm:py-2 pt-3 sm:pt-3   h-fit mb-2 text-gray-700 bg-white overflow-hidden w-full 1sm:w-[670px]">
+              <div className="flex flex-row sm:text-lg cursor-pointer font-semibold rounded-sm  pl-4 sm:space-x-2 sm:py-2 pt-3 sm:pt-3   h-fit mb-2 text-gray-700 bg-white overflow-hidden w-full 1sm:w-[670px]">
                 <div
                   className={`hover:border-b-4 hover:border-gray-600 pr-3 sm:pr-0   ${
                     filterTag === "Recommended"
