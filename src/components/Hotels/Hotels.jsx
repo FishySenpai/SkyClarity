@@ -161,42 +161,26 @@ const Hotels = () => {
   }, [hotelsData]);
   return (
     <div className="bg-gray-50">
-      <img
-        src={hotelsImg}
-        className="h-[400px] absolute inset-0 top-[65px] w-full bg-cover bg-center overflow-hidden"
-      />
-      <div className="absolute top-36 1lg:top-32 w-full flex flex-col items-center">
-        <div className="w-full flex flex-col items-start 1md:items-center">
-          <div className="h-[120px] w-full 1md:w-fit relative z-50">
-            <HotelsSearch home={true} />
+      <div className="relative">
+        <img
+          src={hotelsImg}
+          className="h-[400px] absolute inset-0 w-full object-cover"
+        />
+        <div className="absolute top-24 1lg:top-20 w-full flex flex-col items-center">
+          <div className="w-full flex flex-col items-start 1md:items-center">
+            <div className="h-[120px] w-full 1md:w-fit relative z-50">
+              <HotelsSearch home={true} />
+            </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col absolute top-[470px] 2sm:top-[450px] 1sm:top-[400px] 1md:top-[300px] justify-center mx-auto bg-gray-100 pt-4 rounded-t-3xl w-full">
-        <div className="text-2xl 2sm:text-3xl pb-3 text-gray-800 font-bold pt-16 1lg:pt-6 w-full px-4  1sm:w-[680px] 1md:w-[900px] 1lg:w-[982px] xl:w-[1200px] 1xl:w-[1300px] flex flex-col 2sm:mx-auto 1xl:pl-5">
+      <div className="flex flex-col absolute top-[505px] 2sm:top-[460px] 1sm:top-[400px] 1md:top-[330px] justify-center mx-auto bg-gray-100 pt-4 rounded-t-3xl w-full">
+        <div className="text-2xl 2sm:text-3xl 2sm:pb-3 text-gray-800 font-bold pt-20 1lg:pt-2 w-full px-4  1sm:w-[680px] 1md:w-[900px] 1lg:w-[982px] xl:w-[1200px] 1xl:w-[1300px] flex flex-col 2sm:mx-auto 1xl:pl-5">
           <div>Available Hotels in Glasgow</div>
           <span className="text-gray-700 font-normal text-[18px]">
             Showing results for your stay from September 20, 2024, to October 8,
             2024. Use the filters on the left to find the perfect match.
           </span>
-          {/* <button
-            className="w-fit flex xl:hidden text-[18px] items-center space-x-1 bg-gray-800 rounded-lg text-gray-50 px-2"
-            onClick={() => {
-              setShowFilter(!showFilter);
-            }}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              className="h-4 w-4"
-            >
-              <path
-                d="M0 416c0 17.7 14.3 32 32 32l54.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-246.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 384c-17.7 0-32 14.3-32 32zm128 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM320 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm32-80c-32.8 0-61 19.7-73.3 48L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l246.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48l54.7 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-54.7 0c-12.3-28.3-40.5-48-73.3-48zM192 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm73.3-64C253 35.7 224.8 16 192 16s-61 19.7-73.3 48L32 64C14.3 64 0 78.3 0 96s14.3 32 32 32l86.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 128c17.7 0 32-14.3 32-32s-14.3-32-32-32L265.3 64z"
-                fill="white"
-              />
-            </svg>
-            <span>Filters</span>
-          </button> */}
         </div>
 
         <div className="flex flex-row  justify-center mx-auto bg-gray-100 pt-4 rounded-t-3xl w-full">
@@ -267,7 +251,7 @@ const Hotels = () => {
                     <div className="">Lowest Price</div>
                   </div>
                   <div
-                    className={`hover:border-b-4 hover:border-gray-600  hidden xl:block  ${
+                    className={`hover:border-b-4 hover:border-gray-600  hidden 1md:block  ${
                       filterTag === "MostStars"
                         ? "border-b-4 border-gray-700"
                         : ""

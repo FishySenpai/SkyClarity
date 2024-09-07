@@ -461,31 +461,33 @@ const HotelsSearch = ({ home }) => {
           </div>
         </div>
         {home ? (
-          <div className="flex flex-wrap items-center space-x-4 pt-5">
-            <span className="font-semibold text-gray-900  pb-3 1md:pb-0">
+          <div className="flex flex-wrap items-center pt-5">
+            <span className="font-semibold text-gray-900  pb-3 1md:pb-0 mr-4">
               Popular filters:
             </span>
-            <label className="flex items-center pb-3 1md:pb-0">
-              <input
-                type="checkbox"
-                className="form-checkbox h-5 w-5 text-blue-600"
-              />
-              <span className="ml-2">Free cancellation</span>
-            </label>
-            <label className="flex items-center pb-3 1md:pb-0">
-              <input
-                type="checkbox"
-                className="form-checkbox h-5 w-5 text-blue-600"
-              />
-              <span className="ml-2">4 stars</span>
-            </label>
-            <label className="flex items-center  pb-3 1md:pb-0">
-              <input
-                type="checkbox"
-                className="form-checkbox h-5 w-5 text-blue-600"
-              />
-              <span className="ml-2">3 stars</span>
-            </label>
+            <div className="flex space-x-4">
+              <label className="flex items-center pb-3 1md:pb-0">
+                <input
+                  type="checkbox"
+                  className="form-checkbox h-5 w-5 text-blue-600"
+                />
+                <span className="ml-2">Free cancellation</span>
+              </label>
+              <label className="flex items-center pb-3 1md:pb-0">
+                <input
+                  type="checkbox"
+                  className="form-checkbox h-5 w-5 text-blue-600"
+                />
+                <span className="ml-2">4 stars</span>
+              </label>
+              <label className="flex items-center  pb-3 1md:pb-0">
+                <input
+                  type="checkbox"
+                  className="form-checkbox h-5 w-5 text-blue-600"
+                />
+                <span className="ml-2">3 stars</span>
+              </label>
+            </div>
           </div>
         ) : (
           ""
