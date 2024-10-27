@@ -194,9 +194,9 @@ const Hotels = () => {
                 ref={filterRef}
                 className={`${
                   showFilter
-                    ? "fixed top-0 left-0 z-50 bg-white duration-500 h-full"
+                    ? "fixed top-0 left-0 z-50 bg-white duration-500 "
                     : " fixed top-0 -left-[300px] z-50 bg-white duration-500"
-                } xl:static xl:mx-12 xl:block h-fit`}
+                } xl:static xl:mx-12 xl:block h-full`}
               >
                 <HotelsFilter
                   hotelsData={hotelsData}
