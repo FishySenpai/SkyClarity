@@ -35,6 +35,7 @@ const FlightDetails = () => {
     }
   };
   useEffect(() => {
+    console.log("test")
     if (id && token) {
       FetchFlightDetails();
     }

@@ -102,6 +102,7 @@ const FlightsSearch = ({
     const toId = await fetchLocation(toLocation);
     const selected = selectedOption;
     if (fromId && toId) {
+      setIsLoading(false)
       navigate(
         `/flights/${selected}/${fromLocation}/${fromId}/${toLocation}/${toId}/${departdate}/${returndate}`
       );
@@ -205,7 +206,7 @@ const FlightsSearch = ({
           />
           <span className="ml-2">One-way</span>
         </label>
-        <label className="flex items-center">
+        {/* <label className="flex items-center">
           <input
             type="radio"
             name="tripType"
@@ -215,7 +216,7 @@ const FlightsSearch = ({
             className=" h-4 w-4 cursor-pointer text-blue-600"
           />
           <span className="ml-2">Multi-city</span>
-        </label>
+        </label> */}
       </div>
       <div className="flex flex-col lg:flex-row lg:space-x-5 space-y-5 lg:space-y-0  p-6 ">
         {selectedOption === "multi-city" ? (

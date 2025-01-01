@@ -66,11 +66,11 @@ const CarInfo = () => {
     }
   };
 
-  // useEffect(() => {
-  //   if (isValidParam(pickUpId) && isValidParam(pickDate)) {
-  //     fetchCars();
-  //   }
-  // }, [pickUpId, pickDate]);
+  useEffect(() => {
+    if (isValidParam(pickUpId) && isValidParam(pickDate)) {
+      fetchCars();
+    }
+  }, [pickUpId, pickDate]);
   useEffect(() => {
     console.log(carsInfo);
 

@@ -23,7 +23,7 @@ const Flights = () => {
   const [cheapestMinDuration, setCheapestMinDuration] = useState(0);
   const [bestDuration, setBestDuration] = useState();
   const [bestPrice, setBestPrice] = useState();
-  const [flights, setFlights] = useState(flighsJson);
+  const [flights, setFlights] = useState();
   const [selectedOption, setSelectedOption] = useState(selected);
   const [priceTag, setPriceTag] = useState("Best");
   const [maxCurrentPrice, setMaxCurrentPrice] = useState(-Infinity);
@@ -55,6 +55,7 @@ const Flights = () => {
   useEffect(() => {
     console.log("test");
     const newFilteredFlights = flights?.itineraries
+      //stops
       .filter((flight) => {
         // Filter by stop count
         if (filters === "direct") {
@@ -68,6 +69,7 @@ const Flights = () => {
         }
         return true; // Show all flights if no stop count filter is applied
       })
+      //departure
       .filter((flight) => {
         console.log("Test");
         // Filter by departure
@@ -107,6 +109,7 @@ const Flights = () => {
         }
         return true; // Show all flights if no departure filter is applied
       })
+      //arrival
       .filter((flight) => {
         console.log("Test");
         // Filter by departure
@@ -152,6 +155,7 @@ const Flights = () => {
         }
         return true; // Show all flights if no departure filter is applied
       })
+      //price
       .filter((flight) => {
         // Filter by price
         if (maxCurrentPrice !== -Infinity && minCurrentPrice !== Infinity) {
@@ -170,6 +174,7 @@ const Flights = () => {
         }
         return true; // Show all flights if no price filter is applied
       })
+      //journey
       .filter((flight) => {
         console.log("Test");
         // Filter by duration
@@ -200,6 +205,7 @@ const Flights = () => {
         }
         return true; // Show all flights if no duration filter is applied
       })
+      //airlines
       .filter((flight) => {
         // Filter by price
         if (airline) {
@@ -290,24 +296,24 @@ const Flights = () => {
     }
   };
 
-  // useEffect(() => {
-  //   if (
-  //     isValidParam(fromId) &&
-  //     isValidParam(toId) &&
-  //     isValidParam(departdate) &&
-  //     isValidParam(returndate) &&
-  //     selectedOption === "round-trip"
-  //   ) {
-  //     fetchReturnFlights();
-  //   } else if (
-  //     isValidParam(fromId) &&
-  //     isValidParam(toId) &&
-  //     isValidParam(departdate) &&
-  //     selectedOption === "one-way"
-  //   ) {
-  //     fetchOneWayFlights();
-  //   }
-  // }, [fromId, toId, departdate, returndate, selectedOption]);
+  useEffect(() => {
+    if (
+      isValidParam(fromId) &&
+      isValidParam(toId) &&
+      isValidParam(departdate) &&
+      isValidParam(returndate) &&
+      selectedOption === "round-trip"
+    ) {
+      fetchReturnFlights();
+    } else if (
+      isValidParam(fromId) &&
+      isValidParam(toId) &&
+      isValidParam(departdate) &&
+      selectedOption === "one-way"
+    ) {
+      fetchOneWayFlights();
+    }
+  }, [fromId, toId, departdate, returndate, selectedOption]);
 
   useEffect(() => {
     const sortFlights = () => {

@@ -1,8 +1,8 @@
-import react, { useState, } from "react";
+import react, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Flights/Home";
 import Navbar from "./components/Navbar";
-import "./App.css"
+import "./App.css";
 import Hotels from "./components/Hotels/Hotels";
 import HotelDetails from "./components/Hotels/HotelDetails";
 import FlightDetails from "./components/Flights/FlightDetails";
@@ -18,13 +18,49 @@ function App() {
     <div className="App relative bg-gray-100">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/hotels" element={<HotelsHome />} />
+        <Route
+          path="/"
+          element={
+            <>
+              {" "}
+              <Home />{" "}
+              <div className="absolute right-0 left-0 -bottom-[800px] ">
+                {" "}
+                <Footer />
+              </div>
+            </>
+          }
+        />
+        <Route
+          path="/hotels"
+          element={
+            <>
+              {" "}
+              <HotelsHome />
+              <div className="absolute right-0 left-0 -bottom-[720px] ">
+                {" "}
+                <Footer />
+              </div>
+            </>
+          }
+        />
         <Route
           path="/hotels/search/:destination/:destinationId/:checkIn/:checkOut"
           element={<Hotels />}
         />
-        <Route path="/carhire" element={<CarRentalHome />} />
+        <Route
+          path="/carhire"
+          element={
+            <>
+              {" "}
+              <CarRentalHome />
+              <div className="absolute right-0 left-0 -bottom-[800px] ">
+                {" "}
+                <Footer />
+              </div>
+            </>
+          }
+        />
         <Route
           path="/carhire/search/:pickUp/:pickUpId/:pickDate/:dropDate"
           element={<CarInfo />}
@@ -36,9 +72,6 @@ function App() {
           element={<Flights />}
         />
       </Routes>
-      {/* <div className="absolute right-0 left-0 -bottom-[800px]">
-        <Footer />
-      </div> */}
     </div>
   );
 }

@@ -30,12 +30,12 @@ const CarsSearch = ({dropOffCheck, setDropOffCheck}) => {
 
   const navigate = useNavigate();
   const fetchLocation = async (location) => {
-    const url = `https://skyscanner80.p.rapidapi.com/api/v1/flights/auto-complete?query=${location}&market=US&locale=en-US`;
+    const url = `https://sky-scanner3.p.rapidapi.com/cars/auto-complete?query=${location}`;
     const options = {
       method: "GET",
       headers: {
         "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
-        "X-RapidAPI-Host": "skyscanner80.p.rapidapi.com",
+        "X-RapidAPI-Host": "sky-scanner3.p.rapidapi.com",
       },
     };
 
@@ -43,7 +43,7 @@ const CarsSearch = ({dropOffCheck, setDropOffCheck}) => {
       const response = await fetch(url, options);
       const result = await response.json();
       console.log(result);
-      return result.data[0].navigation.entityId;
+      return result.data[0].entity_id;
     } catch (error) {
       console.error(error);
       return null;
