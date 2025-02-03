@@ -297,6 +297,7 @@ const Flights = () => {
   };
 
   useEffect(() => {
+    setFlights(null);
     if (
       isValidParam(fromId) &&
       isValidParam(toId) &&
@@ -338,7 +339,7 @@ const Flights = () => {
           return durationA - durationB;
         });
       } else if (priceTag === "Best") {
-       return flights?.itineraries;
+        return flights?.itineraries;
       }
 
       return sortedFlights;

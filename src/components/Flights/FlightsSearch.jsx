@@ -111,44 +111,6 @@ const FlightsSearch = ({
     }
   };
 
-  const fetchReturnFlights = async () => {
-    try {
-      setFlights(null);
-      const [fromId, toId] = await Promise.all([
-        fetchLocation(from),
-        fetchLocation(to),
-      ]);
-
-      if (fromId && toId) {
-        setFromId(fromId);
-        setToId(toId);
-        try {
-          const response = await fetch(url, options);
-          const result = await response.text();
-          console.log(result);
-        } catch (error) {
-          console.error(error);
-        }
-        const url = `https://skyscanner80.p.rapidapi.com/api/v1/flights/search-roundtrip?fromId=${fromId}&toId=${toId}&departDate=${departDate}&returnDate=${returnDate}&adults=1&cabinClass=economy&currency=USD&market=US&locale=en-US`;
-        const options = {
-          method: "GET",
-          headers: {
-            "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
-            "X-RapidAPI-Host": "skyscanner80.p.rapidapi.com",
-          },
-        };
-
-        const response = await fetch(url, options);
-        const result = await response.json();
-        setFlights(result.data);
-        console.log(result);
-      } else {
-        console.error("Failed to fetch location IDs");
-      }
-    } catch (error) {
-      console.error(error);
-    }
-  };
 
   useEffect(() => {
     const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
