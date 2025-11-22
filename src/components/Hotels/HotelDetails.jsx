@@ -85,7 +85,7 @@ const HotelDetails = () => {
     const options = {
       method: "GET",
       headers: {
-        "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
+        "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key2,
         "X-RapidAPI-Host": "skyscanner80.p.rapidapi.com",
       },
     };
@@ -106,11 +106,11 @@ const HotelDetails = () => {
     }
   };
 
-    // useEffect(() => {
-    //   if (id) {
-    //     fetchHotelDetails();
-    //   }
-    // }, [id]);
+  // useEffect(() => {
+  //   if (id) {
+  //     fetchHotelDetails();
+  //   }
+  // }, [id]);
 
   if (hotelDetails && images) {
     return (

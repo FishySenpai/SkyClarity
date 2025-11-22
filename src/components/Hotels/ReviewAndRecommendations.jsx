@@ -3,7 +3,7 @@ import Reviews from "./reviews.json";
 import similarHotels from "./similarHotels.json";
 import { Link, useParams } from "react-router-dom";
 const ReviewAndRecommendations = () => {
-    const { id, price } = useParams();
+  const { id, price } = useParams();
   const [reviews, setReviews] = useState(Reviews);
   const [recommendations, setRecommendations] = useState(similarHotels);
   const [show, setShow] = useState(false);
@@ -12,7 +12,7 @@ const ReviewAndRecommendations = () => {
   const [showLeftArrow, setShowLeftArrow] = useState(false);
   const [showRightArrow, setShowRightArrow] = useState(false);
   useEffect(() => {
-    if(reviews&& recommendations){
+    if (reviews && recommendations) {
       const container = scrollContainerRef.current;
       function handleScroll() {
         if (container) {
@@ -38,7 +38,7 @@ const ReviewAndRecommendations = () => {
     const options = {
       method: "GET",
       headers: {
-        "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
+        "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key2,
         "x-rapidapi-host": "skyscanner80.p.rapidapi.com",
       },
     };
@@ -64,7 +64,7 @@ const ReviewAndRecommendations = () => {
     const options = {
       method: "GET",
       headers: {
-        "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
+        "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key2,
         "x-rapidapi-host": "skyscanner80.p.rapidapi.com",
       },
     };
@@ -98,33 +98,32 @@ const ReviewAndRecommendations = () => {
     }
   };
 
-const elementsToScroll = 2; // Number of elements to scroll
+  const elementsToScroll = 2; // Number of elements to scroll
 
-const scrollLeft = () => {
-  const container = scrollContainerRef.current;
-  const cardWidth = getCardWidth(); // Get the current card width based on window size
-  const scrollAmount = cardWidth * elementsToScroll; // Calculate the scroll amount based on the number of elements
-  const newScrollPosition = Math.max(0, scrollPosition - scrollAmount);
-  setScrollPosition(newScrollPosition);
-  if (container) {
-    container.scroll({ left: newScrollPosition, behavior: "smooth" });
-  }
-};
+  const scrollLeft = () => {
+    const container = scrollContainerRef.current;
+    const cardWidth = getCardWidth(); // Get the current card width based on window size
+    const scrollAmount = cardWidth * elementsToScroll; // Calculate the scroll amount based on the number of elements
+    const newScrollPosition = Math.max(0, scrollPosition - scrollAmount);
+    setScrollPosition(newScrollPosition);
+    if (container) {
+      container.scroll({ left: newScrollPosition, behavior: "smooth" });
+    }
+  };
 
-const scrollRight = () => {
-  const container = scrollContainerRef.current;
-  const cardWidth = getCardWidth(); // Get the current card width based on window size
-  const scrollAmount = cardWidth * elementsToScroll; // Calculate the scroll amount based on the number of elements
-  const newScrollPosition = Math.min(
-    container.scrollWidth - container.clientWidth,
-    scrollPosition + scrollAmount
-  );
-  setScrollPosition(newScrollPosition);
-  if (container) {
-    container.scroll({ left: newScrollPosition, behavior: "smooth" });
-  }
-};
-
+  const scrollRight = () => {
+    const container = scrollContainerRef.current;
+    const cardWidth = getCardWidth(); // Get the current card width based on window size
+    const scrollAmount = cardWidth * elementsToScroll; // Calculate the scroll amount based on the number of elements
+    const newScrollPosition = Math.min(
+      container.scrollWidth - container.clientWidth,
+      scrollPosition + scrollAmount
+    );
+    setScrollPosition(newScrollPosition);
+    if (container) {
+      container.scroll({ left: newScrollPosition, behavior: "smooth" });
+    }
+  };
 
   if (reviews && recommendations) {
     return (
@@ -195,7 +194,9 @@ const scrollRight = () => {
               {recommendations.data.map((hotel, index) => {
                 return (
                   <Link
-                    to={`/hotels/hotel/${hotel.hotelId}/$${(hotel.rawPrice / 83.58).toFixed(0)}`}
+                    to={`/hotels/hotel/${hotel.hotelId}/$${(
+                      hotel.rawPrice / 83.58
+                    ).toFixed(0)}`}
                   >
                     <div className="mx-auto  bg-white shadow-lg rounded-lg overflow-hidden min-w-[330px] 1lg:min-w-[350px] ">
                       <div className=" flex flex-col ">

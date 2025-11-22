@@ -6,46 +6,146 @@ import warning from "./Assets/warning.png";
 import ReturnFlightDetails from "./ReturnFlightDetails";
 import loading from "../Assets/loading.gif";
 import { useParams } from "react-router-dom";
+
 const FlightDetails = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [flightDetails, setFlightDetails] = useState();
-  const { id, token } = useParams();
+  const [error, setError] = useState(null);
+  const { sessionId, id, selected, fromId, toId, departdate, returndate } =
+    useParams();
   const modalRef = useRef(null);
+
   useOutsideClick(modalRef, () => {
     console.log("test");
     setIsModalOpen(false);
   });
+
   const FetchFlightDetails = async () => {
-    const url = `https://skyscanner80.p.rapidapi.com/api/v1/flights/detail?itineraryId=${id}&token=${token}&currency=USD&market=US&locale=en-US`;
+    // Validate parameters
+    if (!id || !sessionId) {
+      console.error("Missing required parameters:", { id, sessionId });
+      setError("Missing flight information");
+      return;
+    }
+
+    console.log("Fetching flight details with:", {
+      itineraryId: id,
+      sessionId: sessionId,
+      fromId,
+      toId,
+      departdate,
+      returndate,
+      selected,
+    });
+
+    // Build flights array based on trip type
+    const flights = [];
+
+    if (
+      selected === "round-trip" &&
+      fromId &&
+      toId &&
+      departdate &&
+      returndate
+    ) {
+      flights.push({
+        originIata: fromId,
+        destinationIata: toId,
+        departDate: departdate,
+      });
+      flights.push({
+        originIata: toId,
+        destinationIata: fromId,
+        departDate: returndate,
+      });
+    } else if (selected === "one-way" && fromId && toId && departdate) {
+      flights.push({
+        originIata: fromId,
+        destinationIata: toId,
+        departDate: departdate,
+      });
+    } else {
+      console.error("Missing flight route parameters");
+      setError("Missing flight route information");
+      return;
+    }
+
+    const url = "https://blue-scraper.p.rapidapi.com/flights/search-detail";
+    const requestBody = {
+      itineraryId: id,
+      sessionId: sessionId,
+      market: "US",
+      locale: "en-US",
+      currency: "USD",
+      adults: 1,
+      cabinClass: "economy",
+      flights: flights,
+    };
+
+    console.log("Request body:", requestBody);
+
     const options = {
-      method: "GET",
+      method: "POST",
       headers: {
-        "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
-        "x-rapidapi-host": "skyscanner80.p.rapidapi.com",
+        "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key2,
+        "x-rapidapi-host": "blue-scraper.p.rapidapi.com",
+        "Content-Type": "application/json",
       },
+      body: JSON.stringify(requestBody),
     };
 
     try {
       const response = await fetch(url, options);
       const result = await response.json();
-      setFlightDetails(result);
-      console.log(result);
+      console.log("Flight details response status:", response.status);
+      console.log("Flight details result:", result);
+
+      if (response.status === 500) {
+        console.error("Server error:", result);
+        setError(
+          "The flight details service is currently unavailable. Please try again later."
+        );
+        return;
+      }
+
+      if (result.status && result.data) {
+        setFlightDetails(result.data);
+        console.log("Flight details set successfully", flightDetails);
+        setError(null);
+      } else {
+        console.error("Invalid flight details response:", result);
+        setError(
+          result.message ||
+            "Unable to load flight details. The session may have expired."
+        );
+      }
     } catch (error) {
-      console.error(error);
+      console.error("Error fetching flight details:", error);
+      setError("Network error. Please check your connection and try again.");
     }
   };
+
   useEffect(() => {
-    console.log("test")
-    if (id && token) {
+    console.log("Parameters:", {
+      id,
+      sessionId,
+      selected,
+      fromId,
+      toId,
+      departdate,
+      returndate,
+    });
+    if (id && sessionId) {
       FetchFlightDetails();
     }
-  }, [id, token]);
+  }, [id, sessionId]);
 
   function formatDuration(durationInMinutes) {
     const hours = Math.floor(durationInMinutes / 60);
     const minutes = durationInMinutes % 60;
     return `${hours}h${minutes}m`;
   }
+
   const formatDate = (dateString) => {
     const date = new Date(dateString);
 
@@ -74,6 +174,50 @@ const FlightDetails = () => {
 
     return `${dayOfWeek}, ${month} ${day}, ${year}`;
   };
+
+  // Show error state
+  if (error) {
+    return (
+      <div className="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+        <div className="bg-white rounded-lg shadow-lg p-8 max-w-md w-full text-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-16 w-16 text-red-500 mx-auto mb-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+            />
+          </svg>
+          <h2 className="text-2xl font-bold text-gray-800 mb-2">
+            Unable to Load Flight Details
+          </h2>
+          <p className="text-gray-600 mb-6">{error}</p>
+          <button
+            onClick={() => window.history.back()}
+            className="bg-gray-900 text-white px-6 py-2 rounded-md font-semibold hover:bg-gray-800 transition"
+          >
+            Go Back
+          </button>
+          <button
+            onClick={() => {
+              setError(null);
+              FetchFlightDetails();
+            }}
+            className="ml-3 bg-blue-600 text-white px-6 py-2 rounded-md font-semibold hover:bg-blue-700 transition"
+          >
+            Try Again
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   if (flightDetails) {
     return (
       <div className="bg-gray-100 text-gray-700">
@@ -81,9 +225,13 @@ const FlightDetails = () => {
           <div className=" mx-auto flex justify-center items-center h-[180px]">
             <div className="text-center">
               <h1 className="text-2xl">
-                {flightDetails?.data.itinerary.legs[0].destination.city}
+                {flightDetails?.itinerary?.legs?.[0]?.destination?.city ||
+                  "Destination"}
               </h1>
-              <p>1 adult • One way • Economy class</p>
+              <p>
+                1 adult • {selected === "round-trip" ? "Round trip" : "One way"}{" "}
+                • Economy class
+              </p>
             </div>
           </div>
         </header>
@@ -92,22 +240,27 @@ const FlightDetails = () => {
           <div className="p-4 w-full 1md:w-[600px] ">
             <h2 className="mb-2 text-lg font-semibold">Book your ticket</h2>
             <ul className="">
-              {flightDetails?.data.itinerary.pricingOptions
-                .slice(0, 6)
-                .map((option) => (
+              {flightDetails?.itinerary?.pricingOptions
+                ?.slice(0, 6)
+                .map((option, index) => (
                   <li
-                    key={option.agents[0].name}
+                    key={option?.agents?.[0]?.name || index}
                     className="flex justify-between items-center mb-4 p-2 border"
                   >
                     <div className="space-y-2">
-                      <p className="font-semibold">{option.agents[0].name}</p>
+                      <p className="font-semibold">
+                        {option?.agents?.[0]?.name || "Booking Agent"}
+                      </p>
 
                       <div className="flex space-x-2">
                         <p className="flex">
-                          {Array(Math.round(option.agents[0].rating.value))
+                          {Array(
+                            Math.round(option?.agents?.[0]?.rating?.value || 0)
+                          )
                             .fill(0)
                             .map((_, index) => (
                               <svg
+                                key={index}
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 576 512"
                                 height="20"
@@ -121,13 +274,16 @@ const FlightDetails = () => {
                             ))}
                         </p>
                         <p className="text-gray-500 text-[14px] ">
-                          {option.agents[0].rating.count} reviews
+                          {option?.agents?.[0]?.rating?.count || 0} reviews
                         </p>
                       </div>
                     </div>
                     <div className="flex space-x-5">
                       <p className="font-bold text-lg mt-1">
-                        ${option.totalPrice.toFixed(0)}
+                        $
+                        {option?.price?.raw?.toFixed(0) ||
+                          option?.totalPrice?.toFixed(0) ||
+                          0}
                       </p>
                       <button
                         className="bg-gray-900 text-white p-2 px-4 rounded-md font-semibold"
@@ -139,7 +295,9 @@ const FlightDetails = () => {
                       </button>
                     </div>
                   </li>
-                ))}
+                )) || (
+                <li className="text-gray-500">No pricing options available</li>
+              )}
             </ul>
           </div>
           <div className="lg:ml-8 w-full lg:w-fit">
@@ -149,23 +307,32 @@ const FlightDetails = () => {
                 <p className="font-bold">
                   Departure:
                   <span className="font-normal pl-1">
-                    {formatDate(flightDetails.data.itinerary.legs[0].departure)}
+                    {formatDate(
+                      flightDetails?.itinerary?.legs?.[0]?.departure ||
+                        new Date()
+                    )}
                   </span>
                 </p>
                 <div className="flex flex-row bg-white py-3">
                   <div className="flex flex-row  ">
                     <img
                       className="h-[30px] w-[60px] "
-                      src={`https://www.skyscanner.net/images/airlines/small/${flightDetails.data.itinerary.legs[0].segments[0].marketingCarrier.displayCode}.png
-                    
-                  `}
-                      alt=""
+                      src={
+                        flightDetails?.itinerary?.legs?.[0]?.segments?.[0]
+                          ?.operatingCarrier?.logo ||
+                        flightDetails?.itinerary?.legs?.[0]?.segments?.[0]
+                          ?.marketingCarrier?.logo ||
+                        `https://www.skyscanner.net/images/airlines/small/${flightDetails?.itinerary?.legs?.[0]?.segments?.[0]?.marketingCarrier?.alternateId}.png`
+                      }
+                      alt="Airline logo"
+                      onError={(e) => (e.target.style.display = "none")}
                     />
                   </div>
                   <div className="pl-6 pr-2">
                     <div className="text-lg font-semibold">
                       {new Date(
-                        flightDetails.data.itinerary.legs[0].departure
+                        flightDetails?.itinerary?.legs?.[0]?.departure ||
+                          new Date()
                       ).toLocaleTimeString([], {
                         hour: "numeric",
                         minute: "2-digit",
@@ -173,8 +340,8 @@ const FlightDetails = () => {
                       })}
                     </div>
                     <div>
-                      {" "}
-                      {flightDetails.data.itinerary.legs[0].origin.displayCode}
+                      {flightDetails?.itinerary?.legs?.[0]?.origin
+                        ?.displayCode || ""}
                     </div>
                   </div>
 
@@ -182,7 +349,8 @@ const FlightDetails = () => {
                     <div className="flex flex-col">
                       <div className="flex flex-row text-[12px] justify-center ">
                         {formatDuration(
-                          flightDetails?.data.itinerary.legs[0].duration
+                          flightDetails?.itinerary?.legs?.[0]
+                            ?.durationInMinutes || 0
                         )}
                       </div>
                       <div className="flex flex-row">
@@ -199,8 +367,10 @@ const FlightDetails = () => {
                         </div>
                         -----
                         <div className="text-red-400 text-sm bg-gray-200 rounded px-1">
-                          {flightDetails?.data.itinerary.legs[0].stopCount}{" "}
-                          stops
+                          {flightDetails?.itinerary?.legs?.[0]?.stopCount || 0}{" "}
+                          {flightDetails?.itinerary?.legs?.[0]?.stopCount === 1
+                            ? "stop"
+                            : "stops"}
                         </div>
                         -----
                         <div className="w-2 h-2 mt-[9px]">
@@ -218,9 +388,9 @@ const FlightDetails = () => {
                     </div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      xml:space="preserve"
+                      xmlSpace="preserve"
                       viewBox="0 0 12 12"
-                      class="h-5 w-5 mt-[20px]"
+                      className="h-5 w-5 mt-[20px]"
                     >
                       <path
                         fill="#898294"
@@ -231,7 +401,8 @@ const FlightDetails = () => {
                   <div className="flex flex-col pl-3">
                     <div className=" text-lg font-semibold">
                       {new Date(
-                        flightDetails.data.itinerary.legs[0].arrival
+                        flightDetails?.itinerary?.legs?.[0]?.arrival ||
+                          new Date()
                       ).toLocaleTimeString([], {
                         hour: "numeric",
                         minute: "2-digit",
@@ -239,27 +410,31 @@ const FlightDetails = () => {
                       })}
                     </div>
                     <div>
-                      {
-                        flightDetails.data.itinerary.legs[0].destination
-                          .displayCode
-                      }
+                      {flightDetails?.itinerary?.legs?.[0]?.destination
+                        ?.displayCode || ""}
                     </div>
                   </div>
                 </div>
                 <div className="border p-2 mb-2 flex flex-col space-y-6">
-                  {flightDetails.data.itinerary.legs[0].segments.map(
+                  {flightDetails?.itinerary?.legs?.[0]?.segments?.map(
                     (segment, index) => {
                       return (
-                        <>
+                        <React.Fragment key={segment?.id || index}>
                           <div className="flex flex-row items-start ">
                             <p className="text-gray-500 pt-14 text-sm ml-5">
-                              {formatDuration(segment.duration)}
+                              {formatDuration(segment?.durationInMinutes || 0)}
                             </p>
                             <div className="flex flex-col items-center mt-0.5">
                               <img
-                                src={segment.operatingCarrier.logo}
+                                src={
+                                  segment?.operatingCarrier?.logo ||
+                                  segment?.marketingCarrier?.logo
+                                }
                                 alt=""
                                 className="h-6 w-6"
+                                onError={(e) =>
+                                  (e.target.style.display = "none")
+                                }
                               />
 
                               <div className="relative ">
@@ -290,76 +465,83 @@ const FlightDetails = () => {
                             </div>
                             <div className="flex flex-col space-y-3 ">
                               <p className="font-bold pl-3">
-                                {segment.operatingCarrier.name}{" "}
-                                {segment.flightNumber}
+                                {segment?.operatingCarrier?.name ||
+                                  segment?.marketingCarrier?.name}{" "}
+                                {segment?.flightNumber || ""}
                               </p>
                               <p className="pl-3">
-                                {new Date(segment.departure).toLocaleTimeString(
-                                  [],
-                                  {
-                                    hour: "numeric",
-                                    minute: "2-digit",
-                                    hour12: true,
-                                  }
-                                )}{" "}
-                                {segment.origin.displayCode}{" "}
-                                {segment.origin.city}
+                                {new Date(
+                                  segment?.departure || new Date()
+                                ).toLocaleTimeString([], {
+                                  hour: "numeric",
+                                  minute: "2-digit",
+                                  hour12: true,
+                                })}{" "}
+                                {segment?.origin?.displayCode}{" "}
+                                {segment?.origin?.city}
                               </p>
                               <p className="pl-3">
-                                {new Date(segment.arrival).toLocaleTimeString(
-                                  [],
-                                  {
-                                    hour: "numeric",
-                                    minute: "2-digit",
-                                    hour12: true,
-                                  }
-                                )}{" "}
-                                {segment.destination.displayCode}{" "}
-                                {segment.destination.city}
+                                {new Date(
+                                  segment?.arrival || new Date()
+                                ).toLocaleTimeString([], {
+                                  hour: "numeric",
+                                  minute: "2-digit",
+                                  hour12: true,
+                                })}{" "}
+                                {segment?.destination?.displayCode}{" "}
+                                {segment?.destination?.city}
                               </p>
                             </div>
                           </div>
-                          {index === 0 ? (
+                          {index <
+                            (flightDetails?.itinerary?.legs?.[0]?.segments
+                              ?.length || 0) -
+                              1 && (
                             <div className=" bg-red-100 px-5 py-2 rounded-md text-[#e70866] font-semibold text-center">
-                              {formatDuration(
-                                flightDetails?.data.itinerary.legs[0].duration
-                              )}
-                              <span className="pl-7 ">Connect in aiport</span>
+                              Layover
+                              <span className="pl-7 ">Connect in airport</span>
                             </div>
-                          ) : (
-                            ""
                           )}
-                        </>
+                        </React.Fragment>
                       );
                     }
+                  ) || (
+                    <p className="text-gray-500">
+                      No segment details available
+                    </p>
                   )}
                   <div className="flex text-[13px]">
                     <p>
                       <span className="font-bold text-gray-800 pr-1">
                         Arrival Time:
                       </span>
-                      {formatDate(flightDetails.data.itinerary.legs[0].arrival)}
+                      {formatDate(
+                        flightDetails?.itinerary?.legs?.[0]?.arrival ||
+                          new Date()
+                      )}
                     </p>
                     <p>
                       <span className="font-bold text-gray-800 pl-3 pr-1">
                         Journey duration:
                       </span>
                       {formatDuration(
-                        flightDetails.data.itinerary.legs[0].duration
+                        flightDetails?.itinerary?.legs?.[0]
+                          ?.durationInMinutes || 0
                       )}{" "}
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            {flightDetails?.data.itinerary.legs[1] ? (
+            {flightDetails?.itinerary?.legs?.[1] ? (
               <ReturnFlightDetails flightDetails={flightDetails} />
             ) : (
               ""
             )}
             <CompleteYourTrip
               destination={
-                flightDetails?.data.itinerary.legs[0].destination.city
+                flightDetails?.itinerary?.legs?.[0]?.destination?.city ||
+                "your destination"
               }
             />
           </div>

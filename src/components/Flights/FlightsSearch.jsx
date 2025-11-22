@@ -71,22 +71,48 @@ const FlightsSearch = ({
     }
   };
   const fetchLocation = async (location) => {
-    const url = `https://sky-scanner3.p.rapidapi.com/flights/auto-complete?query=${location}`;
+    // Updated API endpoint to use autocomplete
+    const url = `https://blue-scraper.p.rapidapi.com/flights/autocomplete?query=${encodeURIComponent(
+      location
+    )}`;
     const options = {
       method: "GET",
       headers: {
-        "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
-        "x-rapidapi-host": "sky-scanner3.p.rapidapi.com",
+        "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key2,
+        "x-rapidapi-host": "blue-scraper.p.rapidapi.com",
       },
     };
 
     try {
       const response = await fetch(url, options);
       const result = await response.json();
-      console.log(result);
-      return result.data[0].presentation.id;
+      console.log("Autocomplete search result:", result);
+
+      // Check the response structure
+      if (result.status && result.data && result.data.length > 0) {
+        const location = result.data[0];
+
+        // Check for skyId first, then fall back to entityId or other identifiers
+        const locationId =
+          location.skyId || location.entityId || location.navigation?.entityId;
+
+        if (!locationId) {
+          console.error("No skyId or entityId found for location:", location);
+          return null;
+        }
+
+        console.log(
+          `Selected location: ${
+            location.presentation?.title || location.name
+          }, ID: ${locationId}`
+        );
+        return locationId;
+      }
+
+      console.error("No locations found for:", location);
+      return null;
     } catch (error) {
-      console.error(error);
+      console.error("Error fetching location:", error);
       return null;
     }
   };
@@ -102,7 +128,7 @@ const FlightsSearch = ({
     const toId = await fetchLocation(toLocation);
     const selected = selectedOption;
     if (fromId && toId) {
-      setIsLoading(false)
+      setIsLoading(false);
       navigate(
         `/flights/${selected}/${fromLocation}/${fromId}/${toLocation}/${toId}/${departdate}/${returndate}`
       );
@@ -110,7 +136,6 @@ const FlightsSearch = ({
       console.error("Failed to fetch location IDs");
     }
   };
-
 
   useEffect(() => {
     const dateRegex = /^\d{4}-\d{2}-\d{2}$/;

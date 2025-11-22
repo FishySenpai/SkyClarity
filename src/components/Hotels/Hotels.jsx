@@ -32,7 +32,7 @@ const Hotels = () => {
     const options = {
       method: "GET",
       headers: {
-        "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
+        "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key2,
         "x-rapidapi-host": "skyscanner80.p.rapidapi.com",
       },
     };
@@ -147,7 +147,7 @@ const Hotels = () => {
           return priceB - priceA;
         });
       } else if (filterTag === "Recommended") {
-       return hotelsData?.hotels;
+        return hotelsData?.hotels;
       }
       return sortedHotels;
     };

@@ -66,7 +66,10 @@ function App() {
           element={<CarInfo />}
         />
         <Route path="/hotels/hotel/:id/:price" element={<HotelDetails />} />
-        <Route path="/flights/:token/:id" element={<FlightDetails />} />
+        <Route
+          path="/flight-details/:selected/:sessionId/:id/:fromId/:toId/:departdate/:returndate"
+          element={<FlightDetails />}
+        />
         <Route
           path="/flights/:selected/:fromLocation/:fromId/:toLocation/:toId/:departdate/:returndate"
           element={<Flights />}

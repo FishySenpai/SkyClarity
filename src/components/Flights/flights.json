@@ -1,5 +1,6 @@
-
 {
+  "status": true,
+  "data": {
     "context": {
       "status": "incomplete",
       "sessionId": "KLUv_SCNxQMA0ggdHLDrYEnBh1ruDknSonDUnwoZ2ZKk-RQ6dIsiWBYPFCCWwwb67pz82v6tHzlqM_K1Wm9-tpyuC1MKwIBal20cMbkfQ8mM--t7pPRRH7V5pUa5y_JtcgQEU78S9vKTXav5rVbsqO-bqJRX0H2XZHCGqAAEaQgA",
@@ -2074,5 +2075,6 @@
     },
     "flightsSessionId": "05dd3cdb-46e1-4a4f-ae9c-d89e0a375eb8",
     "destinationImageUrl": "https://content.skyscnr.com/m/3719e8f4a5daf43d/original/Flights-Placeholder.jpg"
-
+  },
+  "message": "Success"
 }

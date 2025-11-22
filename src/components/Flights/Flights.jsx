@@ -59,13 +59,19 @@ const Flights = () => {
       .filter((flight) => {
         // Filter by stop count
         if (filters === "direct") {
-          return (
-            flight.legs[0].stopCount === 0 && flight.legs[1].stopCount === 0
-          );
+          // Check if it's a round-trip (2 legs) or one-way (1 leg)
+          if (selected === "round-trip" && flight.legs?.length === 2) {
+            return (
+              flight.legs[0]?.stopCount === 0 && flight.legs[1]?.stopCount === 0
+            );
+          } else if (selected === "one-way" && flight.legs?.length === 1) {
+            return flight.legs[0]?.stopCount === 0;
+          }
+          return false;
         } else if (filters === "1stop") {
-          return flight.legs[0].stopCount === 1;
+          return flight.legs[0]?.stopCount === 1;
         } else if (filters === "2stops") {
-          return flight.legs[0].stopCount === 2;
+          return flight.legs[0]?.stopCount >= 2;
         }
         return true; // Show all flights if no stop count filter is applied
       })
@@ -233,6 +239,7 @@ const Flights = () => {
     maxCurrentDuration,
     airline,
   ]);
+
   const fetchReturnFlights = async () => {
     if (
       isValidParam(fromId) &&
@@ -240,29 +247,39 @@ const Flights = () => {
       isValidParam(departdate) &&
       isValidParam(returndate)
     ) {
-      const url = `https://sky-scanner3.p.rapidapi.com/flights/search-roundtrip?fromEntityId=${fromId}&toEntityId=${toId}&departDate=${departdate}&returnDate=${returndate}`;
+      console.log("Fetching round-trip flights:", {
+        fromId,
+        toId,
+        departdate,
+        returndate,
+      });
+
+      const url = `https://blue-scraper.p.rapidapi.com/flights/search-roundtrip?originSkyId=${fromId}&destinationSkyId=${toId}&departureDate=${departdate}&returnDate=${returndate}`;
       const options = {
         method: "GET",
         headers: {
-          "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
-          "x-rapidapi-host": "sky-scanner3.p.rapidapi.com",
+          "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key2,
+          "x-rapidapi-host": "blue-scraper.p.rapidapi.com",
         },
       };
+
       try {
         const response = await fetch(url, options);
-        if (!response.ok) {
-          throw new Error(`Error: ${response.status} ${response.statusText}`);
-        }
         const result = await response.json();
-        setFlights(result.data);
-        console.log(result);
+        console.log("Flight search result:", result);
+
+        // Check if the API returned valid data
+        if (result.status && result.data) {
+          // Pass the entire data object to preserve filterStats, context, etc.
+          setFlights(result.data);
+        } else {
+          console.error("Invalid API response:", result);
+          setFlights({ itineraries: [], filterStats: {}, token: "" });
+        }
       } catch (error) {
-        console.error("Error fetching round-trip flights:", error);
+        console.error("Error fetching flights:", error);
+        setFlights({ itineraries: [], filterStats: {}, token: "" });
       }
-    } else {
-      console.error(
-        "Invalid parameters: fromId, toId, departDate, or returnDate"
-      );
     }
   };
 
@@ -272,27 +289,33 @@ const Flights = () => {
       isValidParam(toId) &&
       isValidParam(departdate)
     ) {
-      const url = `https://sky-scanner3.p.rapidapi.com/flights/search-one-way?fromEntityId=${fromId}&toEntityId=${toId}&departDate=${departdate}`;
+      console.log("Fetching one-way flights:", { fromId, toId, departdate });
+
+      const url = `https://blue-scraper.p.rapidapi.com/flights/search-one-way?originSkyId=${fromId}&destinationSkyId=${toId}&departureDate=${departdate}`;
       const options = {
         method: "GET",
         headers: {
-          "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key,
-          "x-rapidapi-host": "sky-scanner3.p.rapidapi.com",
+          "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key2,
+          "x-rapidapi-host": "blue-scraper.p.rapidapi.com",
         },
       };
+
       try {
         const response = await fetch(url, options);
-        if (!response.ok) {
-          throw new Error(`Error: ${response.status} ${response.statusText}`);
-        }
         const result = await response.json();
-        setFlights(result.data);
-        console.log(result);
+        console.log("One-way flight result:", result);
+
+        if (result.status && result.data) {
+          // Pass the entire data object to preserve filterStats, context, etc.
+          setFlights(result.data);
+        } else {
+          console.error("Invalid API response:", result);
+          setFlights({ itineraries: [], filterStats: {}, token: "" });
+        }
       } catch (error) {
         console.error("Error fetching one-way flights:", error);
+        setFlights({ itineraries: [], filterStats: {}, token: "" });
       }
-    } else {
-      console.error("Invalid parameters: fromId, toId, or departDate");
     }
   };
 
@@ -665,7 +688,9 @@ const Flights = () => {
                       <div className="text-lg font-semibold  mt-3 ">
                         US {flight.price.formatted}
                       </div>
-                      <Link to={`/flights/${flights?.token}/${flight.id}`}>
+                      <Link
+                        to={`/flight-details/${selected}/${flights?.context.sessionId}/${flight.id}/${fromId}/${toId}/${departdate}/${returndate}`}
+                      >
                         <button className="px-5 py-2 rounded bg-gray-800 text-white mt-1 font-semibold flex flex-row">
                           Select
                           <svg
