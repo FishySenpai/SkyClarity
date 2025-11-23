@@ -35,29 +35,39 @@ const HotelsSearch = ({ home }) => {
   const handleFetchHotels = async () => {
     await fetchLocation(location);
   };
-  const fetchLocation = async (location) => {
-    const url = `https://skyscanner80.p.rapidapi.com/api/v1/flights/auto-complete?query=${location}&market=US&locale=en-US`;
-    const options = {
-      method: "GET",
-      headers: {
-        "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key2,
-        "X-RapidAPI-Host": "skyscanner80.p.rapidapi.com",
-      },
-    };
+const fetchLocation = async (location) => {
+  // If we already have locationId from selection, use it
+  if (locationId) {
+    return locationId;
+  }
 
-    try {
-      const response = await fetch(url, options);
-      const result = await response.json();
-      console.log(result);
-      if (result.data && result.data.length > 0) {
-        return result.data[0].navigation.entityId;
-      } else {
-        throw new Error("No location ID found");
-      }
-    } catch (error) {
-      console.error(error);
-    }
+  const url = `https://blue-scraper.p.rapidapi.com/hotels/autocomplete?query=${encodeURIComponent(
+    location
+  )}`;
+  const options = {
+    method: "GET",
+    headers: {
+      "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key2,
+      "x-rapidapi-host": "blue-scraper.p.rapidapi.com",
+    },
   };
+
+  try {
+    const response = await fetch(url, options);
+    const result = await response.json();
+    console.log("Fetch location result:", result);
+
+    if (result.status && result.data && result.data.length > 0) {
+      return result.data[0].entityId;
+    } else {
+      throw new Error("No location ID found");
+    }
+  } catch (error) {
+    console.error(error);
+    return null;
+  }
+};
+
 
   const fetchHotels = async (id) => {
     const url = `https://skyscanner80.p.rapidapi.com/api/v1/hotels/search?entityId=${id}&checkin=${checkInDate}&checkout=${checkOutDate}&rooms=1&adults=1&resultsPerPage=15&page=1&priceType=PRICE_PER_NIGHT&sorting=-relevance&currency=USD&market=US&locale=en-US`;
