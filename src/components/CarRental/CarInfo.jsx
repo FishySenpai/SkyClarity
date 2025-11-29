@@ -21,7 +21,8 @@ const CarInfo = () => {
   const [classFilter, setClassFilter] = useState([]);
   const [featuresFilter, setFeaturesFilter] = useState([]);
   const [vendorsFilter, setVendorsFilter] = useState([]);
-  const { pickUp, pickUpId, pickDate, dropDate } = useParams();
+  const { pickUp, pickUpId, pickDate, pickTime, dropDate, dropTime } =
+    useParams();
   const [showFilter, setShowFilter] = useState(false);
   const [dropOffCheck, setDropOffCheck] = useState(false);
   const [filterTag, setFilterTag] = useState("Recommended");
@@ -38,39 +39,63 @@ const CarInfo = () => {
   const fetchCars = async () => {
     try {
       setCarsInfo(null);
-      if (isValidParam(pickUpId) && isValidParam(pickDate)) {
-        const url = `https://skyscanner80.p.rapidapi.com/api/v1/cars/search-cars?pickUpEntityId=${pickUpId}&pickUpDate=${pickDate}&pickUpTime=10%3A00&currency=USD&market=US&locale=en-US`;
+      if (
+        isValidParam(pickUpId) &&
+        isValidParam(pickDate) &&
+        isValidParam(pickTime) &&
+        isValidParam(dropDate) &&
+        isValidParam(dropTime)
+      ) {
+        // Ensure times are URL encoded (: becomes %3A)
+        const encodedPickTime = pickTime.includes("%3A")
+          ? pickTime
+          : pickTime.replace(":", "%3A");
+        const encodedDropTime = dropTime.includes("%3A")
+          ? dropTime
+          : dropTime.replace(":", "%3A");
+
+        const url = `https://blue-scraper.p.rapidapi.com/cars/search?pickUpEntityId=${pickUpId}&pickUpDate=${pickDate}&pickUpTime=${encodedPickTime}&dropOffDate=${dropDate}&dropOffTime=${encodedDropTime}&currency=USD&market=US&locale=en-US`;
+
         const options = {
           method: "GET",
           headers: {
             "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key2,
-            "X-RapidAPI-Host": "skyscanner80.p.rapidapi.com",
+            "x-rapidapi-host": "blue-scraper.p.rapidapi.com",
           },
         };
 
-        try {
-          const response = await fetch(url, options);
-          const result = await response.json();
+        const response = await fetch(url, options);
+        const result = await response.json();
+
+        console.log("Cars API Response:", result);
+
+        if (result.status && result.data) {
           setCarsInfo(result);
-          console.log(result);
-        } catch (error) {
-          console.error(error);
+        } else {
+          console.error("Invalid API response:", result);
+          setCarsInfo(null);
         }
       } else {
-        console.error(
-          "Invalid parameters: fromId, toId, departDate, or returnDate"
-        );
+        console.error("Invalid parameters: missing pickUpId, dates, or times");
+        setCarsInfo(null);
       }
     } catch (error) {
-      console.error(error);
+      console.error("Error fetching cars:", error);
+      setCarsInfo(null);
     }
   };
 
   useEffect(() => {
-    if (isValidParam(pickUpId) && isValidParam(pickDate)) {
+    if (
+      isValidParam(pickUpId) &&
+      isValidParam(pickDate) &&
+      isValidParam(pickTime) &&
+      isValidParam(dropDate) &&
+      isValidParam(dropTime)
+    ) {
       fetchCars();
     }
-  }, [pickUpId, pickDate]);
+  }, [pickUpId, pickDate, pickTime, dropDate, dropTime]);
   useEffect(() => {
     console.log(carsInfo);
 

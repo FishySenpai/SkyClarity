@@ -62,7 +62,7 @@ function App() {
           }
         />
         <Route
-          path="/carhire/search/:pickUp/:pickUpId/:pickDate/:dropDate"
+          path="/carhire/search/:pickUp/:pickUpId/:pickDate/:pickTime/:dropDate/:dropTime"
           element={<CarInfo />}
         />
         <Route path="/hotels/hotel/:id/:price" element={<HotelDetails />} />

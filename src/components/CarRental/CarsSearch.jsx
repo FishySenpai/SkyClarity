@@ -29,12 +29,12 @@ const CarsSearch = ({ dropOffCheck, setDropOffCheck }) => {
 
   const navigate = useNavigate();
   const fetchLocation = async (location) => {
-    const url = `https://sky-scanner3.p.rapidapi.com/cars/auto-complete?query=${location}`;
+    const url = `https://blue-scraper.p.rapidapi.com/cars/autocomplete?query=${location}`;
     const options = {
       method: "GET",
       headers: {
         "x-rapidapi-key": import.meta.env.VITE_X_RapidAPI_Key2,
-        "X-RapidAPI-Host": "sky-scanner3.p.rapidapi.com",
+        "X-RapidAPI-Host": "blue-scraper.p.rapidapi.com",
       },
     };
 
@@ -49,23 +49,30 @@ const CarsSearch = ({ dropOffCheck, setDropOffCheck }) => {
     }
   };
 
-  const handleSearch = async () => {
-    setIsLoading(true);
-    const pickUp = pickUpLocation; // Replace with actual input value
-    const dropOff = dropOffLocation; // Replace with actual input value
-    const pickDate = pickUpDate; // Replace with actual input value
-    const dropDate = dropOffDate; // Replace with actual input value
+const handleSearch = async () => {
+  setIsLoading(true);
+  const pickUp = pickUpLocation;
+  const dropOff = dropOffLocation;
+  const pickDate = pickUpDate;
+  const dropDate = dropOffDate;
+  const pickTime = pickUpTime;
+  const dropTime = dropOffTime;
 
-    const pickUpId = await fetchLocation(pickUp);
-    // const dropOffId = await fetchLocation(dropOff);
+  const pickUpId = await fetchLocation(pickUp);
 
-    if (pickUpId) {
-      setIsLoading(false);
-      navigate(`/carhire/search/${pickUp}/${pickUpId}/${pickDate}/${dropDate}`);
-    } else {
-      console.error("Failed to fetch location IDs");
-    }
-  };
+  if (pickUpId && pickDate && dropDate) {
+    setIsLoading(false);
+    // Encode times for URL (replace : with %3A)
+    const encodedPickTime = pickTime.replace(":", "%3A");
+    const encodedDropTime = dropTime.replace(":", "%3A");
+    navigate(
+      `/carhire/search/${pickUp}/${pickUpId}/${pickDate}/${pickTime}/${dropDate}/${dropTime}`
+    );
+  } else {
+    setIsLoading(false);
+    console.error("Failed to fetch location IDs or missing date/time");
+  }
+};
 
   const times = [];
   for (let hour = 0; hour < 24; hour++) {
